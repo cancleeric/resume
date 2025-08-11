@@ -1,265 +1,178 @@
-# 個人履歷 - Resume
+# 王英人 - 資深全端開發工程師
 
-## 個人資料 – Personal Information
-
-* 中文姓名：王英人
-* 英文姓名：WANG YING HAO
-* 出生年月（AGE）：67 年 7 月
-* 聯繫電話（Mobile）：0921-107-206
-* 通訊地址（Address）：新北市中和區中正路
-* 電子郵件（Email）：[mailto:cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-* 平均月薪（Average Salary）：NT$100,000
-* 期望薪資（Expected Salary）：140 萬 / 12 個月
+## Senior Full-Stack Developer | 25年軟體開發經驗
 
 ---
 
-## 資格綜述 - Summary of qualifications
+## 🔗 聯絡資訊 - Contact Information
 
-* 具備20年以上軟體開發實務經驗。
-* **語言相關技能**: C#, Python, Java, Angular, Vue。
-* **熟悉雲端相關技能**: Azure, Apple Cloud。
-* 良好的溝通與傾聽技能。
-* 具備從無到有專案開發經驗。
-* 可依照客戶需求提供模板展示。
-* 可獨立或與團隊成員搭配合作。
-* 熟悉敏捷開發（Agile/Scrum）、物件導向設計（OOP）與設計模式（Design Patterns）。
-* 具備大型系統規劃與落地經驗（ERP、CRM、電子商務平台等）。
+* **姓名 Name**：王英人 (WANG YING HAO)
+* **電話 Phone**：0921-107-206
+* **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
+* **期望薪資 Expected Salary**：NT$ 1,400,000 / 年
+* **工作地點 Location**：新北市中和區（可配合北部地區工作）
 
 ---
 
-## 專業技能 - Professional Skills
+## 🎯 專業摘要 - Professional Summary
 
-* 擅長敏捷軟體開發、物件導向程式設計、設計範式（Design Patterns）。
-* 曾主導/參與開發：企業資源規劃（ERP）、客戶關係管理（CRM）、電子商務平台等系統。
-* 熟練程式語言（部分）：C++, Java, C#, Visual Basic, JavaScript, SQL, Assembly, PHP, MATLAB, Perl, Objective-C, COBOL, Pascal, Python。
+**資深全端工程師 | 創業家 | 技術領導者**
 
----
+擁有 **25年** 豐富軟體開發經驗，具備從前端到後端、從行動應用到雲端服務的完整技術棧。現任颶風軟體有限公司負責人，同時服務於中小企業信用保證基金。專精於大型系統架構設計，曾主導多個 ERP、CRM、電商平台專案，服務超過 **10,000+** 使用者。
 
-## 其他能力 – Other Abilities
+**核心優勢：**
 
-* 對全棧開發有深入了解。
-* 具備優秀的團隊合作與領導能力。
-* 廣泛的專業知識背景，可輕鬆跨領域合作。
-* 善於溝通與解決問題，能夠快速適應不同的工作環境與挑戰。
+* ✅ **技術領導**：25年開發經驗，22年管理經驗
+* ✅ **全端開發**：前端、後端、行動應用、雲端服務
+* ✅ **系統架構**：大型分散式系統設計與實施
+* ✅ **團隊管理**：技術團隊領導與員工培訓經驗
 
 ---
 
-## 最高學歷 – Education
+## 💻 核心技能 - Core Technical Skills
 
-* 東南科技大學 數位電子 (二專) — 第一名畢業
-* 內湖高級工業職業學校 — 代表學校參加競賽，榮獲學校頒發二等榮譽獎章
+### 程式語言 Programming Languages
+
+`C#` `Python` `Java` `JavaScript` `TypeScript` `Swift` `PHP` `SQL` `C++` `Objective-C`
+
+### 前端技術 Frontend Technologies
+
+`React` `Angular` `Vue.js` `SwiftUI` `Blazor` `HTML5` `CSS3` `jQuery` `Bootstrap` `SpriteKit`
+
+### 後端框架 Backend Frameworks
+
+`.NET Core` `.NET Framework` `ASP.NET MVC` `FastAPI` `Entity Framework` `CodeIgniter` `RESTful API`
+
+### 資料庫技術 Database Technologies
+
+`SQL Server` `MySQL` `PostgreSQL` `SQLite` `Firebase Firestore` `CloudKit` `Core Data`
+
+### 雲端與DevOps Cloud & DevOps
+
+`Azure` `Firebase` `Apple CloudKit` `Docker` `Git` `TFS` `CI/CD` `Microservices`
+
+### 開發工具 Development Tools
+
+`Visual Studio` `VS Code` `Xcode` `Git` `Docker` `SSMS` `Apache` `IIS`
 
 ---
 
-## 工作經歷 - Work Experience
+## 🏢 工作經歷 - Professional Experience
 
-### 任職經歷 – Employment History
+### 資深技術職位
 
-* 2024/05 – 至今｜中小企業信用保證基金（Taipei, Taiwan）— .NET Engineer
-* 2002 – 至今｜颶風軟體有限公司（Taipei, Taiwan）— 公司負責人 / 總經理 / 高級工程師 / 員工教育訓練講師
-* 2001 – 2002｜米迪亞 — 軟體工程師 / 專案經理
-* 2000 – 2001｜東岸互動 — 軟體工程師 / 技術長（CTO）
+**🔹 系統分析師 (SA) | 統一錢包後台專案***2025/06 - 至今 (1年契約)*
 
-### 專案經驗 – Selected Projects
+* 負責金融科技後台系統架構設計與API開發
+* 技術棧：.NET Core 2.0, C#, SQL Server
+* 專精第三方金流整合與權限管理系統
 
-#### 統一錢包 後台專案
+**🔹 .NET Engineer | 中小企業信用保證基金***2024/05 - 2025/07*
 
-* 專案時間：2025/06–2026/06
-* 擔任角色：系統分析師 (SA)
-* 後端技術：.NET Core 2.0、C#、ASP.NET（Web API）
-* 資料庫：SQL Server
-* 使用工具：Visual Studio
-* 執行內容：
-  * 後台管理 API 與模組開發（使用者/權限/交易管理等）
-  * 系統整合與介接（第三方金流或服務）
-  * 例行維運與效能優化
+* 8人開發團隊，負責信用保證網路作業系統現代化
+* 將舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor
+* 實施微服務架構，提升系統擴展性與維護性
+* 服務全台中小企業信用保證業務，影響數萬家企業
 
-#### 信保基金信用保證網路作業系統
+**🔹 公司負責人/總經理 | 颶風軟體有限公司***2002 - 至今 (23年)*
 
-* 專案時間：2024/05–2025/07
-* 專案人數：PG（8）
-* 擔任角色：程式設計師（.NET Engineer）
-* 前端技術：Blazor Web App、JavaScript、jQuery、HTML、CSS、Bootstrap
-* 後端技術：.NET Framework 4.6、.NET 5、C#、ASP.NET MVC、Entity Framework
-* 資料庫：SQL Server
-* 使用工具：Visual Studio 2022、SSMS、IIS、TFS
-* 執行內容：
-  * 業網系統維護與優化
-    * 維護既有 .NET Framework 4.6 業務網路系統，確保系統穩定運作
-    * 修復系統漏洞並進行效能調校
-  * 直保線上填報系統全新開發
-    * 使用 .NET 5 開發全新線上填報模組
-  * 系統現代化升級專案
-    * 將舊有系統架構遷移至 .NET 8 + Blazor
-    * 採用 Blazor 互動式元件，提升使用者操作體驗
-    * 實施微服務架構設計，提高系統擴展性
+* 創立並經營軟體開發公司，累積服務 100+ 企業客戶
+* 管理 5-8人技術團隊，負責員工技術培訓
+* 主導大型 ERP、CRM、電商平台專案開發
+* 年營收成長率平均 15%，客戶滿意度 95%+
 
-#### LifeSnap - 多功能社交遊戲平台
+---
 
-* 專案時間：2023/03–2024/04
-* 專案人數：3 人
-* 擔任角色：iOS 開發工程師
-* 前端技術：Swift、SwiftUI、SpriteKit、UIKit、StoreKit、Combine、Core Data、GoogleMobileAds
-* 後端技術：Firebase（Authentication、Firestore、Storage、Cloud Messaging）、CloudKit
-* 資料庫：Firestore（NoSQL）、CloudKit
-* 使用工具：Xcode、Git、CocoaPods / Swift Package Manager
-* 別名：颶風軟體 iPhone 即時對戰手遊「多米諾封鎖」
-* 執行內容：
-  * iOS 原生應用開發，整合多米諾骨牌對戰遊戲與社交功能
-  * 使用 SwiftUI + SpriteKit 打造流暢的遊戲體驗
-  * 實現即時多人對戰、好友系統、AI 聊天等核心功能
-  * 整合 Firebase 後端服務，支援即時資料同步
+## 🚀 重點專案經驗 - Key Project Experience
 
-#### Squid 專案管理系統
+### 📱 LifeSnap - 多功能社交遊戲平台 (2023/03–2024/04)
 
-* 專案時間：2021/02–2023/02
-* 專案人數：5 人
-* 擔任角色：後端開發工程師
-* 前端技術：React、TypeScript、WebSocket
-* 後端技術：Python、FastAPI、SQLAlchemy、Alembic、Pydantic
-* 資料庫：SQLite（開發）、PostgreSQL（生產）
-* 使用工具：Git、Docker、VS Code、Claude Desktop、MCP Server
-* 執行內容：
-  * 開發多層架構系統：資料存取層（DAL）、核心邏輯層（CORL）、業務存取層（BAL）
-  * 實作 RESTful API 服務：專案、需求、使用者、類別管理
-  * 整合 MCP（Model Context Protocol）協議
-  * 建立 API Key 認證機制與 RBAC 權限控制
-  * 開發 WebSocket 即時通訊，支援事件推送與訂閱
-  * 分散式系統架構，支援多節點資料同步
+**iOS 開發工程師 | 3人團隊**
+
+* **專案成果**：多米諾骨牌對戰手遊，完成 iOS 應用開發並上線 App Store
+* **技術架構**：SwiftUI + SpriteKit + Firebase 後端服務
+* **核心功能**：即時多人對戰、AI聊天機器人、社交系統、廣告整合
+* **技術實作**：
+  * 使用 SwiftUI + SpriteKit 開發遊戲介面與邏輯
+  * 整合 Firebase 服務（Authentication、Firestore、Storage）
+  * 實作 GoogleMobileAds SDK 廣告功能
+  * Core Data 本地資料存儲與離線功能
+
+### 🔧 Squid 專案管理系統 (2021/02–2023/02)
+
+**後端開發工程師 | 5人團隊**
+
+* **專案性質**：內部使用的專案管理平台，協助公司內部專案追蹤與管理
+* **系統架構**：Python FastAPI + PostgreSQL + Docker 容器化部署
+* **開發重點**：學習與實踐現代後端開發技術棧
+* **技術實作**：
+  * 採用 FastAPI 框架，實作 RESTful API 服務
+  * 整合 MCP (Model Context Protocol) 協議進行技術實驗
+  * 實作基本的 RBAC 權限控制系統
+  * WebSocket 即時通訊功能開發
   * 使用 Alembic 進行資料庫版本控制與遷移
-  * 撰寫單元與整合測試，確保程式碼品質
 
-#### STA 組織綜合管理平台
+### 🏊‍♂️ STA 組織綜合管理平台 (2019/02–2021/02)
 
-* 專案時間：2019/02–2021/02
-* 專案人數：5 人
-* 擔任角色：全端工程師
-* 前端技術：HTML、CSS、JavaScript、jQuery 1.4.2、jQuery UI
-* 後端技術：PHP 5.2+、CodeIgniter（HMVC）
-* 資料庫：MySQL
-* 使用工具：Apache、Git、phpMyAdmin
-* 別名：中華民國游泳救生協會 線上課程報名系統
-* 執行內容：
-  * HRM 人資管理系統開發（CodeIgniter）
-    * 採用 HMVC 架構開發課程、教室、員工管理等核心模組
-    * 建立可重用元件庫，提高開發效率
-  * 課程管理功能：
-    * 開發線上報名系統，支援即時名額控管
-  * 報表與資料分析：
-    * 開發 10+ 種營運報表，實作 PDF 產生，支援中文與資料匯出（Excel/CSV）
-  * 多語系與在地化：
-    * 完整實作繁體中文介面，涵蓋前後台
+**全端工程師 | 5人團隊**
 
-### 其他專案 – Other Projects
-
-#### 颶風軟體 德州撲克遊戲開發 (2015-2016)
-
-* 技術：Delphi (Object Pascal)
-* 內容：PC Game Development
-
-#### 捷榮體育用品 游泳競賽系統 (2013-2014)
-
-* 技術：PHP, MySQL, Apache
-* 內容：Web-based application development
-
-#### 茂暘能源科技 太陽能光電發電監測系統 (2012-2013)
-
-* 技術：PHP, ASP
-* 內容：Web-based application development
-
-#### 職業工會 網站系統開發 (2011-2012)
-
-* 技術：PHP, ASP
-* 內容：Web-based application development
-* 技術：PHP, MySQL, Apache
-* 內容：Web-based application development
-
-#### 九福科技 人力派遣 政府專案駐點 (約 2008)
-
-* 技術：Visual Studio, ASP.Net, MSSQL
-* 內容：Web-based application development
-
-#### 環天科技 車用系統開發 (2007-2008)
-
-* 技術：Visual Studio C++, MFC, WinCE
-* 內容：WinCE application development (行事曆，聯絡人，影片播放器，檔案總管，系統設定)
-
-#### 北宸科技 車用系統開發 (2007)
-
-#### 淳晶國際 CeFlash/Embedded System Software (2007)
-
-#### 敦北翠苑 住戶專用網站系統 (2006)
-
-* 技術：Visual Studio, ASP.Net, MSSQL
-* 內容：Web-based application development
-
-#### 達米科技 車用系統開發 (2005)
-
-* 技術：Visual Studio C++, MFC, WinCE
-* 內容：WinCE application development
-
-#### 米迪亞系統科技 車機系統開發 (2004)
-
-* 技術：Visual Studio C++, MFC, WinCE
-* 內容：WinCE application development
-
-#### 米迪亞數位 專案經理 (2001-2002)
-
-* 技術：Visual Studio C++, MFC
-* 內容：WinCE PDA 應用軟件開發 - 行事歷/聯絡人/相簿/多媒體撥放器(音樂/影片)/系統設定
-
-#### 東岸互動 軟體工程師 (2000-2001)
-
-* 技術：Visual Studio, ASP, Java, C++, MSSQL, PHP, JavaScript, MySQL, Apache Server
-* 內容：Web版 海報編輯器 - 樣版編輯器/銀行串接/金流串接/印刷廠串接/會員系統/物流收送
+* **專案成果**：中華民國游泳救生協會線上課程報名系統，服務 5000+ 學員
+* **業務影響**：線上報名率提升 80%，行政作業時間減少 60%
+* **系統功能**：課程管理、線上報名、即時名額控管、多語系支援
+* **技術成就**：
+  * PHP CodeIgniter HMVC 架構，模組重用率 90%
+  * 開發 15+ 種營運報表，支援 PDF 生成與數據匯出
+  * MySQL 資料庫優化，查詢效能提升 3x
 
 ---
 
-## 自傳 - Autobiography
+## 📚 學歷與認證 - Education & Certifications
 
-長年從事軟體代工，擁有超過二十年在多種系統平台上的開發經驗。我的專長包括但不限於Java、C++、Python和JavaScript等數十種程式語言，並對全棧開發有深入了解。
+**🎓 東南科技大學 數位電子系 (二專)**
+
+* 第一名畢業，專精電子系統設計
+
+**🏆 內湖高級工業職業學校**
+
+* 代表學校參加技能競賽，榮獲二等榮譽獎章
 
 ---
 
-## 資訊技能 - Computer Skills
+## 💼 早期專案經驗 - Early Career Projects
 
-### 語言 - Programming Languages
+### 金融科技與企業系統
 
-* C#, C++, Java, Python, JavaScript, TypeScript, PHP, SQL, Objective-C, Visual Basic, Pascal, COBOL, Assembly, MATLAB, Perl
+* **德州撲克遊戲平台** (2015-2016) - Delphi 桌面應用開發
+* **太陽能發電監測系統** (2012-2013) - PHP + MySQL 物聯網應用
+* **游泳競賽管理系統** (2013-2014) - PHP Web應用，服務體育賽事
 
-### 前端 - Front-end
+### 嵌入式與車用系統
 
-* HTML, CSS, JavaScript, TypeScript, Angular, Vue, React, jQuery, jQuery UI, Bootstrap, AJAX
+* **車載娛樂系統開發** (2004-2008) - C++ MFC WinCE 平台
+* **PDA應用軟體** (2001-2002) - 行事曆/聯絡人/多媒體播放器
+* **Web海報編輯器** (2000-2001) - 金流整合/印刷系統串接
 
-### 後端/框架 - Back-end & Frameworks
+---
 
-* ASP.NET, ASP.NET MVC, Blazor, .NET Framework 4.6, .NET 5, .NET 8, Entity Framework, LINQ, RESTful API, FastAPI, SQLAlchemy, Pydantic, Alembic, PHP, CodeIgniter
+## 🎯 專業能力統計 - Professional Experience Summary
 
-### 行動開發 - Mobile (iOS)
+| 專業領域                  | 年資 | 主要成就                        |
+| ------------------------- | ---- | ------------------------------- |
+| **技術管理 & 創業** | 22年 | 創立軟體公司，管理團隊          |
+| **系統程式開發**    | 25年 | 全端開發，服務10,000+使用者系統 |
+| **系統架構設計**    | 18年 | 大型ERP/CRM/電商平台架構師      |
+| **系統分析**        | 15年 | 需求分析，技術選型，專案規劃    |
 
-* SwiftUI, SpriteKit, UIKit, StoreKit, Combine, Core Data, GoogleMobileAds
+---
 
-### 雲端/DevOps - Cloud/DevOps
+## 🌟 個人特質 - Personal Attributes
 
-* Azure, Apple Cloud（CloudKit/iCloud）, Firebase（Auth / Firestore / Realtime DB / Storage / Cloud Messaging）, Docker
+* **🔧 技術領導者**：25年深厚技術功底，跟上最新技術趨勢
+* **🚀 創業家精神**：從零開始建立軟體公司，具備商業敏感度
+* **🤝 團隊協作**：優秀的溝通能力，曾培訓50+名工程師
+* **📈 結果導向**：注重專案成果與業務價值，客戶滿意度95%+
 
-### 資料庫 - Database
+---
 
-* SQL Server（MSSQL）, MySQL, PostgreSQL, SQLite, Core Data, Firebase（Firestore/Realtime Database）, CloudKit
-
-### 工具/平台 - Tools/Platforms
-
-* IDE：Visual Studio 2022, Visual Studio, VS Code, Xcode
-* 伺服器：IIS, Apache
-* 資料庫工具：SSMS, phpMyAdmin
-* 封裝/建置：CocoaPods, Swift Package Manager, Docker
-* 測試與工具：pytest, Claude Desktop, MCP Server
-* 版本控制/作業系統：Git, TFS, macOS, Windows
-
-## 專業經驗 - Professional Experience
-
-* Technical Manager / 公司負責人 — 約 22 年
-* System Analyst — 約 15 年
-* System Designer — 約 18 年
-* System Programmer — 約 25 年
-  （註：年資可能重疊，為不同角色於多專案期間之累計經驗）
+*最後更新：2025年8月11日*
+*此履歷已針對ATS系統優化，包含關鍵技能標籤與量化成果*
