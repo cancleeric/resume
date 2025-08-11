@@ -62,6 +62,17 @@
 
 ### 專案經驗 – Selected Projects
 
+#### 統一錢包 後台專案
+
+* 擔任角色：後端開發工程師
+* 後端技術：.NET Core 2.0、C#、ASP.NET（Web API）
+* 資料庫：SQL Server（如需可補充）
+* 使用工具：Visual Studio（如需可補充）
+* 執行內容：
+  * 後台管理 API 與模組開發（使用者/權限/交易管理等）
+  * 系統整合與介接（第三方金流或服務，視專案而定）
+  * 例行維運與效能優化
+
 #### 信保基金信用保證網路作業系統
 
 * 專案時間：2024/05–2025/07
@@ -117,18 +128,6 @@
   * 使用 Alembic 進行資料庫版本控制與遷移
   * 撰寫單元與整合測試，確保程式碼品質
 
-#### 統一錢包 後台專案
-
-* 專案時間：2017/06–2019/01
-* 擔任角色：後端開發工程師
-* 後端技術：.NET Core 2.0、C#、ASP.NET（Web API）
-* 資料庫：SQL Server
-* 使用工具：Visual Studio
-* 執行內容：
-  * 後台管理 API 與模組開發（使用者/權限/交易管理等）
-  * 系統整合與介接（第三方金流或服務）
-  * 例行維運與效能優化
-
 #### STA 組織綜合管理平台
 
 * 專案時間：2019/02–2021/02
@@ -152,25 +151,23 @@
 
 ### 其他專案 – Other Projects
 
-#### 颶風軟體 德州撲克遊戲開發 (2015-2016)
+#### 颶風軟體 德州撲克遊戲開發 (約 2012)
 
 * 技術：Delphi (Object Pascal)
 * 內容：PC Game Development
 
-#### 捷榮體育用品 游泳競賽系統 (2013-2014)
-
-* 技術：PHP, MySQL, Apache
-* 內容：Web-based application development
-
-#### 茂暘能源科技 太陽能光電發電監測系統 (2012-2013)
+#### 茂暘能源科技 太陽能光電發電監測系統 (2010)
 
 * 技術：PHP, ASP
 * 內容：Web-based application development
 
-#### 職業工會 網站系統開發 (2011-2012)
+#### 職業工會 網站系統開發 (2010)
 
 * 技術：PHP, ASP
 * 內容：Web-based application development
+
+#### 捷榮體育用品 游泳競賽系統 (約 2009)
+
 * 技術：PHP, MySQL, Apache
 * 內容：Web-based application development
 
