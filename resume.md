@@ -119,13 +119,14 @@
 
 #### 統一錢包 後台專案
 
+* 專案時間：2017/06–2019/01
 * 擔任角色：後端開發工程師
 * 後端技術：.NET Core 2.0、C#、ASP.NET（Web API）
-* 資料庫：SQL Server（如需可補充）
-* 使用工具：Visual Studio（如需可補充）
+* 資料庫：SQL Server
+* 使用工具：Visual Studio
 * 執行內容：
   * 後台管理 API 與模組開發（使用者/權限/交易管理等）
-  * 系統整合與介接（第三方金流或服務，視專案而定）
+  * 系統整合與介接（第三方金流或服務）
   * 例行維運與效能優化
 
 #### STA 組織綜合管理平台
@@ -151,14 +152,31 @@
 
 ### 其他專案 – Other Projects
 
-#### 颶風軟體 德州撲克遊戲開發 (約 2012)
+#### 颶風軟體 德州撲克遊戲開發 (2015-2016)
 
 * 技術：Delphi (Object Pascal)
 * 內容：PC Game Development
 
-#### 捷榮體育用品 游泳競賽系統 (約 2009)
+#### 捷榮體育用品 游泳競賽系統 (2013-2014)
 
 * 技術：PHP, MySQL, Apache
+* 內容：Web-based application development
+
+#### 茂暘能源科技 太陽能光電發電監測系統 (2012-2013)
+
+* 技術：PHP, ASP
+* 內容：Web-based application development
+
+#### 職業工會 網站系統開發 (2011-2012)
+
+* 技術：PHP, ASP
+* 內容：Web-based application development
+* 技術：PHP, MySQL, Apache
+* 內容：Web-based application development
+
+#### 九福科技 人力派遣 政府專案駐點 (約 2008)
+
+* 技術：Visual Studio, ASP.Net, MSSQL
 * 內容：Web-based application development
 
 #### 環天科技 車用系統開發 (2007-2008)
@@ -166,29 +184,14 @@
 * 技術：Visual Studio C++, MFC, WinCE
 * 內容：WinCE application development (行事曆，聯絡人，影片播放器，檔案總管，系統設定)
 
-#### 九福科技 人力派遣 政府專案駐點 (約 2008)
+#### 北宸科技 車用系統開發 (2007)
 
-* 技術：Visual Studio, ASP.Net, MSSQL
-* 內容：Web-based application development
+#### 淳晶國際 CeFlash/Embedded System Software (2007)
 
 #### 敦北翠苑 住戶專用網站系統 (2006)
 
 * 技術：Visual Studio, ASP.Net, MSSQL
 * 內容：Web-based application development
-
-#### 茂暘能源科技 太陽能光電發電監測系統 (2010)
-
-* 技術：PHP, ASP
-* 內容：Web-based application development
-
-#### 職業工會 網站系統開發 (2010)
-
-* 技術：PHP, ASP
-* 內容：Web-based application development
-
-#### 北宸科技 車用系統開發 (2007)
-
-#### 淳晶國際 CeFlash/Embedded System Software (2007)
 
 #### 達米科技 車用系統開發 (2005)
 
@@ -255,8 +258,8 @@
 
 ## 專業經驗 - Professional Experience
 
-* Technical Manager — 約 5 年
-* System Analyst — 約 8 年
-* System Designer — 約 7 年
-* System Programmer — 約 10 年
+* Technical Manager / 公司負責人 — 約 22 年
+* System Analyst — 約 15 年
+* System Designer — 約 18 年
+* System Programmer — 約 25 年
   （註：年資可能重疊，為不同角色於多專案期間之累計經驗）
