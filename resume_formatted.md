@@ -1,16 +1,25 @@
-捷榮體育用品 游泳競賽系統
-
 # 履歷表 - Resume
+
+## 個人資料 – Personal Information
+
+- **中文姓名**: 王英人
+- **英文姓名**: WANG YING HAO
+- **出生年月**: 1978年7月 (46歲)
+- **聯繫電話**: 0921-107-206
+- **通訊地址**: 新北市中和區中正路
+- **電子郵件**: [cancleeric@gmail.com](mailto:cancleeric@gmail.com)
+- **期望薪資**: NT$ 1,400,000 / 年
 
 ## 資格綜述 - Summary of Qualifications
 
-- 具備20年以上軟體開發實務經驗
-- **語言相關技能** – C#, Python, Java, Angular, Vue
-- **熟悉雲端相關技能** – Azure, Apple Cloud
-- 良好的溝通與傾聽技能
-- 具備從無到有專案開發經驗
-- 可依照客戶需求提供模板展示
-- 可獨立或與團隊成員搭配合作
+- **豐富實務經驗**：具備25年以上軟體開發實務經驗，涵蓋全端開發、系統架構設計與專案管理
+- **多元技術專精**：精通 C#, Python, Java, Swift 等多種程式語言，熟悉 Angular, Vue, React 等現代前端框架
+- **雲端技術整合**：具備 Microsoft Azure, Apple CloudKit, Google Firebase 雲端平台開發與整合經驗
+- **全生命週期開發**：擁有從需求分析、系統設計、程式開發到上線維護的完整專案開發經驗
+- **跨平台開發能力**：熟悉 Web 應用程式、iOS 行動應用、桌面應用程式等多平台開發技術
+- **優秀溝通協調**：具備良好的溝通與傾聽技能，能有效與客戶需求對接並提供技術解決方案
+- **彈性工作模式**：可獨立完成專案開發，亦能與團隊成員協作，適應不同工作環境與開發模式
+- **創業與管理經驗**：擔任公司負責人22年，具備技術團隊管理、員工培訓與企業經營經驗
 
 ## 最高學歷 - Education
 
@@ -140,28 +149,51 @@
 
 ### 開發工具與環境 - Development Tools & Environment
 
-#### 整合開發環境 (IDE)
+#### 整合開發環境 (IDE) & 編輯器
 
-- **Visual Studio 2022, Visual Studio** - .NET 開發主力工具
-- **VS Code** - 輕量級跨平台開發
-- **Xcode** - iOS 開發專用
+- **Microsoft Visual Studio 2022/2019** - 企業級 .NET 開發環境，支援 Blazor、WPF、WinForms 開發
+- **Visual Studio Code** - 跨平台輕量級編輯器，配置 Python、TypeScript、React 開發環境
+- **Apple Xcode** - iOS/macOS 原生應用開發，支援 SwiftUI、UIKit、SpriteKit 框架
+- **JetBrains IntelliJ IDEA** - Java 企業級開發環境 (依專案需求)
 
-#### 伺服器與部署
+#### 版本控制與協作
 
-- **Web 伺服器**: IIS, Apache
-- **容器化**: Docker
-- **版本控制**: Git, TFS
-- **資料庫工具**: SSMS, phpMyAdmin
+- **Git** - 分散式版本控制，熟悉 GitFlow、Feature Branch 工作流程
+- **Microsoft Team Foundation Server (TFS)** - 企業級 ALM 平台，包含版本控制與專案管理
+- **GitHub/GitLab** - 程式碼託管平台，CI/CD Pipeline 整合
 
-#### 測試與品質工具
+#### 伺服器技術與部署
 
-- **測試框架**: pytest
-- **AI 輔助開發**: Claude Desktop, MCP Server
+- **Microsoft IIS** - Windows Server 環境 ASP.NET 應用程式部署與管理
+- **Apache HTTP Server** - Linux/Unix 環境 PHP、Python 應用程式伺服器
+- **Docker** - 容器化技術，支援應用程式打包、部署與微服務架構
+- **Firebase Hosting** - 靜態網站與 SPA 應用程式雲端部署
 
-#### 作業系統
+#### 資料庫管理工具
 
-- **Windows** - 主要開發環境
-- **macOS** - iOS 開發環境
+- **SQL Server Management Studio (SSMS)** - Microsoft SQL Server 資料庫管理與查詢優化
+- **phpMyAdmin** - MySQL 資料庫網頁式管理介面
+- **Firebase Console** - NoSQL 資料庫管理與即時資料監控
+
+#### 測試與品質保證
+
+- **pytest** - Python 單元測試與整合測試框架
+- **NUnit/MSTest** - .NET 應用程式測試框架
+- **Postman** - RESTful API 測試與文件化工具
+- **SonarQube** - 程式碼品質分析與技術債務管理 (依專案配置)
+
+#### AI 輔助開發工具
+
+- **Claude Code/Desktop** - AI 程式碼生成與重構輔助
+- **MCP Server** - Model Context Protocol 整合開發
+- **GitHub Copilot** - AI 程式碼自動完成 (依授權使用)
+
+#### 作業系統與基礎架構
+
+- **Windows 10/11** - 主要開發工作站，.NET、C++ 開發環境
+- **macOS** - iOS 開發與跨平台測試環境
+- **Windows Server** - 企業應用程式部署與維護
+- **Ubuntu/CentOS** - Linux 伺服器環境管理經驗
 
 ### 專業能力 - Professional Capabilities
 

@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+*.tmp
+*.temp
+desktop.ini
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+
+# Backup files
+*.bak
+*.backup
+*~
+.*.swp
+.*.swo
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Personal notes (if any)
+notes.txt
+TODO.txt
+NOTES.md
+
+# Draft files
+*draft*
+*DRAFT*
+*.draft
+
+# PDF exports (if generated)
+*.pdf
+
+# Word documents (if exported)
+*.doc
+*.docx
