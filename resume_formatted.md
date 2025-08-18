@@ -47,7 +47,7 @@
 - **執行內容**:
   - 業網系統維護與優化
   - 直保線上填報系統全新開發
-  - 系統現代化升級專案（.NET 8 + Blazor WebAssembly）
+  - 系統現代化升級專案（.NET 8 + Blazor ）
 
 #### LifeSnap - 多功能社交遊戲平台 (2023/03–2024/04)
 
@@ -114,19 +114,23 @@
 
 ### 前端技術 - Front-end Technologies
 
-- **框架**: Angular, Vue, React
+- **框架**: Angular, Vue, React, Blazor
 - **UI 函式庫**: jQuery, jQuery UI, Bootstrap
 - **行動端**: SwiftUI, SpriteKit, UIKit
 - **基礎技術**: HTML, CSS, JavaScript, TypeScript, AJAX
 
 ### 後端/框架 - Back-end & Frameworks
 
-- **.NET 生態系**: .NET Core, ASP.NET Core, ASP.NET, ASP.NET MVC, Blazor, .NET Framework 4.6, .NET 5, .NET 8
-- **資料存取**: Entity Framework, LINQ, ADO.NET
-- **API 開發**: RESTful API, Web API
+- **.NET 生態系**: .NET Core, ASP.NET Core, ASP.NET, ASP.NET MVC, ASP.NET Web API, Blazor, .NET Framework 4.6, .NET 5, .NET 8
+- **資料存取**: Entity Framework, Entity Framework Core, LINQ, ADO.NET
+- **API 開發**: RESTful API, Web API, GraphQL (MCP協議)
 - **Python 框架**: FastAPI, SQLAlchemy, Pydantic, Alembic
-- **PHP 框架**: CodeIgniter (HMVC)
-- **其他**: MFC, WinCE
+- **PHP 框架**: CodeIgniter (HMVC), 原生 PHP 5.2+
+- **傳統 ASP**: Classic ASP (VBScript/JScript)
+- **即時通訊**: WebSocket, SignalR
+- **微服務架構**: RESTful Services, API Gateway 模式
+- **嵌入式系統**: Win32 API, MFC, WinCE
+- **遊戲開發**: Delphi/Object Pascal 框架
 
 ### 行動開發 - Mobile Development
 
