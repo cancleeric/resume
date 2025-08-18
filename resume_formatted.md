@@ -41,7 +41,7 @@
 - **專案人數**: PG（8）
 - **擔任角色**: 程式設計師（.NET Engineer）
 - **前端技術**: Blazor Web App、JavaScript、jQuery、HTML、CSS、Bootstrap
-- **後端技術**: .NET Framework 4.6、.NET 5、C#、ASP.NET MVC、Entity Framework
+- **後端技術**: .NET Framework 4.6、.NET Core 2.0、.NET 5、.NET 8、C#、ASP.NET MVC、Entity Framework
 - **資料庫**: SQL Server
 - **使用工具**: Visual Studio 2022、SSMS、IIS、TFS
 - **執行內容**:
@@ -121,7 +121,7 @@
 
 ### 後端/框架 - Back-end & Frameworks
 
-- **.NET 生態系**: ASP.NET, ASP.NET MVC, Blazor, .NET Framework 4.6, .NET 5, .NET 8
+- **.NET 生態系**: .NET Core, ASP.NET Core, ASP.NET, ASP.NET MVC, Blazor, .NET Framework 4.6, .NET 5, .NET 8
 - **資料存取**: Entity Framework, LINQ, ADO.NET
 - **API 開發**: RESTful API, Web API
 - **Python 框架**: FastAPI, SQLAlchemy, Pydantic, Alembic
@@ -151,7 +151,7 @@
 
 #### 整合開發環境 (IDE) & 編輯器
 
-- **Microsoft Visual Studio 2022/2019** - 企業級 .NET 開發環境，支援 Blazor、WPF、WinForms 開發
+- **Microsoft Visual Studio 2022/2019** - 企業級 .NET/.NET Core 開發環境，支援 Blazor、WPF、WinForms 開發
 - **Visual Studio Code** - 跨平台輕量級編輯器，配置 Python、TypeScript、React 開發環境
 - **Apple Xcode** - iOS/macOS 原生應用開發，支援 SwiftUI、UIKit、SpriteKit 框架
 - **JetBrains IntelliJ IDEA** - Java 企業級開發環境 (依專案需求)
