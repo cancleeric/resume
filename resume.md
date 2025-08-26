@@ -1,4 +1,4 @@
-# 王英人 - 資深全端開發工程師
+# 王英豪 - 資深全端開發工程師
 
 ## Senior Full-Stack Developer | 25年軟體開發經驗
 
@@ -6,7 +6,7 @@
 
 ## 🔗 聯絡資訊 - Contact Information
 
-* **姓名 Name**：王英人 (WANG YING HAO)
+* **姓名 Name**：王英豪 (WANG YING HAO)
 * **電話 Phone**：0921-107-206
 * **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
 * **期望薪資 Expected Salary**：NT$ 1,400,000 / 年
