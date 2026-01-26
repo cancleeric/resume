@@ -9,7 +9,7 @@
 * 通訊地址（Address）：新北市中和區中正路
 * 電子郵件（Email）：[mailto:cancleeric@gmail.com](mailto:cancleeric@gmail.com)
 * 平均月薪（Average Salary）：NT$100,000
-* 期望薪資（Expected Salary）：140 萬 / 12 個月
+* 期望薪資（Expected Salary）：240 萬 / 年
 
 ---
 
