@@ -22,7 +22,7 @@
 
 **核心優勢：**
 
-* ✅ **技術領導**：25年開發經驗，22年管理經驗
+* ✅ **技術領導**：25年開發經驗，24年管理經驗
 * ✅ **全端開發**：前端、後端、行動應用、雲端服務
 * ✅ **系統架構**：大型分散式系統設計與實施
 * ✅ **團隊管理**：技術團隊領導與員工培訓經驗
@@ -37,23 +37,27 @@
 
 ### 前端技術 Frontend Technologies
 
-`React` `Angular` `Vue.js` `SwiftUI` `Blazor` `HTML5` `CSS3` `jQuery` `Bootstrap` `SpriteKit`
+`React 18` `Angular` `Vue.js` `SwiftUI` `Blazor Server` `HTML5` `CSS3/SCSS` `Bootstrap 5` `SpriteKit` `Webpack 5`
 
 ### 後端框架 Backend Frameworks
 
-`.NET Core` `.NET Framework` `ASP.NET MVC` `FastAPI` `Entity Framework` `CodeIgniter` `RESTful API`
+`.NET 8` `.NET Core` `ASP.NET Core` `FastAPI` `Express.js` `Entity Framework Core` `SQLAlchemy 2.0` `RESTful API`
 
 ### 資料庫技術 Database Technologies
 
-`SQL Server` `MySQL` `PostgreSQL` `SQLite` `Firebase Firestore` `CloudKit` `Core Data`
+`PostgreSQL` `SQL Server` `MySQL` `SQLite` `Redis` `Firebase Firestore` `CloudKit` `Alembic` `EF Core`
 
 ### 雲端與DevOps Cloud & DevOps
 
-`Azure` `Firebase` `Apple CloudKit` `Docker` `Git` `TFS` `CI/CD` `Microservices`
+`Google Cloud Run` `Azure` `Firebase` `Docker` `Git Hooks` `GitHub Actions` `CI/CD` `Microservices` `Prometheus`
+
+### 認證與安全 Authentication & Security
+
+`OAuth 2.0` `OpenID Connect (OIDC)` `JWT` `MFA (TOTP/Email/SMS)` `BCrypt` `AES-256-GCM`
 
 ### 開發工具 Development Tools
 
-`Visual Studio` `VS Code` `Xcode` `Git` `Docker` `SSMS` `Apache` `IIS`
+`Visual Studio` `VS Code` `Xcode` `Git` `Docker` `Alembic` `Rollup` `PyInstaller`
 
 ---
 
@@ -74,7 +78,7 @@
 * 實施微服務架構，提升系統擴展性與維護性
 * 支援銀行端信用保證業務系統，協助金融機構審核與管理保證案件
 
-**🔹 公司負責人/總經理 | 颶風軟體有限公司***2002 - 至今 (23年)*
+**🔹 公司負責人/總經理 | 颶風軟體有限公司***2002 - 至今 (24年)*
 
 * 創立並經營軟體開發公司，累積服務 100+ 企業客戶
 * 管理 5-8人技術團隊，負責員工技術培訓
@@ -85,32 +89,68 @@
 
 ## 🚀 重點專案經驗 - Key Project Experience
 
-### 📱 LifeSnap - 多功能社交遊戲平台 (2023/03–2024/04)
+### 🔐 LocalIdentityServer (LIDS) - 企業級身份認證服務 (2024/11–至今)
+
+**後端架構師 / .NET 開發工程師 | 核心開發者**
+
+* **專案成果**：自建 OAuth 2.0 / OpenID Connect 身份認證伺服器，支援多租戶架構
+* **技術架構**：ASP.NET Core 8.0 + PostgreSQL + Redis + Blazor Server
+* **系統特色**：
+  * 完整的 OAuth 2.0 / OIDC 實作，支援 JWT Token 簽發與驗證
+  * 多因素認證（MFA）：TOTP、Email、SMS 三種驗證方式
+  * 多租戶身份管理，支援租戶自註冊與邀請碼機制
+  * Break-glass 緊急存取機制，確保系統可用性
+  * Blazor Server 管理介面，提供直覺的後台操作
+* **技術實作**：
+  * 使用 EF Core + PostgreSQL 實現資料持久化
+  * 整合 Redis 進行 Session 管理與快取
+  * 實作動態 CORS 策略與限流機制（AspNetCoreRateLimit）
+  * 整合 Azure Key Vault / GCP Secret Manager 管理敏感資料
+  * Prometheus + OpenTelemetry 監控與分散式追蹤
+* **CI/CD**：Docker 容器化 + Git Hooks 自動建置 + Cloud Run 部署
+
+### 🎯 Squid 專案管理系統 (2025/01–至今，持續開發)
+
+**後端架構師 / Python 開發工程師 | 技術負責人**
+
+* **專案成果**：企業級專案管理平台，管理 50+ 資料表，支援 100+ 企業客戶
+* **技術架構**：Python FastAPI + PostgreSQL + Redis + Docker 微服務架構
+* **系統特色**：
+  * 多租戶架構，完整的 RBAC 權限控制系統
+  * 需求管理、專案管理、驗證審查系統
+  * MCP (Model Context Protocol) 整合，支援 AI 助手操作
+  * 分散式節點協調與 APScheduler 排程任務
+  * Stripe / PayPal 支付整合
+* **技術實作**：
+  * 採用分層架構：API Service → BAL → CORL → DAL
+  * SQLAlchemy 2.0 ORM + Alembic 資料庫遷移管理
+  * 整合 Prometheus、Sentry 進行監控與錯誤追蹤
+  * WebSocket 即時通訊功能開發
+  * SendGrid Email / Slack SDK 通知整合
+* **開發生態**：
+  * **Neritic CLI**：Python Click 框架開發命令列工具，PyInstaller 打包，支援 Git Hooks 自動版本號管理
+  * **Squid API SDK (Python)**：提供完整的 Python 客戶端，支援 Pydantic 資料驗證
+  * **Squid JS SDK (TypeScript)**：Rollup 打包，支援 ESM/CJS，100% 測試覆蓋率
+  * **Tentacle Frontend (React 18)**：TypeScript + Bootstrap 5 + Webpack 5，整合 OIDC 認證與支付系統
+  * **Tentacle BFF (Express.js)**：Session 管理 + OIDC 整合 + Rate Limiting
+
+### 📱 LifeSnap - 多功能社交遊戲平台 (2024/03–2024/04)
 
 **iOS 開發工程師 | 3人團隊**
 
 * **專案成果**：多米諾骨牌對戰手遊，完成 iOS 應用開發並上線 App Store
 * **技術架構**：SwiftUI + SpriteKit + Firebase 後端服務
-* **核心功能**：即時多人對戰、AI聊天機器人、社交系統、廣告整合
+* **核心功能**：即時多人對戰、ChatGPT AI 聊天機器人、社交系統、AdMob 廣告整合
+* **架構設計**：
+  * MVVM 模式 + Protocol-Oriented Design
+  * Service 層：AuthenticationManager、ChatSessionService、DBUserService
+  * 遊戲架構：GameController + GameBoardNode (SpriteKit) + 多層 Manager
 * **技術實作**：
   * 使用 SwiftUI + SpriteKit 開發遊戲介面與邏輯
-  * 整合 Firebase 服務（Authentication、Firestore、Storage）
-  * 實作 GoogleMobileAds SDK 廣告功能
-  * Core Data 本地資料存儲與離線功能
-
-### 🔧 Squid 專案管理系統 (2021/02–2023/02)
-
-**後端開發工程師 | 5人團隊**
-
-* **專案性質**：內部使用的專案管理平台，協助公司內部專案追蹤與管理
-* **系統架構**：Python FastAPI + PostgreSQL + Docker 容器化部署
-* **開發重點**：學習與實踐現代後端開發技術棧
-* **技術實作**：
-  * 採用 FastAPI 框架，實作 RESTful API 服務
-  * 整合 MCP (Model Context Protocol) 協議進行技術實驗
-  * 實作基本的 RBAC 權限控制系統
-  * WebSocket 即時通訊功能開發
-  * 使用 Alembic 進行資料庫版本控制與遷移
+  * 整合 Firebase 服務（Authentication、Firestore、Storage、FCM）
+  * 實作 GoogleMobileAds SDK 廣告功能（橫幅、獎勵廣告）
+  * CloudKit 資料同步與推播通知
+  * Kingfisher 圖片快取與載入
 
 ### 🏊‍♂️ STA 組織綜合管理平台 (2019/02–2021/02)
 
@@ -158,10 +198,18 @@
 
 | 專業領域                  | 年資 | 主要成就                        |
 | ------------------------- | ---- | ------------------------------- |
-| **技術管理 & 創業** | 22年 | 創立軟體公司，管理團隊          |
+| **技術管理 & 創業** | 24年 | 創立軟體公司，管理團隊，服務100+ 企業客戶 |
 | **系統程式開發**    | 25年 | 全端開發，服務10,000+使用者系統 |
-| **系統架構設計**    | 18年 | 大型ERP/CRM/電商平台架構師      |
+| **系統架構設計**    | 18年 | 大型ERP/CRM/電商/身份認證平台架構師 |
 | **系統分析**        | 15年 | 需求分析，技術選型，專案規劃    |
+| **DevOps & CI/CD** | 5年  | Docker 容器化，Git Hooks 自動化，Cloud Run 部署 |
+
+### 📊 專案規模統計
+
+* **程式碼規模**：累計管理 6,600+ 個程式碼檔案，約 7.2 GB 專案規模
+* **技術棧廣度**：精通 10+ 程式語言，20+ 框架與技術
+* **資料庫管理**：設計與維護 50+ 資料表的企業級系統
+* **CI/CD 實踐**：建立 5 個專案的 Git Hooks 自動化流程
 
 ---
 
@@ -174,5 +222,37 @@
 
 ---
 
-*最後更新：2025年8月11日*
+## 🏗️ 開發生態系統 - Development Ecosystem
+
+### Squid 專案生態系統
+
+建立完整的開發生態系統，包含後端 API、前端應用、CLI 工具、SDK 與認證服務：
+
+* **後端服務**：
+  * Squid API (FastAPI + PostgreSQL) - 核心專案管理 API
+  * LocalIdentityServer (ASP.NET Core 8) - OAuth 2.0 / OIDC 認證服務
+  * MCP Server (TypeScript) - Model Context Protocol 整合
+
+* **前端應用**：
+  * Tentacle Frontend (React 18 + TypeScript) - Web 管理介面
+  * Tentacle BFF (Express.js) - Backend for Frontend 層
+
+* **開發工具**：
+  * Neritic CLI (Python + Click) - 命令列工具，支援工單管理、雲端部署
+  * Squid API SDK (Python) - Python 客戶端 SDK
+  * Squid JS SDK (TypeScript) - JavaScript/TypeScript 客戶端 SDK
+
+* **CI/CD 自動化**：
+  * Git Hooks 兩層式 CI/CD（post-commit 本地建置 + pre-push Staging 部署）
+  * Docker 標籤策略：`{IMAGE}:{BRANCH}-{COMMIT}` 版本追蹤
+  * GitHub Actions 自動部署到 Google Cloud Run
+
+* **監控與維運**：
+  * Prometheus + OpenTelemetry 監控
+  * Sentry 錯誤追蹤
+  * Alembic / EF Core 資料庫遷移管理
+
+---
+
+*最後更新：2026年1月26日*
 *此履歷已針對ATS系統優化，包含關鍵技能標籤與量化成果*

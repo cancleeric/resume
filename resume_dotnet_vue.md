@@ -47,7 +47,7 @@
 
 #### 颶風軟體企業資源管理系統 (2002–至今)
 
-- **專案性質**: 公司內部系統，22年持續開發與維護
+- **專案性質**: 公司內部系統，24年持續開發與維護
 - **擔任角色**: 系統架構師 / 全端工程師
 - **前端技術**: ASP.NET Web Forms → MVC Razor → Vue.js 2.x/3.x、JavaScript、HTML、CSS、Element UI
 - **後端技術**: .NET Framework 1.1 → 4.8 → .NET Core 3.1 → .NET 6/8、ASP.NET MVC、ASP.NET Core Web API、Entity Framework

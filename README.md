@@ -23,10 +23,12 @@
 
 ```
 resume/
-├── README.md              # 本文件
-├── resume_formatted.md    # 格式化整理版履歷（最新推薦）
+├── README.md              # 本文件（履歷概覽）
+├── INSTRUCTIONS.md        # AI 更新指南（年資計算規則）
+├── PROJECTS.md            # 專案技術詳細清單
+├── resume.md              # 現代簡潔版履歷（主履歷）
+├── resume_formatted.md    # 格式化整理版履歷
 ├── resume_dotnet_vue.md   # .NET + Vue.js 專精版
-├── resume.md              # 現代簡潔版履歷
 ├── resume_old.md          # 傳統詳細版履歷
 └── Vue_Interview_Notes.md # Vue.js 面試筆記
 ```
@@ -83,26 +85,37 @@ resume/
 
 ### 🏆 近期重點專案
 
-- **信保基金信用保證網路作業系統**（2024-2025）- .NET Engineer
-- **LifeSnap 多功能社交遊戲平台**（2023-2024）- iOS 開發工程師  
-- **Squid 專案管理系統**（2021-2023）- 後端開發工程師
-- **STA 組織綜合管理平台**（2019-2021）- 全端工程師
+- **LocalIdentityServer (LIDS)**（2024/11-至今）- 後端架構師 / .NET 開發工程師
+- **Squid 專案管理系統**（2025/01-至今）- 後端架構師 / Python 開發工程師
+- **信保基金信用保證網路作業系統**（2024/05-2025/07）- .NET Engineer
+- **LifeSnap 多功能社交遊戲平台**（2024/03-2024/04）- iOS 開發工程師
+- **STA 組織綜合管理平台**（2019/02-2021/02）- 全端工程師
 
 ### 💻 技術亮點
 
-- 🔧 **現代化技術棧**：.NET 8, Blazor, SwiftUI, React, FastAPI
-- ☁️ **雲端整合**：Firebase, Azure, CloudKit
-- 📱 **跨平台開發**：Web, iOS, Windows 應用程式
-- 🏗️ **系統架構設計**：微服務、RESTful API、即時通訊
+- 🔧 **現代化技術棧**：.NET 8, ASP.NET Core, Blazor Server, SwiftUI, React 18, FastAPI
+- 🔐 **認證與安全**：OAuth 2.0 / OIDC, JWT, MFA (TOTP/Email/SMS)
+- ☁️ **雲端整合**：Google Cloud Run, Firebase, Azure, CloudKit
+- 📱 **跨平台開發**：Web, iOS, CLI 工具
+- 🏗️ **系統架構設計**：微服務、多租戶架構、RESTful API、WebSocket
+- 🚀 **DevOps & CI/CD**：Docker, Git Hooks, GitHub Actions, Prometheus
 
 ## 💼 專業經驗統計
 
 | 角色 | 年資 | 主要成就 |
 |------|------|----------|
-| **技術管理 & 創業** | 22年 | 創立軟體公司，管理技術團隊 |
+| **技術管理 & 創業** | 24年 | 創立軟體公司，管理技術團隊，服務100+ 企業客戶 |
 | **系統程式開發** | 25年 | 全端開發，多平台應用開發 |
-| **系統架構設計** | 18年 | 大型ERP/CRM/電商平台架構師 |
+| **系統架構設計** | 18年 | 大型ERP/CRM/電商/身份認證平台架構師 |
 | **系統分析** | 15年 | 需求分析，技術選型，專案規劃 |
+| **DevOps & CI/CD** | 5年 | Docker 容器化，Git Hooks 自動化，Cloud Run 部署 |
+
+### 📊 專案規模統計
+
+* **程式碼規模**：累計管理 6,600+ 個程式碼檔案，約 7.2 GB 專案規模
+* **Squid 生態系統**：建立完整的開發生態（後端 API + 前端 + CLI + SDK + 認證服務）
+* **技術棧廣度**：精通 10+ 程式語言，20+ 框架與技術
+* **資料庫管理**：設計與維護 50+ 資料表的企業級系統
 
 ## 🎯 使用指南
 
@@ -137,6 +150,9 @@ resume/
 
 ---
 
-**最後更新：** 2025年8月18日
+**最後更新：** 2026年1月26日
 
-> 💡 **備註**：兩個履歷版本均已針對不同使用場景優化，請根據應徵職位選擇合適版本。
+> 💡 **備註**：
+> - 已更新最新專案經驗（LocalIdentityServer、Squid 生態系統）
+> - 新增 DevOps & CI/CD 專業能力
+> - 履歷版本均已針對不同使用場景優化，請根據應徵職位選擇合適版本
