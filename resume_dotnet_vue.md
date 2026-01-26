@@ -8,7 +8,7 @@
 - **聯繫電話**: 0921-107-206
 - **通訊地址**: 新北市中和區中正路
 - **電子郵件**: [cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-- **期望薪資**: NT$ 1,400,000 / 年
+- **期望薪資**: NT$ 2,400,000 / 年
 
 ## 資格綜述 - Summary of Qualifications
 
