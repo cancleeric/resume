@@ -54,3 +54,4 @@ NOTES.md
 *.docx
 # Internal documentation (contains sensitive information)
 PROJECTS.md
+INSTRUCTIONS.md
