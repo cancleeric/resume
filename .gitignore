@@ -52,3 +52,5 @@ NOTES.md
 # Word documents (if exported)
 *.doc
 *.docx
+# Internal documentation (contains sensitive information)
+PROJECTS.md
