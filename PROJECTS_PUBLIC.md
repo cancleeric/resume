@@ -2,7 +2,7 @@
 
 > 資深全端工程師 | 25年軟體開發經驗
 
-**最後更新：** 2026年1月
+**最後更新：** 2026年2月
 
 ---
 
@@ -561,7 +561,90 @@ squid/
 | Squid API SDK | - | 20 MB | Python | ~2 個月 |
 | Squid JS SDK | - | 194 MB | TypeScript | ~2 個月 |
 
-**總計**: ~6,800+ 個程式碼檔案，約 7.4 GB 專案規模
+| CommTool | - | - | Python | 持續開發 |
+| NLIDS CLI | - | - | Python | 持續開發 |
+| LIDS Secret Rotator | - | - | TypeScript | 持續開發 |
+
+**總計**: ~7,000+ 個程式碼檔案，約 7.5 GB 專案規模
+
+---
+
+## 10. CommTool (CMC) - 統一通訊平台
+
+**專案類型**: 統一通訊工具 (IM + Email)
+
+**時間線**: 2025 - 至今（持續開發）
+
+### 主要功能
+- 內部即時通訊 (IM) 系統
+- Email 管理 (POP3S / SMTPS over SSL)
+- 全文搜索 (SQLite FTS5)
+- Web UI / CLI / GUI 多介面
+- Telegram / Webhook 通知整合
+- Admin 角色與權限管理
+
+### 技術棧
+- **語言**: Python 3
+- **資料庫**: SQLite (FTS5) / PostgreSQL
+- **通訊**: HTTP API
+- **通知**: Telegram Bot API, Webhook
+
+---
+
+## 11. NLIDS CLI - LIDS 遠端管理工具
+
+**專案類型**: 命令列管理工具
+
+**時間線**: 2025 - 至今
+
+### 主要功能
+- LIDS 使用者管理 (CRUD)
+- OAuth Client 管理
+- 租戶管理
+- Token 測試與解析
+- 多環境支援
+
+### 技術棧
+- **語言**: Python 3
+- **CLI 框架**: Typer
+- **HTTP**: requests
+
+---
+
+## 12. LIDS Secret Rotator - 自動密鑰輪替
+
+**專案類型**: GCP Cloud Functions 自動化服務
+
+**時間線**: 2025 - 至今
+
+### 主要功能
+- 90 天自動 OAuth Client Secret 輪替
+- 手動輪替支援
+- 自動驗證與失敗回滾
+- Firestore 稽核日誌
+- Slack / Email 通知
+
+### 技術棧
+- **語言**: Node.js 20, TypeScript
+- **平台**: GCP Cloud Functions Gen 2
+- **密鑰管理**: GCP Secret Manager
+- **日誌**: Firestore
+- **觸發**: HTTP + Pub/Sub
+
+---
+
+## 13. Gitea Git Server - 自架 Git 服務
+
+**專案類型**: 基礎設施 / 平台工程
+
+**時間線**: 2026/02（已部署）
+
+### 特點
+- Self-hosted Git 服務
+- 與 Squid 工單系統雙向 Webhook 整合
+- 工單 in_progress → 自動建立 feature branch
+- PR merged → 工單自動完成
+- GitHub 單向 Mirror（外出備份）
 
 ---
 
@@ -580,7 +663,11 @@ squid/
 
 2025/01 ────── Squid 專案管理系統 ────── 至今
 
+2025    ────── CommTool / NLIDS CLI / Secret Rotator ────── 至今
+
 2025/06 ────── Tentacle Frontend ────── 至今
+
+2026/02 ────── Gitea Git Server (自架) ────── 至今
 ```
 
 ---

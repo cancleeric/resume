@@ -1,158 +1,84 @@
-# 王英豪 個人履歷 📋
+# 王英豪 個人履歷
 
-> 資深全端工程師 | 25年軟體開發經驗 | 颶風軟體有限公司負責人
+> 技術架構師 / 工程主管 | 25 年軟體工程經驗 | 12+ Production Systems | 颶風軟體有限公司負責人
 
-## 📄 履歷概覽
+---
 
-這是王英豪（WANG YING HAO）的個人履歷文件，記錄了超過25年的軟體開發經驗與專業技能。
+## 履歷版本導覽
 
-### 👨‍💻 核心專長
+| 檔案 | 定位 | 適用職位 | 核心亮點 |
+|------|------|---------|---------|
+| **resume.md** | 主版 - 架構師導向 | 技術主管 / 架構師 | Squid 12 系統生態、8 人團隊、架構決策 |
+| **resume_dotnet.md** | C# / .NET Core 強化 | .NET 資深 / 主管 | LIDS OAuth2、信保基金、Blazor |
+| **resume_python_ai.md** | Python / AI 強化 | Python / AI 工程師 | Squid API、MCP Server、scikit-learn |
+| **resume_java.md** | Java 強化 | Java 開發 / 架構 | OOP 跨語言設計模式、Java ↔ C# 遷移 |
+| **resume_fullstack.md** | 全端 / React 強化 | 全端工程師 | React 18、TypeScript、iOS、SDK 開發 |
+| **resume_security.md** | 網路安全強化 | 資安工程師 / 架構 | LIDS OAuth2/MFA、Secret Rotator、加密 |
 
-- **全端開發**：前端 + 後端 + 行動應用開發
-- **多語言專精**：C#, Python, Java, Swift, JavaScript/TypeScript, PHP 等
-- **雲端服務**：Azure, Firebase, Apple CloudKit
-- **大型系統架構**：ERP、CRM、電子商務平台設計與開發
+---
 
-### 🏢 當前職位
+## 投遞建議
 
-- **統一錢包後台專案** - 系統分析師 (SA)（2025年至今）
-- **颶風軟體有限公司** - 公司負責人 / 總經理 / 高級工程師（2002年至今）
-- **中小企業信用保證基金** - .NET Engineer（2024-2025）
+### 選擇 resume.md（主版）：
+- 技術主管、架構師、CTO、Engineering Manager 職位
+- 展示架構決策能力與團隊管理經驗
 
-## 📁 文件結構
+### 選擇 resume_dotnet.md：
+- .NET Developer、C# Engineer、Blazor Developer 職位
+- 具備 .NET Framework → .NET 8 遷移實務
 
-```
-resume/
-├── README.md              # 本文件（履歷概覽）
-├── INSTRUCTIONS.md        # AI 更新指南（年資計算規則）
-├── PROJECTS.md            # 專案技術詳細清單
-├── resume.md              # 現代簡潔版履歷（主履歷）
-├── resume_formatted.md    # 格式化整理版履歷
-├── resume_dotnet_vue.md   # .NET + Vue.js 專精版
-├── resume_old.md          # 傳統詳細版履歷
-└── Vue_Interview_Notes.md # Vue.js 面試筆記
-```
+### 選擇 resume_python_ai.md：
+- Python Engineer、AI Engineer、Backend Developer 職位
+- 具備 FastAPI、MCP (Model Context Protocol)、ML 整合經驗
 
-## 📋 履歷版本說明
+### 選擇 resume_java.md：
+- Java Developer、Java Architect 職位
+- 強調 OOP 跨語言能力、Design Pattern 深度實踐
 
-### 🎯 `resume_formatted.md` - 格式化整理版（最新推薦）
-- ✅ **結構清晰**：內容組織良好，易於閱讀
-- ✅ **資訊完整**：包含最新專案與技能
-- ✅ **格式統一**：專業排版，適合各種場合
+### 選擇 resume_fullstack.md：
+- Full-Stack Developer、Frontend Engineer、React Developer 職位
+- 橫跨 Web + Mobile + API + SDK
 
-### 💻 `resume_dotnet_vue.md` - .NET + Vue.js 專精版
-- ✅ **技術聚焦**：突出 .NET 與 Vue.js 開發經驗
-- ✅ **專案導向**：展示相關技術棧專案成果
-- ✅ **適用場合**：針對 .NET 或前端開發職位
+### 選擇 resume_security.md：
+- 資安工程師、Security Architect、IAM Engineer 職位
+- 自建 OAuth2/OIDC + MFA + 密鑰輪替
 
-### 📱 `resume.md` - 現代簡潔版
-- ✅ **ATS系統優化**：關鍵字標籤、結構清晰
-- ✅ **重點突出**：聚焦最近5年重要專案
-- ✅ **現代化設計**：表情符號、視覺層次
-- ✅ **適用場合**：線上投遞、大公司應徵、國外公司
+---
 
-### 📚 `resume_old.md` - 傳統詳細版
-- ✅ **完整專案歷史**：展示25年完整工作經驗
-- ✅ **詳細技術描述**：每個專案的完整技術棧
-- ✅ **傳統履歷格式**：HR熟悉的條列式格式
-- ✅ **適用場合**：中小企業面試、顧問接案、技術主管職位
+## 核心成就
 
-### 📖 `Vue_Interview_Notes.md` - Vue.js 面試筆記
-- ✅ **核心概念**：響應式系統、組件化、生命週期
-- ✅ **常見問題**：實際面試中的高頻問題與解答
-- ✅ **實作範例**：具體程式碼範例與最佳實踐
-- ✅ **適用場合**：前端面試準備、技術複習
+| 指標 | 數字 |
+|------|------|
+| 軟體工程經驗 | 25 年（2001-2026） |
+| 技術管理經驗 | 24 年（2002-2026） |
+| 生產系統數量 | 12+ 個互相整合的服務 |
+| 團隊規模 | 8 人跨職能團隊 |
+| 企業客戶數 | 100+ |
+| 程式語言 | 10+ 種 |
+| 框架與技術 | 20+ 種 |
+| 資料表管理 | 50+ 表（Squid） |
+| API 端點 | 100+（Squid API） |
 
-### 🎯 `resume.md` - 現代簡潔版
+---
 
-- ✅ **ATS系統優化**：關鍵字標籤、結構清晰
-- ✅ **重點突出**：聚焦最近5年重要專案
-- ✅ **現代化設計**：表情符號、視覺層次
-- ✅ **適用場合**：線上投遞、大公司應徵、國外公司
-
-### 📚 `resume_old.md` - 傳統詳細版
-
-- ✅ **完整專案歷史**：展示25年完整工作經驗
-- ✅ **詳細技術描述**：每個專案的完整技術棧
-- ✅ **傳統履歷格式**：HR熟悉的條列式格式
-- ✅ **適用場合**：中小企業面試、顧問接案、技術主管職位
-
-## 🚀 重點專案經驗
-
-### 📈 最新專案（2025年）
-
-- **統一錢包後台專案** - 系統分析師 (SA)，金融科技後台系統開發
-
-### 🏆 近期重點專案
-
-- **LocalIdentityServer (LIDS)**（2024/11-至今）- 後端架構師 / .NET 開發工程師
-- **Squid 專案管理系統**（2025/01-至今）- 後端架構師 / Python 開發工程師
-- **信保基金信用保證網路作業系統**（2024/05-2025/07）- .NET Engineer
-- **LifeSnap 多功能社交遊戲平台**（2024/03-2024/04）- iOS 開發工程師
-- **STA 組織綜合管理平台**（2019/02-2021/02）- 全端工程師
-
-### 💻 技術亮點
-
-- 🔧 **現代化技術棧**：.NET 8, ASP.NET Core, Blazor Server, SwiftUI, React 18, FastAPI
-- 🔐 **認證與安全**：OAuth 2.0 / OIDC, JWT, MFA (TOTP/Email/SMS)
-- ☁️ **雲端整合**：Google Cloud Run, Firebase, Azure, CloudKit
-- 📱 **跨平台開發**：Web, iOS, CLI 工具
-- 🏗️ **系統架構設計**：微服務、多租戶架構、RESTful API、WebSocket
-- 🚀 **DevOps & CI/CD**：Docker, Git Hooks, GitHub Actions, Prometheus
-
-## 💼 專業經驗統計
-
-| 角色 | 年資 | 主要成就 |
-|------|------|----------|
-| **技術管理 & 創業** | 24年 | 創立軟體公司，管理技術團隊，服務100+ 企業客戶 |
-| **系統程式開發** | 25年 | 全端開發，多平台應用開發 |
-| **系統架構設計** | 18年 | 大型ERP/CRM/電商/身份認證平台架構師 |
-| **系統分析** | 15年 | 需求分析，技術選型，專案規劃 |
-| **DevOps & CI/CD** | 5年 | Docker 容器化，Git Hooks 自動化，Cloud Run 部署 |
-
-### 📊 專案規模統計
-
-* **程式碼規模**：累計管理 6,600+ 個程式碼檔案，約 7.2 GB 專案規模
-* **Squid 生態系統**：建立完整的開發生態（後端 API + 前端 + CLI + SDK + 認證服務）
-* **技術棧廣度**：精通 18 種程式語言，涵蓋 130+ 種框架、工具與技術
-* **資料庫管理**：設計與維護 50+ 資料表的企業級系統
-
-## 🎯 使用指南
-
-### 📤 投遞建議
-
-**選擇 `resume.md` 當：**
-
-- 🏢 大型企業、外商公司
-- 💻 科技新創、軟體公司  
-- 🌐 線上求職平台投遞
-- 🤖 需要通過ATS系統篩選
-
-**選擇 `resume_old.md` 當：**
-
-- 🏭 傳統產業、中小企業
-- 🤝 面對面面試場合
-- 📋 需要展示完整工作歷程
-- 💼 顧問、接案、技術主管職位
-
-## 📞 聯絡資訊
+## 聯絡資訊
 
 - **Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
 - **手機**：0921-107-206
 - **期望薪資**：NT$ 2,400,000 / 年
 - **工作地點**：新北市中和區（可配合北部地區工作）
 
-## 📖 如何使用
+---
 
-1. **快速瀏覽**：閱讀本 README 了解基本資訊
-2. **詳細了解**：開啟對應的履歷版本檔案
-3. **專案展示**：可要求提供 GitHub 或作品集連結
+## 支援檔案
+
+| 檔案 | 用途 |
+|------|------|
+| `INSTRUCTIONS.md` | AI 更新指南（年資計算規則） |
+| `PROJECTS.md` | 專案技術詳細清單（含內部資訊，勿外傳） |
+| `PROJECTS_PUBLIC.md` | 專案技術清單（公開版） |
+| `Vue_Interview_Notes.md` | Vue.js 面試筆記 |
 
 ---
 
-**最後更新：** 2026年1月26日
-
-> 💡 **備註**：
-> - 已更新最新專案經驗（LocalIdentityServer、Squid 生態系統）
-> - 新增 DevOps & CI/CD 專業能力
-> - 履歷版本均已針對不同使用場景優化，請根據應徵職位選擇合適版本
+**最後更新：** 2026 年 2 月
