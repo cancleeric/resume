@@ -70,12 +70,10 @@
 
 ---
 
-## 支援檔案
+## 其他資源
 
 | 檔案 | 用途 |
 |------|------|
-| `INSTRUCTIONS.md` | AI 更新指南（年資計算規則） |
-| `PROJECTS.md` | 專案技術詳細清單（含內部資訊，勿外傳） |
 | `PROJECTS_PUBLIC.md` | 專案技術清單（公開版） |
 | `Vue_Interview_Notes.md` | Vue.js 面試筆記 |
 
