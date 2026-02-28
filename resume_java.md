@@ -24,7 +24,7 @@
 * **設計模式實戰**：25 年 OOP 經驗，在 Java / C# / Python / TypeScript 中實踐 Repository、Factory、Observer、Strategy、MVVM 等模式
 * **跨語言架構遷移**：將 Java 世界的 Spring Boot 分層概念（Controller → Service → Repository）成功應用到 FastAPI（API → BAL → CORL → DAL）與 ASP.NET Core
 * **企業級系統設計**：主導建構 12 個生產系統的 Squid 企業級生態系統
-* **團隊管理**：24 年技術管理，現管理 8 人跨職能工程團隊
+* **團隊管理**：24 年技術管理，現管理 11 人跨職能工程團隊
 
 ---
 
@@ -109,7 +109,7 @@ Business Logic                 →  core_logic_layer/ (CORL)
 * **模式**：Component-based Architecture、State Management (Hooks vs Java State)、BFF Pattern
 * **規模**：382 TypeScript 檔案
 
-### LifeSnap iOS — MVVM in Swift (2024/03-2024/04)
+### LifeSnap iOS — MVVM in Swift (2023/06-2024/04)
 **iOS 開發工程師 | 3 人團隊**
 
 * **架構**：MVVM + Protocol-Oriented Design（Swift 版的 Interface-based Programming）
@@ -142,12 +142,12 @@ Business Logic                 →  core_logic_layer/ (CORL)
 ## 工作經歷 - Professional Experience
 
 ### .NET Engineer | 中小企業信用保證基金
-*2024/05 - 2025/07*
-* 8 人團隊，.NET Framework 4.6 → .NET 8 升級（類比 Java 8 → Java 17 遷移）
+*2024/05 - 2026/02*
+* 8 人開發團隊（派遣方編制），.NET Framework 4.6 → .NET 8 升級（類比 Java 8 → Java 17 遷移）
 
 ### 公司負責人 / 總經理 / 技術架構師 | 颶風軟體有限公司
 *2002 - 至今（24 年）*
-* 管理 8 人團隊，100+ 企業客戶，12 個生產系統
+* 管理 11 人團隊，100+ 企業客戶，12 個生產系統
 
 ### 軟體工程師 / 專案經理 | 米迪亞
 *2001 - 2002*
@@ -173,7 +173,7 @@ Business Logic                 →  core_logic_layer/ (CORL)
 | **OOP / Design Patterns** | 25 年 | 從 Java 起步，跨 10+ 語言實踐 |
 | **Java 直接經驗** | 2 年 | 早期職涯核心語言 |
 | **Java 生態類比（C#/.NET）** | 20+ 年 | C# 與 Java 高度相似，可快速遷移 |
-| **技術管理 & 創業** | 24 年 | 8 人團隊管理 |
+| **技術管理 & 創業** | 24 年 | 11 人團隊管理 |
 | **系統架構設計** | 18 年 | 12 個生產系統 |
 
 ---

@@ -119,7 +119,7 @@
 
 ---
 
-### 4. LifeSnap iOS — 社交遊戲平台 (2024/03 - 2024/04)
+### 4. LifeSnap iOS — 社交遊戲平台 (2023/06 - 2024/04)
 
 **角色**：iOS Developer | **團隊**：3 人 | **狀態**：已上線 App Store
 
@@ -230,7 +230,7 @@
 ## 工作經歷 - Professional Experience
 
 ### .NET Engineer | 中小企業信用保證基金
-*2024/05 - 2025/07 | 8 人開發團隊*
+*2024/05 - 2026/02 | 8 人開發團隊*
 
 - 主導舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor
 - 直保線上填報系統全新開發 (.NET 5)
@@ -241,7 +241,7 @@
 *2002 - 至今（24 年）*
 
 - 創立並經營軟體開發公司，累積服務 **100+ 企業客戶**
-- 管理 **8 人跨職能技術團隊**，負責技術培訓與 Code Review
+- 管理 **11 人跨職能技術團隊**，負責技術培訓與 Code Review
 - 主導設計 Squid 企業級生態系統（12 個生產系統）
 - 建立兩層式 CI/CD 架構（Git Hooks post-commit + pre-push）
 - 建立工單驅動開發流程與 140 分評審制度
@@ -260,7 +260,7 @@
 | 專業領域 | 年資 | 主要成就 |
 |----------|------|---------|
 | **Full-Stack Development 全端開發** | 25 年 | React + Node.js + Python + iOS 完整技術棧 |
-| **Technical Management 技術管理** | 24 年 | 創立軟體公司，管理 8 人團隊，100+ 企業客戶 |
+| **Technical Management 技術管理** | 24 年 | 創立軟體公司，管理 11 人團隊，100+ 企業客戶 |
 | **System Architecture 系統架構** | 18 年 | Multi-tenant SaaS / OAuth2 / Microservices |
 | **Frontend Development 前端開發** | 8 年 | React 18 + TypeScript 企業級 SPA |
 | **iOS Development 行動開發** | 2+ 年 | SwiftUI + SpriteKit，已上線 App Store |

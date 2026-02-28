@@ -22,7 +22,7 @@
 
 獨立開發 **4 個 Python 工具/SDK**：Squid API 後端、Neritic CLI DevOps 工具鏈、CommTool 統一通訊平台、Squid Python SDK — 展現從系統架構到工具鏈的完整 Python 工程能力。整合 **scikit-learn** 進行異常偵測與專案指標分析，具備 Machine Learning 實務應用經驗。
 
-擁有 **25 年**跨語言軟體開發經驗，**24 年**技術管理實務，現管理 **8 人跨職能工程團隊**，建立工單驅動的標準化開發流程與自動化評審系統。
+擁有 **25 年**跨語言軟體開發經驗，**24 年**技術管理實務，現管理 **11 人跨職能工程團隊**，建立工單驅動的標準化開發流程與自動化評審系統。
 
 ---
 
@@ -239,7 +239,7 @@ PostgreSQL (Production Data)
 ## 工作經歷 - Professional Experience
 
 ### .NET Engineer | 中小企業信用保證基金
-*2024/05 - 2025/07*
+*2024/05 - 2026/02*
 
 * **8 人開發團隊**，負責信用保證網路作業系統現代化
 * 主導舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor
@@ -249,7 +249,7 @@ PostgreSQL (Production Data)
 *2002 - 至今（24 年）*
 
 * 創立並經營軟體開發公司，累積服務 **100+ 企業客戶**
-* 管理 **8 人跨職能技術團隊**（開發、DBA、DevOps、部署、助理）
+* 管理 **11 人跨職能技術團隊**（開發、DBA、DevOps、部署、助理）
 * 主導設計 **Squid 企業級生態系統**（12 個生產系統）
 * 建立工單驅動開發流程與 140 分評審制度
 * 自架 Gitea Git Server — 工單與 Branch 雙向自動化 Hook
@@ -263,7 +263,7 @@ PostgreSQL (Production Data)
 * **功能**：Multi-tenant OAuth2.0 + OIDC Provider, MFA (TOTP/Email/SMS), Break-glass Access
 * **由 Eric 主導架構設計**，與 Squid API 深度整合
 
-### LifeSnap — iOS 多人對戰手遊 (2024/03-2024/04)
+### LifeSnap — iOS 多人對戰手遊 (2023/06-2024/04)
 * **技術**：SwiftUI + SpriteKit + Firebase + CloudKit + ChatGPT API
 * **亮點**：整合 ChatGPT AI 聊天功能，已上線 App Store
 
@@ -282,7 +282,7 @@ PostgreSQL (Production Data)
 |----------------|-----------|------------------------|
 | **Python 開發 Python Development** | 5+ 年 | 建構 4 個 Python 工具/SDK，100+ API 端點 |
 | **AI / ML 整合 AI Integration** | 2+ 年 | MCP 整合, scikit-learn 異常偵測, ChatGPT API |
-| **技術管理 Technical Management** | 24 年 | 管理 8 人團隊，100+ 企業客戶 |
+| **技術管理 Technical Management** | 24 年 | 管理 11 人團隊，100+ 企業客戶 |
 | **系統架構 System Architecture** | 18 年 | Multi-tenant SaaS, OAuth2, Microservices |
 | **軟體工程 Software Engineering** | 25 年 | 12 個生產系統的企業級生態系統 |
 | **DevOps & CI/CD** | 5 年 | 兩層式 CI/CD, Docker, Cloud Run |

@@ -20,7 +20,7 @@
 
 擁有 **25 年** C# / .NET 開發經驗，完整歷經 .NET Framework 1.1 到 .NET 8 每一代技術演進，具備深厚的平台遷移與現代化實務能力。精通 **ASP.NET Core 8.0**、**Blazor Server / WebAssembly**、**Entity Framework Core**，並從零自建 OAuth 2.0 / OIDC 身份認證伺服器 **LocalIdentityServer (LIDS)**，涵蓋 428 個 C# 檔案、完整的多租戶隔離、MFA、JWT RS256 簽章等企業級安全機制。
 
-同時擁有 **24 年技術管理**經驗，現管理 **8 人跨職能工程團隊**，建立工單驅動開發流程、140 分標準化評審制度、兩層式 Git Hooks CI/CD 架構，從本地 Docker 開發到 GCP Cloud Run 生產環境的完整 DevOps Pipeline。
+同時擁有 **24 年技術管理**經驗，現管理 **11 人跨職能工程團隊**，建立工單驅動開發流程、140 分標準化評審制度、兩層式 Git Hooks CI/CD 架構，從本地 Docker 開發到 GCP Cloud Run 生產環境的完整 DevOps Pipeline。
 
 ---
 
@@ -107,7 +107,7 @@
 
 ### 2. 信保基金信用保證網路作業系統 — .NET 現代化遷移
 
-**時間**：2024/05 - 2025/07
+**時間**：2024/05 - 2026/02
 **角色**：.NET Engineer | 8 人開發團隊
 **客戶**：中小企業信用保證基金（SME Credit Guarantee Fund）
 
@@ -224,7 +224,7 @@
 ## 工作經歷 - Professional Experience
 
 ### .NET Engineer | 中小企業信用保證基金
-*2024/05 - 2025/07*
+*2024/05 - 2026/02*
 
 * **8 人開發團隊**，負責信用保證網路作業系統開發與維護
 * 主導 .NET Framework 4.6 → .NET 8 + Blazor WebAssembly 現代化遷移
@@ -235,7 +235,7 @@
 *2002 - 至今（24 年）*
 
 * 創立並經營軟體開發公司，累積服務 **100+ 企業客戶**
-* 管理 **8 人跨職能技術團隊**（開發、DBA、DevOps、部署、助理）
+* 管理 **11 人跨職能技術團隊**（開發、DBA、DevOps、部署、助理）
 * 主導設計 Squid 企業級生態系統（12 個生產系統，含 .NET 與 Python 服務）
 * 建立工單驅動開發流程與 140 分標準化評審制度
 * 經歷完整 .NET 技術棧演進：.NET Framework 1.1 → .NET 8
@@ -277,7 +277,7 @@
 | 專業領域 | 年資 | 主要成就 |
 |----------|------|---------|
 | **.NET / C# 開發** | 20+ 年 | 從 .NET Framework 1.1 到 .NET 8 全版本實務經驗 |
-| **技術管理 & 創業** | 24 年 | 創立軟體公司，管理 8 人團隊，服務 100+ 企業客戶 |
+| **技術管理 & 創業** | 24 年 | 創立軟體公司，管理 11 人團隊，服務 100+ 企業客戶 |
 | **系統架構設計** | 18 年 | 自建 OAuth2/OIDC Server、Multi-tenant SaaS、Microservices |
 | **Blazor 開發** | 3 年 | Blazor Server + WebAssembly，兩個生產級系統 |
 | **系統程式開發** | 25 年 | 12 個生產系統的企業級生態系統 |

@@ -168,7 +168,7 @@ PostgreSQL, Redis, Docker, GCP (Cloud Run, Cloud Functions, Secret Manager, Fire
 
 ### .NET 工程師 | 信保基金
 
-**期間**：2024/05 — 2025/07
+**期間**：2024/05 — 2026/02
 
 銀行等級安全合規開發，參與金融機構內部系統維護與安全標準實作。
 
