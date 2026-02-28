@@ -197,7 +197,7 @@ PostgreSQL, Redis, Docker, GCP (Cloud Run, Cloud Functions, Secret Manager, Fire
 | 學校 | 科系 | 備註 |
 |------|------|------|
 | 東南科技大學 | 數位電子系（二專） | 第一名畢業 |
-| 內湖高級工業職業學校 | — | 二等榮譽獎章 |
+| 內湖高級工業職業學校 | — | 三等榮譽獎章 |
 
 ---
 
