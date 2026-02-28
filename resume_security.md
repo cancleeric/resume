@@ -166,12 +166,6 @@ PostgreSQL, Redis, Docker, GCP (Cloud Run, Cloud Functions, Secret Manager, Fire
 
 ## 工作經歷
 
-### 系統分析師 (SA) | 統一錢包後台專案
-
-**期間**：2025/06 — 現職
-
-金融系統安全架構設計，負責錢包後台系統之安全合規需求分析。
-
 ### .NET 工程師 | 信保基金
 
 **期間**：2024/05 — 2025/07

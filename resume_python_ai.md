@@ -238,13 +238,6 @@ PostgreSQL (Production Data)
 
 ## 工作經歷 - Professional Experience
 
-### 系統分析師 (SA) | 統一錢包後台專案
-*2025/06 - 至今（1 年契約）*
-
-* 負責金融科技後台系統架構設計與 API 開發
-* 技術棧：.NET Core 2.0, C#, SQL Server
-* 第三方金流整合與權限管理系統
-
 ### .NET Engineer | 中小企業信用保證基金
 *2024/05 - 2025/07*
 

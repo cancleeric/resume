@@ -141,10 +141,6 @@ Business Logic                 →  core_logic_layer/ (CORL)
 
 ## 工作經歷 - Professional Experience
 
-### 系統分析師 (SA) | 統一錢包後台專案
-*2025/06 - 至今*
-* 金融科技後台系統架構設計，.NET Core 2.0
-
 ### .NET Engineer | 中小企業信用保證基金
 *2024/05 - 2025/07*
 * 8 人團隊，.NET Framework 4.6 → .NET 8 升級（類比 Java 8 → Java 17 遷移）
