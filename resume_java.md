@@ -121,11 +121,13 @@ Business Logic                 →  core_logic_layer/ (CORL)
 
 ## Java 直接經驗 - Direct Java Experience
 
-### 東岸互動 — Web 海報編輯器 (2000-2001)
-**軟體工程師 / 技術長 (CTO)**
+### 東岸互動 — Web POP 海報編輯器 (2000-2001)
+**首席工程師（獨立開發）**
 
-* **技術**：Java, ASP, C++, JavaScript, SQL Server, MySQL
-* **專案**：Web 版海報編輯器 — 金流串接 / 印刷廠串接 / 會員系統 / 物流收送
+* 獨自承擔全專案開發，從企畫到上線一人完成
+* **技術演進**：Java + ASP + C++ 第一代架構 → Apache + PHP + MySQL 重構
+* Java 負責業務邏輯層；C++ 模組整合 Photoshop 伺服器端，支援向量文字與向量圖合成
+* 串接金流（藍新科技）、印刷廠 API、物流系統；後台供數十位美編日常作業
 * 這是職涯初期使用 Java 進行企業級 Web 開發的起點
 
 ### 跨語言 Java 思維持續應用
@@ -153,9 +155,9 @@ Business Logic                 →  core_logic_layer/ (CORL)
 *2001 - 2002*
 * C++ / WinCE PDA 應用開發
 
-### 軟體工程師 / CTO | 東岸互動
-*2000 - 2001*
-* **Java** + ASP + C++ 企業級 Web 應用開發
+### 首席工程師 | 東岸互動
+*2000/12 - 2001/12*
+* POP 線上海報編輯系統獨立開發，**Java** + ASP + C++ → Apache + PHP + MySQL 兩代架構
 
 ---
 
