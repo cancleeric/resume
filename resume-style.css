@@ -1,0 +1,185 @@
+/* Resume PDF Stylesheet
+   - Clean white background (ATS-friendly)
+   - Professional dark headers
+   - Chinese typography optimization
+*/
+
+/* ── Page Setup ── */
+@page {
+  margin: 16mm 18mm 16mm 18mm;
+  size: A4;
+}
+
+/* ── Base ── */
+body {
+  font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background: #ffffff;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Headings ── */
+h1 {
+  font-size: 20pt;
+  font-weight: 700;
+  color: #ffffff;
+  background: #1e2d40;
+  margin: -16mm -18mm 12pt -18mm;
+  padding: 14pt 18mm 12pt 18mm;
+  letter-spacing: 0.04em;
+  border-bottom: 4px solid #3a7bd5;
+  page-break-after: avoid;
+}
+
+h2 {
+  font-size: 11.5pt;
+  font-weight: 700;
+  color: #ffffff;
+  background: #2c4a6e;
+  margin: 16pt -18mm 8pt -18mm;
+  padding: 5pt 18mm 5pt 18mm;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  page-break-after: avoid;
+}
+
+h3 {
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #1e2d40;
+  margin: 12pt 0 4pt 0;
+  padding-bottom: 2pt;
+  border-bottom: 1.5px solid #3a7bd5;
+  page-break-after: avoid;
+}
+
+h4 {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #2c4a6e;
+  margin: 8pt 0 3pt 0;
+  page-break-after: avoid;
+}
+
+/* ── Paragraph ── */
+p {
+  margin: 4pt 0;
+  orphans: 3;
+  widows: 3;
+}
+
+/* ── Lists ── */
+ul, ol {
+  margin: 4pt 0 4pt 0;
+  padding-left: 18pt;
+}
+
+li {
+  margin: 2pt 0;
+  line-height: 1.7;
+}
+
+/* ── Links ── */
+a {
+  color: #3a7bd5;
+  text-decoration: none;
+}
+
+/* ── Horizontal Rule ── */
+hr {
+  display: none;
+}
+
+/* ── Code Blocks ── */
+pre {
+  background: #f4f6f9;
+  border: 1px solid #d0d7e3;
+  border-left: 3px solid #3a7bd5;
+  border-radius: 3px;
+  padding: 8pt 10pt;
+  font-size: 8.5pt;
+  line-height: 1.5;
+  overflow-x: auto;
+  margin: 6pt 0;
+  page-break-inside: avoid;
+}
+
+code {
+  font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 8.5pt;
+  background: #f0f3f8;
+  border: 1px solid #d8dee9;
+  border-radius: 2px;
+  padding: 1pt 4pt;
+  color: #2c4a6e;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #1a1a1a;
+}
+
+/* ── Tables ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8pt 0;
+  font-size: 9.5pt;
+  page-break-inside: avoid;
+}
+
+thead tr {
+  background: #1e2d40;
+  color: #ffffff;
+}
+
+thead th {
+  padding: 5pt 8pt;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+tbody tr:nth-child(even) {
+  background: #f4f6f9;
+}
+
+tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+tbody td {
+  padding: 4pt 8pt;
+  border-bottom: 1px solid #e0e6ef;
+  vertical-align: top;
+}
+
+/* ── Bold / Strong ── */
+strong {
+  font-weight: 700;
+  color: #1e2d40;
+}
+
+/* ── Blockquote (subtitle line under h1) ── */
+blockquote {
+  border-left: 3px solid #3a7bd5;
+  margin: 6pt 0;
+  padding: 3pt 10pt;
+  color: #4a5568;
+  font-size: 9.5pt;
+  background: #f8fafc;
+}
+
+/* ── Page Break Control ── */
+h2, h3 {
+  page-break-before: auto;
+}
+
+.page-break {
+  page-break-before: always;
+}
