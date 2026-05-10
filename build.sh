@@ -10,6 +10,9 @@ preset_for() {
     resume_dotnet.md)    echo "presets/dotnet.yaml" ;;
     resume_python_ai.md) echo "presets/python_ai.yaml" ;;
     resume_security.md)  echo "presets/security.yaml" ;;
+    resume_fullstack.md) echo "presets/fullstack.yaml" ;;
+    resume_java.md)      echo "presets/java.yaml" ;;
+    resume_ios.md)       echo "presets/ios.yaml" ;;
     *) echo "" ;;
   esac
 }
@@ -26,8 +29,15 @@ build_one() {
     meta_arg="--metadata-file=$preset"
   fi
 
+  # 大型參考文檔（PROJECTS / Vue_Interview）TOC 太長，限制 depth=1
+  local toc_depth=2
+  case "$f" in
+    PROJECTS.md|PROJECTS_PUBLIC.md|Vue_Interview_Notes.md) toc_depth=1 ;;
+  esac
+
   pandoc "$f" -f gfm -t html5 \
     --template=template.html5 \
+    --toc --toc-depth=$toc_depth \
     --metadata title="$title" \
     $meta_arg \
     -o "$out"

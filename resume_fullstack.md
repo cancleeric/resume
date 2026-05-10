@@ -16,18 +16,26 @@
 
 ## 專業摘要 - Professional Summary
 
-**資深全端工程師 | React + TypeScript + Node.js + Python + iOS**
+**資深全端工程師 | Next.js + React + Node.js + Python + iOS | 集團技術長**
 
-擁有 **25 年**軟體工程經驗，涵蓋 Web Frontend、Backend API、Mobile App 與 SDK 開發。近年專注於 **React 18 + TypeScript** 企業級 Web 應用開發，同時具備 **Node.js/Express.js** 中間層、**Python FastAPI** 後端 API、**iOS SwiftUI** 原生應用的完整全端開發能力。
+擁有 **25 年**軟體工程經驗，涵蓋 Web Frontend、Backend API、Mobile App、SDK 開發。創立並主導 **HurricaneGroup（颶風集團）** 6 家子公司、**30+ 生產系統**、**Cloud Run 19 services**，從 Next.js / React 18 / TypeScript SPA、Node.js / Express.js / Fastify BFF、Python FastAPI / .NET 8 / Blazor 後端，到 SwiftUI iOS 原生應用，獨立完成多款對外 SaaS 全端開發。
 
-主導建構 **Squid 企業級平台生態系統** — 獨立完成從 React Frontend、Node.js BFF、Python API Backend 到 TypeScript SDK 的完整技術棧開發。具備從零建構產品到上線的完整經驗，包含架構設計、API 開發、UI 實作、測試部署的全流程能力。
+**集團 8 大對外 SaaS 全端負責**：
+- **Manta v2.16.1** — AI Workflow Canvas（FastAPI + React Canvas + LIDS SSO）
+- **Gyre** — 社群內容排程 SaaS（Next.js + Fastify + Python AI service）
+- **antique-master-web** — 文創全端（Next.js + FastAPI，167 tests）
+- **dagongzai 打工仔** — SaaS（FastAPI + Next.js + Scraper）
+- **天機 Tianji** v1.2.2 — 命理 App（FastAPI + Jinja SSR + Hurricane Pay）
+- **海螺 Conch** — Multi-tenant 預約 SaaS（FastAPI + RLS + Next.js）
+- **Tentacle Frontend / BFF** — 382 個 TSX 檔企業級 SPA + Express BFF
+- **LifeSnap iOS** — SwiftUI + SpriteKit 上架 App Store（HurricaneDigital）
 
 **核心技術亮點**：
-- **React 18 + TypeScript**：382 個 TSX 檔案的企業級 SPA（Dashboard、OIDC 認證、Stripe/PayPal 支付）
-- **Node.js + Express.js**：BFF 中間層（Session 管理、OIDC 整合、Rate Limiting）
-- **TypeScript SDK**：ESM/CJS 雙格式、100% 測試覆蓋率、瀏覽器 + Node.js 通用
-- **iOS SwiftUI**：已上線 App Store 的社交遊戲平台（SpriteKit 遊戲引擎）
-- **Python FastAPI**：50+ 資料表、100+ API 端點的企業級後端
+- **Next.js + React 18 + TypeScript**：5 個前端 SaaS 上 Cloud Run，響應式 + i18n + OAuth
+- **Node.js / Express.js / Fastify BFF**：Session / OIDC / Rate Limiting / Webhook 整合
+- **Python FastAPI 後端**：100+ API 端點、Multi-tenant、PostgreSQL RLS、async asyncpg
+- **.NET 8 / Blazor**：hurricane-books 帳務 SaaS、pxmart-warehouse WMS（810 tests, 92% cov）
+- **iOS SwiftUI + SpriteKit**：LifeSnap、dagongzai-ios 上架 App Store
 
 ---
 
@@ -259,11 +267,12 @@
 
 | 專業領域 | 年資 | 主要成就 |
 |----------|------|---------|
-| **Full-Stack Development 全端開發** | 25 年 | React + Node.js + Python + iOS 完整技術棧 |
-| **Technical Management 技術管理** | 24 年 | 創立軟體公司，管理 11 人團隊，100+ 企業客戶 |
-| **System Architecture 系統架構** | 18 年 | Multi-tenant SaaS / OAuth2 / Microservices |
-| **Frontend Development 前端開發** | 8 年 | React 18 + TypeScript 企業級 SPA |
-| **iOS Development 行動開發** | 2+ 年 | SwiftUI + SpriteKit，已上線 App Store |
+| **Full-Stack Development 全端開發** | 25 年 | Next.js / React / Node.js / Python / .NET / iOS 完整技術棧 |
+| **集團技術領導 Group Leadership** | 24 年 | HurricaneGroup 6 子公司，30+ 生產系統，Cloud Run 19 services |
+| **System Architecture 系統架構** | 18 年 | Multi-tenant SaaS / OAuth2 / LLM Gateway / 集團統一基建 |
+| **Frontend Development 前端開發** | 8 年 | Next.js + React 18 + TypeScript 企業級 SPA × 5 |
+| **Mobile Development 行動開發** | 3+ 年 | SwiftUI + SpriteKit，App Store 上架（LifeSnap / dagongzai-ios）|
+| **企業客戶服務** | 24 年 | 100+ 企業客戶 |
 
 ---
 

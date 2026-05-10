@@ -61,6 +61,61 @@
       </div>
     </section>
 
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪---集團技術長--技術架構師"
+        id="toc-王英豪---集團技術長--技術架構師">王英豪 - 集團技術長 /
+        技術架構師</a>
+        <ul>
+        <li><a
+        href="#group-cto--technical-architect--25-年軟體工程經驗--30-production-systems--6-家集團子公司"
+        id="toc-group-cto--technical-architect--25-年軟體工程經驗--30-production-systems--6-家集團子公司">Group
+        CTO &amp; Technical Architect | 25 年軟體工程經驗 | 30+
+        Production Systems | 6 家集團子公司</a></li>
+        <li><a href="#聯絡資訊---contact-information"
+        id="toc-聯絡資訊---contact-information">聯絡資訊 - Contact
+        Information</a></li>
+        <li><a href="#專業摘要---professional-summary"
+        id="toc-專業摘要---professional-summary">專業摘要 - Professional
+        Summary</a></li>
+        <li><a href="#集團架構---group-structure"
+        id="toc-集團架構---group-structure">集團架構 - Group
+        Structure</a></li>
+        <li><a
+        href="#架構能力與技術領導---architecture--technical-leadership"
+        id="toc-架構能力與技術領導---architecture--technical-leadership">架構能力與技術領導
+        - Architecture &amp; Technical Leadership</a></li>
+        <li><a href="#核心技術棧---core-technical-skills"
+        id="toc-核心技術棧---core-technical-skills">核心技術棧 - Core
+        Technical Skills</a></li>
+        <li><a
+        href="#旗艦架構hurricanegroup-生態系統---flagship-architecture"
+        id="toc-旗艦架構hurricanegroup-生態系統---flagship-architecture">旗艦架構：HurricaneGroup
+        生態系統 - Flagship Architecture</a></li>
+        <li><a href="#工作經歷---professional-experience"
+        id="toc-工作經歷---professional-experience">工作經歷 -
+        Professional Experience</a></li>
+        <li><a href="#2026-q1-q2-重大成就---2026-recent-achievements"
+        id="toc-2026-q1-q2-重大成就---2026-recent-achievements">2026
+        Q1-Q2 重大成就 - 2026 Recent Achievements</a></li>
+        <li><a href="#其他重點專案---other-key-projects"
+        id="toc-其他重點專案---other-key-projects">其他重點專案 - Other
+        Key Projects</a></li>
+        <li><a href="#學歷---education" id="toc-學歷---education">學歷 -
+        Education</a></li>
+        <li><a href="#早期經歷---early-career-2000-2016"
+        id="toc-早期經歷---early-career-2000-2016">早期經歷 - Early
+        Career (2000-2016)</a></li>
+        <li><a href="#專業能力統計---professional-experience-summary"
+        id="toc-專業能力統計---professional-experience-summary">專業能力統計
+        - Professional Experience Summary</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </section>
+
     <section class="card">
       <h3 class="card__title">技術標籤</h3>
       <div class="tags">
@@ -686,5 +741,29 @@
   <p>© Eric Wang · HurricaneGroup · 王英豪 - 集團技術長 / 技術架構師</p>
 </footer>
 
+<script>
+// TOC scroll-spy
+(function () {
+  const tocLinks = document.querySelectorAll('.toc-nav a[href^="#"]');
+  if (!tocLinks.length) return;
+  const idMap = new Map();
+  tocLinks.forEach(a => {
+    const id = decodeURIComponent(a.getAttribute('href').slice(1));
+    const el = document.getElementById(id);
+    if (el) idMap.set(el, a);
+  });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const link = idMap.get(entry.target);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        tocLinks.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+  idMap.forEach((_, el) => observer.observe(el));
+})();
+</script>
 </body>
 </html>

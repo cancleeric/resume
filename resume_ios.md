@@ -16,11 +16,19 @@
 
 ## 專業摘要 - Professional Summary
 
-**資深 iOS 工程師 | 行動應用架構師 | SpriteKit 遊戲開發**
+**資深 iOS 工程師 | 行動應用架構師 | 集團技術長**
 
-擁有 **25 年**軟體工程經驗與 **24 年**技術管理實務，專精 iOS 原生應用與遊戲開發。獨立設計並開發 **LifeSnap** — 一款多人線上骨牌對戰遊戲 App，涵蓋 SpriteKit 遊戲引擎、SwiftUI 介面、Firebase 即時後端、StoreKit 內購系統、ChatGPT AI 整合、CloudKit 同步、推播通知等完整功能，App Store 已上架並持續維運。
+擁有 **25 年**軟體工程經驗與 **24 年**技術管理實務，專精 iOS 原生應用與遊戲開發。獨立設計並開發 **LifeSnap** — 多人線上骨牌對戰遊戲 App，涵蓋 SpriteKit 遊戲引擎、SwiftUI 介面、Firebase 即時後端、StoreKit 內購、ChatGPT AI 整合、CloudKit 同步、推播通知，App Store 已上架。
 
-近期主導 **LifeCrypto** 獨立 App 拆分（從 LifeSnap 解耦），實作 Clean Architecture 與 Repository Pattern，展現模組化架構設計能力。同時開發 **LifeSnapAdmin** — 以 C# Blazor Server 建構的 Firebase 後台管理系統（117 個 C# 檔案、800+ 單元測試），完成從行動端到後台的全棧交付。
+主導 **LifeCrypto** 獨立 App 拆分（從 LifeSnap 解耦，Clean Architecture + Repository Pattern），同時開發 **LifeSnapAdmin** — C# Blazor Server 後台（117 C# 檔、800+ 單元測試）。
+
+**集團行動端產品線（2026）**：
+- **LifeSnap** — SwiftUI + SpriteKit 多人遊戲（HurricaneDigital）
+- **LifeCrypto** — 加密貨幣追蹤（Clean Architecture）
+- **dagongzai-ios** — 打工仔行動端（HurricanePrime SaaS 配套）
+- **LifeSnapAdmin** — Blazor Server 後台 + iOS 配對
+
+創立並主導 **HurricaneGroup（颶風集團）** 6 家子公司、**30+ 生產系統**、**Cloud Run 19 services**，建立 C-suite 副手制虛擬高管團隊架構。
 
 ---
 
@@ -122,15 +130,21 @@
 
 ## 其他技術專案
 
-### Squid 企業級生態系統 | 技術架構師 | 2024/11 - 至今
-* 主導 12 個生產系統設計（API、OAuth2/OIDC 認證服務、Web 前端、BFF、SDK、CLI、MCP Server）
-* 管理 11 人跨職能工程團隊，建立 140 分評審制度
-* 技術棧：Python FastAPI / C# .NET 8 / React TypeScript / PostgreSQL / Docker / GCP
+### dagongzai-ios | 打工仔行動端 | 2026 - 至今
+* SwiftUI + Combine 配對 dagongzai SaaS 後端（HurricanePrime）
+* 與 dagongzai-api / web-production Cloud Run 服務整合
+
+### HurricaneGroup 集團生態系統 | 集團技術長 | 2002 - 至今
+* 主導 30+ 生產系統設計，跨 6 家子公司
+* Cloud Run 19 services 統一維運（HurricaneSoft 主責）
+* 集團統一基建：LIDS / Hurricane Vault / Hurricane Pay / Brain LLM Gateway / Anemone / Wiki.js / Gitea / Headscale
+* 建立 C-suite 副手制虛擬高管團隊架構、140 分評審制度
+* 技術棧：Python FastAPI / .NET 8 / React TypeScript / Next.js / Swift / PostgreSQL / Docker / GCP
 
 ### 企業級系統開發經驗（2002 - 至今）
-* 颶風軟體有限公司負責人 — 24 年技術管理與創業經驗
-* 曾開發 ERP、CRM、電子商務、信保基金投保系統等企業級軟體
-* 熟悉 C++、Java、C#、Python、JavaScript 等 10+ 種程式語言
+* 颶風軟體 → HurricaneGroup 集團負責人 — 24 年技術管理
+* 服務 100+ 企業客戶，含信保金融機構
+* 熟悉 C++ / Java / C# / Python / JavaScript / Swift / Go / Delphi 等 10+ 語言
 
 ---
 

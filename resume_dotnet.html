@@ -67,6 +67,56 @@ C# / .NET</span></div>
       </div>
     </section>
 
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪---資深-net-架構師--c-技術主管"
+        id="toc-王英豪---資深-net-架構師--c-技術主管">王英豪 - 資深 .NET
+        架構師 / C# 技術主管</a>
+        <ul>
+        <li><a
+        href="#senior-net-architect--c-technical-lead--25年軟體工程--net-全棧開發"
+        id="toc-senior-net-architect--c-technical-lead--25年軟體工程--net-全棧開發">Senior
+        .NET Architect &amp; C# Technical Lead | 25年軟體工程 | .NET
+        全棧開發</a></li>
+        <li><a href="#聯絡資訊---contact-information"
+        id="toc-聯絡資訊---contact-information">聯絡資訊 - Contact
+        Information</a></li>
+        <li><a href="#專業摘要---professional-summary"
+        id="toc-專業摘要---professional-summary">專業摘要 - Professional
+        Summary</a></li>
+        <li><a href="#核心技術棧---core-technical-skills"
+        id="toc-核心技術棧---core-technical-skills">核心技術棧 - Core
+        Technical Skills</a></li>
+        <li><a href="#重點專案經歷---key-projects"
+        id="toc-重點專案經歷---key-projects">重點專案經歷 - Key
+        Projects</a></li>
+        <li><a href="#架構設計能力---architecture--system-design"
+        id="toc-架構設計能力---architecture--system-design">架構設計能力
+        - Architecture &amp; System Design</a></li>
+        <li><a href="#工作經歷---professional-experience"
+        id="toc-工作經歷---professional-experience">工作經歷 -
+        Professional Experience</a></li>
+        <li><a href="#其他相關專案---other-relevant-projects"
+        id="toc-其他相關專案---other-relevant-projects">其他相關專案 -
+        Other Relevant Projects</a></li>
+        <li><a href="#早期-net-經歷---early-net-career-2000-2016"
+        id="toc-早期-net-經歷---early-net-career-2000-2016">早期 .NET
+        經歷 - Early .NET Career (2000-2016)</a></li>
+        <li><a href="#學歷---education" id="toc-學歷---education">學歷 -
+        Education</a></li>
+        <li><a href="#專業經驗統計---professional-experience-summary"
+        id="toc-專業經驗統計---professional-experience-summary">專業經驗統計
+        - Professional Experience Summary</a></li>
+        <li><a href="#自我評價---self-assessment"
+        id="toc-自我評價---self-assessment">自我評價 - Self
+        Assessment</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </section>
+
     <section class="card">
       <h3 class="card__title">技術標籤</h3>
       <div class="tags">
@@ -625,5 +675,29 @@ Pay</span><span class="tag">pxmart-warehouse</span>
 技術主管</p>
 </footer>
 
+<script>
+// TOC scroll-spy
+(function () {
+  const tocLinks = document.querySelectorAll('.toc-nav a[href^="#"]');
+  if (!tocLinks.length) return;
+  const idMap = new Map();
+  tocLinks.forEach(a => {
+    const id = decodeURIComponent(a.getAttribute('href').slice(1));
+    const el = document.getElementById(id);
+    if (el) idMap.set(el, a);
+  });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const link = idMap.get(entry.target);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        tocLinks.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+  idMap.forEach((_, el) => observer.observe(el));
+})();
+</script>
 </body>
 </html>

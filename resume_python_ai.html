@@ -68,6 +68,56 @@ LLM Gateway</span></div>
       </div>
     </section>
 
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪---python-架構師--ai-工程師"
+        id="toc-王英豪---python-架構師--ai-工程師">王英豪 - Python
+        架構師 / AI 工程師</a>
+        <ul>
+        <li><a
+        href="#python-architect--ai-engineer--25年軟體工程--fastapi--mcp--ai-integration"
+        id="toc-python-architect--ai-engineer--25年軟體工程--fastapi--mcp--ai-integration">Python
+        Architect &amp; AI Engineer | 25年軟體工程 | FastAPI + MCP + AI
+        Integration</a></li>
+        <li><a href="#聯絡資訊---contact-information"
+        id="toc-聯絡資訊---contact-information">聯絡資訊 - Contact
+        Information</a></li>
+        <li><a href="#專業摘要---professional-summary"
+        id="toc-專業摘要---professional-summary">專業摘要 - Professional
+        Summary</a></li>
+        <li><a href="#核心技術棧---core-technical-skills"
+        id="toc-核心技術棧---core-technical-skills">核心技術棧 - Core
+        Technical Skills</a></li>
+        <li><a href="#python-專案詳述---python-project-details"
+        id="toc-python-專案詳述---python-project-details">Python
+        專案詳述 - Python Project Details</a></li>
+        <li><a href="#兩層式-cicd-架構---two-tier-cicd-architecture"
+        id="toc-兩層式-cicd-架構---two-tier-cicd-architecture">兩層式
+        CI/CD 架構 - Two-tier CI/CD Architecture</a></li>
+        <li><a href="#系統架構總覽---architecture-overview"
+        id="toc-系統架構總覽---architecture-overview">系統架構總覽 -
+        Architecture Overview</a></li>
+        <li><a href="#工作經歷---professional-experience"
+        id="toc-工作經歷---professional-experience">工作經歷 -
+        Professional Experience</a></li>
+        <li><a href="#其他技術專案---other-technical-projects"
+        id="toc-其他技術專案---other-technical-projects">其他技術專案 -
+        Other Technical Projects</a></li>
+        <li><a href="#學歷---education" id="toc-學歷---education">學歷 -
+        Education</a></li>
+        <li><a href="#專業能力統計---professional-experience-summary"
+        id="toc-專業能力統計---professional-experience-summary">專業能力統計
+        - Professional Experience Summary</a></li>
+        <li><a href="#為什麼選擇我---why-hire-me"
+        id="toc-為什麼選擇我---why-hire-me">為什麼選擇我 - Why Hire
+        Me</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </section>
+
     <section class="card">
       <h3 class="card__title">技術標籤</h3>
       <div class="tags">
@@ -614,5 +664,29 @@ PostgreSQL (Production Data)</code></pre>
 工程師</p>
 </footer>
 
+<script>
+// TOC scroll-spy
+(function () {
+  const tocLinks = document.querySelectorAll('.toc-nav a[href^="#"]');
+  if (!tocLinks.length) return;
+  const idMap = new Map();
+  tocLinks.forEach(a => {
+    const id = decodeURIComponent(a.getAttribute('href').slice(1));
+    const el = document.getElementById(id);
+    if (el) idMap.set(el, a);
+  });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const link = idMap.get(entry.target);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        tocLinks.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+  idMap.forEach((_, el) => observer.observe(el));
+})();
+</script>
 </body>
 </html>

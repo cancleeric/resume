@@ -61,6 +61,16 @@
       </div>
     </section>
 
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪---專案技術清單"
+        id="toc-王英豪---專案技術清單">王英豪 - 專案技術清單</a></li>
+        </ul>
+      </nav>
+    </section>
+
     <section class="card">
       <h3 class="card__title">技術標籤</h3>
       <div class="tags">
@@ -1050,5 +1060,29 @@
   <p>© Eric Wang · HurricaneGroup · 王英豪 - 專案技術清單</p>
 </footer>
 
+<script>
+// TOC scroll-spy
+(function () {
+  const tocLinks = document.querySelectorAll('.toc-nav a[href^="#"]');
+  if (!tocLinks.length) return;
+  const idMap = new Map();
+  tocLinks.forEach(a => {
+    const id = decodeURIComponent(a.getAttribute('href').slice(1));
+    const el = document.getElementById(id);
+    if (el) idMap.set(el, a);
+  });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const link = idMap.get(entry.target);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        tocLinks.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+  idMap.forEach((_, el) => observer.observe(el));
+})();
+</script>
 </body>
 </html>

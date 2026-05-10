@@ -21,10 +21,15 @@
 擁有 **25 年**物件導向程式設計經驗，從 Java 起步，橫跨 C#、Python、TypeScript、Swift 等 10+ 語言，深刻理解 **Design Patterns、SOLID 原則、Clean Architecture** 在不同語言生態的實踐。
 
 **核心架構能力**：
-* **設計模式實戰**：25 年 OOP 經驗，在 Java / C# / Python / TypeScript 中實踐 Repository、Factory、Observer、Strategy、MVVM 等模式
+* **設計模式實戰**：25 年 OOP 經驗，在 Java / C# / Python / TypeScript / Go 中實踐 Repository、Factory、Observer、Strategy、MVVM 等模式
 * **跨語言架構遷移**：將 Java 世界的 Spring Boot 分層概念（Controller → Service → Repository）成功應用到 FastAPI（API → BAL → CORL → DAL）與 ASP.NET Core
-* **企業級系統設計**：主導建構 12 個生產系統的 Squid 企業級生態系統
-* **團隊管理**：24 年技術管理，現管理 11 人跨職能工程團隊
+* **集團級系統設計**：創立並主導 **HurricaneGroup（颶風集團）** 6 家子公司、**30+ 生產系統**、**Cloud Run 19 services**
+* **集團技術領導**：24 年技術管理，建立 C-suite 副手制虛擬高管團隊架構
+
+**集團技術選型決策（為何在 2026 不選 Java）**：
+- **後端**：選 Python FastAPI（async asyncpg 高並發 + LLM 生態整合）+ .NET 8（信保金融客戶 / WMS / 帳務 SaaS），Java 在新系統中沒有不可替代性
+- **語言一致性**：集團已 standardize on Python + C# 兩條後端線，引入 Java 會增加維運複雜度
+- **保留 Java 思維**：Spring Boot 分層、Interface-driven、SOLID 全套搬到 Python / C# 實踐
 
 ---
 
@@ -147,9 +152,11 @@ Business Logic                 →  core_logic_layer/ (CORL)
 *2024/05 - 2026/02*
 * 8 人開發團隊（派遣方編制），.NET Framework 4.6 → .NET 8 升級（類比 Java 8 → Java 17 遷移）
 
-### 公司負責人 / 總經理 / 技術架構師 | 颶風軟體有限公司
+### 公司負責人 / 集團技術長 | 颶風軟體 → HurricaneGroup
 *2002 - 至今（24 年）*
-* 管理 11 人團隊，100+ 企業客戶，12 個生產系統
+* 創立並經營軟體公司，2026 完成集團化升級（6 子公司）
+* 主導 30+ 生產系統，Cloud Run 19 services 統一維運
+* 100+ 企業客戶，建立 C-suite 副手制虛擬高管團隊架構
 
 ### 軟體工程師 / 專案經理 | 米迪亞
 *2001 - 2002*
@@ -173,10 +180,10 @@ Business Logic                 →  core_logic_layer/ (CORL)
 | 專業領域 | 年資 | 說明 |
 |----------|------|------|
 | **OOP / Design Patterns** | 25 年 | 從 Java 起步，跨 10+ 語言實踐 |
-| **Java 直接經驗** | 2 年 | 早期職涯核心語言 |
-| **Java 生態類比（C#/.NET）** | 20+ 年 | C# 與 Java 高度相似，可快速遷移 |
-| **技術管理 & 創業** | 24 年 | 11 人團隊管理 |
-| **系統架構設計** | 18 年 | 12 個生產系統 |
+| **Java 直接經驗** | 2 年 | 早期職涯核心語言（東岸互動 POP 系統）|
+| **Java 生態類比（C#/.NET）** | 25 年 | C# 與 Java 高度相似，可快速遷移 |
+| **集團技術領導** | 24 年 | HurricaneGroup 6 子公司，30+ 生產系統 |
+| **系統架構設計** | 18 年 | Multi-tenant SaaS、自建 LLM Gateway、集團統一基建 |
 
 ---
 
