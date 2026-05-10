@@ -280,48 +280,68 @@ a:hover { text-decoration: underline; }
   min-height: 80vh;
 }
 
-/* 隱藏 main 內第一個 h1（重複，已在 sidebar 顯示姓名） */
-.main > h1:first-child {
-  font-size: 24px;
-  margin: 0 0 8px 0;
-  padding-bottom: 16px;
-  border-bottom: 3px solid var(--brand);
+/* H1 — main 內第一個 h1（重複 sidebar 姓名）— 螢幕隱藏 */
+.main > h1:first-child { display: none; }
+
+/* 第一個 h2 通常是「Technical Architect & ... | 25 年...」副標 — 改成 tagline */
+.main > h2:first-of-type {
+  margin: 0 0 28px 0;
+  padding: 14px 18px;
+  font-size: 14.5px;
+  font-weight: 600;
   color: var(--brand);
-  font-weight: 800;
-  letter-spacing: -0.01em;
+  background: linear-gradient(135deg, var(--brand-soft) 0%, #e0e7ff 100%);
+  border-left: 4px solid var(--brand-2);
+  border-bottom: none;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
+.main > h2:first-of-type::before { display: none; }
 
-/* 隱藏 main 內第一行通常是 ## XXX | XX 年 (重複資訊) */
-.main > h2:first-of-type { margin-top: 12px; }
-
+/* H2 — section header */
 .main h2 {
-  margin: 36px 0 14px;
-  padding: 0 0 10px 12px;
-  font-size: 19px;
+  margin: 40px 0 16px;
+  padding: 0 0 10px 14px;
+  font-size: 20px;
   font-weight: 800;
   color: var(--ink);
   border-left: 5px solid var(--accent);
   border-bottom: 2px solid var(--line);
   letter-spacing: -0.005em;
+  position: relative;
 }
 .main h2::before {
   content: "";
   display: inline-block;
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   background: var(--brand);
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
   transform: translateY(-2px);
+  box-shadow: 0 0 0 4px var(--brand-soft);
+}
+
+/* 滑入動畫 */
+.main h2, .main h3, .main table, .main blockquote {
+  animation: fadeUp 0.4s ease both;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
 }
 
 .main h3 {
-  margin: 24px 0 10px;
-  padding: 0;
-  font-size: 16px;
+  margin: 28px 0 10px;
+  padding: 8px 0 8px 14px;
+  font-size: 16.5px;
   font-weight: 700;
   color: var(--brand);
+  background: linear-gradient(90deg, var(--brand-soft) 0%, transparent 60%);
+  border-left: 3px solid var(--brand-2);
+  border-radius: 0 4px 4px 0;
 }
 
 .main h4 {
@@ -329,15 +349,39 @@ a:hover { text-decoration: underline; }
   font-size: 14.5px;
   font-weight: 700;
   color: var(--ink-2);
+  position: relative;
+  padding-left: 14px;
+}
+.main h4::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 12px;
 }
 
 .main p { margin: 8px 0; color: var(--ink-2); }
-.main p em { color: var(--muted); font-style: normal; font-size: 13px; }
 .main strong { color: var(--ink); font-weight: 700; }
+
+/* 工作經歷時間軸：h3 後緊接的 *日期* em 抽成 badge */
+.main h3 + p > em:first-child {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent-2);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid #fecaca;
+  letter-spacing: 0.02em;
+}
+.main p em { color: var(--muted); font-style: normal; font-size: 13px; }
 
 .main ul, .main ol { margin: 8px 0; padding-left: 22px; color: var(--ink-2); }
 .main li { margin: 5px 0; }
-.main li::marker { color: var(--brand-2); }
+.main li::marker { color: var(--brand-2); font-weight: 700; }
+.main li strong:first-child { color: var(--brand); }
 
 .main hr { border: none; border-top: 1px solid var(--line); margin: 28px 0; }
 
