@@ -16,13 +16,21 @@
 
 ## 專業摘要 - Professional Summary
 
-**Python 架構師 | AI 工程師 | 技術負責人**
+**Python 架構師 | AI / LLM Gateway 工程師 | 集團技術長**
 
-精通 Python FastAPI 非同步架構設計，從零建構涵蓋 **50+ 資料表、100+ REST API 端點**的企業級系統。主導 **MCP (Model Context Protocol)** 整合方案，實現 AI 助手（Claude、ChatGPT）與生產系統的無縫對接，將 AI 能力嵌入真實業務流程。
+精通 Python FastAPI 非同步架構設計，從零建構涵蓋 **100+ REST API 端點**的企業級系統。主導 **HurricaneGroup（颶風集團）** 統一 LLM 基礎設施：
 
-獨立開發 **4 個 Python 工具/SDK**：Squid API 後端、Neritic CLI DevOps 工具鏈、CommTool 統一通訊平台、Squid Python SDK — 展現從系統架構到工具鏈的完整 Python 工程能力。整合 **scikit-learn** 進行異常偵測與專案指標分析，具備 Machine Learning 實務應用經驗。
+- **Brain LLM Gateway**（FastAPI + PostgreSQL）— 集團 LLM 計費中心，跨租戶可視化，Headless Provider 路由
+- **Anemone Platform**（FastAPI + WebSocket）— 集團 LLM ingress，Widget ↔ Server ↔ Brain
+- **Modelhub** v0.8.0 — 自訓模型 + 推論平台，Brain 第二 LLM Provider，整合 Kaggle Pipeline
+- **Manta** v2.16.1 — AI Workflow Canvas（FastAPI + React）
+- **Tianji** v1.2.2 — 命理 App（FastAPI + Jinja SSR + Hurricane Pay）
+- **Fiona Pipeline** v0.2.4 — 內容生成 Pipeline（呼叫 Manta workflow）
+- **Aegis Security Scanner** — 自建程式碼安全掃描器 + ML FP ranker 訓練
 
-擁有 **25 年**跨語言軟體開發經驗，**24 年**技術管理實務，現管理 **11 人跨職能工程團隊**，建立工單驅動的標準化開發流程與自動化評審系統。
+主導 **MCP (Model Context Protocol)** 整合方案，實現 AI 助手（Claude、ChatGPT、Gemini）與生產系統的無縫對接。整合 **scikit-learn** 進行異常偵測與專案指標分析。
+
+擁有 **25 年**跨語言軟體開發經驗、**24 年**技術管理實務，創立 HurricaneGroup 集團（**6 家子公司、30+ 生產系統、Cloud Run 19 services**），建立 C-suite 副手制虛擬高管團隊架構。
 
 ---
 
@@ -176,7 +184,52 @@ PostgreSQL (Production Data)
 
 ---
 
-### 6. scikit-learn 異常偵測整合
+### 6. Brain LLM Gateway — 集團 LLM 計費中心
+
+**時間**：2026 - 至今（2026/05 計費中心修復完工）
+**角色**：架構設計者 / 核心開發者
+**技術**：FastAPI, PostgreSQL, brain-api (8931) / brain-cloud (8932) / brain-console (3931)
+
+集團統一 LLM 入口，所有子公司 LLM 呼叫一律走 Brain：
+- **跨租戶計費可視化**（Superadmin Console）
+- **Provider 路由**：Anthropic Claude / Google Gemini / OpenAI / Modelhub 自訓
+- **Headless 預設 Gemini**，可動態切換
+- **Token 計量、成本追蹤、配額控制**
+
+---
+
+### 7. Manta — AI Workflow Canvas（HurricaneEdge）
+
+**時間**：2026 - 至今 (v2.16.1)
+**技術**：FastAPI + React Canvas + LIDS OAuth SSO
+**Cloud Run**：`manta-production`
+
+可視化 AI workflow 編輯器，節點化串接 LLM / 外部 API / 資料處理；fiona-pipeline 透過 manta 執行 workflow（已有整合 SOP）。
+
+---
+
+### 8. Tianji（天機）— 命理 SaaS
+
+**技術**：FastAPI + Jinja SSR + Hurricane Pay
+**版本**：v1.2.2，Cloud Run `tianji-api-production`
+
+集團首個全 stack Python SSR + 自建金流整合的對外 SaaS。
+
+---
+
+### 9. Fiona Pipeline / Radar — 內容生成與監控
+
+`fiona-pipeline-production` v0.2.4（內容生成）+ `fiona-radar-production`（YouTube 頻道監控）。
+
+---
+
+### 10. Aegis Security Scanner — 自建 + ML 訓練
+
+Python 寫的程式碼安全掃描器，含 FP ranker ML 訓練 pipeline（Sprint 21 安全發現修復中）。
+
+---
+
+### 11. scikit-learn 異常偵測整合
 
 **技術**：scikit-learn, NumPy, pandas
 **應用場景**：Squid API 內建 Machine Learning 模組
@@ -280,12 +333,12 @@ PostgreSQL (Production Data)
 
 | 專業領域 Field | 年資 Years | 主要成就 Key Achievement |
 |----------------|-----------|------------------------|
-| **Python 開發 Python Development** | 5+ 年 | 建構 4 個 Python 工具/SDK，100+ API 端點 |
-| **AI / ML 整合 AI Integration** | 2+ 年 | MCP 整合, scikit-learn 異常偵測, ChatGPT API |
-| **技術管理 Technical Management** | 24 年 | 管理 11 人團隊，100+ 企業客戶 |
-| **系統架構 System Architecture** | 18 年 | Multi-tenant SaaS, OAuth2, Microservices |
-| **軟體工程 Software Engineering** | 25 年 | 12 個生產系統的企業級生態系統 |
-| **DevOps & CI/CD** | 5 年 | 兩層式 CI/CD, Docker, Cloud Run |
+| **Python 開發 Python Development** | 8+ 年 | 集團 5+ Python SaaS 生產系統 + 4 工具/SDK |
+| **AI / LLM Integration** | 3+ 年 | Brain Gateway / Anemone / Modelhub / MCP / Manta Workflow / Tianji |
+| **集團技術領導 Group Leadership** | 24 年 | HurricaneGroup 6 子公司、C-suite 副手制 |
+| **系統架構 System Architecture** | 18 年 | Multi-tenant SaaS, OAuth2, Microservices, LLM Gateway |
+| **軟體工程 Software Engineering** | 25 年 | 30+ 生產系統的集團生態系統 |
+| **GCP DevOps & CI/CD** | 5 年 | Cloud Run 19 services, 兩層式 CI/CD, 6 步 DB 流程 |
 
 ---
 

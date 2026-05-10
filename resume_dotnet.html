@@ -23,6 +23,7 @@
       <a href="resume_ios.html">iOS</a>
       <a href="resume_security.html">Security</a>
       <a href="PROJECTS.html">專案清單</a>
+      <button class="topbar__btn" onclick="window.print()" title="存為 PDF / 列印">📥 PDF</button>
     </nav>
   </div>
 </header>
@@ -31,11 +32,10 @@
 
   <aside class="sidebar">
     <div class="profile">
-      <div class="avatar">王</div>
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
       <h2 class="profile__name">王英豪</h2>
       <p class="profile__en">WANG YING HAO</p>
-      <p class="profile__title">王英豪 - 資深 .NET 架構師 / C#
-技術主管</p>
+      <p class="profile__title">資深 .NET 架構師 / C# 技術主管</p>
       <div class="status-pill">在職中・可面議</div>
     </div>
 
@@ -52,19 +52,33 @@
     <section class="card">
       <h3 class="card__title">核心數據</h3>
       <div class="stats">
-        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
-        <div class="stat"><span class="stat__num">24</span><span class="stat__label">年技術管理</span></div>
-        <div class="stat"><span class="stat__num">30+</span><span class="stat__label">生產系統</span></div>
-        <div class="stat"><span class="stat__num">6</span><span class="stat__label">子公司</span></div>
-        <div class="stat"><span class="stat__num">19</span><span class="stat__label">Cloud Run</span></div>
+        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年
+C# / .NET</span></div>
+        <div class="stat"><span class="stat__num">1.1→8</span><span class="stat__label">.NET
+全版本</span></div>
+        <div class="stat"><span class="stat__num">12+</span><span class="stat__label">.NET
+系統</span></div>
+        <div class="stat"><span class="stat__num">428</span><span class="stat__label">C#
+檔案 (LIDS)</span></div>
+        <div class="stat"><span class="stat__num">Blazor</span><span class="stat__label">Server
++ WASM</span></div>
         <div class="stat"><span class="stat__num">100+</span><span class="stat__label">企業客戶</span></div>
+
       </div>
     </section>
 
     <section class="card">
       <h3 class="card__title">技術標籤</h3>
       <div class="tags">
-        <span class="tag">C#</span><span class="tag">.NET 8</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Swift</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">GCP</span><span class="tag">Cloud Run</span><span class="tag">OAuth2/OIDC</span><span class="tag">LLM Gateway</span><span class="tag">Multi-tenant SaaS</span>
+<span class="tag">C# 12</span><span class="tag">.NET
+8</span><span class="tag">ASP.NET Core</span><span class="tag">Blazor
+Server</span><span class="tag">Blazor WASM</span><span class="tag">EF
+Core</span><span class="tag">SignalR</span><span class="tag">PostgreSQL</span><span class="tag">SQL
+Server</span><span class="tag">Redis</span><span class="tag">OAuth2/OIDC</span><span class="tag">JWT
+RS256</span><span class="tag">MFA</span><span class="tag">Docker</span><span class="tag">GCP
+Cloud Run</span><span class="tag">Hurricane
+Vault</span><span class="tag">Hurricane
+Pay</span><span class="tag">pxmart-warehouse</span>
       </div>
     </section>
 
@@ -100,20 +114,26 @@
     <hr />
     <h2 id="專業摘要---professional-summary">專業摘要 - Professional
     Summary</h2>
-    <p><strong>資深 .NET 架構師 | C# 技術主管 |
-    企業級系統設計者</strong></p>
+    <p><strong>資深 .NET 架構師 | C# 技術主管 | 集團技術長</strong></p>
     <p>擁有 <strong>25 年</strong> C# / .NET 開發經驗，完整歷經 .NET
-    Framework 1.1 到 .NET 8
-    每一代技術演進，具備深厚的平台遷移與現代化實務能力。精通
-    <strong>ASP.NET Core 8.0</strong>、<strong>Blazor Server /
+    Framework 1.1 到 .NET 8 每一代技術演進。精通 <strong>ASP.NET Core
+    8.0</strong>、<strong>Blazor Server /
     WebAssembly</strong>、<strong>Entity Framework
     Core</strong>，並從零自建 OAuth 2.0 / OIDC 身份認證伺服器
     <strong>LocalIdentityServer (LIDS)</strong>，涵蓋 428 個 C#
-    檔案、完整的多租戶隔離、MFA、JWT RS256 簽章等企業級安全機制。</p>
-    <p>同時擁有 <strong>24 年技術管理</strong>經驗，現管理 <strong>11
-    人跨職能工程團隊</strong>，建立工單驅動開發流程、140
-    分標準化評審制度、兩層式 Git Hooks CI/CD 架構，從本地 Docker 開發到
-    GCP Cloud Run 生產環境的完整 DevOps Pipeline。</p>
+    檔案、完整的多租戶隔離、MFA、JWT RS256 簽章。<strong>2026 年完成
+    LIDS 客製 PKCE patch（gitea-hs v1.26.1）</strong>，整合 Gitea OIDC
+    不污染 provider singleton。</p>
+    <p>主導 <strong>HurricaneGroup（颶風集團）6 家子公司</strong> 30+
+    生產系統的 .NET 架構與部署，包括 <strong>pxmart-warehouse
+    v1.0.0</strong>（.NET 8 WMS，810 tests / 92%
+    coverage）、<strong>hurricane-books（Blazor Server 帳務
+    SaaS）</strong>、<strong>antique-master-web（.NET 後端 + 167
+    tests）</strong>、信保基金 .NET 8 + Blazor 現代化遷移。</p>
+    <p>擔任<strong>集團技術長</strong>，建立 C-suite
+    副手制虛擬高管團隊架構、工單驅動開發流程、140 分標準化評審制度、6 步
+    DB 異動流程、兩層式 Git Hooks CI/CD，主導 GCP Cloud Run 19
+    個生產服務統一維運。</p>
     <hr />
     <h2 id="核心技術棧---core-technical-skills">核心技術棧 - Core
     Technical Skills</h2>
@@ -312,7 +332,41 @@
     <li>全面的 Error Handling 與 Serilog 日誌</li>
     </ul>
     <hr />
-    <h3 id="4-颶風軟體企業系統--24-年持續演進的-net-平台">4.
+    <h3 id="4-pxmart-warehouse--net-8-wms-倉儲管理系統hurricaneprime">4.
+    pxmart-warehouse — .NET 8 WMS 倉儲管理系統（HurricanePrime）</h3>
+    <p><strong>時間</strong>：2026/02 - 2026/04（v1.0.0 上線）
+    <strong>角色</strong>：架構師 / 主導 .NET 後端
+    <strong>規模</strong>：810 個單元 / 整合測試，92% 覆蓋率</p>
+    <h4 id="技術棧-3">技術棧</h4>
+    <p><code>.NET 8</code> <code>EF Core</code> <code>PostgreSQL</code>
+    <code>xUnit</code> <code>Swagger</code> <code>Docker</code></p>
+    <h4 id="系統設計">系統設計</h4>
+    <ul>
+    <li>倉儲流程完整建模：入庫 / 出庫 / 盤點 / 移轉 / 批次查詢</li>
+    <li>EF Core Migration 嚴格走 6 步 DB 異動流程</li>
+    <li>xUnit 810 tests，覆蓋率 92%（Phase 1-4 全完成）</li>
+    <li>Swagger + 批次查詢 API 設計</li>
+    <li>Docker 容器化 + 本地 CI script
+    (<code>scripts/ci-local.sh</code>) + E2E
+    (<code>tests/e2e/api-e2e.sh</code>)</li>
+    <li>2026/04/26 移交 HurricanePrime 後續維運</li>
+    </ul>
+    <hr />
+    <h3
+    id="5-hurricane-books算盤-blazor-server-帳務--財務-saashurricaneedge">5.
+    hurricane-books（算盤）— Blazor Server 帳務 / 財務
+    SaaS（HurricaneEdge）</h3>
+    <p><strong>時間</strong>：2026 - 至今 <strong>角色</strong>：架構師
+    / 後端 <strong>Cloud
+    Run</strong>：<code>hurricane-books-production</code></p>
+    <h4 id="技術棧-4">技術棧</h4>
+    <p><code>.NET 8</code> <code>Blazor Server</code>
+    <code>EF Core</code> <code>PostgreSQL</code>
+    <code>Hurricane Pay</code> <code>LIDS OAuth</code></p>
+    <p>集團對外 SaaS 之一，多租戶帳務系統，整合集團統一金流（Hurricane
+    Pay）與身份（LIDS）。</p>
+    <hr />
+    <h3 id="6-颶風軟體企業系統--24-年持續演進的-net-平台">6.
     颶風軟體企業系統 — 24 年持續演進的 .NET 平台</h3>
     <p><strong>時間</strong>：2002 - 至今（24 年持續開發）
     <strong>角色</strong>：系統架構師 / 技術負責人</p>
@@ -512,28 +566,35 @@
     <tbody>
     <tr>
     <td><strong>.NET / C# 開發</strong></td>
-    <td>20+ 年</td>
+    <td>25 年</td>
     <td>從 .NET Framework 1.1 到 .NET 8 全版本實務經驗</td>
     </tr>
     <tr>
-    <td><strong>技術管理 &amp; 創業</strong></td>
+    <td><strong>集團技術領導</strong></td>
     <td>24 年</td>
-    <td>創立軟體公司，管理 11 人團隊，服務 100+ 企業客戶</td>
+    <td>創立 HurricaneGroup（6 子公司），主導 30+ 生產系統</td>
     </tr>
     <tr>
     <td><strong>系統架構設計</strong></td>
     <td>18 年</td>
-    <td>自建 OAuth2/OIDC Server、Multi-tenant SaaS、Microservices</td>
+    <td>自建 OAuth2/OIDC Server (LIDS)、Multi-tenant SaaS、集團 Vault /
+    Pay</td>
     </tr>
     <tr>
     <td><strong>Blazor 開發</strong></td>
     <td>3 年</td>
-    <td>Blazor Server + WebAssembly，兩個生產級系統</td>
+    <td>Blazor Server + WASM，4 個生產級系統（LIDS / LifeSnapAdmin /
+    hurricane-books / pxmart）</td>
     </tr>
     <tr>
-    <td><strong>系統程式開發</strong></td>
-    <td>25 年</td>
-    <td>12 個生產系統的企業級生態系統</td>
+    <td><strong>企業客戶服務</strong></td>
+    <td>24 年</td>
+    <td>100+ 企業客戶，含信保基金等金融機構</td>
+    </tr>
+    <tr>
+    <td><strong>GCP 集團維運</strong></td>
+    <td>5 年</td>
+    <td>Cloud Run 19 services 統一維運（HurricaneSoft 主責）</td>
     </tr>
     </tbody>
     </table>

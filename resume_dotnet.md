@@ -16,11 +16,13 @@
 
 ## 專業摘要 - Professional Summary
 
-**資深 .NET 架構師 | C# 技術主管 | 企業級系統設計者**
+**資深 .NET 架構師 | C# 技術主管 | 集團技術長**
 
-擁有 **25 年** C# / .NET 開發經驗，完整歷經 .NET Framework 1.1 到 .NET 8 每一代技術演進，具備深厚的平台遷移與現代化實務能力。精通 **ASP.NET Core 8.0**、**Blazor Server / WebAssembly**、**Entity Framework Core**，並從零自建 OAuth 2.0 / OIDC 身份認證伺服器 **LocalIdentityServer (LIDS)**，涵蓋 428 個 C# 檔案、完整的多租戶隔離、MFA、JWT RS256 簽章等企業級安全機制。
+擁有 **25 年** C# / .NET 開發經驗，完整歷經 .NET Framework 1.1 到 .NET 8 每一代技術演進。精通 **ASP.NET Core 8.0**、**Blazor Server / WebAssembly**、**Entity Framework Core**，並從零自建 OAuth 2.0 / OIDC 身份認證伺服器 **LocalIdentityServer (LIDS)**，涵蓋 428 個 C# 檔案、完整的多租戶隔離、MFA、JWT RS256 簽章。**2026 年完成 LIDS 客製 PKCE patch（gitea-hs v1.26.1）**，整合 Gitea OIDC 不污染 provider singleton。
 
-同時擁有 **24 年技術管理**經驗，現管理 **11 人跨職能工程團隊**，建立工單驅動開發流程、140 分標準化評審制度、兩層式 Git Hooks CI/CD 架構，從本地 Docker 開發到 GCP Cloud Run 生產環境的完整 DevOps Pipeline。
+主導 **HurricaneGroup（颶風集團）6 家子公司** 30+ 生產系統的 .NET 架構與部署，包括 **pxmart-warehouse v1.0.0**（.NET 8 WMS，810 tests / 92% coverage）、**hurricane-books（Blazor Server 帳務 SaaS）**、**antique-master-web（.NET 後端 + 167 tests）**、信保基金 .NET 8 + Blazor 現代化遷移。
+
+擔任**集團技術長**，建立 C-suite 副手制虛擬高管團隊架構、工單驅動開發流程、140 分標準化評審制度、6 步 DB 異動流程、兩層式 Git Hooks CI/CD，主導 GCP Cloud Run 19 個生產服務統一維運。
 
 ---
 
@@ -171,7 +173,39 @@
 
 ---
 
-### 4. 颶風軟體企業系統 — 24 年持續演進的 .NET 平台
+### 4. pxmart-warehouse — .NET 8 WMS 倉儲管理系統（HurricanePrime）
+
+**時間**：2026/02 - 2026/04（v1.0.0 上線）
+**角色**：架構師 / 主導 .NET 後端
+**規模**：810 個單元 / 整合測試，92% 覆蓋率
+
+#### 技術棧
+`.NET 8` `EF Core` `PostgreSQL` `xUnit` `Swagger` `Docker`
+
+#### 系統設計
+- 倉儲流程完整建模：入庫 / 出庫 / 盤點 / 移轉 / 批次查詢
+- EF Core Migration 嚴格走 6 步 DB 異動流程
+- xUnit 810 tests，覆蓋率 92%（Phase 1-4 全完成）
+- Swagger + 批次查詢 API 設計
+- Docker 容器化 + 本地 CI script (`scripts/ci-local.sh`) + E2E (`tests/e2e/api-e2e.sh`)
+- 2026/04/26 移交 HurricanePrime 後續維運
+
+---
+
+### 5. hurricane-books（算盤）— Blazor Server 帳務 / 財務 SaaS（HurricaneEdge）
+
+**時間**：2026 - 至今
+**角色**：架構師 / 後端
+**Cloud Run**：`hurricane-books-production`
+
+#### 技術棧
+`.NET 8` `Blazor Server` `EF Core` `PostgreSQL` `Hurricane Pay` `LIDS OAuth`
+
+集團對外 SaaS 之一，多租戶帳務系統，整合集團統一金流（Hurricane Pay）與身份（LIDS）。
+
+---
+
+### 6. 颶風軟體企業系統 — 24 年持續演進的 .NET 平台
 
 **時間**：2002 - 至今（24 年持續開發）
 **角色**：系統架構師 / 技術負責人
@@ -276,11 +310,12 @@
 
 | 專業領域 | 年資 | 主要成就 |
 |----------|------|---------|
-| **.NET / C# 開發** | 20+ 年 | 從 .NET Framework 1.1 到 .NET 8 全版本實務經驗 |
-| **技術管理 & 創業** | 24 年 | 創立軟體公司，管理 11 人團隊，服務 100+ 企業客戶 |
-| **系統架構設計** | 18 年 | 自建 OAuth2/OIDC Server、Multi-tenant SaaS、Microservices |
-| **Blazor 開發** | 3 年 | Blazor Server + WebAssembly，兩個生產級系統 |
-| **系統程式開發** | 25 年 | 12 個生產系統的企業級生態系統 |
+| **.NET / C# 開發** | 25 年 | 從 .NET Framework 1.1 到 .NET 8 全版本實務經驗 |
+| **集團技術領導** | 24 年 | 創立 HurricaneGroup（6 子公司），主導 30+ 生產系統 |
+| **系統架構設計** | 18 年 | 自建 OAuth2/OIDC Server (LIDS)、Multi-tenant SaaS、集團 Vault / Pay |
+| **Blazor 開發** | 3 年 | Blazor Server + WASM，4 個生產級系統（LIDS / LifeSnapAdmin / hurricane-books / pxmart）|
+| **企業客戶服務** | 24 年 | 100+ 企業客戶，含信保基金等金融機構 |
+| **GCP 集團維運** | 5 年 | Cloud Run 19 services 統一維運（HurricaneSoft 主責）|
 
 ---
 

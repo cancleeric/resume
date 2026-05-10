@@ -23,6 +23,7 @@
       <a href="resume_ios.html">iOS</a>
       <a href="resume_security.html">Security</a>
       <a href="PROJECTS.html">專案清單</a>
+      <button class="topbar__btn" onclick="window.print()" title="存為 PDF / 列印">📥 PDF</button>
     </nav>
   </div>
 </header>
@@ -31,10 +32,10 @@
 
   <aside class="sidebar">
     <div class="profile">
-      <div class="avatar">王</div>
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
       <h2 class="profile__name">王英豪</h2>
       <p class="profile__en">WANG YING HAO</p>
-      <p class="profile__title">$if(title)$$title$$else$集團技術長 / 技術架構師$endif$</p>
+      <p class="profile__title">$if(sidebar_summary)$$sidebar_summary$$else$集團技術長 / 技術架構師$endif$</p>
       <div class="status-pill">在職中・可面議</div>
     </div>
 
@@ -51,19 +52,28 @@
     <section class="card">
       <h3 class="card__title">核心數據</h3>
       <div class="stats">
+$if(stats)$
+$for(stats)$        <div class="stat"><span class="stat__num">$stats.num$</span><span class="stat__label">$stats.label$</span></div>
+$endfor$
+$else$
         <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
         <div class="stat"><span class="stat__num">24</span><span class="stat__label">年技術管理</span></div>
         <div class="stat"><span class="stat__num">30+</span><span class="stat__label">生產系統</span></div>
         <div class="stat"><span class="stat__num">6</span><span class="stat__label">子公司</span></div>
         <div class="stat"><span class="stat__num">19</span><span class="stat__label">Cloud Run</span></div>
         <div class="stat"><span class="stat__num">100+</span><span class="stat__label">企業客戶</span></div>
+$endif$
       </div>
     </section>
 
     <section class="card">
       <h3 class="card__title">技術標籤</h3>
       <div class="tags">
+$if(sidebar_tags)$
+$for(sidebar_tags)$<span class="tag">$sidebar_tags$</span>$endfor$
+$else$
         <span class="tag">C#</span><span class="tag">.NET 8</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Swift</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">GCP</span><span class="tag">Cloud Run</span><span class="tag">OAuth2/OIDC</span><span class="tag">LLM Gateway</span><span class="tag">Multi-tenant SaaS</span>
+$endif$
       </div>
     </section>
 

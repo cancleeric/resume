@@ -23,6 +23,7 @@
       <a href="resume_ios.html">iOS</a>
       <a href="resume_security.html">Security</a>
       <a href="PROJECTS.html">專案清單</a>
+      <button class="topbar__btn" onclick="window.print()" title="存為 PDF / 列印">📥 PDF</button>
     </nav>
   </div>
 </header>
@@ -31,10 +32,11 @@
 
   <aside class="sidebar">
     <div class="profile">
-      <div class="avatar">王</div>
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
       <h2 class="profile__name">王英豪</h2>
       <p class="profile__en">WANG YING HAO</p>
-      <p class="profile__title">王英豪 - Python 架構師 / AI 工程師</p>
+      <p class="profile__title">Python 架構師 / AI / LLM Gateway
+工程師</p>
       <div class="status-pill">在職中・可面議</div>
     </div>
 
@@ -52,18 +54,35 @@
       <h3 class="card__title">核心數據</h3>
       <div class="stats">
         <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
-        <div class="stat"><span class="stat__num">24</span><span class="stat__label">年技術管理</span></div>
-        <div class="stat"><span class="stat__num">30+</span><span class="stat__label">生產系統</span></div>
-        <div class="stat"><span class="stat__num">6</span><span class="stat__label">子公司</span></div>
-        <div class="stat"><span class="stat__num">19</span><span class="stat__label">Cloud Run</span></div>
-        <div class="stat"><span class="stat__num">100+</span><span class="stat__label">企業客戶</span></div>
+        <div class="stat"><span class="stat__num">8+</span><span class="stat__label">年
+Python</span></div>
+        <div class="stat"><span class="stat__num">5+</span><span class="stat__label">LLM
+整合系統</span></div>
+        <div class="stat"><span class="stat__num">100+</span><span class="stat__label">FastAPI
+端點</span></div>
+        <div class="stat"><span class="stat__num">MCP</span><span class="stat__label">AI
+工具整合</span></div>
+        <div class="stat"><span class="stat__num">Brain</span><span class="stat__label">自建
+LLM Gateway</span></div>
+
       </div>
     </section>
 
     <section class="card">
       <h3 class="card__title">技術標籤</h3>
       <div class="tags">
-        <span class="tag">C#</span><span class="tag">.NET 8</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Swift</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">GCP</span><span class="tag">Cloud Run</span><span class="tag">OAuth2/OIDC</span><span class="tag">LLM Gateway</span><span class="tag">Multi-tenant SaaS</span>
+<span class="tag">Python
+3.11+</span><span class="tag">FastAPI</span><span class="tag">asyncpg</span><span class="tag">SQLAlchemy
+2.0</span><span class="tag">Pydantic</span><span class="tag">Alembic</span><span class="tag">MCP
+Protocol</span><span class="tag">Anthropic
+Claude</span><span class="tag">Google
+Gemini</span><span class="tag">OpenAI
+API</span><span class="tag">scikit-learn</span><span class="tag">Brain
+LLM
+Gateway</span><span class="tag">Anemone</span><span class="tag">Modelhub</span><span class="tag">Manta
+Workflow</span><span class="tag">Tianji</span><span class="tag">Aegis
+ML</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Cloud
+Run</span>
       </div>
     </section>
 
@@ -99,20 +118,34 @@
     <hr />
     <h2 id="專業摘要---professional-summary">專業摘要 - Professional
     Summary</h2>
-    <p><strong>Python 架構師 | AI 工程師 | 技術負責人</strong></p>
-    <p>精通 Python FastAPI 非同步架構設計，從零建構涵蓋 <strong>50+
-    資料表、100+ REST API 端點</strong>的企業級系統。主導 <strong>MCP
-    (Model Context Protocol)</strong> 整合方案，實現 AI
-    助手（Claude、ChatGPT）與生產系統的無縫對接，將 AI
-    能力嵌入真實業務流程。</p>
-    <p>獨立開發 <strong>4 個 Python 工具/SDK</strong>：Squid API
-    後端、Neritic CLI DevOps 工具鏈、CommTool 統一通訊平台、Squid Python
-    SDK — 展現從系統架構到工具鏈的完整 Python 工程能力。整合
-    <strong>scikit-learn</strong> 進行異常偵測與專案指標分析，具備
-    Machine Learning 實務應用經驗。</p>
-    <p>擁有 <strong>25 年</strong>跨語言軟體開發經驗，<strong>24
-    年</strong>技術管理實務，現管理 <strong>11
-    人跨職能工程團隊</strong>，建立工單驅動的標準化開發流程與自動化評審系統。</p>
+    <p><strong>Python 架構師 | AI / LLM Gateway 工程師 |
+    集團技術長</strong></p>
+    <p>精通 Python FastAPI 非同步架構設計，從零建構涵蓋 <strong>100+
+    REST API 端點</strong>的企業級系統。主導
+    <strong>HurricaneGroup（颶風集團）</strong> 統一 LLM 基礎設施：</p>
+    <ul>
+    <li><strong>Brain LLM Gateway</strong>（FastAPI + PostgreSQL）— 集團
+    LLM 計費中心，跨租戶可視化，Headless Provider 路由</li>
+    <li><strong>Anemone Platform</strong>（FastAPI + WebSocket）— 集團
+    LLM ingress，Widget ↔︎ Server ↔︎ Brain</li>
+    <li><strong>Modelhub</strong> v0.8.0 — 自訓模型 + 推論平台，Brain
+    第二 LLM Provider，整合 Kaggle Pipeline</li>
+    <li><strong>Manta</strong> v2.16.1 — AI Workflow Canvas（FastAPI +
+    React）</li>
+    <li><strong>Tianji</strong> v1.2.2 — 命理 App（FastAPI + Jinja SSR +
+    Hurricane Pay）</li>
+    <li><strong>Fiona Pipeline</strong> v0.2.4 — 內容生成 Pipeline（呼叫
+    Manta workflow）</li>
+    <li><strong>Aegis Security Scanner</strong> — 自建程式碼安全掃描器 +
+    ML FP ranker 訓練</li>
+    </ul>
+    <p>主導 <strong>MCP (Model Context Protocol)</strong> 整合方案，實現
+    AI 助手（Claude、ChatGPT、Gemini）與生產系統的無縫對接。整合
+    <strong>scikit-learn</strong> 進行異常偵測與專案指標分析。</p>
+    <p>擁有 <strong>25 年</strong>跨語言軟體開發經驗、<strong>24
+    年</strong>技術管理實務，創立 HurricaneGroup 集團（<strong>6
+    家子公司、30+ 生產系統、Cloud Run 19 services</strong>），建立
+    C-suite 副手制虛擬高管團隊架構。</p>
     <hr />
     <h2 id="核心技術棧---core-technical-skills">核心技術棧 - Core
     Technical Skills</h2>
@@ -305,7 +338,47 @@ PostgreSQL (Production Data)</code></pre>
     <li><strong>完整測試覆蓋</strong>：pytest 單元測試 + 整合測試</li>
     </ul>
     <hr />
-    <h3 id="6-scikit-learn-異常偵測整合">6. scikit-learn
+    <h3 id="6-brain-llm-gateway--集團-llm-計費中心">6. Brain LLM Gateway
+    — 集團 LLM 計費中心</h3>
+    <p><strong>時間</strong>：2026 - 至今（2026/05 計費中心修復完工）
+    <strong>角色</strong>：架構設計者 / 核心開發者
+    <strong>技術</strong>：FastAPI, PostgreSQL, brain-api (8931) /
+    brain-cloud (8932) / brain-console (3931)</p>
+    <p>集團統一 LLM 入口，所有子公司 LLM 呼叫一律走 Brain：</p>
+    <ul>
+    <li><strong>跨租戶計費可視化</strong>（Superadmin Console）</li>
+    <li><strong>Provider 路由</strong>：Anthropic Claude / Google Gemini
+    / OpenAI / Modelhub 自訓</li>
+    <li><strong>Headless 預設 Gemini</strong>，可動態切換</li>
+    <li><strong>Token 計量、成本追蹤、配額控制</strong></li>
+    </ul>
+    <hr />
+    <h3 id="7-manta--ai-workflow-canvashurricaneedge">7. Manta — AI
+    Workflow Canvas（HurricaneEdge）</h3>
+    <p><strong>時間</strong>：2026 - 至今 (v2.16.1)
+    <strong>技術</strong>：FastAPI + React Canvas + LIDS OAuth SSO
+    <strong>Cloud Run</strong>：<code>manta-production</code></p>
+    <p>可視化 AI workflow 編輯器，節點化串接 LLM / 外部 API /
+    資料處理；fiona-pipeline 透過 manta 執行 workflow（已有整合
+    SOP）。</p>
+    <hr />
+    <h3 id="8-tianji天機-命理-saas">8. Tianji（天機）— 命理 SaaS</h3>
+    <p><strong>技術</strong>：FastAPI + Jinja SSR + Hurricane Pay
+    <strong>版本</strong>：v1.2.2，Cloud Run
+    <code>tianji-api-production</code></p>
+    <p>集團首個全 stack Python SSR + 自建金流整合的對外 SaaS。</p>
+    <hr />
+    <h3 id="9-fiona-pipeline--radar--內容生成與監控">9. Fiona Pipeline /
+    Radar — 內容生成與監控</h3>
+    <p><code>fiona-pipeline-production</code> v0.2.4（內容生成）+
+    <code>fiona-radar-production</code>（YouTube 頻道監控）。</p>
+    <hr />
+    <h3 id="10-aegis-security-scanner--自建--ml-訓練">10. Aegis Security
+    Scanner — 自建 + ML 訓練</h3>
+    <p>Python 寫的程式碼安全掃描器，含 FP ranker ML 訓練
+    pipeline（Sprint 21 安全發現修復中）。</p>
+    <hr />
+    <h3 id="11-scikit-learn-異常偵測整合">11. scikit-learn
     異常偵測整合</h3>
     <p><strong>技術</strong>：scikit-learn, NumPy, pandas
     <strong>應用場景</strong>：Squid API 內建 Machine Learning 模組</p>
@@ -480,33 +553,34 @@ PostgreSQL (Production Data)</code></pre>
     <tbody>
     <tr>
     <td><strong>Python 開發 Python Development</strong></td>
-    <td>5+ 年</td>
-    <td>建構 4 個 Python 工具/SDK，100+ API 端點</td>
+    <td>8+ 年</td>
+    <td>集團 5+ Python SaaS 生產系統 + 4 工具/SDK</td>
     </tr>
     <tr>
-    <td><strong>AI / ML 整合 AI Integration</strong></td>
-    <td>2+ 年</td>
-    <td>MCP 整合, scikit-learn 異常偵測, ChatGPT API</td>
+    <td><strong>AI / LLM Integration</strong></td>
+    <td>3+ 年</td>
+    <td>Brain Gateway / Anemone / Modelhub / MCP / Manta Workflow /
+    Tianji</td>
     </tr>
     <tr>
-    <td><strong>技術管理 Technical Management</strong></td>
+    <td><strong>集團技術領導 Group Leadership</strong></td>
     <td>24 年</td>
-    <td>管理 11 人團隊，100+ 企業客戶</td>
+    <td>HurricaneGroup 6 子公司、C-suite 副手制</td>
     </tr>
     <tr>
     <td><strong>系統架構 System Architecture</strong></td>
     <td>18 年</td>
-    <td>Multi-tenant SaaS, OAuth2, Microservices</td>
+    <td>Multi-tenant SaaS, OAuth2, Microservices, LLM Gateway</td>
     </tr>
     <tr>
     <td><strong>軟體工程 Software Engineering</strong></td>
     <td>25 年</td>
-    <td>12 個生產系統的企業級生態系統</td>
+    <td>30+ 生產系統的集團生態系統</td>
     </tr>
     <tr>
-    <td><strong>DevOps &amp; CI/CD</strong></td>
+    <td><strong>GCP DevOps &amp; CI/CD</strong></td>
     <td>5 年</td>
-    <td>兩層式 CI/CD, Docker, Cloud Run</td>
+    <td>Cloud Run 19 services, 兩層式 CI/CD, 6 步 DB 流程</td>
     </tr>
     </tbody>
     </table>

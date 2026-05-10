@@ -18,9 +18,19 @@
 
 ## 專業摘要
 
-具備 25 年軟體工程經驗的資安架構師，專精 Identity & Access Management (IAM) 領域。從零自建完整的 OAuth 2.0 / OpenID Connect 身份認證伺服器（LocalIdentityServer），涵蓋 Authorization Code Flow with PKCE、Client Credentials、Device Code Flow、Refresh Token Rotation 等完整流程。實作多因素認證（MFA）——TOTP、Email OTP、SMS OTP，並設計密鑰自動輪替系統（LIDS Secret Rotator）部署於 GCP Cloud Functions。
+**資安架構師 | IAM 設計者 | 集團 Vault 與 PKCE patch 主導者**
 
-在加密工程面向，實務運用 BCrypt 密碼雜湊、AES-256-GCM 資料加密、JWT RS256 非對稱簽章，確保資料在傳輸與靜態儲存時的安全。同時具備 Multi-tenant 安全隔離架構設計經驗，所有資料表強制 tenant_id 欄位隔離，搭配 RBAC 權限控制、Rate Limiting、Idempotency、Platform Audit Logging 與 Break-glass 緊急存取機制，建構企業級零信任安全基礎設施。
+具備 25 年軟體工程經驗的資安架構師，專精 Identity & Access Management (IAM) 與集團統一密鑰治理。從零自建完整 OAuth 2.0 / OpenID Connect 身份認證伺服器 **LocalIdentityServer (LIDS)**，涵蓋 Authorization Code + PKCE、Client Credentials、Device Code、Refresh Token Rotation 全流程；實作 MFA（TOTP / Email / SMS）；設計 90 天自動密鑰輪替（LIDS Secret Rotator + GCP Cloud Functions）。
+
+**2026 年集團安全大躍進**：
+- **Hurricane Vault v1.0.0** — 自建 Secret Manager（Audit chain + GCP parity，集團 90+ secrets 統一管理；開發 / CI / CEO token 用 Vault，生產 Cloud Run 用 GCP Secret Manager）
+- **gitea-hs PKCE 客製 patch v1.26.1** — 為 LIDS OIDC 整合客製 Gitea，client 端送 code_challenge 不污染 provider singleton（已部署）
+- **Aegis Security Scanner** — 自建程式碼安全掃描器 + FP ranker ML 訓練（Sprint 21 安全發現持續修復）
+- **Headscale VPN ACL** — 集團 VPN 鎖定，只 eric-mac 可主動連，其他節點全拒
+- **6 步 DB 異動流程** — 強制備份→匯出前→執行→匯出後→驗證→紀錄（2026/04/01 災情後制度化）
+- **集團 19 Cloud Run 服務 IAM 統一治理** — 由 HurricaneSoft 維運主責
+
+加密工程實務：BCrypt 密碼雜湊、AES-256-GCM 資料加密、JWT RS256 非對稱簽章；Multi-tenant 安全隔離（所有 table 強制 tenant_id）；RBAC + Rate Limiting + Audit Logging + Break-glass 緊急存取，建構集團級零信任基礎設施。
 
 ---
 
@@ -51,9 +61,11 @@ PostgreSQL, Redis, Docker, GCP (Cloud Run, Cloud Functions, Secret Manager, Fire
 | 領域 | 年資 |
 |------|------|
 | Security Architecture | 10+ 年 |
-| Identity & Access Management | 5+ 年（密集實作） |
+| Identity & Access Management | 5+ 年（自建 LIDS + Vault + PKCE patch）|
+| Secret Management（自建 Vault）| 1+ 年（v1.0.0 上線）|
+| Security Scanning + ML（Aegis）| 1+ 年 |
+| 集團技術領導 Group Leadership | 24 年（HurricaneGroup 6 子公司）|
 | System Architecture | 18 年 |
-| Technical Management | 24 年 |
 | Software Engineering | 25 年 |
 
 ---
@@ -153,7 +165,76 @@ PostgreSQL, Redis, Docker, GCP (Cloud Run, Cloud Functions, Secret Manager, Fire
 
 ---
 
-### 5. 加密與資料保護工程
+### 5. Hurricane Vault — 集團自建 Secret Manager（v1.0.0）
+
+**期間**：2026/04 — 至今 | **角色**：架構師 / 主導開發
+**技術**：Go, PostgreSQL, GCP Secret Manager parity API
+
+集團統一密鑰管理服務，取代純 GCP Secret Manager 用於開發與內部工具：
+
+- **Audit chain**：所有 secret 取用走完整 audit log，可追蹤誰在何時取用什麼版本
+- **GCP parity API**：與 GCP Secret Manager API 兼容，遷移無痛
+- **bind mount 部署**：本機 Docker `hurricane-vault-server-dev` (port 8930)，集團所有 dev 工具走 hvault
+- **90+ secrets 治理**：含 dev token、Gitea CEO token、各專案 SA key、API key
+- **責任分工**：開發 / CI / CEO token / 副手用 token → Vault；生產 Cloud Run 服務 → GCP Secret Manager
+
+---
+
+### 6. Gitea-hs PKCE 客製 Patch (v1.26.1)
+
+**期間**：2026 — 至今 | **角色**：架構決策 / 客製 patch 維護
+**技術**：Go (gitea fork), OAuth2 PKCE
+
+為 LIDS OIDC 整合客製 Gitea，解決原版 PKCE 實作污染 provider singleton 的問題：
+
+- **branch**：`pkce-on-1.26.1`（custom image `a7b6f22844`）
+- **OIDC client 端送 code_challenge**：不污染 provider singleton，多 OIDC client 可同時使用
+- **AuthURL / Token / ProfileURL mapping**：AuthURL=localhost（瀏覽器），Token/Profile=docker 內網
+- **生產部署於 .32**（hTech 維運），原 hurricanesoft/gitea-hs 已 archived
+
+---
+
+### 7. Aegis Security Scanner + ML FP Ranker
+
+**期間**：2026 — 至今 | **角色**：架構設計 / Python + ML 開發
+**技術**：Python, ML pipeline (Kaggle), FP ranker training
+
+自建程式碼安全掃描器，掃描集團 repo 安全問題；ML 模型訓練減少誤報（False Positive）：
+
+- **aegis-fp-ranker-v3 訓練**（log 已存）
+- **aegis-secret-scanner-fp-v1 訓練**
+- **Sprint 21 安全發現持續修復中**（brain repo branch `fix/aegis-s21-security-findings`）
+- **本機部署**：aegis-daemon-dev (8941) + aegis-docker-proxy-dev
+
+---
+
+### 8. Headscale VPN ACL — 集團 VPN 安全鎖定
+
+**期間**：2026 — 至今 | **角色**：架構設計 / 維運
+**技術**：Headscale (VM `lobsterfarm-633f7`), ACL JSON
+
+- ACL 嚴格限定：只有 eric-mac (100.64.0.3) 能主動連，其他節點全拒
+- ACL 在 `/etc/headscale/acl.json`（VM 136.119.59.232）
+- IP 動態 ACL（節點 re-register 後 IP 跳號的處理）
+- 跨辦公室節點（辦A/辦B/onano）統一 VPN
+
+---
+
+### 9. 6 步 DB 異動流程 — 集團制度化
+
+**期間**：2026/04 — 至今 | **角色**：流程設計 / 強制執行
+
+2026/04/01 因 docker-compose down 造成 DB 全失（時光機復原），制度化集團 DB 異動 SOP：
+
+```
+備份 → 匯出前驗證 → 執行 migration → 匯出後驗證 → 資料驗證 → 紀錄
+```
+
+任何 DB 異動（含新建零資料 DB）都必須走 6 步，缺一不可。所有 alembic / EF Core migration 強制走此流程。
+
+---
+
+### 10. 加密與資料保護工程
 
 - **BCrypt** 密碼雜湊（可調整 Work Factor）
 - **AES-256-GCM** 靜態資料加密

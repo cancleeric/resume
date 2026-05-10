@@ -23,6 +23,7 @@
       <a href="resume_ios.html">iOS</a>
       <a href="resume_security.html">Security</a>
       <a href="PROJECTS.html">專案清單</a>
+      <button class="topbar__btn" onclick="window.print()" title="存為 PDF / 列印">📥 PDF</button>
     </nav>
   </div>
 </header>
@@ -31,10 +32,10 @@
 
   <aside class="sidebar">
     <div class="profile">
-      <div class="avatar">王</div>
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
       <h2 class="profile__name">王英豪</h2>
       <p class="profile__en">WANG YING HAO</p>
-      <p class="profile__title">王英豪 (WANG YING HAO)</p>
+      <p class="profile__title">資安架構師 / IAM / 集團 Vault 設計者</p>
       <div class="status-pill">在職中・可面議</div>
     </div>
 
@@ -52,18 +53,35 @@
       <h3 class="card__title">核心數據</h3>
       <div class="stats">
         <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
-        <div class="stat"><span class="stat__num">24</span><span class="stat__label">年技術管理</span></div>
-        <div class="stat"><span class="stat__num">30+</span><span class="stat__label">生產系統</span></div>
-        <div class="stat"><span class="stat__num">6</span><span class="stat__label">子公司</span></div>
-        <div class="stat"><span class="stat__num">19</span><span class="stat__label">Cloud Run</span></div>
-        <div class="stat"><span class="stat__num">100+</span><span class="stat__label">企業客戶</span></div>
+        <div class="stat"><span class="stat__num">10+</span><span class="stat__label">年
+Security</span></div>
+        <div class="stat"><span class="stat__num">Self-built</span><span class="stat__label">OAuth2/OIDC</span></div>
+        <div class="stat"><span class="stat__num">Vault</span><span class="stat__label">自建
+Secret Mgr</span></div>
+        <div class="stat"><span class="stat__num">PKCE</span><span class="stat__label">Gitea
+客製 patch</span></div>
+        <div class="stat"><span class="stat__num">Aegis</span><span class="stat__label">Scanner
++ ML</span></div>
+
       </div>
     </section>
 
     <section class="card">
       <h3 class="card__title">技術標籤</h3>
       <div class="tags">
-        <span class="tag">C#</span><span class="tag">.NET 8</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Swift</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">GCP</span><span class="tag">Cloud Run</span><span class="tag">OAuth2/OIDC</span><span class="tag">LLM Gateway</span><span class="tag">Multi-tenant SaaS</span>
+<span class="tag">OAuth 2.0</span><span class="tag">OpenID
+Connect</span><span class="tag">PKCE</span><span class="tag">JWT
+RS256</span><span class="tag">MFA
+(TOTP/Email/SMS)</span><span class="tag">RBAC</span><span class="tag">BCrypt</span><span class="tag">AES-256-GCM</span><span class="tag">OWASP
+Top 10</span><span class="tag">Zero
+Trust</span><span class="tag">Hurricane
+Vault</span><span class="tag">LIDS</span><span class="tag">Aegis
+Scanner</span><span class="tag">Headscale
+ACL</span><span class="tag">Audit
+Logging</span><span class="tag">Break-glass</span><span class="tag">Rate
+Limiting</span><span class="tag">Multi-tenant
+Isolation</span><span class="tag">GCP Secret
+Manager</span><span class="tag">Azure Key Vault</span>
       </div>
     </section>
 
@@ -115,19 +133,37 @@
     </table>
     <hr />
     <h2 id="專業摘要">專業摘要</h2>
+    <p><strong>資安架構師 | IAM 設計者 | 集團 Vault 與 PKCE patch
+    主導者</strong></p>
     <p>具備 25 年軟體工程經驗的資安架構師，專精 Identity &amp; Access
-    Management (IAM) 領域。從零自建完整的 OAuth 2.0 / OpenID Connect
-    身份認證伺服器（LocalIdentityServer），涵蓋 Authorization Code Flow
-    with PKCE、Client Credentials、Device Code Flow、Refresh Token
-    Rotation 等完整流程。實作多因素認證（MFA）——TOTP、Email OTP、SMS
-    OTP，並設計密鑰自動輪替系統（LIDS Secret Rotator）部署於 GCP Cloud
-    Functions。</p>
-    <p>在加密工程面向，實務運用 BCrypt 密碼雜湊、AES-256-GCM
-    資料加密、JWT RS256
-    非對稱簽章，確保資料在傳輸與靜態儲存時的安全。同時具備 Multi-tenant
-    安全隔離架構設計經驗，所有資料表強制 tenant_id 欄位隔離，搭配 RBAC
-    權限控制、Rate Limiting、Idempotency、Platform Audit Logging 與
-    Break-glass 緊急存取機制，建構企業級零信任安全基礎設施。</p>
+    Management (IAM) 與集團統一密鑰治理。從零自建完整 OAuth 2.0 / OpenID
+    Connect 身份認證伺服器 <strong>LocalIdentityServer
+    (LIDS)</strong>，涵蓋 Authorization Code + PKCE、Client
+    Credentials、Device Code、Refresh Token Rotation 全流程；實作
+    MFA（TOTP / Email / SMS）；設計 90 天自動密鑰輪替（LIDS Secret
+    Rotator + GCP Cloud Functions）。</p>
+    <p><strong>2026 年集團安全大躍進</strong>：</p>
+    <ul>
+    <li><strong>Hurricane Vault v1.0.0</strong> — 自建 Secret
+    Manager（Audit chain + GCP parity，集團 90+ secrets 統一管理；開發 /
+    CI / CEO token 用 Vault，生產 Cloud Run 用 GCP Secret Manager）</li>
+    <li><strong>gitea-hs PKCE 客製 patch v1.26.1</strong> — 為 LIDS OIDC
+    整合客製 Gitea，client 端送 code_challenge 不污染 provider
+    singleton（已部署）</li>
+    <li><strong>Aegis Security Scanner</strong> — 自建程式碼安全掃描器 +
+    FP ranker ML 訓練（Sprint 21 安全發現持續修復）</li>
+    <li><strong>Headscale VPN ACL</strong> — 集團 VPN 鎖定，只 eric-mac
+    可主動連，其他節點全拒</li>
+    <li><strong>6 步 DB 異動流程</strong> —
+    強制備份→匯出前→執行→匯出後→驗證→紀錄（2026/04/01
+    災情後制度化）</li>
+    <li><strong>集團 19 Cloud Run 服務 IAM 統一治理</strong> — 由
+    HurricaneSoft 維運主責</li>
+    </ul>
+    <p>加密工程實務：BCrypt 密碼雜湊、AES-256-GCM 資料加密、JWT RS256
+    非對稱簽章；Multi-tenant 安全隔離（所有 table 強制 tenant_id）；RBAC
+    + Rate Limiting + Audit Logging + Break-glass
+    緊急存取，建構集團級零信任基礎設施。</p>
     <hr />
     <h2 id="核心技術能力">核心技術能力</h2>
     <h3 id="identity--access-management">Identity &amp; Access
@@ -170,15 +206,23 @@
     </tr>
     <tr>
     <td>Identity &amp; Access Management</td>
-    <td>5+ 年（密集實作）</td>
+    <td>5+ 年（自建 LIDS + Vault + PKCE patch）</td>
+    </tr>
+    <tr>
+    <td>Secret Management（自建 Vault）</td>
+    <td>1+ 年（v1.0.0 上線）</td>
+    </tr>
+    <tr>
+    <td>Security Scanning + ML（Aegis）</td>
+    <td>1+ 年</td>
+    </tr>
+    <tr>
+    <td>集團技術領導 Group Leadership</td>
+    <td>24 年（HurricaneGroup 6 子公司）</td>
     </tr>
     <tr>
     <td>System Architecture</td>
     <td>18 年</td>
-    </tr>
-    <tr>
-    <td>Technical Management</td>
-    <td>24 年</td>
     </tr>
     <tr>
     <td>Software Engineering</td>
@@ -309,7 +353,89 @@
     <li><strong>Secret Rotation Events</strong>：密鑰輪替操作記錄</li>
     </ul>
     <hr />
-    <h3 id="5-加密與資料保護工程">5. 加密與資料保護工程</h3>
+    <h3 id="5-hurricane-vault--集團自建-secret-managerv100">5. Hurricane
+    Vault — 集團自建 Secret Manager（v1.0.0）</h3>
+    <p><strong>期間</strong>：2026/04 — 至今 |
+    <strong>角色</strong>：架構師 / 主導開發 <strong>技術</strong>：Go,
+    PostgreSQL, GCP Secret Manager parity API</p>
+    <p>集團統一密鑰管理服務，取代純 GCP Secret Manager
+    用於開發與內部工具：</p>
+    <ul>
+    <li><strong>Audit chain</strong>：所有 secret 取用走完整 audit
+    log，可追蹤誰在何時取用什麼版本</li>
+    <li><strong>GCP parity API</strong>：與 GCP Secret Manager API
+    兼容，遷移無痛</li>
+    <li><strong>bind mount 部署</strong>：本機 Docker
+    <code>hurricane-vault-server-dev</code> (port 8930)，集團所有 dev
+    工具走 hvault</li>
+    <li><strong>90+ secrets 治理</strong>：含 dev token、Gitea CEO
+    token、各專案 SA key、API key</li>
+    <li><strong>責任分工</strong>：開發 / CI / CEO token / 副手用 token
+    → Vault；生產 Cloud Run 服務 → GCP Secret Manager</li>
+    </ul>
+    <hr />
+    <h3 id="6-gitea-hs-pkce-客製-patch-v1261">6. Gitea-hs PKCE 客製
+    Patch (v1.26.1)</h3>
+    <p><strong>期間</strong>：2026 — 至今 |
+    <strong>角色</strong>：架構決策 / 客製 patch 維護
+    <strong>技術</strong>：Go (gitea fork), OAuth2 PKCE</p>
+    <p>為 LIDS OIDC 整合客製 Gitea，解決原版 PKCE 實作污染 provider
+    singleton 的問題：</p>
+    <ul>
+    <li><strong>branch</strong>：<code>pkce-on-1.26.1</code>（custom
+    image <code>a7b6f22844</code>）</li>
+    <li><strong>OIDC client 端送 code_challenge</strong>：不污染
+    provider singleton，多 OIDC client 可同時使用</li>
+    <li><strong>AuthURL / Token / ProfileURL
+    mapping</strong>：AuthURL=localhost（瀏覽器），Token/Profile=docker
+    內網</li>
+    <li><strong>生產部署於 .32</strong>（hTech 維運），原
+    hurricanesoft/gitea-hs 已 archived</li>
+    </ul>
+    <hr />
+    <h3 id="7-aegis-security-scanner--ml-fp-ranker">7. Aegis Security
+    Scanner + ML FP Ranker</h3>
+    <p><strong>期間</strong>：2026 — 至今 |
+    <strong>角色</strong>：架構設計 / Python + ML 開發
+    <strong>技術</strong>：Python, ML pipeline (Kaggle), FP ranker
+    training</p>
+    <p>自建程式碼安全掃描器，掃描集團 repo 安全問題；ML
+    模型訓練減少誤報（False Positive）：</p>
+    <ul>
+    <li><strong>aegis-fp-ranker-v3 訓練</strong>（log 已存）</li>
+    <li><strong>aegis-secret-scanner-fp-v1 訓練</strong></li>
+    <li><strong>Sprint 21 安全發現持續修復中</strong>（brain repo branch
+    <code>fix/aegis-s21-security-findings</code>）</li>
+    <li><strong>本機部署</strong>：aegis-daemon-dev (8941) +
+    aegis-docker-proxy-dev</li>
+    </ul>
+    <hr />
+    <h3 id="8-headscale-vpn-acl--集團-vpn-安全鎖定">8. Headscale VPN ACL
+    — 集團 VPN 安全鎖定</h3>
+    <p><strong>期間</strong>：2026 — 至今 |
+    <strong>角色</strong>：架構設計 / 維運
+    <strong>技術</strong>：Headscale (VM
+    <code>lobsterfarm-633f7</code>), ACL JSON</p>
+    <ul>
+    <li>ACL 嚴格限定：只有 eric-mac (100.64.0.3)
+    能主動連，其他節點全拒</li>
+    <li>ACL 在 <code>/etc/headscale/acl.json</code>（VM
+    136.119.59.232）</li>
+    <li>IP 動態 ACL（節點 re-register 後 IP 跳號的處理）</li>
+    <li>跨辦公室節點（辦A/辦B/onano）統一 VPN</li>
+    </ul>
+    <hr />
+    <h3 id="9-6-步-db-異動流程--集團制度化">9. 6 步 DB 異動流程 —
+    集團制度化</h3>
+    <p><strong>期間</strong>：2026/04 — 至今 |
+    <strong>角色</strong>：流程設計 / 強制執行</p>
+    <p>2026/04/01 因 docker-compose down 造成 DB
+    全失（時光機復原），制度化集團 DB 異動 SOP：</p>
+    <pre><code>備份 → 匯出前驗證 → 執行 migration → 匯出後驗證 → 資料驗證 → 紀錄</code></pre>
+    <p>任何 DB 異動（含新建零資料 DB）都必須走 6 步，缺一不可。所有
+    alembic / EF Core migration 強制走此流程。</p>
+    <hr />
+    <h3 id="10-加密與資料保護工程">10. 加密與資料保護工程</h3>
     <ul>
     <li><strong>BCrypt</strong> 密碼雜湊（可調整 Work Factor）</li>
     <li><strong>AES-256-GCM</strong> 靜態資料加密</li>
