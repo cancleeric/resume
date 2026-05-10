@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$if(title)$$title$$else$王英豪 履歷$endif$</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="resume-style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <span class="topbar__brand">HurricaneGroup</span>
+    <nav class="topbar__nav">
+      <a href="resume.html">主版</a>
+      <a href="resume_dotnet.html">.NET</a>
+      <a href="resume_python_ai.html">Python/AI</a>
+      <a href="resume_fullstack.html">Full-stack</a>
+      <a href="resume_java.html">Java</a>
+      <a href="resume_ios.html">iOS</a>
+      <a href="resume_security.html">Security</a>
+      <a href="PROJECTS.html">專案清單</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="profile">
+      <div class="avatar">王</div>
+      <h2 class="profile__name">王英豪</h2>
+      <p class="profile__en">WANG YING HAO</p>
+      <p class="profile__title">$if(title)$$title$$else$集團技術長 / 技術架構師$endif$</p>
+      <div class="status-pill">在職中・可面議</div>
+    </div>
+
+    <section class="card">
+      <h3 class="card__title">聯絡資訊</h3>
+      <ul class="meta">
+        <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
+        <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
+        <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
+        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$$ 2,400,000</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">核心數據</h3>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
+        <div class="stat"><span class="stat__num">24</span><span class="stat__label">年技術管理</span></div>
+        <div class="stat"><span class="stat__num">30+</span><span class="stat__label">生產系統</span></div>
+        <div class="stat"><span class="stat__num">6</span><span class="stat__label">子公司</span></div>
+        <div class="stat"><span class="stat__num">19</span><span class="stat__label">Cloud Run</span></div>
+        <div class="stat"><span class="stat__num">100+</span><span class="stat__label">企業客戶</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">技術標籤</h3>
+      <div class="tags">
+        <span class="tag">C#</span><span class="tag">.NET 8</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Swift</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">GCP</span><span class="tag">Cloud Run</span><span class="tag">OAuth2/OIDC</span><span class="tag">LLM Gateway</span><span class="tag">Multi-tenant SaaS</span>
+      </div>
+    </section>
+
+    <section class="card card--accent">
+      <h3 class="card__title">學歷</h3>
+      <p class="edu"><strong>東南科技大學</strong><br/>數位電子系（二專）<br/><em>第一名畢業</em></p>
+      <p class="edu"><strong>內湖高工</strong><br/>三等榮譽獎章</p>
+    </section>
+
+    <p class="sidebar__foot">最後更新 2026 / 05</p>
+  </aside>
+
+  <main class="main">
+    $body$
+  </main>
+
+</div>
+
+<footer class="bottom">
+  <p>© Eric Wang · HurricaneGroup · $if(title)$$title$$else$Resume$endif$</p>
+</footer>
+
+</body>
+</html>

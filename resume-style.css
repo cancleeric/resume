@@ -1,185 +1,559 @@
-/* Resume PDF Stylesheet
-   - Clean white background (ATS-friendly)
-   - Professional dark headers
-   - Chinese typography optimization
+/* Resume Stylesheet — 104 風格雙欄
+   螢幕：左 sidebar + 右主內容卡片，淺灰底
+   印刷：A4 ATS-friendly（單欄）
 */
 
-/* ── Page Setup ── */
-@page {
-  margin: 16mm 18mm 16mm 18mm;
-  size: A4;
+:root {
+  --bg: #eef2f7;
+  --surface: #ffffff;
+  --ink: #0f172a;
+  --ink-2: #334155;
+  --ink-3: #475569;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --line-2: #cbd5e1;
+
+  /* 104 主色系 */
+  --brand: #1e3a8a;
+  --brand-2: #2563eb;
+  --brand-soft: #eff6ff;
+  --accent: #ef4444;       /* 104 紅 */
+  --accent-2: #dc2626;
+  --accent-soft: #fef2f2;
+  --good: #10b981;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 2px rgba(15,23,42,.04), 0 4px 12px rgba(15,23,42,.06);
+  --shadow-lg: 0 4px 24px rgba(15,23,42,.08);
 }
 
-/* ── Base ── */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
 body {
-  font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 10.5pt;
-  line-height: 1.75;
-  color: #1a1a1a;
-  background: #ffffff;
-  word-break: break-word;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ── Headings ── */
-h1 {
-  font-size: 20pt;
-  font-weight: 700;
-  color: #ffffff;
-  background: #1e2d40;
-  margin: -16mm -18mm 12pt -18mm;
-  padding: 14pt 18mm 12pt 18mm;
-  letter-spacing: 0.04em;
-  border-bottom: 4px solid #3a7bd5;
-  page-break-after: avoid;
-}
-
-h2 {
-  font-size: 11.5pt;
-  font-weight: 700;
-  color: #ffffff;
-  background: #2c4a6e;
-  margin: 16pt -18mm 8pt -18mm;
-  padding: 5pt 18mm 5pt 18mm;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  page-break-after: avoid;
-}
-
-h3 {
-  font-size: 10.5pt;
-  font-weight: 700;
-  color: #1e2d40;
-  margin: 12pt 0 4pt 0;
-  padding-bottom: 2pt;
-  border-bottom: 1.5px solid #3a7bd5;
-  page-break-after: avoid;
-}
-
-h4 {
-  font-size: 10pt;
-  font-weight: 700;
-  color: #2c4a6e;
-  margin: 8pt 0 3pt 0;
-  page-break-after: avoid;
-}
-
-/* ── Paragraph ── */
-p {
-  margin: 4pt 0;
-  orphans: 3;
-  widows: 3;
-}
-
-/* ── Lists ── */
-ul, ol {
-  margin: 4pt 0 4pt 0;
-  padding-left: 18pt;
-}
-
-li {
-  margin: 2pt 0;
+  font-family: 'Inter', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
   line-height: 1.7;
+  color: var(--ink);
+  background: var(--bg);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.01em;
 }
 
-/* ── Links ── */
-a {
-  color: #3a7bd5;
+a { color: var(--brand-2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ============================================================
+   TOPBAR
+   ============================================================ */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--brand);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+.topbar__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.topbar__brand {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+.topbar__brand::before {
+  content: "🌀 ";
+  margin-right: 4px;
+}
+.topbar__nav { display: flex; gap: 4px; flex-wrap: wrap; }
+.topbar__nav a {
+  color: #cbd5e1;
+  font-size: 13.5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all .15s;
+}
+.topbar__nav a:hover {
+  color: #fff;
+  background: rgba(255,255,255,.1);
   text-decoration: none;
 }
 
-/* ── Horizontal Rule ── */
-hr {
-  display: none;
+/* ============================================================
+   LAYOUT — Sidebar + Main
+   ============================================================ */
+.layout {
+  max-width: 1280px;
+  margin: 24px auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+  align-items: start;
 }
 
-/* ── Code Blocks ── */
-pre {
-  background: #f4f6f9;
-  border: 1px solid #d0d7e3;
-  border-left: 3px solid #3a7bd5;
-  border-radius: 3px;
-  padding: 8pt 10pt;
-  font-size: 8.5pt;
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+.sidebar {
+  position: sticky;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.sidebar::-webkit-scrollbar { width: 6px; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--line-2); border-radius: 3px; }
+
+.profile {
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 28px 20px 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.profile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 0%, rgba(255,255,255,.18), transparent 60%);
+  pointer-events: none;
+}
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin: 0 auto 14px;
+  background: #fff;
+  color: var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: 800;
+  box-shadow: 0 6px 18px rgba(0,0,0,.18);
+  border: 3px solid rgba(255,255,255,.3);
+}
+.profile__name {
+  margin: 4px 0 2px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.profile__en {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: rgba(255,255,255,.75);
+  text-transform: uppercase;
+}
+.profile__title {
+  margin: 8px 0 12px;
+  font-size: 13.5px;
+  color: rgba(255,255,255,.92);
   line-height: 1.5;
-  overflow-x: auto;
-  margin: 6pt 0;
-  page-break-inside: avoid;
+}
+.status-pill {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
 }
 
-code {
-  font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
-  font-size: 8.5pt;
-  background: #f0f3f8;
-  border: 1px solid #d8dee9;
-  border-radius: 2px;
-  padding: 1pt 4pt;
-  color: #2c4a6e;
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+.card--accent {
+  border-left: 3px solid var(--accent);
+}
+.card__title {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brand);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
 }
 
-pre code {
-  background: none;
-  border: none;
+.meta { list-style: none; margin: 0; padding: 0; }
+.meta li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 13px;
+  border-bottom: 1px dashed var(--line);
+}
+.meta li:last-child { border-bottom: none; }
+.meta__k { color: var(--muted); font-weight: 500; flex-shrink: 0; }
+.meta__v { color: var(--ink); font-weight: 600; text-align: right; word-break: break-all; }
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.stat {
+  background: var(--brand-soft);
+  padding: 10px 8px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  border: 1px solid #dbeafe;
+}
+.stat__num {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--brand);
+  line-height: 1.2;
+}
+.stat__label {
+  display: block;
+  font-size: 10.5px;
+  color: var(--muted);
+  margin-top: 2px;
+  letter-spacing: 0.02em;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.tag {
+  display: inline-block;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-size: 11.5px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid #dbeafe;
+}
+
+.edu { margin: 8px 0; font-size: 13px; line-height: 1.55; color: var(--ink-2); }
+.edu strong { color: var(--ink); }
+.edu em { color: var(--accent-2); font-style: normal; font-size: 11.5px; font-weight: 600; }
+
+.sidebar__foot {
+  text-align: center;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+/* ============================================================
+   MAIN — pandoc body 內容
+   ============================================================ */
+.main {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 36px 40px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  min-height: 80vh;
+}
+
+/* 隱藏 main 內第一個 h1（重複，已在 sidebar 顯示姓名） */
+.main > h1:first-child {
+  font-size: 24px;
+  margin: 0 0 8px 0;
+  padding-bottom: 16px;
+  border-bottom: 3px solid var(--brand);
+  color: var(--brand);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* 隱藏 main 內第一行通常是 ## XXX | XX 年 (重複資訊) */
+.main > h2:first-of-type { margin-top: 12px; }
+
+.main h2 {
+  margin: 36px 0 14px;
+  padding: 0 0 10px 12px;
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--ink);
+  border-left: 5px solid var(--accent);
+  border-bottom: 2px solid var(--line);
+  letter-spacing: -0.005em;
+}
+.main h2::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--brand);
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  transform: translateY(-2px);
+}
+
+.main h3 {
+  margin: 24px 0 10px;
   padding: 0;
-  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--brand);
 }
 
-/* ── Tables ── */
-table {
+.main h4 {
+  margin: 16px 0 8px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+
+.main p { margin: 8px 0; color: var(--ink-2); }
+.main p em { color: var(--muted); font-style: normal; font-size: 13px; }
+.main strong { color: var(--ink); font-weight: 700; }
+
+.main ul, .main ol { margin: 8px 0; padding-left: 22px; color: var(--ink-2); }
+.main li { margin: 5px 0; }
+.main li::marker { color: var(--brand-2); }
+
+.main hr { border: none; border-top: 1px solid var(--line); margin: 28px 0; }
+
+/* 表格 — 104 風格 */
+.main table {
   width: 100%;
-  border-collapse: collapse;
-  margin: 8pt 0;
-  font-size: 9.5pt;
-  page-break-inside: avoid;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 14px 0;
+  background: var(--surface);
+  font-size: 13.5px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
 }
-
-thead tr {
-  background: #1e2d40;
-  color: #ffffff;
+.main thead tr {
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);
+  color: #fff;
 }
-
-thead th {
-  padding: 5pt 8pt;
+.main thead th {
+  padding: 10px 14px;
   text-align: left;
   font-weight: 600;
-  letter-spacing: 0.03em;
+  font-size: 12.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
-
-tbody tr:nth-child(even) {
-  background: #f4f6f9;
-}
-
-tbody tr:nth-child(odd) {
-  background: #ffffff;
-}
-
-tbody td {
-  padding: 4pt 8pt;
-  border-bottom: 1px solid #e0e6ef;
+.main tbody tr { border-bottom: 1px solid var(--line); transition: background .12s; }
+.main tbody tr:last-child { border-bottom: none; }
+.main tbody tr:nth-child(even) { background: #f8fafc; }
+.main tbody tr:hover { background: var(--brand-soft); }
+.main tbody td {
+  padding: 10px 14px;
   vertical-align: top;
+  color: var(--ink-2);
+  border: none;
+}
+.main tbody td strong { color: var(--ink); }
+
+/* 程式碼 */
+.main code {
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  background: #f1f5f9;
+  color: var(--brand);
+  padding: 2px 7px;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+  font-weight: 500;
+}
+.main pre {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 16px 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 12.5px;
+  margin: 14px 0;
+  border-left: 4px solid var(--brand-2);
+  box-shadow: var(--shadow);
+}
+.main pre code { background: none; border: none; padding: 0; color: inherit; font-size: inherit; }
+
+.main blockquote {
+  margin: 14px 0;
+  padding: 12px 18px;
+  background: var(--brand-soft);
+  border-left: 4px solid var(--brand-2);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--ink-2);
+}
+.main blockquote p { margin: 0; }
+
+/* 結尾 italic 註解 */
+.main > p:last-of-type {
+  margin-top: 32px;
+  padding: 14px 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12.5px;
+  border-top: 1px solid var(--line);
+  font-style: italic;
 }
 
-/* ── Bold / Strong ── */
-strong {
-  font-weight: 700;
-  color: #1e2d40;
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.bottom {
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+.bottom p { margin: 0; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 980px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: static; max-height: none; overflow: visible; }
+  .stats { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .topbar__nav { gap: 0; }
+  .topbar__nav a { padding: 4px 8px; font-size: 12px; }
+  .layout { padding: 0 12px; margin: 12px auto; gap: 12px; }
+  .main { padding: 22px 18px; }
+  .main h2 { font-size: 17px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ── Blockquote (subtitle line under h1) ── */
-blockquote {
-  border-left: 3px solid #3a7bd5;
-  margin: 6pt 0;
-  padding: 3pt 10pt;
-  color: #4a5568;
-  font-size: 9.5pt;
-  background: #f8fafc;
-}
+/* ============================================================
+   PRINT — A4 ATS-friendly（隱藏 sidebar/topbar）
+   ============================================================ */
+@media print {
+  @page { margin: 16mm 18mm; size: A4; }
+  body { background: #fff; font-size: 10.5pt; line-height: 1.65; color: #1a1a1a; }
+  .topbar, .bottom { display: none !important; }
+  .layout {
+    display: block;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar {
+    display: block;
+    position: static;
+    max-height: none;
+    overflow: visible;
+    margin-bottom: 12pt;
+    page-break-after: avoid;
+  }
+  .profile {
+    background: #1e2d40 !important;
+    color: #fff !important;
+    border-radius: 4pt;
+    padding: 10pt;
+    text-align: left;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .avatar { display: none; }
+  .profile__name { font-size: 18pt; margin: 0; }
+  .profile__en { font-size: 8pt; }
+  .profile__title { font-size: 10pt; margin: 2pt 0; }
+  .status-pill { display: none; }
+  .card {
+    box-shadow: none;
+    border: 1px solid #d0d7e3;
+    padding: 6pt 8pt;
+    margin: 4pt 0;
+    border-radius: 3pt;
+  }
+  .card__title { font-size: 9pt; color: #1e2d40; padding-bottom: 3pt; }
+  .meta li { font-size: 9pt; padding: 2pt 0; }
+  .stats { gap: 4pt; }
+  .stat { padding: 4pt 2pt; background: #f4f6f9 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .stat__num { font-size: 12pt; }
+  .stat__label { font-size: 7.5pt; }
+  .tag { font-size: 8pt; padding: 1pt 5pt; background: #f4f6f9 !important; color: #1e2d40 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
-/* ── Page Break Control ── */
-h2, h3 {
-  page-break-before: auto;
-}
-
-.page-break {
-  page-break-before: always;
+  .main {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+  }
+  .main > h1:first-child {
+    font-size: 16pt;
+    color: #1e2d40;
+    border-bottom: 2pt solid #3a7bd5;
+    padding-bottom: 4pt;
+    margin: 8pt 0 6pt;
+  }
+  .main h2 {
+    background: #2c4a6e !important;
+    color: #fff !important;
+    padding: 4pt 8pt !important;
+    margin: 10pt 0 6pt 0;
+    font-size: 11pt;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    page-break-after: avoid;
+  }
+  .main h2::before { display: none; }
+  .main h3 {
+    font-size: 10pt;
+    color: #1e2d40;
+    border-bottom: 1pt solid #3a7bd5;
+    padding-bottom: 2pt;
+    margin: 8pt 0 3pt;
+    page-break-after: avoid;
+  }
+  .main h4 { font-size: 9.5pt; color: #2c4a6e; }
+  .main p, .main li { font-size: 9.5pt; }
+  .main pre, .main code {
+    background: #f4f6f9 !important;
+    color: #2c4a6e !important;
+    border: 1px solid #d8dee9;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .main pre { font-size: 8pt; padding: 6pt; box-shadow: none; }
+  .main code { font-size: 8pt; }
+  .main table { font-size: 8.5pt; box-shadow: none; border-radius: 0; page-break-inside: avoid; }
+  .main thead tr { background: #1e2d40 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .main thead th { padding: 4pt 6pt; }
+  .main tbody td { padding: 3pt 6pt; }
+  .main blockquote {
+    background: #f8fafc !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }

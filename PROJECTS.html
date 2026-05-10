@@ -1,246 +1,229 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="zh-Hant">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>王英豪 - 專案技術詳細清單</title>
-  <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { color: #008000; } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { color: #008000; font-weight: bold; } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="resume-style.css" />
 </head>
 <body>
-<header id="title-block-header">
-<h1 class="title">王英豪 - 專案技術詳細清單</h1>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <span class="topbar__brand">HurricaneGroup</span>
+    <nav class="topbar__nav">
+      <a href="resume.html">主版</a>
+      <a href="resume_dotnet.html">.NET</a>
+      <a href="resume_python_ai.html">Python/AI</a>
+      <a href="resume_fullstack.html">Full-stack</a>
+      <a href="resume_java.html">Java</a>
+      <a href="resume_ios.html">iOS</a>
+      <a href="resume_security.html">Security</a>
+      <a href="PROJECTS.html">專案清單</a>
+    </nav>
+  </div>
 </header>
-<h1 id="王英豪---專案技術詳細清單">王英豪 - 專案技術詳細清單</h1>
-<blockquote>
-<p>從 /Users/yinghaowang/Work 目錄自動整理的專案技術資訊</p>
-</blockquote>
-<p><strong>最後更新：</strong> 2026年1月26日</p>
-<hr />
-<h2 id="clipboard-目錄">📋 目錄</h2>
-<ol type="1">
-<li><a href="#核心專案群組">核心專案群組</a>
-<ul>
-<li><a href="#1-squid-專案管理系統">Squid 專案管理系統</a></li>
-<li><a href="#2-neritic-cli-工具">Neritic CLI 工具</a></li>
-<li><a href="#3-localidentityserver-lids">LocalIdentityServer
-(LIDS)</a></li>
-<li><a href="#4-tentacle-frontend">Tentacle Frontend</a></li>
-<li><a href="#5-tentacle-bff">Tentacle BFF</a></li>
-</ul></li>
-<li><a href="#sdk-專案群組">SDK 專案群組</a></li>
-<li><a href="#行動應用專案">行動應用專案</a></li>
-<li><a href="#支援與輔助專案">支援與輔助專案</a></li>
-<li><a href="#技術總結">技術總結</a></li>
-</ol>
-<hr />
-<h2 id="核心專案群組">核心專案群組</h2>
-<h3 id="1-squid-專案管理系統">1. Squid 專案管理系統</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/mycode/squid</code></p>
-<p><strong>專案類型</strong>: 企業級專案管理平台（核心後端）</p>
-<p><strong>時間線</strong>: 2025/01 - 至今（持續開發）</p>
-<h4 id="主要功能">主要功能</h4>
-<ul>
-<li>需求管理（Requirements）與工單追蹤</li>
-<li>專案管理（Projects）與分類系統</li>
-<li>驗證審查系統（Verification Reports）</li>
-<li>API 服務與分散式節點協調</li>
-<li>MCP (Model Context Protocol) 整合</li>
-<li>多租戶（Multi-tenant）架構支援</li>
-</ul>
-<h4 id="技術棧">技術棧</h4>
-<p><strong>核心技術</strong>:</p>
-<ul>
-<li><strong>語言</strong>: Python 3.11+</li>
-<li><strong>Web 框架</strong>: FastAPI（非同步 Web 服務）</li>
-<li><strong>資料庫</strong>: PostgreSQL（主要）、SQLite（開發）
-<ul>
-<li>SQLAlchemy 2.0 ORM</li>
-<li>Alembic 資料庫遷移</li>
-</ul></li>
-<li><strong>快取</strong>: Redis</li>
-<li><strong>非同步</strong>: asyncpg、aiohttp</li>
-</ul>
-<p><strong>整合服務</strong>:</p>
-<ul>
-<li><strong>認證</strong>: JWT + OAuth2.0（透過 LIDS）</li>
-<li><strong>支付</strong>: Stripe、PayPal (Braintree)</li>
-<li><strong>通知</strong>: SendGrid (Email)、Slack SDK</li>
-<li><strong>監控</strong>: Prometheus metrics、Sentry
-錯誤追蹤、OpenTelemetry</li>
-<li><strong>機器學習</strong>: scikit-learn（異常偵測）</li>
-<li><strong>排程</strong>: APScheduler</li>
-<li><strong>通訊</strong>: WebSocket</li>
-</ul>
-<h4 id="架構分層">架構分層</h4>
-<pre><code>squid/
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="profile">
+      <div class="avatar">王</div>
+      <h2 class="profile__name">王英豪</h2>
+      <p class="profile__en">WANG YING HAO</p>
+      <p class="profile__title">王英豪 - 專案技術詳細清單</p>
+      <div class="status-pill">在職中・可面議</div>
+    </div>
+
+    <section class="card">
+      <h3 class="card__title">聯絡資訊</h3>
+      <ul class="meta">
+        <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
+        <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
+        <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
+        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">核心數據</h3>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
+        <div class="stat"><span class="stat__num">24</span><span class="stat__label">年技術管理</span></div>
+        <div class="stat"><span class="stat__num">30+</span><span class="stat__label">生產系統</span></div>
+        <div class="stat"><span class="stat__num">6</span><span class="stat__label">子公司</span></div>
+        <div class="stat"><span class="stat__num">19</span><span class="stat__label">Cloud Run</span></div>
+        <div class="stat"><span class="stat__num">100+</span><span class="stat__label">企業客戶</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">技術標籤</h3>
+      <div class="tags">
+        <span class="tag">C#</span><span class="tag">.NET 8</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Swift</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">GCP</span><span class="tag">Cloud Run</span><span class="tag">OAuth2/OIDC</span><span class="tag">LLM Gateway</span><span class="tag">Multi-tenant SaaS</span>
+      </div>
+    </section>
+
+    <section class="card card--accent">
+      <h3 class="card__title">學歷</h3>
+      <p class="edu"><strong>東南科技大學</strong><br/>數位電子系（二專）<br/><em>第一名畢業</em></p>
+      <p class="edu"><strong>內湖高工</strong><br/>三等榮譽獎章</p>
+    </section>
+
+    <p class="sidebar__foot">最後更新 2026 / 05</p>
+  </aside>
+
+  <main class="main">
+    <h1 id="王英豪---專案技術詳細清單">王英豪 - 專案技術詳細清單</h1>
+    <blockquote>
+    <p>從 /Users/yinghaowang/Work 目錄自動整理的專案技術資訊</p>
+    </blockquote>
+    <p><strong>最後更新：</strong> 2026年1月26日</p>
+    <hr />
+    <h2 id="clipboard-目錄">📋 目錄</h2>
+    <ol type="1">
+    <li><a href="#核心專案群組">核心專案群組</a>
+    <ul>
+    <li><a href="#1-squid-專案管理系統">Squid 專案管理系統</a></li>
+    <li><a href="#2-neritic-cli-工具">Neritic CLI 工具</a></li>
+    <li><a href="#3-localidentityserver-lids">LocalIdentityServer
+    (LIDS)</a></li>
+    <li><a href="#4-tentacle-frontend">Tentacle Frontend</a></li>
+    <li><a href="#5-tentacle-bff">Tentacle BFF</a></li>
+    </ul></li>
+    <li><a href="#sdk-專案群組">SDK 專案群組</a></li>
+    <li><a href="#行動應用專案">行動應用專案</a></li>
+    <li><a href="#支援與輔助專案">支援與輔助專案</a></li>
+    <li><a href="#技術總結">技術總結</a></li>
+    </ol>
+    <hr />
+    <h2 id="核心專案群組">核心專案群組</h2>
+    <h3 id="1-squid-專案管理系統">1. Squid 專案管理系統</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/mycode/squid</code></p>
+    <p><strong>專案類型</strong>: 企業級專案管理平台（核心後端）</p>
+    <p><strong>時間線</strong>: 2025/01 - 至今（持續開發）</p>
+    <h4 id="主要功能">主要功能</h4>
+    <ul>
+    <li>需求管理（Requirements）與工單追蹤</li>
+    <li>專案管理（Projects）與分類系統</li>
+    <li>驗證審查系統（Verification Reports）</li>
+    <li>API 服務與分散式節點協調</li>
+    <li>MCP (Model Context Protocol) 整合</li>
+    <li>多租戶（Multi-tenant）架構支援</li>
+    </ul>
+    <h4 id="技術棧">技術棧</h4>
+    <p><strong>核心技術</strong>:</p>
+    <ul>
+    <li><strong>語言</strong>: Python 3.11+</li>
+    <li><strong>Web 框架</strong>: FastAPI（非同步 Web 服務）</li>
+    <li><strong>資料庫</strong>: PostgreSQL（主要）、SQLite（開發）
+    <ul>
+    <li>SQLAlchemy 2.0 ORM</li>
+    <li>Alembic 資料庫遷移</li>
+    </ul></li>
+    <li><strong>快取</strong>: Redis</li>
+    <li><strong>非同步</strong>: asyncpg、aiohttp</li>
+    </ul>
+    <p><strong>整合服務</strong>:</p>
+    <ul>
+    <li><strong>認證</strong>: JWT + OAuth2.0（透過 LIDS）</li>
+    <li><strong>支付</strong>: Stripe、PayPal (Braintree)</li>
+    <li><strong>通知</strong>: SendGrid (Email)、Slack SDK</li>
+    <li><strong>監控</strong>: Prometheus metrics、Sentry
+    錯誤追蹤、OpenTelemetry</li>
+    <li><strong>機器學習</strong>: scikit-learn（異常偵測）</li>
+    <li><strong>排程</strong>: APScheduler</li>
+    <li><strong>通訊</strong>: WebSocket</li>
+    </ul>
+    <h4 id="架構分層">架構分層</h4>
+    <pre><code>squid/
 ├── api_service/          # FastAPI 路由層（REST API）
 ├── business_access_layer/  # 業務存取層（BAL）
 ├── core_logic_layer/     # 核心邏輯層（CORL）
 ├── data_access_layer/    # 資料存取層（DAL）
 ├── mcp_server/           # MCP 服務（AI 工具整合）
 └── distributed/          # 分散式節點管理</code></pre>
-<h4 id="專案規模">專案規模</h4>
-<ul>
-<li><strong>檔案數</strong>: 1,076 個 Python 檔案</li>
-<li><strong>專案大小</strong>: 3.0 GB</li>
-<li><strong>資料表數量</strong>: 50+ 個資料表</li>
-<li><strong>API 端點</strong>: 100+ 個</li>
-</ul>
-<h4 id="部署方式">部署方式</h4>
-<ul>
-<li><strong>本地開發</strong>: localhost:8000</li>
-<li><strong>容器化</strong>: Docker（squid-api-dev）</li>
-<li><strong>CI/CD</strong>: GitHub Actions</li>
-<li><strong>生產環境</strong>: Google Cloud Run</li>
-<li><strong>Staging</strong>: 192.168.50.32:8445 (HTTPS)</li>
-</ul>
-<h4 id="相關文檔">相關文檔</h4>
-<ul>
-<li><code>/Users/yinghaowang/Work/mycode/CLAUDE.md</code> -
-主要開發指南</li>
-<li><code>/Users/yinghaowang/Work/mycode/squid/CLAUDE.md</code> - Squid
-子系統規範</li>
-</ul>
-<hr />
-<h3 id="2-neritic-cli-工具">2. Neritic CLI 工具</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/neritic</code></p>
-<p><strong>專案類型</strong>: 命令列工具（CLI）</p>
-<p><strong>時間線</strong>: 2024 年 - 至今（持續開發）</p>
-<h4 id="主要功能-1">主要功能</h4>
-<ul>
-<li>Squid API 客戶端（類似 Claude CLI 設計）</li>
-<li>工單管理（requirement）</li>
-<li>專案管理（project）</li>
-<li>認證系統（auth）- API Key 模式</li>
-<li>GCP 雲端資源管理</li>
-<li>Docker 遠端部署工具</li>
-<li>版本自動化（PyInstaller 打包）</li>
-</ul>
-<h4 id="技術棧-1">技術棧</h4>
-<ul>
-<li><strong>語言</strong>: Python 3.8+</li>
-<li><strong>CLI 框架</strong>: Click</li>
-<li><strong>UI 增強</strong>: Rich（終端機 UI）</li>
-<li><strong>HTTP 客戶端</strong>: requests、httpx</li>
-<li><strong>SDK 依賴</strong>: squid-api-sdk</li>
-<li><strong>系統工具</strong>: psutil、netifaces、PyYAML</li>
-<li><strong>打包</strong>: PyInstaller</li>
-</ul>
-<h4 id="特殊機制">特殊機制</h4>
-<ul>
-<li><strong>Git Hook 自動編譯</strong>: post-commit hook 自動執行
-PyInstaller</li>
-<li><strong>版本號自動管理</strong>:
-<ul>
-<li><code>feat:</code> → MINOR bump (1.2.0 → 1.3.0)</li>
-<li><code>fix:</code> → PATCH bump (1.2.0 → 1.2.1)</li>
-</ul></li>
-<li><strong>符號連結系統</strong>: <code>neritic</code> →
-<code>neritic-fast</code> → <code>neritic-v{VERSION}</code></li>
-<li><strong>安裝位置</strong>: <code>~/.local/bin/neritic</code></li>
-</ul>
-<h4 id="專案規模-1">專案規模</h4>
-<ul>
-<li><strong>檔案數</strong>: 3,312 個檔案（含虛擬環境）</li>
-<li><strong>專案大小</strong>: 291 MB</li>
-<li><strong>目前版本</strong>: 3.2.0</li>
-</ul>
-<h4 id="部署方式-1">部署方式</h4>
-<ul>
-<li>本地 PyInstaller 打包為可執行檔</li>
-<li>無需虛擬環境直接執行</li>
-<li>macOS Keychain 儲存 API Key</li>
-</ul>
-<h4 id="常用命令">常用命令</h4>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 認證</span></span>
+    <h4 id="專案規模">專案規模</h4>
+    <ul>
+    <li><strong>檔案數</strong>: 1,076 個 Python 檔案</li>
+    <li><strong>專案大小</strong>: 3.0 GB</li>
+    <li><strong>資料表數量</strong>: 50+ 個資料表</li>
+    <li><strong>API 端點</strong>: 100+ 個</li>
+    </ul>
+    <h4 id="部署方式">部署方式</h4>
+    <ul>
+    <li><strong>本地開發</strong>: localhost:8000</li>
+    <li><strong>容器化</strong>: Docker（squid-api-dev）</li>
+    <li><strong>CI/CD</strong>: GitHub Actions</li>
+    <li><strong>生產環境</strong>: Google Cloud Run</li>
+    <li><strong>Staging</strong>: 192.168.50.32:8445 (HTTPS)</li>
+    </ul>
+    <h4 id="相關文檔">相關文檔</h4>
+    <ul>
+    <li><code>/Users/yinghaowang/Work/mycode/CLAUDE.md</code> -
+    主要開發指南</li>
+    <li><code>/Users/yinghaowang/Work/mycode/squid/CLAUDE.md</code> -
+    Squid 子系統規範</li>
+    </ul>
+    <hr />
+    <h3 id="2-neritic-cli-工具">2. Neritic CLI 工具</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/neritic</code></p>
+    <p><strong>專案類型</strong>: 命令列工具（CLI）</p>
+    <p><strong>時間線</strong>: 2024 年 - 至今（持續開發）</p>
+    <h4 id="主要功能-1">主要功能</h4>
+    <ul>
+    <li>Squid API 客戶端（類似 Claude CLI 設計）</li>
+    <li>工單管理（requirement）</li>
+    <li>專案管理（project）</li>
+    <li>認證系統（auth）- API Key 模式</li>
+    <li>GCP 雲端資源管理</li>
+    <li>Docker 遠端部署工具</li>
+    <li>版本自動化（PyInstaller 打包）</li>
+    </ul>
+    <h4 id="技術棧-1">技術棧</h4>
+    <ul>
+    <li><strong>語言</strong>: Python 3.8+</li>
+    <li><strong>CLI 框架</strong>: Click</li>
+    <li><strong>UI 增強</strong>: Rich（終端機 UI）</li>
+    <li><strong>HTTP 客戶端</strong>: requests、httpx</li>
+    <li><strong>SDK 依賴</strong>: squid-api-sdk</li>
+    <li><strong>系統工具</strong>: psutil、netifaces、PyYAML</li>
+    <li><strong>打包</strong>: PyInstaller</li>
+    </ul>
+    <h4 id="特殊機制">特殊機制</h4>
+    <ul>
+    <li><strong>Git Hook 自動編譯</strong>: post-commit hook 自動執行
+    PyInstaller</li>
+    <li><strong>版本號自動管理</strong>:
+    <ul>
+    <li><code>feat:</code> → MINOR bump (1.2.0 → 1.3.0)</li>
+    <li><code>fix:</code> → PATCH bump (1.2.0 → 1.2.1)</li>
+    </ul></li>
+    <li><strong>符號連結系統</strong>: <code>neritic</code> →
+    <code>neritic-fast</code> → <code>neritic-v{VERSION}</code></li>
+    <li><strong>安裝位置</strong>:
+    <code>~/.local/bin/neritic</code></li>
+    </ul>
+    <h4 id="專案規模-1">專案規模</h4>
+    <ul>
+    <li><strong>檔案數</strong>: 3,312 個檔案（含虛擬環境）</li>
+    <li><strong>專案大小</strong>: 291 MB</li>
+    <li><strong>目前版本</strong>: 3.2.0</li>
+    </ul>
+    <h4 id="部署方式-1">部署方式</h4>
+    <ul>
+    <li>本地 PyInstaller 打包為可執行檔</li>
+    <li>無需虛擬環境直接執行</li>
+    <li>macOS Keychain 儲存 API Key</li>
+    </ul>
+    <h4 id="常用命令">常用命令</h4>
+    <div class="sourceCode" id="cb2"><pre
+    class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 認證</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">neritic</span> auth login</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">neritic</span> auth status</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -253,386 +236,393 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ex">neritic</span> docker remote staging <span class="at">--force</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="ex">neritic</span> docker remote frontend <span class="at">--force</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ex">neritic</span> docker remote status</span></code></pre></div>
-<hr />
-<h3 id="3-localidentityserver-lids">3. LocalIdentityServer (LIDS)</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/LocalIdentityServer</code></p>
-<p><strong>專案類型</strong>: 身份認證服務（OAuth 2.0 / OIDC）</p>
-<p><strong>時間線</strong>: 2024/11 - 至今（持續開發）</p>
-<h4 id="主要功能-2">主要功能</h4>
-<ul>
-<li>OpenID Connect (OIDC) 提供者</li>
-<li>OAuth 2.0 授權伺服器</li>
-<li>JWT Token 簽發與驗證</li>
-<li>多租戶身份管理</li>
-<li>MFA（多因素認證）- TOTP、Email、SMS</li>
-<li>Blazor Server 管理介面</li>
-<li>LDAP 整合支援</li>
-<li>Break-glass 緊急存取機制</li>
-</ul>
-<h4 id="技術棧-2">技術棧</h4>
-<p><strong>核心技術</strong>:</p>
-<ul>
-<li><strong>語言</strong>: C# .NET 8.0</li>
-<li><strong>框架</strong>: ASP.NET Core 8.0</li>
-<li><strong>資料庫</strong>: PostgreSQL (Npgsql EF
-Core)、SQLite（開發）</li>
-<li><strong>快取</strong>: Redis (StackExchange.Redis)</li>
-<li><strong>認證</strong>: JWT Bearer、BCrypt 密碼雜湊</li>
-</ul>
-<p><strong>MFA 與通知</strong>:</p>
-<ul>
-<li><strong>TOTP</strong>: Otp.NET、QRCoder</li>
-<li><strong>SMS</strong>: Twilio</li>
-<li><strong>Email</strong>: SendGrid</li>
-</ul>
-<p><strong>監控與安全</strong>:</p>
-<ul>
-<li><strong>監控</strong>: Prometheus.NET、OpenTelemetry</li>
-<li><strong>密鑰管理</strong>: Azure Key Vault、Google Cloud Secret
-Manager</li>
-<li><strong>限流</strong>: AspNetCoreRateLimit</li>
-</ul>
-<p><strong>UI 框架</strong>:</p>
-<ul>
-<li><strong>管理介面</strong>: Blazor Server</li>
-</ul>
-<h4 id="架構特點">架構特點</h4>
-<ul>
-<li>支援動態 CORS 策略</li>
-<li>資料保護金鑰（Data Protection Keys）</li>
-<li>租戶自註冊與邀請碼機制</li>
-<li>超級管理員（SuperAdmin）MFA 強制</li>
-<li>平台稽核日誌（Platform Audit Logs）</li>
-</ul>
-<h4 id="專案規模-2">專案規模</h4>
-<ul>
-<li><strong>檔案數</strong>: 428 個 C# 檔案</li>
-<li><strong>專案大小</strong>: 1.2 GB</li>
-</ul>
-<h4 id="部署方式-2">部署方式</h4>
-<ul>
-<li><strong>本地開發</strong>:
-<ul>
-<li>HTTP: localhost:8073</li>
-<li>HTTPS: localhost:8444</li>
-</ul></li>
-<li><strong>Docker</strong>: lids-staging (post-commit hook
-自動建置)</li>
-<li><strong>Staging</strong>: 192.168.50.32:8073 (HTTP) / 8444
-(HTTPS)</li>
-<li><strong>生產</strong>: Cloud Run</li>
-</ul>
-<h4 id="migration-管理">Migration 管理</h4>
-<ul>
-<li><strong>SQL Migration</strong>:
-<code>/Users/yinghaowang/Work/migrations/lids/</code></li>
-<li><strong>EF Core Migrations</strong>: 自動生成</li>
-</ul>
-<p><strong>重要 Migrations</strong>:</p>
-<ul>
-<li><code>add_tenant_quota_fields.sql</code> - 租戶配額欄位 (REF:
-202601110010)</li>
-<li><code>superadmin_mfa_enforcement.sql</code> - SuperAdmin MFA 強制
-(REF: 202601110011)</li>
-<li><code>add_platform_audit_logs.sql</code> - 平台稽核日誌 (REF:
-202601110012)</li>
-<li><code>add_breakglass_access.sql</code> - Break-glass 緊急存取 (REF:
-202601110013)</li>
-</ul>
-<hr />
-<h3 id="4-tentacle-frontend">4. Tentacle Frontend</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/tentacle-frontend</code></p>
-<p><strong>專案類型</strong>: 企業級 Web 前端（SPA）</p>
-<p><strong>時間線</strong>: 2025/06 - 至今（持續開發）</p>
-<h4 id="主要功能-3">主要功能</h4>
-<ul>
-<li>Squid API 的 Web UI 介面</li>
-<li>儀表板（Dashboard）</li>
-<li>需求管理介面</li>
-<li>專案管理介面</li>
-<li>OpenID Connect 登入整合</li>
-<li>支付整合（Stripe、PayPal）</li>
-<li>虛擬化長列表（react-window）</li>
-</ul>
-<h4 id="技術棧-3">技術棧</h4>
-<p><strong>核心技術</strong>:</p>
-<ul>
-<li><strong>語言</strong>: TypeScript 5.1+</li>
-<li><strong>UI 框架</strong>: React 18.3 + React Router 6</li>
-<li><strong>UI 元件庫</strong>: Bootstrap 5.3 + Bootstrap Icons</li>
-<li><strong>狀態管理</strong>: React Hooks (useState, useContext)</li>
-<li><strong>打包工具</strong>: Webpack 5</li>
-<li><strong>樣式</strong>: Sass/SCSS</li>
-</ul>
-<p><strong>整合服務</strong>:</p>
-<ul>
-<li><strong>認證</strong>: oidc-client-ts (OpenID Connect)</li>
-<li><strong>支付</strong>:
-@stripe/react-stripe-js、@paypal/react-paypal-js</li>
-<li><strong>圖表</strong>: Chart.js</li>
-<li><strong>虛擬化</strong>: react-window</li>
-<li><strong>SDK</strong>: @squid/js-sdk（本地檔案連結）</li>
-</ul>
-<p><strong>測試框架</strong>:</p>
-<ul>
-<li>Jest（單元測試）</li>
-<li>Playwright（E2E 測試）</li>
-<li>Cypress（E2E 測試）</li>
-<li>覆蓋率門檻: 80%</li>
-</ul>
-<h4 id="專案規模-3">專案規模</h4>
-<ul>
-<li><strong>檔案數</strong>: 382 個 TypeScript/TSX 檔案</li>
-<li><strong>專案大小</strong>: 891 MB</li>
-</ul>
-<h4 id="部署方式-3">部署方式</h4>
-<ul>
-<li><strong>本地開發</strong>: https://localhost:8070</li>
-<li><strong>Docker 驗證</strong>: https://localhost:8443</li>
-<li><strong>Staging</strong>: 192.168.50.32:8443 (HTTPS)</li>
-<li><strong>生產</strong>: Cloud Run (*.run.app)</li>
-</ul>
-<h4 id="cicd">CI/CD</h4>
-<ul>
-<li><strong>Git Hook</strong>: post-commit 自動建置 Docker Image</li>
-<li><strong>Docker 標籤</strong>:
-<code>tentacle-frontend:main-{commit}</code>, <code>main-latest</code>,
-<code>dev:latest</code></li>
-<li><strong>GitHub Actions</strong>: 推送 main → 自動部署到 Cloud
-Run</li>
-</ul>
-<hr />
-<h3 id="5-tentacle-bff">5. Tentacle BFF</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/tentacle-bff</code></p>
-<p><strong>專案類型</strong>: Backend for Frontend（BFF 層）</p>
-<p><strong>時間線</strong>: 2024 年 - 至今（持續開發）</p>
-<h4 id="主要功能-4">主要功能</h4>
-<ul>
-<li>Session 管理（connect-redis）</li>
-<li>OpenID Connect 整合（openid-client）</li>
-<li>CORS 與安全性中介層（helmet）</li>
-<li>Rate Limiting（express-rate-limit + rate-limit-redis）</li>
-<li>API 代理與聚合</li>
-</ul>
-<h4 id="技術棧-4">技術棧</h4>
-<ul>
-<li><strong>語言</strong>: TypeScript 5.9</li>
-<li><strong>框架</strong>: Express.js 4.22</li>
-<li><strong>Session</strong>: express-session + connect-redis</li>
-<li><strong>認證</strong>: openid-client (OIDC)、jose (JWT)</li>
-<li><strong>快取</strong>: Redis 5.10</li>
-<li><strong>安全</strong>: helmet、cors</li>
-<li><strong>限流</strong>: express-rate-limit + rate-limit-redis</li>
-</ul>
-<h4 id="專案規模-4">專案規模</h4>
-<ul>
-<li><strong>檔案數</strong>: 19 個 TypeScript 檔案</li>
-<li><strong>專案大小</strong>: 112 MB</li>
-</ul>
-<h4 id="部署方式-4">部署方式</h4>
-<ul>
-<li><strong>本地開發</strong>: localhost:8079</li>
-<li><strong>Docker</strong>: tentacle-bff-dev</li>
-<li><strong>Staging</strong>: 192.168.50.32:8079</li>
-</ul>
-<hr />
-<h2 id="sdk-專案群組">SDK 專案群組</h2>
-<h3 id="6-squid-api-sdk-python">6. Squid API SDK (Python)</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/squid-api-sdk</code></p>
-<p><strong>專案類型</strong>: Python SDK</p>
-<p><strong>時間線</strong>: 2024/12 - 至今</p>
-<h4 id="主要功能-5">主要功能</h4>
-<ul>
-<li>Squid API 的 Python 客戶端</li>
-<li>支援所有 Squid API 端點</li>
-<li>類型提示（Type Hints）完整</li>
-<li>Requirements API</li>
-<li>Projects API</li>
-<li>Verification Reports API</li>
-<li>Device Code API</li>
-<li>Health API</li>
-</ul>
-<h4 id="技術棧-5">技術棧</h4>
-<ul>
-<li><strong>語言</strong>: Python 3.7+</li>
-<li><strong>HTTP</strong>: requests</li>
-<li><strong>驗證</strong>: PyJWT</li>
-<li><strong>資料驗證</strong>: Pydantic 1.8-2.x</li>
-<li><strong>打包</strong>: setuptools + build + twine</li>
-</ul>
-<h4 id="專案規模-5">專案規模</h4>
-<ul>
-<li><strong>專案大小</strong>: 20 MB</li>
-<li><strong>版本</strong>: 1.2.0+</li>
-</ul>
-<h4 id="發布方式">發布方式</h4>
-<ul>
-<li>PyPI 套件</li>
-<li><code>pip install squid-api-sdk</code></li>
-</ul>
-<hr />
-<h3 id="7-squid-js-sdk">7. Squid JS SDK</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/squid-js-sdk</code></p>
-<p><strong>專案類型</strong>: JavaScript/TypeScript SDK</p>
-<p><strong>時間線</strong>: 2024/12 - 至今</p>
-<h4 id="主要功能-6">主要功能</h4>
-<ul>
-<li>Squid API 的 JS/TS 客戶端</li>
-<li>支援 ESM 和 CJS 模組格式</li>
-<li>完整的 TypeScript 類型定義</li>
-<li>測試覆蓋率 100%</li>
-</ul>
-<h4 id="技術棧-6">技術棧</h4>
-<ul>
-<li><strong>語言</strong>: TypeScript 5.4</li>
-<li><strong>打包工具</strong>: Rollup</li>
-<li><strong>HTTP</strong>: cross-fetch（瀏覽器 + Node.js 通用）</li>
-<li><strong>測試</strong>: Jest（覆蓋率 80% 門檻）</li>
-<li><strong>文檔</strong>: TypeDoc</li>
-</ul>
-<h4 id="專案規模-6">專案規模</h4>
-<ul>
-<li><strong>專案大小</strong>: 194 MB</li>
-<li><strong>版本</strong>: 0.3.0</li>
-</ul>
-<h4 id="發布方式-1">發布方式</h4>
-<ul>
-<li>GitHub Packages（@squid/js-sdk）</li>
-<li>支援 NPM、ESM、CJS</li>
-</ul>
-<h4 id="git-hook">Git Hook</h4>
-<ul>
-<li>post-commit: 自動執行 <code>npm run build</code></li>
-<li>版本號管理腳本（version-bump.cjs）</li>
-</ul>
-<hr />
-<h2 id="行動應用專案">行動應用專案</h2>
-<h3 id="8-lifesnap-ios-遊戲">8. LifeSnap iOS 遊戲</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/LifeSnap</code></p>
-<p><strong>專案類型</strong>: iOS 原生遊戲應用</p>
-<p><strong>時間線</strong>: 2024/03 - 2024/04（已上線 App Store）</p>
-<h4 id="主要功能-7">主要功能</h4>
-<ul>
-<li>社交遊戲平台</li>
-<li>骰子遊戲（Dominoes）</li>
-<li>聊天系統（ChatGPT 整合）</li>
-<li>好友系統</li>
-<li>虛擬貨幣與商店</li>
-<li>每日任務與獎勵系統</li>
-<li>命運占卜（易經卦象）- Yao/Gua 系統</li>
-<li>CloudKit 資料同步</li>
-<li>推播通知</li>
-</ul>
-<h4 id="技術棧-7">技術棧</h4>
-<p><strong>核心技術</strong>:</p>
-<ul>
-<li><strong>語言</strong>: Swift</li>
-<li><strong>UI 框架</strong>: SwiftUI（主要）+
-SpriteKit（遊戲渲染）</li>
-<li><strong>開發工具</strong>: Xcode</li>
-</ul>
-<p><strong>後端整合</strong>:</p>
-<ul>
-<li><strong>Firebase Auth</strong>: Apple、Google、Email 登入</li>
-<li><strong>Firestore</strong>: 雲端資料庫</li>
-<li><strong>Firebase Storage</strong>: 檔案上傳</li>
-<li><strong>Firebase Cloud Messaging</strong>: 推播</li>
-<li><strong>CloudKit</strong>: 使用者資料、推播</li>
-</ul>
-<p><strong>第三方服務</strong>:</p>
-<ul>
-<li><strong>圖片處理</strong>: Kingfisher（圖片快取與載入）</li>
-<li><strong>AI 整合</strong>: ChatGPT API（聊天輔助）</li>
-<li><strong>廣告</strong>: Google AdMob（橫幅廣告、獎勵廣告）</li>
-</ul>
-<h4 id="架構設計">架構設計</h4>
-<p><strong>設計模式</strong>: MVVM + Protocol-Oriented Design</p>
-<p><strong>Service 層</strong>:</p>
-<ul>
-<li>ChatSessionService</li>
-<li>ChatMessageService</li>
-<li>DBUserService</li>
-<li>AuthenticationManager</li>
-</ul>
-<p><strong>遊戲架構</strong>:</p>
-<ul>
-<li>GameController → 遊戲邏輯控制</li>
-<li>GameBoardNode → SpriteKit 遊戲渲染</li>
-<li>GameBoardStateManager → 狀態邏輯</li>
-<li>GameBoardLayoutManager → 版面配置</li>
-<li>GameBoardInteractionManager → 互動管理</li>
-<li>CardManager → 牌組管理</li>
-<li>TurnManager → 回合管理</li>
-</ul>
-<p><strong>狀態管理</strong>:</p>
-<ul>
-<li>@StateObject</li>
-<li>@ObservedObject</li>
-</ul>
-<h4 id="專案規模-7">專案規模</h4>
-<ul>
-<li><strong>檔案數</strong>: 399 個 Swift 檔案</li>
-<li><strong>專案大小</strong>: 1.6 GB</li>
-</ul>
-<h4 id="測試要求">測試要求</h4>
-<p>⚠️ <strong>強制要求實機測試</strong>（不可僅用模擬器）</p>
-<ul>
-<li>單元測試（XCTest）</li>
-<li>UI 測試（XCUITest）</li>
-<li>效能測試（實機驗證）</li>
-</ul>
-<h4 id="開發工具">開發工具</h4>
-<ul>
-<li>Xcode 專案（LifeSnap.xcodeproj）</li>
-<li>Gemini CLI 輔助開發（<code>/opt/homebrew/bin/gemini</code>）</li>
-</ul>
-<hr />
-<h3 id="9-lifesnapadmin---firebase-後台管理系統">9. LifeSnapAdmin -
-Firebase 後台管理系統</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/LifeSnapAdmin</code></p>
-<p><strong>專案類型</strong>: C# Blazor Server 後台管理系統</p>
-<p><strong>時間線</strong>: 2024/03 -
-2024/12（已完成，目前代碼不在手上）</p>
-<h4 id="主要功能-8">主要功能</h4>
-<ul>
-<li>LifeSnap iOS App 的 Firebase 資料管理</li>
-<li>Firebase Authentication 用戶管理（列表、啟用/停用、刪除）</li>
-<li>Firestore 資料庫管理（開發中）</li>
-<li>Firebase Storage 檔案管理（開發中）</li>
-<li>用戶統計與分析（計劃中）</li>
-<li>推播通知管理（計劃中）</li>
-</ul>
-<h4 id="技術棧-8">技術棧</h4>
-<p><strong>核心技術</strong>:</p>
-<ul>
-<li><strong>語言</strong>: C# .NET 9.0</li>
-<li><strong>框架</strong>: Blazor Server</li>
-<li><strong>Firebase</strong>: Firebase Admin SDK 3.4.0</li>
-<li><strong>資料庫</strong>: Google Cloud Firestore</li>
-<li><strong>UI</strong>: Bootstrap 5</li>
-</ul>
-<p><strong>整合服務</strong>:</p>
-<ul>
-<li><strong>Firebase Authentication</strong>: 用戶身份驗證管理</li>
-<li><strong>Firestore</strong>: NoSQL 雲端資料庫</li>
-<li><strong>Firebase Storage</strong>: 檔案儲存（計劃中）</li>
-<li><strong>Firebase Cloud Messaging</strong>: 推播通知（計劃中）</li>
-</ul>
-<h4 id="firebase-專案資訊">Firebase 專案資訊</h4>
-<ul>
-<li><strong>Project ID</strong>: lifesnap-85941</li>
-<li><strong>Storage Bucket</strong>: lifesnap-85941.appspot.com</li>
-<li><strong>iOS Bundle ID</strong>: com.hurricanesoft.LifeSnap</li>
-</ul>
-<h4 id="專案結構">專案結構</h4>
-<pre><code>LifeSnapAdmin/
+    <hr />
+    <h3 id="3-localidentityserver-lids">3. LocalIdentityServer
+    (LIDS)</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/LocalIdentityServer</code></p>
+    <p><strong>專案類型</strong>: 身份認證服務（OAuth 2.0 / OIDC）</p>
+    <p><strong>時間線</strong>: 2024/11 - 至今（持續開發）</p>
+    <h4 id="主要功能-2">主要功能</h4>
+    <ul>
+    <li>OpenID Connect (OIDC) 提供者</li>
+    <li>OAuth 2.0 授權伺服器</li>
+    <li>JWT Token 簽發與驗證</li>
+    <li>多租戶身份管理</li>
+    <li>MFA（多因素認證）- TOTP、Email、SMS</li>
+    <li>Blazor Server 管理介面</li>
+    <li>LDAP 整合支援</li>
+    <li>Break-glass 緊急存取機制</li>
+    </ul>
+    <h4 id="技術棧-2">技術棧</h4>
+    <p><strong>核心技術</strong>:</p>
+    <ul>
+    <li><strong>語言</strong>: C# .NET 8.0</li>
+    <li><strong>框架</strong>: ASP.NET Core 8.0</li>
+    <li><strong>資料庫</strong>: PostgreSQL (Npgsql EF
+    Core)、SQLite（開發）</li>
+    <li><strong>快取</strong>: Redis (StackExchange.Redis)</li>
+    <li><strong>認證</strong>: JWT Bearer、BCrypt 密碼雜湊</li>
+    </ul>
+    <p><strong>MFA 與通知</strong>:</p>
+    <ul>
+    <li><strong>TOTP</strong>: Otp.NET、QRCoder</li>
+    <li><strong>SMS</strong>: Twilio</li>
+    <li><strong>Email</strong>: SendGrid</li>
+    </ul>
+    <p><strong>監控與安全</strong>:</p>
+    <ul>
+    <li><strong>監控</strong>: Prometheus.NET、OpenTelemetry</li>
+    <li><strong>密鑰管理</strong>: Azure Key Vault、Google Cloud Secret
+    Manager</li>
+    <li><strong>限流</strong>: AspNetCoreRateLimit</li>
+    </ul>
+    <p><strong>UI 框架</strong>:</p>
+    <ul>
+    <li><strong>管理介面</strong>: Blazor Server</li>
+    </ul>
+    <h4 id="架構特點">架構特點</h4>
+    <ul>
+    <li>支援動態 CORS 策略</li>
+    <li>資料保護金鑰（Data Protection Keys）</li>
+    <li>租戶自註冊與邀請碼機制</li>
+    <li>超級管理員（SuperAdmin）MFA 強制</li>
+    <li>平台稽核日誌（Platform Audit Logs）</li>
+    </ul>
+    <h4 id="專案規模-2">專案規模</h4>
+    <ul>
+    <li><strong>檔案數</strong>: 428 個 C# 檔案</li>
+    <li><strong>專案大小</strong>: 1.2 GB</li>
+    </ul>
+    <h4 id="部署方式-2">部署方式</h4>
+    <ul>
+    <li><strong>本地開發</strong>:
+    <ul>
+    <li>HTTP: localhost:8073</li>
+    <li>HTTPS: localhost:8444</li>
+    </ul></li>
+    <li><strong>Docker</strong>: lids-staging (post-commit hook
+    自動建置)</li>
+    <li><strong>Staging</strong>: 192.168.50.32:8073 (HTTP) / 8444
+    (HTTPS)</li>
+    <li><strong>生產</strong>: Cloud Run</li>
+    </ul>
+    <h4 id="migration-管理">Migration 管理</h4>
+    <ul>
+    <li><strong>SQL Migration</strong>:
+    <code>/Users/yinghaowang/Work/migrations/lids/</code></li>
+    <li><strong>EF Core Migrations</strong>: 自動生成</li>
+    </ul>
+    <p><strong>重要 Migrations</strong>:</p>
+    <ul>
+    <li><code>add_tenant_quota_fields.sql</code> - 租戶配額欄位 (REF:
+    202601110010)</li>
+    <li><code>superadmin_mfa_enforcement.sql</code> - SuperAdmin MFA
+    強制 (REF: 202601110011)</li>
+    <li><code>add_platform_audit_logs.sql</code> - 平台稽核日誌 (REF:
+    202601110012)</li>
+    <li><code>add_breakglass_access.sql</code> - Break-glass 緊急存取
+    (REF: 202601110013)</li>
+    </ul>
+    <hr />
+    <h3 id="4-tentacle-frontend">4. Tentacle Frontend</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/tentacle-frontend</code></p>
+    <p><strong>專案類型</strong>: 企業級 Web 前端（SPA）</p>
+    <p><strong>時間線</strong>: 2025/06 - 至今（持續開發）</p>
+    <h4 id="主要功能-3">主要功能</h4>
+    <ul>
+    <li>Squid API 的 Web UI 介面</li>
+    <li>儀表板（Dashboard）</li>
+    <li>需求管理介面</li>
+    <li>專案管理介面</li>
+    <li>OpenID Connect 登入整合</li>
+    <li>支付整合（Stripe、PayPal）</li>
+    <li>虛擬化長列表（react-window）</li>
+    </ul>
+    <h4 id="技術棧-3">技術棧</h4>
+    <p><strong>核心技術</strong>:</p>
+    <ul>
+    <li><strong>語言</strong>: TypeScript 5.1+</li>
+    <li><strong>UI 框架</strong>: React 18.3 + React Router 6</li>
+    <li><strong>UI 元件庫</strong>: Bootstrap 5.3 + Bootstrap Icons</li>
+    <li><strong>狀態管理</strong>: React Hooks (useState,
+    useContext)</li>
+    <li><strong>打包工具</strong>: Webpack 5</li>
+    <li><strong>樣式</strong>: Sass/SCSS</li>
+    </ul>
+    <p><strong>整合服務</strong>:</p>
+    <ul>
+    <li><strong>認證</strong>: oidc-client-ts (OpenID Connect)</li>
+    <li><strong>支付</strong>:
+    @stripe/react-stripe-js、@paypal/react-paypal-js</li>
+    <li><strong>圖表</strong>: Chart.js</li>
+    <li><strong>虛擬化</strong>: react-window</li>
+    <li><strong>SDK</strong>: @squid/js-sdk（本地檔案連結）</li>
+    </ul>
+    <p><strong>測試框架</strong>:</p>
+    <ul>
+    <li>Jest（單元測試）</li>
+    <li>Playwright（E2E 測試）</li>
+    <li>Cypress（E2E 測試）</li>
+    <li>覆蓋率門檻: 80%</li>
+    </ul>
+    <h4 id="專案規模-3">專案規模</h4>
+    <ul>
+    <li><strong>檔案數</strong>: 382 個 TypeScript/TSX 檔案</li>
+    <li><strong>專案大小</strong>: 891 MB</li>
+    </ul>
+    <h4 id="部署方式-3">部署方式</h4>
+    <ul>
+    <li><strong>本地開發</strong>: https://localhost:8070</li>
+    <li><strong>Docker 驗證</strong>: https://localhost:8443</li>
+    <li><strong>Staging</strong>: 192.168.50.32:8443 (HTTPS)</li>
+    <li><strong>生產</strong>: Cloud Run (*.run.app)</li>
+    </ul>
+    <h4 id="cicd">CI/CD</h4>
+    <ul>
+    <li><strong>Git Hook</strong>: post-commit 自動建置 Docker
+    Image</li>
+    <li><strong>Docker 標籤</strong>:
+    <code>tentacle-frontend:main-{commit}</code>,
+    <code>main-latest</code>, <code>dev:latest</code></li>
+    <li><strong>GitHub Actions</strong>: 推送 main → 自動部署到 Cloud
+    Run</li>
+    </ul>
+    <hr />
+    <h3 id="5-tentacle-bff">5. Tentacle BFF</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/tentacle-bff</code></p>
+    <p><strong>專案類型</strong>: Backend for Frontend（BFF 層）</p>
+    <p><strong>時間線</strong>: 2024 年 - 至今（持續開發）</p>
+    <h4 id="主要功能-4">主要功能</h4>
+    <ul>
+    <li>Session 管理（connect-redis）</li>
+    <li>OpenID Connect 整合（openid-client）</li>
+    <li>CORS 與安全性中介層（helmet）</li>
+    <li>Rate Limiting（express-rate-limit + rate-limit-redis）</li>
+    <li>API 代理與聚合</li>
+    </ul>
+    <h4 id="技術棧-4">技術棧</h4>
+    <ul>
+    <li><strong>語言</strong>: TypeScript 5.9</li>
+    <li><strong>框架</strong>: Express.js 4.22</li>
+    <li><strong>Session</strong>: express-session + connect-redis</li>
+    <li><strong>認證</strong>: openid-client (OIDC)、jose (JWT)</li>
+    <li><strong>快取</strong>: Redis 5.10</li>
+    <li><strong>安全</strong>: helmet、cors</li>
+    <li><strong>限流</strong>: express-rate-limit +
+    rate-limit-redis</li>
+    </ul>
+    <h4 id="專案規模-4">專案規模</h4>
+    <ul>
+    <li><strong>檔案數</strong>: 19 個 TypeScript 檔案</li>
+    <li><strong>專案大小</strong>: 112 MB</li>
+    </ul>
+    <h4 id="部署方式-4">部署方式</h4>
+    <ul>
+    <li><strong>本地開發</strong>: localhost:8079</li>
+    <li><strong>Docker</strong>: tentacle-bff-dev</li>
+    <li><strong>Staging</strong>: 192.168.50.32:8079</li>
+    </ul>
+    <hr />
+    <h2 id="sdk-專案群組">SDK 專案群組</h2>
+    <h3 id="6-squid-api-sdk-python">6. Squid API SDK (Python)</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/squid-api-sdk</code></p>
+    <p><strong>專案類型</strong>: Python SDK</p>
+    <p><strong>時間線</strong>: 2024/12 - 至今</p>
+    <h4 id="主要功能-5">主要功能</h4>
+    <ul>
+    <li>Squid API 的 Python 客戶端</li>
+    <li>支援所有 Squid API 端點</li>
+    <li>類型提示（Type Hints）完整</li>
+    <li>Requirements API</li>
+    <li>Projects API</li>
+    <li>Verification Reports API</li>
+    <li>Device Code API</li>
+    <li>Health API</li>
+    </ul>
+    <h4 id="技術棧-5">技術棧</h4>
+    <ul>
+    <li><strong>語言</strong>: Python 3.7+</li>
+    <li><strong>HTTP</strong>: requests</li>
+    <li><strong>驗證</strong>: PyJWT</li>
+    <li><strong>資料驗證</strong>: Pydantic 1.8-2.x</li>
+    <li><strong>打包</strong>: setuptools + build + twine</li>
+    </ul>
+    <h4 id="專案規模-5">專案規模</h4>
+    <ul>
+    <li><strong>專案大小</strong>: 20 MB</li>
+    <li><strong>版本</strong>: 1.2.0+</li>
+    </ul>
+    <h4 id="發布方式">發布方式</h4>
+    <ul>
+    <li>PyPI 套件</li>
+    <li><code>pip install squid-api-sdk</code></li>
+    </ul>
+    <hr />
+    <h3 id="7-squid-js-sdk">7. Squid JS SDK</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/squid-js-sdk</code></p>
+    <p><strong>專案類型</strong>: JavaScript/TypeScript SDK</p>
+    <p><strong>時間線</strong>: 2024/12 - 至今</p>
+    <h4 id="主要功能-6">主要功能</h4>
+    <ul>
+    <li>Squid API 的 JS/TS 客戶端</li>
+    <li>支援 ESM 和 CJS 模組格式</li>
+    <li>完整的 TypeScript 類型定義</li>
+    <li>測試覆蓋率 100%</li>
+    </ul>
+    <h4 id="技術棧-6">技術棧</h4>
+    <ul>
+    <li><strong>語言</strong>: TypeScript 5.4</li>
+    <li><strong>打包工具</strong>: Rollup</li>
+    <li><strong>HTTP</strong>: cross-fetch（瀏覽器 + Node.js 通用）</li>
+    <li><strong>測試</strong>: Jest（覆蓋率 80% 門檻）</li>
+    <li><strong>文檔</strong>: TypeDoc</li>
+    </ul>
+    <h4 id="專案規模-6">專案規模</h4>
+    <ul>
+    <li><strong>專案大小</strong>: 194 MB</li>
+    <li><strong>版本</strong>: 0.3.0</li>
+    </ul>
+    <h4 id="發布方式-1">發布方式</h4>
+    <ul>
+    <li>GitHub Packages（@squid/js-sdk）</li>
+    <li>支援 NPM、ESM、CJS</li>
+    </ul>
+    <h4 id="git-hook">Git Hook</h4>
+    <ul>
+    <li>post-commit: 自動執行 <code>npm run build</code></li>
+    <li>版本號管理腳本（version-bump.cjs）</li>
+    </ul>
+    <hr />
+    <h2 id="行動應用專案">行動應用專案</h2>
+    <h3 id="8-lifesnap-ios-遊戲">8. LifeSnap iOS 遊戲</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/LifeSnap</code></p>
+    <p><strong>專案類型</strong>: iOS 原生遊戲應用</p>
+    <p><strong>時間線</strong>: 2024/03 - 2024/04（已上線 App
+    Store）</p>
+    <h4 id="主要功能-7">主要功能</h4>
+    <ul>
+    <li>社交遊戲平台</li>
+    <li>骰子遊戲（Dominoes）</li>
+    <li>聊天系統（ChatGPT 整合）</li>
+    <li>好友系統</li>
+    <li>虛擬貨幣與商店</li>
+    <li>每日任務與獎勵系統</li>
+    <li>命運占卜（易經卦象）- Yao/Gua 系統</li>
+    <li>CloudKit 資料同步</li>
+    <li>推播通知</li>
+    </ul>
+    <h4 id="技術棧-7">技術棧</h4>
+    <p><strong>核心技術</strong>:</p>
+    <ul>
+    <li><strong>語言</strong>: Swift</li>
+    <li><strong>UI 框架</strong>: SwiftUI（主要）+
+    SpriteKit（遊戲渲染）</li>
+    <li><strong>開發工具</strong>: Xcode</li>
+    </ul>
+    <p><strong>後端整合</strong>:</p>
+    <ul>
+    <li><strong>Firebase Auth</strong>: Apple、Google、Email 登入</li>
+    <li><strong>Firestore</strong>: 雲端資料庫</li>
+    <li><strong>Firebase Storage</strong>: 檔案上傳</li>
+    <li><strong>Firebase Cloud Messaging</strong>: 推播</li>
+    <li><strong>CloudKit</strong>: 使用者資料、推播</li>
+    </ul>
+    <p><strong>第三方服務</strong>:</p>
+    <ul>
+    <li><strong>圖片處理</strong>: Kingfisher（圖片快取與載入）</li>
+    <li><strong>AI 整合</strong>: ChatGPT API（聊天輔助）</li>
+    <li><strong>廣告</strong>: Google AdMob（橫幅廣告、獎勵廣告）</li>
+    </ul>
+    <h4 id="架構設計">架構設計</h4>
+    <p><strong>設計模式</strong>: MVVM + Protocol-Oriented Design</p>
+    <p><strong>Service 層</strong>:</p>
+    <ul>
+    <li>ChatSessionService</li>
+    <li>ChatMessageService</li>
+    <li>DBUserService</li>
+    <li>AuthenticationManager</li>
+    </ul>
+    <p><strong>遊戲架構</strong>:</p>
+    <ul>
+    <li>GameController → 遊戲邏輯控制</li>
+    <li>GameBoardNode → SpriteKit 遊戲渲染</li>
+    <li>GameBoardStateManager → 狀態邏輯</li>
+    <li>GameBoardLayoutManager → 版面配置</li>
+    <li>GameBoardInteractionManager → 互動管理</li>
+    <li>CardManager → 牌組管理</li>
+    <li>TurnManager → 回合管理</li>
+    </ul>
+    <p><strong>狀態管理</strong>:</p>
+    <ul>
+    <li>@StateObject</li>
+    <li>@ObservedObject</li>
+    </ul>
+    <h4 id="專案規模-7">專案規模</h4>
+    <ul>
+    <li><strong>檔案數</strong>: 399 個 Swift 檔案</li>
+    <li><strong>專案大小</strong>: 1.6 GB</li>
+    </ul>
+    <h4 id="測試要求">測試要求</h4>
+    <p>⚠️ <strong>強制要求實機測試</strong>（不可僅用模擬器）</p>
+    <ul>
+    <li>單元測試（XCTest）</li>
+    <li>UI 測試（XCUITest）</li>
+    <li>效能測試（實機驗證）</li>
+    </ul>
+    <h4 id="開發工具">開發工具</h4>
+    <ul>
+    <li>Xcode 專案（LifeSnap.xcodeproj）</li>
+    <li>Gemini CLI
+    輔助開發（<code>/opt/homebrew/bin/gemini</code>）</li>
+    </ul>
+    <hr />
+    <h3 id="9-lifesnapadmin---firebase-後台管理系統">9. LifeSnapAdmin -
+    Firebase 後台管理系統</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/LifeSnapAdmin</code></p>
+    <p><strong>專案類型</strong>: C# Blazor Server 後台管理系統</p>
+    <p><strong>時間線</strong>: 2024/03 -
+    2024/12（已完成，目前代碼不在手上）</p>
+    <h4 id="主要功能-8">主要功能</h4>
+    <ul>
+    <li>LifeSnap iOS App 的 Firebase 資料管理</li>
+    <li>Firebase Authentication 用戶管理（列表、啟用/停用、刪除）</li>
+    <li>Firestore 資料庫管理（開發中）</li>
+    <li>Firebase Storage 檔案管理（開發中）</li>
+    <li>用戶統計與分析（計劃中）</li>
+    <li>推播通知管理（計劃中）</li>
+    </ul>
+    <h4 id="技術棧-8">技術棧</h4>
+    <p><strong>核心技術</strong>:</p>
+    <ul>
+    <li><strong>語言</strong>: C# .NET 9.0</li>
+    <li><strong>框架</strong>: Blazor Server</li>
+    <li><strong>Firebase</strong>: Firebase Admin SDK 3.4.0</li>
+    <li><strong>資料庫</strong>: Google Cloud Firestore</li>
+    <li><strong>UI</strong>: Bootstrap 5</li>
+    </ul>
+    <p><strong>整合服務</strong>:</p>
+    <ul>
+    <li><strong>Firebase Authentication</strong>: 用戶身份驗證管理</li>
+    <li><strong>Firestore</strong>: NoSQL 雲端資料庫</li>
+    <li><strong>Firebase Storage</strong>: 檔案儲存（計劃中）</li>
+    <li><strong>Firebase Cloud Messaging</strong>:
+    推播通知（計劃中）</li>
+    </ul>
+    <h4 id="firebase-專案資訊">Firebase 專案資訊</h4>
+    <ul>
+    <li><strong>Project ID</strong>: lifesnap-85941</li>
+    <li><strong>Storage Bucket</strong>: lifesnap-85941.appspot.com</li>
+    <li><strong>iOS Bundle ID</strong>: com.hurricanesoft.LifeSnap</li>
+    </ul>
+    <h4 id="專案結構">專案結構</h4>
+    <pre><code>LifeSnapAdmin/
 ├── Components/
 │   ├── Layout/              # 版面配置元件
 │   │   ├── MainLayout.razor
@@ -648,10 +638,10 @@ Firebase 後台管理系統</h3>
 ├── Config/                 # 配置檔案
 │   └── firebase-service-account.json  # 服務帳戶金鑰
 └── wwwroot/               # 靜態資源</code></pre>
-<h4 id="核心服務">核心服務</h4>
-<p><strong>FirebaseService.cs</strong>:</p>
-<div class="sourceCode" id="cb4"><pre
-class="sourceCode csharp"><code class="sourceCode cs"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// 用戶管理</span></span>
+    <h4 id="核心服務">核心服務</h4>
+    <p><strong>FirebaseService.cs</strong>:</p>
+    <div class="sourceCode" id="cb4"><pre
+    class="sourceCode csharp"><code class="sourceCode cs"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// 用戶管理</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">GetUsersAsync</span><span class="op">(</span><span class="dt">int</span> maxResults<span class="op">)</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">DisableUserAsync</span><span class="op">(</span><span class="dt">string</span> uid<span class="op">)</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">EnableUserAsync</span><span class="op">(</span><span class="dt">string</span> uid<span class="op">)</span></span>
@@ -659,289 +649,295 @@ class="sourceCode csharp"><code class="sourceCode cs"><span id="cb4-1"><a href="
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">// Firestore 資料存取</span></span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">GetCollectionDataAsync</span><span class="op">(</span><span class="dt">string</span> collectionName<span class="op">,</span> <span class="dt">int</span> limit<span class="op">)</span></span></code></pre></div>
-<h4 id="已完成功能">已完成功能</h4>
-<p><strong>Phase 1-2: 基礎建設與用戶管理</strong></p>
-<ul>
-<li>✅ Firebase Authentication 用戶管理
-<ul>
-<li>用戶列表顯示（UID、Email、顯示名稱、建立時間、狀態）</li>
-<li>啟用/停用用戶、刪除用戶（含確認對話框）</li>
-<li>進階搜尋（多條件篩選）、批量操作</li>
-<li>用戶資料匯出（CSV/Excel）、用戶登入歷史</li>
-<li>即時重新載入</li>
-</ul></li>
-<li>✅ Dashboard 首頁</li>
-<li>✅ Firebase 連接狀態監控</li>
-<li>✅ 錯誤與成功訊息提示</li>
-</ul>
-<h4 id="phase-3-firestore-資料管理已完成">Phase 3: Firestore
-資料管理（已完成）</h4>
-<p><strong>核心功能</strong>:</p>
-<ul>
-<li>✅ 集合瀏覽器
-<ul>
-<li>列出所有 Firestore 集合、統計資訊、集合建立/刪除</li>
-</ul></li>
-<li>✅ 文檔管理
-<ul>
-<li>文檔列表、詳細資訊查看、新增/編輯/刪除</li>
-<li>JSON 編輯器（Monaco Editor）</li>
-</ul></li>
-<li>✅ 查詢建構器
-<ul>
-<li>視覺化查詢介面、支援 where/orderBy/limit、查詢歷史</li>
-</ul></li>
-</ul>
-<p><strong>進階功能</strong>:</p>
-<ul>
-<li>✅ 批量操作（批量新增、更新、刪除、CSV 匯入/匯出）</li>
-<li>✅ 資料驗證（欄位類型檢查、必填驗證、Schema 定義）</li>
-</ul>
-<h4 id="phase-4-firebase-storage-管理已完成">Phase 4: Firebase Storage
-管理（已完成）</h4>
-<p><strong>核心功能</strong>:</p>
-<ul>
-<li>✅ 檔案瀏覽器
-<ul>
-<li>樹狀結構、檔案列表、麵包屑導航、檔案搜尋</li>
-</ul></li>
-<li>✅ 檔案操作
-<ul>
-<li>上傳（單檔/多檔 Drag &amp;
-Drop）、下載、刪除、重新命名、移動/複製</li>
-</ul></li>
-<li>✅ 圖片預覽
-<ul>
-<li>縮圖顯示、大圖預覽、支援 JPG/PNG/GIF/WebP</li>
-</ul></li>
-</ul>
-<p><strong>進階功能</strong>:</p>
-<ul>
-<li>✅ 儲存空間管理（容量統計、使用趨勢、大型檔案識別）</li>
-<li>✅ 存取控制（公開/私有、下載連結、存取日誌）</li>
-<li>✅ 檔案處理（圖片壓縮/裁切、影片縮圖、ImageSharp/FFmpeg）</li>
-</ul>
-<h4 id="phase-5-統計與分析已完成">Phase 5: 統計與分析（已完成）</h4>
-<p><strong>核心功能</strong>:</p>
-<ul>
-<li>✅ 儀表板總覽
-<ul>
-<li>KPI Cards（總用戶數、DAU/MAU、新增用戶、儲存空間）</li>
-<li>即時更新（SignalR）、時間範圍選擇器</li>
-</ul></li>
-<li>✅ 用戶分析
-<ul>
-<li>用戶增長趨勢（折線圖）、活躍度（柱狀圖）、留存率分析</li>
-<li>地理分布（地圖）、設備平台分布（圓餅圖）</li>
-<li><strong>技術</strong>: Chart.js / ApexCharts</li>
-</ul></li>
-<li>✅ 內容統計
-<ul>
-<li>Firestore 文檔數量、Storage 容量、熱門內容排行</li>
-</ul></li>
-</ul>
-<p><strong>進階功能</strong>:</p>
-<ul>
-<li>✅ 自訂報表（報表建構器、排程生成、匯出 PDF/Excel）</li>
-<li>✅ 實時監控（API 請求、錯誤率、系統健康狀態）</li>
-<li>✅ 進階分析（同類群組分析、漏斗分析、A/B 測試、ML.NET 預測）</li>
-</ul>
-<h4 id="phase-6-推播通知管理已完成">Phase 6: 推播通知管理（已完成）</h4>
-<p><strong>核心功能</strong>:</p>
-<ul>
-<li>✅ 通知發送
-<ul>
-<li>單一用戶、群組、全體推播</li>
-<li>通知預覽（iOS 樣式）、排程發送</li>
-<li><strong>技術</strong>: Firebase Cloud Messaging (FCM)</li>
-</ul></li>
-<li>✅ 通知編輯器
-<ul>
-<li>標題與內容、Rich Media（圖片、影片）</li>
-<li>深層連結 (Deep Link)、自訂資料、聲音與震動</li>
-</ul></li>
-<li>✅ 用戶定向
-<ul>
-<li>依用戶 ID/標籤/屬性篩選、測試群組、A/B 測試</li>
-</ul></li>
-</ul>
-<p><strong>進階功能</strong>:</p>
-<ul>
-<li>✅ 通知歷史（歷史記錄、發送狀態、送達率、CTR 統計）</li>
-<li>✅ 通知範本（範本管理、變數替換、多語言、版本控制）</li>
-<li>✅ 自動化通知（觸發條件、通知流程、頻率限制、Firebase Cloud
-Functions）</li>
-</ul>
-<h4 id="phase-7-系統設定與管理已完成">Phase 7:
-系統設定與管理（已完成）</h4>
-<p><strong>核心功能</strong>:</p>
-<ul>
-<li>✅ 系統配置（Firebase 專案資訊、服務帳戶金鑰、環境變數）</li>
-<li>✅ 操作日誌（所有管理操作記錄、Serilog + Elasticsearch）</li>
-<li>✅ 權限管理（角色定義、權限矩陣、管理員帳號、與 LIDS 整合）</li>
-</ul>
-<p><strong>進階功能</strong>:</p>
-<ul>
-<li>✅ 資料備份/還原（Firestore、Storage、備份排程、備份加密）</li>
-<li>✅ 系統監控（服務健康檢查、效能指標、錯誤追蹤、Prometheus）</li>
-<li>✅ 版本管理（版本資訊、更新日誌、自動更新檢查）</li>
-</ul>
-<h4 id="phase-8-進階功能與優化已完成">Phase 8:
-進階功能與優化（已完成）</h4>
-<ul>
-<li>✅ 多租戶支援（租戶隔離、跨租戶權限、配額管理、計費）</li>
-<li>✅ API 整合（RESTful API、API Key 管理、Swagger、Webhook）</li>
-<li>✅ 行動優化（響應式設計、PWA、行動專用界面、離線功能）</li>
-<li>✅ 效能優化（查詢快取、分頁優化、大量資料處理、CDN）</li>
-<li>✅ 國際化（多語言支援、語言切換、時區管理）</li>
-</ul>
-<h4 id="開發計劃與時程">開發計劃與時程</h4>
-<p><strong>8 個開發階段</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>Phase</th>
-<th>功能</th>
-<th>工時</th>
-<th>工作天</th>
-<th>狀態</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Phase 1</td>
-<td>基礎建設</td>
-<td>-</td>
-<td>-</td>
-<td>✅ 已完成</td>
-</tr>
-<tr>
-<td>Phase 2</td>
-<td>用戶管理模組</td>
-<td>-</td>
-<td>-</td>
-<td>✅ 已完成</td>
-</tr>
-<tr>
-<td>Phase 3</td>
-<td>Firestore 資料管理</td>
-<td>88h</td>
-<td>11天</td>
-<td>✅ 已完成</td>
-</tr>
-<tr>
-<td>Phase 4</td>
-<td>Firebase Storage 管理</td>
-<td>112h</td>
-<td>14天</td>
-<td>✅ 已完成</td>
-</tr>
-<tr>
-<td>Phase 5</td>
-<td>統計與分析</td>
-<td>168h</td>
-<td>21天</td>
-<td>✅ 已完成</td>
-</tr>
-<tr>
-<td>Phase 6</td>
-<td>推播通知管理</td>
-<td>132h</td>
-<td>16.5天</td>
-<td>✅ 已完成</td>
-</tr>
-<tr>
-<td>Phase 7</td>
-<td>系統設定與管理</td>
-<td>156h</td>
-<td>19.5天</td>
-<td>✅ 已完成</td>
-</tr>
-<tr>
-<td>Phase 8</td>
-<td>進階功能與優化</td>
-<td>-</td>
-<td>-</td>
-<td>✅ 已完成</td>
-</tr>
-<tr>
-<td><strong>總計</strong></td>
-<td></td>
-<td><strong>656h</strong></td>
-<td><strong>82天</strong></td>
-<td><strong>✅ 全部完成</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>時程規劃</strong>（已完成）：</p>
-<ul>
-<li>✅ <strong>Q1 2024</strong>: Phase 1-2（基礎建設、用戶管理）</li>
-<li>✅ <strong>Q2 2024</strong>: Phase 3-4（Firestore、Storage
-管理）</li>
-<li>✅ <strong>Q3 2024</strong>: Phase 5-6（統計分析、推播通知）</li>
-<li>✅ <strong>Q4 2024</strong>: Phase 7-8（系統管理、進階功能）</li>
-<li>✅ <strong>專案完成</strong>: 2024/12</li>
-</ul>
-<p><strong>開發里程碑</strong>（全部達成）：</p>
-<ol type="1">
-<li><strong>Milestone 1: MVP</strong> ✅ (2024-03 已完成)
-<ul>
-<li>專案基礎架構、Firebase 連接、基本用戶管理</li>
-</ul></li>
-<li><strong>Milestone 2: 資料管理完善</strong> ✅ (2024-06 已完成)
-<ul>
-<li>Firestore 完整管理、Storage 檔案管理、批量操作</li>
-</ul></li>
-<li><strong>Milestone 3: 運營支援系統</strong> ✅ (2024-09 已完成)
-<ul>
-<li>統計分析儀表板、推播通知、用戶行為分析</li>
-</ul></li>
-<li><strong>Milestone 4: 企業級系統</strong> ✅ (2024-12 已完成)
-<ul>
-<li>完整權限管理、操作審計、資料備份還原、系統監控</li>
-</ul></li>
-</ol>
-<h4 id="專案規模-8">專案規模</h4>
-<ul>
-<li><strong>檔案數</strong>: 200+ 個 .razor/.cs 檔案（完整版本）</li>
-<li><strong>專案大小</strong>: 估計 150+ MB（含所有功能模組）</li>
-<li><strong>實際總工時</strong>: 656+ 小時（約 82+ 個工作天）</li>
-<li><strong>開發週期</strong>: 2024/03 - 2024/12（已完成，歷時 9
-個月）</li>
-<li><strong>專案狀態</strong>: 已完成全部功能，目前代碼不在手上</li>
-</ul>
-<h4 id="部署方式-5">部署方式</h4>
-<ul>
-<li><strong>本地開發</strong>:
-<ul>
-<li>HTTP: localhost:5100</li>
-<li>HTTPS: localhost:5101</li>
-</ul></li>
-<li><strong>Docker</strong>: lifesnap-admin-dev</li>
-<li><strong>網路</strong>: lifesnap_network（獨立網路）</li>
-</ul>
-<h4 id="port-設定">Port 設定</h4>
-<ul>
-<li><strong>HTTP</strong>: 5100</li>
-<li><strong>HTTPS</strong>: 5101</li>
-<li><strong>範圍</strong>: 獨立外部管理工具（5100-5199）</li>
-<li><strong>理由</strong>: 避免與 Squid 生態系統衝突</li>
-</ul>
-<h4 id="docker-標準">Docker 標準</h4>
-<p>遵循 Squid 專案的 Docker 管理規範：</p>
-<ul>
-<li><strong>容器命名</strong>: <code>lifesnap-admin-dev</code> (開發),
-<code>lifesnap-admin-prod</code> (正式)</li>
-<li><strong>網路配置</strong>:
-<code>lifesnap_network</code>（獨立網路，不與 Squid 共享）</li>
-<li><strong>Image Tag</strong>: <code>lifesnap-admin:dev</code>,
-<code>lifesnap-admin:latest</code></li>
-<li><strong>重啟策略</strong>: <code>unless-stopped</code> (開發),
-<code>always</code> (正式)</li>
-</ul>
-<h4 id="開發工具-1">開發工具</h4>
-<div class="sourceCode" id="cb5"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 本機執行</span></span>
+    <h4 id="已完成功能">已完成功能</h4>
+    <p><strong>Phase 1-2: 基礎建設與用戶管理</strong></p>
+    <ul>
+    <li>✅ Firebase Authentication 用戶管理
+    <ul>
+    <li>用戶列表顯示（UID、Email、顯示名稱、建立時間、狀態）</li>
+    <li>啟用/停用用戶、刪除用戶（含確認對話框）</li>
+    <li>進階搜尋（多條件篩選）、批量操作</li>
+    <li>用戶資料匯出（CSV/Excel）、用戶登入歷史</li>
+    <li>即時重新載入</li>
+    </ul></li>
+    <li>✅ Dashboard 首頁</li>
+    <li>✅ Firebase 連接狀態監控</li>
+    <li>✅ 錯誤與成功訊息提示</li>
+    </ul>
+    <h4 id="phase-3-firestore-資料管理已完成">Phase 3: Firestore
+    資料管理（已完成）</h4>
+    <p><strong>核心功能</strong>:</p>
+    <ul>
+    <li>✅ 集合瀏覽器
+    <ul>
+    <li>列出所有 Firestore 集合、統計資訊、集合建立/刪除</li>
+    </ul></li>
+    <li>✅ 文檔管理
+    <ul>
+    <li>文檔列表、詳細資訊查看、新增/編輯/刪除</li>
+    <li>JSON 編輯器（Monaco Editor）</li>
+    </ul></li>
+    <li>✅ 查詢建構器
+    <ul>
+    <li>視覺化查詢介面、支援 where/orderBy/limit、查詢歷史</li>
+    </ul></li>
+    </ul>
+    <p><strong>進階功能</strong>:</p>
+    <ul>
+    <li>✅ 批量操作（批量新增、更新、刪除、CSV 匯入/匯出）</li>
+    <li>✅ 資料驗證（欄位類型檢查、必填驗證、Schema 定義）</li>
+    </ul>
+    <h4 id="phase-4-firebase-storage-管理已完成">Phase 4: Firebase
+    Storage 管理（已完成）</h4>
+    <p><strong>核心功能</strong>:</p>
+    <ul>
+    <li>✅ 檔案瀏覽器
+    <ul>
+    <li>樹狀結構、檔案列表、麵包屑導航、檔案搜尋</li>
+    </ul></li>
+    <li>✅ 檔案操作
+    <ul>
+    <li>上傳（單檔/多檔 Drag &amp;
+    Drop）、下載、刪除、重新命名、移動/複製</li>
+    </ul></li>
+    <li>✅ 圖片預覽
+    <ul>
+    <li>縮圖顯示、大圖預覽、支援 JPG/PNG/GIF/WebP</li>
+    </ul></li>
+    </ul>
+    <p><strong>進階功能</strong>:</p>
+    <ul>
+    <li>✅ 儲存空間管理（容量統計、使用趨勢、大型檔案識別）</li>
+    <li>✅ 存取控制（公開/私有、下載連結、存取日誌）</li>
+    <li>✅ 檔案處理（圖片壓縮/裁切、影片縮圖、ImageSharp/FFmpeg）</li>
+    </ul>
+    <h4 id="phase-5-統計與分析已完成">Phase 5: 統計與分析（已完成）</h4>
+    <p><strong>核心功能</strong>:</p>
+    <ul>
+    <li>✅ 儀表板總覽
+    <ul>
+    <li>KPI Cards（總用戶數、DAU/MAU、新增用戶、儲存空間）</li>
+    <li>即時更新（SignalR）、時間範圍選擇器</li>
+    </ul></li>
+    <li>✅ 用戶分析
+    <ul>
+    <li>用戶增長趨勢（折線圖）、活躍度（柱狀圖）、留存率分析</li>
+    <li>地理分布（地圖）、設備平台分布（圓餅圖）</li>
+    <li><strong>技術</strong>: Chart.js / ApexCharts</li>
+    </ul></li>
+    <li>✅ 內容統計
+    <ul>
+    <li>Firestore 文檔數量、Storage 容量、熱門內容排行</li>
+    </ul></li>
+    </ul>
+    <p><strong>進階功能</strong>:</p>
+    <ul>
+    <li>✅ 自訂報表（報表建構器、排程生成、匯出 PDF/Excel）</li>
+    <li>✅ 實時監控（API 請求、錯誤率、系統健康狀態）</li>
+    <li>✅ 進階分析（同類群組分析、漏斗分析、A/B 測試、ML.NET
+    預測）</li>
+    </ul>
+    <h4 id="phase-6-推播通知管理已完成">Phase 6:
+    推播通知管理（已完成）</h4>
+    <p><strong>核心功能</strong>:</p>
+    <ul>
+    <li>✅ 通知發送
+    <ul>
+    <li>單一用戶、群組、全體推播</li>
+    <li>通知預覽（iOS 樣式）、排程發送</li>
+    <li><strong>技術</strong>: Firebase Cloud Messaging (FCM)</li>
+    </ul></li>
+    <li>✅ 通知編輯器
+    <ul>
+    <li>標題與內容、Rich Media（圖片、影片）</li>
+    <li>深層連結 (Deep Link)、自訂資料、聲音與震動</li>
+    </ul></li>
+    <li>✅ 用戶定向
+    <ul>
+    <li>依用戶 ID/標籤/屬性篩選、測試群組、A/B 測試</li>
+    </ul></li>
+    </ul>
+    <p><strong>進階功能</strong>:</p>
+    <ul>
+    <li>✅ 通知歷史（歷史記錄、發送狀態、送達率、CTR 統計）</li>
+    <li>✅ 通知範本（範本管理、變數替換、多語言、版本控制）</li>
+    <li>✅ 自動化通知（觸發條件、通知流程、頻率限制、Firebase Cloud
+    Functions）</li>
+    </ul>
+    <h4 id="phase-7-系統設定與管理已完成">Phase 7:
+    系統設定與管理（已完成）</h4>
+    <p><strong>核心功能</strong>:</p>
+    <ul>
+    <li>✅ 系統配置（Firebase 專案資訊、服務帳戶金鑰、環境變數）</li>
+    <li>✅ 操作日誌（所有管理操作記錄、Serilog + Elasticsearch）</li>
+    <li>✅ 權限管理（角色定義、權限矩陣、管理員帳號、與 LIDS 整合）</li>
+    </ul>
+    <p><strong>進階功能</strong>:</p>
+    <ul>
+    <li>✅ 資料備份/還原（Firestore、Storage、備份排程、備份加密）</li>
+    <li>✅ 系統監控（服務健康檢查、效能指標、錯誤追蹤、Prometheus）</li>
+    <li>✅ 版本管理（版本資訊、更新日誌、自動更新檢查）</li>
+    </ul>
+    <h4 id="phase-8-進階功能與優化已完成">Phase 8:
+    進階功能與優化（已完成）</h4>
+    <ul>
+    <li>✅ 多租戶支援（租戶隔離、跨租戶權限、配額管理、計費）</li>
+    <li>✅ API 整合（RESTful API、API Key 管理、Swagger、Webhook）</li>
+    <li>✅ 行動優化（響應式設計、PWA、行動專用界面、離線功能）</li>
+    <li>✅ 效能優化（查詢快取、分頁優化、大量資料處理、CDN）</li>
+    <li>✅ 國際化（多語言支援、語言切換、時區管理）</li>
+    </ul>
+    <h4 id="開發計劃與時程">開發計劃與時程</h4>
+    <p><strong>8 個開發階段</strong>：</p>
+    <table>
+    <thead>
+    <tr>
+    <th>Phase</th>
+    <th>功能</th>
+    <th>工時</th>
+    <th>工作天</th>
+    <th>狀態</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Phase 1</td>
+    <td>基礎建設</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✅ 已完成</td>
+    </tr>
+    <tr>
+    <td>Phase 2</td>
+    <td>用戶管理模組</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✅ 已完成</td>
+    </tr>
+    <tr>
+    <td>Phase 3</td>
+    <td>Firestore 資料管理</td>
+    <td>88h</td>
+    <td>11天</td>
+    <td>✅ 已完成</td>
+    </tr>
+    <tr>
+    <td>Phase 4</td>
+    <td>Firebase Storage 管理</td>
+    <td>112h</td>
+    <td>14天</td>
+    <td>✅ 已完成</td>
+    </tr>
+    <tr>
+    <td>Phase 5</td>
+    <td>統計與分析</td>
+    <td>168h</td>
+    <td>21天</td>
+    <td>✅ 已完成</td>
+    </tr>
+    <tr>
+    <td>Phase 6</td>
+    <td>推播通知管理</td>
+    <td>132h</td>
+    <td>16.5天</td>
+    <td>✅ 已完成</td>
+    </tr>
+    <tr>
+    <td>Phase 7</td>
+    <td>系統設定與管理</td>
+    <td>156h</td>
+    <td>19.5天</td>
+    <td>✅ 已完成</td>
+    </tr>
+    <tr>
+    <td>Phase 8</td>
+    <td>進階功能與優化</td>
+    <td>-</td>
+    <td>-</td>
+    <td>✅ 已完成</td>
+    </tr>
+    <tr>
+    <td><strong>總計</strong></td>
+    <td></td>
+    <td><strong>656h</strong></td>
+    <td><strong>82天</strong></td>
+    <td><strong>✅ 全部完成</strong></td>
+    </tr>
+    </tbody>
+    </table>
+    <p><strong>時程規劃</strong>（已完成）：</p>
+    <ul>
+    <li>✅ <strong>Q1 2024</strong>: Phase
+    1-2（基礎建設、用戶管理）</li>
+    <li>✅ <strong>Q2 2024</strong>: Phase 3-4（Firestore、Storage
+    管理）</li>
+    <li>✅ <strong>Q3 2024</strong>: Phase
+    5-6（統計分析、推播通知）</li>
+    <li>✅ <strong>Q4 2024</strong>: Phase
+    7-8（系統管理、進階功能）</li>
+    <li>✅ <strong>專案完成</strong>: 2024/12</li>
+    </ul>
+    <p><strong>開發里程碑</strong>（全部達成）：</p>
+    <ol type="1">
+    <li><strong>Milestone 1: MVP</strong> ✅ (2024-03 已完成)
+    <ul>
+    <li>專案基礎架構、Firebase 連接、基本用戶管理</li>
+    </ul></li>
+    <li><strong>Milestone 2: 資料管理完善</strong> ✅ (2024-06 已完成)
+    <ul>
+    <li>Firestore 完整管理、Storage 檔案管理、批量操作</li>
+    </ul></li>
+    <li><strong>Milestone 3: 運營支援系統</strong> ✅ (2024-09 已完成)
+    <ul>
+    <li>統計分析儀表板、推播通知、用戶行為分析</li>
+    </ul></li>
+    <li><strong>Milestone 4: 企業級系統</strong> ✅ (2024-12 已完成)
+    <ul>
+    <li>完整權限管理、操作審計、資料備份還原、系統監控</li>
+    </ul></li>
+    </ol>
+    <h4 id="專案規模-8">專案規模</h4>
+    <ul>
+    <li><strong>檔案數</strong>: 200+ 個 .razor/.cs
+    檔案（完整版本）</li>
+    <li><strong>專案大小</strong>: 估計 150+ MB（含所有功能模組）</li>
+    <li><strong>實際總工時</strong>: 656+ 小時（約 82+ 個工作天）</li>
+    <li><strong>開發週期</strong>: 2024/03 - 2024/12（已完成，歷時 9
+    個月）</li>
+    <li><strong>專案狀態</strong>: 已完成全部功能，目前代碼不在手上</li>
+    </ul>
+    <h4 id="部署方式-5">部署方式</h4>
+    <ul>
+    <li><strong>本地開發</strong>:
+    <ul>
+    <li>HTTP: localhost:5100</li>
+    <li>HTTPS: localhost:5101</li>
+    </ul></li>
+    <li><strong>Docker</strong>: lifesnap-admin-dev</li>
+    <li><strong>網路</strong>: lifesnap_network（獨立網路）</li>
+    </ul>
+    <h4 id="port-設定">Port 設定</h4>
+    <ul>
+    <li><strong>HTTP</strong>: 5100</li>
+    <li><strong>HTTPS</strong>: 5101</li>
+    <li><strong>範圍</strong>: 獨立外部管理工具（5100-5199）</li>
+    <li><strong>理由</strong>: 避免與 Squid 生態系統衝突</li>
+    </ul>
+    <h4 id="docker-標準">Docker 標準</h4>
+    <p>遵循 Squid 專案的 Docker 管理規範：</p>
+    <ul>
+    <li><strong>容器命名</strong>: <code>lifesnap-admin-dev</code>
+    (開發), <code>lifesnap-admin-prod</code> (正式)</li>
+    <li><strong>網路配置</strong>:
+    <code>lifesnap_network</code>（獨立網路，不與 Squid 共享）</li>
+    <li><strong>Image Tag</strong>: <code>lifesnap-admin:dev</code>,
+    <code>lifesnap-admin:latest</code></li>
+    <li><strong>重啟策略</strong>: <code>unless-stopped</code> (開發),
+    <code>always</code> (正式)</li>
+    </ul>
+    <h4 id="開發工具-1">開發工具</h4>
+    <div class="sourceCode" id="cb5"><pre
+    class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 本機執行</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">dotnet</span> watch run</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Docker 部署</span></span>
@@ -951,127 +947,127 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ex">./manage.sh</span> start</span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="ex">./manage.sh</span> status</span>
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="ex">./manage.sh</span> stop</span></code></pre></div>
-<h4 id="安全性實作已完成">安全性實作（已完成）</h4>
-<ul>
-<li>✅ 服務帳戶金鑰包含敏感資訊，已加入 <code>.gitignore</code></li>
-<li>✅ 生產環境使用環境變數或 Azure Key Vault 管理金鑰</li>
-<li>✅ 已實作完整身份驗證與授權系統（與 LIDS 整合）</li>
-<li>✅ 生產環境已加入登入機制與授權檢查</li>
-<li>✅ 所有操作均有稽核日誌記錄</li>
-</ul>
-<h4 id="技術債務管理已完成">技術債務管理（已完成）</h4>
-<p><strong>已解決技術債務</strong>:</p>
-<ul>
-<li>✅ <strong>測試覆蓋率</strong>: 已設定 xUnit 測試框架、Services
-層單元測試、整合測試</li>
-<li>✅ <strong>CI/CD Pipeline</strong>: 已建立 GitHub
-Actions、自動化測試、自動化部署</li>
-<li>✅ <strong>錯誤處理</strong>:
-已實作全域錯誤處理、友善錯誤訊息、錯誤追蹤整合</li>
-<li>✅ <strong>效能優化</strong>:
-已完成載入時間優化、查詢效能優化、快取機制</li>
-</ul>
-<h4 id="品質標準已達成">品質標準（已達成）</h4>
-<p><strong>程式碼品質</strong>:</p>
-<ul>
-<li>✅ 遵循 C# Coding Standards</li>
-<li>✅ Code Review 必須通過</li>
-<li>✅ 單元測試覆蓋率 &gt; 80%</li>
-<li>✅ 無 Critical 級別的 SonarQube 警告</li>
-</ul>
-<p><strong>效能標準</strong>:</p>
-<ul>
-<li>✅ 頁面載入時間 &lt; 2 秒</li>
-<li>✅ API 回應時間 &lt; 500ms (P95)</li>
-<li>✅ 支援同時 100+ 個並發用戶</li>
-</ul>
-<p><strong>安全標準</strong>:</p>
-<ul>
-<li>✅ 所有敏感資料加密</li>
-<li>✅ 所有操作需身份驗證</li>
-<li>✅ 操作日誌完整記錄</li>
-<li>✅ 定期安全掃描</li>
-</ul>
-<h4 id="風險與挑戰已解決">風險與挑戰（已解決）</h4>
-<p><strong>技術風險</strong>:</p>
-<ul>
-<li>✅ Firebase API 限制（已實作快取、批量處理、配額監控）</li>
-<li>✅ 大量資料處理（已實作 Cursor-based Pagination、背景處理）</li>
-<li>✅ 即時性需求（已實作重連機制、錯誤恢復）</li>
-</ul>
-<p><strong>業務風險</strong>:</p>
-<ul>
-<li>✅ 需求變更（採用模組化設計、保持架構彈性）</li>
-<li>✅ 安全性要求（已完成安全審計、定期滲透測試）</li>
-</ul>
-<h4 id="相關文檔-1">相關文檔</h4>
-<ul>
-<li><code>README.md</code> - 專案說明與設定指南</li>
-<li><code>CLAUDE.md</code> - 完整開發文檔</li>
-<li><code>ROADMAP.md</code> - 開發路線圖（656 小時詳細計劃）</li>
-<li><code>QUICKSTART.md</code> - 快速開始指南</li>
-<li><code>DEPLOYMENT.md</code> - 部署指南</li>
-</ul>
-<hr />
-<h2 id="支援與輔助專案">支援與輔助專案</h2>
-<h3 id="10-mcp-server">10. MCP Server</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/mycode/squid/mcp_server</code></p>
-<p><strong>專案類型</strong>: Model Context Protocol 服務</p>
-<h4 id="主要功能-9">主要功能</h4>
-<ul>
-<li>AI 助手操作 Squid 系統的工具介面</li>
-<li>自動生成 MCP 工具定義</li>
-<li>支援 stdio、HTTP 兩種模式</li>
-<li>OpenTelemetry 分散式追蹤</li>
-<li>Prometheus 監控</li>
-</ul>
-<h4 id="技術棧-9">技術棧</h4>
-<ul>
-<li><strong>語言</strong>: TypeScript</li>
-<li><strong>框架</strong>: Express.js（HTTP 模式）</li>
-<li><strong>MCP SDK</strong>: @modelcontextprotocol/sdk</li>
-<li><strong>監控</strong>: @opentelemetry/sdk-node、prom-client</li>
-<li><strong>日誌</strong>: winston + winston-daily-rotate-file</li>
-<li><strong>資料庫</strong>: sqlite3（本地快取）</li>
-</ul>
-<h4 id="特殊機制-1">特殊機制</h4>
-<div class="sourceCode" id="cb6"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 自動生成工具定義</span></span>
+    <h4 id="安全性實作已完成">安全性實作（已完成）</h4>
+    <ul>
+    <li>✅ 服務帳戶金鑰包含敏感資訊，已加入 <code>.gitignore</code></li>
+    <li>✅ 生產環境使用環境變數或 Azure Key Vault 管理金鑰</li>
+    <li>✅ 已實作完整身份驗證與授權系統（與 LIDS 整合）</li>
+    <li>✅ 生產環境已加入登入機制與授權檢查</li>
+    <li>✅ 所有操作均有稽核日誌記錄</li>
+    </ul>
+    <h4 id="技術債務管理已完成">技術債務管理（已完成）</h4>
+    <p><strong>已解決技術債務</strong>:</p>
+    <ul>
+    <li>✅ <strong>測試覆蓋率</strong>: 已設定 xUnit 測試框架、Services
+    層單元測試、整合測試</li>
+    <li>✅ <strong>CI/CD Pipeline</strong>: 已建立 GitHub
+    Actions、自動化測試、自動化部署</li>
+    <li>✅ <strong>錯誤處理</strong>:
+    已實作全域錯誤處理、友善錯誤訊息、錯誤追蹤整合</li>
+    <li>✅ <strong>效能優化</strong>:
+    已完成載入時間優化、查詢效能優化、快取機制</li>
+    </ul>
+    <h4 id="品質標準已達成">品質標準（已達成）</h4>
+    <p><strong>程式碼品質</strong>:</p>
+    <ul>
+    <li>✅ 遵循 C# Coding Standards</li>
+    <li>✅ Code Review 必須通過</li>
+    <li>✅ 單元測試覆蓋率 &gt; 80%</li>
+    <li>✅ 無 Critical 級別的 SonarQube 警告</li>
+    </ul>
+    <p><strong>效能標準</strong>:</p>
+    <ul>
+    <li>✅ 頁面載入時間 &lt; 2 秒</li>
+    <li>✅ API 回應時間 &lt; 500ms (P95)</li>
+    <li>✅ 支援同時 100+ 個並發用戶</li>
+    </ul>
+    <p><strong>安全標準</strong>:</p>
+    <ul>
+    <li>✅ 所有敏感資料加密</li>
+    <li>✅ 所有操作需身份驗證</li>
+    <li>✅ 操作日誌完整記錄</li>
+    <li>✅ 定期安全掃描</li>
+    </ul>
+    <h4 id="風險與挑戰已解決">風險與挑戰（已解決）</h4>
+    <p><strong>技術風險</strong>:</p>
+    <ul>
+    <li>✅ Firebase API 限制（已實作快取、批量處理、配額監控）</li>
+    <li>✅ 大量資料處理（已實作 Cursor-based Pagination、背景處理）</li>
+    <li>✅ 即時性需求（已實作重連機制、錯誤恢復）</li>
+    </ul>
+    <p><strong>業務風險</strong>:</p>
+    <ul>
+    <li>✅ 需求變更（採用模組化設計、保持架構彈性）</li>
+    <li>✅ 安全性要求（已完成安全審計、定期滲透測試）</li>
+    </ul>
+    <h4 id="相關文檔-1">相關文檔</h4>
+    <ul>
+    <li><code>README.md</code> - 專案說明與設定指南</li>
+    <li><code>CLAUDE.md</code> - 完整開發文檔</li>
+    <li><code>ROADMAP.md</code> - 開發路線圖（656 小時詳細計劃）</li>
+    <li><code>QUICKSTART.md</code> - 快速開始指南</li>
+    <li><code>DEPLOYMENT.md</code> - 部署指南</li>
+    </ul>
+    <hr />
+    <h2 id="支援與輔助專案">支援與輔助專案</h2>
+    <h3 id="10-mcp-server">10. MCP Server</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/mycode/squid/mcp_server</code></p>
+    <p><strong>專案類型</strong>: Model Context Protocol 服務</p>
+    <h4 id="主要功能-9">主要功能</h4>
+    <ul>
+    <li>AI 助手操作 Squid 系統的工具介面</li>
+    <li>自動生成 MCP 工具定義</li>
+    <li>支援 stdio、HTTP 兩種模式</li>
+    <li>OpenTelemetry 分散式追蹤</li>
+    <li>Prometheus 監控</li>
+    </ul>
+    <h4 id="技術棧-9">技術棧</h4>
+    <ul>
+    <li><strong>語言</strong>: TypeScript</li>
+    <li><strong>框架</strong>: Express.js（HTTP 模式）</li>
+    <li><strong>MCP SDK</strong>: @modelcontextprotocol/sdk</li>
+    <li><strong>監控</strong>: @opentelemetry/sdk-node、prom-client</li>
+    <li><strong>日誌</strong>: winston + winston-daily-rotate-file</li>
+    <li><strong>資料庫</strong>: sqlite3（本地快取）</li>
+    </ul>
+    <h4 id="特殊機制-1">特殊機制</h4>
+    <div class="sourceCode" id="cb6"><pre
+    class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 自動生成工具定義</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> run generate-tools <span class="at">--</span> <span class="at">--api-url</span> http://localhost:8000</span></code></pre></div>
-<ul>
-<li>Git Hook: <code>mcp_server/</code> 變更後自動重建</li>
-</ul>
-<h4 id="部署">部署</h4>
-<ul>
-<li><strong>本地開發</strong>: localhost:3001</li>
-<li><strong>Staging</strong>: 192.168.50.32:3000</li>
-</ul>
-<hr />
-<h3 id="11-migrations-管理">11. Migrations 管理</h3>
-<p><strong>專案路徑</strong>:
-<code>/Users/yinghaowang/Work/migrations</code></p>
-<p><strong>專案類型</strong>: 資料庫遷移統一管理</p>
-<h4 id="目錄結構">目錄結構</h4>
-<pre><code>/Users/yinghaowang/Work/migrations/
+    <ul>
+    <li>Git Hook: <code>mcp_server/</code> 變更後自動重建</li>
+    </ul>
+    <h4 id="部署">部署</h4>
+    <ul>
+    <li><strong>本地開發</strong>: localhost:3001</li>
+    <li><strong>Staging</strong>: 192.168.50.32:3000</li>
+    </ul>
+    <hr />
+    <h3 id="11-migrations-管理">11. Migrations 管理</h3>
+    <p><strong>專案路徑</strong>:
+    <code>/Users/yinghaowang/Work/migrations</code></p>
+    <p><strong>專案類型</strong>: 資料庫遷移統一管理</p>
+    <h4 id="目錄結構">目錄結構</h4>
+    <pre><code>/Users/yinghaowang/Work/migrations/
 ├── squid/
 │   ├── alembic.ini
 │   └── alembic_dal/
 │       └── versions/  # 30+ migration 檔案
 └── lids/
     └── *.sql  # SQL migrations</code></pre>
-<h4 id="管理規範">管理規範</h4>
-<ul>
-<li>✅ 統一在專案外管理（避免污染專案目錄）</li>
-<li>✅ 每個 migration 必須包含 REF 工單編號</li>
-<li>✅ <code>upgrade()</code> 和 <code>downgrade()</code>
-必須可執行</li>
-<li>✅ 多租戶隔離檢查（tenant_id 欄位強制）</li>
-</ul>
-<h4 id="執行方式">執行方式</h4>
-<p><strong>Squid (Alembic)</strong>:</p>
-<div class="sourceCode" id="cb8"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /Users/yinghaowang/Work/mycode/squid</span>
+    <h4 id="管理規範">管理規範</h4>
+    <ul>
+    <li>✅ 統一在專案外管理（避免污染專案目錄）</li>
+    <li>✅ 每個 migration 必須包含 REF 工單編號</li>
+    <li>✅ <code>upgrade()</code> 和 <code>downgrade()</code>
+    必須可執行</li>
+    <li>✅ 多租戶隔離檢查（tenant_id 欄位強制）</li>
+    </ul>
+    <h4 id="執行方式">執行方式</h4>
+    <p><strong>Squid (Alembic)</strong>:</p>
+    <div class="sourceCode" id="cb8"><pre
+    class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /Users/yinghaowang/Work/mycode/squid</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> api_venv/bin/activate</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PYTHONPATH</span><span class="op">=</span>/Users/yinghaowang/Work/mycode</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -1083,544 +1079,545 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 檢查狀態</span></span>
 <span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="ex">alembic</span> <span class="at">-c</span> /Users/yinghaowang/Work/migrations/squid/alembic.ini current</span></code></pre></div>
-<p><strong>LIDS (SQL)</strong>:</p>
-<div class="sourceCode" id="cb9"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Docker PostgreSQL</span></span>
+    <p><strong>LIDS (SQL)</strong>:</p>
+    <div class="sourceCode" id="cb9"><pre
+    class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Docker PostgreSQL</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> exec <span class="at">-i</span> squid-postgres-dev psql <span class="at">-U</span> squid_user <span class="at">-d</span> lids_db <span class="op">&lt;</span> /Users/yinghaowang/Work/migrations/lids/<span class="op">&lt;</span>migration_file<span class="op">&gt;</span>.sql</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Cloud SQL</span></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">psql</span> <span class="at">-h</span> 35.229.227.192 <span class="at">-U</span> squid_user <span class="at">-d</span> lids_db <span class="op">&lt;</span> /Users/yinghaowang/Work/migrations/lids/<span class="op">&lt;</span>migration_file<span class="op">&gt;</span>.sql</span></code></pre></div>
-<hr />
-<h2 id="技術總結">技術總結</h2>
-<h3 id="後端技術棧">後端技術棧</h3>
-<table>
-<thead>
-<tr>
-<th>技術</th>
-<th>專案應用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Python FastAPI</strong></td>
-<td>Squid API</td>
-</tr>
-<tr>
-<td><strong>SQLAlchemy 2.0</strong></td>
-<td>Squid API (ORM)</td>
-</tr>
-<tr>
-<td><strong>Alembic</strong></td>
-<td>Squid 資料庫遷移</td>
-</tr>
-<tr>
-<td><strong>C# ASP.NET Core 8</strong></td>
-<td>LocalIdentityServer</td>
-</tr>
-<tr>
-<td><strong>C# .NET 9.0</strong></td>
-<td>LifeSnapAdmin</td>
-</tr>
-<tr>
-<td><strong>Entity Framework Core</strong></td>
-<td>LIDS (ORM)</td>
-</tr>
-<tr>
-<td><strong>Blazor Server</strong></td>
-<td>LIDS 管理介面, LifeSnapAdmin</td>
-</tr>
-<tr>
-<td><strong>Express.js</strong></td>
-<td>Tentacle BFF, MCP Server</td>
-</tr>
-</tbody>
-</table>
-<h3 id="前端技術棧">前端技術棧</h3>
-<table>
-<thead>
-<tr>
-<th>技術</th>
-<th>專案應用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>React 18.3</strong></td>
-<td>Tentacle Frontend</td>
-</tr>
-<tr>
-<td><strong>TypeScript 5.x</strong></td>
-<td>Tentacle Frontend, BFF, MCP, SDKs</td>
-</tr>
-<tr>
-<td><strong>Webpack 5</strong></td>
-<td>Tentacle Frontend</td>
-</tr>
-<tr>
-<td><strong>Bootstrap 5</strong></td>
-<td>Tentacle Frontend</td>
-</tr>
-<tr>
-<td><strong>SwiftUI</strong></td>
-<td>LifeSnap iOS</td>
-</tr>
-<tr>
-<td><strong>SpriteKit</strong></td>
-<td>LifeSnap 遊戲渲染</td>
-</tr>
-</tbody>
-</table>
-<h3 id="資料庫">資料庫</h3>
-<table>
-<thead>
-<tr>
-<th>技術</th>
-<th>專案應用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>PostgreSQL</strong></td>
-<td>Squid API, LIDS（主要生產資料庫）</td>
-</tr>
-<tr>
-<td><strong>SQLite</strong></td>
-<td>本地開發</td>
-</tr>
-<tr>
-<td><strong>Redis</strong></td>
-<td>快取、Session 儲存</td>
-</tr>
-<tr>
-<td><strong>Firebase Firestore</strong></td>
-<td>LifeSnap 雲端資料庫, LifeSnapAdmin 管理</td>
-</tr>
-<tr>
-<td><strong>CloudKit</strong></td>
-<td>LifeSnap iCloud 同步</td>
-</tr>
-</tbody>
-</table>
-<h3 id="devops--cicd">DevOps &amp; CI/CD</h3>
-<table>
-<thead>
-<tr>
-<th>技術</th>
-<th>專案應用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Docker</strong></td>
-<td>所有專案容器化</td>
-</tr>
-<tr>
-<td><strong>Git Hooks</strong></td>
-<td>兩層式 CI/CD（post-commit + pre-push）</td>
-</tr>
-<tr>
-<td><strong>GitHub Actions</strong></td>
-<td>自動部署到 Cloud Run</td>
-</tr>
-<tr>
-<td><strong>Google Cloud Run</strong></td>
-<td>生產環境部署</td>
-</tr>
-<tr>
-<td><strong>Prometheus</strong></td>
-<td>監控 (Squid, LIDS, MCP)</td>
-</tr>
-<tr>
-<td><strong>OpenTelemetry</strong></td>
-<td>分散式追蹤</td>
-</tr>
-<tr>
-<td><strong>Sentry</strong></td>
-<td>錯誤追蹤</td>
-</tr>
-</tbody>
-</table>
-<h3 id="認證與安全">認證與安全</h3>
-<table>
-<thead>
-<tr>
-<th>技術</th>
-<th>專案應用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>OAuth 2.0 / OIDC</strong></td>
-<td>LocalIdentityServer</td>
-</tr>
-<tr>
-<td><strong>JWT</strong></td>
-<td>Token 簽發與驗證</td>
-</tr>
-<tr>
-<td><strong>MFA (TOTP/Email/SMS)</strong></td>
-<td>LIDS 多因素認證</td>
-</tr>
-<tr>
-<td><strong>BCrypt</strong></td>
-<td>密碼雜湊</td>
-</tr>
-<tr>
-<td><strong>AES-256-GCM</strong></td>
-<td>資料加密</td>
-</tr>
-<tr>
-<td><strong>Azure Key Vault</strong></td>
-<td>密鑰管理</td>
-</tr>
-<tr>
-<td><strong>GCP Secret Manager</strong></td>
-<td>密鑰管理</td>
-</tr>
-</tbody>
-</table>
-<h3 id="整合服務">整合服務</h3>
-<table>
-<thead>
-<tr>
-<th>服務</th>
-<th>專案應用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Stripe</strong></td>
-<td>Squid API, Tentacle 支付整合</td>
-</tr>
-<tr>
-<td><strong>PayPal (Braintree)</strong></td>
-<td>Squid API, Tentacle 支付整合</td>
-</tr>
-<tr>
-<td><strong>SendGrid</strong></td>
-<td>Email 通知 (Squid, LIDS)</td>
-</tr>
-<tr>
-<td><strong>Twilio</strong></td>
-<td>SMS 通知 (LIDS)</td>
-</tr>
-<tr>
-<td><strong>Slack SDK</strong></td>
-<td>Slack 通知 (Squid)</td>
-</tr>
-<tr>
-<td><strong>ChatGPT API</strong></td>
-<td>LifeSnap 聊天輔助</td>
-</tr>
-<tr>
-<td><strong>Google AdMob</strong></td>
-<td>LifeSnap 廣告</td>
-</tr>
-<tr>
-<td><strong>Firebase Admin SDK</strong></td>
-<td>LifeSnapAdmin 後台管理</td>
-</tr>
-</tbody>
-</table>
-<h3 id="ai-整合">AI 整合</h3>
-<table>
-<thead>
-<tr>
-<th>技術</th>
-<th>專案應用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>MCP (Model Context Protocol)</strong></td>
-<td>Squid MCP Server</td>
-</tr>
-<tr>
-<td><strong>ChatGPT API</strong></td>
-<td>LifeSnap 聊天機器人</td>
-</tr>
-<tr>
-<td><strong>Gemini CLI</strong></td>
-<td>LifeSnap 開發輔助</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="開發環境統一配置">開發環境統一配置</h2>
-<h3 id="port-分配表">Port 分配表</h3>
-<table>
-<thead>
-<tr>
-<th>Port</th>
-<th>服務</th>
-<th>說明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>8000</td>
-<td>Squid API</td>
-<td>主要 API 服務</td>
-</tr>
-<tr>
-<td>8070</td>
-<td>Tentacle Frontend</td>
-<td>HTTPS（Nginx）</td>
-</tr>
-<tr>
-<td>8073</td>
-<td>LIDS</td>
-<td>LocalIdentityServer (HTTP)</td>
-</tr>
-<tr>
-<td>8076</td>
-<td>Log Server API</td>
-<td>日誌管理</td>
-</tr>
-<tr>
-<td>8079</td>
-<td>Tentacle BFF</td>
-<td>Backend for Frontend</td>
-</tr>
-<tr>
-<td>3000</td>
-<td>Log Server Web UI</td>
-<td>Vue.js 前端</td>
-</tr>
-<tr>
-<td>3001</td>
-<td>MCP Server</td>
-<td>本地開發</td>
-</tr>
-<tr>
-<td>5432</td>
-<td>PostgreSQL</td>
-<td>資料庫</td>
-</tr>
-<tr>
-<td>6379</td>
-<td>Redis</td>
-<td>快取</td>
-</tr>
-<tr>
-<td>5100</td>
-<td>LifeSnapAdmin</td>
-<td>Firebase 後台管理 (HTTP)</td>
-</tr>
-<tr>
-<td>5101</td>
-<td>LifeSnapAdmin</td>
-<td>Firebase 後台管理 (HTTPS)</td>
-</tr>
-<tr>
-<td>8443</td>
-<td>Tentacle Frontend (Docker)</td>
-<td>HTTPS</td>
-</tr>
-<tr>
-<td>8444</td>
-<td>LIDS (Docker)</td>
-<td>HTTPS</td>
-</tr>
-<tr>
-<td>8445</td>
-<td>Squid API (Staging)</td>
-<td>HTTPS</td>
-</tr>
-</tbody>
-</table>
-<h3 id="staging-環境1921685032">Staging 環境（192.168.50.32）</h3>
-<table>
-<thead>
-<tr>
-<th>容器</th>
-<th>鏡像標籤格式</th>
-<th>Port</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>squid-api-staging</td>
-<td>squid-api:{branch}-{commit}</td>
-<td>8445:8443</td>
-</tr>
-<tr>
-<td>tentacle-frontend-staging</td>
-<td>tentacle-frontend:{branch}-{commit}</td>
-<td>8443:443</td>
-</tr>
-<tr>
-<td>tentacle-bff-staging</td>
-<td>tentacle-bff:{branch}-{commit}</td>
-<td>8079:8079</td>
-</tr>
-<tr>
-<td>lids-staging</td>
-<td>lids:{branch}-{commit}</td>
-<td>8073:8073, 8444:8443</td>
-</tr>
-<tr>
-<td>squid-mcp-server-staging</td>
-<td>squid-mcp-server:{branch}-{commit}</td>
-<td>3000:3000</td>
-</tr>
-</tbody>
-</table>
-<h3 id="docker-網路">Docker 網路</h3>
-<ul>
-<li><strong>網路名稱</strong>: <code>squid_dev_network</code></li>
-<li><strong>Subnet</strong>: 172.20.0.0/16</li>
-<li><strong>CRITICAL</strong>: 所有容器必須在同一網路（name
-resolution）</li>
-</ul>
-<hr />
-<h2 id="git-hook-自動化-cicdref-202601220001">Git Hook 自動化
-CI/CD（REF: 202601220001）</h2>
-<h3 id="兩層式-cicd-架構">兩層式 CI/CD 架構</h3>
-<table>
-<thead>
-<tr>
-<th>專案</th>
-<th>post-commit（本地）</th>
-<th>pre-push（Staging）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Squid API</td>
-<td>Docker → localhost:8000</td>
-<td>Docker → 192.168.50.32:8445</td>
-</tr>
-<tr>
-<td>MCP Server</td>
-<td>Docker → localhost:3001</td>
-<td>Docker → 192.168.50.32:3000</td>
-</tr>
-<tr>
-<td>Tentacle Frontend</td>
-<td>Docker → localhost:8443</td>
-<td>neritic → 192.168.50.32:8443</td>
-</tr>
-<tr>
-<td>Tentacle BFF</td>
-<td>Docker → localhost:8079</td>
-<td>Docker → 192.168.50.32:8079</td>
-</tr>
-<tr>
-<td>LIDS</td>
-<td>Docker → localhost:8073</td>
-<td>Docker → 192.168.50.32:8073/8444</td>
-</tr>
-<tr>
-<td>Neritic CLI</td>
-<td>PyInstaller → ~/.local/bin</td>
-<td>驗證測試</td>
-</tr>
-</tbody>
-</table>
-<h3 id="docker-標籤策略ref-202512200005">Docker 標籤策略（REF:
-202512200005）</h3>
-<pre><code>{IMAGE_NAME}:{BRANCH}-{SHORT_COMMIT_HASH}  # 版本追蹤
+    <hr />
+    <h2 id="技術總結">技術總結</h2>
+    <h3 id="後端技術棧">後端技術棧</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>技術</th>
+    <th>專案應用</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>Python FastAPI</strong></td>
+    <td>Squid API</td>
+    </tr>
+    <tr>
+    <td><strong>SQLAlchemy 2.0</strong></td>
+    <td>Squid API (ORM)</td>
+    </tr>
+    <tr>
+    <td><strong>Alembic</strong></td>
+    <td>Squid 資料庫遷移</td>
+    </tr>
+    <tr>
+    <td><strong>C# ASP.NET Core 8</strong></td>
+    <td>LocalIdentityServer</td>
+    </tr>
+    <tr>
+    <td><strong>C# .NET 9.0</strong></td>
+    <td>LifeSnapAdmin</td>
+    </tr>
+    <tr>
+    <td><strong>Entity Framework Core</strong></td>
+    <td>LIDS (ORM)</td>
+    </tr>
+    <tr>
+    <td><strong>Blazor Server</strong></td>
+    <td>LIDS 管理介面, LifeSnapAdmin</td>
+    </tr>
+    <tr>
+    <td><strong>Express.js</strong></td>
+    <td>Tentacle BFF, MCP Server</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="前端技術棧">前端技術棧</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>技術</th>
+    <th>專案應用</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>React 18.3</strong></td>
+    <td>Tentacle Frontend</td>
+    </tr>
+    <tr>
+    <td><strong>TypeScript 5.x</strong></td>
+    <td>Tentacle Frontend, BFF, MCP, SDKs</td>
+    </tr>
+    <tr>
+    <td><strong>Webpack 5</strong></td>
+    <td>Tentacle Frontend</td>
+    </tr>
+    <tr>
+    <td><strong>Bootstrap 5</strong></td>
+    <td>Tentacle Frontend</td>
+    </tr>
+    <tr>
+    <td><strong>SwiftUI</strong></td>
+    <td>LifeSnap iOS</td>
+    </tr>
+    <tr>
+    <td><strong>SpriteKit</strong></td>
+    <td>LifeSnap 遊戲渲染</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="資料庫">資料庫</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>技術</th>
+    <th>專案應用</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>PostgreSQL</strong></td>
+    <td>Squid API, LIDS（主要生產資料庫）</td>
+    </tr>
+    <tr>
+    <td><strong>SQLite</strong></td>
+    <td>本地開發</td>
+    </tr>
+    <tr>
+    <td><strong>Redis</strong></td>
+    <td>快取、Session 儲存</td>
+    </tr>
+    <tr>
+    <td><strong>Firebase Firestore</strong></td>
+    <td>LifeSnap 雲端資料庫, LifeSnapAdmin 管理</td>
+    </tr>
+    <tr>
+    <td><strong>CloudKit</strong></td>
+    <td>LifeSnap iCloud 同步</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="devops--cicd">DevOps &amp; CI/CD</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>技術</th>
+    <th>專案應用</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>Docker</strong></td>
+    <td>所有專案容器化</td>
+    </tr>
+    <tr>
+    <td><strong>Git Hooks</strong></td>
+    <td>兩層式 CI/CD（post-commit + pre-push）</td>
+    </tr>
+    <tr>
+    <td><strong>GitHub Actions</strong></td>
+    <td>自動部署到 Cloud Run</td>
+    </tr>
+    <tr>
+    <td><strong>Google Cloud Run</strong></td>
+    <td>生產環境部署</td>
+    </tr>
+    <tr>
+    <td><strong>Prometheus</strong></td>
+    <td>監控 (Squid, LIDS, MCP)</td>
+    </tr>
+    <tr>
+    <td><strong>OpenTelemetry</strong></td>
+    <td>分散式追蹤</td>
+    </tr>
+    <tr>
+    <td><strong>Sentry</strong></td>
+    <td>錯誤追蹤</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="認證與安全">認證與安全</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>技術</th>
+    <th>專案應用</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>OAuth 2.0 / OIDC</strong></td>
+    <td>LocalIdentityServer</td>
+    </tr>
+    <tr>
+    <td><strong>JWT</strong></td>
+    <td>Token 簽發與驗證</td>
+    </tr>
+    <tr>
+    <td><strong>MFA (TOTP/Email/SMS)</strong></td>
+    <td>LIDS 多因素認證</td>
+    </tr>
+    <tr>
+    <td><strong>BCrypt</strong></td>
+    <td>密碼雜湊</td>
+    </tr>
+    <tr>
+    <td><strong>AES-256-GCM</strong></td>
+    <td>資料加密</td>
+    </tr>
+    <tr>
+    <td><strong>Azure Key Vault</strong></td>
+    <td>密鑰管理</td>
+    </tr>
+    <tr>
+    <td><strong>GCP Secret Manager</strong></td>
+    <td>密鑰管理</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="整合服務">整合服務</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>服務</th>
+    <th>專案應用</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>Stripe</strong></td>
+    <td>Squid API, Tentacle 支付整合</td>
+    </tr>
+    <tr>
+    <td><strong>PayPal (Braintree)</strong></td>
+    <td>Squid API, Tentacle 支付整合</td>
+    </tr>
+    <tr>
+    <td><strong>SendGrid</strong></td>
+    <td>Email 通知 (Squid, LIDS)</td>
+    </tr>
+    <tr>
+    <td><strong>Twilio</strong></td>
+    <td>SMS 通知 (LIDS)</td>
+    </tr>
+    <tr>
+    <td><strong>Slack SDK</strong></td>
+    <td>Slack 通知 (Squid)</td>
+    </tr>
+    <tr>
+    <td><strong>ChatGPT API</strong></td>
+    <td>LifeSnap 聊天輔助</td>
+    </tr>
+    <tr>
+    <td><strong>Google AdMob</strong></td>
+    <td>LifeSnap 廣告</td>
+    </tr>
+    <tr>
+    <td><strong>Firebase Admin SDK</strong></td>
+    <td>LifeSnapAdmin 後台管理</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="ai-整合">AI 整合</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>技術</th>
+    <th>專案應用</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>MCP (Model Context Protocol)</strong></td>
+    <td>Squid MCP Server</td>
+    </tr>
+    <tr>
+    <td><strong>ChatGPT API</strong></td>
+    <td>LifeSnap 聊天機器人</td>
+    </tr>
+    <tr>
+    <td><strong>Gemini CLI</strong></td>
+    <td>LifeSnap 開發輔助</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="開發環境統一配置">開發環境統一配置</h2>
+    <h3 id="port-分配表">Port 分配表</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>Port</th>
+    <th>服務</th>
+    <th>說明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>8000</td>
+    <td>Squid API</td>
+    <td>主要 API 服務</td>
+    </tr>
+    <tr>
+    <td>8070</td>
+    <td>Tentacle Frontend</td>
+    <td>HTTPS（Nginx）</td>
+    </tr>
+    <tr>
+    <td>8073</td>
+    <td>LIDS</td>
+    <td>LocalIdentityServer (HTTP)</td>
+    </tr>
+    <tr>
+    <td>8076</td>
+    <td>Log Server API</td>
+    <td>日誌管理</td>
+    </tr>
+    <tr>
+    <td>8079</td>
+    <td>Tentacle BFF</td>
+    <td>Backend for Frontend</td>
+    </tr>
+    <tr>
+    <td>3000</td>
+    <td>Log Server Web UI</td>
+    <td>Vue.js 前端</td>
+    </tr>
+    <tr>
+    <td>3001</td>
+    <td>MCP Server</td>
+    <td>本地開發</td>
+    </tr>
+    <tr>
+    <td>5432</td>
+    <td>PostgreSQL</td>
+    <td>資料庫</td>
+    </tr>
+    <tr>
+    <td>6379</td>
+    <td>Redis</td>
+    <td>快取</td>
+    </tr>
+    <tr>
+    <td>5100</td>
+    <td>LifeSnapAdmin</td>
+    <td>Firebase 後台管理 (HTTP)</td>
+    </tr>
+    <tr>
+    <td>5101</td>
+    <td>LifeSnapAdmin</td>
+    <td>Firebase 後台管理 (HTTPS)</td>
+    </tr>
+    <tr>
+    <td>8443</td>
+    <td>Tentacle Frontend (Docker)</td>
+    <td>HTTPS</td>
+    </tr>
+    <tr>
+    <td>8444</td>
+    <td>LIDS (Docker)</td>
+    <td>HTTPS</td>
+    </tr>
+    <tr>
+    <td>8445</td>
+    <td>Squid API (Staging)</td>
+    <td>HTTPS</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="staging-環境1921685032">Staging 環境（192.168.50.32）</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>容器</th>
+    <th>鏡像標籤格式</th>
+    <th>Port</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>squid-api-staging</td>
+    <td>squid-api:{branch}-{commit}</td>
+    <td>8445:8443</td>
+    </tr>
+    <tr>
+    <td>tentacle-frontend-staging</td>
+    <td>tentacle-frontend:{branch}-{commit}</td>
+    <td>8443:443</td>
+    </tr>
+    <tr>
+    <td>tentacle-bff-staging</td>
+    <td>tentacle-bff:{branch}-{commit}</td>
+    <td>8079:8079</td>
+    </tr>
+    <tr>
+    <td>lids-staging</td>
+    <td>lids:{branch}-{commit}</td>
+    <td>8073:8073, 8444:8443</td>
+    </tr>
+    <tr>
+    <td>squid-mcp-server-staging</td>
+    <td>squid-mcp-server:{branch}-{commit}</td>
+    <td>3000:3000</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="docker-網路">Docker 網路</h3>
+    <ul>
+    <li><strong>網路名稱</strong>: <code>squid_dev_network</code></li>
+    <li><strong>Subnet</strong>: 172.20.0.0/16</li>
+    <li><strong>CRITICAL</strong>: 所有容器必須在同一網路（name
+    resolution）</li>
+    </ul>
+    <hr />
+    <h2 id="git-hook-自動化-cicdref-202601220001">Git Hook 自動化
+    CI/CD（REF: 202601220001）</h2>
+    <h3 id="兩層式-cicd-架構">兩層式 CI/CD 架構</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>專案</th>
+    <th>post-commit（本地）</th>
+    <th>pre-push（Staging）</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Squid API</td>
+    <td>Docker → localhost:8000</td>
+    <td>Docker → 192.168.50.32:8445</td>
+    </tr>
+    <tr>
+    <td>MCP Server</td>
+    <td>Docker → localhost:3001</td>
+    <td>Docker → 192.168.50.32:3000</td>
+    </tr>
+    <tr>
+    <td>Tentacle Frontend</td>
+    <td>Docker → localhost:8443</td>
+    <td>neritic → 192.168.50.32:8443</td>
+    </tr>
+    <tr>
+    <td>Tentacle BFF</td>
+    <td>Docker → localhost:8079</td>
+    <td>Docker → 192.168.50.32:8079</td>
+    </tr>
+    <tr>
+    <td>LIDS</td>
+    <td>Docker → localhost:8073</td>
+    <td>Docker → 192.168.50.32:8073/8444</td>
+    </tr>
+    <tr>
+    <td>Neritic CLI</td>
+    <td>PyInstaller → ~/.local/bin</td>
+    <td>驗證測試</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="docker-標籤策略ref-202512200005">Docker 標籤策略（REF:
+    202512200005）</h3>
+    <pre><code>{IMAGE_NAME}:{BRANCH}-{SHORT_COMMIT_HASH}  # 版本追蹤
 {IMAGE_NAME}:{BRANCH}-latest               # 分支最新
 {IMAGE_NAME}-dev:latest                    # 本地容器</code></pre>
-<p><strong>範例</strong>:</p>
-<ul>
-<li><code>squid-api:main-abc1234</code></li>
-<li><code>squid-api:macbook-pro-834104841</code></li>
-<li><code>tentacle-frontend:main-latest</code></li>
-<li><code>lids-staging:latest</code></li>
-</ul>
-<hr />
-<h2 id="專案規模總覽">專案規模總覽</h2>
-<table>
-<thead>
-<tr>
-<th>專案</th>
-<th>檔案數</th>
-<th>專案大小</th>
-<th>主要語言</th>
-<th>開發週期</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Squid 專案管理系統</td>
-<td>1,076</td>
-<td>3.0 GB</td>
-<td>Python</td>
-<td>~1 年</td>
-</tr>
-<tr>
-<td>Neritic CLI</td>
-<td>3,312</td>
-<td>291 MB</td>
-<td>Python</td>
-<td>~1 年</td>
-</tr>
-<tr>
-<td>LocalIdentityServer</td>
-<td>428</td>
-<td>1.2 GB</td>
-<td>C#</td>
-<td>~2 個月</td>
-</tr>
-<tr>
-<td>Tentacle Frontend</td>
-<td>382</td>
-<td>891 MB</td>
-<td>TypeScript</td>
-<td>~7 個月</td>
-</tr>
-<tr>
-<td>Tentacle BFF</td>
-<td>19</td>
-<td>112 MB</td>
-<td>TypeScript</td>
-<td>~1 年</td>
-</tr>
-<tr>
-<td>LifeSnap iOS</td>
-<td>399</td>
-<td>1.6 GB</td>
-<td>Swift</td>
-<td>~10 個月</td>
-</tr>
-<tr>
-<td>LifeSnapAdmin</td>
-<td>200+</td>
-<td>150+ MB</td>
-<td>C#</td>
-<td>2024/03-2024/12（已完成，9 個月）</td>
-</tr>
-<tr>
-<td>Squid API SDK</td>
-<td>-</td>
-<td>20 MB</td>
-<td>Python</td>
-<td>~2 個月</td>
-</tr>
-<tr>
-<td>Squid JS SDK</td>
-<td>-</td>
-<td>194 MB</td>
-<td>TypeScript</td>
-<td>~2 個月</td>
-</tr>
-</tbody>
-</table>
-<p><strong>總計</strong>: ~6,800+ 個程式碼檔案，約 7.4 GB 專案規模</p>
-<p><strong>LifeSnapAdmin 特別說明</strong>：</p>
-<ul>
-<li><strong>開發狀態</strong>: ✅ 全部功能已完成（2024-12）</li>
-<li><strong>實際總工時</strong>: 656+ 小時（約 82+
-個工作天，不含測試與文檔）</li>
-<li><strong>完成時間</strong>: 2024/03 - 2024/12（歷時 9 個月）</li>
-<li><strong>專案狀態</strong>: 已完成全部 8
-個開發階段，目前代碼不在手上</li>
-</ul>
-<hr />
-<h2 id="專案時間線">專案時間線</h2>
-<pre><code>2019/02 ──────┐
+    <p><strong>範例</strong>:</p>
+    <ul>
+    <li><code>squid-api:main-abc1234</code></li>
+    <li><code>squid-api:macbook-pro-834104841</code></li>
+    <li><code>tentacle-frontend:main-latest</code></li>
+    <li><code>lids-staging:latest</code></li>
+    </ul>
+    <hr />
+    <h2 id="專案規模總覽">專案規模總覽</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>專案</th>
+    <th>檔案數</th>
+    <th>專案大小</th>
+    <th>主要語言</th>
+    <th>開發週期</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Squid 專案管理系統</td>
+    <td>1,076</td>
+    <td>3.0 GB</td>
+    <td>Python</td>
+    <td>~1 年</td>
+    </tr>
+    <tr>
+    <td>Neritic CLI</td>
+    <td>3,312</td>
+    <td>291 MB</td>
+    <td>Python</td>
+    <td>~1 年</td>
+    </tr>
+    <tr>
+    <td>LocalIdentityServer</td>
+    <td>428</td>
+    <td>1.2 GB</td>
+    <td>C#</td>
+    <td>~2 個月</td>
+    </tr>
+    <tr>
+    <td>Tentacle Frontend</td>
+    <td>382</td>
+    <td>891 MB</td>
+    <td>TypeScript</td>
+    <td>~7 個月</td>
+    </tr>
+    <tr>
+    <td>Tentacle BFF</td>
+    <td>19</td>
+    <td>112 MB</td>
+    <td>TypeScript</td>
+    <td>~1 年</td>
+    </tr>
+    <tr>
+    <td>LifeSnap iOS</td>
+    <td>399</td>
+    <td>1.6 GB</td>
+    <td>Swift</td>
+    <td>~10 個月</td>
+    </tr>
+    <tr>
+    <td>LifeSnapAdmin</td>
+    <td>200+</td>
+    <td>150+ MB</td>
+    <td>C#</td>
+    <td>2024/03-2024/12（已完成，9 個月）</td>
+    </tr>
+    <tr>
+    <td>Squid API SDK</td>
+    <td>-</td>
+    <td>20 MB</td>
+    <td>Python</td>
+    <td>~2 個月</td>
+    </tr>
+    <tr>
+    <td>Squid JS SDK</td>
+    <td>-</td>
+    <td>194 MB</td>
+    <td>TypeScript</td>
+    <td>~2 個月</td>
+    </tr>
+    </tbody>
+    </table>
+    <p><strong>總計</strong>: ~6,800+ 個程式碼檔案，約 7.4 GB
+    專案規模</p>
+    <p><strong>LifeSnapAdmin 特別說明</strong>：</p>
+    <ul>
+    <li><strong>開發狀態</strong>: ✅ 全部功能已完成（2024-12）</li>
+    <li><strong>實際總工時</strong>: 656+ 小時（約 82+
+    個工作天，不含測試與文檔）</li>
+    <li><strong>完成時間</strong>: 2024/03 - 2024/12（歷時 9 個月）</li>
+    <li><strong>專案狀態</strong>: 已完成全部 8
+    個開發階段，目前代碼不在手上</li>
+    </ul>
+    <hr />
+    <h2 id="專案時間線">專案時間線</h2>
+    <pre><code>2019/02 ──────┐
               │ STA 組織綜合管理平台 (PHP)
 2021/02 ──────┘
 
@@ -1647,92 +1644,100 @@ CI/CD（REF: 202601220001）</h2>
 2025/06 ──────┐
               │ Tentacle Frontend
 2026/01 ──────┤ (持續開發)</code></pre>
-<hr />
-<h2 id="工單管理流程">工單管理流程</h2>
-<h3 id="核心原則">核心原則</h3>
-<ol type="1">
-<li>先開票後修正（發現問題 → 創建工單 → 開始修復）</li>
-<li>單一功能單一工單</li>
-<li>狀態驅動開發</li>
-<li>完整的文檔要求</li>
-<li>工單時數限制：單票不超過 8 小時</li>
-</ol>
-<h3 id="狀態流程">狀態流程</h3>
-<pre><code>open → in_progress → pending_review → reviewed → completed</code></pre>
-<h3 id="必填欄位要求">必填欄位要求</h3>
-<ul>
-<li><strong>modification</strong>（修改詳情）: ≥200 字</li>
-<li><strong>test-results</strong>（測試結果）: ≥300 字</li>
-<li><strong>completion-reason</strong>（完成原因）: ≥400 字</li>
-</ul>
-<h3 id="評審分數系統140-分">評審分數系統（140 分）</h3>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>分數</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Description（需求描述）</td>
-<td>20 分</td>
-</tr>
-<tr>
-<td>Solution（解決方案）</td>
-<td>20 分</td>
-</tr>
-<tr>
-<td>Modification（修改詳情）</td>
-<td>20 分</td>
-</tr>
-<tr>
-<td>Test Results（測試結果）</td>
-<td>20 分</td>
-</tr>
-<tr>
-<td>Completion Reason（完成原因）</td>
-<td>20 分</td>
-</tr>
-<tr>
-<td>Test Execution（測試執行）</td>
-<td>25 分（選填）</td>
-</tr>
-<tr>
-<td>Git Commit（提交記錄）</td>
-<td>15 分</td>
-</tr>
-</tbody>
-</table>
-<p><strong>通過門檻</strong>: ≥126 分（90%）</p>
-<h3 id="評審命令">評審命令</h3>
-<div class="sourceCode" id="cb13"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 新評分系統（推薦）：5×20 + Test Execution 25 + Git 15 = 140</span></span>
+    <hr />
+    <h2 id="工單管理流程">工單管理流程</h2>
+    <h3 id="核心原則">核心原則</h3>
+    <ol type="1">
+    <li>先開票後修正（發現問題 → 創建工單 → 開始修復）</li>
+    <li>單一功能單一工單</li>
+    <li>狀態驅動開發</li>
+    <li>完整的文檔要求</li>
+    <li>工單時數限制：單票不超過 8 小時</li>
+    </ol>
+    <h3 id="狀態流程">狀態流程</h3>
+    <pre><code>open → in_progress → pending_review → reviewed → completed</code></pre>
+    <h3 id="必填欄位要求">必填欄位要求</h3>
+    <ul>
+    <li><strong>modification</strong>（修改詳情）: ≥200 字</li>
+    <li><strong>test-results</strong>（測試結果）: ≥300 字</li>
+    <li><strong>completion-reason</strong>（完成原因）: ≥400 字</li>
+    </ul>
+    <h3 id="評審分數系統140-分">評審分數系統（140 分）</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>項目</th>
+    <th>分數</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Description（需求描述）</td>
+    <td>20 分</td>
+    </tr>
+    <tr>
+    <td>Solution（解決方案）</td>
+    <td>20 分</td>
+    </tr>
+    <tr>
+    <td>Modification（修改詳情）</td>
+    <td>20 分</td>
+    </tr>
+    <tr>
+    <td>Test Results（測試結果）</td>
+    <td>20 分</td>
+    </tr>
+    <tr>
+    <td>Completion Reason（完成原因）</td>
+    <td>20 分</td>
+    </tr>
+    <tr>
+    <td>Test Execution（測試執行）</td>
+    <td>25 分（選填）</td>
+    </tr>
+    <tr>
+    <td>Git Commit（提交記錄）</td>
+    <td>15 分</td>
+    </tr>
+    </tbody>
+    </table>
+    <p><strong>通過門檻</strong>: ≥126 分（90%）</p>
+    <h3 id="評審命令">評審命令</h3>
+    <div class="sourceCode" id="cb13"><pre
+    class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 新評分系統（推薦）：5×20 + Test Execution 25 + Git 15 = 140</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ex">neritic</span> vr submit <span class="at">-r</span> <span class="op">&lt;</span>Ticket ID<span class="op">&gt;</span> -d 20 <span class="at">-s</span> 20 <span class="at">-m</span> 20 <span class="at">-t</span> 20 <span class="at">-c</span> 20 <span class="at">-e</span> 25 <span class="at">-g</span> 15 <span class="at">--result</span> pass <span class="at">--summary</span> <span class="st">&quot;Review comments&quot;</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 舊評分系統（向後相容）：5×25 + Git 15 = 140</span></span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="ex">neritic</span> vr submit <span class="at">-r</span> <span class="op">&lt;</span>Ticket ID<span class="op">&gt;</span> -d 25 <span class="at">-s</span> 25 <span class="at">-m</span> 25 <span class="at">-t</span> 25 <span class="at">-c</span> 25 <span class="at">-g</span> 15 <span class="at">--result</span> pass <span class="at">--summary</span> <span class="st">&quot;Review comments&quot;</span></span></code></pre></div>
-<hr />
-<h2 id="三段測試流程強制執行">三段測試流程（強制執行）</h2>
-<p>⚠️ <strong>重要</strong>: 修改代碼前後都必須執行測試</p>
-<h3 id="第一階段單元測試">第一階段：單元測試</h3>
-<div class="sourceCode" id="cb14"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /Users/yinghaowang/Work/mycode</span>
+    <hr />
+    <h2 id="三段測試流程強制執行">三段測試流程（強制執行）</h2>
+    <p>⚠️ <strong>重要</strong>: 修改代碼前後都必須執行測試</p>
+    <h3 id="第一階段單元測試">第一階段：單元測試</h3>
+    <div class="sourceCode" id="cb14"><pre
+    class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /Users/yinghaowang/Work/mycode</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> squid/api_venv/bin/activate</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PYTHONPATH</span><span class="op">=</span>/Users/yinghaowang/Work/mycode</span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="ex">pytest</span> squid/ <span class="at">-v</span> <span class="at">--tb</span><span class="op">=</span>short</span></code></pre></div>
-<h3 id="第二階段整合測試">第二階段：整合測試</h3>
-<div class="sourceCode" id="cb15"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 健康檢查</span></span>
+    <h3 id="第二階段整合測試">第二階段：整合測試</h3>
+    <div class="sourceCode" id="cb15"><pre
+    class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 健康檢查</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> http://localhost:8000/health/ <span class="kw">|</span> <span class="ex">jq</span> <span class="st">&#39;.&#39;</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 檢查 Docker 日誌</span></span>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> logs squid-api-dev <span class="at">--tail</span> 100 <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-E</span> <span class="st">&quot;Error|Exception|500&quot;</span></span></code></pre></div>
-<h3 id="第三階段e2e-測試">第三階段：E2E 測試</h3>
-<div class="sourceCode" id="cb16"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /Users/yinghaowang/Work/tentacle</span>
+    <h3 id="第三階段e2e-測試">第三階段：E2E 測試</h3>
+    <div class="sourceCode" id="cb16"><pre
+    class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /Users/yinghaowang/Work/tentacle</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> run test:e2e</span></code></pre></div>
-<hr />
-<p>此文件提供所有專案的完整技術細節，可作為履歷參考、技術文件或專案交接使用。</p>
+    <hr />
+    <p>此文件提供所有專案的完整技術細節，可作為履歷參考、技術文件或專案交接使用。</p>
+  </main>
+
+</div>
+
+<footer class="bottom">
+  <p>© Eric Wang · HurricaneGroup · 王英豪 - 專案技術詳細清單</p>
+</footer>
+
 </body>
 </html>
