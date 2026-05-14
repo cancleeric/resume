@@ -1,0 +1,4283 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>王英豪 - 技術履歷</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="resume-style.css" />
+  <style>
+    .topbar__nav a.active {
+      background: rgba(255,255,255,0.25);
+      font-weight: 700;
+    }
+    @media print {
+      .resume-section { display: block !important; }
+      .resume-section:not(.print-active) { display: none !important; }
+      .topbar { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <span class="topbar__brand">HurricaneGroup</span>
+    <nav class="topbar__nav">
+      <a href="#main" data-tab="main" class="active" onclick="switchTab('main'); return false;">主版</a>
+      <a href="#dotnet" data-tab="dotnet" onclick="switchTab('dotnet'); return false;">.NET</a>
+      <a href="#python" data-tab="python" onclick="switchTab('python'); return false;">Python/AI</a>
+      <a href="#ai_platform" data-tab="ai_platform" onclick="switchTab('ai_platform'); return false;">AI 平台</a>
+      <a href="#fullstack" data-tab="fullstack" onclick="switchTab('fullstack'); return false;">Full-stack</a>
+      <a href="#ios" data-tab="ios" onclick="switchTab('ios'); return false;">iOS</a>
+      <a href="#security" data-tab="security" onclick="switchTab('security'); return false;">Security</a>
+      <a href="PROJECTS.html">專案清單</a>
+      <button class="topbar__btn" onclick="window.print()" title="存為 PDF / 列印">PDF</button>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar-container">
+  <div class="sidebar-content" id="sidebar-main" style="display:block;">
+
+    <div class="profile">
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
+      <h2 class="profile__name">王英豪</h2>
+      <p class="profile__en">WANG YING HAO</p>
+      <p class="profile__title">集團技術長 / 技術架構師</p>
+      <div class="status-pill">在職中・可面議</div>
+    </div>
+
+    <section class="card">
+      <h3 class="card__title">聯絡資訊</h3>
+      <ul class="meta">
+        <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
+        <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
+        <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
+        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">核心數據</h3>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
+        <div class="stat"><span class="stat__num">24</span><span class="stat__label">年技術管理</span></div>
+        <div class="stat"><span class="stat__num">30+</span><span class="stat__label">生產系統</span></div>
+        <div class="stat"><span class="stat__num">6</span><span class="stat__label">子公司</span></div>
+        <div class="stat"><span class="stat__num">19</span><span class="stat__label">Cloud Run</span></div>
+        <div class="stat"><span class="stat__num">100+</span><span class="stat__label">企業客戶</span></div>
+      </div>
+    </section>
+
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪---ai-賦能技術長--ai-平台建構者"
+        id="toc-王英豪---ai-賦能技術長--ai-平台建構者">王英豪 - AI
+        賦能技術長 / AI 平台建構者</a>
+        <ul>
+        <li><a
+        href="#ai-augmented-cto--platform-builder--designed--operated-14-agent-ai-engineering-organization--30-production-systems"
+        id="toc-ai-augmented-cto--platform-builder--designed--operated-14-agent-ai-engineering-organization--30-production-systems">AI-Augmented
+        CTO &amp; Platform Builder | Designed &amp; Operated 14-Agent AI
+        Engineering Organization | 30+ Production Systems</a></li>
+        <li><a href="#專業摘要---professional-summary"
+        id="toc-專業摘要---professional-summary">專業摘要 - Professional
+        Summary</a></li>
+        <li><a href="#核心成就---key-metrics"
+        id="toc-核心成就---key-metrics">核心成就 - Key Metrics</a></li>
+        <li><a href="#集團架構---group-structure"
+        id="toc-集團架構---group-structure">集團架構 - Group
+        Structure</a></li>
+        <li><a
+        href="#架構能力與技術領導---architecture--technical-leadership"
+        id="toc-架構能力與技術領導---architecture--technical-leadership">架構能力與技術領導
+        - Architecture &amp; Technical Leadership</a></li>
+        <li><a href="#核心技術棧---core-technical-skills"
+        id="toc-核心技術棧---core-technical-skills">核心技術棧 - Core
+        Technical Skills</a></li>
+        <li><a
+        href="#旗艦架構hurricanegroup-生態系統---flagship-architecture"
+        id="toc-旗艦架構hurricanegroup-生態系統---flagship-architecture">旗艦架構：HurricaneGroup
+        生態系統 - Flagship Architecture</a></li>
+        <li><a href="#工作經歷---professional-experience"
+        id="toc-工作經歷---professional-experience">工作經歷 -
+        Professional Experience</a></li>
+        <li><a href="#2026-q1-q2-重大成就---2026-recent-achievements"
+        id="toc-2026-q1-q2-重大成就---2026-recent-achievements">2026
+        Q1-Q2 重大成就 - 2026 Recent Achievements</a></li>
+        <li><a href="#其他重點專案---other-key-projects"
+        id="toc-其他重點專案---other-key-projects">其他重點專案 - Other
+        Key Projects</a></li>
+        <li><a href="#學歷---education" id="toc-學歷---education">學歷 -
+        Education</a></li>
+        <li><a href="#早期經歷---early-career-2000-2016"
+        id="toc-早期經歷---early-career-2000-2016">早期經歷 - Early
+        Career (2000-2016)</a></li>
+        <li><a href="#專業能力統計---professional-experience-summary"
+        id="toc-專業能力統計---professional-experience-summary">專業能力統計
+        - Professional Experience Summary</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">技術標籤</h3>
+      <div class="tags">
+        <span class="tag">C#</span><span class="tag">.NET 8</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Swift</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">GCP</span><span class="tag">Cloud Run</span><span class="tag">OAuth2/OIDC</span><span class="tag">LLM Gateway</span><span class="tag">Multi-tenant SaaS</span>
+      </div>
+    </section>
+
+    <section class="card card--accent">
+      <h3 class="card__title">學歷</h3>
+      <p class="edu"><strong>東南科技大學</strong><br/>數位電子系（二專）<br/><em>第一名畢業</em></p>
+      <p class="edu"><strong>內湖高工</strong><br/>三等榮譽獎章</p>
+    </section>
+
+    <p class="sidebar__foot">最後更新 2026 / 05</p>
+
+  </div>
+  <div class="sidebar-content" id="sidebar-dotnet" style="display:none;">
+
+    <div class="profile">
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
+      <h2 class="profile__name">王英豪</h2>
+      <p class="profile__en">WANG YING HAO</p>
+      <p class="profile__title">資深 .NET 架構師 / C# 技術主管</p>
+      <div class="status-pill">在職中・可面議</div>
+    </div>
+
+    <section class="card">
+      <h3 class="card__title">聯絡資訊</h3>
+      <ul class="meta">
+        <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
+        <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
+        <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
+        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">核心數據</h3>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年
+C# / .NET</span></div>
+        <div class="stat"><span class="stat__num">1.1→8</span><span class="stat__label">.NET
+全版本</span></div>
+        <div class="stat"><span class="stat__num">12+</span><span class="stat__label">.NET
+系統</span></div>
+        <div class="stat"><span class="stat__num">428</span><span class="stat__label">C#
+檔案 (LIDS)</span></div>
+        <div class="stat"><span class="stat__num">Blazor</span><span class="stat__label">Server
++ WASM</span></div>
+        <div class="stat"><span class="stat__num">100+</span><span class="stat__label">企業客戶</span></div>
+
+      </div>
+    </section>
+
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪---資深-net-架構師--c-技術主管"
+        id="toc-王英豪---資深-net-架構師--c-技術主管">王英豪 - 資深 .NET
+        架構師 / C# 技術主管</a>
+        <ul>
+        <li><a
+        href="#senior-net-architect--c-technical-lead--25年軟體工程--net-全棧開發"
+        id="toc-senior-net-architect--c-technical-lead--25年軟體工程--net-全棧開發">Senior
+        .NET Architect &amp; C# Technical Lead | 25年軟體工程 | .NET
+        全棧開發</a></li>
+        <li><a href="#專業摘要---professional-summary"
+        id="toc-專業摘要---professional-summary">專業摘要 - Professional
+        Summary</a></li>
+        <li><a href="#核心技術棧---core-technical-skills"
+        id="toc-核心技術棧---core-technical-skills">核心技術棧 - Core
+        Technical Skills</a></li>
+        <li><a href="#重點專案經歷---key-projects"
+        id="toc-重點專案經歷---key-projects">重點專案經歷 - Key
+        Projects</a></li>
+        <li><a href="#架構設計能力---architecture--system-design"
+        id="toc-架構設計能力---architecture--system-design">架構設計能力
+        - Architecture &amp; System Design</a></li>
+        <li><a href="#工作經歷---professional-experience"
+        id="toc-工作經歷---professional-experience">工作經歷 -
+        Professional Experience</a></li>
+        <li><a href="#其他相關專案---other-relevant-projects"
+        id="toc-其他相關專案---other-relevant-projects">其他相關專案 -
+        Other Relevant Projects</a></li>
+        <li><a href="#早期-net-經歷---early-net-career-2000-2016"
+        id="toc-早期-net-經歷---early-net-career-2000-2016">早期 .NET
+        經歷 - Early .NET Career (2000-2016)</a></li>
+        <li><a href="#學歷---education" id="toc-學歷---education">學歷 -
+        Education</a></li>
+        <li><a href="#專業經驗統計---professional-experience-summary"
+        id="toc-專業經驗統計---professional-experience-summary">專業經驗統計
+        - Professional Experience Summary</a></li>
+        <li><a href="#自我評價---self-assessment"
+        id="toc-自我評價---self-assessment">自我評價 - Self
+        Assessment</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">技術標籤</h3>
+      <div class="tags">
+<span class="tag">C# 12</span><span class="tag">.NET
+8</span><span class="tag">ASP.NET Core</span><span class="tag">Blazor
+Server</span><span class="tag">Blazor WASM</span><span class="tag">EF
+Core</span><span class="tag">SignalR</span><span class="tag">PostgreSQL</span><span class="tag">SQL
+Server</span><span class="tag">Redis</span><span class="tag">OAuth2/OIDC</span><span class="tag">JWT
+RS256</span><span class="tag">MFA</span><span class="tag">Docker</span><span class="tag">GCP
+Cloud Run</span><span class="tag">Hurricane
+Vault</span><span class="tag">Hurricane
+Pay</span><span class="tag">pxmart-warehouse</span>
+      </div>
+    </section>
+
+    <section class="card card--accent">
+      <h3 class="card__title">學歷</h3>
+      <p class="edu"><strong>東南科技大學</strong><br/>數位電子系（二專）<br/><em>第一名畢業</em></p>
+      <p class="edu"><strong>內湖高工</strong><br/>三等榮譽獎章</p>
+    </section>
+
+    <p class="sidebar__foot">最後更新 2026 / 05</p>
+
+  </div>
+  <div class="sidebar-content" id="sidebar-python" style="display:none;">
+
+    <div class="profile">
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
+      <h2 class="profile__name">王英豪</h2>
+      <p class="profile__en">WANG YING HAO</p>
+      <p class="profile__title">Python 架構師 / AI / LLM Gateway
+工程師</p>
+      <div class="status-pill">在職中・可面議</div>
+    </div>
+
+    <section class="card">
+      <h3 class="card__title">聯絡資訊</h3>
+      <ul class="meta">
+        <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
+        <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
+        <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
+        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">核心數據</h3>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
+        <div class="stat"><span class="stat__num">8+</span><span class="stat__label">年
+Python</span></div>
+        <div class="stat"><span class="stat__num">5+</span><span class="stat__label">LLM
+整合系統</span></div>
+        <div class="stat"><span class="stat__num">100+</span><span class="stat__label">FastAPI
+端點</span></div>
+        <div class="stat"><span class="stat__num">MCP</span><span class="stat__label">AI
+工具整合</span></div>
+        <div class="stat"><span class="stat__num">Brain</span><span class="stat__label">自建
+LLM Gateway</span></div>
+
+      </div>
+    </section>
+
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪---python--ai--llm-工程師"
+        id="toc-王英豪---python--ai--llm-工程師">王英豪 - Python / AI /
+        LLM 工程師</a>
+        <ul>
+        <li><a
+        href="#aillm-platform-engineer--brain-llm-gateway--anemone--mcp--modelhub--25-年-python-全棧經驗--gcp-cloud-run-19-services"
+        id="toc-aillm-platform-engineer--brain-llm-gateway--anemone--mcp--modelhub--25-年-python-全棧經驗--gcp-cloud-run-19-services">AI/LLM
+        Platform Engineer | Brain LLM Gateway + Anemone + MCP + Modelhub
+        | 25 年 Python 全棧經驗 | GCP Cloud Run 19 services</a></li>
+        <li><a href="#專業摘要---professional-summary"
+        id="toc-專業摘要---professional-summary">專業摘要 - Professional
+        Summary</a></li>
+        <li><a href="#核心技術棧---core-technical-skills"
+        id="toc-核心技術棧---core-technical-skills">核心技術棧 - Core
+        Technical Skills</a></li>
+        <li><a href="#python-專案詳述---python-project-details"
+        id="toc-python-專案詳述---python-project-details">Python
+        專案詳述 - Python Project Details</a></li>
+        <li><a href="#兩層式-cicd-架構---two-tier-cicd-architecture"
+        id="toc-兩層式-cicd-架構---two-tier-cicd-architecture">兩層式
+        CI/CD 架構 - Two-tier CI/CD Architecture</a></li>
+        <li><a href="#系統架構總覽---architecture-overview"
+        id="toc-系統架構總覽---architecture-overview">系統架構總覽 -
+        Architecture Overview</a></li>
+        <li><a href="#工作經歷---professional-experience"
+        id="toc-工作經歷---professional-experience">工作經歷 -
+        Professional Experience</a></li>
+        <li><a href="#其他技術專案---other-technical-projects"
+        id="toc-其他技術專案---other-technical-projects">其他技術專案 -
+        Other Technical Projects</a></li>
+        <li><a href="#學歷---education" id="toc-學歷---education">學歷 -
+        Education</a></li>
+        <li><a href="#專業能力統計---professional-experience-summary"
+        id="toc-專業能力統計---professional-experience-summary">專業能力統計
+        - Professional Experience Summary</a></li>
+        <li><a href="#為什麼選擇我---why-hire-me"
+        id="toc-為什麼選擇我---why-hire-me">為什麼選擇我 - Why Hire
+        Me</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">技術標籤</h3>
+      <div class="tags">
+<span class="tag">Python
+3.11+</span><span class="tag">FastAPI</span><span class="tag">asyncpg</span><span class="tag">SQLAlchemy
+2.0</span><span class="tag">Pydantic</span><span class="tag">Alembic</span><span class="tag">MCP
+Protocol</span><span class="tag">Anthropic
+Claude</span><span class="tag">Google
+Gemini</span><span class="tag">OpenAI
+API</span><span class="tag">scikit-learn</span><span class="tag">Brain
+LLM
+Gateway</span><span class="tag">Anemone</span><span class="tag">Modelhub</span><span class="tag">Manta
+Workflow</span><span class="tag">Tianji</span><span class="tag">Aegis
+ML</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Cloud
+Run</span>
+      </div>
+    </section>
+
+    <section class="card card--accent">
+      <h3 class="card__title">學歷</h3>
+      <p class="edu"><strong>東南科技大學</strong><br/>數位電子系（二專）<br/><em>第一名畢業</em></p>
+      <p class="edu"><strong>內湖高工</strong><br/>三等榮譽獎章</p>
+    </section>
+
+    <p class="sidebar__foot">最後更新 2026 / 05</p>
+
+  </div>
+  <div class="sidebar-content" id="sidebar-ai_platform" style="display:none;">
+
+    <div class="profile">
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
+      <h2 class="profile__name">王英豪</h2>
+      <p class="profile__en">WANG YING HAO</p>
+      <p class="profile__title">AI-Augmented CTO</p>
+      <div class="status-pill">在職中・可面議</div>
+    </div>
+
+    <section class="card">
+      <h3 class="card__title">聯絡資訊</h3>
+      <ul class="meta">
+        <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
+        <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
+        <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
+        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">核心數據</h3>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">14</span><span class="stat__label">AI
+副手（C-suite + 經理）</span></div>
+        <div class="stat"><span class="stat__num">3</span><span class="stat__label">LLM
+Provider 整合</span></div>
+        <div class="stat"><span class="stat__num">40+</span><span class="stat__label">MCP
+工具端點</span></div>
+        <div class="stat"><span class="stat__num">30+</span><span class="stat__label">生產系統</span></div>
+        <div class="stat"><span class="stat__num">19</span><span class="stat__label">GCP
+Cloud Run</span></div>
+        <div class="stat"><span class="stat__num">6</span><span class="stat__label">集團子公司</span></div>
+
+      </div>
+    </section>
+
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪---ai-augmented-cto--ai-platform-architect"
+        id="toc-王英豪---ai-augmented-cto--ai-platform-architect">王英豪
+        - AI-Augmented CTO &amp; AI Platform Architect</a>
+        <ul>
+        <li><a
+        href="#built--operates-a-14-agent-ai-engineering-organization--30-production-systems--zero-traditional-engineering-headcount"
+        id="toc-built--operates-a-14-agent-ai-engineering-organization--30-production-systems--zero-traditional-engineering-headcount">Built
+        &amp; Operates a 14-Agent AI Engineering Organization | 30+
+        Production Systems | Zero Traditional Engineering
+        Headcount</a></li>
+        <li><a href="#the-ai-engineering-organization"
+        id="toc-the-ai-engineering-organization">The AI Engineering
+        Organization</a></li>
+        <li><a href="#ai-infrastructure-built"
+        id="toc-ai-infrastructure-built">AI Infrastructure
+        Built</a></li>
+        <li><a href="#ai-training-pipeline"
+        id="toc-ai-training-pipeline">AI Training Pipeline</a></li>
+        <li><a href="#measured-outcomes"
+        id="toc-measured-outcomes">Measured Outcomes</a></li>
+        <li><a href="#platform-engineering-supporting-stack"
+        id="toc-platform-engineering-supporting-stack">Platform
+        Engineering Supporting Stack</a></li>
+        <li><a href="#工作經歷---work-experience"
+        id="toc-工作經歷---work-experience">工作經歷 - Work
+        Experience</a></li>
+        <li><a href="#教育背景---education"
+        id="toc-教育背景---education">教育背景 - Education</a></li>
+        <li><a href="#核心技術棧---technical-skills"
+        id="toc-核心技術棧---technical-skills">核心技術棧 - Technical
+        Skills</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">技術標籤</h3>
+      <div class="tags">
+<span class="tag">Multi-Agent AI</span><span class="tag">LLM
+Gateway</span><span class="tag">MCP Protocol</span><span class="tag">AI
+Platform</span><span class="tag">Brain /
+Anemone</span><span class="tag">Modelhub</span><span class="tag">Claude
+/ Gemini / OpenAI</span><span class="tag">AI-driven
+DevOps</span><span class="tag">Tool-calling</span><span class="tag">Agentic
+Engineering</span>
+      </div>
+    </section>
+
+    <section class="card card--accent">
+      <h3 class="card__title">學歷</h3>
+      <p class="edu"><strong>東南科技大學</strong><br/>數位電子系（二專）<br/><em>第一名畢業</em></p>
+      <p class="edu"><strong>內湖高工</strong><br/>三等榮譽獎章</p>
+    </section>
+
+    <p class="sidebar__foot">最後更新 2026 / 05</p>
+
+  </div>
+  <div class="sidebar-content" id="sidebar-fullstack" style="display:none;">
+
+    <div class="profile">
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
+      <h2 class="profile__name">王英豪</h2>
+      <p class="profile__en">WANG YING HAO</p>
+      <p class="profile__title">資深全端工程師 / Next.js + React + Node
++ Python + iOS</p>
+      <div class="status-pill">在職中・可面議</div>
+    </div>
+
+    <section class="card">
+      <h3 class="card__title">聯絡資訊</h3>
+      <ul class="meta">
+        <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
+        <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
+        <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
+        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">核心數據</h3>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
+        <div class="stat"><span class="stat__num">8+</span><span class="stat__label">前端
+SaaS</span></div>
+        <div class="stat"><span class="stat__num">5+</span><span class="stat__label">Cloud
+Run 前端</span></div>
+        <div class="stat"><span class="stat__num">382</span><span class="stat__label">TSX
+檔 (Tentacle)</span></div>
+        <div class="stat"><span class="stat__num">iOS</span><span class="stat__label">App
+Store 上架</span></div>
+        <div class="stat"><span class="stat__num">100+</span><span class="stat__label">企業客戶</span></div>
+
+      </div>
+    </section>
+
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪---資深全端工程師"
+        id="toc-王英豪---資深全端工程師">王英豪 - 資深全端工程師</a>
+        <ul>
+        <li><a
+        href="#senior-full-stack-developer--25年軟體工程--react--typescript--nodejs--python--ios"
+        id="toc-senior-full-stack-developer--25年軟體工程--react--typescript--nodejs--python--ios">Senior
+        Full-Stack Developer | 25年軟體工程 | React + TypeScript +
+        Node.js + Python + iOS</a></li>
+        <li><a href="#專業摘要---professional-summary"
+        id="toc-專業摘要---professional-summary">專業摘要 - Professional
+        Summary</a></li>
+        <li><a href="#核心技術棧---core-technical-skills"
+        id="toc-核心技術棧---core-technical-skills">核心技術棧 - Core
+        Technical Skills</a></li>
+        <li><a href="#重點專案經歷---key-projects"
+        id="toc-重點專案經歷---key-projects">重點專案經歷 - Key
+        Projects</a></li>
+        <li><a href="#其他專案經歷---other-projects"
+        id="toc-其他專案經歷---other-projects">其他專案經歷 - Other
+        Projects</a></li>
+        <li><a href="#工作經歷---professional-experience"
+        id="toc-工作經歷---professional-experience">工作經歷 -
+        Professional Experience</a></li>
+        <li><a href="#學歷---education" id="toc-學歷---education">學歷 -
+        Education</a></li>
+        <li><a href="#專業經驗統計---professional-experience-summary"
+        id="toc-專業經驗統計---professional-experience-summary">專業經驗統計
+        - Professional Experience Summary</a></li>
+        <li><a href="#自我優勢---key-strengths"
+        id="toc-自我優勢---key-strengths">自我優勢 - Key
+        Strengths</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">技術標籤</h3>
+      <div class="tags">
+<span class="tag">Next.js 14</span><span class="tag">React
+18</span><span class="tag">TypeScript
+5</span><span class="tag">Vue.js</span><span class="tag">Webpack
+5</span><span class="tag">Vite</span><span class="tag">Tailwind</span><span class="tag">SwiftUI</span><span class="tag">SpriteKit</span><span class="tag">Node.js
+20</span><span class="tag">Express.js</span><span class="tag">Fastify</span><span class="tag">FastAPI</span><span class="tag">.NET
+8 /
+Blazor</span><span class="tag">PostgreSQL</span><span class="tag">Firebase</span><span class="tag">Docker</span><span class="tag">Cloud
+Run</span><span class="tag">OAuth2/OIDC</span><span class="tag">Stripe /
+PayPal</span>
+      </div>
+    </section>
+
+    <section class="card card--accent">
+      <h3 class="card__title">學歷</h3>
+      <p class="edu"><strong>東南科技大學</strong><br/>數位電子系（二專）<br/><em>第一名畢業</em></p>
+      <p class="edu"><strong>內湖高工</strong><br/>三等榮譽獎章</p>
+    </section>
+
+    <p class="sidebar__foot">最後更新 2026 / 05</p>
+
+  </div>
+  <div class="sidebar-content" id="sidebar-ios" style="display:none;">
+
+    <div class="profile">
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
+      <h2 class="profile__name">王英豪</h2>
+      <p class="profile__en">WANG YING HAO</p>
+      <p class="profile__title">資深 iOS 工程師 / SpriteKit 遊戲 +
+集團行動產品線</p>
+      <div class="status-pill">在職中・可面議</div>
+    </div>
+
+    <section class="card">
+      <h3 class="card__title">聯絡資訊</h3>
+      <ul class="meta">
+        <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
+        <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
+        <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
+        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">核心數據</h3>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
+        <div class="stat"><span class="stat__num">1,545</span><span class="stat__label">Swift
+檔 (LifeSnap)</span></div>
+        <div class="stat"><span class="stat__num">App
+Store</span><span class="stat__label">已上架</span></div>
+        <div class="stat"><span class="stat__num">3</span><span class="stat__label">iOS
+產品線</span></div>
+        <div class="stat"><span class="stat__num">Clean</span><span class="stat__label">Architecture</span></div>
+        <div class="stat"><span class="stat__num">ChatGPT</span><span class="stat__label">AI
+整合</span></div>
+
+      </div>
+    </section>
+
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪---資深-ios-工程師--行動應用架構師"
+        id="toc-王英豪---資深-ios-工程師--行動應用架構師">王英豪 - 資深
+        iOS 工程師 / 行動應用架構師</a>
+        <ul>
+        <li><a
+        href="#senior-ios-engineer--mobile-app-architect--25年軟體工程經驗--ios-遊戲--應用開發"
+        id="toc-senior-ios-engineer--mobile-app-architect--25年軟體工程經驗--ios-遊戲--應用開發">Senior
+        iOS Engineer &amp; Mobile App Architect | 25年軟體工程經驗 | iOS
+        遊戲 &amp; 應用開發</a></li>
+        <li><a href="#專業摘要---professional-summary"
+        id="toc-專業摘要---professional-summary">專業摘要 - Professional
+        Summary</a></li>
+        <li><a href="#ios-核心技術棧---ios-technical-skills"
+        id="toc-ios-核心技術棧---ios-technical-skills">iOS 核心技術棧 -
+        iOS Technical Skills</a></li>
+        <li><a href="#核心專案lifesnap--多人線上骨牌遊戲"
+        id="toc-核心專案lifesnap--多人線上骨牌遊戲">核心專案：LifeSnap —
+        多人線上骨牌遊戲</a></li>
+        <li><a href="#核心專案lifecrypto--加密貨幣追蹤-app"
+        id="toc-核心專案lifecrypto--加密貨幣追蹤-app">核心專案：LifeCrypto
+        — 加密貨幣追蹤 App</a></li>
+        <li><a href="#核心專案lifesnapadmin--firebase-後台管理系統"
+        id="toc-核心專案lifesnapadmin--firebase-後台管理系統">核心專案：LifeSnapAdmin
+        — Firebase 後台管理系統</a></li>
+        <li><a href="#其他技術專案"
+        id="toc-其他技術專案">其他技術專案</a></li>
+        <li><a href="#工作經歷---work-experience"
+        id="toc-工作經歷---work-experience">工作經歷 - Work
+        Experience</a></li>
+        <li><a href="#教育背景---education"
+        id="toc-教育背景---education">教育背景 - Education</a></li>
+        <li><a href="#專業技能標籤---skill-tags"
+        id="toc-專業技能標籤---skill-tags">專業技能標籤 - Skill
+        Tags</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">技術標籤</h3>
+      <div class="tags">
+<span class="tag">Swift</span><span class="tag">SwiftUI</span><span class="tag">SpriteKit</span><span class="tag">GameplayKit</span><span class="tag">UIKit</span><span class="tag">Combine</span><span class="tag">async/await</span><span class="tag">Core
+Data</span><span class="tag">CloudKit</span><span class="tag">StoreKit</span><span class="tag">Firebase</span><span class="tag">FCM
+推播</span><span class="tag">MVVM</span><span class="tag">Clean
+Architecture</span><span class="tag">Repository
+Pattern</span><span class="tag">Protocol-Oriented</span><span class="tag">Xcode
+16</span><span class="tag">TestFlight</span><span class="tag">App Store
+Connect</span><span class="tag">ChatGPT API</span>
+      </div>
+    </section>
+
+    <section class="card card--accent">
+      <h3 class="card__title">學歷</h3>
+      <p class="edu"><strong>東南科技大學</strong><br/>數位電子系（二專）<br/><em>第一名畢業</em></p>
+      <p class="edu"><strong>內湖高工</strong><br/>三等榮譽獎章</p>
+    </section>
+
+    <p class="sidebar__foot">最後更新 2026 / 05</p>
+
+  </div>
+  <div class="sidebar-content" id="sidebar-security" style="display:none;">
+
+    <div class="profile">
+      <div class="avatar"><img src="assets/avatar.jpg" alt="王英豪" onerror="this.replaceWith(document.createTextNode('王'))"/></div>
+      <h2 class="profile__name">王英豪</h2>
+      <p class="profile__en">WANG YING HAO</p>
+      <p class="profile__title">資安架構師 / IAM / 集團 Vault 設計者</p>
+      <div class="status-pill">在職中・可面議</div>
+    </div>
+
+    <section class="card">
+      <h3 class="card__title">聯絡資訊</h3>
+      <ul class="meta">
+        <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
+        <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
+        <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
+        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">核心數據</h3>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
+        <div class="stat"><span class="stat__num">10+</span><span class="stat__label">年
+Security</span></div>
+        <div class="stat"><span class="stat__num">Self-built</span><span class="stat__label">OAuth2/OIDC</span></div>
+        <div class="stat"><span class="stat__num">Vault</span><span class="stat__label">自建
+Secret Mgr</span></div>
+        <div class="stat"><span class="stat__num">PKCE</span><span class="stat__label">Gitea
+客製 patch</span></div>
+        <div class="stat"><span class="stat__num">Aegis</span><span class="stat__label">Scanner
++ ML</span></div>
+
+      </div>
+    </section>
+
+    <section class="card toc-card">
+      <h3 class="card__title">📑 目錄</h3>
+      <nav class="toc-nav">
+        <ul>
+        <li><a href="#王英豪-wang-ying-hao"
+        id="toc-王英豪-wang-ying-hao">王英豪 (WANG YING HAO)</a>
+        <ul>
+        <li><a href="#資安架構師--認證系統專家"
+        id="toc-資安架構師--認證系統專家">資安架構師 /
+        認證系統專家</a></li>
+        <li><a href="#專業摘要" id="toc-專業摘要">專業摘要</a></li>
+        <li><a href="#核心技術能力"
+        id="toc-核心技術能力">核心技術能力</a></li>
+        <li><a href="#專業年資總覽"
+        id="toc-專業年資總覽">專業年資總覽</a></li>
+        <li><a href="#重點專案經歷"
+        id="toc-重點專案經歷">重點專案經歷</a></li>
+        <li><a href="#工作經歷" id="toc-工作經歷">工作經歷</a></li>
+        <li><a href="#其他相關專案"
+        id="toc-其他相關專案">其他相關專案</a></li>
+        <li><a href="#學歷" id="toc-學歷">學歷</a></li>
+        <li><a href="#ats-keywords" id="toc-ats-keywords">ATS
+        Keywords</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="card">
+      <h3 class="card__title">技術標籤</h3>
+      <div class="tags">
+<span class="tag">OAuth 2.0</span><span class="tag">OpenID
+Connect</span><span class="tag">PKCE</span><span class="tag">JWT
+RS256</span><span class="tag">MFA
+(TOTP/Email/SMS)</span><span class="tag">RBAC</span><span class="tag">BCrypt</span><span class="tag">AES-256-GCM</span><span class="tag">OWASP
+Top 10</span><span class="tag">Zero
+Trust</span><span class="tag">Hurricane
+Vault</span><span class="tag">LIDS</span><span class="tag">Aegis
+Scanner</span><span class="tag">Headscale
+ACL</span><span class="tag">Audit
+Logging</span><span class="tag">Break-glass</span><span class="tag">Rate
+Limiting</span><span class="tag">Multi-tenant
+Isolation</span><span class="tag">GCP Secret
+Manager</span><span class="tag">Azure Key Vault</span>
+      </div>
+    </section>
+
+    <section class="card card--accent">
+      <h3 class="card__title">學歷</h3>
+      <p class="edu"><strong>東南科技大學</strong><br/>數位電子系（二專）<br/><em>第一名畢業</em></p>
+      <p class="edu"><strong>內湖高工</strong><br/>三等榮譽獎章</p>
+    </section>
+
+    <p class="sidebar__foot">最後更新 2026 / 05</p>
+
+  </div>
+  </aside>
+
+  <div class="main" id="main-container">
+  <section class="resume-section" id="tab-main" style="display:block;">
+
+    <h1 id="王英豪---ai-賦能技術長--ai-平台建構者">王英豪 - AI
+    賦能技術長 / AI 平台建構者</h1>
+    <h2
+    id="ai-augmented-cto--platform-builder--designed--operated-14-agent-ai-engineering-organization--30-production-systems">AI-Augmented
+    CTO &amp; Platform Builder | Designed &amp; Operated 14-Agent AI
+    Engineering Organization | 30+ Production Systems</h2>
+    <hr />
+    <table>
+    <thead>
+    <tr>
+    <th>項目</th>
+    <th>內容</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>姓名</td>
+    <td>王英豪 (WANG YING HAO)</td>
+    </tr>
+    <tr>
+    <td>電話</td>
+    <td>0921-107-206</td>
+    </tr>
+    <tr>
+    <td>信箱</td>
+    <td><a
+    href="mailto:cancleeric@gmail.com"><span>cancleeric@gmail.com</span></a></td>
+    </tr>
+    <tr>
+    <td>期望薪資</td>
+    <td>NT$ 2,400,000 / 年</td>
+    </tr>
+    <tr>
+    <td>工作地點</td>
+    <td>新北市中和區（可配合北部地區工作）</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="專業摘要---professional-summary">專業摘要 - Professional
+    Summary</h2>
+    <p><strong>AI-Augmented CTO | AI Platform Builder |
+    創業技術負責人</strong></p>
+    <p>AI-Augmented CTO with 25 years of engineering and 24 years of
+    technical leadership. Designed and operates a 14-agent AI
+    engineering organization (C-suite + manager tier) that executes
+    architecture, CI/CD, QA, and legal review — delivering 30+
+    production systems across 6 subsidiaries with zero traditional
+    headcount.</p>
+    <p>Built complete group AI infrastructure: Brain LLM Gateway
+    (multi-provider routing, per-tenant billing), Anemone (production
+    LLM ingress, WebSocket relay, reverse connector auth), MCP Server
+    (40+ tool endpoints, AI directly operates production systems), and
+    Modelhub (self-hosted training + Kaggle Pipeline, Brain secondary
+    provider).</p>
+    <blockquote>
+    <p>集團統一基礎設施：LIDS / Hurricane Vault / Hurricane Pay /
+    Wiki.js / Gitea / Headscale / 19 GCP Cloud Run</p>
+    </blockquote>
+    <hr />
+    <h2 id="核心成就---key-metrics">核心成就 - Key Metrics</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>指標</th>
+    <th>數值</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>軟體工程年資</td>
+    <td>25 年（2001–2026）</td>
+    </tr>
+    <tr>
+    <td>技術管理年資</td>
+    <td>24 年（2002–2026）</td>
+    </tr>
+    <tr>
+    <td>AI 副手（C-suite + 經理）</td>
+    <td>14 個（虛擬研發組織）</td>
+    </tr>
+    <tr>
+    <td>LLM Provider 整合</td>
+    <td>3 個（Claude / Gemini / OpenAI）</td>
+    </tr>
+    <tr>
+    <td>MCP 工具端點</td>
+    <td>40+（AI 直接操作生產系統）</td>
+    </tr>
+    <tr>
+    <td>集團子公司</td>
+    <td>6 家（統一技術治理）</td>
+    </tr>
+    <tr>
+    <td>生產系統</td>
+    <td>30+（互相整合）</td>
+    </tr>
+    <tr>
+    <td>GCP Cloud Run</td>
+    <td>19 services（集團統一維運）</td>
+    </tr>
+    <tr>
+    <td>企業客戶</td>
+    <td>100+</td>
+    </tr>
+    <tr>
+    <td>程式語言</td>
+    <td>10+ 種</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="集團架構---group-structure">集團架構 - Group Structure</h2>
+    <pre><code>HurricaneGroup (集團控股)
+├── HurricaneSoft（颶風軟體）— 集團部署主責 / GCP / Cloud Run / FTP / Vault 維運
+├── HurricaneEdge（颶鋒科技）— 8 大對外 SaaS 產品線
+├── HurricaneCore（颶核科技）— LLM Gateway / 自訓模型 / Wiki.js / 智腦平台
+├── HurricanePrime（颶擎科技）— 客製化企業系統（.NET WMS、SaaS）
+├── HurricaneDigital（颶電娛樂）— 行動遊戲 / iOS / 文創
+└── HurricaneTech（颶風科技）— LIDS / CMS / Squid 等共用技術平台</code></pre>
+    <p><strong>統一基礎設施</strong>：LIDS（OAuth2/OIDC SSO）/ Hurricane
+    Vault（密鑰管理）/ Brain（LLM 計費）/ Anemone（LLM ingress）/
+    Wiki.js（文檔）/ Gitea（版控）/ Headscale（VPN）</p>
+    <hr />
+    <h2
+    id="架構能力與技術領導---architecture--technical-leadership">架構能力與技術領導
+    - Architecture &amp; Technical Leadership</h2>
+    <h3 id="系統設計-system-design">系統設計 System Design</h3>
+    <ul>
+    <li>Multi-tenant SaaS Architecture（Squid + LIDS 多租戶隔離，跨 9+
+    系統共用）</li>
+    <li>Layered Architecture：API → BAL → CORL → DAL（Squid: 50+ 表 /
+    100+ API 端點）</li>
+    <li>OAuth 2.0 / OIDC Identity Provider（自建
+    LocalIdentityServer，PKCE 客製）</li>
+    <li>Backend for Frontend (BFF) Pattern（Tentacle BFF）</li>
+    <li>MCP (Model Context Protocol) Integration — AI 工具整合架構</li>
+    <li><strong>集團統一金流</strong>（Hurricane Pay v0.13.0）— PayPal
+    LIVE，Admin LIDS OAuth，9+ tenant 接入</li>
+    <li><strong>集團統一密鑰管理</strong>（Hurricane Vault v1.0.0）—
+    Audit chain + GCP parity，90+ secrets</li>
+    <li><strong>集團統一 LLM Gateway</strong>（Brain）—
+    計費中心、跨租戶可視化、Headless Provider 路由</li>
+    <li><strong>集團統一 VPN</strong>（Headscale）— ACL
+    鎖定、跨辦公室節點互通</li>
+    </ul>
+    <h3 id="ai-系統架構-ai-system-architecture">AI 系統架構 AI System
+    Architecture</h3>
+    <ul>
+    <li><strong>14-agent 雙層 AI 工程組織</strong>：8 個 C-suite AI
+    角色（CTO / COO / CPO / CBO / CISO / CoS / Legal / CDO），每個配備 2
+    個專責經理（共 16 個），透過 tool-calling 與 commtool IPC
+    執行生產操作（git commit / Cloud Run deploy / Playwright E2E / Gitea
+    issue creation）</li>
+    <li><strong>Brain LLM Gateway</strong>：multi-provider routing
+    決策引擎（Claude / Gemini / OpenAI / Modelhub），per-tenant token
+    metering 與 quota enforcement，跨 6 家子公司 Superadmin
+    計費可視化</li>
+    <li><strong>MCP Server（40+ tool endpoints）</strong>：AI 副手透過
+    Model Context Protocol
+    直接操作生產票務、部署觸發、專案資料更新；Squid API 43
+    個工具定義</li>
+    <li><strong>Anemone LLM ingress</strong>：WebSocket relay
+    架構，reverse connector auth（外部 connector
+    主動發起連線，消除入站防火牆暴露），符合集團 AI routing 標準</li>
+    <li><strong>Modelhub</strong>：自建模型訓練平台，整合 Kaggle
+    Pipeline，作為 Brain LLM Gateway 的第二 provider，實現成本最佳化的
+    provider routing</li>
+    <li><strong>Aegis Security Scanner</strong>：ML false-positive
+    ranker（tree-sitter AST 解析，PHP + JavaScript
+    WASM），訓練於集團內部程式碼庫，整合 CI gate 自動執行</li>
+    </ul>
+    <h3 id="技術決策-key-technical-decisions">技術決策 Key Technical
+    Decisions</h3>
+    <ul>
+    <li>自建 OAuth2/OIDC Server（LIDS）取代 Auth0/Okta —
+    多租戶完全掌控</li>
+    <li>自建 Secret Manager（Hurricane Vault）取代純 GCP Secret Manager
+    — 開發 / CI / CEO token 走自建，生產 Cloud Run 走 GCP</li>
+    <li>自建 LLM Gateway（Brain）取代直連 OpenAI / Anthropic — 集團計費
+    + 模型路由</li>
+    <li>自建 Gitea + 客製 PKCE patch（v1.26.1）— LIDS OIDC 整合不污染
+    provider singleton</li>
+    <li>兩層式 CI/CD（Git Hooks post-commit + pre-push）— 不依賴外部 CI
+    服務，跨 12+ 專案</li>
+    <li>PostgreSQL 統一資料層 — 跨 Python / C# / .NET / Node
+    共用，本機單一 squid-postgres-dev 容器整併</li>
+    <li>Cloud Run Service-only 部署規範（禁同名 Service+Job、禁 :latest
+    tag、必走 Artifact Registry）</li>
+    <li>6 步 DB
+    異動流程強制執行（備份→匯出前→執行→匯出後→驗證→紀錄）</li>
+    </ul>
+    <h3 id="工程管理-engineering-management">工程管理 Engineering
+    Management</h3>
+    <ul>
+    <li>主導 <strong>集團 6 家子公司</strong> 的技術架構與部署協調</li>
+    <li>建立並實際運作 <strong>14-agent AI 工程組織</strong>（C-suite 8
+    個 + 經理 16 個），透過 Claude Code tool-calling 執行架構決策、CI/CD
+    部署、QA 驗收、法務審查、產品規劃等所有工程管理職能</li>
+    <li>建立 <strong>140 分評審制度</strong>（90% 通過門檻，6
+    維度評分）</li>
+    <li>工單驅動開發：open → in_progress → pending_review → reviewed →
+    completed（狀態機強制）</li>
+    <li>三階段測試：Unit / Integration / E2E，集團 CI
+    全綠才允許上生產</li>
+    <li>集團文檔治理：Wiki.js + LIDS SSO + Git Storage 雙向同步</li>
+    </ul>
+    <hr />
+    <h2 id="核心技術棧---core-technical-skills">核心技術棧 - Core
+    Technical Skills</h2>
+    <h3 id="程式語言-programming-languages">程式語言 Programming
+    Languages</h3>
+    <p><code>C#</code> <code>Python</code> <code>Java</code>
+    <code>JavaScript</code> <code>TypeScript</code> <code>Swift</code>
+    <code>PHP</code> <code>SQL</code> <code>C++</code>
+    <code>Objective-C</code> <code>Bash</code> <code>Delphi</code></p>
+    <h3 id="後端框架-backend-frameworks">後端框架 Backend
+    Frameworks</h3>
+    <p><code>.NET 8</code> <code>ASP.NET Core</code>
+    <code>FastAPI</code> <code>Express.js</code> <code>Fastify</code>
+    <code>Next.js</code> <code>Entity Framework Core</code>
+    <code>SQLAlchemy 2.0</code> <code>Blazor Server</code>
+    <code>Jinja SSR</code> <code>RESTful API</code>
+    <code>WebSocket</code> <code>MCP</code></p>
+    <h3 id="前端框架-frontend-frameworks">前端框架 Frontend
+    Frameworks</h3>
+    <p><code>React 18</code> <code>Next.js</code>
+    <code>TypeScript</code> <code>SwiftUI</code> <code>SpriteKit</code>
+    <code>Webpack 5</code> <code>Rollup</code> <code>Vue.js</code></p>
+    <h3 id="資料庫-database-technologies">資料庫 Database
+    Technologies</h3>
+    <p><code>PostgreSQL</code> <code>SQL Server</code>
+    <code>MySQL</code> <code>SQLite</code>
+    <code>Firebase Firestore</code> <code>CloudKit</code>
+    <code>Alembic</code> <code>EF Core Migrations</code>
+    <code>RLS (Row Level Security)</code></p>
+    <h3 id="雲端與-devops-cloud--devops">雲端與 DevOps Cloud &amp;
+    DevOps</h3>
+    <p><code>GCP Cloud Run（19 services 集團維運）</code>
+    <code>Cloud SQL</code> <code>Cloud Build</code>
+    <code>Artifact Registry</code> <code>Cloud Functions</code>
+    <code>GCP Secret Manager</code> <code>Hurricane Vault（自建）</code>
+    <code>Azure</code> <code>Firebase</code> <code>Docker</code>
+    <code>Docker Compose</code> <code>Git Hooks CI/CD</code>
+    <code>Gitea Actions</code> <code>GitHub Actions</code>
+    <code>Prometheus</code> <code>OpenTelemetry</code>
+    <code>Sentry</code> <code>Headscale VPN</code>
+    <code>Tailscale</code></p>
+    <h3 id="認證與安全-authentication--security">認證與安全
+    Authentication &amp; Security</h3>
+    <p><code>OAuth 2.0</code> <code>OpenID Connect (OIDC)</code>
+    <code>PKCE（客製 patch）</code> <code>JWT (RS256)</code>
+    <code>MFA (TOTP/Email/SMS)</code> <code>RBAC</code>
+    <code>BCrypt</code> <code>AES-256-GCM</code>
+    <code>Rate Limiting</code> <code>Audit Logging</code>
+    <code>Aegis Security Scanner（自建 + ML 訓練）</code></p>
+    <h3 id="ai-與-llm-integration">AI 與 LLM Integration</h3>
+    <p><code>MCP (Model Context Protocol)</code>
+    <code>Anthropic Claude API</code> <code>Google Gemini</code>
+    <code>OpenAI API</code> <code>Brain LLM Gateway（自建計費）</code>
+    <code>Anemone（自建 LLM ingress）</code>
+    <code>Modelhub（自訓模型 + Kaggle Pipeline）</code> <code>RAG</code>
+    <code>LLM Provider Routing</code></p>
+    <h3 id="金流整合-payment-integration">金流整合 Payment
+    Integration</h3>
+    <p><code>PayPal（LIVE + Sandbox）</code> <code>Stripe</code>
+    <code>藍新科技 NewebPay</code>
+    <code>Hurricane Pay（自建集團統一金流）</code></p>
+    <h3 id="工具鏈-tooling">工具鏈 Tooling</h3>
+    <p><code>Neritic CLI</code> <code>CommTool</code>
+    <code>LC (LINE Controller)</code> <code>Mailtool</code>
+    <code>Eye (PHP/JS Static Analysis)</code> <code>tea CLI</code></p>
+    <hr />
+    <h2
+    id="旗艦架構hurricanegroup-生態系統---flagship-architecture">旗艦架構：HurricaneGroup
+    生態系統 - Flagship Architecture</h2>
+    <p><strong>角色</strong>：集團技術長 / 創辦人 | 6 家子公司技術統籌 |
+    2002 - 至今（核心 SaaS 群 2024/11 起）</p>
+    <h3
+    id="集團統一基礎設施hurricanesoft-維運">集團統一基礎設施（HurricaneSoft
+    維運）</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>系統</th>
+    <th>技術棧</th>
+    <th>規模 / 狀態</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>LIDS（LocalIdentityServer）</strong></td>
+    <td>ASP.NET Core 8, EF Core, Blazor, PostgreSQL</td>
+    <td>OAuth2/OIDC, MFA, Multi-tenant，集團 SSO，9+ 系統接入</td>
+    </tr>
+    <tr>
+    <td><strong>Hurricane Vault</strong></td>
+    <td>Go, PostgreSQL, GCP parity</td>
+    <td>v1.0.0，自建 Secret Manager，Audit chain，90+ secrets</td>
+    </tr>
+    <tr>
+    <td><strong>Hurricane Pay</strong></td>
+    <td>FastAPI, PostgreSQL, PayPal SDK</td>
+    <td>v0.13.0，集團統一金流，PayPal LIVE，9+ tenant</td>
+    </tr>
+    <tr>
+    <td><strong>Brain LLM Gateway</strong></td>
+    <td>FastAPI, PostgreSQL</td>
+    <td>集團 LLM 計費中心，跨租戶可視化（brain-api/cloud/console）</td>
+    </tr>
+    <tr>
+    <td><strong>Anemone Platform</strong></td>
+    <td>FastAPI, WebSocket</td>
+    <td>集團 LLM ingress，Widget ↔︎ Server ↔︎ Brain</td>
+    </tr>
+    <tr>
+    <td><strong>Modelhub</strong></td>
+    <td>Python, Kaggle, Connector</td>
+    <td>v0.8.0，自訓模型 + 推論平台，Brain 第二 LLM Provider</td>
+    </tr>
+    <tr>
+    <td><strong>Wiki.js</strong></td>
+    <td>Node.js, LIDS SSO, Git Storage</td>
+    <td>集團技術文檔平台，與 Gitea wiki-docs 雙向同步</td>
+    </tr>
+    <tr>
+    <td><strong>Gitea Git Server</strong></td>
+    <td>Go, PostgreSQL, <strong>客製 PKCE patch（v1.26.1）</strong></td>
+    <td>自架 Git，工單與 Branch 雙向 Hook，集團主版控</td>
+    </tr>
+    <tr>
+    <td><strong>Headscale VPN</strong></td>
+    <td>Go, ACL</td>
+    <td>集團 VPN，跨辦公室節點互通，IP 動態 ACL</td>
+    </tr>
+    <tr>
+    <td><strong>CommTool</strong></td>
+    <td>Python</td>
+    <td>統一通訊平台（IM + Email + LINE），集團與容器員工通訊</td>
+    </tr>
+    <tr>
+    <td><strong>Aegis Security Scanner</strong></td>
+    <td>Python, ML</td>
+    <td>自建程式碼安全掃描器，含 FP ranker ML 訓練</td>
+    </tr>
+    <tr>
+    <td><strong>Eye Static Analyzer</strong></td>
+    <td>Tree-sitter (PHP/JS WASM)</td>
+    <td>程式碼結構分析，blast radius / signature</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="hurricaneedge-8-大對外-saas-產品線">HurricaneEdge 8 大對外
+    SaaS 產品線</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>產品</th>
+    <th>技術棧</th>
+    <th>Cloud Run / 狀態</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>AICAD（AI CAD Converter）</strong></td>
+    <td>FastAPI, AI/ML, P&amp;ID → DXF</td>
+    <td>ai-cad-api-production</td>
+    </tr>
+    <tr>
+    <td><strong>算盤（Abacus）</strong></td>
+    <td>.NET 8 Blazor Server</td>
+    <td>hurricane-books-production</td>
+    </tr>
+    <tr>
+    <td><strong>海螺（Conch）</strong></td>
+    <td>FastAPI, PostgreSQL RLS, Multi-tenant</td>
+    <td>rs-api / rs-web-production，預約訂位 SaaS</td>
+    </tr>
+    <tr>
+    <td><strong>天機（Tianji）</strong></td>
+    <td>FastAPI, Jinja SSR, Hurricane Pay</td>
+    <td>tianji-api-production v1.2.2，命理 App</td>
+    </tr>
+    <tr>
+    <td><strong>Fiona Pipeline</strong></td>
+    <td>FastAPI, Manta workflow integration</td>
+    <td>fiona-pipeline-production v0.2.4，內容生成</td>
+    </tr>
+    <tr>
+    <td><strong>Fiona Radar</strong></td>
+    <td>FastAPI, YouTube API</td>
+    <td>fiona-radar-production，頻道監控</td>
+    </tr>
+    <tr>
+    <td><strong>Manta</strong></td>
+    <td>FastAPI + React, Canvas SSO</td>
+    <td>manta-production v2.38.0，AI Workflow Canvas</td>
+    </tr>
+    <tr>
+    <td><strong>Gyre</strong></td>
+    <td>Next.js + Fastify + Python AI service</td>
+    <td>社群內容排程 SaaS</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="hurricaneprime-客製化系統">HurricanePrime 客製化系統</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>產品</th>
+    <th>技術棧</th>
+    <th>狀態</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>pxmart-warehouse</strong></td>
+    <td>.NET 8, EF Core, PostgreSQL</td>
+    <td>WMS v1.0.0，810 tests，92% coverage</td>
+    </tr>
+    <tr>
+    <td><strong>打工仔（Dagongzai）</strong></td>
+    <td>FastAPI + Next.js + Scraper</td>
+    <td>dagongzai-api / web-production</td>
+    </tr>
+    <tr>
+    <td><strong>iRCS（長榮航空）</strong></td>
+    <td>.NET, WebAPI + Web</td>
+    <td>dev 環境（Lucas 維運）</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="hurricanedigital-行動--文創">HurricaneDigital 行動 /
+    文創</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>產品</th>
+    <th>技術棧</th>
+    <th>狀態</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>antique-master-web</strong></td>
+    <td>Next.js, FastAPI</td>
+    <td>antique-frontend / server-production，167 tests</td>
+    </tr>
+    <tr>
+    <td><strong>LifeSnap</strong></td>
+    <td>SwiftUI + SpriteKit + Firebase + CloudKit</td>
+    <td>App Store 已上架，多米諾骨牌對戰</td>
+    </tr>
+    <tr>
+    <td><strong>STA 三件套（PHP 客戶 site）</strong></td>
+    <td>PHP CodeIgniter HMVC</td>
+    <td>中華民國游泳救生協會，2026/05/09 大修復</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="hurricanetech-共用平台">HurricaneTech 共用平台</h3>
+    <ul>
+    <li><strong>Squid 企業級生態系統</strong> — API / LIDS / Tentacle
+    Frontend / Tentacle BFF / Python SDK / JS SDK / MCP Server / Neritic
+    CLI / NLIDS CLI（共 12 系統，2024/11 起持續演進）</li>
+    </ul>
+    <hr />
+    <h2 id="工作經歷---professional-experience">工作經歷 - Professional
+    Experience</h2>
+    <h3
+    id="公司負責人--ai-augmented-cto--颶風軟體有限公司--hurricanegroup">公司負責人
+    / AI-Augmented CTO | 颶風軟體有限公司 → HurricaneGroup</h3>
+    <p><em>2002 - 至今（24 年）</em></p>
+    <p><strong>[AI 工程組織建構]</strong></p>
+    <ul>
+    <li>Designed and operates a two-tier AI agent engineering
+    organization: 8 C-suite AI roles × 2 manager agents each, executing
+    via Claude Code tool-calling — architecture review, CI/CD
+    deployment, QA validation, compliance drafting, and product roadmap
+    execution all handled by purpose-built AI agents with
+    production-grade tool access</li>
+    <li>Built commtool IPC (inter-agent communication protocol) enabling
+    agents to receive task assignments, escalate blockers, and
+    coordinate cross-agent workflows without human relay; agents
+    autonomously execute git commit, Cloud Run deploy, Playwright E2E,
+    and Gitea issue creation</li>
+    <li>Delivered equivalent output of a 14+ person engineering
+    organization through AI-augmented execution — zero traditional
+    engineering headcount beyond the founding CTO</li>
+    </ul>
+    <p><strong>[AI 基礎設施]</strong></p>
+    <ul>
+    <li>Built Brain LLM Gateway: unified billing center for all 6
+    subsidiaries, per-tenant token quota control, dynamic routing across
+    Claude / Gemini / OpenAI / Modelhub self-hosted model</li>
+    <li>Engineered Anemone LLM ingress platform: WebSocket relay,
+    reverse connector authentication, compliant with group AI routing
+    standards — serving as the production gateway for all external LLM
+    traffic</li>
+    <li>Deployed Modelhub: self-hosted model training platform with
+    Kaggle Pipeline integration, serving as Brain's secondary LLM
+    provider for cost-optimized query routing</li>
+    <li>Implemented MCP Server: 40+ tool endpoint definitions (Squid
+    MCP), AI assistants directly query, create, and update production
+    tickets, deployments, and project data via standardized MCP
+    protocol</li>
+    </ul>
+    <p><strong>[成果]</strong></p>
+    <ul>
+    <li>30+ integrated production systems, 19 GCP Cloud Run services, 6
+    subsidiary companies under unified technical governance, 100+
+    enterprise clients</li>
+    <li>集團統一基礎設施：LIDS（OAuth2/OIDC SSO）/ Hurricane
+    Vault（密鑰管理）/ Hurricane Pay（統一金流）/ Wiki.js（技術文檔）/
+    Gitea（版控）/ Headscale（VPN）</li>
+    </ul>
+    <h3 id="net-engineer--中小企業信用保證基金">.NET Engineer |
+    中小企業信用保證基金</h3>
+    <p><em>2024/05 - 2026/02</em></p>
+    <ul>
+    <li><strong>8
+    人開發團隊</strong>（派遣方編制），負責信用保證網路作業系統現代化</li>
+    <li>主導舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor</li>
+    <li>採用微服務架構設計，提升系統擴展性與維護性</li>
+    <li>支援銀行端信用保證業務系統</li>
+    </ul>
+    <h3 id="軟體工程師--米迪亞系統科技d-media">軟體工程師 |
+    米迪亞系統科技（d-media）</h3>
+    <p><em>2001 - 2002</em></p>
+    <ul>
+    <li>負責 Casio Cassiopeia E-125 (Pocket PC / Windows CE)
+    平台原生應用開發</li>
+    <li>使用 <strong>eVC++ (eMbedded Visual C++ 3.0) + MFC</strong>
+    進行嵌入式 C++ 開發</li>
+    <li>開發四大模組（全中文介面 +
+    多語系支援）：主選單工具列、行事曆、聯絡人、相簿</li>
+    <li>產品搭載於 d-media 品牌 PDA，銷售通路涵蓋<strong>全球 400+
+    機場</strong></li>
+    </ul>
+    <h3 id="首席工程師--東岸互動">首席工程師 | 東岸互動</h3>
+    <p><em>2000/12 - 2001/12</em>（1 年）| 新北市</p>
+    <p>POP
+    線上海報編輯系統獨立開發負責人，從產品企畫到系統上線均由一人負責。
+    消費者在瀏覽器內設計 POP
+    廣告海報，付款後全自動串接印刷廠印製、物流宅配到府。</p>
+    <ul>
+    <li><strong>後端圖像引擎</strong>：整合 Photoshop
+    伺服器端批次處理，支援向量文字渲染與向量圖合成（印刷規格輸出）</li>
+    <li><strong>前端 Web 編輯器</strong>（IE
+    5.x）：即時呼叫後端大量圖庫素材，瀏覽器內排版即時預覽</li>
+    <li><strong>電商整合</strong>：金流串接藍新科技（NewebPay）、印刷廠
+    API 自動推送訂單、物流整合宅配到府</li>
+    <li><strong>內部後台</strong>：供數十位美編設計師使用的 POP
+    模板管理系統</li>
+    <li><strong>技術演進</strong>：ASP / Java / C++ 第一代 → Apache /
+    PHP / MySQL 重構</li>
+    </ul>
+    <hr />
+    <h2 id="2026-q1-q2-重大成就---2026-recent-achievements">2026 Q1-Q2
+    重大成就 - 2026 Recent Achievements</h2>
+    <h3 id="集團化升級">集團化升級</h3>
+    <ul>
+    <li>完成 <strong>6 家子公司</strong> 架構分立與統一基礎設施整合</li>
+    <li>建立 <strong>C-suite 副手制</strong> 虛擬高管團隊架構（Claude
+    Agent + commtool）</li>
+    <li>GCP 統一維運責任歸 HurricaneSoft，集團 19 個 Cloud Run
+    服務統一管理</li>
+    </ul>
+    <h3 id="重大新系統上線">重大新系統上線</h3>
+    <ul>
+    <li><strong>Hurricane Vault v1.0.0</strong>（2026/04）— 自建 Secret
+    Manager，Audit chain + GCP parity</li>
+    <li><strong>Hurricane Pay v0.13.0</strong>（2026/05）—
+    集團統一金流，PayPal LIVE，9+ tenant 接入</li>
+    <li><strong>Brain LLM Gateway</strong>（2026/05 計費中心修復完工）—
+    集團 LLM 統一入口</li>
+    <li><strong>Manta v2.38.0</strong>（2026/05）— AI Workflow
+    Canvas，LIDS SSO 整合</li>
+    <li><strong>Gyre</strong>（2026/05）— Next.js + Fastify 社群內容排程
+    SaaS</li>
+    <li><strong>pxmart-warehouse v1.0.0</strong>（2026/04）— .NET 8
+    WMS，810 tests，92% coverage</li>
+    <li><strong>antique-master-web</strong> 上線（2026/04）— 167
+    tests</li>
+    <li><strong>gitea-hs PKCE 客製 patch</strong>（v1.26.1）— LIDS OIDC
+    PKCE 整合</li>
+    <li><strong>Headscale VPN</strong> 集團部署（lobsterfarm-633f7，ACL
+    鎖定）</li>
+    <li><strong>Wiki.js Git Storage</strong>（hurricanesoft/wiki-docs）—
+    文檔雙向同步上線</li>
+    </ul>
+    <h3 id="客戶系統重大事件">客戶系統重大事件</h3>
+    <ul>
+    <li><strong>Safari LIDS 白頁修復</strong>（2026/04）— 根因：生產 DB
+    缺 RequirePkce + Cloud Build INTERNAL_API_URL</li>
+    <li><strong>STA 2026/05/09 大修復</strong> — 5 大根因 + 11 修法，HRM
+    Excel 對齊、ws_table 寫死修復</li>
+    <li><strong>GCP 費用調整與備份</strong> — Coldline bucket、min=0
+    策略、備份輪替 30 天 / 12 週 / 12 月 / 永久</li>
+    </ul>
+    <hr />
+    <h2 id="其他重點專案---other-key-projects">其他重點專案 - Other Key
+    Projects</h2>
+    <h3 id="lifesnap---多功能社交遊戲平台-202306-202404">LifeSnap -
+    多功能社交遊戲平台 (2023/06-2024/04)</h3>
+    <p><strong>iOS 開發工程師 | 3 人團隊</strong> | 已上 App Store</p>
+    <ul>
+    <li>多米諾骨牌對戰手遊</li>
+    <li>技術：SwiftUI + SpriteKit + Firebase + CloudKit</li>
+    <li>核心功能：即時多人對戰、ChatGPT AI 聊天、社交系統、AdMob
+    廣告</li>
+    <li>架構：MVVM + Protocol-Oriented Design</li>
+    </ul>
+    <h3
+    id="lifesnapadmin---firebase-後台管理系統-202403-202412">LifeSnapAdmin
+    - Firebase 後台管理系統 (2024/03-2024/12)</h3>
+    <p><strong>獨立開發 | 656+ 工時 | 8 階段完成</strong></p>
+    <ul>
+    <li>Blazor Server (.NET 9) + Firebase Admin SDK</li>
+    <li>完成用戶管理、Firestore 瀏覽器、Storage
+    管理、統計分析、推播通知、系統監控等 8 個階段</li>
+    </ul>
+    <h3 id="sta-組織綜合管理平台-201902-202102">STA 組織綜合管理平台
+    (2019/02-2021/02)</h3>
+    <p><strong>全端工程師 | 5 人團隊</strong></p>
+    <ul>
+    <li>中華民國游泳救生協會線上課程報名系統，服務 <strong>5,000+
+    學員</strong></li>
+    <li>線上報名率提升 80%，行政作業時間減少 60%</li>
+    <li>PHP CodeIgniter HMVC 架構，15+ 種營運報表</li>
+    <li>2026 年持續維運，5/9 大修復後上生產</li>
+    </ul>
+    <hr />
+    <h2 id="學歷---education">學歷 - Education</h2>
+    <ul>
+    <li><strong>東南科技大學</strong> 數位電子系（二專）—
+    第一名畢業</li>
+    <li><strong>內湖高級工業職業學校</strong> —
+    代表學校參加技能競賽，榮獲三等榮譽獎章</li>
+    </ul>
+    <hr />
+    <h2 id="早期經歷---early-career-2000-2016">早期經歷 - Early Career
+    (2000-2016)</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>時期</th>
+    <th>專案</th>
+    <th>技術</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>2015-2016</td>
+    <td>德州撲克遊戲平台</td>
+    <td>Delphi</td>
+    </tr>
+    <tr>
+    <td>2012-2013</td>
+    <td>太陽能發電監測系統</td>
+    <td>PHP, MySQL</td>
+    </tr>
+    <tr>
+    <td>2004-2008</td>
+    <td>車載娛樂系統（多家車廠）</td>
+    <td>C++ MFC, WinCE</td>
+    </tr>
+    <tr>
+    <td>2001-2002</td>
+    <td>Pocket PC 應用套件（Casio E-125，全球 400+ 機場銷售）</td>
+    <td>eVC++ MFC, WinCE</td>
+    </tr>
+    <tr>
+    <td>2000-2001</td>
+    <td>Web 海報編輯器（金流/印刷串接）</td>
+    <td>ASP, Java, C++</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="專業能力統計---professional-experience-summary">專業能力統計
+    - Professional Experience Summary</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>專業領域</th>
+    <th>年資</th>
+    <th>主要成就</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>集團技術領導 &amp; 創業</strong></td>
+    <td>24 年</td>
+    <td>創立颶風軟體 → HurricaneGroup 集團（6
+    子公司），管理多公司虛擬高管團隊</td>
+    </tr>
+    <tr>
+    <td><strong>系統程式開發</strong></td>
+    <td>25 年</td>
+    <td>建構 30+ 生產系統的集團生態系統</td>
+    </tr>
+    <tr>
+    <td><strong>系統架構設計</strong></td>
+    <td>18 年</td>
+    <td>Multi-tenant SaaS / OAuth2 / LLM Gateway / 集團統一基礎設施</td>
+    </tr>
+    <tr>
+    <td><strong>DevOps &amp; Cloud</strong></td>
+    <td>5 年</td>
+    <td>GCP Cloud Run（19 services）、兩層式 CI/CD、6 步 DB
+    異動流程</td>
+    </tr>
+    <tr>
+    <td><strong>企業客戶服務</strong></td>
+    <td>24 年</td>
+    <td>100+ 企業客戶</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <p><em>最後更新：2026 年 5 月</em> <em>此履歷已針對 ATS
+    系統關鍵字強化：AI-Augmented CTO, Platform Builder, AI Engineering
+    Organization, Multi-Agent Architecture, LLM Gateway, MCP Server,
+    Technical Architect, Engineering Lead, System Design, Multi-tenant
+    SaaS, Platform Engineering, OAuth2/OIDC, GCP Cloud Run, CI/CD
+    Pipeline Design, Secret Management</em></p>
+
+  </section>
+  <section class="resume-section" id="tab-dotnet" style="display:none;">
+
+    <h1 id="王英豪---資深-net-架構師--c-技術主管">王英豪 - 資深 .NET
+    架構師 / C# 技術主管</h1>
+    <h2
+    id="senior-net-architect--c-technical-lead--25年軟體工程--net-全棧開發">Senior
+    .NET Architect &amp; C# Technical Lead | 25年軟體工程 | .NET
+    全棧開發</h2>
+    <hr />
+    <table>
+    <thead>
+    <tr>
+    <th>項目</th>
+    <th>內容</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>姓名</td>
+    <td>王英豪 (WANG YING HAO)</td>
+    </tr>
+    <tr>
+    <td>電話</td>
+    <td>0921-107-206</td>
+    </tr>
+    <tr>
+    <td>信箱</td>
+    <td><a
+    href="mailto:cancleeric@gmail.com"><span>cancleeric@gmail.com</span></a></td>
+    </tr>
+    <tr>
+    <td>期望薪資</td>
+    <td>NT$ 2,400,000 / 年</td>
+    </tr>
+    <tr>
+    <td>工作地點</td>
+    <td>新北市中和區（可配合北部地區工作）</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="專業摘要---professional-summary">專業摘要 - Professional
+    Summary</h2>
+    <p><strong>資深 .NET 架構師 | C# 技術主管 | 集團技術長</strong></p>
+    <p>擁有 <strong>25 年</strong> C# / .NET 開發經驗，完整歷經 .NET
+    Framework 1.1 到 .NET 8 每一代技術演進。精通 <strong>ASP.NET Core
+    8.0</strong>、<strong>Blazor Server /
+    WebAssembly</strong>、<strong>Entity Framework
+    Core</strong>，並從零自建 OAuth 2.0 / OIDC 身份認證伺服器
+    <strong>LocalIdentityServer (LIDS)</strong>，涵蓋 428 個 C#
+    檔案、完整的多租戶隔離、MFA、JWT RS256 簽章。<strong>2026 年完成
+    LIDS 客製 PKCE patch（gitea-hs v1.26.1）</strong>，整合 Gitea OIDC
+    不污染 provider singleton。</p>
+    <p>主導 <strong>HurricaneGroup（颶風集團）6 家子公司</strong> 30+
+    生產系統的 .NET 架構與部署，包括 <strong>pxmart-warehouse
+    v1.0.0</strong>（.NET 8 WMS，810 tests / 92%
+    coverage）、<strong>hurricane-books（Blazor Server 帳務
+    SaaS）</strong>、<strong>antique-master-web（.NET 後端 + 167
+    tests）</strong>、信保基金 .NET 8 + Blazor 現代化遷移。</p>
+    <p>擔任<strong>集團技術長</strong>，建立 C-suite
+    副手制虛擬高管團隊架構、工單驅動開發流程、140 分標準化評審制度、6 步
+    DB 異動流程、兩層式 Git Hooks CI/CD，主導 GCP Cloud Run 19
+    個生產服務統一維運。</p>
+    <p>Also designed and operates a <strong>14-agent AI engineering
+    organization</strong> (C-suite + manager tier) executing
+    architecture decisions, CI/CD deployment, and QA validation via
+    Claude Code tool-calling — with commtool IPC for inter-agent
+    coordination and MCP Server (40+ tool endpoints) for
+    AI-to-production integration.</p>
+    <hr />
+    <h2 id="核心技術棧---core-technical-skills">核心技術棧 - Core
+    Technical Skills</h2>
+    <h3 id="c--net-平台-net-platform">C# / .NET 平台 (.NET
+    Platform)</h3>
+    <p><code>C# 12</code> <code>.NET 8</code>
+    <code>.NET Core 3.1 ~ 8.0</code>
+    <code>.NET Framework 1.1 ~ 4.8</code> <code>ASP.NET Core</code>
+    <code>ASP.NET MVC</code> <code>ASP.NET Web API</code>
+    <code>ASP.NET Web Forms</code></p>
+    <h3 id="blazor-生態系-blazor-ecosystem">Blazor 生態系 (Blazor
+    Ecosystem)</h3>
+    <p><code>Blazor Server</code> <code>Blazor WebAssembly</code>
+    <code>Razor Components</code> <code>SignalR</code>
+    <code>Bootstrap 5</code></p>
+    <h3 id="orm-與資料存取-data-access">ORM 與資料存取 (Data
+    Access)</h3>
+    <p><code>Entity Framework Core (Npgsql)</code>
+    <code>Entity Framework 6</code> <code>LINQ</code>
+    <code>ADO.NET</code> <code>Dapper</code></p>
+    <h3 id="資料庫-database">資料庫 (Database)</h3>
+    <p><code>PostgreSQL</code> <code>SQL Server</code>
+    <code>SQLite</code> <code>Firebase Firestore</code>
+    <code>T-SQL</code> <code>Alembic</code>
+    <code>EF Core Migrations</code></p>
+    <h3 id="認證與安全-authentication--security">認證與安全
+    (Authentication &amp; Security)</h3>
+    <p><code>OAuth 2.0</code> <code>OpenID Connect (OIDC)</code>
+    <code>Authorization Code + PKCE</code>
+    <code>JWT (RS256/HS256)</code> <code>MFA (TOTP / Email / SMS)</code>
+    <code>RBAC</code> <code>BCrypt</code> <code>AES-256-GCM</code>
+    <code>ASP.NET Core Identity</code></p>
+    <h3 id="雲端與-devops-cloud--devops">雲端與 DevOps (Cloud &amp;
+    DevOps)</h3>
+    <p><code>Docker</code> <code>GCP Cloud Run</code>
+    <code>GCP Secret Manager</code> <code>Azure Key Vault</code>
+    <code>Azure</code> <code>Git Hooks CI/CD</code>
+    <code>GitHub Actions</code> <code>IIS</code>
+    <code>Prometheus.NET</code> <code>OpenTelemetry</code></p>
+    <h3 id="相關技術-complementary">相關技術 (Complementary)</h3>
+    <p><code>Redis (StackExchange.Redis)</code>
+    <code>AspNetCoreRateLimit</code> <code>SendGrid</code>
+    <code>Twilio</code> <code>Otp.NET</code> <code>QRCoder</code>
+    <code>Serilog</code> <code>Swagger / Swashbuckle</code></p>
+    <h3 id="開發工具-development-tools">開發工具 (Development
+    Tools)</h3>
+    <p><code>Visual Studio 2022</code> <code>Visual Studio Code</code>
+    <code>SSMS</code> <code>Git</code> <code>TFS</code>
+    <code>Docker Desktop</code> <code>Postman</code>
+    <code>NuGet</code></p>
+    <hr />
+    <h2 id="重點專案經歷---key-projects">重點專案經歷 - Key
+    Projects</h2>
+    <h3
+    id="1-localidentityserver-lids--企業級-oauth2oidc-身份認證伺服器">1.
+    LocalIdentityServer (LIDS) — 企業級 OAuth2/OIDC 身份認證伺服器</h3>
+    <p><strong>時間</strong>：2024/11 - 至今
+    <strong>角色</strong>：後端架構師 / .NET 核心開發者
+    <strong>規模</strong>：428 個 C# 檔案 / 1.2 GB 專案 /
+    獨立架構設計</p>
+    <h4 id="技術棧">技術棧</h4>
+    <p><code>ASP.NET Core 8.0</code> <code>C# 12</code>
+    <code>PostgreSQL (Npgsql EF Core Provider)</code>
+    <code>Redis (StackExchange.Redis)</code> <code>Blazor Server</code>
+    <code>Docker</code> <code>GCP Cloud Run</code></p>
+    <h4 id="系統架構與實作">系統架構與實作</h4>
+    <p><strong>OAuth 2.0 / OIDC 完整實作</strong></p>
+    <ul>
+    <li>從零建構 OAuth 2.0 Authorization Server，支援 Authorization Code
+    + PKCE Flow</li>
+    <li>實作完整的 OIDC Discovery Endpoint
+    (<code>.well-known/openid-configuration</code>)</li>
+    <li>JWT RS256 非對稱簽章與驗證，支援金鑰輪替 (Key Rotation)</li>
+    <li>Token 生命週期管理：Access Token / Refresh Token / ID Token</li>
+    <li>Scope-based 與 Claims-based 權限控制</li>
+    </ul>
+    <p><strong>多因素認證 (MFA)</strong></p>
+    <ul>
+    <li>TOTP 時間型一次性密碼（整合 Otp.NET + QRCoder 產生 QR
+    Code）</li>
+    <li>Email 驗證碼（整合 SendGrid SMTP）</li>
+    <li>SMS 驗證碼（整合 Twilio API）</li>
+    <li>支援 MFA 強制策略與 Recovery Codes</li>
+    </ul>
+    <p><strong>多租戶身份管理 (Multi-tenant Identity)</strong></p>
+    <ul>
+    <li>完整的租戶隔離架構，每個租戶獨立的用戶、角色、權限</li>
+    <li>租戶自助註冊流程與邀請碼機制</li>
+    <li>租戶配額管理（用戶數、OAuth Client 數量上限）</li>
+    <li>SuperAdmin 跨租戶管理介面 (Blazor Server)</li>
+    </ul>
+    <p><strong>進階安全機制</strong></p>
+    <ul>
+    <li>Break-glass 緊急存取機制（繞過 MFA / 帳號鎖定的緊急通道）</li>
+    <li>Dynamic CORS Policy 動態跨域策略</li>
+    <li>Rate Limiting（整合 AspNetCoreRateLimit）防暴力破解</li>
+    <li>Platform Audit Log 平台稽核日誌，記錄所有管理操作</li>
+    <li>BCrypt 密碼雜湊、帳號鎖定策略</li>
+    </ul>
+    <p><strong>雲端整合與監控</strong></p>
+    <ul>
+    <li>Azure Key Vault / GCP Secret Manager 金鑰管理</li>
+    <li>Prometheus.NET 指標蒐集 + OpenTelemetry 分散式追蹤</li>
+    <li>Docker 容器化部署 + GCP Cloud Run 生產環境</li>
+    <li>兩層式 Git Hooks CI/CD：post-commit 本地建置 → pre-push Staging
+    部署</li>
+    <li>Serilog 結構化日誌</li>
+    </ul>
+    <h4 id="架構決策">架構決策</h4>
+    <ul>
+    <li><strong>為何自建而非使用 Auth0 /
+    Okta</strong>：需要完全掌控多租戶隔離邏輯、自訂 MFA
+    策略、Break-glass 機制，第三方 SaaS 無法滿足所有客製需求</li>
+    <li><strong>PostgreSQL over SQL
+    Server</strong>：考量跨平台相容性（Linux Docker）與成本，選用 Npgsql
+    EF Core Provider</li>
+    <li><strong>Blazor Server 管理後台</strong>：充分利用 C#
+    全棧能力，減少 JavaScript 依賴，提供即時 SignalR 互動體驗</li>
+    </ul>
+    <hr />
+    <h3 id="2-信保基金信用保證網路作業系統--net-現代化遷移">2.
+    信保基金信用保證網路作業系統 — .NET 現代化遷移</h3>
+    <p><strong>時間</strong>：2024/05 - 2026/02
+    <strong>角色</strong>：.NET Engineer | 8 人開發團隊
+    <strong>客戶</strong>：中小企業信用保證基金（SME Credit Guarantee
+    Fund）</p>
+    <h4 id="技術棧-1">技術棧</h4>
+    <p><code>.NET Framework 4.6</code> <code>.NET 5</code>
+    <code>.NET 8</code> <code>Blazor WebAssembly</code> <code>C#</code>
+    <code>ASP.NET MVC</code> <code>Entity Framework</code>
+    <code>SQL Server</code> <code>Visual Studio 2022</code>
+    <code>SSMS</code> <code>IIS</code> <code>TFS</code></p>
+    <h4 id="主要職責與成果">主要職責與成果</h4>
+    <p><strong>舊系統維護 (.NET Framework 4.6)</strong></p>
+    <ul>
+    <li>維護已運行多年的信用保證業網作業系統</li>
+    <li>處理 .NET Framework 4.6 技術債務，改善系統穩定性</li>
+    <li>修正 Entity Framework 6 查詢效能瓶頸</li>
+    </ul>
+    <p><strong>新模組開發 (.NET 5)</strong></p>
+    <ul>
+    <li>開發直保線上填報系統，新增銀行端網路申請功能</li>
+    <li>使用 .NET 5 + ASP.NET Core Web API 建構 RESTful 後端</li>
+    <li>實作報表產出模組，支援多種格式匯出</li>
+    </ul>
+    <p><strong>系統現代化升級 (.NET 8 + Blazor)</strong></p>
+    <ul>
+    <li>主導從 .NET Framework 遷移到 .NET 8 的技術路線規劃</li>
+    <li>導入 Blazor WebAssembly 取代傳統 MVC Razor Views</li>
+    <li>設計微服務架構，將單體應用拆分為獨立服務</li>
+    <li>實施 Entity Framework Core Migration 資料庫版本控制</li>
+    </ul>
+    <hr />
+    <h3 id="3-lifesnapadmin--firebase-全方位後台管理系統">3.
+    LifeSnapAdmin — Firebase 全方位後台管理系統</h3>
+    <p><strong>時間</strong>：2024/03 - 2024/12
+    <strong>角色</strong>：獨立開發者 | 656+ 工時 | 8 階段完成
+    <strong>性質</strong>：從零獨立設計開發的完整後台管理平台</p>
+    <h4 id="技術棧-2">技術棧</h4>
+    <p><code>C# .NET 9.0</code> <code>Blazor Server</code>
+    <code>Firebase Admin SDK 3.4.0</code> <code>Bootstrap 5</code>
+    <code>Google Cloud Firestore</code> <code>Chart.js</code>
+    <code>ApexCharts</code> <code>Monaco Editor</code></p>
+    <h4 id="功能模組8-個開發階段">功能模組（8 個開發階段）</h4>
+    <p><strong>Phase 1-2：用戶管理 &amp; 資料庫瀏覽器</strong></p>
+    <ul>
+    <li>Firebase Authentication 用戶 CRUD（建立、停用、密碼重設、自訂
+    Claims）</li>
+    <li>Firestore 資料庫視覺化瀏覽器，支援巢狀 Collection/Document
+    導覽</li>
+    <li>整合 Monaco Editor 的 JSON 編輯器，支援即時格式驗證</li>
+    </ul>
+    <p><strong>Phase 3-4：檔案管理 &amp; 統計分析</strong></p>
+    <ul>
+    <li>Firebase Storage 檔案管理器（上傳、下載、預覽、批量操作）</li>
+    <li>Chart.js / ApexCharts
+    統計儀表板，視覺化呈現用戶增長與使用趨勢</li>
+    </ul>
+    <p><strong>Phase 5-6：推播通知 &amp; 系統監控</strong></p>
+    <ul>
+    <li>Firebase Cloud Messaging (FCM) 推播管理（單一 / 主題 /
+    條件式推播）</li>
+    <li>Prometheus 整合系統監控，即時追蹤 API 回應時間與錯誤率</li>
+    </ul>
+    <p><strong>Phase 7-8：多租戶 &amp; PWA</strong></p>
+    <ul>
+    <li>Multi-tenant 架構支援，不同租戶獨立資料隔離</li>
+    <li>PWA (Progressive Web App) 支援離線存取</li>
+    <li>i18n 國際化多語言切換</li>
+    </ul>
+    <h4 id="專案指標">專案指標</h4>
+    <ul>
+    <li>200+ <code>.razor</code> / <code>.cs</code> 檔案</li>
+    <li>完整的 DI (Dependency Injection) 架構</li>
+    <li>Service Layer Pattern + Repository Pattern</li>
+    <li>全面的 Error Handling 與 Serilog 日誌</li>
+    </ul>
+    <hr />
+    <h3 id="4-pxmart-warehouse--net-8-wms-倉儲管理系統hurricaneprime">4.
+    pxmart-warehouse — .NET 8 WMS 倉儲管理系統（HurricanePrime）</h3>
+    <p><strong>時間</strong>：2026/02 - 2026/04（v1.0.0 上線）
+    <strong>角色</strong>：架構師 / 主導 .NET 後端
+    <strong>規模</strong>：810 個單元 / 整合測試，92% 覆蓋率</p>
+    <h4 id="技術棧-3">技術棧</h4>
+    <p><code>.NET 8</code> <code>EF Core</code> <code>PostgreSQL</code>
+    <code>xUnit</code> <code>Swagger</code> <code>Docker</code></p>
+    <h4 id="系統設計">系統設計</h4>
+    <ul>
+    <li>倉儲流程完整建模：入庫 / 出庫 / 盤點 / 移轉 / 批次查詢</li>
+    <li>EF Core Migration 嚴格走 6 步 DB 異動流程</li>
+    <li>xUnit 810 tests，覆蓋率 92%（Phase 1-4 全完成）</li>
+    <li>Swagger + 批次查詢 API 設計</li>
+    <li>Docker 容器化 + 本地 CI script
+    (<code>scripts/ci-local.sh</code>) + E2E
+    (<code>tests/e2e/api-e2e.sh</code>)</li>
+    <li>2026/04/26 移交 HurricanePrime 後續維運</li>
+    </ul>
+    <hr />
+    <h3
+    id="5-hurricane-books算盤-blazor-server-帳務--財務-saashurricaneedge">5.
+    hurricane-books（算盤）— Blazor Server 帳務 / 財務
+    SaaS（HurricaneEdge）</h3>
+    <p><strong>時間</strong>：2026 - 至今 <strong>角色</strong>：架構師
+    / 後端 <strong>Cloud
+    Run</strong>：<code>hurricane-books-production</code></p>
+    <h4 id="技術棧-4">技術棧</h4>
+    <p><code>.NET 8</code> <code>Blazor Server</code>
+    <code>EF Core</code> <code>PostgreSQL</code>
+    <code>Hurricane Pay</code> <code>LIDS OAuth</code></p>
+    <p>集團對外 SaaS 之一，多租戶帳務系統，整合集團統一金流（Hurricane
+    Pay）與身份（LIDS）。</p>
+    <hr />
+    <h3 id="6-颶風軟體企業系統--24-年持續演進的-net-平台">6.
+    颶風軟體企業系統 — 24 年持續演進的 .NET 平台</h3>
+    <p><strong>時間</strong>：2002 - 至今（24 年持續開發）
+    <strong>角色</strong>：系統架構師 / 技術負責人</p>
+    <h4 id="技術演進歷程">技術演進歷程</h4>
+    <pre><code>2002-2005  .NET Framework 1.1 → 2.0  |  ASP.NET Web Forms + ADO.NET
+2006-2010  .NET Framework 3.5 → 4.0  |  ASP.NET MVC + LINQ to SQL
+2011-2015  .NET Framework 4.5 → 4.8  |  Entity Framework + Web API
+2016-2020  .NET Core 2.0 → 3.1       |  ASP.NET Core + EF Core
+2021-至今  .NET 6 → .NET 8           |  Blazor + Modern Architecture</code></pre>
+    <h4 id="主要成果">主要成果</h4>
+    <ul>
+    <li>從零建構公司內部 ERP / CRM 系統，完整歷經 .NET
+    每一代技術演進</li>
+    <li>累積服務 <strong>100+ 企業客戶</strong>，涵蓋
+    ERP、CRM、電商、社區管理等領域</li>
+    <li>設計並實施 Squid 企業級生態系統（12 個互相協作的生產系統）</li>
+    <li>建立工單驅動開發流程與 140 分標準化評審制度</li>
+    </ul>
+    <hr />
+    <h2 id="架構設計能力---architecture--system-design">架構設計能力 -
+    Architecture &amp; System Design</h2>
+    <h3 id="net-系統架構-net-architecture">.NET 系統架構 (.NET
+    Architecture)</h3>
+    <ul>
+    <li><strong>Layered Architecture</strong>：API Service → Business
+    Access Layer (BAL) → Core Logic (CORL) → Data Access Layer
+    (DAL)</li>
+    <li><strong>Multi-tenant SaaS</strong>：租戶級別資料隔離（LIDS
+    身份認證 + Squid 業務資料）</li>
+    <li><strong>Microservices</strong>：服務拆分、獨立部署、API Gateway
+    整合</li>
+    <li><strong>Repository Pattern + Unit of Work</strong>：EF Core
+    資料存取標準化</li>
+    <li><strong>Dependency Injection</strong>：ASP.NET Core 內建 DI
+    Container 深度應用</li>
+    </ul>
+    <h3 id="安全架構-security-architecture">安全架構 (Security
+    Architecture)</h3>
+    <ul>
+    <li>自建 OAuth 2.0 / OIDC Identity Provider（非使用第三方
+    SaaS）</li>
+    <li>JWT RS256 非對稱簽章 + Key Rotation 策略</li>
+    <li>多層次認證：MFA (TOTP / Email / SMS) + Break-glass Emergency
+    Access</li>
+    <li>RBAC + Claims-based Authorization</li>
+    </ul>
+    <h3 id="devops-與部署-devops--deployment">DevOps 與部署 (DevOps
+    &amp; Deployment)</h3>
+    <ul>
+    <li>Docker 容器化：所有 .NET 服務以 Multi-stage Dockerfile 建置</li>
+    <li>兩層式 CI/CD：Git Hooks (post-commit 本地 + pre-push
+    Staging)</li>
+    <li>GCP Cloud Run 生產環境部署</li>
+    <li>Prometheus.NET + OpenTelemetry 可觀測性</li>
+    </ul>
+    <h3 id="技術決策能力-technical-decision-making">技術決策能力
+    (Technical Decision Making)</h3>
+    <ul>
+    <li>評估自建 vs. 第三方方案（LIDS vs. Auth0/Okta —
+    選擇自建以滿足客製需求）</li>
+    <li>跨平台資料庫選型（SQL Server vs. PostgreSQL — 選擇 PostgreSQL
+    支援 Linux Docker）</li>
+    <li>前端技術選擇（Blazor vs. React/Vue —
+    依據團隊能力與需求場景決定）</li>
+    </ul>
+    <hr />
+    <h2 id="工作經歷---professional-experience">工作經歷 - Professional
+    Experience</h2>
+    <h3 id="net-engineer--中小企業信用保證基金">.NET Engineer |
+    中小企業信用保證基金</h3>
+    <p><em>2024/05 - 2026/02</em></p>
+    <ul>
+    <li><strong>8
+    人開發團隊</strong>，負責信用保證網路作業系統開發與維護</li>
+    <li>主導 .NET Framework 4.6 → .NET 8 + Blazor WebAssembly
+    現代化遷移</li>
+    <li>開發直保線上填報系統（.NET
+    5），設計微服務架構改善系統擴展性</li>
+    <li>技術棧：.NET Framework 4.6, .NET 5/8, Blazor, C#, Entity
+    Framework, SQL Server</li>
+    </ul>
+    <h3 id="公司負責人--技術架構師--颶風軟體有限公司">公司負責人 /
+    技術架構師 | 颶風軟體有限公司</h3>
+    <p><em>2002 - 至今（24 年）</em></p>
+    <ul>
+    <li>創立並經營軟體開發公司，累積服務 <strong>100+
+    企業客戶</strong></li>
+    <li>管理 <strong>11
+    人跨職能技術團隊</strong>（開發、DBA、DevOps、部署、助理）</li>
+    <li>主導設計 Squid 企業級生態系統（12 個生產系統，含 .NET 與 Python
+    服務）</li>
+    <li>建立工單驅動開發流程與 140 分標準化評審制度</li>
+    <li>經歷完整 .NET 技術棧演進：.NET Framework 1.1 → .NET 8</li>
+    </ul>
+    <hr />
+    <h2 id="其他相關專案---other-relevant-projects">其他相關專案 - Other
+    Relevant Projects</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>專案</th>
+    <th>時間</th>
+    <th>角色</th>
+    <th>技術</th>
+    <th>說明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>Squid API</strong></td>
+    <td>2024/11-至今</td>
+    <td>架構師</td>
+    <td>Python FastAPI, PostgreSQL</td>
+    <td>展現跨語言系統整合能力</td>
+    </tr>
+    <tr>
+    <td><strong>LifeSnap iOS</strong></td>
+    <td>2024/03-04</td>
+    <td>iOS 工程師</td>
+    <td>Swift, SwiftUI, Firebase</td>
+    <td>展現行動端開發能力</td>
+    </tr>
+    <tr>
+    <td><strong>STA 管理平台</strong></td>
+    <td>2019-2021</td>
+    <td>全端工程師</td>
+    <td>PHP, MySQL</td>
+    <td>服務 5,000+ 學員</td>
+    </tr>
+    <tr>
+    <td><strong>車載娛樂系統</strong></td>
+    <td>2004-2008</td>
+    <td>嵌入式工程師</td>
+    <td>C++ MFC, WinCE</td>
+    <td>多家車廠 OEM</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="早期-net-經歷---early-net-career-2000-2016">早期 .NET 經歷 -
+    Early .NET Career (2000-2016)</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>時期</th>
+    <th>專案</th>
+    <th>.NET 相關技術</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>2015-2016</td>
+    <td>德州撲克遊戲平台</td>
+    <td>Delphi (Win32 平台經驗)</td>
+    </tr>
+    <tr>
+    <td>2012-2013</td>
+    <td>太陽能發電監測系統</td>
+    <td>Web 應用 + 資料庫整合</td>
+    </tr>
+    <tr>
+    <td>2006-2008</td>
+    <td>敦北翠苑社區管理系統</td>
+    <td>.NET Framework 2.0, ASP.NET, SQL Server</td>
+    </tr>
+    <tr>
+    <td>2004-2008</td>
+    <td>車載娛樂系統</td>
+    <td>C++ MFC, WinCE (底層系統開發)</td>
+    </tr>
+    <tr>
+    <td>2000-2001</td>
+    <td>Web 海報編輯器</td>
+    <td>ASP, Java, C++ (Web 開發基礎)</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="學歷---education">學歷 - Education</h2>
+    <ul>
+    <li><strong>東南科技大學</strong> 數位電子系（二專）—
+    第一名畢業</li>
+    <li><strong>內湖高級工業職業學校</strong> —
+    代表學校參加技能競賽，榮獲三等榮譽獎章</li>
+    </ul>
+    <hr />
+    <h2 id="專業經驗統計---professional-experience-summary">專業經驗統計
+    - Professional Experience Summary</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>專業領域</th>
+    <th>年資</th>
+    <th>主要成就</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>.NET / C# 開發</strong></td>
+    <td>25 年</td>
+    <td>從 .NET Framework 1.1 到 .NET 8 全版本實務經驗</td>
+    </tr>
+    <tr>
+    <td><strong>集團技術領導</strong></td>
+    <td>24 年</td>
+    <td>創立 HurricaneGroup（6 子公司），主導 30+ 生產系統</td>
+    </tr>
+    <tr>
+    <td><strong>系統架構設計</strong></td>
+    <td>18 年</td>
+    <td>自建 OAuth2/OIDC Server (LIDS)、Multi-tenant SaaS、集團 Vault /
+    Pay</td>
+    </tr>
+    <tr>
+    <td><strong>Blazor 開發</strong></td>
+    <td>3 年</td>
+    <td>Blazor Server + WASM，4 個生產級系統（LIDS / LifeSnapAdmin /
+    hurricane-books / pxmart）</td>
+    </tr>
+    <tr>
+    <td><strong>企業客戶服務</strong></td>
+    <td>24 年</td>
+    <td>100+ 企業客戶，含信保基金等金融機構</td>
+    </tr>
+    <tr>
+    <td><strong>GCP 集團維運</strong></td>
+    <td>5 年</td>
+    <td>Cloud Run 19 services 統一維運（HurricaneSoft 主責）</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="自我評價---self-assessment">自我評價 - Self Assessment</h2>
+    <p>從 2002 年以 .NET Framework 1.1 撰寫第一個企業應用開始，至今 20
+    餘年始終深耕 .NET 生態系。見證並實踐了從 Web Forms → MVC → Web API →
+    .NET Core → Blazor 的每一次典範轉移。最引以為傲的成果是從零自建
+    <strong>LocalIdentityServer</strong> — 一個 428 檔案規模的 OAuth 2.0
+    / OIDC 身份認證伺服器，證明了對 ASP.NET Core
+    安全機制的深入理解。</p>
+    <p>技術廣度上，除了 .NET 核心能力外，亦具備 Python FastAPI、Swift
+    iOS、TypeScript 等跨語言整合經驗，能在 .NET
+    為主軸的架構下靈活選擇最適技術。管理能力上，24
+    年創業經驗使我兼具技術深度與商業視角，善於在架構決策中平衡技術理想與實務需求。</p>
+    <hr />
+    <p><em>最後更新：2026 年 2 月</em> <em>此履歷已針對 ATS
+    系統關鍵字強化：.NET Architect, C# Senior Developer, ASP.NET Core,
+    Blazor Server, Blazor WebAssembly, Entity Framework Core, OAuth2,
+    OIDC, JWT, Multi-tenant, System Design, Team Lead, Docker, Cloud
+    Run, Microservices</em></p>
+
+  </section>
+  <section class="resume-section" id="tab-python" style="display:none;">
+
+    <h1 id="王英豪---python--ai--llm-工程師">王英豪 - Python / AI / LLM
+    工程師</h1>
+    <h2
+    id="aillm-platform-engineer--brain-llm-gateway--anemone--mcp--modelhub--25-年-python-全棧經驗--gcp-cloud-run-19-services">AI/LLM
+    Platform Engineer | Brain LLM Gateway + Anemone + MCP + Modelhub |
+    25 年 Python 全棧經驗 | GCP Cloud Run 19 services</h2>
+    <hr />
+    <table>
+    <thead>
+    <tr>
+    <th>項目</th>
+    <th>內容</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>姓名</td>
+    <td>王英豪 (WANG YING HAO)</td>
+    </tr>
+    <tr>
+    <td>電話</td>
+    <td>0921-107-206</td>
+    </tr>
+    <tr>
+    <td>信箱</td>
+    <td><a
+    href="mailto:cancleeric@gmail.com"><span>cancleeric@gmail.com</span></a></td>
+    </tr>
+    <tr>
+    <td>期望薪資</td>
+    <td>NT$ 2,400,000 / 年</td>
+    </tr>
+    <tr>
+    <td>工作地點</td>
+    <td>新北市中和區（可配合北部地區工作）</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="專業摘要---professional-summary">專業摘要 - Professional
+    Summary</h2>
+    <p><strong>Python 架構師 | AI / LLM Gateway 工程師 |
+    集團技術長</strong></p>
+    <p>精通 Python FastAPI 非同步架構設計，從零建構涵蓋 <strong>100+
+    REST API 端點</strong>的企業級系統。主導
+    <strong>HurricaneGroup（颶風集團）</strong> 統一 LLM 基礎設施：</p>
+    <ul>
+    <li><strong>Brain LLM Gateway</strong>（FastAPI + PostgreSQL）— 集團
+    LLM 計費中心，multi-provider routing（Claude / Gemini / OpenAI /
+    Modelhub），per-tenant 配額控制 + Superadmin 計費可視化</li>
+    <li><strong>Anemone Platform</strong>（FastAPI + WebSocket）— 集團
+    LLM ingress，WebSocket relay + reverse connector auth，符合集團 AI
+    routing 標準</li>
+    <li><strong>Modelhub</strong> v0.8.0 — 自訓模型 + 推論平台，Kaggle
+    Pipeline，Brain 第二 LLM Provider</li>
+    <li><strong>Manta</strong> v2.38.0 — AI Workflow Canvas（FastAPI +
+    React Canvas）</li>
+    <li><strong>Gyre</strong> v0.4.0 — 多平台社群媒體管理 SaaS（Next.js
+    + Fastify + Python AI service）</li>
+    <li><strong>Tianji</strong> v1.2.2 — 命理 App（FastAPI + Jinja SSR +
+    Hurricane Pay）</li>
+    <li><strong>Fiona Pipeline</strong> v0.2.4 — 內容生成 Pipeline（呼叫
+    Manta workflow）</li>
+    <li><strong>Aegis Security Scanner</strong> — 自建程式碼安全掃描器 +
+    ML FP ranker 訓練（scikit-learn）</li>
+    </ul>
+    <p>主導 <strong>MCP (Model Context Protocol)</strong>
+    整合方案，<strong>40+</strong> 個工具端點，實現 AI
+    助手（Claude、ChatGPT、Gemini）與生產系統的無縫對接。</p>
+    <p>擁有 <strong>25 年</strong>跨語言軟體開發經驗、<strong>24
+    年</strong>技術管理實務，創立 HurricaneGroup 集團（<strong>6
+    家子公司、30+ 生產系統、Cloud Run 19 services</strong>），建立
+    C-suite 副手制虛擬高管團隊架構。</p>
+    <hr />
+    <h2 id="核心技術棧---core-technical-skills">核心技術棧 - Core
+    Technical Skills</h2>
+    <h3 id="python-生態系-python-ecosystem">Python 生態系 Python
+    Ecosystem</h3>
+    <p><code>Python 3.11+</code> <code>FastAPI</code>
+    <code>SQLAlchemy 2.0</code> <code>Alembic</code>
+    <code>asyncpg</code> <code>aiohttp</code> <code>Pydantic</code>
+    <code>Click</code> <code>Typer</code> <code>Rich</code>
+    <code>PyInstaller</code> <code>requests</code> <code>httpx</code>
+    <code>PyJWT</code> <code>setuptools</code> <code>pytest</code></p>
+    <h3 id="ai--machine-learning">AI / Machine Learning</h3>
+    <p><code>MCP (Model Context Protocol)</code>
+    <code>Anthropic Claude API</code> <code>Google Gemini</code>
+    <code>OpenAI API</code> <code>Brain LLM Gateway（自建）</code>
+    <code>Anemone（自建 LLM ingress）</code>
+    <code>Modelhub（自訓模型）</code> <code>scikit-learn</code>
+    <code>Anomaly Detection</code> <code>Prompt Engineering</code>
+    <code>LLM Provider Routing</code></p>
+    <h3 id="資料庫-database-technologies">資料庫 Database
+    Technologies</h3>
+    <p><code>PostgreSQL</code> <code>SQLite</code> <code>asyncpg</code>
+    <code>SQLAlchemy 2.0 (Async)</code> <code>Alembic Migrations</code>
+    <code>Full-Text Search (FTS5)</code> <code>ClickHouse</code></p>
+    <h3 id="雲端與-devops-cloud--devops">雲端與 DevOps Cloud &amp;
+    DevOps</h3>
+    <p><code>Docker</code>
+    <code>Git Hooks CI/CD (post-commit / pre-push)</code>
+    <code>GitHub Actions</code> <code>GCP Cloud Run</code>
+    <code>GCP Cloud Functions</code> <code>GCP Secret Manager</code>
+    <code>Prometheus</code> <code>Sentry</code>
+    <code>OpenTelemetry</code></p>
+    <h3 id="認證與安全-authentication--security">認證與安全
+    Authentication &amp; Security</h3>
+    <p><code>OAuth 2.0</code> <code>OpenID Connect (OIDC)</code>
+    <code>JWT (RS256)</code> <code>RBAC</code>
+    <code>Multi-tenant Isolation</code> <code>Rate Limiting</code>
+    <code>Audit Logging</code></p>
+    <h3 id="其他語言與框架-other-languages--frameworks">其他語言與框架
+    Other Languages &amp; Frameworks</h3>
+    <p><code>C#</code> <code>ASP.NET Core 8</code>
+    <code>TypeScript</code> <code>Fastify</code> <code>Next.js</code>
+    <code>React 18</code> <code>Swift</code> <code>PHP</code></p>
+    <hr />
+    <h2 id="python-專案詳述---python-project-details">Python 專案詳述 -
+    Python Project Details</h2>
+    <h3 id="1-brain-llm-gateway--集團-llm-計費中心">1. Brain LLM Gateway
+    — 集團 LLM 計費中心</h3>
+    <p><strong>時間</strong>：2026 - 至今（2026/05 計費中心修復完工）
+    <strong>角色</strong>：架構設計者 / 核心開發者
+    <strong>技術</strong>：FastAPI, PostgreSQL, brain-api (8931) /
+    brain-cloud (8932) / brain-console (3931)</p>
+    <p>集團統一 LLM 入口，所有子公司 LLM 呼叫一律走 Brain：</p>
+    <ul>
+    <li>Engineered multi-provider LLM routing with dynamic provider
+    selection: routes requests across Claude / Gemini / OpenAI /
+    Modelhub self-hosted model based on per-tenant configuration and
+    query complexity</li>
+    <li>Implemented per-tenant token metering and quota enforcement:
+    each subsidiary billed independently via Superadmin Console,
+    real-time cost tracking across 6 tenants</li>
+    <li>Exposed per-tenant quota control API: downstream services
+    enforce rate limits before reaching upstream LLM providers</li>
+    <li><strong>Headless 預設 Gemini</strong>，可動態切換
+    provider，不需修改下游呼叫端 code</li>
+    <li><strong>Superadmin 計費可視化
+    Console</strong>（brain-console）：跨租戶 token
+    用量、成本分攤、配額管理一覽</li>
+    <li><strong>Provider 抽象層設計</strong>：Anthropic Claude / Google
+    Gemini / OpenAI / Modelhub 四個 provider 共用統一介面，新增 provider
+    不影響 routing logic</li>
+    <li><strong>brain-cloud 本機即生產</strong>：brain-cloud-dev
+    連接生產 Anemone，不另建 Cloud Run 實例</li>
+    <li><strong>GEMINI_CLI_TRUST_WORKSPACE</strong> 環境設定：避免
+    Gemini CLI delta={} 靜默失敗問題</li>
+    <li>完整 token 計量日誌：每筆 LLM 呼叫記錄 provider / model / input
+    tokens / output tokens / tenant_id</li>
+    <li>三服務協作架構：brain-api（核心 LLM proxy）/
+    brain-cloud（外部連線中繼）/ brain-console（計費管理 UI）</li>
+    </ul>
+    <hr />
+    <h3 id="2-anemone--llm-ingress-platform">2. Anemone — LLM Ingress
+    Platform</h3>
+    <p><strong>時間</strong>：2026 - 至今
+    <strong>角色</strong>：架構設計者 / 核心開發者
+    <strong>技術</strong>：FastAPI + WebSocket + 反向連線架構
+    <strong>Cloud Run</strong>：anemone-api-production</p>
+    <p>集團統一 LLM ingress 平台，所有外部 Widget → Anemone → Brain
+    的流量由此路由：</p>
+    <ul>
+    <li>Architected WebSocket relay session management: LLM token stream
+    delivered to client Widget without buffering full response in
+    memory</li>
+    <li>Implemented reverse connector authentication: external LLM
+    connectors initiate outbound connection to Anemone, eliminating
+    inbound firewall exposure</li>
+    <li>Compliant with group AI routing standards: all LLM traffic
+    passes through Anemone before reaching Brain Gateway, enabling
+    centralized logging and quota tracking</li>
+    <li>2026-04-30 connector_auth 修復後首次 E2E 驗收通過</li>
+    <li><strong>流量架構</strong>：外部 Widget → Anemone（WebSocket
+    relay）→ Brain Gateway（LLM proxy）→ upstream provider</li>
+    <li><strong>ADR-002 / ADR-003 合規</strong>：符合集團 AI routing
+    標準，Gyre 等子產品已整合</li>
+    </ul>
+    <hr />
+    <h3 id="3-mcp-server--ai-工具整合服務">3. MCP Server — AI
+    工具整合服務</h3>
+    <p><strong>角色</strong>：架構設計者 / 整合工程師
+    <strong>期間</strong>：2025 - 至今 <strong>技術</strong>：TypeScript
+    + Express.js（由 Python Squid API 驅動）</p>
+    <h4 id="設計理念">設計理念</h4>
+    <p>實現 <strong>Model Context Protocol (MCP)</strong> 標準，讓 AI
+    助手（Claude、ChatGPT 等）能直接操作 Squid 生產系統 —
+    查詢工單、建立需求、部署服務、管理專案。</p>
+    <h4 id="技術亮點">技術亮點</h4>
+    <ul>
+    <li><strong>40+ 工具端點</strong>：Squid MCP Server 43
+    個已確認工具定義，AI 助手直接操作生產票務、部署、資料更新</li>
+    <li><strong>自動化工具定義生成</strong>：掃描 Squid API
+    端點，自動產生 MCP Tool Definitions</li>
+    <li><strong>雙向整合</strong>：AI
+    助手可讀取、建立、更新生產資料</li>
+    <li><strong>安全控制</strong>：OAuth2.0 Token 認證，Action-level
+    權限控制</li>
+    </ul>
+    <h4 id="應用場景">應用場景</h4>
+    <pre><code>AI Assistant (Claude Code)
+    ↓ MCP Protocol
+MCP Server (40+ Tool Definitions)
+    ↓ REST API
+Squid API (Python FastAPI)
+    ↓ SQLAlchemy
+PostgreSQL (Production Data)</code></pre>
+    <hr />
+    <h3 id="4-modelhub--自建模型訓練平台">4. Modelhub —
+    自建模型訓練平台</h3>
+    <p><strong>時間</strong>：2026 - 至今（v0.8.0）
+    <strong>技術</strong>：Kaggle Pipeline + 自訓模型 + FastAPI serving
+    <strong>整合</strong>：作為 Brain LLM Gateway 第二 provider</p>
+    <ul>
+    <li>Built end-to-end model training pipeline: Kaggle dataset
+    ingestion → feature engineering → training → serving via Brain LLM
+    Gateway as secondary provider</li>
+    <li>Integrated Modelhub as Brain's secondary LLM provider via
+    standardized provider interface, enabling cost-optimized routing to
+    self-hosted model for low-complexity queries</li>
+    <li>Modelhub serving 與 Brain routing 解耦：Brain 視 Modelhub 為標準
+    provider，切換不需改 upstream code</li>
+    <li><strong>成本最佳化路由</strong>：低複雜度查詢自動 route 至
+    Modelhub 自訓模型，降低 Anthropic / Google API 費用</li>
+    <li><strong>自訓模型 Pipeline</strong>：Kaggle 資料集收取 → Feature
+    Engineering → 模型訓練 → FastAPI 推論服務</li>
+    </ul>
+    <hr />
+    <h3 id="5-manta--ai-workflow-canvashurricaneedge">5. Manta — AI
+    Workflow Canvas（HurricaneEdge）</h3>
+    <p><strong>時間</strong>：2026 - 至今（v2.38.0）
+    <strong>角色</strong>：架構設計者 / 核心開發者
+    <strong>技術</strong>：FastAPI + React Canvas + LIDS OAuth SSO
+    <strong>Cloud Run</strong>：manta-production</p>
+    <p>可視化 AI workflow 編輯器，節點化串接 LLM / 外部 API /
+    資料處理：</p>
+    <ul>
+    <li>DAG-based workflow 執行引擎：nodes define typed input/output
+    schema，執行順序由依賴圖決定</li>
+    <li>React Canvas renderer：拖拉節點、連線、即時預覽，前端以 React 18
+    實作無限畫布</li>
+    <li>fiona-pipeline API 整合：fiona-pipeline 透過 Manta REST API 觸發
+    workflow，有完整整合 SOP</li>
+    <li>LIDS OAuth SSO 整合：v2.38.0 Canvas browser SSO，FRONTEND_URL
+    不帶路徑後綴</li>
+    <li>Migrations 018-025 已上生產，v2.38.0 穩定運行中</li>
+    </ul>
+    <hr />
+    <h3 id="6-gyre--多平台社群媒體管理-saas">6. Gyre —
+    多平台社群媒體管理 SaaS</h3>
+    <p><strong>時間</strong>：2026 - 至今（v0.4.0）
+    <strong>角色</strong>：架構設計者 <strong>技術</strong>：Next.js 15
+    + Fastify (TypeScript) + Python FastAPI AI service + PostgreSQL +
+    ClickHouse <strong>架構</strong>：Turborepo monorepo（apps/web +
+    apps/api + apps/ai-service + packages/db + packages/types）
+    <strong>Cloud Run</strong>：gyre-api / gyre-web /
+    gyre-ai-service（anemone ADR-002/003 合規）</p>
+    <p>對標 Publer 的亞太本地化社群排程 SaaS，AI 原生設計：</p>
+    <ul>
+    <li>Architected tri-service monorepo: Next.js frontend / Fastify API
+    / Python FastAPI AI service 解耦部署，共用 packages/types
+    型別定義</li>
+    <li>Python AI service 整合 Anemone，走集團 AI routing
+    standards，Claude 文案生成 + 最佳發布時間預測</li>
+    <li>ClickHouse 雙資料庫架構：PostgreSQL 處理業務資料，ClickHouse
+    存放發布紀錄 / 分析數據</li>
+    <li>支援 Facebook Page / Instagram Business / LinkedIn / LINE OA
+    多平台排程（Phase 1 MVP）</li>
+    </ul>
+    <hr />
+    <h3 id="7-squid-api--企業級專案管理系統">7. Squid API —
+    企業級專案管理系統</h3>
+    <p><strong>角色</strong>：後端架構師 / Python 開發工程師 /
+    技術負責人 <strong>期間</strong>：2025/01 - 至今
+    <strong>技術</strong>：Python 3.11+, FastAPI, PostgreSQL, SQLAlchemy
+    2.0, Alembic, asyncpg, Pydantic, pytest</p>
+    <h4 id="系統規模">系統規模</h4>
+    <ul>
+    <li><strong>50+ 資料表</strong>，完整的關聯式資料模型設計</li>
+    <li><strong>100+ REST API 端點</strong>，完整 CRUD + 業務邏輯</li>
+    <li><strong>1,076 個 Python 檔案</strong>，專案規模 3.0 GB</li>
+    <li>Multi-tenant 架構，每個租戶資料完全隔離</li>
+    </ul>
+    <h4 id="架構設計四層式-layered-architecture">架構設計（四層式
+    Layered Architecture）</h4>
+    <pre><code>API Service (FastAPI Routes / Middleware)
+    ↓
+BAL - Business Access Layer (業務邏輯驗證)
+    ↓
+CORL - Core Logic Layer (核心運算 / 排程 / 協調)
+    ↓
+DAL - Data Access Layer (SQLAlchemy 2.0 + asyncpg)
+    ↓
+PostgreSQL (Multi-tenant Isolation)</code></pre>
+    <h4 id="核心功能實現">核心功能實現</h4>
+    <ul>
+    <li><strong>非同步架構</strong>：全面使用
+    <code>async/await</code>，FastAPI + asyncpg 高效處理並發請求</li>
+    <li><strong>Multi-tenant RBAC 權限系統</strong>：租戶隔離 +
+    角色權限控制，支援跨租戶管理</li>
+    <li><strong>需求管理 / 專案管理 /
+    驗證評審系統</strong>：完整工單生命週期管理</li>
+    <li><strong>分散式節點協調 + APScheduler
+    排程</strong>：支援多實例部署場景</li>
+    <li><strong>WebSocket 即時通訊</strong>：Server-Sent Events
+    與雙向溝通</li>
+    <li><strong>Stripe / PayPal
+    金流整合</strong>：訂閱制與一次性付款</li>
+    <li><strong>SendGrid Email / Slack SDK
+    通知</strong>：多頻道訊息推送</li>
+    <li><strong>Prometheus + Sentry
+    監控</strong>：效能指標收集與錯誤追蹤</li>
+    <li><strong>JWT + OAuth2.0 認證</strong>：RS256 簽章，Token Refresh
+    機制</li>
+    <li><strong>Alembic 集中式 Migration 管理</strong>：DB Schema
+    版本控制從專案目錄分離</li>
+    </ul>
+    <hr />
+    <h3 id="8-aegis-security-scanner--自建掃描器--ml-訓練">8. Aegis
+    Security Scanner — 自建掃描器 + ML 訓練</h3>
+    <p><strong>角色</strong>：獨立開發者 <strong>技術</strong>：Python,
+    scikit-learn, tree-sitter AST, NumPy, pandas</p>
+    <p>Python 寫的程式碼安全掃描器，含 ML false-positive ranker 訓練
+    pipeline：</p>
+    <ul>
+    <li><strong>tree-sitter AST 解析</strong>：PHP + JavaScript
+    WASM，blast radius 分析 + function signature 提取</li>
+    <li><strong>ML FP Ranker</strong>：Isolation Forest / Local Outlier
+    Factor 訓練於集團內部程式碼庫，降低誤報率</li>
+    <li><strong>專案指標異常偵測</strong>：監控工時、完成率、品質評分的異常波動（整合至
+    Squid API ML 模組）</li>
+    <li><strong>資料前處理 Pipeline</strong>：Feature Engineering +
+    Normalization，以 FastAPI 端點暴露 ML 推論結果</li>
+    <li><strong>CI gate 自動執行</strong>：整合至集團兩層式
+    CI/CD，pre-push 階段自動觸發掃描</li>
+    </ul>
+    <hr />
+    <h3 id="9-tianji天機-命理-saas">9. Tianji（天機）— 命理 SaaS</h3>
+    <p><strong>技術</strong>：FastAPI + Jinja SSR + Hurricane Pay
+    <strong>版本</strong>：v1.2.2，Cloud Run
+    <code>tianji-api-production</code></p>
+    <p>集團首個全 stack Python SSR + 自建金流整合的對外 SaaS。</p>
+    <hr />
+    <h3 id="10-fiona-pipeline--radar--內容生成與監控">10. Fiona Pipeline
+    / Radar — 內容生成與監控</h3>
+    <p><code>fiona-pipeline-production</code> v0.2.4（內容生成，呼叫
+    Manta workflow）+ <code>fiona-radar-production</code>（YouTube
+    頻道監控）。</p>
+    <hr />
+    <h3 id="11-line-controller--lc--訓練資料工具">11. line-controller /
+    LC — 訓練資料工具</h3>
+    <p><strong>技術</strong>：Python, SQLite, LINE API
+    <strong>版本</strong>：v1.4.0</p>
+    <p>LINE 對話管理與 AI 訓練資料工具鏈，parse_chat_text
+    完全重構（Round 5）：</p>
+    <ul>
+    <li><strong>7,608 輪對話</strong>訓練資料已整理，供 LLM fine-tuning
+    使用</li>
+    <li><code>lc export</code> 輸出標準訓練格式（question / answer
+    對）</li>
+    <li>143 個測試全部通過（v1.4.0 main 4a877d3）</li>
+    <li>LINE 媒體佔位修復：圖片 / 貼圖不帶括號，避免訓練資料污染</li>
+    </ul>
+    <hr />
+    <h3 id="內部工具鏈-internal-tooling">內部工具鏈 Internal
+    Tooling</h3>
+    <ul>
+    <li><strong>Neritic CLI</strong> (v3.2.0)：DevOps CLI，PyInstaller
+    binary，Device Code Flow auth，Git Hook 自動 build 整合</li>
+    <li><strong>CommTool (CMC)</strong>：集團統一通訊平台，POP3S/SMTPS +
+    IM，LIDS OAuth 整合，多租戶管理</li>
+    <li><strong>Squid Python SDK</strong>：type-safe API
+    client，Pydantic models，自動 token refresh，pytest 整合覆蓋</li>
+    </ul>
+    <hr />
+    <h2 id="兩層式-cicd-架構---two-tier-cicd-architecture">兩層式 CI/CD
+    架構 - Two-tier CI/CD Architecture</h2>
+    <p><strong>Python 驅動的完整 DevOps Pipeline，5
+    個專案自動化建置部署</strong></p>
+    <h3 id="設計理念-1">設計理念</h3>
+    <p>消除對外部 CI 服務的依賴，用 Git Hooks 實現本地 + Staging
+    兩層自動化：</p>
+    <table>
+    <thead>
+    <tr>
+    <th>層級</th>
+    <th>觸發機制</th>
+    <th>目標環境</th>
+    <th>用途</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>post-commit</strong></td>
+    <td><code>git commit</code></td>
+    <td>Local Docker</td>
+    <td>本地開發驗證</td>
+    </tr>
+    <tr>
+    <td><strong>pre-push</strong></td>
+    <td><code>git push</code></td>
+    <td>Staging Server</td>
+    <td>Staging 整合測試</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="涵蓋專案">涵蓋專案</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>專案</th>
+    <th>本地部署</th>
+    <th>Staging 部署</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Squid API</td>
+    <td>Docker Build → HTTPS</td>
+    <td>Docker Transfer → HTTPS</td>
+    </tr>
+    <tr>
+    <td>MCP Server</td>
+    <td>Docker Build → HTTP</td>
+    <td>Docker Transfer → HTTP</td>
+    </tr>
+    <tr>
+    <td>LIDS</td>
+    <td>Docker Build → HTTP/HTTPS</td>
+    <td>Docker Transfer → HTTP/HTTPS</td>
+    </tr>
+    <tr>
+    <td>Frontend</td>
+    <td>Docker Build → HTTPS</td>
+    <td>neritic deploy → HTTPS</td>
+    </tr>
+    <tr>
+    <td>Neritic CLI</td>
+    <td>PyInstaller → binary</td>
+    <td>Validation only</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="生產環境">生產環境</h3>
+    <ul>
+    <li><strong>GCP Cloud Run</strong>：GitHub Actions
+    觸發，自動部署至生產環境</li>
+    <li><strong>LIDS Secret Rotator</strong>：GCP Cloud Functions，90
+    天自動密鑰輪替</li>
+    </ul>
+    <hr />
+    <h2 id="系統架構總覽---architecture-overview">系統架構總覽 -
+    Architecture Overview</h2>
+    <pre><code>                    [AI Assistants]
+                         |
+              [Anemone LLM Ingress Platform]
+              (WebSocket relay / connector auth)
+                         |
+              [Brain LLM Gateway]
+              (multi-provider routing / per-tenant billing)
+              Claude | Gemini | OpenAI | Modelhub
+                         |
+                    [MCP Server] ←── 40+ Tool Definitions
+                         |
+[Tentacle Frontend] → [BFF] → [Squid API (FastAPI)] → [PostgreSQL]
+                                      |
+                               [Aegis + scikit-learn ML]
+                                      |
+                    [LIDS (OAuth2/OIDC)] ←── Identity Provider
+
+[Neritic CLI] → [Squid API] (Direct REST)
+[CommTool] → Internal Communication
+[Python SDK] → External Developer Access
+[Gitea] → Source Code + Webhook Integration</code></pre>
+    <hr />
+    <h2 id="工作經歷---professional-experience">工作經歷 - Professional
+    Experience</h2>
+    <h3 id="net-engineer--中小企業信用保證基金">.NET Engineer |
+    中小企業信用保證基金</h3>
+    <p><em>2024/05 - 2026/02</em></p>
+    <ul>
+    <li><strong>8
+    人開發團隊</strong>，負責信用保證網路作業系統現代化</li>
+    <li>主導舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor</li>
+    <li>採用微服務架構設計，提升系統擴展性與維護性</li>
+    </ul>
+    <h3 id="公司負責人--總經理--技術架構師--颶風軟體有限公司">公司負責人
+    / 總經理 / 技術架構師 | 颶風軟體有限公司</h3>
+    <p><em>2002 - 至今（24 年）</em></p>
+    <ul>
+    <li>創立並經營軟體開發公司，累積服務 <strong>100+
+    企業客戶</strong></li>
+    <li>主導設計 <strong>Squid 企業級生態系統</strong>（12
+    個生產系統）</li>
+    <li>建立工單驅動開發流程與 140 分評審制度</li>
+    <li>自架 Gitea Git Server — 工單與 Branch 雙向自動化 Hook</li>
+    </ul>
+    <hr />
+    <h2 id="其他技術專案---other-technical-projects">其他技術專案 -
+    Other Technical Projects</h2>
+    <h3
+    id="localidentityserver-lids--oauth2oidc-身份認證伺服器">LocalIdentityServer
+    (LIDS) — OAuth2/OIDC 身份認證伺服器</h3>
+    <ul>
+    <li><strong>技術</strong>：C# ASP.NET Core 8, PostgreSQL, EF Core,
+    Blazor Server</li>
+    <li><strong>功能</strong>：Multi-tenant OAuth2.0 + OIDC Provider,
+    MFA (TOTP/Email/SMS), Break-glass Access, 客製 PKCE patch
+    (v1.26.1)</li>
+    <li><strong>由 Eric 主導架構設計</strong>，與 Squid API
+    深度整合</li>
+    </ul>
+    <h3 id="lifesnap--ios-多人對戰手遊-202306-202404">LifeSnap — iOS
+    多人對戰手遊 (2023/06-2024/04)</h3>
+    <ul>
+    <li><strong>技術</strong>：SwiftUI + SpriteKit + Firebase + CloudKit
+    + ChatGPT API</li>
+    <li><strong>亮點</strong>：整合 ChatGPT AI 聊天功能，已上線 App
+    Store</li>
+    </ul>
+    <hr />
+    <h2 id="學歷---education">學歷 - Education</h2>
+    <ul>
+    <li><strong>東南科技大學</strong> 數位電子系（二專）—
+    第一名畢業</li>
+    <li><strong>內湖高級工業職業學校</strong> —
+    代表學校參加技能競賽，榮獲三等榮譽獎章</li>
+    </ul>
+    <hr />
+    <h2 id="專業能力統計---professional-experience-summary">專業能力統計
+    - Professional Experience Summary</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>專業領域 Field</th>
+    <th>年資 Years</th>
+    <th>主要成就 Key Achievement</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>Python 開發 Python Development</strong></td>
+    <td>8+ 年</td>
+    <td>Brain Gateway / Anemone / Modelhub / Squid API / 4 工具</td>
+    </tr>
+    <tr>
+    <td><strong>AI / LLM Integration</strong></td>
+    <td>3+ 年</td>
+    <td>Brain Gateway / Anemone / Modelhub / MCP 40+ endpoints / Manta
+    Workflow</td>
+    </tr>
+    <tr>
+    <td><strong>集團技術領導 Group Leadership</strong></td>
+    <td>24 年</td>
+    <td>HurricaneGroup 6 子公司、C-suite 副手制</td>
+    </tr>
+    <tr>
+    <td><strong>系統架構 System Architecture</strong></td>
+    <td>18 年</td>
+    <td>Multi-tenant SaaS, OAuth2, Microservices, LLM Gateway</td>
+    </tr>
+    <tr>
+    <td><strong>軟體工程 Software Engineering</strong></td>
+    <td>25 年</td>
+    <td>30+ 生產系統的集團生態系統</td>
+    </tr>
+    <tr>
+    <td><strong>GCP DevOps &amp; CI/CD</strong></td>
+    <td>5 年</td>
+    <td>Cloud Run 19 services, 兩層式 CI/CD, 6 步 DB 流程</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="為什麼選擇我---why-hire-me">為什麼選擇我 - Why Hire Me</h2>
+    <ol type="1">
+    <li><strong>LLM 基礎設施實戰深度</strong>：自建完整 LLM 路由棧 —
+    Brain Gateway（multi-provider routing + per-tenant billing）+
+    Anemone（ingress + WebSocket relay）+ Modelhub（self-hosted
+    model），不是 API wrapper，是生產級平台</li>
+    <li><strong>MCP Protocol 先行者</strong>：40+ 工具端點，AI
+    助手直接操作生產系統，不是 Demo
+    而是真實落地運作中的工程組織核心基礎設施</li>
+    <li><strong>Python 全棧深度</strong>：不只寫腳本，而是用 Python
+    建構完整企業級後端 — FastAPI + SQLAlchemy + Alembic + asyncpg
+    的生產系統</li>
+    <li><strong>工具鏈建構者</strong>：CLI (Neritic)、SDK (Python
+    SDK)、通訊平台 (CommTool)、LC 訓練資料工具 —
+    從需求到交付的完整工具鏈</li>
+    <li><strong>架構思維</strong>：24
+    年技術管理經驗，能從系統全局思考，不只解決單一問題</li>
+    <li><strong>跨語言視野</strong>：Python / C# / TypeScript / Swift
+    多語言經驗，能選擇最合適的技術而非偏好</li>
+    </ol>
+    <hr />
+    <p><em>最後更新：2026 年 5 月</em> <em>此履歷已針對 ATS
+    系統關鍵字強化：Python Architect, AI Engineer, LLM Gateway, FastAPI,
+    MCP, Model Context Protocol, Brain LLM Gateway, Anemone, Modelhub,
+    Multi-provider Routing, Per-tenant Billing, WebSocket, Reverse
+    Connector, Machine Learning, scikit-learn, asyncio, SQLAlchemy,
+    Pydantic, DevOps, CI/CD, Docker, PostgreSQL, OAuth2, Multi-tenant,
+    REST API</em></p>
+
+  </section>
+  <section class="resume-section" id="tab-ai_platform" style="display:none;">
+
+    <h1 id="王英豪---ai-augmented-cto--ai-platform-architect">王英豪 -
+    AI-Augmented CTO &amp; AI Platform Architect</h1>
+    <h2
+    id="built--operates-a-14-agent-ai-engineering-organization--30-production-systems--zero-traditional-engineering-headcount">Built
+    &amp; Operates a 14-Agent AI Engineering Organization | 30+
+    Production Systems | Zero Traditional Engineering Headcount</h2>
+    <hr />
+    <table>
+    <thead>
+    <tr>
+    <th>項目</th>
+    <th>內容</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>姓名</td>
+    <td>王英豪 (WANG YING HAO)</td>
+    </tr>
+    <tr>
+    <td>電話</td>
+    <td>0921-107-206</td>
+    </tr>
+    <tr>
+    <td>信箱</td>
+    <td><a
+    href="mailto:cancleeric@gmail.com"><span>cancleeric@gmail.com</span></a></td>
+    </tr>
+    <tr>
+    <td>期望薪資</td>
+    <td>NT$ 2,400,000 / 年</td>
+    </tr>
+    <tr>
+    <td>工作地點</td>
+    <td>新北市中和區（可配合北部地區工作）</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="the-ai-engineering-organization">The AI Engineering
+    Organization</h2>
+    <p>設計並實際運作一套<strong>雙層 AI
+    代理工程組織</strong>，取代傳統工程人力進行架構決策、CI/CD 部署、QA
+    驗收、法務審查、產品規劃：</p>
+    <pre><code>C-suite Tier（8 個角色）         Manager Tier（16 個角色）
+─────────────────────────────────────────────────────────
+CTO  技術副總長                → dev-manager / infra-manager
+COO  營運副總長                → pmo / release-manager
+CPO  產品副總長                → product-manager / qa-lead
+CBO  商務副總長                → finance-manager / marketing-manager
+CISO 資安長                    → secops-manager / netops-manager
+CoS  幕僚長                    → ea / comms-manager
+Legal 法務顧問                 → contract-counsel / compliance-counsel
+CDO  資料長                    → db-architect / db-ops</code></pre>
+    <p><strong>Agents execute real production actions via Claude Code
+    tool-calling:</strong></p>
+    <ul>
+    <li><code>git commit</code> / <code>git push</code> — version
+    control and branching</li>
+    <li><code>gcloud run deploy</code> — Cloud Run production
+    deployment</li>
+    <li>Playwright E2E — automated UI acceptance testing</li>
+    <li>Gitea issue creation — ticket and work order management</li>
+    <li>Database migration — Alembic / EF Core with 6-step change
+    protocol</li>
+    </ul>
+    <p><strong>Result: Delivered equivalent output of a 14+ person
+    engineering organization through AI-augmented execution — 30+
+    integrated production systems, 19 GCP Cloud Run services, 6
+    subsidiary companies.</strong></p>
+    <hr />
+    <h2 id="ai-infrastructure-built">AI Infrastructure Built</h2>
+    <h3 id="brain--llm-gateway--billing-center">Brain — LLM Gateway
+    &amp; Billing Center</h3>
+    <ul>
+    <li>Multi-provider routing engine across <strong>Claude / Gemini /
+    OpenAI / Modelhub</strong> self-hosted model</li>
+    <li>Per-tenant token metering and quota enforcement: each of 6
+    subsidiaries billed independently via Superadmin Console</li>
+    <li>Dynamic provider selection: routes low-complexity queries to
+    Modelhub, complex reasoning to commercial LLMs</li>
+    <li>Serves as the single LLM entry point for all 14 AI agents and
+    all client-facing AI features</li>
+    <li>Three-service architecture: brain-api (LLM proxy) / brain-cloud
+    (external relay) / brain-console (billing management UI)</li>
+    </ul>
+    <h3 id="anemone--production-llm-ingress">Anemone — Production LLM
+    Ingress</h3>
+    <ul>
+    <li>WebSocket relay session management: LLM token streaming without
+    buffering full response in memory</li>
+    <li>Reverse connector authentication: external connectors initiate
+    outbound connection, eliminating inbound firewall exposure</li>
+    <li>Compliant with group AI routing standards; all external LLM
+    traffic routed through Anemone before Brain</li>
+    <li>Production deployment: <code>anemone-api-production</code> on
+    GCP Cloud Run; 2026-04-30 E2E acceptance passed</li>
+    </ul>
+    <h3 id="mcp-server--ai-to-production-protocol">MCP Server —
+    AI-to-Production Protocol</h3>
+    <ul>
+    <li><strong>40+ tool endpoint definitions</strong> (Squid MCP
+    Server: 43 confirmed tools)</li>
+    <li>AI agents directly create tickets, trigger deployments, update
+    production data via Model Context Protocol</li>
+    <li>Enables AI agents to act as full participants in the engineering
+    workflow, not just advisors</li>
+    <li>OAuth2.0 token authentication with action-level permission
+    control</li>
+    </ul>
+    <h3 id="commtool--inter-agent-communication-protocol">commtool —
+    Inter-Agent Communication Protocol</h3>
+    <ul>
+    <li>Python-based IPC enabling agents to receive task assignments,
+    escalate blockers, coordinate cross-agent workflows</li>
+    <li>Supports POP3S/SMTPS + IM protocols; LIDS OAuth integrated;
+    multi-tenant administration</li>
+    <li>Agents communicate via commtool without requiring human relay
+    for routine task coordination</li>
+    </ul>
+    <hr />
+    <h2 id="ai-training-pipeline">AI Training Pipeline</h2>
+    <h3 id="modelhub--self-hosted-model-platform">Modelhub — Self-Hosted
+    Model Platform</h3>
+    <ul>
+    <li>End-to-end training pipeline: Kaggle dataset ingestion → feature
+    engineering → training → serving</li>
+    <li>Integrated as Brain's secondary LLM provider via standardized
+    provider interface</li>
+    <li>Provider-agnostic routing: Brain routes to Modelhub without
+    upstream code changes</li>
+    <li>Cost-optimized query routing: open-source self-hosted model for
+    low-complexity tasks, commercial API for complex reasoning</li>
+    </ul>
+    <h3 id="aegis-security-scanner--ml-powered-code-analysis">Aegis
+    Security Scanner — ML-Powered Code Analysis</h3>
+    <ul>
+    <li>ML false-positive ranker trained on internal codebase patterns,
+    significantly reducing manual CI review burden</li>
+    <li>tree-sitter AST parsing for blast radius analysis and function
+    signature extraction (PHP + JavaScript WASM)</li>
+    <li>Integrated into CI gate: auto-runs on every PR, flags
+    high-severity patterns for human review</li>
+    <li>scikit-learn anomaly detection (Isolation Forest / Local Outlier
+    Factor) trained on group engineering metrics</li>
+    </ul>
+    <hr />
+    <h2 id="measured-outcomes">Measured Outcomes</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>指標</th>
+    <th>數值</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>AI 副手（C-suite + 經理）</td>
+    <td><strong>14 個</strong></td>
+    </tr>
+    <tr>
+    <td>LLM Provider 整合</td>
+    <td><strong>3 個</strong>（Claude / Gemini / OpenAI）</td>
+    </tr>
+    <tr>
+    <td>MCP 工具端點</td>
+    <td><strong>40+</strong>（AI 直接操作生產系統）</td>
+    </tr>
+    <tr>
+    <td>生產系統</td>
+    <td><strong>30+</strong>（互相整合）</td>
+    </tr>
+    <tr>
+    <td>GCP Cloud Run</td>
+    <td><strong>19 services</strong></td>
+    </tr>
+    <tr>
+    <td>集團子公司</td>
+    <td><strong>6 家</strong></td>
+    </tr>
+    <tr>
+    <td>企業客戶</td>
+    <td><strong>100+</strong></td>
+    </tr>
+    <tr>
+    <td>傳統工程人力</td>
+    <td><strong>0</strong>（創辦人 CTO 以外）</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="platform-engineering-supporting-stack">Platform Engineering
+    Supporting Stack</h2>
+    <p>以下為 AI 組織能夠高效運作的基礎平台：</p>
+    <ul>
+    <li><strong>LIDS</strong>（428 C# 檔案）— OAuth2/OIDC SSO，PKCE 客製
+    patch，MFA，Multi-tenant，9+ 系統接入</li>
+    <li><strong>Hurricane Vault</strong> — 自建 Secret Manager，90+
+    secrets，Audit chain，GCP parity</li>
+    <li><strong>Hurricane Pay</strong> — 集團統一金流，PayPal LIVE，9+
+    tenant 接入（v0.13.0）</li>
+    <li><strong>Wiki.js</strong> — 技術文檔平台，LIDS SSO，Git Storage
+    雙向同步（hurricanesoft/wiki-docs）</li>
+    <li><strong>Gitea</strong> — 自建 Git 平台，LIDS OIDC 整合，客製
+    PKCE patch（v1.26.1）</li>
+    <li><strong>Headscale VPN</strong> — 跨辦公室節點互通，ACL
+    安全鎖定</li>
+    <li><strong>PostgreSQL（統一）</strong> — 集團唯一本機 DB 容器，跨
+    Python / C# / Node 共用</li>
+    </ul>
+    <hr />
+    <h2 id="工作經歷---work-experience">工作經歷 - Work Experience</h2>
+    <h3
+    id="公司負責人--ai-augmented-cto--颶風軟體有限公司--hurricanegroup">公司負責人
+    / AI-Augmented CTO | 颶風軟體有限公司 → HurricaneGroup</h3>
+    <p><em>2002 - 至今（24 年）</em></p>
+    <p>Designed, built, and operates a production AI engineering
+    organization. Founded HurricaneGroup, scaling from a single company
+    to 6 subsidiary companies through AI-augmented development.</p>
+    <p><strong>[AI 工程組織建構]</strong></p>
+    <ul>
+    <li>Architected a two-tier AI agent engineering organization: 8
+    C-suite AI roles (CTO/COO/CPO/CBO/CISO/CoS/Legal/CDO) × 2 manager
+    agents each, executing via Claude Code tool-calling — architecture
+    review, CI/CD deployment, QA validation, compliance drafting, and
+    product roadmap execution all handled by purpose-built AI agents
+    with production-grade tool access</li>
+    <li>Built commtool IPC (inter-agent communication protocol) enabling
+    agents to receive task assignments, escalate blockers, and
+    coordinate cross-agent workflows without human relay; agents
+    autonomously execute git commit, Cloud Run deploy, Playwright E2E,
+    and Gitea issue creation</li>
+    <li>Delivered equivalent output of a 14+ person engineering
+    organization through AI-augmented execution — zero traditional
+    engineering headcount beyond the founding CTO</li>
+    </ul>
+    <p><strong>[AI 基礎設施]</strong></p>
+    <ul>
+    <li>Built Brain LLM Gateway: unified billing center for all 6
+    subsidiaries, per-tenant token quota control, dynamic routing across
+    Claude / Gemini / OpenAI / Modelhub self-hosted model</li>
+    <li>Engineered Anemone LLM ingress platform: WebSocket relay,
+    reverse connector authentication, compliant with group AI routing
+    standards — serving as the production gateway for all external LLM
+    traffic</li>
+    <li>Deployed Modelhub: self-hosted model training platform with
+    Kaggle Pipeline integration, serving as Brain's secondary LLM
+    provider for cost-optimized query routing</li>
+    <li>Implemented MCP Server: 40+ tool endpoint definitions (Squid
+    MCP), AI assistants directly query, create, and update production
+    tickets, deployments, and project data via standardized MCP
+    protocol</li>
+    </ul>
+    <p><strong>[成果]</strong></p>
+    <ul>
+    <li>30+ integrated production systems, 19 GCP Cloud Run services, 6
+    subsidiary companies under unified technical governance, 100+
+    enterprise clients</li>
+    <li>集團統一基礎設施：LIDS（OAuth2/OIDC SSO）/ Hurricane
+    Vault（密鑰管理）/ Hurricane Pay（統一金流）/ Wiki.js（技術文檔）/
+    Gitea（版控）/ Headscale（VPN）</li>
+    </ul>
+    <h3 id="net-engineer--中小企業信用保證基金">.NET Engineer |
+    中小企業信用保證基金</h3>
+    <p><em>2024/05 - 2026/02</em></p>
+    <ul>
+    <li><strong>8
+    人開發團隊</strong>（派遣方編制），負責信用保證網路作業系統現代化</li>
+    <li>主導舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor</li>
+    <li>採用微服務架構設計，提升系統擴展性與維護性</li>
+    <li>支援銀行端信用保證業務系統</li>
+    </ul>
+    <h3 id="首席工程師--東岸互動">首席工程師 | 東岸互動</h3>
+    <p><em>2000/12 - 2001/12</em>（1 年）| 新北市</p>
+    <p>POP
+    線上海報編輯系統獨立開發負責人，從產品企畫到系統上線均由一人負責。
+    消費者在瀏覽器內設計 POP
+    廣告海報，付款後全自動串接印刷廠印製、物流宅配到府。</p>
+    <ul>
+    <li><strong>後端圖像引擎</strong>：整合 Photoshop
+    伺服器端批次處理，支援向量文字渲染與向量圖合成（印刷規格輸出）</li>
+    <li><strong>前端 Web 編輯器</strong>（IE
+    5.x）：即時呼叫後端大量圖庫素材，瀏覽器內排版即時預覽</li>
+    <li><strong>電商整合</strong>：金流串接藍新科技（NewebPay）、印刷廠
+    API 自動推送訂單、物流整合宅配到府</li>
+    <li><strong>技術演進</strong>：ASP / Java / C++ 第一代 → Apache /
+    PHP / MySQL 重構</li>
+    </ul>
+    <hr />
+    <h2 id="教育背景---education">教育背景 - Education</h2>
+    <ul>
+    <li><strong>東南科技大學</strong> 數位電子系（二專）—
+    第一名畢業</li>
+    <li><strong>內湖高級工業職業學校</strong> —
+    代表學校參加技能競賽，榮獲三等榮譽獎章</li>
+    </ul>
+    <hr />
+    <h2 id="核心技術棧---technical-skills">核心技術棧 - Technical
+    Skills</h2>
+    <h3 id="ai--llm-integration">AI / LLM Integration</h3>
+    <p><code>MCP (Model Context Protocol)</code>
+    <code>Anthropic Claude API</code> <code>Google Gemini</code>
+    <code>OpenAI API</code> <code>Brain LLM Gateway（自建計費）</code>
+    <code>Anemone（自建 LLM ingress）</code>
+    <code>Modelhub（自訓模型 + Kaggle Pipeline）</code> <code>RAG</code>
+    <code>LLM Provider Routing</code>
+    <code>Multi-agent Orchestration</code> <code>Tool-calling</code>
+    <code>Prompt Engineering</code></p>
+    <h3 id="程式語言-programming-languages">程式語言 Programming
+    Languages</h3>
+    <p><code>C#</code> <code>Python</code> <code>Java</code>
+    <code>JavaScript</code> <code>TypeScript</code> <code>Swift</code>
+    <code>PHP</code> <code>SQL</code> <code>C++</code>
+    <code>Objective-C</code> <code>Bash</code></p>
+    <h3 id="後端框架-backend-frameworks">後端框架 Backend
+    Frameworks</h3>
+    <p><code>.NET 8</code> <code>ASP.NET Core</code>
+    <code>FastAPI</code> <code>Express.js</code> <code>Fastify</code>
+    <code>Next.js</code> <code>Entity Framework Core</code>
+    <code>SQLAlchemy 2.0</code> <code>Blazor Server</code>
+    <code>Jinja SSR</code> <code>RESTful API</code>
+    <code>WebSocket</code> <code>MCP</code></p>
+    <h3 id="前端框架-frontend-frameworks">前端框架 Frontend
+    Frameworks</h3>
+    <p><code>React 18</code> <code>Next.js</code>
+    <code>TypeScript</code> <code>SwiftUI</code> <code>SpriteKit</code>
+    <code>Vue.js</code></p>
+    <h3 id="資料庫-database-technologies">資料庫 Database
+    Technologies</h3>
+    <p><code>PostgreSQL</code> <code>SQL Server</code>
+    <code>MySQL</code> <code>SQLite</code>
+    <code>Firebase Firestore</code> <code>CloudKit</code>
+    <code>Alembic</code> <code>EF Core Migrations</code>
+    <code>RLS (Row Level Security)</code></p>
+    <h3 id="雲端與-devops-cloud--devops">雲端與 DevOps Cloud &amp;
+    DevOps</h3>
+    <p><code>GCP Cloud Run（19 services）</code> <code>Cloud SQL</code>
+    <code>Cloud Build</code> <code>Artifact Registry</code>
+    <code>GCP Secret Manager</code> <code>Hurricane Vault（自建）</code>
+    <code>Docker</code> <code>Docker Compose</code>
+    <code>Git Hooks CI/CD</code> <code>Gitea Actions</code>
+    <code>Headscale VPN</code></p>
+    <h3 id="認證與安全-authentication--security">認證與安全
+    Authentication &amp; Security</h3>
+    <p><code>OAuth 2.0</code> <code>OpenID Connect (OIDC)</code>
+    <code>PKCE（客製 patch）</code> <code>JWT (RS256)</code>
+    <code>MFA (TOTP/Email/SMS)</code> <code>RBAC</code>
+    <code>AES-256-GCM</code> <code>Audit Logging</code>
+    <code>Aegis Security Scanner（自建 + ML 訓練）</code></p>
+    <h3 id="金流整合-payment-integration">金流整合 Payment
+    Integration</h3>
+    <p><code>PayPal（LIVE + Sandbox）</code> <code>Stripe</code>
+    <code>藍新科技 NewebPay</code>
+    <code>Hurricane Pay（自建集團統一金流）</code></p>
+    <hr />
+    <p><em>最後更新：2026 年 5 月</em> <em>此履歷已針對 ATS
+    系統關鍵字強化：AI-Augmented CTO, AI Platform Architect, Multi-Agent
+    AI, LLM Gateway, MCP Protocol, Model Context Protocol, Tool-calling,
+    Agentic Engineering, AI-driven DevOps, Brain LLM Gateway, Anemone,
+    Modelhub, Multi-provider Routing, AI Workflow Automation, Virtual
+    Engineering Organization, GCP Cloud Run, Multi-tenant SaaS,
+    OAuth2/OIDC</em></p>
+
+  </section>
+  <section class="resume-section" id="tab-fullstack" style="display:none;">
+
+    <h1 id="王英豪---資深全端工程師">王英豪 - 資深全端工程師</h1>
+    <h2
+    id="senior-full-stack-developer--25年軟體工程--react--typescript--nodejs--python--ios">Senior
+    Full-Stack Developer | 25年軟體工程 | React + TypeScript + Node.js +
+    Python + iOS</h2>
+    <hr />
+    <table>
+    <thead>
+    <tr>
+    <th>項目</th>
+    <th>內容</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>姓名</td>
+    <td>王英豪 (WANG YING HAO)</td>
+    </tr>
+    <tr>
+    <td>電話</td>
+    <td>0921-107-206</td>
+    </tr>
+    <tr>
+    <td>信箱</td>
+    <td><a
+    href="mailto:cancleeric@gmail.com"><span>cancleeric@gmail.com</span></a></td>
+    </tr>
+    <tr>
+    <td>期望薪資</td>
+    <td>NT$ 2,400,000 / 年</td>
+    </tr>
+    <tr>
+    <td>工作地點</td>
+    <td>新北市中和區（可配合北部地區工作）</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="專業摘要---professional-summary">專業摘要 - Professional
+    Summary</h2>
+    <p><strong>資深全端工程師 | Next.js + React + Node.js + Python + iOS
+    | 集團技術長</strong></p>
+    <p>擁有 <strong>25 年</strong>軟體工程經驗，涵蓋 Web
+    Frontend、Backend API、Mobile App、SDK 開發。創立並主導
+    <strong>HurricaneGroup（颶風集團）</strong> 6 家子公司、<strong>30+
+    生產系統</strong>、<strong>Cloud Run 19 services</strong>，從
+    Next.js / React 18 / TypeScript SPA、Node.js / Express.js / Fastify
+    BFF、Python FastAPI / .NET 8 / Blazor 後端，到 SwiftUI iOS
+    原生應用，獨立完成多款對外 SaaS 全端開發。</p>
+    <p><strong>集團 8 大對外 SaaS 全端負責</strong>：</p>
+    <ul>
+    <li><strong>Manta v2.16.1</strong> — AI Workflow Canvas（FastAPI +
+    React Canvas + LIDS SSO）</li>
+    <li><strong>Gyre</strong> — 社群內容排程 SaaS（Next.js + Fastify +
+    Python AI service）</li>
+    <li><strong>antique-master-web</strong> — 文創全端（Next.js +
+    FastAPI，167 tests）</li>
+    <li><strong>dagongzai 打工仔</strong> — SaaS（FastAPI + Next.js +
+    Scraper）</li>
+    <li><strong>天機 Tianji</strong> v1.2.2 — 命理 App（FastAPI + Jinja
+    SSR + Hurricane Pay）</li>
+    <li><strong>海螺 Conch</strong> — Multi-tenant 預約 SaaS（FastAPI +
+    RLS + Next.js）</li>
+    <li><strong>Tentacle Frontend / BFF</strong> — 382 個 TSX 檔企業級
+    SPA + Express BFF</li>
+    <li><strong>LifeSnap iOS</strong> — SwiftUI + SpriteKit 上架 App
+    Store（HurricaneDigital）</li>
+    </ul>
+    <p><strong>核心技術亮點</strong>：</p>
+    <ul>
+    <li><strong>Next.js + React 18 + TypeScript</strong>：5 個前端 SaaS
+    上 Cloud Run，響應式 + i18n + OAuth</li>
+    <li><strong>Node.js / Express.js / Fastify BFF</strong>：Session /
+    OIDC / Rate Limiting / Webhook 整合</li>
+    <li><strong>Python FastAPI 後端</strong>：100+ API
+    端點、Multi-tenant、PostgreSQL RLS、async asyncpg</li>
+    <li><strong>.NET 8 / Blazor</strong>：hurricane-books 帳務
+    SaaS、pxmart-warehouse WMS（810 tests, 92% cov）</li>
+    <li><strong>iOS SwiftUI +
+    SpriteKit</strong>：LifeSnap、dagongzai-ios 上架 App Store</li>
+    </ul>
+    <p>Also designed and operates a <strong>14-agent AI engineering
+    organization</strong>: agents execute full-stack deployment
+    workflows via tool-calling — from frontend build (Webpack/Rollup) to
+    Cloud Run deploy, Playwright E2E acceptance, and Gitea issue
+    tracking. Brain LLM Gateway and MCP Server (40+ endpoints) serve as
+    the AI infrastructure layer.</p>
+    <hr />
+    <h2 id="核心技術棧---core-technical-skills">核心技術棧 - Core
+    Technical Skills</h2>
+    <h3 id="frontend-前端技術">Frontend 前端技術</h3>
+    <p><code>React 18</code> <code>TypeScript 5</code>
+    <code>JavaScript (ES6+)</code> <code>Webpack 5</code>
+    <code>Bootstrap 5</code> <code>Sass/SCSS</code> <code>HTML5</code>
+    <code>CSS3</code> <code>React Router 6</code> <code>Chart.js</code>
+    <code>react-window</code> <code>oidc-client-ts</code>
+    <code>Jest</code> <code>Playwright</code> <code>Cypress</code></p>
+    <h3 id="backend-後端技術">Backend 後端技術</h3>
+    <p><code>Node.js 20</code> <code>Express.js</code>
+    <code>Python FastAPI</code> <code>C# ASP.NET Core 8</code>
+    <code>Blazor Server</code> <code>SQLAlchemy 2.0</code>
+    <code>Entity Framework Core</code></p>
+    <h3 id="mobile-行動開發">Mobile 行動開發</h3>
+    <p><code>Swift</code> <code>SwiftUI</code> <code>SpriteKit</code>
+    <code>UIKit</code> <code>Combine</code> <code>Core Data</code>
+    <code>Firebase SDK</code> <code>CloudKit</code></p>
+    <h3 id="資料庫-database">資料庫 Database</h3>
+    <p><code>PostgreSQL</code> <code>SQL Server</code>
+    <code>MySQL</code> <code>SQLite</code>
+    <code>Firebase Firestore</code></p>
+    <h3 id="支付與第三方整合">支付與第三方整合</h3>
+    <p><code>Stripe</code> <code>PayPal (Braintree)</code>
+    <code>SendGrid</code> <code>Twilio</code> <code>ChatGPT API</code>
+    <code>Google AdMob</code></p>
+    <h3 id="devops--工具">DevOps &amp; 工具</h3>
+    <p><code>Docker</code> <code>Git</code> <code>GitHub Actions</code>
+    <code>Google Cloud Run</code> <code>Webpack</code>
+    <code>Rollup</code> <code>Jest</code> <code>Playwright</code>
+    <code>Cypress</code></p>
+    <h3 id="認證與安全">認證與安全</h3>
+    <p><code>OAuth 2.0</code> <code>OpenID Connect (OIDC)</code>
+    <code>JWT (RS256)</code> <code>MFA (TOTP/Email/SMS)</code>
+    <code>RBAC</code> <code>BCrypt</code></p>
+    <hr />
+    <h2 id="重點專案經歷---key-projects">重點專案經歷 - Key
+    Projects</h2>
+    <h3 id="1-tentacle-frontend--企業級-web-應用-202506---至今">1.
+    Tentacle Frontend — 企業級 Web 應用 (2025/06 - 至今)</h3>
+    <p><strong>角色</strong>：Full-Stack Developer |
+    <strong>規模</strong>：382 TypeScript/TSX 檔案, 891 MB</p>
+    <p><strong>技術棧</strong>：React 18.3, TypeScript 5.1+, Webpack 5,
+    Bootstrap 5.3, Sass/SCSS, React Router 6</p>
+    <p><strong>核心功能</strong>：</p>
+    <ul>
+    <li><strong>Dashboard 儀表板</strong>：Chart.js 資料視覺化、即時 KPI
+    指標顯示</li>
+    <li><strong>需求與專案管理 UI</strong>：完整 CRUD
+    操作、篩選排序、工單狀態流程管理</li>
+    <li><strong>OIDC 認證整合</strong>：oidc-client-ts 實作 OpenID
+    Connect 登入/登出/Token 管理</li>
+    <li><strong>支付整合</strong>：Stripe (@stripe/react-stripe-js) +
+    PayPal (@paypal/react-paypal-js) 雙金流</li>
+    <li><strong>Virtual Scrolling</strong>：react-window
+    實現萬筆資料高效能虛擬化列表</li>
+    <li><strong>Responsive Design</strong>：Bootstrap 5.3 + Sass/SCSS
+    響應式設計，支援多裝置</li>
+    </ul>
+    <p><strong>測試與品質</strong>：</p>
+    <ul>
+    <li>Jest 單元測試 + Playwright E2E + Cypress E2E</li>
+    <li>測試覆蓋率門檻：80%</li>
+    <li>Git Hooks 自動化建置：post-commit → Docker build → HTTPS
+    Local</li>
+    </ul>
+    <hr />
+    <h3 id="2-tentacle-bff--backend-for-frontend-中間層-2024---至今">2.
+    Tentacle BFF — Backend for Frontend 中間層 (2024 - 至今)</h3>
+    <p><strong>角色</strong>：Full-Stack Developer</p>
+    <p><strong>技術棧</strong>：Node.js 20, Express.js 4.22, TypeScript
+    5.9</p>
+    <p><strong>核心功能</strong>：</p>
+    <ul>
+    <li><strong>Session 管理</strong>：express-session + connect-redis
+    安全 Session 儲存</li>
+    <li><strong>OIDC 整合</strong>：openid-client + jose (JWT)
+    實現伺服器端認證流程</li>
+    <li><strong>Rate Limiting</strong>：express-rate-limit 保護 API
+    端點不被濫用</li>
+    <li><strong>安全性中介層</strong>：helmet (HTTP Security Headers) +
+    cors (Cross-Origin 控制)</li>
+    <li><strong>API Proxy &amp; Aggregation</strong>：聚合後端多個微服務
+    API，簡化 Frontend 呼叫</li>
+    </ul>
+    <p><strong>架構特色</strong>：</p>
+    <ul>
+    <li>BFF Pattern 分離關注點：Frontend 只需面對單一 BFF 端點</li>
+    <li>伺服器端 Token 管理，避免 JWT 暴露在瀏覽器</li>
+    <li>統一錯誤處理與回應格式</li>
+    </ul>
+    <hr />
+    <h3 id="3-squid-js-sdk--typescript-sdk-開發-202412---至今">3. Squid
+    JS SDK — TypeScript SDK 開發 (2024/12 - 至今)</h3>
+    <p><strong>角色</strong>：SDK Developer |
+    <strong>版本</strong>：0.3.0</p>
+    <p><strong>技術棧</strong>：TypeScript 5.4, Rollup (Bundler),
+    cross-fetch, Jest, TypeDoc</p>
+    <p><strong>核心功能</strong>：</p>
+    <ul>
+    <li><strong>雙認證模式</strong>：支援 JWT Token + API Key
+    兩種認證方式</li>
+    <li><strong>ESM + CJS</strong>：同時輸出 ES Module 與 CommonJS
+    格式，跨環境通用</li>
+    <li><strong>100% 測試覆蓋率</strong>：Jest 完整覆蓋所有 API
+    方法與邊界條件</li>
+    <li><strong>TypeDoc 文件</strong>：自動產生完整 API 文件</li>
+    <li><strong>跨平台相容</strong>：Browser + Node.js
+    雙環境支援（cross-fetch）</li>
+    </ul>
+    <p><strong>品質管理</strong>：</p>
+    <ul>
+    <li>Git post-commit Hook 自動執行 <code>npm run build</code></li>
+    <li>嚴格 TypeScript 類型檢查</li>
+    <li>版本號自動管理腳本</li>
+    </ul>
+    <hr />
+    <h3 id="4-lifesnap-ios--社交遊戲平台-202306---202404">4. LifeSnap
+    iOS — 社交遊戲平台 (2023/06 - 2024/04)</h3>
+    <p><strong>角色</strong>：iOS Developer | <strong>團隊</strong>：3
+    人 | <strong>狀態</strong>：已上線 App Store</p>
+    <p><strong>技術棧</strong>：Swift, SwiftUI, SpriteKit, UIKit,
+    Combine, Core Data</p>
+    <p><strong>後端整合</strong>：Firebase Auth, Firestore, Storage,
+    Cloud Messaging (FCM), CloudKit</p>
+    <p><strong>核心功能</strong>：</p>
+    <ul>
+    <li><strong>即時多人對戰</strong>：SpriteKit
+    遊戲引擎，多米諾骨牌對戰遊戲</li>
+    <li><strong>ChatGPT AI 聊天</strong>：整合 OpenAI API 實現 AI
+    聊天助手</li>
+    <li><strong>社交系統</strong>：好友系統、即時通訊、虛擬貨幣與商店</li>
+    <li><strong>廣告整合</strong>：Google AdMob 橫幅廣告 + 獎勵廣告</li>
+    </ul>
+    <p><strong>架構設計</strong>：MVVM + Protocol-Oriented Design</p>
+    <p><strong>專案規模</strong>：399 個 Swift 檔案, 1.6 GB</p>
+    <hr />
+    <h3 id="5-sta-組織綜合管理平台-201902---202102">5. STA
+    組織綜合管理平台 (2019/02 - 2021/02)</h3>
+    <p><strong>角色</strong>：Full-Stack Developer |
+    <strong>團隊</strong>：5 人</p>
+    <p><strong>技術棧</strong>：PHP CodeIgniter (HMVC), jQuery,
+    HTML/CSS, MySQL, Apache</p>
+    <p><strong>業務成果</strong>：</p>
+    <ul>
+    <li>服務 <strong>5,000+ 學員</strong>（中華民國游泳救生協會）</li>
+    <li>線上報名率提升 <strong>80%</strong></li>
+    <li>行政作業時間減少 <strong>60%</strong></li>
+    </ul>
+    <p><strong>核心功能</strong>：</p>
+    <ul>
+    <li>課程管理與即時報名系統</li>
+    <li>15+ 種營運報表與 PDF 自動產生</li>
+    <li>會員管理與資格認證系統</li>
+    </ul>
+    <hr />
+    <h3 id="6-squid-api--企業級後端-api-202501---至今">6. Squid API —
+    企業級後端 API (2025/01 - 至今)</h3>
+    <p><strong>角色</strong>：Full-Stack Developer（同時開發 Frontend +
+    Backend）</p>
+    <p><strong>技術棧</strong>：Python FastAPI, PostgreSQL, SQLAlchemy
+    2.0, Alembic</p>
+    <p><strong>規模</strong>：50+ 資料表, 100+ API 端點, 1,076 個 Python
+    檔案</p>
+    <p><strong>核心功能</strong>：</p>
+    <ul>
+    <li>Multi-tenant SaaS 架構（多租戶隔離）</li>
+    <li>分層架構：API Service → BAL → CORL → DAL</li>
+    <li>JWT + OAuth 2.0 認證整合</li>
+    <li>Stripe / PayPal 支付整合</li>
+    <li>WebSocket 即時通訊</li>
+    <li>Prometheus + OpenTelemetry 監控</li>
+    </ul>
+    <p><strong>全端能力展現</strong>：獨立完成從 React Frontend →
+    Node.js BFF → Python Backend 的完整技術棧</p>
+    <hr />
+    <h3
+    id="7-localidentityserver-lids--oauth2oidc-身份認證服務-202411---至今">7.
+    LocalIdentityServer (LIDS) — OAuth2/OIDC 身份認證服務 (2024/11 -
+    至今)</h3>
+    <p><strong>技術棧</strong>：C# ASP.NET Core 8, PostgreSQL, Entity
+    Framework Core, Blazor Server</p>
+    <p><strong>核心功能</strong>：</p>
+    <ul>
+    <li>自建 OAuth 2.0 / OpenID Connect Provider</li>
+    <li>Multi-tenant 身份管理</li>
+    <li>MFA 多因素認證（TOTP, Email, SMS）</li>
+    <li>Blazor Server 管理後台 UI</li>
+    <li>JWT RS256 Token 簽發與驗證</li>
+    </ul>
+    <hr />
+    <h3 id="8-lifesnapadmin--firebase-後台管理系統-202403---202412">8.
+    LifeSnapAdmin — Firebase 後台管理系統 (2024/03 - 2024/12)</h3>
+    <p><strong>角色</strong>：獨立開發 | <strong>總工時</strong>：656+
+    小時 | <strong>8 階段完成</strong></p>
+    <p><strong>技術棧</strong>：C# .NET 9.0, Blazor Server, Firebase
+    Admin SDK, Bootstrap 5</p>
+    <p><strong>完成功能</strong>：</p>
+    <ul>
+    <li>Firebase Authentication
+    用戶管理（列表、啟停用、搜尋、批量操作、匯出）</li>
+    <li>Firestore 資料庫管理（集合瀏覽、文檔
+    CRUD、視覺化查詢建構器）</li>
+    <li>Firebase Storage 檔案管理（樹狀瀏覽、Drag &amp; Drop
+    上傳、圖片預覽）</li>
+    <li>統計分析儀表板（Chart.js、DAU/MAU、留存率、漏斗分析）</li>
+    <li>推播通知管理（FCM 整合、排程發送、A/B 測試）</li>
+    <li>系統管理（權限管理、稽核日誌、備份還原、系統監控）</li>
+    </ul>
+    <hr />
+    <h2 id="其他專案經歷---other-projects">其他專案經歷 - Other
+    Projects</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>專案</th>
+    <th>技術</th>
+    <th>說明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>Squid Python SDK</strong></td>
+    <td>Python, Pydantic, PyJWT</td>
+    <td>API 客戶端 SDK，PyPI 發布</td>
+    </tr>
+    <tr>
+    <td><strong>MCP Server</strong></td>
+    <td>TypeScript, Express.js</td>
+    <td>AI 工具整合（Model Context Protocol）</td>
+    </tr>
+    <tr>
+    <td><strong>Neritic CLI</strong></td>
+    <td>Python Click, PyInstaller</td>
+    <td>工單管理 + Docker 遠端部署 CLI 工具</td>
+    </tr>
+    <tr>
+    <td><strong>CommTool</strong></td>
+    <td>Python</td>
+    <td>統一通訊平台（IM + Email 多頻道）</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="早期專案">早期專案</h3>
+    <table>
+    <thead>
+    <tr>
+    <th>時期</th>
+    <th>專案</th>
+    <th>技術</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>2015-2016</td>
+    <td>德州撲克遊戲平台</td>
+    <td>Delphi</td>
+    </tr>
+    <tr>
+    <td>2012-2013</td>
+    <td>太陽能發電監測系統</td>
+    <td>PHP, MySQL</td>
+    </tr>
+    <tr>
+    <td>2004-2008</td>
+    <td>車載娛樂系統（多家車廠）</td>
+    <td>C++ MFC, WinCE</td>
+    </tr>
+    <tr>
+    <td>2001-2002</td>
+    <td>PDA 應用軟體</td>
+    <td>C++ MFC, WinCE</td>
+    </tr>
+    <tr>
+    <td>2000-2001</td>
+    <td>Web 海報編輯器（金流/印刷串接）</td>
+    <td>ASP, Java, C++</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="工作經歷---professional-experience">工作經歷 - Professional
+    Experience</h2>
+    <h3 id="net-engineer--中小企業信用保證基金">.NET Engineer |
+    中小企業信用保證基金</h3>
+    <p><em>2024/05 - 2026/02 | 8 人開發團隊</em></p>
+    <ul>
+    <li>主導舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor</li>
+    <li>直保線上填報系統全新開發 (.NET 5)</li>
+    <li>支援銀行端信用保證業務系統</li>
+    <li>採用微服務架構設計，提升系統擴展性與維護性</li>
+    </ul>
+    <h3 id="公司負責人--總經理--技術架構師--颶風軟體有限公司">公司負責人
+    / 總經理 / 技術架構師 | 颶風軟體有限公司</h3>
+    <p><em>2002 - 至今（24 年）</em></p>
+    <ul>
+    <li>創立並經營軟體開發公司，累積服務 <strong>100+
+    企業客戶</strong></li>
+    <li>管理 <strong>11 人跨職能技術團隊</strong>，負責技術培訓與 Code
+    Review</li>
+    <li>主導設計 Squid 企業級生態系統（12 個生產系統）</li>
+    <li>建立兩層式 CI/CD 架構（Git Hooks post-commit + pre-push）</li>
+    <li>建立工單驅動開發流程與 140 分評審制度</li>
+    </ul>
+    <hr />
+    <h2 id="學歷---education">學歷 - Education</h2>
+    <ul>
+    <li><strong>東南科技大學</strong> 數位電子系（二專）—
+    第一名畢業</li>
+    <li><strong>內湖高級工業職業學校</strong> —
+    代表學校參加技能競賽，榮獲三等榮譽獎章</li>
+    </ul>
+    <hr />
+    <h2 id="專業經驗統計---professional-experience-summary">專業經驗統計
+    - Professional Experience Summary</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>專業領域</th>
+    <th>年資</th>
+    <th>主要成就</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>Full-Stack Development 全端開發</strong></td>
+    <td>25 年</td>
+    <td>Next.js / React / Node.js / Python / .NET / iOS 完整技術棧</td>
+    </tr>
+    <tr>
+    <td><strong>集團技術領導 Group Leadership</strong></td>
+    <td>24 年</td>
+    <td>HurricaneGroup 6 子公司，30+ 生產系統，Cloud Run 19
+    services</td>
+    </tr>
+    <tr>
+    <td><strong>System Architecture 系統架構</strong></td>
+    <td>18 年</td>
+    <td>Multi-tenant SaaS / OAuth2 / LLM Gateway / 集團統一基建</td>
+    </tr>
+    <tr>
+    <td><strong>Frontend Development 前端開發</strong></td>
+    <td>8 年</td>
+    <td>Next.js + React 18 + TypeScript 企業級 SPA × 5</td>
+    </tr>
+    <tr>
+    <td><strong>Mobile Development 行動開發</strong></td>
+    <td>3+ 年</td>
+    <td>SwiftUI + SpriteKit，App Store 上架（LifeSnap /
+    dagongzai-ios）</td>
+    </tr>
+    <tr>
+    <td><strong>企業客戶服務</strong></td>
+    <td>24 年</td>
+    <td>100+ 企業客戶</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="自我優勢---key-strengths">自我優勢 - Key Strengths</h2>
+    <ol type="1">
+    <li><strong>真正的全端能力</strong>：獨立完成從 React Frontend →
+    Node.js BFF → Python Backend → TypeScript SDK
+    的完整產品線，不是只懂一端</li>
+    <li><strong>企業級專案經驗</strong>：382 個 TSX 檔案的大型 React
+    應用、50+ 資料表的 Backend API，具備處理複雜商業邏輯的能力</li>
+    <li><strong>多語言技術棧</strong>：TypeScript / Python / C# / Swift
+    / PHP，根據場景選擇最適合的技術</li>
+    <li><strong>從零到上線</strong>：LifeSnap iOS 遊戲上線 App
+    Store、Squid 平台 Cloud Run 生產環境，具備完整的產品交付經驗</li>
+    <li><strong>測試驅動品質</strong>：100% SDK 測試覆蓋率、80% Frontend
+    覆蓋率門檻、三階段測試流程</li>
+    </ol>
+    <hr />
+    <p><em>最後更新：2026 年 2 月</em> <em>此履歷已針對 ATS
+    系統關鍵字強化：Full-Stack Developer, React, TypeScript, Node.js,
+    Express.js, iOS, SwiftUI, Frontend Engineer, Senior Developer,
+    Python FastAPI, SDK Development</em></p>
+
+  </section>
+  <section class="resume-section" id="tab-ios" style="display:none;">
+
+    <h1 id="王英豪---資深-ios-工程師--行動應用架構師">王英豪 - 資深 iOS
+    工程師 / 行動應用架構師</h1>
+    <h2
+    id="senior-ios-engineer--mobile-app-architect--25年軟體工程經驗--ios-遊戲--應用開發">Senior
+    iOS Engineer &amp; Mobile App Architect | 25年軟體工程經驗 | iOS
+    遊戲 &amp; 應用開發</h2>
+    <hr />
+    <table>
+    <thead>
+    <tr>
+    <th>項目</th>
+    <th>內容</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>姓名</td>
+    <td>王英豪 (WANG YING HAO)</td>
+    </tr>
+    <tr>
+    <td>電話</td>
+    <td>0921-107-206</td>
+    </tr>
+    <tr>
+    <td>信箱</td>
+    <td><a
+    href="mailto:cancleeric@gmail.com"><span>cancleeric@gmail.com</span></a></td>
+    </tr>
+    <tr>
+    <td>期望薪資</td>
+    <td>NT$ 2,400,000 / 年</td>
+    </tr>
+    <tr>
+    <td>工作地點</td>
+    <td>新北市中和區（可配合北部地區工作）</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="專業摘要---professional-summary">專業摘要 - Professional
+    Summary</h2>
+    <p><strong>資深 iOS 工程師 | 行動應用架構師 |
+    集團技術長</strong></p>
+    <p>擁有 <strong>25 年</strong>軟體工程經驗與 <strong>24
+    年</strong>技術管理實務，專精 iOS 原生應用與遊戲開發。獨立設計並開發
+    <strong>LifeSnap</strong> — 多人線上骨牌對戰遊戲 App，涵蓋 SpriteKit
+    遊戲引擎、SwiftUI 介面、Firebase 即時後端、StoreKit 內購、ChatGPT AI
+    整合、CloudKit 同步、推播通知，App Store 已上架。</p>
+    <p>主導 <strong>LifeCrypto</strong> 獨立 App 拆分（從 LifeSnap
+    解耦，Clean Architecture + Repository Pattern），同時開發
+    <strong>LifeSnapAdmin</strong> — C# Blazor Server 後台（117 C#
+    檔、800+ 單元測試）。</p>
+    <p><strong>集團行動端產品線（2026）</strong>：</p>
+    <ul>
+    <li><strong>LifeSnap</strong> — SwiftUI + SpriteKit
+    多人遊戲（HurricaneDigital）</li>
+    <li><strong>LifeCrypto</strong> — 加密貨幣追蹤（Clean
+    Architecture）</li>
+    <li><strong>dagongzai-ios</strong> — 打工仔行動端（HurricanePrime
+    SaaS 配套）</li>
+    <li><strong>LifeSnapAdmin</strong> — Blazor Server 後台 + iOS
+    配對</li>
+    </ul>
+    <p>創立並主導 <strong>HurricaneGroup（颶風集團）</strong> 6
+    家子公司、<strong>30+ 生產系統</strong>、<strong>Cloud Run 19
+    services</strong>，建立 C-suite 副手制虛擬高管團隊架構。</p>
+    <p>Also designed a <strong>14-agent AI engineering
+    organization</strong> for group-level development — enabling solo
+    iOS development with AI-assisted QA, deployment coordination, and
+    product planning.</p>
+    <hr />
+    <h2 id="ios-核心技術棧---ios-technical-skills">iOS 核心技術棧 - iOS
+    Technical Skills</h2>
+    <h3 id="apple-開發生態系">Apple 開發生態系</h3>
+    <p><code>Swift</code> <code>SwiftUI</code> <code>UIKit</code>
+    <code>SpriteKit</code> <code>GameplayKit</code>
+    <code>StoreKit</code> <code>CloudKit</code> <code>Core Data</code>
+    <code>Combine</code> <code>async/await</code> <code>Xcode</code>
+    <code>Instruments</code></p>
+    <h3 id="架構模式-architecture-patterns">架構模式 Architecture
+    Patterns</h3>
+    <p><code>MVVM</code> <code>Clean Architecture</code>
+    <code>Repository Pattern</code> <code>Coordinator Pattern</code>
+    <code>Dependency Injection</code>
+    <code>Protocol-Oriented Programming</code></p>
+    <h3 id="遊戲開發-game-development">遊戲開發 Game Development</h3>
+    <p><code>SpriteKit</code> <code>SKScene</code> <code>SKNode</code>
+    <code>SKAction</code> <code>SKPhysicsBody</code>
+    <code>GameplayKit</code> <code>粒子系統</code> <code>場景管理</code>
+    <code>動畫系統</code> <code>音效管理</code></p>
+    <h3 id="後端與雲端整合">後端與雲端整合</h3>
+    <p><code>Firebase Authentication</code>
+    <code>Firebase Firestore</code> <code>Firebase Storage</code>
+    <code>Firebase Cloud Messaging</code> <code>CloudKit</code>
+    <code>REST API</code> <code>WebSocket</code></p>
+    <h3 id="工具與-cicd">工具與 CI/CD</h3>
+    <p><code>Xcode 16</code> <code>XCTest</code>
+    <code>GitHub Actions</code> <code>TestFlight</code>
+    <code>App Store Connect</code> <code>CocoaPods</code>
+    <code>Swift Package Manager</code> <code>Git</code></p>
+    <h3 id="跨平台與後端">跨平台與後端</h3>
+    <p><code>C#</code> <code>.NET 9</code> <code>Blazor Server</code>
+    <code>Python</code> <code>FastAPI</code> <code>Docker</code>
+    <code>PostgreSQL</code> <code>GCP Cloud Run</code></p>
+    <hr />
+    <h2 id="核心專案lifesnap--多人線上骨牌遊戲">核心專案：LifeSnap —
+    多人線上骨牌遊戲</h2>
+    <p><strong>角色</strong>：獨立開發者 / iOS 架構師 | 2023/06 - 至今 |
+    App Store 已上架</p>
+    <p>從零設計並開發的完整 iOS 遊戲應用，包含 <strong>1,545 個 Swift
+    檔案</strong>，涵蓋以下核心系統：</p>
+    <h3 id="遊戲引擎spritekit">遊戲引擎（SpriteKit）</h3>
+    <ul>
+    <li>基於 SpriteKit 建構完整骨牌遊戲引擎，支援 Block、Draw、All 5's
+    三種經典模式</li>
+    <li>自建場景管理架構：MainMenuScene → GameScene → GameCoverScene →
+    LeaderboardScene</li>
+    <li>實作自訂 UI
+    元件系統：AnimatedSKNode、PrimeStackNode（HStack/VStack）、ButtonNode、TextLabel</li>
+    <li>金幣動畫系統（CoinAnimationHelper）— 粒子效果與貝茲曲線移動</li>
+    <li>音效管理器（AudioPlayer）— 背景音樂與遊戲音效即時切換</li>
+    <li>多場景動畫控制：moveInScreen / moveOutScreen 過場動畫架構</li>
+    </ul>
+    <h3 id="swiftui-介面層">SwiftUI 介面層</h3>
+    <ul>
+    <li>主架構採用 SwiftUI + MVVM，自訂
+    TabBar（CusomTabBarView）整合多模組</li>
+    <li>模組化視圖設計：FeedView、ProfileView、MessageView、LifeFateView、WelcomeView</li>
+    <li>AI 聊天整合（AIChatLogView）— 串接 ChatGPT API
+    的即時對話介面</li>
+    <li>好友系統
+    UI：AddNewFriendView、FriendListView、InboxView、ChatLogView</li>
+    <li>啟動動畫（LaunchView）與 Deep Link 處理（URLHandler + Universal
+    Links）</li>
+    </ul>
+    <h3 id="firebase-後端整合">Firebase 後端整合</h3>
+    <ul>
+    <li><strong>Authentication</strong>：Email/密碼登入、第三方登入、帳號管理</li>
+    <li><strong>Firestore</strong>：17 個 Manager
+    類別管理遊戲資料（GameRoomManager、PlayerStatsManager、FriendManager、ChatManager、SubscriptionManager
+    等）</li>
+    <li><strong>Storage</strong>：頭像上傳與遊戲資源管理</li>
+    <li><strong>Cloud
+    Messaging</strong>：推播通知系統（遊戲邀請、好友請求、系統公告）</li>
+    </ul>
+    <h3 id="即時多人對戰系統">即時多人對戰系統</h3>
+    <ul>
+    <li>GameDataCenter — 遊戲狀態即時同步（Firestore Realtime
+    Listeners）</li>
+    <li>GameEventsCenter — 事件驅動架構，處理玩家動作廣播</li>
+    <li>FriendDataCenter — 好友系統資料中心，管理好友請求與配對</li>
+    <li>ObserverManager — 統一觀察者模式管理，避免記憶體洩漏</li>
+    <li>SafeAccessQueue — 執行緒安全佇列，保護共享狀態</li>
+    </ul>
+    <h3 id="商業化功能">商業化功能</h3>
+    <ul>
+    <li>StoreKit 內購系統（StorekitView + StoreKitViewModel）—
+    支援消耗型與訂閱型商品</li>
+    <li>每日任務與獎勵系統（DailyTask Model）</li>
+    <li>邀請碼系統（InviteCodeService）— Deep Link 邀請好友</li>
+    <li>訂閱管理（SubscriptionManager）— 自動續訂與狀態追蹤</li>
+    </ul>
+    <hr />
+    <h2 id="核心專案lifecrypto--加密貨幣追蹤-app">核心專案：LifeCrypto —
+    加密貨幣追蹤 App</h2>
+    <p><strong>角色</strong>：iOS 架構師 | 2025/02 | 從 LifeSnap
+    獨立拆分</p>
+    <p>將 LifeSnap 中的加密貨幣模組獨立為完整 App，展現 iOS
+    模組化架構能力：</p>
+    <ul>
+    <li><strong>Clean Architecture 實踐</strong>：Domain / Data /
+    Presentation 三層分離</li>
+    <li>Repository Pattern — CryptoRepositoriesData
+    統一資料存取介面</li>
+    <li>Firebase Infrastructure 層抽象化（FirebaseCryptoDataManager /
+    Adapter Pattern）</li>
+    <li>即時市場數據：CryptoCoinDataService → REST API 串接即時幣價</li>
+    <li>圖表與視覺化：ChartView 展示歷史價格走勢</li>
+    <li>投資組合管理：PortfolioView + Core Data 本地持久化</li>
+    <li>網路層封裝：NetworkingManager（URLSession + Combine）</li>
+    <li>震動回饋：HapticManager — 提升操作手感</li>
+    </ul>
+    <hr />
+    <h2
+    id="核心專案lifesnapadmin--firebase-後台管理系統">核心專案：LifeSnapAdmin
+    — Firebase 後台管理系統</h2>
+    <p><strong>角色</strong>：全端開發者 | 2025/01 - 2026/02 | C# Blazor
+    Server</p>
+    <p>為 LifeSnap iOS App 開發的完整後台管理系統：</p>
+    <ul>
+    <li><strong>技術棧</strong>：.NET 9 + Blazor Server + Firebase Admin
+    SDK 3.4.0 + Bootstrap 5</li>
+    <li><strong>規模</strong>：117 個 C# 檔案、800+
+    單元測試（xUnit）</li>
+    <li>功能模組：用戶管理、Firestore 資料管理、Storage
+    檔案瀏覽、排程通知、影片處理、用戶行為分析</li>
+    <li>Docker 容器化部署 + GitHub Actions CI/CD</li>
+    <li>LIDS 認證整合（OAuth2/OIDC SSO）</li>
+    <li>完整測試覆蓋：DashboardService、SecurityMonitoring、ErrorTracking、VideoProcessing
+    等模組</li>
+    </ul>
+    <hr />
+    <h2 id="其他技術專案">其他技術專案</h2>
+    <h3 id="dagongzai-ios--打工仔行動端--2026---至今">dagongzai-ios |
+    打工仔行動端 | 2026 - 至今</h3>
+    <ul>
+    <li>SwiftUI + Combine 配對 dagongzai SaaS
+    後端（HurricanePrime）</li>
+    <li>與 dagongzai-api / web-production Cloud Run 服務整合</li>
+    </ul>
+    <h3
+    id="hurricanegroup-集團生態系統--集團技術長--2002---至今">HurricaneGroup
+    集團生態系統 | 集團技術長 | 2002 - 至今</h3>
+    <ul>
+    <li>主導 30+ 生產系統設計，跨 6 家子公司</li>
+    <li>Cloud Run 19 services 統一維運（HurricaneSoft 主責）</li>
+    <li>集團統一基建：LIDS / Hurricane Vault / Hurricane Pay / Brain LLM
+    Gateway / Anemone / Wiki.js / Gitea / Headscale</li>
+    <li>建立 C-suite 副手制虛擬高管團隊架構、140 分評審制度</li>
+    <li>技術棧：Python FastAPI / .NET 8 / React TypeScript / Next.js /
+    Swift / PostgreSQL / Docker / GCP</li>
+    </ul>
+    <h3 id="企業級系統開發經驗2002---至今">企業級系統開發經驗（2002 -
+    至今）</h3>
+    <ul>
+    <li>颶風軟體 → HurricaneGroup 集團負責人 — 24 年技術管理</li>
+    <li>服務 100+ 企業客戶，含信保金融機構</li>
+    <li>熟悉 C++ / Java / C# / Python / JavaScript / Swift / Go / Delphi
+    等 10+ 語言</li>
+    </ul>
+    <hr />
+    <h2 id="工作經歷---work-experience">工作經歷 - Work Experience</h2>
+    <h3 id="颶風軟體有限公司--總經理--技術負責人">颶風軟體有限公司 |
+    總經理 / 技術負責人</h3>
+    <p><strong>2002/10 - 至今</strong>（24 年）| 台北</p>
+    <ul>
+    <li>創立並經營軟體開發公司，主導所有技術架構決策</li>
+    <li>獨立開發 <strong>LifeSnap</strong> iOS 遊戲 App — 已上架 App
+    Store</li>
+    <li>開發 <strong>LifeCrypto</strong> 獨立加密貨幣 App — Clean
+    Architecture 模組拆分</li>
+    <li>開發 <strong>LifeSnapAdmin</strong> 後台管理系統 — C# Blazor
+    Server</li>
+    <li>主導 <strong>Squid 企業級生態系統</strong> — 12 個生產系統</li>
+    <li>信保基金投保系統開發（2024/05 - 2026/02）</li>
+    <li>管理 11 人工程團隊，建立標準化開發流程</li>
+    </ul>
+    <h3 id="米迪亞--軟體工程師--專案經理">米迪亞 | 軟體工程師 /
+    專案經理</h3>
+    <p><strong>2001/12 - 2002/12</strong>（1 年）| 台北</p>
+    <ul>
+    <li>使用 C++ / MFC 開發桌面應用程式</li>
+    <li>專案管理與客戶需求分析</li>
+    </ul>
+    <h3 id="東岸互動--首席工程師">東岸互動 | 首席工程師</h3>
+    <p><strong>2000/12 - 2001/12</strong>（1 年）| 新北市</p>
+    <ul>
+    <li>POP 線上海報編輯系統，獨立完成全端開發（企畫 → 開發 →
+    上線）</li>
+    <li>後端整合 Photoshop
+    伺服器端圖像合成引擎，支援向量文字與向量圖輸出</li>
+    <li>串接金流（藍新科技）、印刷廠
+    API、物流系統；後台供數十位美編日常作業</li>
+    <li>技術：ASP / Java / C++ → Apache / PHP / MySQL（LAMP Stack）</li>
+    </ul>
+    <hr />
+    <h2 id="教育背景---education">教育背景 - Education</h2>
+    <h3 id="東南科技大學--電子工程學系">東南科技大學 | 電子工程學系</h3>
+    <ul>
+    <li><strong>第一名畢業</strong></li>
+    </ul>
+    <h3 id="內湖高級工業職業學校">內湖高級工業職業學校</h3>
+    <ul>
+    <li>代表學校參加競賽</li>
+    <li>榮獲學校頒發<strong>三等榮譽獎章</strong></li>
+    </ul>
+    <hr />
+    <h2 id="專業技能標籤---skill-tags">專業技能標籤 - Skill Tags</h2>
+    <p><code>iOS Development</code> <code>Swift</code>
+    <code>SwiftUI</code> <code>SpriteKit</code> <code>UIKit</code>
+    <code>MVVM</code> <code>Clean Architecture</code>
+    <code>Firebase</code> <code>StoreKit</code> <code>CloudKit</code>
+    <code>Core Data</code> <code>Combine</code> <code>async/await</code>
+    <code>Game Development</code> <code>Multiplayer Gaming</code>
+    <code>Real-time Sync</code> <code>ChatGPT Integration</code>
+    <code>Xcode</code> <code>TestFlight</code> <code>App Store</code>
+    <code>Git</code> <code>CI/CD</code> <code>Docker</code>
+    <code>C#</code> <code>.NET</code> <code>Blazor</code>
+    <code>Python</code> <code>FastAPI</code> <code>PostgreSQL</code>
+    <code>OAuth2/OIDC</code> <code>REST API</code> <code>Agile</code>
+    <code>Team Leadership</code></p>
+    <hr />
+    <p><em>最後更新：2026 年 2 月</em></p>
+
+  </section>
+  <section class="resume-section" id="tab-security" style="display:none;">
+
+    <h1 id="王英豪-wang-ying-hao">王英豪 (WANG YING HAO)</h1>
+    <h2 id="資安架構師--認證系統專家">資安架構師 / 認證系統專家</h2>
+    <p><strong>Security Architect &amp; Identity System Expert | 25
+    年軟體工程 | OAuth2/OIDC/MFA 自建實作</strong></p>
+    <hr />
+    <table>
+    <thead>
+    <tr>
+    <th>項目</th>
+    <th>內容</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>姓名</td>
+    <td>王英豪 (Eric Wang)</td>
+    </tr>
+    <tr>
+    <td>電話</td>
+    <td>0921-107-206</td>
+    </tr>
+    <tr>
+    <td>信箱</td>
+    <td><a
+    href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></td>
+    </tr>
+    <tr>
+    <td>期望薪資</td>
+    <td>NT$ 2,400,000 / 年</td>
+    </tr>
+    <tr>
+    <td>工作地點</td>
+    <td>新北市中和區（可協調北部地區工作）</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="專業摘要">專業摘要</h2>
+    <p><strong>資安架構師 | IAM 設計者 | 集團 Vault 與 PKCE patch
+    主導者</strong></p>
+    <p>具備 25 年軟體工程經驗的資安架構師，專精 Identity &amp; Access
+    Management (IAM) 與集團統一密鑰治理。從零自建完整 OAuth 2.0 / OpenID
+    Connect 身份認證伺服器 <strong>LocalIdentityServer
+    (LIDS)</strong>，涵蓋 Authorization Code + PKCE、Client
+    Credentials、Device Code、Refresh Token Rotation 全流程；實作
+    MFA（TOTP / Email / SMS）；設計 90 天自動密鑰輪替（LIDS Secret
+    Rotator + GCP Cloud Functions）。</p>
+    <p><strong>2026 年集團安全大躍進</strong>：</p>
+    <ul>
+    <li><strong>Hurricane Vault v1.0.0</strong> — 自建 Secret
+    Manager（Audit chain + GCP parity，集團 90+ secrets 統一管理；開發 /
+    CI / CEO token 用 Vault，生產 Cloud Run 用 GCP Secret Manager）</li>
+    <li><strong>gitea-hs PKCE 客製 patch v1.26.1</strong> — 為 LIDS OIDC
+    整合客製 Gitea，client 端送 code_challenge 不污染 provider
+    singleton（已部署）</li>
+    <li><strong>Aegis Security Scanner</strong> — 自建程式碼安全掃描器 +
+    FP ranker ML 訓練（Sprint 21 安全發現持續修復）</li>
+    <li><strong>Headscale VPN ACL</strong> — 集團 VPN 鎖定，只 eric-mac
+    可主動連，其他節點全拒</li>
+    <li><strong>6 步 DB 異動流程</strong> —
+    強制備份→匯出前→執行→匯出後→驗證→紀錄（2026/04/01
+    災情後制度化）</li>
+    <li><strong>集團 19 Cloud Run 服務 IAM 統一治理</strong> — 由
+    HurricaneSoft 維運主責</li>
+    </ul>
+    <p>加密工程實務：BCrypt 密碼雜湊、AES-256-GCM 資料加密、JWT RS256
+    非對稱簽章；Multi-tenant 安全隔離（所有 table 強制 tenant_id）；RBAC
+    + Rate Limiting + Audit Logging + Break-glass
+    緊急存取，建構集團級零信任基礎設施。</p>
+    <p>Also designed and operates a <strong>14-agent AI engineering
+    organization</strong> with CISO-tier AI role overseeing: Aegis ML
+    security scanner (CI gate), 6-step DB change protocol enforcement,
+    Hurricane Vault secret management, and Headscale VPN ACL policy
+    review — all executed via Claude Code tool-calling.</p>
+    <hr />
+    <h2 id="核心技術能力">核心技術能力</h2>
+    <h3 id="identity--access-management">Identity &amp; Access
+    Management</h3>
+    <p>OAuth 2.0, OpenID Connect (OIDC), JWT (RS256/HS256), PKCE, MFA
+    (TOTP/Email/SMS), RBAC, ACL, Dynamic Client Registration, Token
+    Blacklist, Session Management, Refresh Token Rotation</p>
+    <h3 id="cryptography--data-protection">Cryptography &amp; Data
+    Protection</h3>
+    <p>BCrypt, AES-256-GCM, Data Protection Keys, SSL/TLS Certificate
+    Management, Secret Management (Azure Key Vault, GCP Secret
+    Manager)</p>
+    <h3 id="security-infrastructure">Security Infrastructure</h3>
+    <p>OWASP Top 10, Rate Limiting (AspNetCoreRateLimit), Idempotency,
+    Dynamic CORS Policy, Audit Logging, Break-glass Access, Docker
+    Network Isolation, Zero Trust Architecture</p>
+    <h3 id="monitoring--observability">Monitoring &amp;
+    Observability</h3>
+    <p>Prometheus, OpenTelemetry, Sentry, Security Event Logging,
+    Distributed Tracing</p>
+    <h3 id="programming--frameworks">Programming &amp; Frameworks</h3>
+    <p>C#, ASP.NET Core 8, Python, FastAPI, Node.js, TypeScript, React
+    18, Express.js</p>
+    <h3 id="infrastructure--database">Infrastructure &amp; Database</h3>
+    <p>PostgreSQL, Redis, Docker, GCP (Cloud Run, Cloud Functions,
+    Secret Manager, Firestore), GitHub Actions CI/CD</p>
+    <hr />
+    <h2 id="專業年資總覽">專業年資總覽</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>領域</th>
+    <th>年資</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Security Architecture</td>
+    <td>10+ 年</td>
+    </tr>
+    <tr>
+    <td>Identity &amp; Access Management</td>
+    <td>5+ 年（自建 LIDS + Vault + PKCE patch）</td>
+    </tr>
+    <tr>
+    <td>Secret Management（自建 Vault）</td>
+    <td>1+ 年（v1.0.0 上線）</td>
+    </tr>
+    <tr>
+    <td>Security Scanning + ML（Aegis）</td>
+    <td>1+ 年</td>
+    </tr>
+    <tr>
+    <td>集團技術領導 Group Leadership</td>
+    <td>24 年（HurricaneGroup 6 子公司）</td>
+    </tr>
+    <tr>
+    <td>System Architecture</td>
+    <td>18 年</td>
+    </tr>
+    <tr>
+    <td>Software Engineering</td>
+    <td>25 年</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="重點專案經歷">重點專案經歷</h2>
+    <h3 id="1-localidentityserver-lids--企業級身份認證伺服器">1.
+    LocalIdentityServer (LIDS) — 企業級身份認證伺服器</h3>
+    <p><strong>期間</strong>：2024/11 — 現職 |
+    <strong>角色</strong>：後端架構師 / 核心開發者
+    <strong>技術</strong>：ASP.NET Core 8.0, C#, PostgreSQL (Npgsql EF
+    Core), Redis, Blazor Server <strong>規模</strong>：428 個 C#
+    原始碼檔案，1.2 GB 專案</p>
+    <blockquote>
+    <p>這是一套從零打造的完整 Enterprise Identity Provider，不依賴
+    IdentityServer4 或任何第三方 IdP 框架，全部自行設計與實作。</p>
+    </blockquote>
+    <h4 id="authentication--authorization">Authentication &amp;
+    Authorization</h4>
+    <ul>
+    <li>完整 OAuth 2.0 實作：Authorization Code Flow with PKCE、Client
+    Credentials Flow、Device Code Flow、Refresh Token Rotation</li>
+    <li>OpenID Connect Discovery endpoint
+    (<code>.well-known/openid-configuration</code>)</li>
+    <li>JWT RS256 非對稱 Token 簽署與驗證</li>
+    <li>Dynamic Client Registration 動態用戶端註冊</li>
+    <li>Token introspection 與 revocation endpoint</li>
+    </ul>
+    <h4 id="multi-factor-authentication-mfa">Multi-Factor Authentication
+    (MFA)</h4>
+    <ul>
+    <li>TOTP Authenticator App 整合（Otp.NET + QRCoder QR Code
+    產生）</li>
+    <li>Email OTP 驗證（SendGrid 整合）</li>
+    <li>SMS OTP 驗證（Twilio 整合）</li>
+    <li>SuperAdmin MFA 強制政策（資料庫遷移
+    <code>superadmin_mfa_enforcement.sql</code>）</li>
+    <li>每個 Tenant 可獨立設定 MFA 政策</li>
+    </ul>
+    <h4 id="multi-tenant-security-isolation">Multi-tenant Security
+    Isolation</h4>
+    <ul>
+    <li>資料庫層級完整租戶隔離，所有 Table 強制包含
+    <code>tenant_id</code> 欄位</li>
+    <li>Tenant 自助註冊搭配 Invite Code 機制</li>
+    <li>每租戶獨立安全政策（密碼複雜度、MFA 要求、Session
+    過期時間）</li>
+    <li>租戶配額管理（<code>add_tenant_quota_fields.sql</code>）</li>
+    </ul>
+    <h4 id="emergency-access--resilience">Emergency Access &amp;
+    Resilience</h4>
+    <ul>
+    <li>Break-glass
+    緊急存取機制（<code>add_breakglass_access.sql</code>）</li>
+    <li>確保認證系統異常時仍可進行關鍵操作</li>
+    <li>所有 Break-glass 使用記錄完整稽核追蹤</li>
+    </ul>
+    <h4 id="security-infrastructure-1">Security Infrastructure</h4>
+    <ul>
+    <li>Data Protection Keys 密鑰管理機制</li>
+    <li>Dynamic CORS Policy Engine 動態跨域政策引擎</li>
+    <li>Rate Limiting 速率限制（AspNetCoreRateLimit）</li>
+    <li>Azure Key Vault 密鑰管理整合</li>
+    <li>GCP Secret Manager 密鑰管理整合</li>
+    <li>SuperAdmin
+    允許空租戶特殊權限（<code>allow_null_tenantid_for_superadmin.sql</code>）</li>
+    </ul>
+    <h4 id="monitoring--audit">Monitoring &amp; Audit</h4>
+    <ul>
+    <li>Prometheus.NET Metrics 暴露端點</li>
+    <li>OpenTelemetry Distributed Tracing 分散式追蹤</li>
+    <li>Platform Audit Logs
+    平台稽核日誌系統（<code>add_platform_audit_logs.sql</code>）</li>
+    <li>完整 Security Event Logging</li>
+    </ul>
+    <hr />
+    <h3 id="2-lids-secret-rotator--自動化密鑰輪替系統">2. LIDS Secret
+    Rotator — 自動化密鑰輪替系統</h3>
+    <p><strong>期間</strong>：2025 — 現職 |
+    <strong>角色</strong>：架構設計 / 開發
+    <strong>技術</strong>：Node.js 20, TypeScript, GCP Cloud Functions
+    Gen 2, GCP Secret Manager, Firestore</p>
+    <ul>
+    <li>90 天自動輪替週期，支援手動觸發輪替</li>
+    <li>輪替失敗自動驗證與回滾機制（Automatic Validation &amp;
+    Rollback）</li>
+    <li>Firestore Audit Logging 記錄所有輪替事件</li>
+    <li>Slack / Email 通知整合</li>
+    <li>HTTP Trigger + Pub/Sub Trigger 雙觸發模式</li>
+    <li>部署於 GCP Cloud Functions Gen 2，Serverless 架構</li>
+    </ul>
+    <hr />
+    <h3 id="3-squid-api--安全層設計與實作">3. Squid API —
+    安全層設計與實作</h3>
+    <p><strong>期間</strong>：2025/01 — 現職 |
+    <strong>角色</strong>：後端架構師 <strong>技術</strong>：Python,
+    FastAPI, PostgreSQL, Docker, Prometheus, Sentry</p>
+    <ul>
+    <li>JWT Token 管理（PostgreSQL-based Token Blacklist，架構決策捨棄
+    Redis 以降低攻擊面）</li>
+    <li>RBAC 權限控制系統，細粒度 API 存取管理</li>
+    <li>Rate Limiting 與 Idempotency 機制，防止重放攻擊</li>
+    <li>API Key Authentication + OAuth 2.0 整合認證</li>
+    <li>Multi-tenant 資料隔離（50+ 資料表全數包含
+    <code>tenant_id</code>）</li>
+    <li>Prometheus + Sentry Security Monitoring</li>
+    <li>分散式節點認證與協調機制</li>
+    <li>Alembic 資料庫遷移管理，每次遷移包含 Rollback Plan</li>
+    </ul>
+    <hr />
+    <h3 id="4-platform-audit-logging-系統">4. Platform Audit Logging
+    系統</h3>
+    <p><strong>角色</strong>：架構設計
+    <strong>技術</strong>：PostgreSQL, SQL Migration</p>
+    <p>設計並實作企業級平台稽核日誌系統，完整記錄：</p>
+    <ul>
+    <li><strong>Authentication Events</strong>：登入、登出、Token
+    Refresh、MFA 驗證</li>
+    <li><strong>Authorization
+    Decisions</strong>：存取授權與拒絕記錄</li>
+    <li><strong>Administrative
+    Actions</strong>：使用者建立/刪除、租戶管理操作</li>
+    <li><strong>Break-glass Access
+    Events</strong>：緊急存取事件與授權追蹤</li>
+    <li><strong>Secret Rotation Events</strong>：密鑰輪替操作記錄</li>
+    </ul>
+    <hr />
+    <h3 id="5-hurricane-vault--集團自建-secret-managerv100">5. Hurricane
+    Vault — 集團自建 Secret Manager（v1.0.0）</h3>
+    <p><strong>期間</strong>：2026/04 — 至今 |
+    <strong>角色</strong>：架構師 / 主導開發 <strong>技術</strong>：Go,
+    PostgreSQL, GCP Secret Manager parity API</p>
+    <p>集團統一密鑰管理服務，取代純 GCP Secret Manager
+    用於開發與內部工具：</p>
+    <ul>
+    <li><strong>Audit chain</strong>：所有 secret 取用走完整 audit
+    log，可追蹤誰在何時取用什麼版本</li>
+    <li><strong>GCP parity API</strong>：與 GCP Secret Manager API
+    兼容，遷移無痛</li>
+    <li><strong>bind mount 部署</strong>：本機 Docker
+    <code>hurricane-vault-server-dev</code> (port 8930)，集團所有 dev
+    工具走 hvault</li>
+    <li><strong>90+ secrets 治理</strong>：含 dev token、Gitea CEO
+    token、各專案 SA key、API key</li>
+    <li><strong>責任分工</strong>：開發 / CI / CEO token / 副手用 token
+    → Vault；生產 Cloud Run 服務 → GCP Secret Manager</li>
+    </ul>
+    <hr />
+    <h3 id="6-gitea-hs-pkce-客製-patch-v1261">6. Gitea-hs PKCE 客製
+    Patch (v1.26.1)</h3>
+    <p><strong>期間</strong>：2026 — 至今 |
+    <strong>角色</strong>：架構決策 / 客製 patch 維護
+    <strong>技術</strong>：Go (gitea fork), OAuth2 PKCE</p>
+    <p>為 LIDS OIDC 整合客製 Gitea，解決原版 PKCE 實作污染 provider
+    singleton 的問題：</p>
+    <ul>
+    <li><strong>branch</strong>：<code>pkce-on-1.26.1</code>（custom
+    image <code>a7b6f22844</code>）</li>
+    <li><strong>OIDC client 端送 code_challenge</strong>：不污染
+    provider singleton，多 OIDC client 可同時使用</li>
+    <li><strong>AuthURL / Token / ProfileURL
+    mapping</strong>：AuthURL=localhost（瀏覽器），Token/Profile=docker
+    內網</li>
+    <li><strong>生產部署於 .32</strong>（hTech 維運），原
+    hurricanesoft/gitea-hs 已 archived</li>
+    </ul>
+    <hr />
+    <h3 id="7-aegis-security-scanner--ml-fp-ranker">7. Aegis Security
+    Scanner + ML FP Ranker</h3>
+    <p><strong>期間</strong>：2026 — 至今 |
+    <strong>角色</strong>：架構設計 / Python + ML 開發
+    <strong>技術</strong>：Python, ML pipeline (Kaggle), FP ranker
+    training</p>
+    <p>自建程式碼安全掃描器，掃描集團 repo 安全問題；ML
+    模型訓練減少誤報（False Positive）：</p>
+    <ul>
+    <li><strong>aegis-fp-ranker-v3 訓練</strong>（log 已存）</li>
+    <li><strong>aegis-secret-scanner-fp-v1 訓練</strong></li>
+    <li><strong>Sprint 21 安全發現持續修復中</strong>（brain repo branch
+    <code>fix/aegis-s21-security-findings</code>）</li>
+    <li><strong>本機部署</strong>：aegis-daemon-dev (8941) +
+    aegis-docker-proxy-dev</li>
+    </ul>
+    <hr />
+    <h3 id="8-headscale-vpn-acl--集團-vpn-安全鎖定">8. Headscale VPN ACL
+    — 集團 VPN 安全鎖定</h3>
+    <p><strong>期間</strong>：2026 — 至今 |
+    <strong>角色</strong>：架構設計 / 維運
+    <strong>技術</strong>：Headscale (VM
+    <code>lobsterfarm-633f7</code>), ACL JSON</p>
+    <ul>
+    <li>ACL 嚴格限定：只有 eric-mac (100.64.0.3)
+    能主動連，其他節點全拒</li>
+    <li>ACL 在 <code>/etc/headscale/acl.json</code>（VM
+    136.119.59.232）</li>
+    <li>IP 動態 ACL（節點 re-register 後 IP 跳號的處理）</li>
+    <li>跨辦公室節點（辦A/辦B/onano）統一 VPN</li>
+    </ul>
+    <hr />
+    <h3 id="9-6-步-db-異動流程--集團制度化">9. 6 步 DB 異動流程 —
+    集團制度化</h3>
+    <p><strong>期間</strong>：2026/04 — 至今 |
+    <strong>角色</strong>：流程設計 / 強制執行</p>
+    <p>2026/04/01 因 docker-compose down 造成 DB
+    全失（時光機復原），制度化集團 DB 異動 SOP：</p>
+    <pre><code>備份 → 匯出前驗證 → 執行 migration → 匯出後驗證 → 資料驗證 → 紀錄</code></pre>
+    <p>任何 DB 異動（含新建零資料 DB）都必須走 6 步，缺一不可。所有
+    alembic / EF Core migration 強制走此流程。</p>
+    <hr />
+    <h3 id="10-加密與資料保護工程">10. 加密與資料保護工程</h3>
+    <ul>
+    <li><strong>BCrypt</strong> 密碼雜湊（可調整 Work Factor）</li>
+    <li><strong>AES-256-GCM</strong> 靜態資料加密</li>
+    <li><strong>JWT RS256</strong> 非對稱簽章用於 Token</li>
+    <li><strong>SSL/TLS</strong> 憑證管理，所有服務強制 HTTPS</li>
+    <li><strong>Docker Network Isolation</strong>：專屬子網路
+    172.20.0.0/16，容器間命名解析隔離</li>
+    <li><strong>Secret Management</strong>：整合 Azure Key Vault 與 GCP
+    Secret Manager</li>
+    </ul>
+    <hr />
+    <h2 id="工作經歷">工作經歷</h2>
+    <h3 id="net-工程師--信保基金">.NET 工程師 | 信保基金</h3>
+    <p><strong>期間</strong>：2024/05 — 2026/02</p>
+    <p>銀行等級安全合規開發，參與金融機構內部系統維護與安全標準實作。</p>
+    <h3 id="公司負責人--總經理--颶風軟體-hurricanesoft">公司負責人 /
+    總經理 | 颶風軟體 (HurricaneSoft)</h3>
+    <p><strong>期間</strong>：2002 — 現職（24 年）</p>
+    <p>創辦並經營軟體公司，為超過 100 家客戶設計系統安全架構。負責企業級
+    Identity &amp; Access Management、Multi-tenant SaaS 安全架構、CI/CD
+    Pipeline Security（GitHub Actions + Docker）、GCP / Azure
+    雲端安全部署。</p>
+    <hr />
+    <h2 id="其他相關專案">其他相關專案</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>專案</th>
+    <th>安全相關內容</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Tentacle Frontend (React 18)</td>
+    <td>OIDC Client 整合、Secure Session Management、PKCE Flow</td>
+    </tr>
+    <tr>
+    <td>Tentacle BFF (Express.js)</td>
+    <td>Session Security、OIDC Proxy、Helmet Security Headers、CORS
+    Policy</td>
+    </tr>
+    <tr>
+    <td>CommTool</td>
+    <td>安全郵件通訊（POP3S/SMTPS over SSL）、OAuth Token 認證</td>
+    </tr>
+    <tr>
+    <td>LifeSnap iOS</td>
+    <td>Firebase Authentication、CloudKit Security、Biometric Auth</td>
+    </tr>
+    <tr>
+    <td>Neritic CLI</td>
+    <td>Device Code Flow Authentication、macOS Keychain API Key
+    儲存</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="學歷">學歷</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>學校</th>
+    <th>科系</th>
+    <th>備註</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>東南科技大學</td>
+    <td>數位電子系（二專）</td>
+    <td>第一名畢業</td>
+    </tr>
+    <tr>
+    <td>內湖高級工業職業學校</td>
+    <td>—</td>
+    <td>三等榮譽獎章</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr />
+    <h2 id="ats-keywords">ATS Keywords</h2>
+    <p>Security Architect, Information Security Engineer, Identity
+    Management, IAM, OAuth 2.0, OpenID Connect, OIDC, MFA, Multi-Factor
+    Authentication, TOTP, JWT, JSON Web Token, RS256, RBAC, Role-Based
+    Access Control, ACL, OWASP Top 10, Zero Trust, Secret Management,
+    Key Rotation, Audit Logging, Compliance, Penetration Testing, Data
+    Protection, Encryption, AES-256-GCM, BCrypt, SSL/TLS, Certificate
+    Management, Multi-tenant Security, Break-glass Access, Rate
+    Limiting, Token Blacklist, Session Management, PKCE, Docker
+    Security, Cloud Security, GCP, Azure, PostgreSQL, ASP.NET Core, C#,
+    Python, FastAPI, Prometheus, OpenTelemetry, Sentry, CI/CD
+    Security</p>
+    <hr />
+    <p><em>最後更新：2026 年 2 月</em></p>
+
+  </section>
+  </div>
+
+</div>
+
+<script>
+
+function switchTab(tabId) {
+  document.querySelectorAll('.resume-section').forEach(function(s) {
+    s.style.display = 'none';
+  });
+  var section = document.getElementById('tab-' + tabId);
+  if (section) section.style.display = 'block';
+
+  document.querySelectorAll('.topbar__nav a[data-tab]').forEach(function(a) {
+    a.classList.remove('active');
+  });
+  var link = document.querySelector('[data-tab="' + tabId + '"]');
+  if (link) link.classList.add('active');
+
+  document.querySelectorAll('.sidebar-content').forEach(function(s) {
+    s.style.display = 'none';
+  });
+  var sidebar = document.getElementById('sidebar-' + tabId);
+  if (sidebar) sidebar.style.display = 'block';
+
+  history.replaceState(null, '', '#' + tabId);
+}
+
+(function() {
+  var hash = location.hash.replace('#', '');
+  var validTabs = ['main', 'dotnet', 'python', 'ai_platform', 'fullstack', 'ios', 'security'];
+  if (hash && validTabs.indexOf(hash) !== -1) {
+    switchTab(hash);
+  }
+})();
+
+
+// 列印前標記當前顯示的 section
+window.addEventListener('beforeprint', function() {
+  document.querySelectorAll('.resume-section').forEach(function(s) {
+    s.classList.remove('print-active');
+  });
+  var visible = document.querySelector('.resume-section[style*="display: block"], .resume-section[style*="display:block"]');
+  if (visible) visible.classList.add('print-active');
+});
+</script>
+</body>
+</html>
