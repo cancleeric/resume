@@ -4,13 +4,13 @@
 
 ---
 
-## 聯絡資訊 - Contact Information
-
-* **姓名 Name**：王英豪 (WANG YING HAO)
-* **電話 Phone**：0921-107-206
-* **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-* **期望薪資 Expected Salary**：NT$ 2,400,000 / 年
-* **工作地點 Location**：新北市中和區（可北部地區工作）
+| 項目 | 內容 |
+|------|------|
+| 姓名 | 王英豪 (WANG YING HAO) |
+| 電話 | 0921-107-206 |
+| 信箱 | [cancleeric@gmail.com](mailto:cancleeric@gmail.com) |
+| 期望薪資 | NT$ 2,400,000 / 年 |
+| 工作地點 | 新北市中和區（可配合北部地區工作）|
 
 ---
 
