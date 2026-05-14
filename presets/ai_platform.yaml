@@ -1,0 +1,27 @@
+---
+sidebar_summary: "AI-Augmented CTO"
+stats:
+  - num: "14"
+    label: "AI 副手（C-suite + 經理）"
+  - num: "3"
+    label: "LLM Provider 整合"
+  - num: "40+"
+    label: "MCP 工具端點"
+  - num: "30+"
+    label: "生產系統"
+  - num: "19"
+    label: "GCP Cloud Run"
+  - num: "6"
+    label: "集團子公司"
+sidebar_tags:
+  - "Multi-Agent AI"
+  - "LLM Gateway"
+  - "MCP Protocol"
+  - "AI Platform"
+  - "Brain / Anemone"
+  - "Modelhub"
+  - "Claude / Gemini / OpenAI"
+  - "AI-driven DevOps"
+  - "Tool-calling"
+  - "Agentic Engineering"
+---
