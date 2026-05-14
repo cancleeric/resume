@@ -9,12 +9,13 @@
 | 檔案 | 定位 | 適用職位 | 核心亮點 |
 |------|------|---------|---------|
 | **resume.md** | 主版 - 集團技術長 | CTO / 技術主管 / 架構師 | 30+ systems / 6 子公司 / 集團統一基建 / Cloud Run 19 |
+| **resume_ai_platform.md** | AI-Augmented CTO 版 | AI 平台職位 / 新創 CTO / AI lab | 14-agent 虛擬研發組織 / Brain+Anemone+MCP / 零傳統工程人力 |
 | **resume_dotnet.md** | C# / .NET 8 強化 | .NET 資深 / 主管 | LIDS (428 C# 檔) / pxmart-warehouse (810 tests) / hurricane-books / Blazor |
 | **resume_python_ai.md** | Python / AI / LLM 強化 | Python / AI 工程師 | Brain LLM Gateway / Anemone / Modelhub / Manta / Tianji / MCP |
-| **resume_java.md** | Java OOP 跨語言 | Java 開發 / 架構 | OOP 跨語言設計模式 / Spring↔FastAPI 分層思維 / 集團多語言架構決策 |
 | **resume_fullstack.md** | 全端 / Next.js / React | 全端工程師 | 5 個前端 SaaS / Next.js + Fastify + FastAPI / SwiftUI iOS |
 | **resume_ios.md** | iOS / SwiftUI / SpriteKit | iOS / Mobile 工程師 | LifeSnap 1545 Swift 檔 / SpriteKit / Firebase / dagongzai-ios |
 | **resume_security.md** | 資安 / IAM / Vault | 資安工程師 / 架構 | LIDS PKCE 客製 / Hurricane Vault v1.0.0 / Aegis Scanner / Headscale |
+| ~~resume_java.md~~ | ~~Java OOP 跨語言~~ | （已封存） | — |
 
 ---
 
@@ -23,9 +24,9 @@
 | 場景 | 建議版本 |
 |------|---------|
 | CTO / Engineering Manager / 架構師 | `resume.md`（主版）|
+| AI 平台技術長 / AI 產品公司 / 新創 CTO | `resume_ai_platform.md` |
 | .NET / C# / Blazor 開發 | `resume_dotnet.md` |
 | Python / FastAPI / AI / LLM | `resume_python_ai.md` |
-| Java / OOP / Spring 概念 | `resume_java.md` |
 | 全端 / Next.js / React / Node | `resume_fullstack.md` |
 | iOS / SwiftUI / Swift | `resume_ios.md` |
 | 資安 / IAM / OAuth2 / Vault | `resume_security.md` |
@@ -91,4 +92,4 @@ open resume.html              # 開瀏覽器看
 
 ---
 
-**最後更新：** 2026 年 5 月 / R+2
+**最後更新：** 2026 年 5 月 / R-NEW

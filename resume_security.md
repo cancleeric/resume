@@ -32,6 +32,8 @@
 
 加密工程實務：BCrypt 密碼雜湊、AES-256-GCM 資料加密、JWT RS256 非對稱簽章；Multi-tenant 安全隔離（所有 table 強制 tenant_id）；RBAC + Rate Limiting + Audit Logging + Break-glass 緊急存取，建構集團級零信任基礎設施。
 
+Also designed and operates a **14-agent AI engineering organization** with CISO-tier AI role overseeing: Aegis ML security scanner (CI gate), 6-step DB change protocol enforcement, Hurricane Vault secret management, and Headscale VPN ACL policy review — all executed via Claude Code tool-calling.
+
 ---
 
 ## 核心技術能力

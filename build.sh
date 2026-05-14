@@ -11,7 +11,6 @@ preset_for() {
     resume_python_ai.md) echo "presets/python_ai.yaml" ;;
     resume_security.md)  echo "presets/security.yaml" ;;
     resume_fullstack.md) echo "presets/fullstack.yaml" ;;
-    resume_java.md)      echo "presets/java.yaml" ;;
     resume_ios.md)           echo "presets/ios.yaml" ;;
     resume_ai_platform.md)   echo "presets/ai_platform.yaml" ;;
     *) echo "" ;;
@@ -50,7 +49,7 @@ if [ -n "${1:-}" ]; then
 else
   echo "🔨 Building all resume HTMLs…"
   for f in resume.md resume_ai_platform.md resume_dotnet.md resume_fullstack.md resume_ios.md \
-           resume_java.md resume_python_ai.md resume_security.md \
+           resume_python_ai.md resume_security.md \
            PROJECTS.md PROJECTS_PUBLIC.md INSTRUCTIONS.md Vue_Interview_Notes.md; do
     [ -f "$f" ] && build_one "$f"
   done

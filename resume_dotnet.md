@@ -24,6 +24,8 @@
 
 擔任**集團技術長**，建立 C-suite 副手制虛擬高管團隊架構、工單驅動開發流程、140 分標準化評審制度、6 步 DB 異動流程、兩層式 Git Hooks CI/CD，主導 GCP Cloud Run 19 個生產服務統一維運。
 
+Also designed and operates a **14-agent AI engineering organization** (C-suite + manager tier) executing architecture decisions, CI/CD deployment, and QA validation via Claude Code tool-calling — with commtool IPC for inter-agent coordination and MCP Server (40+ tool endpoints) for AI-to-production integration.
+
 ---
 
 ## 核心技術棧 - Core Technical Skills

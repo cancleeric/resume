@@ -30,6 +30,8 @@
 
 創立並主導 **HurricaneGroup（颶風集團）** 6 家子公司、**30+ 生產系統**、**Cloud Run 19 services**，建立 C-suite 副手制虛擬高管團隊架構。
 
+Also designed a **14-agent AI engineering organization** for group-level development — enabling solo iOS development with AI-assisted QA, deployment coordination, and product planning.
+
 ---
 
 ## iOS 核心技術棧 - iOS Technical Skills

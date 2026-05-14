@@ -37,6 +37,8 @@
 - **.NET 8 / Blazor**：hurricane-books 帳務 SaaS、pxmart-warehouse WMS（810 tests, 92% cov）
 - **iOS SwiftUI + SpriteKit**：LifeSnap、dagongzai-ios 上架 App Store
 
+Also designed and operates a **14-agent AI engineering organization**: agents execute full-stack deployment workflows via tool-calling — from frontend build (Webpack/Rollup) to Cloud Run deploy, Playwright E2E acceptance, and Gitea issue tracking. Brain LLM Gateway and MCP Server (40+ endpoints) serve as the AI infrastructure layer.
+
 ---
 
 ## 核心技術棧 - Core Technical Skills
