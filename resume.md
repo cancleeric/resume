@@ -6,11 +6,13 @@
 
 ## 聯絡資訊 - Contact Information
 
-* **姓名 Name**：王英豪 (WANG YING HAO)
-* **電話 Phone**：0921-107-206
-* **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-* **期望薪資 Expected Salary**：NT$ 2,400,000 / 年
-* **工作地點 Location**：新北市中和區（可配合北部地區工作）
+| 項目 | 內容 |
+|------|------|
+| 姓名 Name | 王英豪 (WANG YING HAO) |
+| 電話 Phone | 0921-107-206 |
+| 信箱 Email | [cancleeric@gmail.com](mailto:cancleeric@gmail.com) |
+| 期望薪資 Expected Salary | NT$ 2,400,000 / 年 |
+| 工作地點 Location | 新北市中和區（可配合北部地區工作）|
 
 ---
 
@@ -18,11 +20,11 @@
 
 **AI-Augmented CTO | AI Platform Builder | 創業技術負責人**
 
-AI-Augmented CTO & Platform Engineering Leader with 25 years of software engineering and 24 years of technical leadership. Designed and operates a production-grade AI engineering organization: 14 specialized AI agents (C-suite + manager tier) executing architecture decisions, CI/CD deployment, QA validation, and legal review — delivering 30+ integrated production systems across 6 subsidiary companies with zero traditional engineering headcount beyond the founding CTO.
+AI-Augmented CTO with 25 years of engineering and 24 years of technical leadership. Designed and operates a 14-agent AI engineering organization (C-suite + manager tier) that executes architecture, CI/CD, QA, and legal review — delivering 30+ production systems across 6 subsidiaries with zero traditional headcount.
 
-Built the group's complete AI infrastructure: Brain LLM Gateway (multi-provider routing across Claude / Gemini / OpenAI, per-tenant billing and token quota control), Anemone (production LLM ingress with WebSocket relay and reverse connector auth, compliant with group AI routing standards), MCP Server (40+ tool endpoints — AI assistants directly create tickets, trigger deployments, and update production data), and Modelhub (self-hosted model training platform + Kaggle Pipeline, integrated as Brain's secondary LLM provider).
+Built complete group AI infrastructure: Brain LLM Gateway (multi-provider routing, per-tenant billing), Anemone (production LLM ingress, WebSocket relay, reverse connector auth), MCP Server (40+ tool endpoints, AI directly operates production systems), and Modelhub (self-hosted training + Kaggle Pipeline, Brain secondary provider).
 
-Unified group infrastructure under a single platform: self-built OAuth2/OIDC provider (LIDS, 428 C# files, PKCE custom patch), Hurricane Vault (Secret Manager, 90+ secrets), Hurricane Pay (unified payment gateway, PayPal LIVE, 9+ tenants), Wiki.js with bidirectional Git sync, and Gitea. 19 GCP Cloud Run services under unified HurricaneSoft operation.
+> 集團統一基礎設施：LIDS / Hurricane Vault / Hurricane Pay / Wiki.js / Gitea / Headscale / 19 GCP Cloud Run
 
 ---
 
