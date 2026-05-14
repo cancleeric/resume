@@ -208,6 +208,17 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.04em;
 }
 
+.status-pill--consulting {
+  background: #1a56db;
+}
+
+.sidebar-tags {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 6px 0 0 0;
+  letter-spacing: 0.03em;
+}
+
 .card {
   background: var(--surface);
   border-radius: var(--radius);
