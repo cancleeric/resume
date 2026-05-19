@@ -2,14 +2,14 @@
 
 ## Studio for Hire — 開發流程自動化 · Automated Software Delivery
 
-> **主理人**：王英豪 (WANG YING HAO)　·　**統一編號**：80289779　·　**HurricaneGroup（颶風集團）第一家子公司**
+> **負責人**：王英豪 (WANG YING HAO)　·　**統一編號**：80289779　·　**HurricaneGroup（颶風集團）第一家子公司**
 
 ---
 
 ## 聯絡資訊 - Contact Information
 
 * **公司 Company**：颶風軟體有限公司（HurricaneSoft Ltd.）— 統編 80289779（可開發票）
-* **主理人 Principal**：王英豪 (WANG YING HAO)
+* **負責人 Principal**：王英豪 (WANG YING HAO)
 * **電話 Phone**：0921-107-206
 * **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
 * **作品官網 Portfolio**：[www.hurricanesoft.com.tw/pipeline](https://www.hurricanesoft.com.tw/pipeline) — LF 全系統 Pipeline 線上展示
