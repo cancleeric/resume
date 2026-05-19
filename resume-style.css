@@ -46,6 +46,425 @@ a { color: var(--brand-2); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* ============================================================
+   STUDIO HIRE BLOCKS
+   ============================================================ */
+.hire-lede {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-2);
+  margin: 18px 0 24px;
+  padding: 16px 20px;
+  background: rgba(30,58,138,0.04);
+  border-left: 4px solid var(--brand);
+  border-radius: 0 8px 8px 0;
+}
+.hire-intro {
+  color: var(--text-2);
+  font-size: 14px;
+  margin: 8px 0 18px;
+}
+
+/* Service grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin: 16px 0 28px;
+}
+.service-card {
+  padding: 18px 18px 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  transition: all .15s;
+}
+.service-card:hover {
+  border-color: var(--brand-2);
+  box-shadow: 0 6px 18px rgba(30,58,138,0.08);
+  transform: translateY(-2px);
+}
+.service-card--lead {
+  border: 2px solid var(--brand);
+  background: linear-gradient(180deg, rgba(30,58,138,0.05) 0%, #fff 100%);
+  grid-column: 1 / -1;
+}
+.service-card--lead h3 { color: var(--brand); font-size: 17px; }
+.service-card--lead p { font-size: 14px; }
+.service-card__icon { font-size: 28px; line-height: 1; margin-bottom: 8px; }
+.service-card h3 {
+  font-size: 15.5px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--text);
+}
+.service-card p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-2);
+  margin: 0;
+}
+
+/* Rate grid */
+.rate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin: 16px 0 16px;
+}
+.rate-card {
+  padding: 20px 20px 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  position: relative;
+}
+.rate-card--featured {
+  border: 2px solid var(--brand);
+  background: linear-gradient(180deg, rgba(30,58,138,0.04) 0%, #fff 100%);
+}
+.rate-card__tag {
+  position: absolute;
+  top: -10px;
+  left: 16px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+}
+.rate-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: var(--text);
+}
+.rate-card__price {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--brand);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+.rate-card__price span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-2);
+}
+.rate-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.rate-card li {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-2);
+}
+.rate-foot {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--text-2);
+  margin: 14px 0 28px;
+  padding: 12px 16px;
+  background: rgba(0,0,0,0.025);
+  border-radius: 8px;
+}
+
+/* Availability indicator */
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 28px;
+  padding: 12px 18px;
+  background: linear-gradient(90deg, #064e3b 0%, #065f46 100%);
+  color: #fff;
+  border-radius: 10px;
+  border-left: 4px solid #10b981;
+  font-size: 14px;
+}
+.availability__dot {
+  width: 10px; height: 10px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(16,185,129,.3);
+  flex-shrink: 0;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(16,185,129,.3); }
+  50%      { box-shadow: 0 0 0 6px rgba(16,185,129,.15); }
+}
+.availability__body { flex: 1; }
+.availability__body strong { color: #fff; font-size: 14.5px; }
+.availability__body span { opacity: 0.85; margin-left: 6px; }
+.availability__cta {
+  color: #fff !important;
+  font-weight: 700;
+  padding: 6px 12px;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 13px;
+}
+.availability__cta:hover { background: rgba(255,255,255,0.12); text-decoration: none; }
+
+/* Differentiation grid */
+.diff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 16px 0 28px;
+}
+.diff-card {
+  padding: 18px 18px 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  position: relative;
+}
+.diff-card--featured {
+  border: 2px solid var(--brand);
+  background: linear-gradient(180deg, rgba(30,58,138,0.04) 0%, #fff 100%);
+}
+.diff-card__vs {
+  display: inline-block;
+  padding: 3px 10px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+.diff-card p { font-size: 13.5px; line-height: 1.7; margin: 0; color: var(--text-2); }
+.diff-card strong { color: var(--text); }
+
+/* Category headings */
+.cat-heading {
+  margin: 24px 0 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.cat-heading--ai {
+  background: linear-gradient(90deg, rgba(30,58,138,.08), rgba(131,24,67,.08));
+  border-left: 4px solid var(--brand);
+  color: var(--brand);
+}
+.cat-heading--saas {
+  background: linear-gradient(90deg, rgba(16,185,129,.08), rgba(6,95,70,.08));
+  border-left: 4px solid #10b981;
+  color: #065f46;
+}
+.cat-heading--infra {
+  background: rgba(0,0,0,.04);
+  border-left: 4px solid var(--text-2);
+  color: var(--text);
+}
+.deliverable-list { margin-bottom: 18px; }
+.deliverable-list--ai li { padding: 4px 0; }
+.deliverable-list--ai li strong { color: var(--brand); }
+
+/* FAQ */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin: 16px 0 28px;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0;
+  transition: border-color .15s;
+}
+.faq-item[open] { border-color: var(--brand-2); box-shadow: 0 2px 8px rgba(30,58,138,.06); }
+.faq-item summary {
+  padding: 14px 18px;
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  color: var(--text);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 20px;
+  transition: transform .15s;
+}
+.faq-item[open] summary::after { content: "−"; }
+.faq-item p {
+  margin: 0;
+  padding: 0 18px 16px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--text-2);
+}
+
+/* Contact CTA */
+.contact-cta {
+  margin: 16px 0 28px;
+  padding: 24px;
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(30,58,138,0.2);
+}
+.contact-cta__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.contact-cta__item {
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+.contact-cta__label {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.85;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+.contact-cta__item a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.contact-cta__item a:hover { text-decoration: underline; }
+.contact-cta__note {
+  margin: 0;
+  font-size: 13.5px;
+  opacity: 0.92;
+  text-align: center;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Print fallback */
+@media print {
+  .service-card:hover { transform: none; box-shadow: none; }
+  .rate-card--featured { border-color: #000; background: #f5f5f5; }
+  .contact-cta { background: #f5f5f5 !important; color: #000 !important; box-shadow: none !important; }
+  .contact-cta__item { background: #fff !important; border: 1px solid #ccc; }
+  .contact-cta__item a, .contact-cta__label, .contact-cta__note { color: #000 !important; }
+}
+
+/* ============================================================
+   AI HERO CARD — LF Pipeline showcase
+   ============================================================ */
+.ai-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0 24px;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #4c1d95 60%, #831843 100%);
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.25);
+  text-decoration: none !important;
+  transition: transform .15s, box-shadow .15s;
+  position: relative;
+  overflow: hidden;
+}
+.ai-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 90% 0%, rgba(255,255,255,0.15), transparent 50%);
+  pointer-events: none;
+}
+.ai-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(30, 58, 138, 0.35);
+}
+.ai-hero__icon {
+  font-size: 44px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.ai-hero__body { flex: 1; min-width: 0; }
+.ai-hero__eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+.ai-hero__title {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  margin-bottom: 8px;
+}
+.ai-hero__desc {
+  font-size: 13.5px;
+  line-height: 1.55;
+  opacity: 0.92;
+  margin-bottom: 10px;
+}
+.ai-hero__desc strong { color: #fbbf24; font-weight: 700; }
+.ai-hero__url {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12px;
+  opacity: 0.75;
+  margin-top: 8px;
+  letter-spacing: 0.02em;
+}
+.ai-hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13.5px;
+  opacity: 0.95;
+}
+.ai-hero__stats strong {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fbbf24;
+  margin-right: 4px;
+}
+.ai-hero__cta {
+  flex-shrink: 0;
+  padding: 10px 18px;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.ai-hero:hover .ai-hero__cta {
+  background: rgba(255,255,255,0.28);
+}
+@media (max-width: 720px) {
+  .ai-hero { flex-direction: column; text-align: center; align-items: stretch; }
+  .ai-hero__cta { text-align: center; }
+}
+@media print {
+  .ai-hero { background: #f5f5f5 !important; color: #000 !important; box-shadow: none !important; border: 1px solid #ccc; }
+  .ai-hero__stats strong { color: #000 !important; }
+}
+
+/* ============================================================
    TOPBAR
    ============================================================ */
 .topbar {
@@ -87,6 +506,24 @@ a:hover { text-decoration: underline; }
   color: #fff;
   background: rgba(255,255,255,.1);
   text-decoration: none;
+}
+.topbar__nav--ext {
+  color: #fbbf24 !important;
+  font-weight: 600;
+}
+.topbar__nav--cta {
+  background: var(--accent);
+  color: #fff !important;
+  font-weight: 700;
+  padding: 6px 14px !important;
+  margin-left: 4px;
+}
+.topbar__nav--cta:hover {
+  background: var(--accent-2) !important;
+}
+/* anchor offset for sticky topbar */
+#manta, #aicad, #fiona-radar, #fiona-pipeline, #brain, #modelhub, #claude-agents, #content-radar, #content-pipeline, #conch, #abacus, #tianji, #dagongzai, #gyre, #hurricane-pay {
+  scroll-margin-top: 80px;
 }
 .topbar__btn {
   background: var(--accent);
@@ -547,12 +984,21 @@ a:hover { text-decoration: underline; }
   .stats { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 600px) {
-  .topbar__nav { gap: 0; }
+  .topbar__nav { gap: 0; flex-wrap: wrap; row-gap: 4px; }
   .topbar__nav a { padding: 4px 8px; font-size: 12px; }
   .layout { padding: 0 12px; margin: 12px auto; gap: 12px; }
   .main { padding: 22px 18px; }
   .main h2 { font-size: 17px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
+  /* Availability bar 在窄螢幕直立堆疊 + CTA 整寬 */
+  .availability { flex-wrap: wrap; gap: 10px; padding: 14px 16px; }
+  .availability__body { flex-basis: calc(100% - 22px); font-size: 13px; line-height: 1.55; }
+  .availability__body span { display: block; margin-left: 0; margin-top: 4px; }
+  .availability__cta { width: 100%; text-align: center; padding: 8px 12px; }
+  /* AI hero stats 在窄螢幕兩欄分行 */
+  .ai-hero__stats { gap: 8px 12px; font-size: 12.5px; }
+  /* Rate card price 收緊 */
+  .rate-card__price { font-size: 20px; }
 }
 
 /* ============================================================

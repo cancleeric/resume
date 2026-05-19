@@ -9,7 +9,7 @@
 * **姓名 Name**：王英豪 (WANG YING HAO)
 * **電話 Phone**：0921-107-206
 * **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-* **期望薪資 Expected Salary**：NT$ 2,400,000 / 年
+* **接案報價 Contract Rate**：US$ 10,000 / 月（彈性條件可議）
 * **工作地點 Location**：新北市中和區（可配合北部地區工作）
 
 ---
@@ -251,8 +251,8 @@
 - 創立並經營軟體開發公司，累積服務 **100+ 企業客戶**
 - 管理 **11 人跨職能技術團隊**，負責技術培訓與 Code Review
 - 主導設計 Squid 企業級生態系統（12 個生產系統）
-- 建立兩層式 CI/CD 架構（Git Hooks post-commit + pre-push）
-- 建立工單驅動開發流程與 140 分評審制度
+- 建立自建多層 CI/CD 架構（不依賴外部 CI）
+- 建立工單驅動開發流程與 量化 PR 評審制度
 
 ---
 

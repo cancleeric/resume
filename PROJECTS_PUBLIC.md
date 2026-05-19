@@ -505,7 +505,7 @@ squid/
 | 技術 | 專案應用 |
 |------|---------|
 | **Docker** | 所有專案容器化 |
-| **Git Hooks** | 兩層式 CI/CD（post-commit + pre-push）|
+| **Git Hooks** | 自建多層 CI/CD|
 | **GitHub Actions** | 自動部署到雲端 |
 | **Google Cloud Run** | 生產環境部署 |
 | **Prometheus** | 監控 (Squid, LIDS, MCP) |

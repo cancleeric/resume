@@ -13,16 +13,15 @@
 
 <header class="topbar">
   <div class="topbar__inner">
-    <span class="topbar__brand">HurricaneGroup</span>
+    <span class="topbar__brand">HurricaneSoft 工作室</span>
     <nav class="topbar__nav">
-      <a href="resume.html">主版</a>
-      <a href="resume_dotnet.html">.NET</a>
-      <a href="resume_python_ai.html">Python/AI</a>
-      <a href="resume_fullstack.html">Full-stack</a>
-      <a href="resume_java.html">Java</a>
-      <a href="resume_ios.html">iOS</a>
-      <a href="resume_security.html">Security</a>
-      <a href="PROJECTS.html">專案清單</a>
+      <a href="resume.html">主頁</a>
+      <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" class="topbar__nav--ext">LF Pipeline ↗</a>
+      <a href="resume.html#brain">Brain · LLM Gateway</a>
+      <a href="resume.html#modelhub">Modelhub · 自訓 ML</a>
+      <a href="resume.html#claude-agents">Claude Agents · 副手框架</a>
+      <a href="resume.html#content-radar">AI 內容雷達</a>
+      <a href="resume.html#預約諮詢-book-consultation" class="topbar__nav--cta">預約諮詢</a>
       <button class="topbar__btn" onclick="window.print()" title="存為 PDF / 列印">📥 PDF</button>
     </nav>
   </div>
@@ -45,7 +44,7 @@
         <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
         <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
         <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
-        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+        <li><span class="meta__k">接案報價</span><span class="meta__v">US$ 10,000 / 月</span></li>
       </ul>
     </section>
 
@@ -156,8 +155,7 @@ Pay</span><span class="tag">pxmart-warehouse</span>
     <li><strong>電話 Phone</strong>：0921-107-206</li>
     <li><strong>信箱 Email</strong>：<a
     href="mailto:cancleeric@gmail.com"><span>cancleeric@gmail.com</span></a></li>
-    <li><strong>期望薪資 Expected Salary</strong>：NT$ 2,400,000 /
-    年</li>
+    <li><strong>接案報價 Contract Rate</strong>：US$ 10,000 / 月（彈性條件可議）</li>
     <li><strong>工作地點
     Location</strong>：新北市中和區（可北部地區工作）</li>
     </ul>
@@ -172,17 +170,14 @@ Pay</span><span class="tag">pxmart-warehouse</span>
     Core</strong>，並從零自建 OAuth 2.0 / OIDC 身份認證伺服器
     <strong>LocalIdentityServer (LIDS)</strong>，涵蓋 428 個 C#
     檔案、完整的多租戶隔離、MFA、JWT RS256 簽章。<strong>2026 年完成
-    LIDS 客製 PKCE patch（gitea-hs v1.26.1）</strong>，整合 Gitea OIDC
-    不污染 provider singleton。</p>
+    LIDS 客製 OIDC patch（客製 Gitea build）</strong>，多客戶端共用安全整合。</p>
     <p>主導 <strong>HurricaneGroup（颶風集團）6 家子公司</strong> 30+
     生產系統的 .NET 架構與部署，包括 <strong>pxmart-warehouse
     v1.0.0</strong>（.NET 8 WMS，810 tests / 92%
     coverage）、<strong>hurricane-books（Blazor Server 帳務
     SaaS）</strong>、<strong>antique-master-web（.NET 後端 + 167
     tests）</strong>、信保基金 .NET 8 + Blazor 現代化遷移。</p>
-    <p>擔任<strong>集團技術長</strong>，建立 C-suite
-    副手制虛擬高管團隊架構、工單驅動開發流程、140 分標準化評審制度、6 步
-    DB 異動流程、兩層式 Git Hooks CI/CD，主導 GCP Cloud Run 19
+    <p>擔任<strong>集團技術長</strong>，建立 AI 高管副手團隊架構、工單驅動開發流程、量化 PR 評審制度、資料庫異動安全流程、自建多層 CI/CD，主導 GCP Cloud Run 19
     個生產服務統一維運。</p>
     <hr />
     <h2 id="核心技術棧---core-technical-skills">核心技術棧 - Core
@@ -288,7 +283,7 @@ Pay</span><span class="tag">pxmart-warehouse</span>
     <li>Azure Key Vault / GCP Secret Manager 金鑰管理</li>
     <li>Prometheus.NET 指標蒐集 + OpenTelemetry 分散式追蹤</li>
     <li>Docker 容器化部署 + GCP Cloud Run 生產環境</li>
-    <li>兩層式 Git Hooks CI/CD：post-commit 本地建置 → pre-push Staging
+    <li>自建多層 CI/CD：post-commit 本地建置 → pre-push Staging
     部署</li>
     <li>Serilog 結構化日誌</li>
     </ul>
@@ -340,7 +335,7 @@ Pay</span><span class="tag">pxmart-warehouse</span>
     <h3 id="3-lifesnapadmin--firebase-全方位後台管理系統">3.
     LifeSnapAdmin — Firebase 全方位後台管理系統</h3>
     <p><strong>時間</strong>：2024/03 - 2024/12
-    <strong>角色</strong>：獨立開發者 | 656+ 工時 | 8 階段完成
+    <strong>角色</strong>：獨立開發者 | 656+ 工時 | 分階段交付
     <strong>性質</strong>：從零獨立設計開發的完整後台管理平台</p>
     <h4 id="技術棧-2">技術棧</h4>
     <p><code>C# .NET 9.0</code> <code>Blazor Server</code>
@@ -393,7 +388,7 @@ Pay</span><span class="tag">pxmart-warehouse</span>
     <h4 id="系統設計">系統設計</h4>
     <ul>
     <li>倉儲流程完整建模：入庫 / 出庫 / 盤點 / 移轉 / 批次查詢</li>
-    <li>EF Core Migration 嚴格走 6 步 DB 異動流程</li>
+    <li>EF Core Migration 嚴格走資料庫異動安全流程</li>
     <li>xUnit 810 tests，覆蓋率 92%（Phase 1-4 全完成）</li>
     <li>Swagger + 批次查詢 API 設計</li>
     <li>Docker 容器化 + 本地 CI script
@@ -433,7 +428,7 @@ Pay</span><span class="tag">pxmart-warehouse</span>
     <li>累積服務 <strong>100+ 企業客戶</strong>，涵蓋
     ERP、CRM、電商、社區管理等領域</li>
     <li>設計並實施 Squid 企業級生態系統（12 個互相協作的生產系統）</li>
-    <li>建立工單驅動開發流程與 140 分標準化評審制度</li>
+    <li>建立工單驅動開發流程與 量化 PR 評審制度</li>
     </ul>
     <hr />
     <h2 id="架構設計能力---architecture--system-design">架構設計能力 -
@@ -467,16 +462,14 @@ Pay</span><span class="tag">pxmart-warehouse</span>
     &amp; Deployment)</h3>
     <ul>
     <li>Docker 容器化：所有 .NET 服務以 Multi-stage Dockerfile 建置</li>
-    <li>兩層式 CI/CD：Git Hooks (post-commit 本地 + pre-push
-    Staging)</li>
+    <li>自建多層 CI/CD：Git Hooks 自動化</li>
     <li>GCP Cloud Run 生產環境部署</li>
     <li>Prometheus.NET + OpenTelemetry 可觀測性</li>
     </ul>
     <h3 id="技術決策能力-technical-decision-making">技術決策能力
     (Technical Decision Making)</h3>
     <ul>
-    <li>評估自建 vs. 第三方方案（LIDS vs. Auth0/Okta —
-    選擇自建以滿足客製需求）</li>
+    <li>評估自建 vs. 第三方方案（最終選擇自建以滿足客製需求）</li>
     <li>跨平台資料庫選型（SQL Server vs. PostgreSQL — 選擇 PostgreSQL
     支援 Linux Docker）</li>
     <li>前端技術選擇（Blazor vs. React/Vue —
@@ -508,7 +501,7 @@ Pay</span><span class="tag">pxmart-warehouse</span>
     人跨職能技術團隊</strong>（開發、DBA、DevOps、部署、助理）</li>
     <li>主導設計 Squid 企業級生態系統（12 個生產系統，含 .NET 與 Python
     服務）</li>
-    <li>建立工單驅動開發流程與 140 分標準化評審制度</li>
+    <li>建立工單驅動開發流程與 量化 PR 評審制度</li>
     <li>經歷完整 .NET 技術棧演進：.NET Framework 1.1 → .NET 8</li>
     </ul>
     <hr />

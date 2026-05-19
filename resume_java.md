@@ -9,7 +9,7 @@
 * **姓名 Name**：王英豪 (WANG YING HAO)
 * **電話 Phone**：0921-107-206
 * **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-* **期望薪資 Expected Salary**：NT$ 2,400,000 / 年
+* **接案報價 Contract Rate**：US$ 10,000 / 月（彈性條件可議）
 * **工作地點 Location**：新北市中和區（可配合北部地區工作）
 
 ---
@@ -22,9 +22,9 @@
 
 **核心架構能力**：
 * **設計模式實戰**：25 年 OOP 經驗，在 Java / C# / Python / TypeScript / Go 中實踐 Repository、Factory、Observer、Strategy、MVVM 等模式
-* **跨語言架構遷移**：將 Java 世界的 Spring Boot 分層概念（Controller → Service → Repository）成功應用到 FastAPI（API → BAL → CORL → DAL）與 ASP.NET Core
+* **跨語言架構遷移**：將 Java 世界的 Spring Boot 分層概念（Controller → Service → Repository）成功應用到 FastAPI（多層分層架構）與 ASP.NET Core
 * **集團級系統設計**：創立並主導 **HurricaneGroup（颶風集團）** 6 家子公司、**30+ 生產系統**、**Cloud Run 19 services**
-* **集團技術領導**：24 年技術管理，建立 C-suite 副手制虛擬高管團隊架構
+* **集團技術領導**：24 年技術管理，建立 AI 高管副手團隊架構
 
 **集團技術選型決策（為何在 2026 不選 Java）**：
 - **後端**：選 Python FastAPI（async asyncpg 高並發 + LLM 生態整合）+ .NET 8（信保金融客戶 / WMS / 帳務 SaaS），Java 在新系統中沒有不可替代性
@@ -156,7 +156,7 @@ Business Logic                 →  core_logic_layer/ (CORL)
 *2002 - 至今（24 年）*
 * 創立並經營軟體公司，2026 完成集團化升級（6 子公司）
 * 主導 30+ 生產系統，Cloud Run 19 services 統一維運
-* 100+ 企業客戶，建立 C-suite 副手制虛擬高管團隊架構
+* 100+ 企業客戶，建立 AI 高管副手團隊架構
 
 ### 軟體工程師 / 專案經理 | 米迪亞
 *2001 - 2002*

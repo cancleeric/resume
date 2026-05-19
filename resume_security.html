@@ -13,16 +13,15 @@
 
 <header class="topbar">
   <div class="topbar__inner">
-    <span class="topbar__brand">HurricaneGroup</span>
+    <span class="topbar__brand">HurricaneSoft 工作室</span>
     <nav class="topbar__nav">
-      <a href="resume.html">主版</a>
-      <a href="resume_dotnet.html">.NET</a>
-      <a href="resume_python_ai.html">Python/AI</a>
-      <a href="resume_fullstack.html">Full-stack</a>
-      <a href="resume_java.html">Java</a>
-      <a href="resume_ios.html">iOS</a>
-      <a href="resume_security.html">Security</a>
-      <a href="PROJECTS.html">專案清單</a>
+      <a href="resume.html">主頁</a>
+      <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" class="topbar__nav--ext">LF Pipeline ↗</a>
+      <a href="resume.html#brain">Brain · LLM Gateway</a>
+      <a href="resume.html#modelhub">Modelhub · 自訓 ML</a>
+      <a href="resume.html#claude-agents">Claude Agents · 副手框架</a>
+      <a href="resume.html#content-radar">AI 內容雷達</a>
+      <a href="resume.html#預約諮詢-book-consultation" class="topbar__nav--cta">預約諮詢</a>
       <button class="topbar__btn" onclick="window.print()" title="存為 PDF / 列印">📥 PDF</button>
     </nav>
   </div>
@@ -45,7 +44,7 @@
         <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
         <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
         <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
-        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+        <li><span class="meta__k">接案報價</span><span class="meta__v">US$ 10,000 / 月</span></li>
       </ul>
     </section>
 
@@ -60,8 +59,7 @@ Security</span></div>
 Secret Mgr</span></div>
         <div class="stat"><span class="stat__num">PKCE</span><span class="stat__label">Gitea
 客製 patch</span></div>
-        <div class="stat"><span class="stat__num">Aegis</span><span class="stat__label">Scanner
-+ ML</span></div>
+        <div class="stat"><span class="stat__num">★</span><span class="stat__label">自建安全掃描器</span></div>
 
       </div>
     </section>
@@ -103,8 +101,7 @@ RS256</span><span class="tag">MFA
 (TOTP/Email/SMS)</span><span class="tag">RBAC</span><span class="tag">BCrypt</span><span class="tag">AES-256-GCM</span><span class="tag">OWASP
 Top 10</span><span class="tag">Zero
 Trust</span><span class="tag">Hurricane
-Vault</span><span class="tag">LIDS</span><span class="tag">Aegis
-Scanner</span><span class="tag">Headscale
+Vault</span><span class="tag">LIDS</span><span class="tag">自建安全掃描器</span><span class="tag">Headscale
 ACL</span><span class="tag">Audit
 Logging</span><span class="tag">Break-glass</span><span class="tag">Rate
 Limiting</span><span class="tag">Multi-tenant
@@ -150,8 +147,8 @@ Manager</span><span class="tag">Azure Key Vault</span>
     href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></td>
     </tr>
     <tr>
-    <td>期望薪資</td>
-    <td>NT$ 2,400,000 / 年</td>
+    <td>接案報價</td>
+    <td>US$ 10,000 / 月（彈性條件可議）</td>
     </tr>
     <tr>
     <td>工作地點</td>
@@ -173,17 +170,16 @@ Manager</span><span class="tag">Azure Key Vault</span>
     <p><strong>2026 年集團安全大躍進</strong>：</p>
     <ul>
     <li><strong>Hurricane Vault v1.0.0</strong> — 自建 Secret
-    Manager（Audit chain + GCP parity，集團 90+ secrets 統一管理；開發 /
+    Manager（多層稽核 + 雲端對稱備援，集團 90+ secrets 統一管理；開發 /
     CI / CEO token 用 Vault，生產 Cloud Run 用 GCP Secret Manager）</li>
-    <li><strong>gitea-hs PKCE 客製 patch v1.26.1</strong> — 為 LIDS OIDC
-    整合客製 Gitea，client 端送 code_challenge 不污染 provider
-    singleton（已部署）</li>
-    <li><strong>Aegis Security Scanner</strong> — 自建程式碼安全掃描器 +
-    FP ranker ML 訓練（Sprint 21 安全發現持續修復）</li>
+    <li><strong>Gitea OIDC 客製 patch</strong> — 為 LIDS OIDC
+    整合客製 Gitea，客戶端 PKCE 強化 多客戶端共用安全（已部署）</li>
+    <li><strong>自建程式碼安全掃描器</strong> — 自建程式碼安全掃描器 +
+    ML 優化（持續迭代修復）</li>
     <li><strong>Headscale VPN ACL</strong> — 集團 VPN 鎖定，只 eric-mac
     可主動連，其他節點全拒</li>
-    <li><strong>6 步 DB 異動流程</strong> —
-    強制備份→匯出前→執行→匯出後→驗證→紀錄（2026/04/01
+    <li><strong>資料庫異動安全流程</strong> —
+    （流程內部化，多階段強制備份／驗證／留證）（2026/04/01
     災情後制度化）</li>
     <li><strong>集團 19 Cloud Run 服務 IAM 統一治理</strong> — 由
     HurricaneSoft 維運主責</li>
@@ -241,7 +237,7 @@ Manager</span><span class="tag">Azure Key Vault</span>
     <td>1+ 年（v1.0.0 上線）</td>
     </tr>
     <tr>
-    <td>Security Scanning + ML（Aegis）</td>
+    <td>Security Scanning + ML（自建）</td>
     <td>1+ 年</td>
     </tr>
     <tr>
@@ -402,18 +398,16 @@ Manager</span><span class="tag">Azure Key Vault</span>
     → Vault；生產 Cloud Run 服務 → GCP Secret Manager</li>
     </ul>
     <hr />
-    <h3 id="6-gitea-hs-pkce-客製-patch-v1261">6. Gitea-hs PKCE 客製
+    <h3 id="6-gitea-hs-pkce-客製-patch-v1261">6. Gitea-hs OIDC 客製
     Patch (v1.26.1)</h3>
     <p><strong>期間</strong>：2026 — 至今 |
     <strong>角色</strong>：架構決策 / 客製 patch 維護
     <strong>技術</strong>：Go (gitea fork), OAuth2 PKCE</p>
-    <p>為 LIDS OIDC 整合客製 Gitea，解決原版 PKCE 實作污染 provider
-    singleton 的問題：</p>
+    <p>為 LIDS OIDC 整合客製 Gitea，解決原版 OIDC 整合的多客戶端衝突：</p>
     <ul>
     <li><strong>branch</strong>：<code>pkce-on-1.26.1</code>（custom
     image <code>a7b6f22844</code>）</li>
-    <li><strong>OIDC client 端送 code_challenge</strong>：不污染
-    provider singleton，多 OIDC client 可同時使用</li>
+    <li><strong>OIDC 客戶端 PKCE 強化</strong>：多客戶端共用安全，多 OIDC client 可同時使用</li>
     <li><strong>AuthURL / Token / ProfileURL
     mapping</strong>：AuthURL=localhost（瀏覽器），Token/Profile=docker
     內網</li>
@@ -421,12 +415,10 @@ Manager</span><span class="tag">Azure Key Vault</span>
     hurricanesoft/gitea-hs 已 archived</li>
     </ul>
     <hr />
-    <h3 id="7-aegis-security-scanner--ml-fp-ranker">7. Aegis Security
-    Scanner + ML FP Ranker</h3>
+    <h3 id="7-aegis-security-scanner--ml-fp-ranker">7. 自建程式碼安全掃描器 + ML FP Ranker</h3>
     <p><strong>期間</strong>：2026 — 至今 |
     <strong>角色</strong>：架構設計 / Python + ML 開發
-    <strong>技術</strong>：Python, ML pipeline (Kaggle), FP ranker
-    training</p>
+    <strong>技術</strong>：Python, ML pipeline, ML 優化訓練</p>
     <p>自建程式碼安全掃描器，掃描集團 repo 安全問題；ML
     模型訓練減少誤報（False Positive）：</p>
     <ul>
@@ -453,14 +445,14 @@ Manager</span><span class="tag">Azure Key Vault</span>
     <li>跨辦公室節點（辦A/辦B/onano）統一 VPN</li>
     </ul>
     <hr />
-    <h3 id="9-6-步-db-異動流程--集團制度化">9. 6 步 DB 異動流程 —
+    <h3 id="9-6-步-db-異動流程--集團制度化">9. 資料庫異動安全流程 —
     集團制度化</h3>
     <p><strong>期間</strong>：2026/04 — 至今 |
     <strong>角色</strong>：流程設計 / 強制執行</p>
     <p>2026/04/01 因 docker-compose down 造成 DB
     全失（時光機復原），制度化集團 DB 異動 SOP：</p>
-    <pre><code>備份 → 匯出前驗證 → 執行 migration → 匯出後驗證 → 資料驗證 → 紀錄</code></pre>
-    <p>任何 DB 異動（含新建零資料 DB）都必須走 6 步，缺一不可。所有
+    <pre><code>（流程內部化，多階段強制備份／驗證／留證）</code></pre>
+    <p>任何 DB 異動（含新建零資料 DB）都必須走完整流程，缺一不可。所有
     alembic / EF Core migration 強制走此流程。</p>
     <hr />
     <h3 id="10-加密與資料保護工程">10. 加密與資料保護工程</h3>

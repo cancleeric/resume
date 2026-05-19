@@ -9,7 +9,7 @@
 * **姓名 Name**：王英豪 (WANG YING HAO)
 * **電話 Phone**：0921-107-206
 * **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-* **期望薪資 Expected Salary**：NT$ 2,400,000 / 年
+* **接案報價 Contract Rate**：US$ 10,000 / 月（彈性條件可議）
 * **工作地點 Location**：新北市中和區（可北部地區工作）
 
 ---
@@ -22,15 +22,15 @@
 
 - **Brain LLM Gateway**（FastAPI + PostgreSQL）— 集團 LLM 計費中心，跨租戶可視化，Headless Provider 路由
 - **Anemone Platform**（FastAPI + WebSocket）— 集團 LLM ingress，Widget ↔ Server ↔ Brain
-- **Modelhub** v0.8.0 — 自訓模型 + 推論平台，Brain 第二 LLM Provider，整合 Kaggle Pipeline
+- **Modelhub** v0.8.0 — 自訓模型 + 推論平台，Brain 第二 LLM Provider
 - **Manta** v2.16.1 — AI Workflow Canvas（FastAPI + React）
 - **Tianji** v1.2.2 — 命理 App（FastAPI + Jinja SSR + Hurricane Pay）
 - **Fiona Pipeline** v0.2.4 — 內容生成 Pipeline（呼叫 Manta workflow）
-- **Aegis Security Scanner** — 自建程式碼安全掃描器 + ML FP ranker 訓練
+- **自建程式碼安全掃描器** — 含 ML 優化
 
 主導 **MCP (Model Context Protocol)** 整合方案，實現 AI 助手（Claude、ChatGPT、Gemini）與生產系統的無縫對接。整合 **scikit-learn** 進行異常偵測與專案指標分析。
 
-擁有 **25 年**跨語言軟體開發經驗、**24 年**技術管理實務，創立 HurricaneGroup 集團（**6 家子公司、30+ 生產系統、Cloud Run 19 services**），建立 C-suite 副手制虛擬高管團隊架構。
+擁有 **25 年**跨語言軟體開發經驗、**24 年**技術管理實務，創立 HurricaneGroup 集團（**6 家子公司、30+ 生產系統、Cloud Run 19 services**），建立 AI 高管副手團隊架構。
 
 ---
 
@@ -135,7 +135,7 @@ PostgreSQL (Production Data)
 * **工單管理（CRUD）**：建立 / 查詢 / 更新 / 搜尋需求工單
 * **Docker Remote 部署**：一鍵部署至 Staging 環境
 * **認證系統**：Device Code Flow + API Key，macOS Keychain 整合
-* **評審報告系統**：140 分制自動化評分與提交
+* **評審報告系統**：量化評分系統與提交
 * **計劃案管理**：大型功能的 Plan 建立與追蹤
 
 #### DevOps 自動化亮點
@@ -223,9 +223,9 @@ PostgreSQL (Production Data)
 
 ---
 
-### 10. Aegis Security Scanner — 自建 + ML 訓練
+### 自建程式碼安全掃描器（含 ML 優化）
 
-Python 寫的程式碼安全掃描器，含 FP ranker ML 訓練 pipeline（Sprint 21 安全發現修復中）。
+Python 寫的程式碼安全掃描器，含 ML 優化 pipeline。
 
 ---
 
@@ -241,7 +241,7 @@ Python 寫的程式碼安全掃描器，含 FP ranker ML 訓練 pipeline（Sprin
 
 ---
 
-## 兩層式 CI/CD 架構 - Two-tier CI/CD Architecture
+## 自建多層 CI/CD 架構 - Self-hosted CI/CD
 
 **Python 驅動的完整 DevOps Pipeline，5 個專案自動化建置部署**
 
@@ -304,7 +304,7 @@ Python 寫的程式碼安全掃描器，含 FP ranker ML 訓練 pipeline（Sprin
 * 創立並經營軟體開發公司，累積服務 **100+ 企業客戶**
 * 管理 **11 人跨職能技術團隊**（開發、DBA、DevOps、部署、助理）
 * 主導設計 **Squid 企業級生態系統**（12 個生產系統）
-* 建立工單驅動開發流程與 140 分評審制度
+* 建立工單驅動開發流程與 量化 PR 評審制度
 * 自架 Gitea Git Server — 工單與 Branch 雙向自動化 Hook
 
 ---
@@ -335,10 +335,10 @@ Python 寫的程式碼安全掃描器，含 FP ranker ML 訓練 pipeline（Sprin
 |----------------|-----------|------------------------|
 | **Python 開發 Python Development** | 8+ 年 | 集團 5+ Python SaaS 生產系統 + 4 工具/SDK |
 | **AI / LLM Integration** | 3+ 年 | Brain Gateway / Anemone / Modelhub / MCP / Manta Workflow / Tianji |
-| **集團技術領導 Group Leadership** | 24 年 | HurricaneGroup 6 子公司、C-suite 副手制 |
+| **集團技術領導 Group Leadership** | 24 年 | HurricaneGroup 6 子公司、AI 高管副手團隊架構 |
 | **系統架構 System Architecture** | 18 年 | Multi-tenant SaaS, OAuth2, Microservices, LLM Gateway |
 | **軟體工程 Software Engineering** | 25 年 | 30+ 生產系統的集團生態系統 |
-| **GCP DevOps & CI/CD** | 5 年 | Cloud Run 19 services, 兩層式 CI/CD, 6 步 DB 流程 |
+| **GCP DevOps & CI/CD** | 5 年 | Cloud Run 19 services + 自建 CI/CD + DB 異動安全流程 |
 
 ---
 

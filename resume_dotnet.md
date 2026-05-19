@@ -9,7 +9,7 @@
 * **姓名 Name**：王英豪 (WANG YING HAO)
 * **電話 Phone**：0921-107-206
 * **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-* **期望薪資 Expected Salary**：NT$ 2,400,000 / 年
+* **接案報價 Contract Rate**：US$ 10,000 / 月（彈性條件可議）
 * **工作地點 Location**：新北市中和區（可北部地區工作）
 
 ---
@@ -18,11 +18,11 @@
 
 **資深 .NET 架構師 | C# 技術主管 | 集團技術長**
 
-擁有 **25 年** C# / .NET 開發經驗，完整歷經 .NET Framework 1.1 到 .NET 8 每一代技術演進。精通 **ASP.NET Core 8.0**、**Blazor Server / WebAssembly**、**Entity Framework Core**，並從零自建 OAuth 2.0 / OIDC 身份認證伺服器 **LocalIdentityServer (LIDS)**，涵蓋 428 個 C# 檔案、完整的多租戶隔離、MFA、JWT RS256 簽章。**2026 年完成 LIDS 客製 PKCE patch（gitea-hs v1.26.1）**，整合 Gitea OIDC 不污染 provider singleton。
+擁有 **25 年** C# / .NET 開發經驗，完整歷經 .NET Framework 1.1 到 .NET 8 每一代技術演進。精通 **ASP.NET Core 8.0**、**Blazor Server / WebAssembly**、**Entity Framework Core**，並從零自建 OAuth 2.0 / OIDC 身份認證伺服器 **LocalIdentityServer (LIDS)**，涵蓋 428 個 C# 檔案、完整的多租戶隔離、MFA、JWT RS256 簽章。**2026 年完成 LIDS 客製 PKCE patch（客製 Gitea build）**，整合 Gitea OIDC 多客戶端安全。
 
 主導 **HurricaneGroup（颶風集團）6 家子公司** 30+ 生產系統的 .NET 架構與部署，包括 **pxmart-warehouse v1.0.0**（.NET 8 WMS，810 tests / 92% coverage）、**hurricane-books（Blazor Server 帳務 SaaS）**、**antique-master-web（.NET 後端 + 167 tests）**、信保基金 .NET 8 + Blazor 現代化遷移。
 
-擔任**集團技術長**，建立 C-suite 副手制虛擬高管團隊架構、工單驅動開發流程、140 分標準化評審制度、6 步 DB 異動流程、兩層式 Git Hooks CI/CD，主導 GCP Cloud Run 19 個生產服務統一維運。
+擔任**集團技術長**，建立 AI 高管副手團隊架構、工單驅動開發流程、量化 PR 評審制度、資料庫異動安全流程、自建多層 CI/CD，主導 GCP Cloud Run 19 個生產服務統一維運。
 
 ---
 
@@ -97,7 +97,7 @@
 - Azure Key Vault / GCP Secret Manager 金鑰管理
 - Prometheus.NET 指標蒐集 + OpenTelemetry 分散式追蹤
 - Docker 容器化部署 + GCP Cloud Run 生產環境
-- 兩層式 Git Hooks CI/CD：post-commit 本地建置 → pre-push Staging 部署
+- 自建多層 CI/CD：post-commit 本地建置 → pre-push Staging 部署
 - Serilog 結構化日誌
 
 #### 架構決策
@@ -184,7 +184,7 @@
 
 #### 系統設計
 - 倉儲流程完整建模：入庫 / 出庫 / 盤點 / 移轉 / 批次查詢
-- EF Core Migration 嚴格走 6 步 DB 異動流程
+- EF Core Migration 嚴格走 資料庫異動安全流程
 - xUnit 810 tests，覆蓋率 92%（Phase 1-4 全完成）
 - Swagger + 批次查詢 API 設計
 - Docker 容器化 + 本地 CI script (`scripts/ci-local.sh`) + E2E (`tests/e2e/api-e2e.sh`)
@@ -223,7 +223,7 @@
 - 從零建構公司內部 ERP / CRM 系統，完整歷經 .NET 每一代技術演進
 - 累積服務 **100+ 企業客戶**，涵蓋 ERP、CRM、電商、社區管理等領域
 - 設計並實施 Squid 企業級生態系統（12 個互相協作的生產系統）
-- 建立工單驅動開發流程與 140 分標準化評審制度
+- 建立工單驅動開發流程與 量化 PR 評審制度
 
 ---
 
@@ -244,12 +244,12 @@
 
 ### DevOps 與部署 (DevOps & Deployment)
 * Docker 容器化：所有 .NET 服務以 Multi-stage Dockerfile 建置
-* 兩層式 CI/CD：Git Hooks (post-commit 本地 + pre-push Staging)
+* 自建多層 CI/CD（不依賴外部 CI 服務）
 * GCP Cloud Run 生產環境部署
 * Prometheus.NET + OpenTelemetry 可觀測性
 
 ### 技術決策能力 (Technical Decision Making)
-* 評估自建 vs. 第三方方案（LIDS vs. Auth0/Okta — 選擇自建以滿足客製需求）
+* 評估自建 vs. 第三方方案（最終選擇自建以滿足客製需求）
 * 跨平台資料庫選型（SQL Server vs. PostgreSQL — 選擇 PostgreSQL 支援 Linux Docker）
 * 前端技術選擇（Blazor vs. React/Vue — 依據團隊能力與需求場景決定）
 
@@ -271,7 +271,7 @@
 * 創立並經營軟體開發公司，累積服務 **100+ 企業客戶**
 * 管理 **11 人跨職能技術團隊**（開發、DBA、DevOps、部署、助理）
 * 主導設計 Squid 企業級生態系統（12 個生產系統，含 .NET 與 Python 服務）
-* 建立工單驅動開發流程與 140 分標準化評審制度
+* 建立工單驅動開發流程與 量化 PR 評審制度
 * 經歷完整 .NET 技術棧演進：.NET Framework 1.1 → .NET 8
 
 ---

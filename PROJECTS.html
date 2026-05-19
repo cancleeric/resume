@@ -13,16 +13,15 @@
 
 <header class="topbar">
   <div class="topbar__inner">
-    <span class="topbar__brand">HurricaneGroup</span>
+    <span class="topbar__brand">HurricaneSoft 工作室</span>
     <nav class="topbar__nav">
-      <a href="resume.html">主版</a>
-      <a href="resume_dotnet.html">.NET</a>
-      <a href="resume_python_ai.html">Python/AI</a>
-      <a href="resume_fullstack.html">Full-stack</a>
-      <a href="resume_java.html">Java</a>
-      <a href="resume_ios.html">iOS</a>
-      <a href="resume_security.html">Security</a>
-      <a href="PROJECTS.html">專案清單</a>
+      <a href="resume.html">主頁</a>
+      <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" class="topbar__nav--ext">LF Pipeline ↗</a>
+      <a href="resume.html#brain">Brain · LLM Gateway</a>
+      <a href="resume.html#modelhub">Modelhub · 自訓 ML</a>
+      <a href="resume.html#claude-agents">Claude Agents · 副手框架</a>
+      <a href="resume.html#content-radar">AI 內容雷達</a>
+      <a href="resume.html#預約諮詢-book-consultation" class="topbar__nav--cta">預約諮詢</a>
       <button class="topbar__btn" onclick="window.print()" title="存為 PDF / 列印">📥 PDF</button>
     </nav>
   </div>
@@ -45,7 +44,7 @@
         <li><span class="meta__k">電話</span><span class="meta__v">0921-107-206</span></li>
         <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com">cancleeric@gmail.com</a></li>
         <li><span class="meta__k">地點</span><span class="meta__v">新北市中和區</span></li>
-        <li><span class="meta__k">期望年薪</span><span class="meta__v">NT$ 2,400,000</span></li>
+        <li><span class="meta__k">接案報價</span><span class="meta__v">US$ 10,000 / 月</span></li>
       </ul>
     </section>
 
@@ -1094,7 +1093,7 @@
     <p><strong>LIDS (SQL)</strong>:</p>
     <div class="sourceCode" id="cb9"><pre
     class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Docker PostgreSQL</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> exec <span class="at">-i</span> squid-postgres-dev psql <span class="at">-U</span> squid_user <span class="at">-d</span> lids_db <span class="op">&lt;</span> /Users/yinghaowang/Work/migrations/lids/<span class="op">&lt;</span>migration_file<span class="op">&gt;</span>.sql</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> exec <span class="at">-i</span> internal-postgres-dev psql <span class="at">-U</span> squid_user <span class="at">-d</span> lids_db <span class="op">&lt;</span> /Users/yinghaowang/Work/migrations/lids/<span class="op">&lt;</span>migration_file<span class="op">&gt;</span>.sql</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Cloud SQL</span></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">psql</span> <span class="at">-h</span> 35.229.227.192 <span class="at">-U</span> squid_user <span class="at">-d</span> lids_db <span class="op">&lt;</span> /Users/yinghaowang/Work/migrations/lids/<span class="op">&lt;</span>migration_file<span class="op">&gt;</span>.sql</span></code></pre></div>
@@ -1224,7 +1223,7 @@
     </tr>
     <tr>
     <td><strong>Git Hooks</strong></td>
-    <td>兩層式 CI/CD（post-commit + pre-push）</td>
+    <td>自建多層 CI/CD</td>
     </tr>
     <tr>
     <td><strong>GitHub Actions</strong></td>
@@ -1476,7 +1475,7 @@
     </table>
     <h3 id="docker-網路">Docker 網路</h3>
     <ul>
-    <li><strong>網路名稱</strong>: <code>squid_dev_network</code></li>
+    <li><strong>網路名稱</strong>: <code>internal_dev_network</code></li>
     <li><strong>Subnet</strong>: 172.20.0.0/16</li>
     <li><strong>CRITICAL</strong>: 所有容器必須在同一網路（name
     resolution）</li>
@@ -1484,7 +1483,7 @@
     <hr />
     <h2 id="git-hook-自動化-cicdref-202601220001">Git Hook 自動化
     CI/CD（REF: 202601220001）</h2>
-    <h3 id="兩層式-cicd-架構">兩層式 CI/CD 架構</h3>
+    <h3 id="兩層式-cicd-架構">自建多層 CI/CD 架構</h3>
     <table>
     <thead>
     <tr>
@@ -1660,21 +1659,21 @@
     <h2 id="工單管理流程">工單管理流程</h2>
     <h3 id="核心原則">核心原則</h3>
     <ol type="1">
-    <li>先開票後修正（發現問題 → 創建工單 → 開始修復）</li>
+    <li>工單先行（發現問題即建單，修復前可追蹤）</li>
     <li>單一功能單一工單</li>
     <li>狀態驅動開發</li>
     <li>完整的文檔要求</li>
     <li>工單時數限制：單票不超過 8 小時</li>
     </ol>
     <h3 id="狀態流程">狀態流程</h3>
-    <pre><code>open → in_progress → pending_review → reviewed → completed</code></pre>
+    <p><em>（狀態機強制流轉，全自動追蹤）</em></p>
     <h3 id="必填欄位要求">必填欄位要求</h3>
     <ul>
     <li><strong>modification</strong>（修改詳情）: ≥200 字</li>
     <li><strong>test-results</strong>（測試結果）: ≥300 字</li>
     <li><strong>completion-reason</strong>（完成原因）: ≥400 字</li>
     </ul>
-    <h3 id="評審分數系統140-分">評審分數系統（140 分）</h3>
+    <h3 id="評審分數系統140-分">評審分數系統（量化制）</h3>
     <table>
     <thead>
     <tr>

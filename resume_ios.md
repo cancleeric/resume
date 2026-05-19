@@ -9,7 +9,7 @@
 * **姓名 Name**：王英豪 (WANG YING HAO)
 * **電話 Phone**：0921-107-206
 * **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-* **期望薪資 Expected Salary**：NT$ 2,400,000 / 年
+* **接案報價 Contract Rate**：US$ 10,000 / 月（彈性條件可議）
 * **工作地點 Location**：新北市中和區（可配合北部地區工作）
 
 ---
@@ -28,7 +28,7 @@
 - **dagongzai-ios** — 打工仔行動端（HurricanePrime SaaS 配套）
 - **LifeSnapAdmin** — Blazor Server 後台 + iOS 配對
 
-創立並主導 **HurricaneGroup（颶風集團）** 6 家子公司、**30+ 生產系統**、**Cloud Run 19 services**，建立 C-suite 副手制虛擬高管團隊架構。
+創立並主導 **HurricaneGroup（颶風集團）** 6 家子公司、**30+ 生產系統**、**Cloud Run 19 services**，建立 AI 高管副手團隊架構。
 
 ---
 
@@ -138,7 +138,7 @@
 * 主導 30+ 生產系統設計，跨 6 家子公司
 * Cloud Run 19 services 統一維運（HurricaneSoft 主責）
 * 集團統一基建：LIDS / Hurricane Vault / Hurricane Pay / Brain LLM Gateway / Anemone / Wiki.js / Gitea / Headscale
-* 建立 C-suite 副手制虛擬高管團隊架構、140 分評審制度
+* 建立 AI 高管副手團隊架構、量化 PR 評審制度
 * 技術棧：Python FastAPI / .NET 8 / React TypeScript / Next.js / Swift / PostgreSQL / Docker / GCP
 
 ### 企業級系統開發經驗（2002 - 至今）

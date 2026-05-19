@@ -11,7 +11,7 @@
 | 姓名 | 王英豪 (Eric Wang) |
 | 電話 | 0921-107-206 |
 | 信箱 | cancleeric@gmail.com |
-| 期望薪資 | NT$ 2,400,000 / 年 |
+| 接案報價 | US$ 10,000 / 月（彈性條件可議） |
 | 工作地點 | 新北市中和區（可協調北部地區工作） |
 
 ---
@@ -24,10 +24,10 @@
 
 **2026 年集團安全大躍進**：
 - **Hurricane Vault v1.0.0** — 自建 Secret Manager（Audit chain + GCP parity，集團 90+ secrets 統一管理；開發 / CI / CEO token 用 Vault，生產 Cloud Run 用 GCP Secret Manager）
-- **gitea-hs PKCE 客製 patch v1.26.1** — 為 LIDS OIDC 整合客製 Gitea，client 端送 code_challenge 不污染 provider singleton（已部署）
-- **Aegis Security Scanner** — 自建程式碼安全掃描器 + FP ranker ML 訓練（Sprint 21 安全發現持續修復）
+- **Gitea OIDC 客製 patch** — 為 LIDS OIDC 整合客製 Gitea，客戶端安全強化整合（已部署）
+- **自建程式碼安全掃描器** — 含 ML 優化（持續修復）
 - **Headscale VPN ACL** — 集團 VPN 鎖定，只 eric-mac 可主動連，其他節點全拒
-- **6 步 DB 異動流程** — 強制備份→匯出前→執行→匯出後→驗證→紀錄（2026/04/01 災情後制度化）
+- **資料庫異動安全流程** — （多階段強制備份／驗證／留證）（2026/04/01 災情後制度化）
 - **集團 19 Cloud Run 服務 IAM 統一治理** — 由 HurricaneSoft 維運主責
 
 加密工程實務：BCrypt 密碼雜湊、AES-256-GCM 資料加密、JWT RS256 非對稱簽章；Multi-tenant 安全隔離（所有 table 強制 tenant_id）；RBAC + Rate Limiting + Audit Logging + Break-glass 緊急存取，建構集團級零信任基礎設施。
@@ -63,7 +63,7 @@ PostgreSQL, Redis, Docker, GCP (Cloud Run, Cloud Functions, Secret Manager, Fire
 | Security Architecture | 10+ 年 |
 | Identity & Access Management | 5+ 年（自建 LIDS + Vault + PKCE patch）|
 | Secret Management（自建 Vault）| 1+ 年（v1.0.0 上線）|
-| Security Scanning + ML（Aegis）| 1+ 年 |
+| Security Scanning + ML（自建）| 1+ 年 |
 | 集團技術領導 Group Leadership | 24 年（HurricaneGroup 6 子公司）|
 | System Architecture | 18 年 |
 | Software Engineering | 25 年 |
@@ -185,19 +185,19 @@ PostgreSQL, Redis, Docker, GCP (Cloud Run, Cloud Functions, Secret Manager, Fire
 **期間**：2026 — 至今 | **角色**：架構決策 / 客製 patch 維護
 **技術**：Go (gitea fork), OAuth2 PKCE
 
-為 LIDS OIDC 整合客製 Gitea，解決原版 PKCE 實作污染 provider singleton 的問題：
+為 LIDS OIDC 整合客製 Gitea，解決原版 OIDC 整合的多客戶端衝突：
 
 - **branch**：`pkce-on-1.26.1`（custom image `a7b6f22844`）
-- **OIDC client 端送 code_challenge**：不污染 provider singleton，多 OIDC client 可同時使用
+- **OIDC 客戶端 PKCE 強化**：多客戶端安全，多 OIDC client 可同時使用
 - **AuthURL / Token / ProfileURL mapping**：AuthURL=localhost（瀏覽器），Token/Profile=docker 內網
 - **生產部署於 .32**（hTech 維運），原 hurricanesoft/gitea-hs 已 archived
 
 ---
 
-### 7. Aegis Security Scanner + ML FP Ranker
+### 自建程式碼安全掃描器（含 ML 優化）
 
 **期間**：2026 — 至今 | **角色**：架構設計 / Python + ML 開發
-**技術**：Python, ML pipeline (Kaggle), FP ranker training
+**技術**：Python, ML pipeline, ML 優化訓練
 
 自建程式碼安全掃描器，掃描集團 repo 安全問題；ML 模型訓練減少誤報（False Positive）：
 
@@ -220,7 +220,7 @@ PostgreSQL, Redis, Docker, GCP (Cloud Run, Cloud Functions, Secret Manager, Fire
 
 ---
 
-### 9. 6 步 DB 異動流程 — 集團制度化
+### 9. 資料庫異動安全流程 — 集團制度化
 
 **期間**：2026/04 — 至今 | **角色**：流程設計 / 強制執行
 
