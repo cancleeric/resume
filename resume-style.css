@@ -537,6 +537,10 @@ h2#近期交付案例-recent-deliveries ~ ul li::marker { color: var(--brand-2);
   color: #fbbf24 !important;
   font-weight: 600;
 }
+.topbar__nav--ext:hover {
+  color: #fde68a !important;
+  background: rgba(251, 191, 36, 0.12);
+}
 .topbar__nav--cta {
   background: var(--accent);
   color: #fff !important;
