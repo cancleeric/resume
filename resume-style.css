@@ -602,6 +602,8 @@ a:hover { text-decoration: underline; }
   overflow-y: auto;
   padding-right: 4px;
 }
+/* sidebar children 一律不准被 flex 擠壓 — content overflow 走 sidebar 自己 scroll */
+.sidebar > * { flex-shrink: 0; }
 .sidebar::-webkit-scrollbar { width: 6px; }
 .sidebar::-webkit-scrollbar-thumb { background: var(--line-2); border-radius: 3px; }
 
