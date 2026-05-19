@@ -1,15 +1,19 @@
-# 王英豪 - 集團技術長 / 技術架構師
+# 颶風軟體有限公司 · HurricaneSoft Ltd.
 
-## Group CTO & Technical Architect | 25 年軟體工程經驗 | 30+ Production Systems | 6 家集團子公司
+## Studio for Hire — 開發流程自動化 · Automated Software Delivery
+
+> **主理人**：王英豪 (WANG YING HAO)　·　**統一編號**：80289779　·　**HurricaneGroup（颶風集團）第一家子公司**
 
 ---
 
 ## 聯絡資訊 - Contact Information
 
-* **姓名 Name**：王英豪 (WANG YING HAO)
+* **公司 Company**：颶風軟體有限公司（HurricaneSoft Ltd.）— 統編 80289779（可開發票）
+* **主理人 Principal**：王英豪 (WANG YING HAO)
 * **電話 Phone**：0921-107-206
 * **信箱 Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-* **接案報價 Contract Rate**：US$ 10,000 / 月（彈性條件可議）
+* **作品官網 Portfolio**：[www.hurricanesoft.com.tw/pipeline](https://www.hurricanesoft.com.tw/pipeline) — LF 全系統 Pipeline 線上展示
+* **接案報價 Contract Rate**：US$ 10,000 / 月（彈性條件可議；支援電匯／Wise／USDC）
 * **工作地點 Location**：新北市中和區（可配合北部地區工作）
 
 ---

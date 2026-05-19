@@ -1,6 +1,8 @@
-# HurricaneSoft 工作室 — Studio for Hire
+# 颶風軟體有限公司 · HurricaneSoft Ltd.
 
-> **開發流程自動化 · Automated Software Delivery**
+> **Studio for Hire — 開發流程自動化 · Automated Software Delivery**
+> 統一編號 **80289779**　·　可開立公司行號統編發票　·　主理人 王英豪
+>
 > AI 整合是基本盤 — 真正的差異是把整套開發流程自動化（規格 → 設計 → 實作 → 審查 → 部署 → 維運），**一個人扛起以往需要整支團隊的產出**。
 
 🌐 **線上版**：[cancleeric.github.io/resume/resume.html](https://cancleeric.github.io/resume/resume.html)
