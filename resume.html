@@ -252,6 +252,7 @@
 
     <h3 class="cat-heading cat-heading--ai">🤖 AI 產品線（主力）</h3>
     <ul class="deliverable-list deliverable-list--ai">
+      <li id="squid"><strong>Squid — 集團專案 / 工單管理 SaaS（公司核心）</strong>　多租戶需求管理平台，<strong>AI Agent 工單驅動開發的底層</strong>；LIDS OAuth2 SSO + JWT + API Key 雙認證；嚴格狀態機（一次一個狀態切換 + 角色 / 必填驗證）；自動租戶創建（first login）；6 大 API 模組（Requirements / Projects / Users / Categories / ApiKeys / Auth）+ Python SDK + JS SDK 雙官方 SDK</li>
       <li id="manta"><strong>Manta — AI Workflow Canvas（對標 Coze）</strong>　多租戶 AI 編排平台；沙盒執行 + Webhook 觸發 + 實時監控；JWT httpOnly cookie + LIDS end_session + CISO/compliance PASS；Bot Export 脫敏；v2.64 生產中</li>
       <li id="aicad"><strong>AICAD — AI P&amp;ID 工程圖辨識 SaaS</strong>　工程圖 / P&amp;ID → DXF 轉換；走 Anemone Server 中繼 Claude Vision；多視圖分割 + 文字辨識 + 幾何提取；生產中</li>
       <li id="fiona-radar"><strong>fiona-radar — AI 影片結構化洞察 v1.1.0</strong>　Anemone prompt → JSONB 結構化輸出（key_points / business_insights / mentioned_entities）；YouTube 自動抓取 + 變現可行方向標註</li>
@@ -276,7 +277,7 @@
       <li id="hurricane-pay"><strong>Hurricane Pay — 集團統一金流微服務</strong>　FastAPI + PostgreSQL + PayPal SDK；GCP Cloud Run 多環境部署；15 routes；90 tests / 88% coverage；多集團產品接入，憑證統一由 GCP Secret Manager / Hurricane Vault 注入</li>
       <li><strong>LIDS — Multi-tenant SaaS 身份層</strong>　OAuth2/OIDC Identity Provider，集團 SSO，9+ 系統接入，含客製 OIDC patch（依集團文件，非本 repo 可驗）</li>
       <li><strong>Hurricane Vault — 集團統一密鑰管理 v1.0.0</strong>　自建 Secret Manager，多層稽核 + 雲端對稱備援，90+ secrets（依集團文件，非本 repo 可驗）</li>
-      <li><strong>Tentacle BFF — 工單生態</strong>　Backend for Frontend pattern；工單狀態機（強制流轉）；內部 CLI 驅動；跨集團多產品共用（依集團文件，非本 repo 可驗）</li>
+      <li><strong>Tentacle BFF — Squid 前端整合層</strong>　Backend for Frontend pattern；前端 → BFF → Squid API；內部 neritic CLI 工單操作介面；跨集團多產品共用（依集團文件，非本 repo 可驗）</li>
       <li><strong>Headscale — 集團統一 VPN</strong>　ACL 鎖定，跨辦公室節點互通，動態 IP 管理（依集團文件，非本 repo 可驗）</li>
     </ul>
 

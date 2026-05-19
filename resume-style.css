@@ -544,7 +544,7 @@ a:hover { text-decoration: underline; }
   background: var(--accent-2) !important;
 }
 /* anchor offset for sticky topbar */
-#manta, #aicad, #fiona-radar, #fiona-pipeline, #brain, #modelhub, #claude-agents, #content-radar, #content-pipeline, #conch, #abacus, #tianji, #dagongzai, #gyre, #hurricane-pay {
+#squid, #manta, #aicad, #fiona-radar, #fiona-pipeline, #brain, #modelhub, #claude-agents, #content-radar, #content-pipeline, #conch, #abacus, #tianji, #dagongzai, #gyre, #hurricane-pay {
   scroll-margin-top: 80px;
 }
 .topbar__btn {
