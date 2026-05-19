@@ -448,7 +448,7 @@ h2#近期交付案例-recent-deliveries ~ ul li::marker { color: var(--brand-2);
   opacity: 0.92;
   margin-bottom: 10px;
 }
-.ai-hero__desc strong { color: #fbbf24; font-weight: 700; }
+.ai-hero__desc strong { color: #fbbf24 !important; font-weight: 700; }
 .ai-hero__url {
   font-family: ui-monospace, "SF Mono", Menlo, monospace;
   font-size: 12.5px;
@@ -466,7 +466,7 @@ h2#近期交付案例-recent-deliveries ~ ul li::marker { color: var(--brand-2);
 .ai-hero__stats strong {
   font-size: 16px;
   font-weight: 800;
-  color: #fbbf24;
+  color: #fbbf24 !important;
   margin-right: 4px;
 }
 .ai-hero__cta {
