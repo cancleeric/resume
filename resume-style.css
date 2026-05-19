@@ -266,8 +266,12 @@ a:hover { text-decoration: underline; }
   color: var(--text);
 }
 .deliverable-list { margin-bottom: 18px; }
-.deliverable-list--ai li { padding: 4px 0; }
+.deliverable-list li { padding: 4px 0; }
+.deliverable-list li::marker { color: var(--brand-2); font-weight: 700; }
+.deliverable-list--ai li::marker { color: var(--brand); }
 .deliverable-list--ai li strong { color: var(--brand); }
+/* 近期交付案例 list markers also tinted */
+h2#近期交付案例-recent-deliveries ~ ul li::marker { color: var(--brand-2); font-weight: 700; }
 
 /* FAQ */
 .faq-grid {
