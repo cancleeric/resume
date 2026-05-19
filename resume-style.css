@@ -633,8 +633,8 @@ a:hover { text-decoration: underline; }
 }
 .avatar {
   flex-shrink: 0;
-  width: 64px;
-  height: 64px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   margin: 0;
   background: #fff;
@@ -642,10 +642,10 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 42px;
   font-weight: 800;
-  box-shadow: 0 4px 12px rgba(0,0,0,.18);
-  border: 2px solid rgba(255,255,255,.4);
+  box-shadow: 0 6px 16px rgba(0,0,0,.22);
+  border: 3px solid rgba(255,255,255,.4);
   overflow: hidden;
 }
 .profile__name {
