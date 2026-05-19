@@ -50,26 +50,15 @@
 
 ---
 
-## 履歷版本（主版 + 6 語言/角色變體）
-
-主接案用：**`resume.md` / `resume.html`**（工作室定位 + 開發流程自動化）
-
-其餘 6 個變體（dotnet / python_ai / java / fullstack / ios / security）為過往求職應徵特化版本，**接案場景請看主版**。
-
----
-
 ## 文件結構
 
-| 檔案 | 用途 |
+| 檔案 / 目錄 | 用途 |
 |---|---|
-| `resume.md` / `resume.html` | **接案主頁**（工作室定位） |
-| `PROJECTS.md` / `PROJECTS_PUBLIC.md` | 專案技術詳細清單 |
-| `INSTRUCTIONS.md` | HTML 產製 SOP |
-| `Vue_Interview_Notes.md` | Vue.js 面試筆記（保留） |
-| `plans/` | 歷次優化輪次計劃 |
-| `template.html5` | pandoc HTML 模板 |
-| `presets/*.yaml` | 各變體版 sidebar metadata |
+| `resume.md` / `resume.html` | **接案主頁**（工作室定位 / 開發流程自動化） |
 | `resume-style.css` | 雙模樣式（螢幕 + 列印 A4） |
+| `template.html5` | pandoc HTML 模板 |
+| `build.sh` | `pandoc` build 腳本 |
+| `archive/` | **舊資料封存**：6 求職特化版、PROJECTS / INSTRUCTIONS、過往 plans / presets |
 
 ---
 

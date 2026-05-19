@@ -1,57 +1,31 @@
 #!/usr/bin/env bash
-# Resume HTML build script
-# Usage: ./build.sh [filename.md]   # 不帶參數則 build 全部
+# HurricaneSoft 工作室 — Resume HTML build
+# Usage: ./build.sh [filename.md]   # 不帶參數則 build 主版 resume.md
 set -e
 
 cd "$(dirname "$0")"
-
-preset_for() {
-  case "$1" in
-    resume_dotnet.md)    echo "presets/dotnet.yaml" ;;
-    resume_python_ai.md) echo "presets/python_ai.yaml" ;;
-    resume_security.md)  echo "presets/security.yaml" ;;
-    resume_fullstack.md) echo "presets/fullstack.yaml" ;;
-    resume_java.md)      echo "presets/java.yaml" ;;
-    resume_ios.md)       echo "presets/ios.yaml" ;;
-    *) echo "" ;;
-  esac
-}
 
 build_one() {
   local f="$1"
   local out="${f%.md}.html"
   local title
   title=$(head -1 "$f" | sed 's/^# *//')
-  local preset
-  preset=$(preset_for "$f")
-  local meta_arg=""
-  if [ -n "$preset" ] && [ -f "$preset" ]; then
-    meta_arg="--metadata-file=$preset"
-  fi
-
-  # 大型參考文檔（PROJECTS / Vue_Interview）TOC 太長，限制 depth=1
-  local toc_depth=2
-  case "$f" in
-    PROJECTS.md|PROJECTS_PUBLIC.md|Vue_Interview_Notes.md) toc_depth=1 ;;
-  esac
 
   pandoc "$f" -f gfm -t html5 \
     --template=template.html5 \
-    --toc --toc-depth=$toc_depth \
+    --toc --toc-depth=2 \
     --metadata title="$title" \
-    $meta_arg \
     -o "$out"
-  printf "  ✓ %-30s → %s%s\n" "$f" "$out" "${meta_arg:+ (preset)}"
+  printf "  ✓ %-30s → %s\n" "$f" "$out"
 }
 
 if [ -n "${1:-}" ]; then
   build_one "$1"
 else
-  echo "🔨 Building all resume HTMLs…"
-  for f in resume.md resume_dotnet.md resume_fullstack.md resume_ios.md \
-           resume_java.md resume_python_ai.md resume_security.md \
-           PROJECTS.md PROJECTS_PUBLIC.md INSTRUCTIONS.md Vue_Interview_Notes.md; do
-    [ -f "$f" ] && build_one "$f"
-  done
+  echo "🔨 Building resume.md → resume.html…"
+  build_one resume.md
   echo "✅ Done."
 fi
+
+# 舊版多版本 / PROJECTS / INSTRUCTIONS 已封存於 archive/，
+# 需重建 archive 內檔案：cd archive && pandoc <file>.md ...
