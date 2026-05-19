@@ -197,7 +197,7 @@ a:hover { text-decoration: underline; }
   50%      { box-shadow: 0 0 0 6px rgba(16,185,129,.15); }
 }
 .availability__body { flex: 1; }
-.availability__body strong { color: #fff; font-size: 14.5px; }
+.availability__body strong { color: #fff !important; font-size: 14.5px; }
 .availability__body span { opacity: 0.85; margin-left: 6px; }
 .availability__cta {
   color: #fff !important;
