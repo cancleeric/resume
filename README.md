@@ -1,73 +1,85 @@
-# 王英豪 個人履歷
+# HurricaneSoft 工作室 — Studio for Hire
 
-> **集團技術長 / 技術架構師** | 25 年軟體工程經驗 | **30+ Production Systems** | **6 家集團子公司** | HurricaneGroup 創辦人
+> **開發流程自動化 · Automated Software Delivery**
+> AI 整合是基本盤 — 真正的差異是把整套開發流程自動化（規格 → 設計 → 實作 → 審查 → 部署 → 維運），**一個人扛起以往需要整支團隊的產出**。
 
----
-
-## 履歷版本導覽（1 主版 + 6 特化版）
-
-| 檔案 | 定位 | 適用職位 | 核心亮點 |
-|------|------|---------|---------|
-| **resume.md** | 主版 - 集團技術長 | CTO / 技術主管 / 架構師 | 30+ systems / 6 子公司 / 集團統一基建 / Cloud Run 19 |
-| **resume_dotnet.md** | C# / .NET 8 強化 | .NET 資深 / 主管 | LIDS (428 C# 檔) / pxmart-warehouse (810 tests) / hurricane-books / Blazor |
-| **resume_python_ai.md** | Python / AI / LLM 強化 | Python / AI 工程師 | Brain LLM Gateway / Anemone / Modelhub / Manta / Tianji / MCP |
-| **resume_java.md** | Java OOP 跨語言 | Java 開發 / 架構 | OOP 跨語言設計模式 / Spring↔FastAPI 分層思維 / 集團多語言架構決策 |
-| **resume_fullstack.md** | 全端 / Next.js / React | 全端工程師 | 5 個前端 SaaS / Next.js + Fastify + FastAPI / SwiftUI iOS |
-| **resume_ios.md** | iOS / SwiftUI / SpriteKit | iOS / Mobile 工程師 | LifeSnap 1545 Swift 檔 / SpriteKit / Firebase / dagongzai-ios |
-| **resume_security.md** | 資安 / IAM / Vault | 資安工程師 / 架構 | LIDS PKCE 客製 / Hurricane Vault v1.0.0 / Aegis Scanner / Headscale |
+🌐 **線上版**：[cancleeric.github.io/resume/resume.html](https://cancleeric.github.io/resume/resume.html)
+🌪️ **作品實證**：[hurricanesoft.com.tw/pipeline](https://www.hurricanesoft.com.tw/pipeline) — LF 全系統 Pipeline 即時運行狀態
 
 ---
 
-## 投遞建議
+## 服務項目（六大類）
 
-| 場景 | 建議版本 |
-|------|---------|
-| CTO / Engineering Manager / 架構師 | `resume.md`（主版）|
-| .NET / C# / Blazor 開發 | `resume_dotnet.md` |
-| Python / FastAPI / AI / LLM | `resume_python_ai.md` |
-| Java / OOP / Spring 概念 | `resume_java.md` |
-| 全端 / Next.js / React / Node | `resume_fullstack.md` |
-| iOS / SwiftUI / Swift | `resume_ios.md` |
-| 資安 / IAM / OAuth2 / Vault | `resume_security.md` |
+| 項目 | 定位 | 實證 |
+|---|---|---|
+| **⚡ 開發流程自動化（主力）** | AI 副手分工 + Agent 框架 + 工單狀態機 + 自建 CI/CD + 量化評審 | 自家集團一個人月跑 30+ 系統維運 + 多 SaaS 並行迭代 |
+| 🤖 AI / LLM 平台整合 | LLM Gateway / 計費 / Provider routing / 自訓模型 / RAG / 多 Agent | Brain + Modelhub + Anemone 跨產品線跑生產 |
+| 🏢 多租戶 SaaS 從 0 到上線 | 多租戶資料隔離 / 計費 / Admin / SDK / API 共用層 | 9+ 系統接入（Hurricane Pay / Squid 生態） |
+| 🔐 身份 / 安全基礎建設 | OAuth2/OIDC 自建 / SSO / MFA / 密鑰管理 | Hurricane Vault 90+ secrets 治理 |
+| 💳 金流 / 訂閱整合 | PayPal / 跨境 / Webhook / 訂閱與發票 / 多租戶帳務 | Hurricane Pay v0.13.0 LIVE |
+| ☁️ GCP Cloud Run 部署 | 容器化 / Cloud Build / Artifact Registry / Secret Manager | 19 個生產服務維運經驗 |
+| ⚙️ 既有系統現代化 | .NET Framework → .NET 8 / 單體 → 微服務 / Legacy → Modern | 信保基金 1.5 年現代化 / STA 5,000+ 學員平台 |
 
 ---
 
-## 核心成就（2026 集團規模）
+## 接案模式 / 報價
+
+| 模式 | 報價 | 適用 |
+|---|---|---|
+| **月費 Retainer**（主推） | **US$ 10,000 / 月** | 3 個月以上中長案，主理人 + AI 副手團隊全力投入 |
+| **專案制 Project-based** | **US$ 8,000 起 / 案** | POC 2–4 週 / MVP 4–8 週 / 現代化 8–12 週，固定價 + 里程碑 |
+| **顧問諮詢 Advisory** | **US$ 250 / 小時** | 架構審查 / 技術選型 / Code Review，最少 4 小時起 |
+
+**合作流程**：免費 30 分諮詢 → 範圍確認 → 報價單 → 簽約（30% 訂金）→ 開發 → 里程碑驗收 → 上線 → 1 個月保固
+**付款**：可開發票、支援電匯 / Wise / 加密貨幣（USDC）
+
+---
+
+## 信任要件（2026 集團規模）
 
 | 指標 | 數字 |
-|------|------|
+|---|---|
 | 軟體工程經驗 | **25 年**（2001-2026） |
-| 技術管理經驗 | **24 年**（2002-2026） |
-| 集團子公司 | **6 家**（HurricaneSoft / hEdge / hCore / hPrime / hDigital / hTech）|
-| 生產系統數量 | **30+ 個** 互相整合的服務 |
-| GCP Cloud Run | **19 services**（HurricaneSoft 統一維運）|
-| 集團統一基建 | LIDS / Vault / Pay / Brain / Anemone / Modelhub / Wiki.js / Gitea / Headscale |
-| 集團對外 SaaS | 8 大產品線（AICAD / 算盤 / 海螺 / 天機 / Fiona×2 / Manta / Gyre）|
-| 企業客戶數 | **100+** |
-| 程式語言 | **10+ 種** |
-| 框架與技術 | **20+ 種** |
-| 旗艦項目（LIDS）| **428 C# 檔案**，OAuth2/OIDC + MFA + Multi-tenant |
-| 旗艦項目（Squid API）| **50+ 表 / 100+ API 端點 / 1,076 Python 檔**|
-| pxmart-warehouse | **810 tests / 92% 覆蓋率**（.NET 8 WMS）|
+| 集團子公司 | **6 家**（HurricaneSoft / Edge / Core / Prime / Digital / Tech） |
+| 生產系統 | **30+ 個** 互相整合的服務 |
+| GCP Cloud Run | **19 services**（HurricaneSoft 統一維運） |
+| 對外 SaaS 產品 | **8+ 個**（Manta / Conch / Abacus / Tianji / 打工仔 / AICAD / fiona-radar / Gyre） |
+| 集團統一基建 | LIDS / Vault / Hurricane Pay / Brain / Anemone / Modelhub / Wiki.js / Gitea / Headscale |
+| 企業客戶服務 | **100+** |
+| SaaS Tenant | **9+** 接入 |
 
 ---
 
-## 聯絡資訊
+## 履歷版本（主版 + 6 語言/角色變體）
 
-- **Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com)
-- **手機**：0921-107-206
-- **期望薪資**：NT$ 2,400,000 / 年
-- **工作地點**：新北市中和區（可配合北部地區工作）
+主接案用：**`resume.md` / `resume.html`**（工作室定位 + 開發流程自動化）
+
+其餘 6 個變體（dotnet / python_ai / java / fullstack / ios / security）為過往求職應徵特化版本，**接案場景請看主版**。
 
 ---
 
-## 使用本 repo
+## 文件結構
+
+| 檔案 | 用途 |
+|---|---|
+| `resume.md` / `resume.html` | **接案主頁**（工作室定位） |
+| `PROJECTS.md` / `PROJECTS_PUBLIC.md` | 專案技術詳細清單 |
+| `INSTRUCTIONS.md` | HTML 產製 SOP |
+| `Vue_Interview_Notes.md` | Vue.js 面試筆記（保留） |
+| `plans/` | 歷次優化輪次計劃 |
+| `template.html5` | pandoc HTML 模板 |
+| `presets/*.yaml` | 各變體版 sidebar metadata |
+| `resume-style.css` | 雙模樣式（螢幕 + 列印 A4） |
+
+---
+
+## 使用本 repo（自架 / build PDF）
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/cancleeric/resume.git
 cd resume
-./build.sh                    # 一鍵 build 全部 11 個 .html
-./build.sh resume_dotnet.md   # 單檔 build
+./build.sh                    # 一鍵 build 全部 .html
+./build.sh resume.md          # 單檔 build
 open resume.html              # 開瀏覽器看
 ```
 
@@ -75,20 +87,15 @@ open resume.html              # 開瀏覽器看
 
 ---
 
-## 其他資源
+## 預約諮詢
 
-| 檔案 | 用途 |
-|------|------|
-| `PROJECTS.md` | 專案技術詳細清單（內部）|
-| `PROJECTS_PUBLIC.md` | 專案技術清單（公開版）|
-| `INSTRUCTIONS.md` | 履歷更新 SOP / HTML 產製流程 |
-| `Vue_Interview_Notes.md` | Vue.js 面試筆記 |
-| `plans/R-NEXT-plan.md` | R-NEXT 輪次優化計劃 |
-| `plans/R+2-plan.md` | R+2 輪次優化計劃 |
-| `template.html5` | pandoc HTML 模板 |
-| `presets/*.yaml` | 各特化版 sidebar metadata |
-| `resume-style.css` | 雙模樣式（螢幕 104 風 + 印刷 A4 ATS）|
+- **Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com?subject=%5B%E6%8E%A5%E6%A1%88%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4)（含預填表單）
+- **電話**：[0921-107-206](tel:+886921107206)（tap-to-call）
+- **作品官網**：[hurricanesoft.com.tw/pipeline](https://www.hurricanesoft.com.tw/pipeline)
+- **下個可承接檔期**：2026 Q3 · 同時段最多 2 個專案 · 顧問諮詢隨到隨接
+
+> 免費 30 分鐘諮詢 — 聊聊您的案子是否 fit，無壓力。回信時間 24 小時內。
 
 ---
 
-**最後更新：** 2026 年 5 月 / R+2
+**最後更新：** 2026 年 5 月 · 接案 / 顧問 / 月費合作 · 可開發票
