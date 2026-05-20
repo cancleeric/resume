@@ -255,9 +255,9 @@ function Pricing() {
                 <div className="fit-label">何時適合 · GOOD FIT</div>
                 <div className="fit-text">{t.fitFor}</div>
               </div>
-              <button className={`btn ${t.tone === 'highlight' ? 'btn-primary' : 'btn-ghost'} price-cta`}>
+              <a href="#cta" className={`btn ${t.tone === 'highlight' ? 'btn-primary' : 'btn-ghost'} price-cta`}>
                 {t.cta} <ArrowRight />
-              </button>
+              </a>
             </div>
           ))}
         </div>
