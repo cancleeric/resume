@@ -4,6 +4,12 @@
 
 ---
 
+## v7.8 — 2026-05-21
+
+- 三版 copy 修正：政府補助服務卡列出的方案「智慧製造」改為「SIIR」——2026 AI 補助四大方案實為 SBIR／AI 躍昇／數位轉型／SIIR，與颶風官網一致。改 resume.html（zh + EN）+ design/src/services.jsx，三版同步
+
+---
+
 ## v7.7 — 2026-05-21
 
 - 設計版·亮 修 CTA 聯絡面板背景：`.cta-meta-row` 原硬寫死 `rgba(8,9,12,0.5)`（近黑半透明，為深版設計），在亮版變成淺色頁面中的深灰方塊。改用 theme-aware 的 `var(--surface-2)`，icon 內框改 `var(--surface-3)` 保持層次（faq-cta.jsx，深/亮皆正確）
