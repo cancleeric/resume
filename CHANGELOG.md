@@ -4,6 +4,12 @@
 
 ---
 
+## v4.1 — 2026-05-20
+
+- 標準版修 h1 SEO：`.main h1`（主標題）原為 `display:none`，會被搜尋引擎降權、螢幕報讀器略過 → 改 visually-hidden（clip）成為有效 h1；print 版同步加 un-hide 讓 PDF 顯示標題
+
+---
+
 ## v4.0 — 2026-05-20
 
 - 設計版修錨點：`.trust-section` 只有 56px padding-top（其他 section 都 140px），點 TOC「TRUST」標題被 sticky-header 蓋住。加 scroll-margin-top:84px 對齊其他 section
