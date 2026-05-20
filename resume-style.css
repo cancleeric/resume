@@ -153,7 +153,7 @@ a:hover { text-decoration: underline; }
 /* Service grid */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 14px;
   margin: 16px 0 28px;
 }
@@ -193,7 +193,7 @@ a:hover { text-decoration: underline; }
 /* Rate grid */
 .rate-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 14px;
   margin: 16px 0 16px;
 }
