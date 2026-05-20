@@ -4,6 +4,12 @@
 
 ---
 
+## v7.5 — 2026-05-21
+
+- 標準版 修對比：品牌紅 `--accent` #ef4444 配白字僅 3.76:1（未達 WCAG AA），影響 topbar CTA「預約諮詢」、status pill 等所有 white-on-accent 表面。darken 為 #e03131（白字 4.5:1 達 AA），accent-as-text 同步達標
+
+---
+
 ## v7.4 — 2026-05-21
 
 - 設計版·亮 修對比：`--text-dim` 由 #B5B8C0（白底對比僅 ~2:1，footer 公司法務資訊與多個 10px mono 小標形同不可讀）darken 為 #777A83（~4.3:1，接近 WCAG AA）

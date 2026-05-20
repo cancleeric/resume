@@ -17,7 +17,7 @@
   --brand: #1e3a8a;
   --brand-2: #2563eb;
   --brand-soft: #eff6ff;
-  --accent: #ef4444;       /* 104 紅 */
+  --accent: #e03131;       /* 104 紅 — 白字對比 4.5:1 達 WCAG AA */
   --accent-2: #dc2626;
   --accent-soft: #fef2f2;
   --good: #10b981;
