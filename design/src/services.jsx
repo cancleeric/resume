@@ -111,7 +111,6 @@ function Services() {
         .service-card:hover { background: var(--surface-2); }
         .service-header {
           display: flex; align-items: flex-start; justify-content: space-between;
-          margin-bottom: auto;
         }
         .service-num {
           font-family: var(--font-mono);
