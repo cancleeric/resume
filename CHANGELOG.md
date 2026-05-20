@@ -4,6 +4,12 @@
 
 ---
 
+## v2.9 — 2026-05-20
+
+- 標準版加 inline SVG favicon（公司 cyan 雙橢圓 logo，data URI 免新增檔案）— 原本分頁/書籤顯示空白預設圖示
+
+---
+
 ## v2.8 — 2026-05-20
 
 - 設計版·深(index.html) 補上 SEO / 社群 meta（description / keywords / OG / Twitter card），與亮版 v2.7 對齊 — 三版 head meta 現已一致完整
