@@ -26,7 +26,7 @@ function Nav({ onMenuOpen }) {
           <a href="#systems" className="nav-link-text">可交付系統</a>
           <a href="#timeline" className="nav-link-text">交付案例</a>
           <a href="#faq" className="nav-link-text">FAQ</a>
-          <a href="#" className="lf nav-link-text" style={{ color: 'var(--cyan)', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+          <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" className="lf nav-link-text" style={{ color: 'var(--cyan)', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
             LF Pipeline <ArrowUpRight size={12}/>
           </a>
           <a href={otherHref} className="theme-switch" title={`Switch to ${switcherLabel} theme`} aria-label={`Switch to ${switcherLabel} theme`}>
@@ -78,7 +78,7 @@ function MobileMenu({ open, onClose }) {
           ))}
         </nav>
         <div className="mobile-menu-foot">
-          <a href="#" className="mobile-lf" onClick={onClose}>
+          <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" className="mobile-lf" onClick={onClose}>
             <span>進 LF Pipeline 看現場</span>
             <ArrowUpRight />
           </a>
@@ -147,7 +147,7 @@ function BottomDock() {
         <span className="dock-label">cancleeric@gmail.com</span>
       </a>
       <span className="divider divider-mobile-show"></span>
-      <a className="item dock-lf" href="#" aria-label="LF Pipeline">
+      <a className="item dock-lf" href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" aria-label="LF Pipeline">
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
           <path d="M8 1.5C8 1.5 6.5 5 4 6.5C6.5 8 8 11.5 8 14.5C8 11.5 9.5 8 12 6.5C9.5 5 8 1.5 8 1.5Z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
         </svg>
@@ -208,7 +208,7 @@ function App() {
       <StickyTOC />
       <BottomDock />
       <footer style={{ padding: '40px 16px 140px', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--text-dim)', letterSpacing: '0.08em', borderTop: '1px solid var(--border-subtle)' }}>
-        © 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v3.6
+        © 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v3.7
       </footer>
     </>
   );

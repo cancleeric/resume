@@ -4,6 +4,12 @@
 
 ---
 
+## v3.7 — 2026-05-20
+
+- 設計版修 LF Pipeline 死連結：app.jsx 三處（Nav / BottomDock / MobileMenu）的 LF Pipeline 連結原為 `href="#"`，改指向官方作品展示頁 hurricanesoft.com.tw/pipeline（深/亮兩版同時生效）
+
+---
+
 ## v3.6 — 2026-05-20
 
 - 設計版報價 CTA 修死按鈕：pricing.jsx 三張卡的 CTA 原為無動作 `<button>`，改成錨到聯絡區的 `<a href="#cta">`（深/亮兩版同時生效）
