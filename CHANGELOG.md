@@ -4,6 +4,13 @@
 
 ---
 
+## v2.4 — 2026-05-20
+
+- 比對颶風官網（hurricanesoft.com.tw）後補上缺漏業務線：新增「政府 AI 補助計畫輔導」服務（SBIR / AI 躍昇 / 數位轉型 / 智慧製造，計畫書到系統落地全程）
+- 標準版以全寬虛線卡呈現（區隔開發接案與補助諮詢）；設計版補成第 8 項服務，剛好補滿 grid（2 featured + 6 small）
+
+---
+
 ## v2.3 — 2026-05-20
 
 - 設計版（深 / 亮）meta live banner 改 sticky 常駐頂部，nav 用 CSS var 動態接在其下方（對齊標準版 sticky-header）

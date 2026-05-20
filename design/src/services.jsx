@@ -1,4 +1,4 @@
-// Services — 3x3 grid with 7 items (2 hero cards span 2 cols, then 5 small)
+// Services — grid with 8 items (2 hero cards span 3 cols, then 6 small span 2)
 
 function Services() {
   const services = [
@@ -56,6 +56,13 @@ function Services() {
       tc: '既有系統現代化',
       en: 'MODERNIZATION',
       desc: '.NET Framework → .NET 8 + Blazor、單體 → 微服務、PHP / Legacy → FastAPI / Next.js、技術債盤點與漸進式重構。實證：信保基金核心系統 1.5 年現代化、STA 5,000+ 學員平台。',
+    },
+    {
+      key: 'gov-grant',
+      num: '08',
+      tc: '政府 AI 補助計畫輔導',
+      en: 'GOV AI GRANTS',
+      desc: '2026 政府釋出逾百億元 AI 補助。協助企業評估 SBIR / AI 躍昇 / 數位轉型 / 智慧製造方案資格，從計畫書撰寫、審查到 AI 系統開發落地全程協助。',
     },
   ];
 
@@ -171,7 +178,7 @@ function Services() {
       <div className="container">
         <SectionHead
           label="04 / SERVICES"
-          title={<>七項服務，<br/>整條 pipeline 都有人接管。</>}
+          title={<>八項服務，<br/>整條 pipeline 都有人接管。</>}
           sub="主力是「開發流程自動化」，其餘是延伸 — 每一類都已在自家集團跑過生產驗證。"
         />
 
@@ -179,7 +186,7 @@ function Services() {
           {services.map(s => (
             <div key={s.key} className={`service-card ${s.featured ? 'featured' : ''}`}>
               <div className="service-header">
-                <span className="service-num">{s.num} / 07</span>
+                <span className="service-num">{s.num} / 08</span>
                 {s.tag && <span className="service-tag">{s.tag}</span>}
               </div>
               <div className="service-body">
