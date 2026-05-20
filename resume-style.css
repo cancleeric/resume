@@ -815,9 +815,15 @@ h2#近期交付案例-recent-deliveries ~ ul li::marker { color: var(--brand-2);
 .topbar__nav--cta:hover {
   background: var(--accent-2) !important;
 }
-/* anchor offset for sticky topbar */
+/* anchor offset for sticky-header (meta-live + topbar) */
+.main h2[id] {
+  scroll-margin-top: 150px;
+}
 #squid, #manta, #aicad, #fiona-radar, #fiona-pipeline, #brain, #modelhub, #claude-agents, #content-radar, #content-pipeline, #conch, #abacus, #tianji, #dagongzai, #gyre, #hurricane-pay {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 150px;
+}
+@media (max-width: 600px) {
+  .main h2[id] { scroll-margin-top: 196px; }
 }
 .topbar__btn {
   background: var(--accent);
