@@ -4,6 +4,12 @@
 
 ---
 
+## v5.4 — 2026-05-20
+
+- 設計版·深(index.html) 加 FAQPage JSON-LD — 三版 FAQPage 結構化資料現已全數補齊
+
+---
+
 ## v5.3 — 2026-05-20
 
 - 設計版·亮(index-light.html) 加 FAQPage JSON-LD（6 組問答，文字對齊 faq-cta.jsx），對齊標準版 v5.2
