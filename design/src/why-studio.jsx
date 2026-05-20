@@ -6,7 +6,7 @@ function WhyStudio() {
   const cols = [
     { key: 'freelancer', label: 'vs Freelancer', title: '個人接案', tone: 'neutral' },
     { key: 'agency',     label: 'vs Agency',     title: '外包公司', tone: 'neutral' },
-    { key: 'studio',     label: '本工作室',      title: 'HurricaneSoft Ltd.', tone: 'highlight' },
+    { key: 'studio',     label: '本工作室',      title: '颶風軟體', tone: 'highlight' },
   ];
 
   const rows = [
