@@ -49,24 +49,27 @@ function TrustBar() {
           transition: background 0.2s;
         }
         .trust-cell:hover { background: var(--surface-1); }
+        .trust-cell .count {
+          font-family: var(--font-mono);
+          font-size: 34px;
+          font-weight: 600;
+          line-height: 1;
+          letter-spacing: -0.02em;
+          color: var(--cyan);
+          margin-bottom: 10px;
+        }
         .trust-cell .name {
           font-family: var(--font-tc);
-          font-size: 15px;
+          font-size: 14px;
           font-weight: 500;
           color: var(--text-hi);
-          margin-bottom: 4px;
+          margin-bottom: 2px;
         }
         .trust-cell .en {
           font-family: var(--font-mono);
           font-size: 10px;
           letter-spacing: 0.14em;
           color: var(--text-low);
-          margin-bottom: 10px;
-        }
-        .trust-cell .count {
-          font-family: var(--font-mono);
-          font-size: 11px;
-          color: var(--cyan);
         }
       `}</style>
       <div className="container">
@@ -74,9 +77,9 @@ function TrustBar() {
         <div className="trust-grid">
           {domains.map(d => (
             <div key={d.name} className="trust-cell">
+              <div className="count">{d.count}</div>
               <div className="name">{d.name}</div>
               <div className="en">{d.en}</div>
-              <div className="count">{d.count}</div>
             </div>
           ))}
         </div>
