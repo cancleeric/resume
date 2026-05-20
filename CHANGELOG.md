@@ -4,6 +4,12 @@
 
 ---
 
+## v4.7 — 2026-05-20
+
+- 設計版·亮(index-light.html) 加 `<meta name="theme-color">`（#064e3b）— 三版 theme-color 現已全數補齊一致
+
+---
+
 ## v4.6 — 2026-05-20
 
 - 設計版·深(index.html) 加 `<meta name="theme-color">`（#064e3b），對齊標準版 v4.4 — 行動瀏覽器 UI 列跟頁面配色
