@@ -4,6 +4,12 @@
 
 ---
 
+## v5.3 — 2026-05-20
+
+- 設計版·亮(index-light.html) 加 FAQPage JSON-LD（6 組問答，文字對齊 faq-cta.jsx），對齊標準版 v5.2
+
+---
+
 ## v5.2 — 2026-05-20
 
 - 標準版加 FAQPage JSON-LD（6 組問答結構化），搜尋引擎可理解 FAQ 內容、潛在 FAQ rich result — 內容對齊頁面 6 個 details
