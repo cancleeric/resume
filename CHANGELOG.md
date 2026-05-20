@@ -4,6 +4,12 @@
 
 ---
 
+## v6.9 — 2026-05-21
+
+- hero / hire-lede 收尾句 reframe：「把這套帶進您的團隊」→「這套交付速度，現在就能接上您的專案」。原句像方法論移植（顧問/培訓），與接案 offer（我們幫你交付）錯位；改成把好處收束到「客戶的專案」。設計版 hero.jsx + 標準版 hire-lede 同步（英文版本已是 to your project）
+
+---
+
 ## v6.8 — 2026-05-21
 
 - 設計版修底部 CTA 死按鈕：faq-cta.jsx 收尾 CTA「預約諮詢 · 30 min free」「寄信先聊聊」原為無動作 `<button>`，改 `<a href=mailto>`（主 CTA 帶預填諮詢信、ghost 純 email）。深/亮共用，同時生效
