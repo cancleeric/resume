@@ -155,6 +155,12 @@ function CTA() {
           border: 1px solid var(--border);
           border-radius: var(--r-md);
           display: flex; align-items: center; gap: 12px;
+          text-decoration: none;
+          transition: border-color 0.15s, transform 0.15s;
+        }
+        a.cta-meta-row:hover {
+          border-color: var(--orange-line);
+          transform: translateY(-1px);
         }
         .cta-meta-row .icon {
           width: 32px; height: 32px;
@@ -203,27 +209,27 @@ function CTA() {
               </div>
             </div>
             <div className="cta-meta">
-              <div className="cta-meta-row">
+              <a className="cta-meta-row" href="tel:+886921107206">
                 <span className="icon"><Phone size={14}/></span>
                 <div>
                   <div className="k">PHONE</div>
                   <div className="v">+886 921-107-206</div>
                 </div>
-              </div>
-              <div className="cta-meta-row">
+              </a>
+              <a className="cta-meta-row" href="mailto:cancleeric@gmail.com">
                 <span className="icon"><Mail size={14}/></span>
                 <div>
                   <div className="k">EMAIL</div>
                   <div className="v">cancleeric@gmail.com</div>
                 </div>
-              </div>
-              <div className="cta-meta-row">
+              </a>
+              <a className="cta-meta-row" href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener">
                 <span className="icon"><ArrowUpRight /></span>
                 <div>
                   <div className="k">LIVE PIPELINE</div>
                   <div className="v">hurricanesoft.com.tw/pipeline</div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>

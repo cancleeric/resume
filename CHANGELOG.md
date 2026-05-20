@@ -4,6 +4,12 @@
 
 ---
 
+## v7.6 — 2026-05-21
+
+- 設計版（深/亮）CTA 區聯絡面板可點擊化：電話／Email／Live Pipeline 三列原為純文字 `<div>`，改為 `<a>`（tel:／mailto:／pipeline 連結）+ hover 態，手機可直接點擊撥號／寄信（faq-cta.jsx）
+
+---
+
 ## v7.5 — 2026-05-21
 
 - 標準版 修對比：品牌紅 `--accent` #ef4444 配白字僅 3.76:1（未達 WCAG AA），影響 topbar CTA「預約諮詢」、status pill 等所有 white-on-accent 表面。darken 為 #e03131（白字 4.5:1 達 AA），accent-as-text 同步達標
