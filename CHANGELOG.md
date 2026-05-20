@@ -4,6 +4,12 @@
 
 ---
 
+## v2.8 — 2026-05-20
+
+- 設計版·深(index.html) 補上 SEO / 社群 meta（description / keywords / OG / Twitter card），與亮版 v2.7 對齊 — 三版 head meta 現已一致完整
+
+---
+
 ## v2.7 — 2026-05-20
 
 - 設計版·亮（index-light.html）補上 SEO / 社群 meta（description / keywords / OG / Twitter card）— 原本 head 只有 title，分享到社群無預覽卡、搜尋無描述
