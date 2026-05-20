@@ -2,12 +2,12 @@
 
 function StudioOrg() {
   const subs = [
-    { name: 'HurricaneSoft', tc: '颶風軟體', role: '本工作室 · STUDIO', accent: true },
-    { name: 'HurricaneEdge', tc: '颶風邊際', role: '雲端基礎建設' },
-    { name: 'HurricaneAI', tc: '颶風智能', role: 'AI 產品線' },
-    { name: 'HurricaneSaaS', tc: '颶風 SaaS', role: '對外 SaaS 平台' },
-    { name: 'HurricaneOps', tc: '颶風運維', role: 'DevOps 平台' },
-    { name: 'HurricaneLab', tc: '颶風實驗室', role: '前瞻技術 R&D' },
+    { name: 'HurricaneSoft', tc: '颶風軟體', role: '本工作室 · 集團部署 / GCP 維運 / 接案出口', accent: true },
+    { name: 'HurricaneEdge', tc: '颶鋒科技', role: '8 大對外 SaaS 產品線' },
+    { name: 'HurricaneCore', tc: '颶核科技', role: 'LLM Gateway / 自訓模型 / 智腦平台' },
+    { name: 'HurricanePrime', tc: '颶擎科技', role: '客製化企業系統（.NET WMS、SaaS）' },
+    { name: 'HurricaneDigital', tc: '颶電娛樂', role: '行動遊戲 / iOS / 文創' },
+    { name: 'HurricaneTech', tc: '颶風科技', role: 'LIDS / CMS / Squid 等共用技術平台' },
   ];
   return (
     <section id="studio" className="section studio-section">

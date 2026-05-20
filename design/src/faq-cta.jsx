@@ -2,13 +2,12 @@
 
 function FAQ() {
   const items = [
-    { q: '一個人真的能扛 30+ 系統嗎？', a: '能。關鍵不是「人多」，而是「整條 pipeline 都自動化」。spec、code、review、deploy、ops 每個環節都有 AI 副手 + 自動化工具鏈，人只做決策與品質把關。實際數據：集團 6 子公司、19 個 Cloud Run 服務、99.97% SLO，一人主責一年驗證下來的結果。' },
-    { q: 'AI 寫的 code 品質如何控管？', a: '每段 code 經過 Spec → Code → Review 三道：先有可執行 spec、再生成實作、最後 Review Co-pilot 加人工把關。集成 evals、guardrails、staging 自動測試。實際通過率 94%，遠高於業界 60-70%。' },
-    { q: '如果中途想暫停 retainer？', a: 'Retainer 採月費制、30 天 notice 制。隨時暫停、隨時重啟，沒有違約金。我們不靠綁約做生意，靠長期信任。' },
-    { q: '能否帶進客戶的內部團隊？', a: '可。Retainer 內含「AI 工程化內訓」，會把這套 pipeline 文件化、SOP 化，留下能讓您團隊自己跑的系統。我們的目標是讓您離得開我們，不是離不開。' },
-    { q: '為什麼比 agency 便宜這麼多？', a: 'agency 的報價有 40-60% 是 PM、業務、行政、辦公室、利潤分配。我們是一個負責人 + AI 副手團隊，沒有中間人、沒有層層轉包。買的是產出，不是組織。' },
-    { q: '會接 short-term hack 嗎？', a: '原則上不接。我們做「能上線、能維運、能交接」的系統。如果只要 2 週做個 prototype demo、不需要維護，建議找個人 freelancer 會比較划算。' },
-    { q: '資料安全 / NDA？', a: '標準 NDA、SOC2 預備、私有部署選項。集團自有 Identity Edge SSO 系統，所有產出可在客戶 GCP project 直接 deploy、code 在客戶 repo。' },
+    { q: '檔期多久能排到？', a: '顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 2026/07 起（約 6 週後）。專案制依範圍 1-2 週內可 kick-off。' },
+    { q: '會簽 NDA / 開發票嗎？', a: '會。可開立公司行號統編發票（80289779），標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。付款支援電匯／Wise／加密貨幣（USDC）。' },
+    { q: '為何 US$ 10K/月不是按 hourly？', a: '月費模式讓負責人 + AI 副手團隊全力投入，不必為了計時打折注意力。同等價位 hourly 大約 US$ 80/h × 125h，但月費模式我們會超工，因為自家工具加成讓單位時間產出更高。' },
+    { q: '跟你合作會用到哪些 AI 工具？', a: '內部 SOP：Claude Code（主力）+ 自建 Agent 框架（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway，client code／data 全程不出您的環境（除非授權）。' },
+    { q: '能不能只請你做某個 module，不要整套？', a: '可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週做完 OAuth/SSO 整合、2 週做完 PayPal 金流串接、3 週做完 Cloud Run 部署架構盤點與導入。' },
+    { q: '合作結束後 code 歸屬？', a: '專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain framework 等）可授權使用，不另收授權費。' },
   ];
   const [open, setOpen] = useState(0);
   return (

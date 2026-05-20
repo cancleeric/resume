@@ -415,8 +415,8 @@ function Hero() {
                 <div className="label">Cloud Run 服務 <span className="en">CLOUD RUN</span></div>
               </div>
               <div className="kpi">
-                <div className="value"><CountUp to={25} /></div>
-                <div className="label">年實戰 <span className="en">YEARS</span></div>
+                <div className="value"><CountUp to={1} /></div>
+                <div className="label">年實戰驗證 <span className="en">YEAR PROVEN</span></div>
               </div>
             </div>
 

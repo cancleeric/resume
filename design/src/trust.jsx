@@ -2,14 +2,12 @@
 
 function TrustBar() {
   const domains = [
-    { name: '金融', en: 'FINANCE', count: '8 clients' },
-    { name: '製造業', en: 'MANUFACTURING', count: '12 clients' },
-    { name: '醫療', en: 'HEALTHCARE', count: '4 clients' },
-    { name: '零售連鎖', en: 'RETAIL', count: '14 clients' },
-    { name: '物流', en: 'LOGISTICS', count: '6 clients' },
-    { name: '教育', en: 'EDUCATION', count: '5 clients' },
-    { name: '政府', en: 'GOV / PUBLIC', count: '3 contracts' },
-    { name: 'B2B SaaS', en: 'B2B SAAS', count: '18 clients' },
+    { name: '年軟體經驗', en: 'YEARS', count: '25' },
+    { name: '企業客戶', en: 'ENTERPRISE', count: '100+' },
+    { name: '生產系統', en: 'PROD SYSTEMS', count: '30+' },
+    { name: '子公司', en: 'SUBSIDIARIES', count: '6' },
+    { name: 'Cloud Run 服務', en: 'CLOUD RUN', count: '19' },
+    { name: 'SaaS 接入', en: 'SAAS INTEGRATED', count: '9+' },
   ];
 
   return (
@@ -35,7 +33,7 @@ function TrustBar() {
         }
         .trust-grid {
           display: grid;
-          grid-template-columns: repeat(8, 1fr);
+          grid-template-columns: repeat(6, 1fr);
           gap: 0;
           border: 1px solid var(--border);
           border-radius: var(--r-md);
@@ -71,7 +69,7 @@ function TrustBar() {
         }
       `}</style>
       <div className="container">
-        <div className="trust-label">TRUSTED ACROSS · 客戶領域</div>
+        <div className="trust-label">TRUST CREDENTIALS · 信任要件</div>
         <div className="trust-grid">
           {domains.map(d => (
             <div key={d.name} className="trust-cell">

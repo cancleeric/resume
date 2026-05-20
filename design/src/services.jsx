@@ -5,57 +5,57 @@ function Services() {
     {
       key: 'pipeline',
       num: '01',
-      tc: '端到端開發 Pipeline',
-      en: 'END-TO-END PIPELINE',
-      desc: '從 PRD、設計、實作、code review、CI/CD 到 OPS 監控，全套 AI 工具鏈接管。',
-      bullets: ['Spec ↔ Design ↔ Build', 'Review × Deploy × Ops', '單一負責人 + AI 副手'],
+      tc: '開發流程自動化（主力）',
+      en: 'AUTOMATED DELIVERY',
+      desc: '把規格 → 設計 → 實作 → 審查 → 部署 → 維運整條流程自動化：AI 副手分工 + Agent 框架 + 工單狀態機 + 自建 CI/CD + 量化評審門檻。',
+      bullets: ['規格 → 設計 → 實作', '審查 → 部署 → 維運', '1 人扛 30+ 系統維運'],
       featured: true,
       tag: 'FLAGSHIP',
     },
     {
-      key: 'ai-product',
+      key: 'ai-platform',
       num: '02',
-      tc: 'AI 產品線開發',
-      en: 'AI PRODUCT BUILD',
-      desc: 'Agent 協作分工、LLM 整合、私有部署、多模型路由。14+ 產品線實戰驗證。',
-      bullets: ['LLM 整合 + 私有部署', 'Multi-agent 編排', 'Eval × Guardrails'],
+      tc: 'AI / LLM 平台整合',
+      en: 'AI / LLM PLATFORM',
+      desc: '自建 LLM Gateway / 計費中心 / Provider routing / 自訓模型上線 / RAG / 多 Agent 協作框架。已在 Brain + Modelhub + Anemone 跨產品線跑生產。',
+      bullets: ['LLM Gateway + 計費', 'Provider routing + RAG', '多 Agent 協作'],
       featured: true,
       tag: 'CORE',
     },
     {
       key: 'saas',
       num: '03',
-      tc: 'SaaS 上線',
-      en: 'SAAS SHIPPING',
-      desc: '帳號、billing、tenancy、admin、metering 一條龍。',
+      tc: '多租戶 SaaS 從 0 到上線',
+      en: 'MULTI-TENANT SAAS',
+      desc: '多租戶資料隔離、計費、Admin 後台、SDK／API 共用層。已在 9+ 系統接入（Hurricane Pay / Squid 生態）。',
     },
     {
-      key: 'devops',
+      key: 'identity',
       num: '04',
-      tc: 'Cloud Run / DevOps',
-      en: 'INFRA · DEPLOY',
-      desc: '19 Cloud Run 服務在跑、零停機部署、cost-aware 架構。',
+      tc: '身份 / 安全基礎建設',
+      en: 'IDENTITY · SECURITY',
+      desc: 'OAuth2 / OIDC Identity Provider 自建、SSO 跨系統串接、MFA、密鑰管理（Hurricane Vault 90+ secrets 治理）。',
     },
     {
-      key: 'fix',
+      key: 'payments',
       num: '05',
-      tc: '專案搶救',
-      en: 'RESCUE OPS',
-      desc: '接手卡關專案、做技術盡調、debug、收尾上線。',
+      tc: '金流 / 訂閱整合',
+      en: 'PAYMENTS · BILLING',
+      desc: 'PayPal / 跨境金流串接、Webhook 設計、訂閱與發票、多租戶帳務隔離。已上 Hurricane Pay v0.13.0 LIVE。',
     },
     {
-      key: 'advisory',
+      key: 'cloud-run',
       num: '06',
-      tc: '技術顧問',
-      en: 'ADVISORY',
-      desc: '架構評審、AI 策略、招募評鑑、董事會技術簡報。',
+      tc: 'GCP Cloud Run 部署架構',
+      en: 'GCP CLOUD RUN',
+      desc: '容器化、Cloud Build pipeline、Artifact Registry、Secret Manager 整合、19 個生產服務維運經驗。',
     },
     {
-      key: 'enablement',
+      key: 'modernization',
       num: '07',
-      tc: 'AI 工程化內訓',
-      en: 'ENABLEMENT',
-      desc: '把這套 pipeline 教給您的團隊，知識轉移、SOP 文件、留下能跑的系統。',
+      tc: '既有系統現代化',
+      en: 'MODERNIZATION',
+      desc: '.NET Framework → .NET 8 + Blazor、單體 → 微服務、PHP / Legacy → FastAPI / Next.js、技術債盤點與漸進式重構。實證：信保基金核心系統 1.5 年現代化、STA 5,000+ 學員平台。',
     },
   ];
 
@@ -172,7 +172,7 @@ function Services() {
         <SectionHead
           label="04 / SERVICES"
           title={<>七項服務，<br/>整條 pipeline 都有人接管。</>}
-          sub="高優先項目放最大。從 spec 到 ops，每個環節都能單獨買、也可以整包綁定。"
+          sub="主力是「開發流程自動化」，其餘是延伸 — 每一類都已在自家集團跑過生產驗證。"
         />
 
         <div className="services-grid">

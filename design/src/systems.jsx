@@ -2,35 +2,36 @@
 
 function Systems() {
   const tabs = [
-    { key: 'ai', label: 'AI 產品線', en: 'AI / PRODUCT LINE', count: 14 },
-    { key: 'saas', label: '對外 SaaS', en: 'PUBLIC SAAS', count: 9 },
-    { key: 'infra', label: '集團基礎建設', en: 'GROUP INFRA', count: 12 },
+    { key: 'ai', label: 'AI / Agent 產品線', en: 'AI / AGENT', count: 9 },
+    { key: 'saas', label: '對外 SaaS', en: 'PUBLIC SAAS', count: 5 },
+    { key: 'infra', label: '集團基礎建設', en: 'GROUP INFRA', count: 5 },
   ];
 
   const systems = {
     ai: [
-      { name: 'LF Pipeline', tagline: '展示用：開發流程自動化現場', stack: ['Next.js', 'Cloud Run', 'Vertex AI'], status: 'LIVE', metric: '6 子公司即時看板' },
-      { name: 'Agent Orchestrator', tagline: 'Multi-agent 任務分派 + eval', stack: ['Python', 'LangGraph', 'GCP'], status: 'GA', metric: '12 agent · 8 evals' },
-      { name: 'Spec → Code', tagline: '從 PRD 自動產出可執行 spec', stack: ['Claude', 'TS', 'Zod'], status: 'GA', metric: '94% 通過率' },
-      { name: 'Review Co-pilot', tagline: 'PR 審查 + 風險 flag', stack: ['GitHub Actions', 'LLM'], status: 'LIVE', metric: '> 2k PR 審過' },
-      { name: 'Doc Synth', tagline: '產品文件 / RFC 自動生成', stack: ['Embeddings', 'MDX'], status: 'GA', metric: '8 產品線使用' },
-      { name: 'Insight Stream', tagline: 'BI / 異常偵測串流', stack: ['BigQuery', 'PubSub'], status: 'BETA', metric: 'P95 < 1.2s' },
+      { name: 'Squid', tagline: '集團專案 / 工單管理 SaaS（公司核心）— AI Agent 工單驅動開發底層', stack: ['LIDS OAuth2', 'JWT', 'API Key', 'Python SDK', 'JS SDK'], status: 'LIVE', metric: '多租戶 + 嚴格狀態機' },
+      { name: 'Manta', tagline: 'AI Workflow Canvas（對標 Coze）— 多租戶 AI 編排', stack: ['沙盒', 'Webhook', '實時監控'], status: 'LIVE', metric: 'v2.64 生產中' },
+      { name: 'AICAD', tagline: 'AI P&ID 工程圖辨識 SaaS', stack: ['Anemone', 'Claude Vision', 'DXF'], status: 'LIVE', metric: '多視圖分割 + 文字辨識' },
+      { name: 'fiona-radar', tagline: 'AI 影片結構化洞察', stack: ['Anemone', 'JSONB', 'YouTube'], status: 'GA', metric: 'v1.1.0' },
+      { name: 'fiona-pipeline', tagline: 'AI 腳本生成 + 推播', stack: ['n8n', 'webhook'], status: 'LIVE', metric: '多平台感知' },
+      { name: 'Brain', tagline: '多代理 AI 協作框架', stack: ['Python', '21 files'], status: 'GA', metric: '~6,350 lines / 100% pass' },
+      { name: 'Claude Agents', tagline: 'AI 高管副手角色庫 — 多角色虛擬團隊', stack: ['多角色', '跨機同步', '分級權限'], status: 'LIVE', metric: '技術／營運／商務／產品／資安／法務' },
+      { name: 'Modelhub', tagline: 'ML 模型訓練 / 版本管理平台', stack: ['FastAPI', 'SQLAlchemy', 'SQLite'], status: 'GA', metric: '多層訓練資源排程' },
+      { name: 'Anemone / Brain Gateway', tagline: '集團統一 LLM Gateway — 計費中心 + 自動模型路由', stack: ['LLM ingress', '跨租戶'], status: 'LIVE', metric: '計費 + 路由' },
     ],
     saas: [
-      { name: 'HurricaneOps', tagline: 'DevOps 監控 + 成本看板', stack: ['Vue', 'Go', 'GCP'], status: 'LIVE', metric: '19 服務在管' },
-      { name: 'CanCleeric Studio', tagline: '個人接案 portfolio + 案件管理', stack: ['Next.js', 'tRPC'], status: 'LIVE', metric: '本頁就是' },
-      { name: 'Compliance Kit', tagline: 'SaaS 法遵自動稽核', stack: ['Audit Logs', 'OPA'], status: 'GA', metric: 'SOC2 預備' },
-      { name: 'Billing Mesh', tagline: '多租戶 metering / billing', stack: ['Stripe', 'Postgres'], status: 'GA', metric: '6 產品共用' },
-      { name: 'Identity Edge', tagline: '集中 SSO + IdP', stack: ['OIDC', 'Workload Identity'], status: 'LIVE', metric: '跨集團共用' },
-      { name: 'Forms Pro', tagline: '無 schema 表單生成', stack: ['React Hook Form'], status: 'BETA', metric: '120+ form schemas' },
+      { name: 'Conch (RS / 海螺訂位)', tagline: '預約 SaaS v6.0（2026/04 GA）', stack: ['LINE Pay', 'PayPal Live', 'iOS App'], status: 'LIVE', metric: '1,265+ tests / 28 migrations / 29 PRs' },
+      { name: 'Abacus 算盤', tagline: '中小企業帳務財務 SaaS（hurricane-books）', stack: ['.NET 8', 'Blazor', 'LIDS PKCE', 'Playwright 24'], status: 'LIVE', metric: '對標天心 CPA' },
+      { name: 'Tianji 天機', tagline: '占卜命理 iOS + Web SaaS', stack: ['iOS', 'Web'], status: 'LIVE', metric: 'HurricaneEdge 旗下' },
+      { name: '打工仔 DaGongZai', tagline: '零工媒合 SaaS v1.6.0（2026/04）', stack: ['FastAPI', 'Next.js 14', 'Swift iOS', 'PayPal Escrow'], status: 'LIVE', metric: '多平台爬蟲 + ML 薪資推算' },
+      { name: 'Gyre v0.9.0', tagline: '多服務架構（apps/api + web + ai-service）', stack: ['Secret Manager', '環境分離'], status: 'BETA', metric: 'R5 freeze 待上線' },
     ],
     infra: [
-      { name: 'Cloud Run Mesh', tagline: '集團 19 服務的統一部署', stack: ['Cloud Run', 'IaC'], status: 'LIVE', metric: '99.97% SLO' },
-      { name: 'Secret Vault', tagline: '集中金鑰 + rotation', stack: ['GCP Secret Manager'], status: 'LIVE', metric: '0 leak in 12mo' },
-      { name: 'Cost Sentinel', tagline: '即時雲端費用警示', stack: ['BigQuery', 'Slack'], status: 'LIVE', metric: '-38% 月費' },
-      { name: 'Pipeline Runner', tagline: 'GitHub Actions 抽象層', stack: ['TS', 'YAML DSL'], status: 'GA', metric: '6 repo 共用' },
-      { name: 'Eval Harness', tagline: '集團 LLM 評測平台', stack: ['Python', 'pytest'], status: 'GA', metric: '500+ test cases' },
-      { name: 'Edge Gateway', tagline: 'API gateway + rate limit', stack: ['Cloudflare Workers'], status: 'LIVE', metric: '40M req/mo' },
+      { name: 'Hurricane Pay', tagline: '集團統一金流微服務 v0.13.0', stack: ['FastAPI', 'PostgreSQL', 'PayPal SDK'], status: 'LIVE', metric: '15 routes / 90 tests / 88% coverage' },
+      { name: 'LIDS', tagline: 'Multi-tenant SaaS 身份層 — OAuth2/OIDC', stack: ['OAuth2', 'OIDC', '客製 OIDC patch'], status: 'LIVE', metric: '9+ 系統接入' },
+      { name: 'Hurricane Vault', tagline: '自建 Secret Manager + 多層稽核 v1.0.0', stack: ['Secret Manager', '稽核', '對稱備援'], status: 'LIVE', metric: '90+ secrets' },
+      { name: 'Tentacle BFF', tagline: 'Squid 前端整合層（BFF pattern）', stack: ['BFF', 'neritic CLI'], status: 'LIVE', metric: '跨集團共用' },
+      { name: 'Headscale', tagline: '集團統一 VPN', stack: ['ACL', '跨節點'], status: 'LIVE', metric: '動態 IP 管理' },
     ],
   };
 
