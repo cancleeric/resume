@@ -4,6 +4,12 @@
 
 ---
 
+## v4.6 — 2026-05-20
+
+- 設計版·深(index.html) 加 `<meta name="theme-color">`（#064e3b），對齊標準版 v4.4 — 行動瀏覽器 UI 列跟頁面配色
+
+---
+
 ## v4.5 — 2026-05-20
 
 - 設計版·亮(index-light.html) OG 補完 `og:image:width/height/alt`，對齊深版 v4.3 — 三版 OG image 標籤現已一致
