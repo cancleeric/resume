@@ -342,6 +342,15 @@ a:hover { text-decoration: underline; }
   transition: background .15s;
 }
 .rate-card__cta:hover { background: var(--brand-2); }
+.rate-card__cta--ghost {
+  background: transparent;
+  color: var(--brand);
+  border: 1px solid var(--brand-2);
+}
+.rate-card__cta--ghost:hover {
+  background: rgba(30,58,138,0.06);
+  color: var(--brand);
+}
 .rate-foot {
   font-size: 13.5px;
   line-height: 1.7;
