@@ -4,6 +4,12 @@
 
 ---
 
+## v3.4 — 2026-05-20
+
+- 設計版·深(index.html) 加 JSON-LD 結構化資料 — 三版 favicon + SEO meta + JSON-LD 現已全數補齊一致
+
+---
+
 ## v3.3 — 2026-05-20
 
 - 設計版·亮(index-light.html) 加 JSON-LD 結構化資料（ProfessionalService schema）— 對齊標準版 v3.2
