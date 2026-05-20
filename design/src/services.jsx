@@ -55,7 +55,7 @@ function Services() {
       num: '07',
       tc: '既有系統現代化',
       en: 'MODERNIZATION',
-      desc: '.NET Framework → .NET 8 + Blazor、單體 → 微服務、PHP / Legacy → FastAPI / Next.js、技術債盤點與漸進式重構。實證：信保基金核心系統 1.5 年現代化、STA 5,000+ 學員平台。',
+      desc: '.NET Framework → .NET 8 + Blazor、單體 → 微服務、PHP / Legacy → FastAPI / Next.js、技術債盤點與漸進式重構。實證：某政府信用保證機構核心系統 1.5 年現代化、某全國性協會 5,000+ 學員平台。',
     },
     {
       key: 'gov-grant',
