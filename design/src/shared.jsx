@@ -30,14 +30,15 @@ function CountUp({ to, duration = 1400, suffix = '', prefix = '', decimals = 0, 
     const ease = t => 1 - Math.pow(1 - t, 3);
     let raf;
     const tick = (now) => {
-      const t = Math.min(1, (now - start) / duration);
+      const t = Math.min(1, Math.max(0, (now - start) / duration));
       setVal(to * ease(t));
       if (t < 1) raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
   }, [inView, to, duration]);
-  const display = decimals > 0 ? val.toFixed(decimals) : Math.floor(val).toLocaleString();
+  const safeVal = Math.max(0, val);
+  const display = decimals > 0 ? safeVal.toFixed(decimals) : Math.floor(safeVal).toLocaleString();
   return <span ref={ref} className={className}>{prefix}{display}{suffix}</span>;
 }
 
