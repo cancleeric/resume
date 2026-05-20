@@ -391,6 +391,17 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 .bottom-dock.dock-hidden{transform:translateX(-50%) translateY(160%);opacity:0;pointer-events:none}
 
 /* meta live banner */
+.meta-live{padding:9px 18px;background:linear-gradient(90deg,#064e3b 0%,#065f46 100%);color:#d1fae5;font-size:12.5px;line-height:1.5;font-family:Inter,sans-serif}
+.meta-live__head{display:flex;align-items:center;justify-content:center;gap:9px;text-align:center}
+.meta-live__dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 3px rgba(52,211,153,.25);flex-shrink:0;animation:ml-pulse 2s ease-in-out infinite}
+@keyframes ml-pulse{0%,100%{box-shadow:0 0 0 3px rgba(52,211,153,.25)}50%{box-shadow:0 0 0 6px rgba(52,211,153,.12)}}
+.meta-live strong{color:#fff;font-weight:700}
+.meta-live__steps{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 5px;margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.1)}
+.meta-live__step{background:rgba(255,255,255,.1);border:1px solid rgba(52,211,153,.3);border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600;color:#ecfdf5;white-space:nowrap}
+.meta-live__arr{color:#34d399;font-size:11px;font-weight:700}
+@media print{.meta-live{display:none!important}}
+@media (max-width:600px){.meta-live{font-size:11px;padding:8px 12px}.meta-live__step{font-size:10px;padding:2px 6px}}
+
 .meta-live{display:flex;align-items:center;justify-content:center;gap:9px;padding:7px 18px;background:linear-gradient(90deg,#064e3b 0%,#065f46 100%);color:#d1fae5;font-size:12.5px;line-height:1.5;text-align:center;font-family:Inter,sans-serif}
 .meta-live__dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 3px rgba(52,211,153,.25);flex-shrink:0;animation:ml-pulse 2s ease-in-out infinite}
 @keyframes ml-pulse{0%,100%{box-shadow:0 0 0 3px rgba(52,211,153,.25)}50%{box-shadow:0 0 0 6px rgba(52,211,153,.12)}}
@@ -410,11 +421,20 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 </div>
 
 <div class="meta-live">
-  <span class="meta-live__dot"></span>
-  <span class="meta-live__text">這個頁面 <strong>100% 由 LLM 生成</strong>　·　每半小時自動跑一輪「審查 → 優化 → 推版」　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong></span>
+  <div class="meta-live__head">
+    <span class="meta-live__dot"></span>
+    <span>這個頁面 <strong>100% 由 LLM 自主開發維護</strong>　·　無人手動改 code　·　每半小時自動跑一輪　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong></span>
+  </div>
+  <div class="meta-live__steps">
+    <span class="meta-live__step">① 載入頁面</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">② AI 審查挑最弱點</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">③ Chrome MCP 親測</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">④ 聚焦修改</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">⑤ git commit</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">⑥ push</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">⑦ GitHub Pages 自動部署</span>
+  </div>
 </div>
-
-
 <div class="grid-bg"></div>
 
 <div id="root"></div>

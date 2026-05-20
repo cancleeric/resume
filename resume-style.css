@@ -90,15 +90,17 @@ a:hover { text-decoration: underline; }
    META LIVE BANNER — 「這頁本身就是開發流程自動化的 live demo」
    ============================================================ */
 .meta-live {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  padding: 7px 18px;
+  padding: 9px 18px;
   background: linear-gradient(90deg, #064e3b 0%, #065f46 100%);
   color: #d1fae5;
   font-size: 12.5px;
   line-height: 1.5;
+}
+.meta-live__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
   text-align: center;
 }
 .meta-live__dot {
@@ -109,10 +111,32 @@ a:hover { text-decoration: underline; }
   flex-shrink: 0;
   animation: pulse-dot 2s ease-in-out infinite;
 }
-.meta-live__text strong { color: #fff; font-weight: 700; }
+.meta-live strong { color: #fff; font-weight: 700; }
+.meta-live__steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 5px;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.meta-live__step {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(52,211,153,.3);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ecfdf5;
+  white-space: nowrap;
+}
+.meta-live__arr { color: #34d399; font-size: 11px; font-weight: 700; }
 @media print { .meta-live { display: none !important; } }
 @media (max-width: 600px) {
-  .meta-live { font-size: 11px; padding: 7px 12px; }
+  .meta-live { font-size: 11px; padding: 8px 12px; }
+  .meta-live__step { font-size: 10px; padding: 2px 6px; }
 }
 
 /* ============================================================
