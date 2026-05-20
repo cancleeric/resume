@@ -191,14 +191,14 @@ function CTA() {
                 適合對象：CTO、VP Eng、創辦人、PM head。
               </p>
               <div className="cta-ctas">
-                <button className="btn btn-primary">
+                <a className="btn btn-primary" href="mailto:cancleeric@gmail.com?subject=%5B%E9%A0%90%E7%B4%84%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%83%B3%E9%A0%90%E7%B4%84%2030%20%E5%88%86%E9%90%98%E5%85%8D%E8%B2%BB%E8%AB%AE%E8%A9%A2%EF%BC%9A%0A%0A%E3%80%90%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%E3%80%90%E9%A0%90%E7%AE%97%20%2F%20%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A">
                   預約諮詢 · 30 min free
                   <ArrowRight />
-                </button>
-                <button className="btn btn-ghost">
+                </a>
+                <a className="btn btn-ghost" href="mailto:cancleeric@gmail.com">
                   寄信先聊聊
                   <Mail />
-                </button>
+                </a>
               </div>
             </div>
             <div className="cta-meta">
