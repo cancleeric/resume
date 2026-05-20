@@ -4,6 +4,32 @@
 
 ---
 
+## v2.2 — 2026-05-20
+
+三版面架構 + meta live banner。
+
+### 三版面
+- 新增「設計版」（claude.ai/design v2 升級稿）— 深色 `design/index.html` + 亮色 `design/index-light.html`
+- 三版線上切換器 `.vs-switcher`（標準 / 設計深 / 設計亮）
+- 設計版內容全面對齊標準版（公司 / 統編 / 14+ 產品 / 報價 / stats）
+
+### Meta Live Banner
+- 頂部加「100% LLM 自主開發 + 每半小時自動跑一輪」綠色 banner
+- 展開 7 步 pipeline（載入 → 審查 → Chrome MCP 親測 → 修改 → commit → push → 部署）
+- meta banner + topbar 包成 `.sticky-header` 常駐頂部
+
+### 修正
+- 設計版 logo 換官方 cyan 雙橢圓 SVG（原為 design AI 編的橘色方塊）
+- 設計版 grid-bg 格線穿透 banner → z-index 修正
+- 設計版 bottom-dock 捲動自動隱藏（修浮動 dock 蓋住內容）
+- CountUp KPI 顯示 -1 負數 bug（clamp val ≥ 0）
+- service / rate / diff grid minmax 調整（修中等 viewport 2+N fallback）
+- contact-cta__item 內容溢出
+- 集團架構 ASCII tree → 設計化 group-tree 元件
+- 技術棧補 GitHub 119 repos 掃出的漏項（Kotlin / Solidity / Redis / ClickHouse / AutoGen 等）
+
+---
+
 ## v2.1 — 2026-05-20
 
 `/loop 15m` 自動迭代 30+ 輪後的收斂版本。
