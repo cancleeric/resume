@@ -4,6 +4,12 @@
 
 ---
 
+## v7.3 — 2026-05-21
+
+- 設計版（深/亮）定價卡移除冗餘 hover tooltip：每張卡原有 hover-only 的「? 何時適合」tooltip 與常駐「何時適合 · GOOD FIT」框顯示完全相同的 fitFor 文字，重複且 tooltip 在手機（無 hover）失效。移除 tooltip（pricing.jsx）精簡定價卡
+
+---
+
 ## v7.2 — 2026-05-21
 
 - 標準版手機 RWD：修 `@media (max-width:600px)` grid 兩欄水平溢出。`.sidebar`/`.main` 預設 `min-width:auto` 卡在 min-content（sidebar 被固定頭像＋不換行英文名撐住 ~342px、main 被 diff-card 撐住），360px 級手機水平溢出。改 `.sidebar`/`.main` 加 `min-width:0`、`.profile` 加 `flex-wrap:wrap` 放行縮放（sidebar/main 342→222px，docW 354→263px）

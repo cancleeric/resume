@@ -140,38 +140,6 @@ function Pricing() {
         }
         .price-amount .unit { font-size: 18px; color: var(--text-low); font-family: var(--font-mono); }
         .price-card.highlight .price-amount .unit { font-size: 22px; color: var(--text-mid); }
-        .price-tooltip {
-          position: relative;
-          display: inline-flex; align-items: center; gap: 6px;
-          font-family: var(--font-mono);
-          font-size: 11px;
-          letter-spacing: 0.06em;
-          color: var(--text-low);
-          margin-bottom: 24px;
-          padding: 6px 10px;
-          background: var(--surface-2);
-          border: 1px dashed var(--border-strong);
-          border-radius: 4px;
-          cursor: help;
-          align-self: flex-start;
-        }
-        .price-tooltip .q { color: var(--cyan); font-weight: 600; }
-        .price-tooltip:hover .tip { opacity: 1; pointer-events: auto; }
-        .price-tooltip .tip {
-          position: absolute; bottom: calc(100% + 8px); left: 0;
-          width: 240px;
-          padding: 10px 12px;
-          background: var(--surface-3);
-          border: 1px solid var(--border-strong);
-          border-radius: 4px;
-          font-family: var(--font-tc);
-          font-size: 12px;
-          color: var(--text-mid);
-          opacity: 0; pointer-events: none;
-          transition: opacity 0.15s;
-          z-index: 5;
-          line-height: 1.5;
-        }
         .price-desc {
           font-family: var(--font-tc);
           font-size: 14px;
@@ -238,11 +206,6 @@ function Pricing() {
               <div className="price-amount">
                 <span className="num">{t.price}</span>
                 <span className="unit">{t.unit}</span>
-              </div>
-              <div className="price-tooltip">
-                <span className="q">?</span>
-                <span>何時適合</span>
-                <div className="tip">{t.fitFor}</div>
               </div>
               <p className="price-desc">{t.desc}</p>
               <div className="price-divider"></div>
