@@ -4,6 +4,12 @@
 
 ---
 
+## v4.8 — 2026-05-20
+
+- 設計版·深(index.html) `<title>` 補價值主張：原「HurricaneSoft Ltd. · 颶風軟體有限公司」只有公司名零關鍵字 → 改為「颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化接案 · 20× 產出」對齊標準版
+
+---
+
 ## v4.7 — 2026-05-20
 
 - 設計版·亮(index-light.html) 加 `<meta name="theme-color">`（#064e3b）— 三版 theme-color 現已全數補齊一致
