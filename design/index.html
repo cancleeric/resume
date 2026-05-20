@@ -386,6 +386,9 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 @media print{.vs-switcher{display:none!important}}
 @media (max-width:600px){.vs-switcher{padding:4px 10px;font-size:10.5px}.vs-switcher__label{display:none}}
 
+
+.bottom-dock{transition:transform .32s cubic-bezier(.4,0,.2,1),opacity .32s}
+.bottom-dock.dock-hidden{transform:translateX(-50%) translateY(160%);opacity:0;pointer-events:none}
 </style>
 
 <link rel="stylesheet" href="src/responsive.css" />
@@ -423,5 +426,20 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 <script type="text/babel" src="src/tokens.jsx"></script>
 <script type="text/babel" src="src/app.jsx"></script>
 
+<script>
+/* bottom-dock 捲動自動隱藏：下滑收、上滑/近頂/近底顯示 */
+(function(){
+  var lastY=window.scrollY;
+  window.addEventListener('scroll',function(){
+    var dock=document.querySelector('.bottom-dock');
+    if(!dock)return;
+    var y=window.scrollY, h=document.documentElement.scrollHeight, vh=window.innerHeight;
+    if(y<300 || (y+vh)>(h-200)){ dock.classList.remove('dock-hidden'); }
+    else if(y>lastY+8){ dock.classList.add('dock-hidden'); }
+    else if(y<lastY-8){ dock.classList.remove('dock-hidden'); }
+    lastY=y;
+  },{passive:true});
+})();
+</script>
 </body>
 </html>
