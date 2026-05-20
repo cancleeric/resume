@@ -4,6 +4,12 @@
 
 ---
 
+## v6.3 — 2026-05-20
+
+- 設計版·亮(index-light.html) OG 補 `og:locale` content="zh_TW"，對齊標準版 v6.2
+
+---
+
 ## v6.2 — 2026-05-20
 
 - 標準版 OG 補 `og:locale` content="zh_TW" — 社群平台（Facebook 等）依此判定內容語系/地區，原 OG 標籤齊全僅缺此項
