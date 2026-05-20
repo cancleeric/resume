@@ -4,6 +4,12 @@
 
 ---
 
+## v3.1 — 2026-05-20
+
+- 設計版·深(index.html) 加 inline SVG favicon — 三版 favicon 現已全數補齊一致
+
+---
+
 ## v3.0 — 2026-05-20
 
 - 設計版·亮(index-light.html) 加 inline SVG favicon（公司 cyan 雙橢圓 logo，data URI）— 對齊標準版 v2.9
