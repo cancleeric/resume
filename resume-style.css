@@ -410,6 +410,59 @@ h2#近期交付案例-recent-deliveries ~ ul li::marker { color: var(--brand-2);
   color: var(--text-2);
 }
 
+/* Group tree — 集團 6 子公司 */
+.group-tree {
+  margin: 16px 0 22px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.group-tree__head {
+  padding: 11px 16px;
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.group-tree__list { list-style: none; margin: 0; padding: 0; }
+.group-tree__item {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--line);
+  font-size: 13.5px;
+}
+.group-tree__item--self {
+  background: var(--brand-soft);
+}
+.group-tree__name {
+  flex-shrink: 0;
+  width: 150px;
+  font-weight: 700;
+  color: var(--brand);
+}
+.group-tree__name em {
+  display: block;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-2);
+  margin-top: 1px;
+}
+.group-tree__item--self .group-tree__name::after {
+  content: " ◀ 本公司";
+  font-size: 10px;
+  color: var(--accent);
+  font-weight: 700;
+}
+.group-tree__role { color: var(--text-2); line-height: 1.5; }
+@media (max-width: 600px) {
+  .group-tree__item { flex-direction: column; gap: 2px; }
+  .group-tree__name { width: auto; }
+}
+
 /* Contact CTA */
 .contact-cta {
   margin: 16px 0 28px;
