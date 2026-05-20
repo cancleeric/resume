@@ -4,6 +4,12 @@
 
 ---
 
+## v5.1 — 2026-05-20
+
+- 設計版·深(index.html) 加 self-referencing canonical — 三版 canonical 現已全數補齊
+
+---
+
 ## v5.0 — 2026-05-20
 
 - 設計版·亮(index-light.html) 加 self-referencing canonical，對齊標準版 v4.9
