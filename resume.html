@@ -61,7 +61,8 @@
       { "@type": "Question", "name": "為何 US$ 10K/月不是按 hourly？", "acceptedAnswer": { "@type": "Answer", "text": "月費模式讓負責人 + AI 副手團隊全力投入，不必為了計時打折注意力。同等價位 hourly 大約 US$ 80/h × 125h，但月費模式我們會超工，因為自家工具加成讓單位時間產出更高。" } },
       { "@type": "Question", "name": "跟你合作會用到哪些 AI 工具？", "acceptedAnswer": { "@type": "Answer", "text": "內部 SOP：Claude Code（主力）+ 自建 Agent 框架（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway，client code／data 全程不出您的環境（除非授權）。" } },
       { "@type": "Question", "name": "能不能只請你做某個 module，不要整套？", "acceptedAnswer": { "@type": "Answer", "text": "可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週做完 OAuth/SSO 整合、2 週做完 PayPal 金流串接、3 週做完 Cloud Run 部署架構盤點與導入。" } },
-      { "@type": "Question", "name": "合作結束後 code 歸屬？", "acceptedAnswer": { "@type": "Answer", "text": "專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain framework 等）可授權使用，不另收授權費。" } }
+      { "@type": "Question", "name": "合作結束後 code 歸屬？", "acceptedAnswer": { "@type": "Answer", "text": "專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain framework 等）可授權使用，不另收授權費。" } },
+      { "@type": "Question", "name": "工作室規模這麼小，萬一你檔期滿了或臨時有狀況？", "acceptedAnswer": { "@type": "Answer", "text": "正因為是工作室規模，我們嚴格控管同時段案量（月費 Retainer 最多 2 案），不超賣、不讓您的案子被排擠。每個專案的 code、文件、CI/CD、密鑰規範即時交付且文件化 —— 您手上隨時是一份完整、可被任何團隊接手的交付，不會被一個人綁死。重大決策有書面紀錄，進度每週同步。" } }
     ]
   }
   </script>
@@ -181,7 +182,7 @@
       </div>
     </section>
 
-    <p class="sidebar__foot">v6.9 · 2026/05/21 01:22</p>
+    <p class="sidebar__foot">v7.0 · 2026/05/21 01:53</p>
   </aside>
 
   <main class="main">
@@ -475,6 +476,10 @@
         <summary data-i18n="faq6-q">合作結束後 code 歸屬？</summary>
         <p data-i18n="faq6-a">專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain framework 等）可授權使用，不另收授權費。</p>
       </details>
+      <details class="faq-item">
+        <summary data-i18n="faq7-q">工作室規模這麼小，萬一你檔期滿了或臨時有狀況？</summary>
+        <p data-i18n="faq7-a">正因為是工作室規模，我們<strong>嚴格控管同時段案量</strong>（月費 Retainer 最多 2 案），不超賣、不讓您的案子被排擠。每個專案的 code、文件、CI/CD、密鑰規範<strong>即時交付且文件化</strong> —— 您手上隨時是一份完整、可被任何團隊接手的交付，不會被一個人綁死。重大決策有書面紀錄，進度每週同步。</p>
+      </details>
     </div>
 
     <h2 id="預約諮詢-book-consultation" data-i18n="h2-book">預約諮詢 — Book a Consultation</h2>
@@ -498,7 +503,7 @@
     </div>
 
     <hr />
-    <p><em data-i18n="footer-note">v6.9 · 最後更新 2026/05/21 01:22　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
+    <p><em data-i18n="footer-note">v7.0 · 最後更新 2026/05/21 01:53　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
 
   </main>
 
@@ -510,7 +515,7 @@
     · <a href="tel:+886921107206">📞 0921-107-206</a>
     · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" data-i18n="footer-pipeline">🌪️ LF Pipeline 線上作品 ↗</a>
   </p>
-  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v6.9</p>
+  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.0</p>
 </footer>
 
 <script>
@@ -771,6 +776,8 @@ const I18N = {
   'faq5-a': 'Absolutely — that\'s exactly what the Advisory or Project-based tiers are for. Common scopes: OAuth/SSO integration in 1 week, PayPal payment integration in 2 weeks, Cloud Run architecture audit and migration in 3 weeks.',
   'faq6-q': 'Who owns the code after the engagement ends?',
   'faq6-a': 'On project completion, all code, documentation, CI/CD configurations, and secrets management specs are fully transferred to you. Our proprietary general-purpose tooling (Brain framework, etc.) is licensed for your use at no additional charge.',
+  'faq7-q': 'You’re a small studio — what if you’re fully booked or something comes up?',
+  'faq7-a': 'Precisely because we run at studio scale, we <strong>strictly cap concurrent engagements</strong> (max 2 on Monthly Retainer) — no overselling, your project never gets crowded out. Every project’s code, docs, CI/CD, and secrets specs are <strong>delivered and documented continuously</strong> — at any moment you hold a complete handover any team can pick up, so you’re never locked to one person. Key decisions are recorded in writing; progress synced weekly.',
 
   // book consultation section
   'h2-book':              'Book a Consultation — Book a Consultation',
@@ -781,10 +788,10 @@ const I18N = {
   'contact-note':         'Free 30-min consultation · Reply within 24 hours · No pressure — if it\'s not a fit, we\'ll say so',
 
   // footer
-  'footer-note':    'v6.9 · Last updated 2026/05/21 01:22 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
+  'footer-note':    'v7.0 · Last updated 2026/05/21 01:53 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
   'footer-consult': '📧 Hire Us',
   'footer-pipeline':'🌪️ LF Pipeline — Live Portfolio ↗',
-  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v6.9',
+  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.0',
 };
 
 // ── Snapshot Chinese originals once DOM is ready ──────────────────────────
