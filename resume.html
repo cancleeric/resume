@@ -69,26 +69,29 @@
 <body>
 
 <div class="vs-switcher" role="navigation" aria-label="版面切換">
-  <span class="vs-switcher__label">版面</span>
-  <a href="resume.html" class="active">標準</a>
-  <a href="design/index.html">設計 · 深</a>
-  <a href="design/index-light.html">設計 · 亮</a>
+  <span class="vs-switcher__label" data-i18n="vs-label">版面</span>
+  <a href="resume.html" class="active" data-i18n="vs-standard">標準</a>
+  <a href="design/index.html" data-i18n="vs-design-dark">設計 · 深</a>
+  <a href="design/index-light.html" data-i18n="vs-design-light">設計 · 亮</a>
+  <span class="vs-switcher__divider"></span>
+  <button class="vs-lang-btn" id="btn-zh" onclick="setLang('zh')" aria-label="切換中文">中文</button>
+  <button class="vs-lang-btn" id="btn-en" onclick="setLang('en')" aria-label="Switch to English">EN</button>
 </div>
 
 <div class="sticky-header">
 <div class="meta-live">
   <div class="meta-live__head">
     <span class="meta-live__dot"></span>
-    <span>這個頁面 <strong>100% 由 LLM 自主開發維護</strong>　·　無人手動改 code　·　每 30 分鐘自動跑一輪　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong></span>
+    <span data-i18n="meta-live-head">這個頁面 <strong>100% 由 LLM 自主開發維護</strong>　·　無人手動改 code　·　每 30 分鐘自動跑一輪　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong></span>
   </div>
   <div class="meta-live__steps">
-    <span class="meta-live__step">① 載入頁面</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">② AI 審查挑最弱點</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">③ Chrome MCP 親測</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">④ 聚焦修改</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">⑤ git commit</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">⑥ push</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">⑦ GitHub Pages 自動部署</span>
+    <span class="meta-live__step" data-i18n="meta-step-1">① 載入頁面</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="meta-step-2">② AI 審查挑最弱點</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="meta-step-3">③ Chrome MCP 親測</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="meta-step-4">④ 聚焦修改</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="meta-step-5">⑤ git commit</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="meta-step-6">⑥ push</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="meta-step-7">⑦ GitHub Pages 自動部署</span>
   </div>
 </div>
 
@@ -104,13 +107,13 @@
       <span class="topbar__brand-text">颶風軟體<small>HURRICANESOFT</small></span>
     </span>
     <nav class="topbar__nav">
-      <a href="resume.html#服務項目-services">服務</a>
-      <a href="resume.html#接案模式-how-we-work">報價</a>
-      <a href="resume.html#可交付的系統類型-deliverable-systems">可交付系統</a>
-      <a href="resume.html#近期交付案例-recent-deliveries">交付案例</a>
-      <a href="resume.html#常見問題-faq">FAQ</a>
+      <a href="resume.html#服務項目-services" data-i18n="nav-services">服務</a>
+      <a href="resume.html#接案模式-how-we-work" data-i18n="nav-pricing">報價</a>
+      <a href="resume.html#可交付的系統類型-deliverable-systems" data-i18n="nav-deliverables">可交付系統</a>
+      <a href="resume.html#近期交付案例-recent-deliveries" data-i18n="nav-cases">交付案例</a>
+      <a href="resume.html#常見問題-faq" data-i18n="nav-faq">FAQ</a>
       <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" class="topbar__nav--ext">LF Pipeline ↗</a>
-      <a href="resume.html#預約諮詢-book-consultation" class="topbar__nav--cta">預約諮詢</a>
+      <a href="resume.html#預約諮詢-book-consultation" class="topbar__nav--cta" data-i18n="nav-book">預約諮詢</a>
       <button class="topbar__btn" onclick="window.print()" title="存為 PDF / 列印">📥 PDF</button>
     </nav>
   </div>
@@ -125,66 +128,66 @@
       <div class="profile__main">
         <h2 class="profile__name">王英豪</h2>
         <p class="profile__en">WANG YING HAO</p>
-        <p class="profile__title">颶風軟體 · 負責人<br/><span class="profile__title--sub">Studio for Hire</span></p>
-        <div class="status-pill">現正接案中 · 限量檔期</div>
+        <p class="profile__title" data-i18n="profile-title">颶風軟體 · 負責人<br/><span class="profile__title--sub">Studio for Hire</span></p>
+        <div class="status-pill" data-i18n="status-pill">現正接案中 · 限量檔期</div>
       </div>
     </div>
 
     <section class="card">
-      <h3 class="card__title">聯絡資訊</h3>
+      <h3 class="card__title" data-i18n="card-contact-title">聯絡資訊</h3>
       <ul class="meta">
-        <li><span class="meta__k">電話</span><a class="meta__v" href="tel:+886921107206">0921-107-206</a></li>
-        <li><span class="meta__k">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com?subject=%5B%E6%8E%A5%E6%A1%88%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%0A%0A%E6%88%91%E5%BE%9E%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%9A%84%E7%B6%B2%E9%A0%81%E7%9C%8B%E5%88%B0%E8%B2%B4%E6%96%B9%E6%8F%90%E4%BE%9B%E7%9A%84%E6%9C%8D%E5%8B%99%EF%BC%8C%E6%83%B3%E9%80%B2%E4%B8%80%E6%AD%A5%E8%A8%8E%E8%AB%96%EF%BC%9A%0A%0A%E3%80%90%E6%A1%88%E4%BB%B6%E9%A1%9E%E5%9E%8B%E3%80%91%EF%BC%88%E8%AB%8B%E9%81%B8%EF%BC%9AAI%2FLLM%20%E5%B9%B3%E5%8F%B0%E6%95%B4%E5%90%88%20%2F%20%E5%A4%9A%E7%A7%9F%E6%88%B6%20SaaS%20%2F%20%E8%BA%AB%E4%BB%BD%E5%AE%89%E5%85%A8%20%2F%20%E9%87%91%E6%B5%81%20%2F%20Cloud%20Run%20%E9%83%A8%E7%BD%B2%20%2F%20%E7%B3%BB%E7%B5%B1%E7%8F%BE%E4%BB%A3%E5%8C%96%20%2F%20%E5%85%B6%E4%BB%96%EF%BC%89%EF%BC%9A%0A%0A%E3%80%90%E6%A1%88%E4%BB%B6%E7%AF%84%E5%9C%8D%20%2F%20%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E8%A8%88%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E7%AE%97%E7%AF%84%E5%9C%8D%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E5%85%AC%E5%8F%B8%20%2F%20%E5%80%8B%E4%BA%BA%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A%0A%E8%AC%9D%E8%AC%9D%EF%BC%81%0A">cancleeric@gmail.com</a></li>
-        <li><span class="meta__k">作品</span><a class="meta__v" href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener">hurricanesoft.com.tw/pipeline ↗</a></li>
-        <li><span class="meta__k">公司地址</span><span class="meta__v">台北市忠孝東路六段 79 號 2 樓</span></li>
-        <li><span class="meta__k">統編</span><span class="meta__v">80289779（可開發票）</span></li>
-        <li><span class="meta__k">接案報價</span><span class="meta__v">US$ 10,000 / 月</span></li>
+        <li><span class="meta__k" data-i18n="meta-phone">電話</span><a class="meta__v" href="tel:+886921107206">0921-107-206</a></li>
+        <li><span class="meta__k" data-i18n="meta-email">Email</span><a class="meta__v" href="mailto:cancleeric@gmail.com?subject=%5B%E6%8E%A5%E6%A1%88%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%0A%0A%E6%88%91%E5%BE%9E%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%9A%84%E7%B6%B2%E9%A0%81%E7%9C%8B%E5%88%B0%E8%B2%B4%E6%96%B9%E6%8F%90%E4%BE%9B%E7%9A%84%E6%9C%8D%E5%8B%99%EF%BC%8C%E6%83%B3%E9%80%B2%E4%B8%80%E6%AD%A5%E8%A8%8E%E8%AB%96%EF%BC%9A%0A%0A%E3%80%90%E6%A1%88%E4%BB%B6%E9%A1%9E%E5%9E%8B%E3%80%91%EF%BC%88%E8%AB%8B%E9%81%B8%EF%BC%9AAI%2FLLM%20%E5%B9%B3%E5%8F%B0%E6%95%B4%E5%90%88%20%2F%20%E5%A4%9A%E7%A7%9F%E6%88%B6%20SaaS%20%2F%20%E8%BA%AB%E4%BB%BD%E5%AE%89%E5%85%A8%20%2F%20%E9%87%91%E6%B5%81%20%2F%20Cloud%20Run%20%E9%83%A8%E7%BD%B2%20%2F%20%E7%B3%BB%E7%B5%B1%E7%8F%BE%E4%BB%A3%E5%8C%96%20%2F%20%E5%85%B6%E4%BB%96%EF%BC%89%EF%BC%9A%0A%0A%E3%80%90%E6%A1%88%E4%BB%B6%E7%AF%84%E5%9C%8D%20%2F%20%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E8%A8%88%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E7%AE%97%E7%AF%84%E5%9C%8D%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E5%85%AC%E5%8F%B8%20%2F%20%E5%80%8B%E4%BA%BA%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A%0A%E8%AC%9D%E8%AC%9D%EF%BC%81%0A">cancleeric@gmail.com</a></li>
+        <li><span class="meta__k" data-i18n="meta-portfolio">作品</span><a class="meta__v" href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener">hurricanesoft.com.tw/pipeline ↗</a></li>
+        <li><span class="meta__k" data-i18n="meta-address">公司地址</span><span class="meta__v" data-i18n="meta-address-val">台北市忠孝東路六段 79 號 2 樓</span></li>
+        <li><span class="meta__k" data-i18n="meta-taxid">統編</span><span class="meta__v" data-i18n="meta-taxid-val">80289779（可開發票）</span></li>
+        <li><span class="meta__k" data-i18n="meta-rate">接案報價</span><span class="meta__v" data-i18n="meta-rate-value">US$ 10,000 / 月</span></li>
       </ul>
     </section>
 
     <section class="card">
-      <h3 class="card__title">信任要件</h3>
+      <h3 class="card__title" data-i18n="card-trust-title">信任要件</h3>
       <div class="stats">
-        <div class="stat"><span class="stat__num">25</span><span class="stat__label">年軟體經驗</span></div>
-        <div class="stat"><span class="stat__num">100+</span><span class="stat__label">企業客戶</span></div>
-        <div class="stat"><span class="stat__num">30+</span><span class="stat__label">生產系統</span></div>
-        <div class="stat"><span class="stat__num">6</span><span class="stat__label">子公司</span></div>
+        <div class="stat"><span class="stat__num">25</span><span class="stat__label" data-i18n="stat-exp">年軟體經驗</span></div>
+        <div class="stat"><span class="stat__num">100+</span><span class="stat__label" data-i18n="stat-clients">企業客戶</span></div>
+        <div class="stat"><span class="stat__num">30+</span><span class="stat__label" data-i18n="stat-systems">生產系統</span></div>
+        <div class="stat"><span class="stat__num">6</span><span class="stat__label" data-i18n="stat-subsidiaries">子公司</span></div>
         <div class="stat"><span class="stat__num">19</span><span class="stat__label">Cloud Run</span></div>
-        <div class="stat"><span class="stat__num">9+</span><span class="stat__label">SaaS 接入</span></div>
+        <div class="stat"><span class="stat__num">9+</span><span class="stat__label" data-i18n="stat-saas">SaaS 接入</span></div>
       </div>
     </section>
 
     <section class="card toc-card">
-      <h3 class="card__title">📑 目錄</h3>
+      <h3 class="card__title">📑 <span data-i18n="toc-title">目錄</span></h3>
       <nav class="toc-nav">
         <ul>
-          <li><a href="#為什麼選工作室-why-studio" id="toc-為什麼選工作室-why-studio">為什麼選工作室</a></li>
-          <li><a href="#服務項目-services" id="toc-服務項目-services">服務項目</a></li>
-          <li><a href="#接案模式-how-we-work" id="toc-接案模式-how-we-work">接案模式 / 報價</a></li>
-          <li><a href="#可交付的系統類型-deliverable-systems" id="toc-可交付的系統類型-deliverable-systems">可交付的系統類型</a></li>
-          <li><a href="#近期交付案例-recent-deliveries" id="toc-近期交付案例-recent-deliveries">近期交付案例</a></li>
-          <li><a href="#技術棧-tech-stack" id="toc-技術棧-tech-stack">技術棧</a></li>
-          <li><a href="#工作室背景-about-the-studio" id="toc-工作室背景-about-the-studio">工作室背景</a></li>
-          <li><a href="#常見問題-faq" id="toc-常見問題-faq">常見問題</a></li>
-          <li><a href="#預約諮詢-book-consultation" id="toc-預約諮詢-book-consultation">預約諮詢</a></li>
+          <li><a href="#為什麼選工作室-why-studio" id="toc-為什麼選工作室-why-studio" data-i18n="toc-why-studio">為什麼選工作室</a></li>
+          <li><a href="#服務項目-services" id="toc-服務項目-services" data-i18n="toc-services">服務項目</a></li>
+          <li><a href="#接案模式-how-we-work" id="toc-接案模式-how-we-work" data-i18n="toc-pricing">接案模式 / 報價</a></li>
+          <li><a href="#可交付的系統類型-deliverable-systems" id="toc-可交付的系統類型-deliverable-systems" data-i18n="toc-deliverables">可交付的系統類型</a></li>
+          <li><a href="#近期交付案例-recent-deliveries" id="toc-近期交付案例-recent-deliveries" data-i18n="toc-cases">近期交付案例</a></li>
+          <li><a href="#技術棧-tech-stack" id="toc-技術棧-tech-stack" data-i18n="toc-stack">技術棧</a></li>
+          <li><a href="#工作室背景-about-the-studio" id="toc-工作室背景-about-the-studio" data-i18n="toc-about">工作室背景</a></li>
+          <li><a href="#常見問題-faq" id="toc-常見問題-faq" data-i18n="toc-faq">常見問題</a></li>
+          <li><a href="#預約諮詢-book-consultation" id="toc-預約諮詢-book-consultation" data-i18n="toc-book">預約諮詢</a></li>
         </ul>
       </nav>
     </section>
 
     <section class="card">
-      <h3 class="card__title">技術標籤</h3>
+      <h3 class="card__title" data-i18n="card-tags-title">技術標籤</h3>
       <div class="tags">
         <span class="tag">C#</span><span class="tag">.NET 8</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Swift</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">GCP</span><span class="tag">Cloud Run</span><span class="tag">OAuth2/OIDC</span><span class="tag">LLM Gateway</span><span class="tag">Multi-tenant SaaS</span>
       </div>
     </section>
 
-    <p class="sidebar__foot">v6.4 · 2026/05/20 22:49</p>
+    <p class="sidebar__foot">v6.5 · 2026/05/20 23:42</p>
   </aside>
 
   <main class="main">
     <h1 id="hurricanesoft-工作室">颶風軟體有限公司 · HurricaneSoft Ltd.</h1>
-    <h2 id="開發流程自動化">開發流程自動化 · Automated Software Delivery</h2>
-    <p class="hire-lede">
+    <h2 id="開發流程自動化" data-i18n="h2-tagline">開發流程自動化 · Automated Software Delivery</h2>
+    <p class="hire-lede" data-i18n="hire-lede">
       AI 整合只是基本盤——真正的差異是把<strong>整套開發流程自動化</strong>：規格 → 設計 → 實作 → 審查 → 部署 → 維運，
       每個環節都有 AI 副手 + 自動化工具鏈接管。在自家集團（HurricaneGroup 6 子公司 / 30+ 生產系統 / 19 Cloud Run）
       跑了一整年驗證，<strong>同樣的時間做 20× 以上的事、一個人扛起以往需要整支團隊的產出</strong>。把這套帶進您的團隊。
@@ -193,304 +196,304 @@
     <a class="ai-hero" href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener">
       <div class="ai-hero__icon">🌪️</div>
       <div class="ai-hero__body">
-        <div class="ai-hero__eyebrow">開發流程自動化實證 · 線上看現場</div>
-        <div class="ai-hero__title">LF Pipeline — 一個人扛 30+ 系統的真實狀態</div>
-        <div class="ai-hero__desc">
+        <div class="ai-hero__eyebrow" data-i18n="hero-eyebrow">開發流程自動化實證 · 線上看現場</div>
+        <div class="ai-hero__title" data-i18n="hero-title">LF Pipeline — 一個人扛 30+ 系統的真實狀態</div>
+        <div class="ai-hero__desc" data-i18n="hero-desc">
           官方展示頁 — 即時呈現整套自動化在跑：多 SaaS 並行迭代、Agent 協作分工、CI/CD pipeline、跨子公司服務拓樸。
           <strong>這就是「20× 產出」的長相。</strong>
         </div>
         <div class="ai-hero__stats">
-          <span><strong>30+</strong> 生產系統</span>
-          <span><strong>19</strong> Cloud Run 服務</span>
-          <span><strong>14+</strong> AI / SaaS 產品線</span>
-          <span><strong>1</strong> 年實戰驗證</span>
+          <span><strong>30+</strong> <span data-i18n="hero-stat-systems">生產系統</span></span>
+          <span><strong>19</strong> <span data-i18n="hero-stat-cloudrun">Cloud Run 服務</span></span>
+          <span><strong>14+</strong> <span data-i18n="hero-stat-products">AI / SaaS 產品線</span></span>
+          <span><strong>1</strong> <span data-i18n="hero-stat-years">年實戰驗證</span></span>
         </div>
         <div class="ai-hero__url">www.hurricanesoft.com.tw/pipeline</div>
       </div>
-      <div class="ai-hero__cta">進入看現場 ↗</div>
+      <div class="ai-hero__cta" data-i18n="hero-cta">進入看現場 ↗</div>
     </a>
 
     <div class="availability">
       <div class="availability__dot"></div>
       <div class="availability__body">
-        <strong>下個可承接檔期：2026/07 起（最快 6 週後 kick-off）</strong>
-        <span>· 月費 Retainer 同時段最多 2 案 · 顧問諮詢隨到隨接 · 專案制 1-2 週內啟動</span>
+        <strong data-i18n="avail-strong">下個可承接檔期：2026/07 起（最快 6 週後 kick-off）</strong>
+        <span data-i18n="avail-detail">· 月費 Retainer 同時段最多 2 案 · 顧問諮詢隨到隨接 · 專案制 1-2 週內啟動</span>
       </div>
-      <a class="availability__cta" href="#預約諮詢-book-consultation">先預約檔期 →</a>
+      <a class="availability__cta" href="#預約諮詢-book-consultation" data-i18n="avail-cta">先預約檔期 →</a>
     </div>
 
-    <h2 id="為什麼選工作室-why-studio">為什麼選工作室 — Why This Studio</h2>
+    <h2 id="為什麼選工作室-why-studio" data-i18n="h2-why-studio">為什麼選工作室 — Why This Studio</h2>
     <div class="diff-grid">
       <div class="diff-card">
         <div class="diff-card__vs">vs Freelancer</div>
-        <p>個人 freelancer 遇到資安／合約／DB／部署痛點時容易斷線。
+        <p data-i18n="diff-freelancer">個人 freelancer 遇到資安／合約／DB／部署痛點時容易斷線。
         本工作室 <strong>1 個負責人 + AI 副手團隊</strong> 全程協作，多專業視角同步介入：
         <strong>一支隊伍的覆蓋面，一個人的決策速度</strong>。</p>
       </div>
       <div class="diff-card diff-card--featured">
         <div class="diff-card__vs">vs Agency</div>
-        <p>外包公司報價高、層層轉包、決策慢。
+        <p data-i18n="diff-agency">外包公司報價高、層層轉包、決策慢。
         本工作室<strong>負責人直接下海寫 code</strong>，沒中間業務／PM／架構師三層。
         <strong>決策直球 · 24 小時內回信 · 可開發票</strong>。</p>
       </div>
       <div class="diff-card">
         <div class="diff-card__vs">vs In-house 招募</div>
-        <p>招一位資深架構師到位需要 <strong>6 個月</strong>，
+        <p data-i18n="diff-inhouse">招一位資深架構師到位需要 <strong>6 個月</strong>，
         全載成本（薪資 + 勞健保 + 設備 + onboarding 攤提）約 <strong>NT$ 30–40 萬／月</strong>，且只有 1 個人。
         我們<strong>當週上工</strong>，月費 US$10K（NT$ 32 萬），含負責人 + AI 副手團隊 + 自家工具與基礎建設復用，
         <strong>1 人成本買到 1 支隊伍</strong>。</p>
       </div>
     </div>
 
-    <h2 id="服務項目-services">服務項目 — Services</h2>
-    <p class="hire-intro">主力是「開發流程自動化」，其餘是延伸 — 每一類都已在自家集團跑過生產驗證。</p>
+    <h2 id="服務項目-services" data-i18n="h2-services">服務項目 — Services</h2>
+    <p class="hire-intro" data-i18n="services-intro">主力是「開發流程自動化」，其餘是延伸 — 每一類都已在自家集團跑過生產驗證。</p>
     <div class="service-grid">
       <div class="service-card service-card--lead">
         <div class="service-card__icon">⚡</div>
-        <h3>開發流程自動化（主力）</h3>
-        <p>把規格 → 設計 → 實作 → 審查 → 部署 → 維運整條流程自動化：AI 副手分工 + Agent 框架 + 工單狀態機 + 自建 CI/CD + 量化評審門檻。
+        <h3 data-i18n="svc-automation-title">開發流程自動化（主力）</h3>
+        <p data-i18n="svc-automation-desc">把規格 → 設計 → 實作 → 審查 → 部署 → 維運整條流程自動化：AI 副手分工 + Agent 框架 + 工單狀態機 + 自建 CI/CD + 量化評審門檻。
         實證：自家集團<strong>1 人扛 30+ 系統維運</strong>，多 SaaS 並行迭代。</p>
       </div>
       <div class="service-card">
         <div class="service-card__icon">🤖</div>
-        <h3>AI / LLM 平台整合</h3>
-        <p>自建 LLM Gateway / 計費中心 / Provider routing / 自訓模型上線 / RAG / 多 Agent 協作框架。已在 Brain + Modelhub + Anemone 跨產品線跑生產。</p>
+        <h3 data-i18n="svc-llm-title">AI / LLM 平台整合</h3>
+        <p data-i18n="svc-llm-desc">自建 LLM Gateway / 計費中心 / Provider routing / 自訓模型上線 / RAG / 多 Agent 協作框架。已在 Brain + Modelhub + Anemone 跨產品線跑生產。</p>
       </div>
       <div class="service-card">
         <div class="service-card__icon">🏢</div>
-        <h3>多租戶 SaaS 從 0 到上線</h3>
-        <p>多租戶資料隔離、計費、Admin 後台、SDK／API 共用層。已在 9+ 系統接入（Hurricane Pay / Squid 生態）。</p>
+        <h3 data-i18n="svc-saas-title">多租戶 SaaS 從 0 到上線</h3>
+        <p data-i18n="svc-saas-desc">多租戶資料隔離、計費、Admin 後台、SDK／API 共用層。已在 9+ 系統接入（Hurricane Pay / Squid 生態）。</p>
       </div>
       <div class="service-card">
         <div class="service-card__icon">🔐</div>
-        <h3>身份 / 安全基礎建設</h3>
-        <p>OAuth2 / OIDC Identity Provider 自建、SSO 跨系統串接、MFA、密鑰管理（Hurricane Vault 90+ secrets 治理）。</p>
+        <h3 data-i18n="svc-auth-title">身份 / 安全基礎建設</h3>
+        <p data-i18n="svc-auth-desc">OAuth2 / OIDC Identity Provider 自建、SSO 跨系統串接、MFA、密鑰管理（Hurricane Vault 90+ secrets 治理）。</p>
       </div>
       <div class="service-card">
         <div class="service-card__icon">💳</div>
-        <h3>金流 / 訂閱整合</h3>
-        <p>PayPal / 跨境金流串接、Webhook 設計、訂閱與發票、多租戶帳務隔離。已上 Hurricane Pay v0.13.0 LIVE。</p>
+        <h3 data-i18n="svc-payment-title">金流 / 訂閱整合</h3>
+        <p data-i18n="svc-payment-desc">PayPal / 跨境金流串接、Webhook 設計、訂閱與發票、多租戶帳務隔離。已上 Hurricane Pay v0.13.0 LIVE。</p>
       </div>
       <div class="service-card">
         <div class="service-card__icon">☁️</div>
-        <h3>GCP Cloud Run 部署架構</h3>
-        <p>容器化、Cloud Build pipeline、Artifact Registry、Secret Manager 整合、19 個生產服務維運經驗。</p>
+        <h3 data-i18n="svc-gcp-title">GCP Cloud Run 部署架構</h3>
+        <p data-i18n="svc-gcp-desc">容器化、Cloud Build pipeline、Artifact Registry、Secret Manager 整合、19 個生產服務維運經驗。</p>
       </div>
       <div class="service-card">
         <div class="service-card__icon">⚙️</div>
-        <h3>既有系統現代化</h3>
-        <p>.NET Framework → .NET 8 + Blazor、單體 → 微服務、PHP / Legacy → FastAPI / Next.js、技術債盤點與漸進式重構。<strong>實證</strong>：某政府信用保證機構核心系統 1.5 年現代化、某全國性協會 5,000+ 學員平台改版至今續線上。</p>
+        <h3 data-i18n="svc-modern-title">既有系統現代化</h3>
+        <p data-i18n="svc-modern-desc">.NET Framework → .NET 8 + Blazor、單體 → 微服務、PHP / Legacy → FastAPI / Next.js、技術債盤點與漸進式重構。<strong>實證</strong>：某政府信用保證機構核心系統 1.5 年現代化、某全國性協會 5,000+ 學員平台改版至今續線上。</p>
       </div>
       <div class="service-card service-card--gov">
         <div class="service-card__icon">🏛️</div>
-        <span class="service-card__tag">補助諮詢</span>
-        <h3>政府 AI 補助計畫輔導</h3>
-        <p>2026 政府釋出逾百億元 AI 補助。我們協助企業評估 SBIR / AI 躍昇 / 數位轉型 / 智慧製造等方案資格，從計畫書撰寫、審查到 AI 系統開發落地全程協助 —— 把預算對接到實際可上線的系統，不只是拿到補助。</p>
+        <span class="service-card__tag" data-i18n="svc-gov-tag">補助諮詢</span>
+        <h3 data-i18n="svc-gov-title">政府 AI 補助計畫輔導</h3>
+        <p data-i18n="svc-gov-desc">2026 政府釋出逾百億元 AI 補助。我們協助企業評估 SBIR / AI 躍昇 / 數位轉型 / 智慧製造等方案資格，從計畫書撰寫、審查到 AI 系統開發落地全程協助 —— 把預算對接到實際可上線的系統，不只是拿到補助。</p>
       </div>
     </div>
 
-    <h2 id="接案模式-how-we-work">接案模式 / 報價 — How We Work</h2>
+    <h2 id="接案模式-how-we-work" data-i18n="h2-pricing">接案模式 / 報價 — How We Work</h2>
     <div class="rate-grid">
       <div class="rate-card rate-card--featured">
-        <div class="rate-card__tag">主力推薦</div>
-        <h3>月費 Retainer</h3>
-        <div class="rate-card__price">US$ 10,000<span> / 月</span></div>
+        <div class="rate-card__tag" data-i18n="rate-featured-tag">主力推薦</div>
+        <h3 data-i18n="rate-retainer-title">月費 Retainer</h3>
+        <div class="rate-card__price">US$ 10,000<span data-i18n="rate-per-month"> / 月</span></div>
         <ul>
-          <li>負責人 + AI 副手團隊全力投入</li>
-          <li>承擔架構決策 + 親自下海 code</li>
-          <li>每週進度同步 / 月末交付報告</li>
-          <li>適合 3 個月以上中長案</li>
+          <li data-i18n="rate-retainer-li1">負責人 + AI 副手團隊全力投入</li>
+          <li data-i18n="rate-retainer-li2">承擔架構決策 + 親自下海 code</li>
+          <li data-i18n="rate-retainer-li3">每週進度同步 / 月末交付報告</li>
+          <li data-i18n="rate-retainer-li4">適合 3 個月以上中長案</li>
         </ul>
-        <a class="rate-card__cta" href="#預約諮詢-book-consultation">預約這個方案 — 免費 30 分諮詢 →</a>
+        <a class="rate-card__cta" href="#預約諮詢-book-consultation" data-i18n="rate-retainer-cta">預約這個方案 — 免費 30 分諮詢 →</a>
       </div>
       <div class="rate-card">
-        <h3>專案制 Project-based</h3>
-        <div class="rate-card__price">US$ 8,000<span> 起 / 案</span></div>
+        <h3 data-i18n="rate-project-title">專案制 Project-based</h3>
+        <div class="rate-card__price">US$ 8,000<span data-i18n="rate-per-project"> 起 / 案</span></div>
         <ul>
-          <li>明確 scope 的單次交付（固定價）</li>
-          <li>里程碑分期付款</li>
-          <li>含 1 個月上線後保固</li>
-          <li>POC 2–4 週 / MVP 4–8 週 / 現代化 8–12 週</li>
+          <li data-i18n="rate-project-li1">明確 scope 的單次交付（固定價）</li>
+          <li data-i18n="rate-project-li2">里程碑分期付款</li>
+          <li data-i18n="rate-project-li3">含 1 個月上線後保固</li>
+          <li data-i18n="rate-project-li4">POC 2–4 週 / MVP 4–8 週 / 現代化 8–12 週</li>
         </ul>
-        <a class="rate-card__cta rate-card__cta--ghost" href="#預約諮詢-book-consultation">討論專案範圍 →</a>
+        <a class="rate-card__cta rate-card__cta--ghost" href="#預約諮詢-book-consultation" data-i18n="rate-project-cta">討論專案範圍 →</a>
       </div>
       <div class="rate-card">
-        <h3>顧問諮詢 Advisory</h3>
-        <div class="rate-card__price">US$ 250<span> / 小時</span></div>
+        <h3 data-i18n="rate-advisory-title">顧問諮詢 Advisory</h3>
+        <div class="rate-card__price">US$ 250<span data-i18n="rate-per-hour"> / 小時</span></div>
         <ul>
-          <li>架構審查 / 技術選型 / Code Review</li>
-          <li>不下海寫 code，純諮詢</li>
-          <li>最少 4 小時起接</li>
-          <li>適合短期重大決策</li>
+          <li data-i18n="rate-advisory-li1">架構審查 / 技術選型 / Code Review</li>
+          <li data-i18n="rate-advisory-li2">不下海寫 code，純諮詢</li>
+          <li data-i18n="rate-advisory-li3">最少 4 小時起接</li>
+          <li data-i18n="rate-advisory-li4">適合短期重大決策</li>
         </ul>
-        <a class="rate-card__cta rate-card__cta--ghost" href="#預約諮詢-book-consultation">預約諮詢時段 →</a>
+        <a class="rate-card__cta rate-card__cta--ghost" href="#預約諮詢-book-consultation" data-i18n="rate-advisory-cta">預約諮詢時段 →</a>
       </div>
     </div>
-    <p class="rate-foot">
+    <p class="rate-foot" data-i18n="rate-foot">
       <strong>合作流程</strong>：免費 30 分諮詢 → 報價簽約（<strong>30% 訂金</strong>）→ 開發 → 里程碑驗收 → 上線（<strong>含 1 個月保固</strong>）。
       <strong>付款</strong>：可開立統編發票（80289779）、支援電匯 / Wise / 加密貨幣（USDC）。
     </p>
 
-    <h2 id="可交付的系統類型-deliverable-systems">可交付的系統類型 — Deliverable Systems</h2>
-    <p class="hire-intro">每一條都已經在 HurricaneGroup 自家跑生產，不是 demo，不是 POC。</p>
+    <h2 id="可交付的系統類型-deliverable-systems" data-i18n="h2-deliverables">可交付的系統類型 — Deliverable Systems</h2>
+    <p class="hire-intro" data-i18n="deliverables-intro">每一條都已經在 HurricaneGroup 自家跑生產，不是 demo，不是 POC。</p>
 
-    <h3 class="cat-heading cat-heading--ai">🤖 AI / Agent 產品線</h3>
+    <h3 class="cat-heading cat-heading--ai" data-i18n="cat-ai">🤖 AI / Agent 產品線</h3>
     <ul class="deliverable-list deliverable-list--ai">
-      <li id="squid"><strong>Squid — 集團專案 / 工單管理 SaaS（公司核心）</strong>　多租戶需求管理平台，<strong>AI Agent 工單驅動開發的底層</strong>；LIDS OAuth2 SSO + JWT + API Key 雙認證；嚴格狀態機（一次一個狀態切換 + 角色 / 必填驗證）；自動租戶創建（first login）；6 大 API 模組（Requirements / Projects / Users / Categories / ApiKeys / Auth）+ Python SDK + JS SDK 雙官方 SDK</li>
-      <li id="manta"><strong>Manta — AI Workflow Canvas（對標 Coze）</strong>　多租戶 AI 編排平台；沙盒執行 + Webhook 觸發 + 實時監控；JWT httpOnly cookie + LIDS end_session + CISO/compliance PASS；Bot Export 脫敏；v2.64 生產中</li>
-      <li id="aicad"><strong>AICAD — AI P&amp;ID 工程圖辨識 SaaS</strong>　工程圖 / P&amp;ID → DXF 轉換；走 Anemone Server 中繼 Claude Vision；多視圖分割 + 文字辨識 + 幾何提取；生產中</li>
-      <li id="fiona-radar"><strong>fiona-radar — AI 影片結構化洞察 v1.1.0</strong>　Anemone prompt → JSONB 結構化輸出（key_points / business_insights / mentioned_entities）；YouTube 自動抓取 + 變現可行方向標註</li>
-      <li id="fiona-pipeline"><strong>fiona-pipeline — AI 腳本生成 + 推播</strong>　接收 fiona-radar 洞察 → 生成腳本 → 自動推播發佈；多平台感知；n8n webhook 整合</li>
-      <li id="brain"><strong>Brain — 多代理 AI 協作框架</strong>　AI agent 框架 + 終端整合；多角色協作分工；21 Python files / ~6,350 lines；多模式決策路由；工單驅動 + 狀態機；100% task completion in tests</li>
-      <li id="claude-agents"><strong>Claude Agents — AI 高管副手角色庫</strong>　多角色虛擬團隊（覆蓋技術／營運／商務／產品／資安／法務）；多角色知識基準 + 跨機同步 + 分級權限</li>
-      <li id="modelhub"><strong>Modelhub — ML 模型訓練 / 版本管理平台</strong>　FastAPI + SQLAlchemy + SQLite；多層訓練資源排程；密鑰自動注入；多模組 CRUD；CI smoke test 全自動驗收</li>
-      <li><strong>Anemone / Brain — 集團統一 LLM Gateway</strong>　計費中心 + 跨租戶可視化 + 自動模型路由；Anemone 作 LLM ingress；Modelhub 為第二 LLM Provider；AICAD / Manta 等 SaaS 經此中繼 Claude Vision / 對話</li>
+      <li id="squid" data-i18n="item-squid"><strong>Squid — 集團專案 / 工單管理 SaaS（公司核心）</strong>　多租戶需求管理平台，<strong>AI Agent 工單驅動開發的底層</strong>；LIDS OAuth2 SSO + JWT + API Key 雙認證；嚴格狀態機（一次一個狀態切換 + 角色 / 必填驗證）；自動租戶創建（first login）；6 大 API 模組（Requirements / Projects / Users / Categories / ApiKeys / Auth）+ Python SDK + JS SDK 雙官方 SDK</li>
+      <li id="manta" data-i18n="item-manta"><strong>Manta — AI Workflow Canvas（對標 Coze）</strong>　多租戶 AI 編排平台；沙盒執行 + Webhook 觸發 + 實時監控；JWT httpOnly cookie + LIDS end_session + CISO/compliance PASS；Bot Export 脫敏；v2.64 生產中</li>
+      <li id="aicad" data-i18n="item-aicad"><strong>AICAD — AI P&amp;ID 工程圖辨識 SaaS</strong>　工程圖 / P&amp;ID → DXF 轉換；走 Anemone Server 中繼 Claude Vision；多視圖分割 + 文字辨識 + 幾何提取；生產中</li>
+      <li id="fiona-radar" data-i18n="item-fiona-radar"><strong>fiona-radar — AI 影片結構化洞察 v1.1.0</strong>　Anemone prompt → JSONB 結構化輸出（key_points / business_insights / mentioned_entities）；YouTube 自動抓取 + 變現可行方向標註</li>
+      <li id="fiona-pipeline" data-i18n="item-fiona-pipeline"><strong>fiona-pipeline — AI 腳本生成 + 推播</strong>　接收 fiona-radar 洞察 → 生成腳本 → 自動推播發佈；多平台感知；n8n webhook 整合</li>
+      <li id="brain" data-i18n="item-brain"><strong>Brain — 多代理 AI 協作框架</strong>　AI agent 框架 + 終端整合；多角色協作分工；21 Python files / ~6,350 lines；多模式決策路由；工單驅動 + 狀態機；100% task completion in tests</li>
+      <li id="claude-agents" data-i18n="item-claude-agents"><strong>Claude Agents — AI 高管副手角色庫</strong>　多角色虛擬團隊（覆蓋技術／營運／商務／產品／資安／法務）；多角色知識基準 + 跨機同步 + 分級權限</li>
+      <li id="modelhub" data-i18n="item-modelhub"><strong>Modelhub — ML 模型訓練 / 版本管理平台</strong>　FastAPI + SQLAlchemy + SQLite；多層訓練資源排程；密鑰自動注入；多模組 CRUD；CI smoke test 全自動驗收</li>
+      <li data-i18n="item-anemone"><strong>Anemone / Brain — 集團統一 LLM Gateway</strong>　計費中心 + 跨租戶可視化 + 自動模型路由；Anemone 作 LLM ingress；Modelhub 為第二 LLM Provider；AICAD / Manta 等 SaaS 經此中繼 Claude Vision / 對話</li>
     </ul>
 
-    <h3 class="cat-heading cat-heading--saas">📱 對外 SaaS 業務產品（客戶可訂閱）</h3>
+    <h3 class="cat-heading cat-heading--saas" data-i18n="cat-saas">📱 對外 SaaS 業務產品（客戶可訂閱）</h3>
     <ul class="deliverable-list">
-      <li id="conch"><strong>Conch（RS / 海螺訂位）— 預約 SaaS 平台 v6.0</strong>　多店家 / 多租戶預約系統；LINE Pay + PayPal Live + 訂閱計費 + 代收手續費；iOS App + Discord + QR 報到 + i18n + CRM + 平板模式；<strong>1,265+ tests 全通過（unit 327 + integration 54 + E2E 884）/ 28 DB migrations / 29 PRs merged / CI 4 jobs 全綠</strong></li>
-      <li id="abacus"><strong>Abacus 算盤（hurricane-books）— 中小企業帳務財務 SaaS</strong>　對標天心 CPA；.NET 8 + Blazor Server + MudBlazor + PostgreSQL 16；LIDS OIDC (Authorization Code + PKCE)；Modular Monolith + Clean Architecture；Playwright 24 spec；含傳票／加值稅／報表／年結／日記帳／分類帳／字軌／媒體申報</li>
-      <li id="tianji"><strong>Tianji 天機 — 占卜命理 SaaS</strong>　iOS App + Web 雙端；生產中（HurricaneEdge 旗下對外 App）</li>
-      <li id="dagongzai"><strong>打工仔 DaGongZai — 零工媒合 SaaS v1.6.0</strong>　台灣零工快速媒合平台（雙端：求職／案主）；<strong>全棧自交付</strong>：FastAPI + SQLAlchemy / Next.js 14 App Router + TypeScript / Swift + SwiftUI（iOS 16+）/ PostgreSQL；PayPal Escrow 模式；多平台爬蟲（104 / 1111 / 518 / yes123 / Tasker，APScheduler 每 6 小時）；ML 薪資推算模型；LIDS OAuth2 / PKCE 整合</li>
-      <li id="gyre"><strong>Gyre v0.9.0</strong>　多服務架構（apps/api + web + ai-service）；環境分離 + Secret Manager 整合；R5 已 freeze 待生產上線</li>
+      <li id="conch" data-i18n="item-conch"><strong>Conch（RS / 海螺訂位）— 預約 SaaS 平台 v6.0</strong>　多店家 / 多租戶預約系統；LINE Pay + PayPal Live + 訂閱計費 + 代收手續費；iOS App + Discord + QR 報到 + i18n + CRM + 平板模式；<strong>1,265+ tests 全通過（unit 327 + integration 54 + E2E 884）/ 28 DB migrations / 29 PRs merged / CI 4 jobs 全綠</strong></li>
+      <li id="abacus" data-i18n="item-abacus"><strong>Abacus 算盤（hurricane-books）— 中小企業帳務財務 SaaS</strong>　對標天心 CPA；.NET 8 + Blazor Server + MudBlazor + PostgreSQL 16；LIDS OIDC (Authorization Code + PKCE)；Modular Monolith + Clean Architecture；Playwright 24 spec；含傳票／加值稅／報表／年結／日記帳／分類帳／字軌／媒體申報</li>
+      <li id="tianji" data-i18n="item-tianji"><strong>Tianji 天機 — 占卜命理 SaaS</strong>　iOS App + Web 雙端；生產中（HurricaneEdge 旗下對外 App）</li>
+      <li id="dagongzai" data-i18n="item-dagongzai"><strong>打工仔 DaGongZai — 零工媒合 SaaS v1.6.0</strong>　台灣零工快速媒合平台（雙端：求職／案主）；<strong>全棧自交付</strong>：FastAPI + SQLAlchemy / Next.js 14 App Router + TypeScript / Swift + SwiftUI（iOS 16+）/ PostgreSQL；PayPal Escrow 模式；多平台爬蟲（104 / 1111 / 518 / yes123 / Tasker，APScheduler 每 6 小時）；ML 薪資推算模型；LIDS OAuth2 / PKCE 整合</li>
+      <li id="gyre" data-i18n="item-gyre"><strong>Gyre v0.9.0</strong>　多服務架構（apps/api + web + ai-service）；環境分離 + Secret Manager 整合；R5 已 freeze 待生產上線</li>
     </ul>
 
-    <h3 class="cat-heading cat-heading--infra">🏗️ 集團統一基礎建設（支援 AI / SaaS 跑生產的底層）</h3>
+    <h3 class="cat-heading cat-heading--infra" data-i18n="cat-infra">🏗️ 集團統一基礎建設（支援 AI / SaaS 跑生產的底層）</h3>
     <ul class="deliverable-list">
-      <li id="hurricane-pay"><strong>Hurricane Pay — 集團統一金流微服務</strong>　FastAPI + PostgreSQL + PayPal SDK；GCP Cloud Run 多環境部署；15 routes；90 tests / 88% coverage；多集團產品接入，憑證統一由 GCP Secret Manager / Hurricane Vault 注入</li>
-      <li><strong>LIDS — Multi-tenant SaaS 身份層</strong>　OAuth2/OIDC Identity Provider，集團 SSO，9+ 系統接入，含客製 OIDC patch（依集團文件，非本 repo 可驗）</li>
-      <li><strong>Hurricane Vault — 集團統一密鑰管理 v1.0.0</strong>　自建 Secret Manager，多層稽核 + 雲端對稱備援，90+ secrets（依集團文件，非本 repo 可驗）</li>
-      <li><strong>Tentacle BFF — Squid 前端整合層</strong>　Backend for Frontend pattern；前端 → BFF → Squid API；內部 neritic CLI 工單操作介面；跨集團多產品共用（依集團文件，非本 repo 可驗）</li>
-      <li><strong>Headscale — 集團統一 VPN</strong>　ACL 鎖定，跨辦公室節點互通，動態 IP 管理（依集團文件，非本 repo 可驗）</li>
+      <li id="hurricane-pay" data-i18n="item-hurricane-pay"><strong>Hurricane Pay — 集團統一金流微服務</strong>　FastAPI + PostgreSQL + PayPal SDK；GCP Cloud Run 多環境部署；15 routes；90 tests / 88% coverage；多集團產品接入，憑證統一由 GCP Secret Manager / Hurricane Vault 注入</li>
+      <li data-i18n="item-lids"><strong>LIDS — Multi-tenant SaaS 身份層</strong>　OAuth2/OIDC Identity Provider，集團 SSO，9+ 系統接入，含客製 OIDC patch（依集團文件，非本 repo 可驗）</li>
+      <li data-i18n="item-vault"><strong>Hurricane Vault — 集團統一密鑰管理 v1.0.0</strong>　自建 Secret Manager，多層稽核 + 雲端對稱備援，90+ secrets（依集團文件，非本 repo 可驗）</li>
+      <li data-i18n="item-tentacle"><strong>Tentacle BFF — Squid 前端整合層</strong>　Backend for Frontend pattern；前端 → BFF → Squid API；內部 neritic CLI 工單操作介面；跨集團多產品共用（依集團文件，非本 repo 可驗）</li>
+      <li data-i18n="item-headscale"><strong>Headscale — 集團統一 VPN</strong>　ACL 鎖定，跨辦公室節點互通，動態 IP 管理（依集團文件，非本 repo 可驗）</li>
     </ul>
 
-    <h2 id="近期交付案例-recent-deliveries">近期交付案例 — Recent Deliveries</h2>
+    <h2 id="近期交付案例-recent-deliveries" data-i18n="h2-cases">近期交付案例 — Recent Deliveries</h2>
 
-    <h3>2026 Q1-Q2 對外 SaaS 產品上線</h3>
+    <h3 data-i18n="cases-h3-saas">2026 Q1-Q2 對外 SaaS 產品上線</h3>
     <ul>
-      <li><strong>Manta v2.64</strong>（2026/05）— AI Workflow Canvas（對標 Coze），多租戶生產中；同月完成 JWT httpOnly cookie 遷移 + LIDS end_session + CSRF PoC BLOCKED（CISO/compliance 雙審 PASS）</li>
-      <li><strong>Conch（RS）v6.0</strong>（2026/04 GA）— 預約 SaaS 平台上線，1,265+ tests 全通過、28 DB migrations、29 PRs merged、CI 4 jobs 全綠；含 CRM / 平板模式 / No-show 管理 / 公開目錄</li>
-      <li><strong>打工仔 DaGongZai v1.6.0</strong>（2026/04）— 台灣零工媒合 SaaS 生產中（API + Web + iOS 三端同步），雙端用戶（求職 / 案主）</li>
+      <li data-i18n="case-manta"><strong>Manta v2.64</strong>（2026/05）— AI Workflow Canvas（對標 Coze），多租戶生產中；同月完成 JWT httpOnly cookie 遷移 + LIDS end_session + CSRF PoC BLOCKED（CISO/compliance 雙審 PASS）</li>
+      <li data-i18n="case-conch"><strong>Conch（RS）v6.0</strong>（2026/04 GA）— 預約 SaaS 平台上線，1,265+ tests 全通過、28 DB migrations、29 PRs merged、CI 4 jobs 全綠；含 CRM / 平板模式 / No-show 管理 / 公開目錄</li>
+      <li data-i18n="case-dagongzai"><strong>打工仔 DaGongZai v1.6.0</strong>（2026/04）— 台灣零工媒合 SaaS 生產中（API + Web + iOS 三端同步），雙端用戶（求職 / 案主）</li>
     </ul>
 
-    <h3>2026 Q1-Q2 自家集團基礎建設上線</h3>
+    <h3 data-i18n="cases-h3-infra">2026 Q1-Q2 自家集團基礎建設上線</h3>
     <ul>
-      <li><strong>Hurricane Vault v1.0.0</strong>（2026/04）— 自建 Secret Manager，多層稽核 + 雲端對稱備援</li>
-      <li><strong>Hurricane Pay v0.13.0</strong>（2026/05）— 集團統一金流，PayPal LIVE，9+ tenant 接入</li>
-      <li><strong>Brain LLM Gateway</strong>（2026/05 計費中心完工）— 跨租戶 LLM 計費與 Provider 路由</li>
-      <li><strong>Headscale VPN</strong> 集團部署（lobsterfarm-633f7，ACL 鎖定，跨辦公室節點互通）</li>
-      <li>完成 <strong>6 家子公司</strong> 架構分立與統一基礎設施整合</li>
-      <li>GCP 統一維運：集團 19 個 Cloud Run 服務統一管理</li>
+      <li data-i18n="case-vault"><strong>Hurricane Vault v1.0.0</strong>（2026/04）— 自建 Secret Manager，多層稽核 + 雲端對稱備援</li>
+      <li data-i18n="case-pay"><strong>Hurricane Pay v0.13.0</strong>（2026/05）— 集團統一金流，PayPal LIVE，9+ tenant 接入</li>
+      <li data-i18n="case-brain"><strong>Brain LLM Gateway</strong>（2026/05 計費中心完工）— 跨租戶 LLM 計費與 Provider 路由</li>
+      <li data-i18n="case-headscale"><strong>Headscale VPN</strong> 集團部署（lobsterfarm-633f7，ACL 鎖定，跨辦公室節點互通）</li>
+      <li data-i18n="case-subsidiaries">完成 <strong>6 家子公司</strong> 架構分立與統一基礎設施整合</li>
+      <li data-i18n="case-gcp">GCP 統一維運：集團 19 個 Cloud Run 服務統一管理</li>
     </ul>
 
-    <h3>企業客戶案例</h3>
+    <h3 data-i18n="cases-h3-enterprise">企業客戶案例</h3>
     <ul>
-      <li><strong>政府信用保證機構 — 核心系統現代化</strong>（2024/05 - 2026/02）— 擔任<strong>技術顧問</strong>，主導舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor 現代化，採微服務架構，跨年度 8 人外部技術團隊交付，<strong>支援銀行端信用保證業務之核心生產系統</strong></li>
-      <li><strong>全國性協會 — 組織綜合管理平台</strong>（2019/02 - 2021/02 ｜ 2026 持續維運）— 線上課程報名系統，服務 5,000+ 學員，線上報名率 +80%、行政時間 -60%，PHP CodeIgniter HMVC，15+ 種營運報表</li>
-      <li><strong>iOS 多功能社交遊戲平台</strong>（2023/06 - 2024/04）— 多米諾骨牌對戰手遊，SwiftUI + SpriteKit + Firebase + CloudKit，即時多人對戰、AI 聊天、AdMob 廣告，已上 App Store</li>
-      <li><strong>社交遊戲 Firebase 營運後台</strong>（2024/03 - 2024/12）— Blazor Server (.NET 9) + Firebase Admin SDK，656+ 工時獨立完成，8 大模組分階段交付</li>
+      <li data-i18n="case-gov"><strong>政府信用保證機構 — 核心系統現代化</strong>（2024/05 - 2026/02）— 擔任<strong>技術顧問</strong>，主導舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor 現代化，採微服務架構，跨年度 8 人外部技術團隊交付，<strong>支援銀行端信用保證業務之核心生產系統</strong></li>
+      <li data-i18n="case-assoc"><strong>全國性協會 — 組織綜合管理平台</strong>（2019/02 - 2021/02 ｜ 2026 持續維運）— 線上課程報名系統，服務 5,000+ 學員，線上報名率 +80%、行政時間 -60%，PHP CodeIgniter HMVC，15+ 種營運報表</li>
+      <li data-i18n="case-game"><strong>iOS 多功能社交遊戲平台</strong>（2023/06 - 2024/04）— 多米諾骨牌對戰手遊，SwiftUI + SpriteKit + Firebase + CloudKit，即時多人對戰、AI 聊天、AdMob 廣告，已上 App Store</li>
+      <li data-i18n="case-firebase"><strong>社交遊戲 Firebase 營運後台</strong>（2024/03 - 2024/12）— Blazor Server (.NET 9) + Firebase Admin SDK，656+ 工時獨立完成，8 大模組分階段交付</li>
     </ul>
 
-    <h2 id="技術棧-tech-stack">技術棧 — Tech Stack</h2>
+    <h2 id="技術棧-tech-stack" data-i18n="h2-stack">技術棧 — Tech Stack</h2>
     <div class="stack-row">
-      <span class="stack-row__label">語言</span>
+      <span class="stack-row__label" data-i18n="stack-lang">語言</span>
       <div class="stack-row__tags"><span class="tag">C#</span><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Swift</span><span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">PHP</span><span class="tag">Go</span><span class="tag">Solidity</span><span class="tag">SQL</span><span class="tag">C++</span><span class="tag">Objective-C</span><span class="tag">Bash</span><span class="tag">PowerShell</span></div>
     </div>
     <div class="stack-row">
-      <span class="stack-row__label">後端</span>
+      <span class="stack-row__label" data-i18n="stack-backend">後端</span>
       <div class="stack-row__tags"><span class="tag">.NET 8</span><span class="tag">ASP.NET Core</span><span class="tag">FastAPI</span><span class="tag">Express</span><span class="tag">Next.js</span><span class="tag">EF Core</span><span class="tag">SQLAlchemy 2.0</span><span class="tag">Blazor Server</span><span class="tag">WPF</span><span class="tag">Hardhat (Solidity)</span><span class="tag">MCP</span></div>
     </div>
     <div class="stack-row">
-      <span class="stack-row__label">前端</span>
+      <span class="stack-row__label" data-i18n="stack-frontend">前端</span>
       <div class="stack-row__tags"><span class="tag">React 18</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">SwiftUI</span><span class="tag">SpriteKit</span><span class="tag">Vue.js</span><span class="tag">Android (Kotlin)</span></div>
     </div>
     <div class="stack-row">
-      <span class="stack-row__label">資料庫</span>
+      <span class="stack-row__label" data-i18n="stack-db">資料庫</span>
       <div class="stack-row__tags"><span class="tag">PostgreSQL</span><span class="tag">SQL Server</span><span class="tag">MySQL</span><span class="tag">SQLite</span><span class="tag">Redis</span><span class="tag">ClickHouse</span><span class="tag">Firestore</span><span class="tag">CloudKit</span><span class="tag">Alembic</span><span class="tag">EF Migrations</span><span class="tag">RLS</span></div>
     </div>
     <div class="stack-row">
-      <span class="stack-row__label">雲端 / DevOps</span>
+      <span class="stack-row__label" data-i18n="stack-cloud">雲端 / DevOps</span>
       <div class="stack-row__tags"><span class="tag tag--accent">GCP Cloud Run（19 services）</span><span class="tag">Cloud SQL</span><span class="tag">Cloud Build</span><span class="tag">Artifact Registry</span><span class="tag">GCP Secret Manager</span><span class="tag">Firebase</span><span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">Drone CI</span><span class="tag">GitHub Actions</span><span class="tag tag--accent">Gitea-HS（自架 fork）</span><span class="tag tag--accent">Stalwart Mail Server（自架）</span><span class="tag">Headscale VPN</span><span class="tag">Tailscale</span><span class="tag">Sentry</span><span class="tag">OpenTelemetry</span><span class="tag">Prometheus</span></div>
     </div>
     <div class="stack-row">
-      <span class="stack-row__label">認證 / 安全</span>
-      <div class="stack-row__tags"><span class="tag">OAuth 2.0</span><span class="tag">OIDC</span><span class="tag">JWT RS256</span><span class="tag">MFA</span><span class="tag">RBAC</span><span class="tag">BCrypt</span><span class="tag">AES-256-GCM</span><span class="tag">Rate Limiting</span><span class="tag">Audit Logging</span><span class="tag tag--accent">自建程式碼安全掃描器</span></div>
+      <span class="stack-row__label" data-i18n="stack-auth">認證 / 安全</span>
+      <div class="stack-row__tags"><span class="tag">OAuth 2.0</span><span class="tag">OIDC</span><span class="tag">JWT RS256</span><span class="tag">MFA</span><span class="tag">RBAC</span><span class="tag">BCrypt</span><span class="tag">AES-256-GCM</span><span class="tag">Rate Limiting</span><span class="tag">Audit Logging</span><span class="tag tag--accent" data-i18n="tag-security-scanner">自建程式碼安全掃描器</span></div>
     </div>
     <div class="stack-row">
-      <span class="stack-row__label">AI / LLM</span>
+      <span class="stack-row__label" data-i18n="stack-ai">AI / LLM</span>
       <div class="stack-row__tags"><span class="tag">MCP</span><span class="tag">Anthropic Claude API</span><span class="tag">Google Gemini</span><span class="tag">OpenAI API</span><span class="tag">AutoGen v0.4</span><span class="tag tag--accent">Brain LLM Gateway（自建）</span><span class="tag tag--accent">Anemone（自建 LLM ingress）</span><span class="tag tag--accent">Modelhub（自訓模型）</span><span class="tag">RAG</span><span class="tag">Provider Routing</span></div>
     </div>
     <div class="stack-row">
-      <span class="stack-row__label">金流</span>
+      <span class="stack-row__label" data-i18n="stack-payment">金流</span>
       <div class="stack-row__tags"><span class="tag">PayPal Production</span><span class="tag">藍新科技 NewebPay</span><span class="tag">StoreKit 2</span><span class="tag">IAP</span><span class="tag tag--accent">Hurricane Pay（自建集團統一金流）</span></div>
     </div>
 
-    <h2 id="工作室背景-about-the-studio">工作室背景 — About the Studio</h2>
-    <p><strong>颶風軟體有限公司</strong>（HurricaneSoft Ltd.）— <strong>2002 年成立於台北</strong>，統一編號 <strong>80289779</strong>，<strong>HurricaneGroup（颶風集團）</strong> 第一家子公司，定位「開發一組、研究技術」，作為集團技術研究基地與接案出口。24 年工程團隊歷練，AI 時代的軟體開發夥伴。</p>
+    <h2 id="工作室背景-about-the-studio" data-i18n="h2-about">工作室背景 — About the Studio</h2>
+    <p data-i18n="about-p1"><strong>颶風軟體有限公司</strong>（HurricaneSoft Ltd.）— <strong>2002 年成立於台北</strong>，統一編號 <strong>80289779</strong>，<strong>HurricaneGroup（颶風集團）</strong> 第一家子公司，定位「開發一組、研究技術」，作為集團技術研究基地與接案出口。24 年工程團隊歷練，AI 時代的軟體開發夥伴。</p>
     <div class="group-tree">
-      <div class="group-tree__head">HurricaneGroup 颶風集團 · 6 家子公司</div>
+      <div class="group-tree__head" data-i18n="group-tree-head">HurricaneGroup 颶風集團 · 6 家子公司</div>
       <ul class="group-tree__list">
-        <li class="group-tree__item group-tree__item--self"><span class="group-tree__name">HurricaneSoft<em>颶風軟體</em></span><span class="group-tree__role">集團部署主責 / GCP 維運 / 接案出口</span></li>
-        <li class="group-tree__item"><span class="group-tree__name">HurricaneEdge<em>颶鋒科技</em></span><span class="group-tree__role">8 大對外 SaaS 產品線</span></li>
-        <li class="group-tree__item"><span class="group-tree__name">HurricaneCore<em>颶核科技</em></span><span class="group-tree__role">LLM Gateway / 自訓模型 / 智腦平台</span></li>
-        <li class="group-tree__item"><span class="group-tree__name">HurricanePrime<em>颶擎科技</em></span><span class="group-tree__role">客製化企業系統（.NET WMS、SaaS）</span></li>
-        <li class="group-tree__item"><span class="group-tree__name">HurricaneDigital<em>颶電娛樂</em></span><span class="group-tree__role">行動遊戲 / iOS / 文創</span></li>
-        <li class="group-tree__item"><span class="group-tree__name">HurricaneTech<em>颶風科技</em></span><span class="group-tree__role">LIDS / CMS / Squid 等共用技術平台</span></li>
+        <li class="group-tree__item group-tree__item--self"><span class="group-tree__name">HurricaneSoft<em>颶風軟體</em></span><span class="group-tree__role" data-i18n="group-role-soft">集團部署主責 / GCP 維運 / 接案出口</span></li>
+        <li class="group-tree__item"><span class="group-tree__name">HurricaneEdge<em>颶鋒科技</em></span><span class="group-tree__role" data-i18n="group-role-edge">8 大對外 SaaS 產品線</span></li>
+        <li class="group-tree__item"><span class="group-tree__name">HurricaneCore<em>颶核科技</em></span><span class="group-tree__role" data-i18n="group-role-core">LLM Gateway / 自訓模型 / 智腦平台</span></li>
+        <li class="group-tree__item"><span class="group-tree__name">HurricanePrime<em>颶擎科技</em></span><span class="group-tree__role" data-i18n="group-role-prime">客製化企業系統（.NET WMS、SaaS）</span></li>
+        <li class="group-tree__item"><span class="group-tree__name">HurricaneDigital<em>颶電娛樂</em></span><span class="group-tree__role" data-i18n="group-role-digital">行動遊戲 / iOS / 文創</span></li>
+        <li class="group-tree__item"><span class="group-tree__name">HurricaneTech<em>颶風科技</em></span><span class="group-tree__role" data-i18n="group-role-tech">LIDS / CMS / Squid 等共用技術平台</span></li>
       </ul>
     </div>
-    <p>負責人 <strong>王英豪</strong>，25 年軟體工程實戰 + 24 年技術管理。服務過<strong>日商在台軟體公司、數位媒體、互動設計、政府金融機構</strong>等不同產業的企業客戶，擔任技術主管 / 首席工程師 / 技術顧問。產品經驗涵蓋<strong>銀行端信用保證業務系統</strong>（.NET 8 + Blazor）、<strong>iOS 社交手遊</strong>（App Store 上架）、<strong>全球 400+ 機場銷售之 Pocket PC 套件</strong>、車載娛樂系統、Web POP 編輯器——橫跨企業級、消費級、嵌入式三大領域。</p>
+    <p data-i18n="about-p2">負責人 <strong>王英豪</strong>，25 年軟體工程實戰 + 24 年技術管理。服務過<strong>日商在台軟體公司、數位媒體、互動設計、政府金融機構</strong>等不同產業的企業客戶，擔任技術主管 / 首席工程師 / 技術顧問。產品經驗涵蓋<strong>銀行端信用保證業務系統</strong>（.NET 8 + Blazor）、<strong>iOS 社交手遊</strong>（App Store 上架）、<strong>全球 400+ 機場銷售之 Pocket PC 套件</strong>、車載娛樂系統、Web POP 編輯器——橫跨企業級、消費級、嵌入式三大領域。</p>
 
-    <h2 id="常見問題-faq">常見問題 — FAQ</h2>
+    <h2 id="常見問題-faq" data-i18n="h2-faq">常見問題 — FAQ</h2>
     <div class="faq-grid">
       <details class="faq-item" open>
-        <summary>檔期多久能排到？</summary>
-        <p>顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 <strong>2026/07 起（約 6 週後）</strong>。專案制依範圍 1-2 週內可 kick-off。</p>
+        <summary data-i18n="faq1-q">檔期多久能排到？</summary>
+        <p data-i18n="faq1-a">顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 <strong>2026/07 起（約 6 週後）</strong>。專案制依範圍 1-2 週內可 kick-off。</p>
       </details>
       <details class="faq-item">
-        <summary>會簽 NDA / 開發票嗎？</summary>
-        <p>會。可開立公司行號統編發票，標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。付款支援電匯／Wise／加密貨幣（USDC）。</p>
+        <summary data-i18n="faq2-q">會簽 NDA / 開發票嗎？</summary>
+        <p data-i18n="faq2-a">會。可開立公司行號統編發票，標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。付款支援電匯／Wise／加密貨幣（USDC）。</p>
       </details>
       <details class="faq-item">
-        <summary>為何 US$ 10K/月不是按 hourly？</summary>
-        <p>月費模式讓負責人 + AI 副手團隊全力投入，不必為了計時打折注意力。<strong>同等價位 hourly 大約 US$ 80/h × 125h</strong>，但月費模式我們會超工，因為自家工具加成讓單位時間產出更高。</p>
+        <summary data-i18n="faq3-q">為何 US$ 10K/月不是按 hourly？</summary>
+        <p data-i18n="faq3-a">月費模式讓負責人 + AI 副手團隊全力投入，不必為了計時打折注意力。<strong>同等價位 hourly 大約 US$ 80/h × 125h</strong>，但月費模式我們會超工，因為自家工具加成讓單位時間產出更高。</p>
       </details>
       <details class="faq-item">
-        <summary>跟你合作會用到哪些 AI 工具？</summary>
-        <p>內部 SOP：Claude Code（主力） + 自建 Agent 框架（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway，client code／data 全程不出您的環境（除非授權）。</p>
+        <summary data-i18n="faq4-q">跟你合作會用到哪些 AI 工具？</summary>
+        <p data-i18n="faq4-a">內部 SOP：Claude Code（主力） + 自建 Agent 框架（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway，client code／data 全程不出您的環境（除非授權）。</p>
       </details>
       <details class="faq-item">
-        <summary>能不能只請你做某個 module，不要整套？</summary>
-        <p>可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週做完 OAuth/SSO 整合、2 週做完 PayPal 金流串接、3 週做完 Cloud Run 部署架構盤點與導入。</p>
+        <summary data-i18n="faq5-q">能不能只請你做某個 module，不要整套？</summary>
+        <p data-i18n="faq5-a">可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週做完 OAuth/SSO 整合、2 週做完 PayPal 金流串接、3 週做完 Cloud Run 部署架構盤點與導入。</p>
       </details>
       <details class="faq-item">
-        <summary>合作結束後 code 歸屬？</summary>
-        <p>專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain framework 等）可授權使用，不另收授權費。</p>
+        <summary data-i18n="faq6-q">合作結束後 code 歸屬？</summary>
+        <p data-i18n="faq6-a">專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain framework 等）可授權使用，不另收授權費。</p>
       </details>
     </div>
 
-    <h2 id="預約諮詢-book-consultation">預約諮詢 — Book a Consultation</h2>
+    <h2 id="預約諮詢-book-consultation" data-i18n="h2-book">預約諮詢 — Book a Consultation</h2>
     <div class="contact-cta">
       <div class="contact-cta__row">
         <div class="contact-cta__item">
-          <div class="contact-cta__label">📞 電話</div>
+          <div class="contact-cta__label" data-i18n="contact-phone-label">📞 電話</div>
           <a href="tel:+886921107206">0921-107-206</a>
         </div>
         <div class="contact-cta__item">
-          <div class="contact-cta__label">✉️ Email</div>
+          <div class="contact-cta__label" data-i18n="contact-email-label">✉️ Email</div>
           <a href="mailto:cancleeric@gmail.com?subject=%5B%E6%8E%A5%E6%A1%88%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%0A%0A%E6%88%91%E5%BE%9E%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%9A%84%E7%B6%B2%E9%A0%81%E7%9C%8B%E5%88%B0%E8%B2%B4%E6%96%B9%E6%8F%90%E4%BE%9B%E7%9A%84%E6%9C%8D%E5%8B%99%EF%BC%8C%E6%83%B3%E9%80%B2%E4%B8%80%E6%AD%A5%E8%A8%8E%E8%AB%96%EF%BC%9A%0A%0A%E3%80%90%E6%A1%88%E4%BB%B6%E9%A1%9E%E5%9E%8B%E3%80%91%EF%BC%88%E8%AB%8B%E9%81%B8%EF%BC%9AAI%2FLLM%20%E5%B9%B3%E5%8F%B0%E6%95%B4%E5%90%88%20%2F%20%E5%A4%9A%E7%A7%9F%E6%88%B6%20SaaS%20%2F%20%E8%BA%AB%E4%BB%BD%E5%AE%89%E5%85%A8%20%2F%20%E9%87%91%E6%B5%81%20%2F%20Cloud%20Run%20%E9%83%A8%E7%BD%B2%20%2F%20%E7%B3%BB%E7%B5%B1%E7%8F%BE%E4%BB%A3%E5%8C%96%20%2F%20%E5%85%B6%E4%BB%96%EF%BC%89%EF%BC%9A%0A%0A%E3%80%90%E6%A1%88%E4%BB%B6%E7%AF%84%E5%9C%8D%20%2F%20%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E8%A8%88%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E7%AE%97%E7%AF%84%E5%9C%8D%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E5%85%AC%E5%8F%B8%20%2F%20%E5%80%8B%E4%BA%BA%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A%0A%E8%AC%9D%E8%AC%9D%EF%BC%81%0A">cancleeric@gmail.com</a>
         </div>
         <div class="contact-cta__item">
-          <div class="contact-cta__label">🌪️ 線上作品</div>
+          <div class="contact-cta__label" data-i18n="contact-portfolio-label">🌪️ 線上作品</div>
           <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener">hurricanesoft.com.tw/pipeline ↗</a>
         </div>
       </div>
-      <a class="contact-cta__primary" href="mailto:cancleeric@gmail.com?subject=%5B%E6%8E%A5%E6%A1%88%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%0A%0A%E6%88%91%E5%BE%9E%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%9A%84%E7%B6%B2%E9%A0%81%E7%9C%8B%E5%88%B0%E8%B2%B4%E6%96%B9%E6%8F%90%E4%BE%9B%E7%9A%84%E6%9C%8D%E5%8B%99%EF%BC%8C%E6%83%B3%E9%80%B2%E4%B8%80%E6%AD%A5%E8%A8%8E%E8%AB%96%EF%BC%9A%0A%0A%E3%80%90%E6%A1%88%E4%BB%B6%E9%A1%9E%E5%9E%8B%E3%80%91%EF%BC%88%E8%AB%8B%E9%81%B8%EF%BC%9AAI%2FLLM%20%E5%B9%B3%E5%8F%B0%E6%95%B4%E5%90%88%20%2F%20%E5%A4%9A%E7%A7%9F%E6%88%B6%20SaaS%20%2F%20%E8%BA%AB%E4%BB%BD%E5%AE%89%E5%85%A8%20%2F%20%E9%87%91%E6%B5%81%20%2F%20Cloud%20Run%20%E9%83%A8%E7%BD%B2%20%2F%20%E7%B3%BB%E7%B5%B1%E7%8F%BE%E4%BB%A3%E5%8C%96%20%2F%20%E5%85%B6%E4%BB%96%EF%BC%89%EF%BC%9A%0A%0A%E3%80%90%E6%A1%88%E4%BB%B6%E7%AF%84%E5%9C%8D%20%2F%20%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E8%A8%88%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E7%AE%97%E7%AF%84%E5%9C%8D%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E5%85%AC%E5%8F%B8%20%2F%20%E5%80%8B%E4%BA%BA%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A%0A%E8%AC%9D%E8%AC%9D%EF%BC%81%0A">📧 立即寄出諮詢信 — 6 欄表單已預填，2 分鐘填完 →</a>
-      <p class="contact-cta__note">免費 30 分鐘諮詢 · 回信時間 24 小時內 · 無壓力、不 fit 就直接說</p>
+      <a class="contact-cta__primary" href="mailto:cancleeric@gmail.com?subject=%5B%E6%8E%A5%E6%A1%88%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%0A%0A%E6%88%91%E5%BE%9E%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%9A%84%E7%B6%B2%E9%A0%81%E7%9C%8B%E5%88%B0%E8%B2%B4%E6%96%B9%E6%8F%90%E4%BE%9B%E7%9A%84%E6%9C%8D%E5%8B%99%EF%BC%8C%E6%83%B3%E9%80%B2%E4%B8%80%E6%AD%A5%E8%A8%8E%E8%AB%96%EF%BC%9A%0A%0A%E3%80%90%E6%A1%88%E4%BB%B6%E9%A1%9E%E5%9E%8B%E3%80%91%EF%BC%88%E8%AB%8B%E9%81%B8%EF%BC%9AAI%2FLLM%20%E5%B9%B3%E5%8F%B0%E6%95%B4%E5%90%88%20%2F%20%E5%A4%9A%E7%A7%9F%E6%88%B6%20SaaS%20%2F%20%E8%BA%AB%E4%BB%BD%E5%AE%89%E5%85%A8%20%2F%20%E9%87%91%E6%B5%81%20%2F%20Cloud%20Run%20%E9%83%A8%E7%BD%B2%20%2F%20%E7%B3%BB%E7%B5%B1%E7%8F%BE%E4%BB%A3%E5%8C%96%20%2F%20%E5%85%B6%E4%BB%96%EF%BC%89%EF%BC%9A%0A%0A%E3%80%90%E6%A1%88%E4%BB%B6%E7%AF%84%E5%9C%8D%20%2F%20%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E8%A8%88%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E7%AE%97%E7%AF%84%E5%9C%8D%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E5%85%AC%E5%8F%B8%20%2F%20%E5%80%8B%E4%BA%BA%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A%0A%E8%AC%9D%E8%AC%9D%EF%BC%81%0A" data-i18n="contact-primary-cta">📧 立即寄出諮詢信 — 6 欄表單已預填，2 分鐘填完 →</a>
+      <p class="contact-cta__note" data-i18n="contact-note">免費 30 分鐘諮詢 · 回信時間 24 小時內 · 無壓力、不 fit 就直接說</p>
     </div>
 
     <hr />
-    <p><em>v6.4 · 最後更新 2026/05/20 22:49　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
+    <p><em data-i18n="footer-note">v6.5 · 最後更新 2026/05/20 23:42　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
 
   </main>
 
@@ -498,11 +501,11 @@
 
 <footer class="bottom">
   <p class="bottom__cta">
-    <a href="mailto:cancleeric@gmail.com?subject=%5B%E6%8E%A5%E6%A1%88%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4">📧 接案諮詢</a>
+    <a href="mailto:cancleeric@gmail.com?subject=%5B%E6%8E%A5%E6%A1%88%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4" data-i18n="footer-consult">📧 接案諮詢</a>
     · <a href="tel:+886921107206">📞 0921-107-206</a>
-    · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener">🌪️ LF Pipeline 線上作品 ↗</a>
+    · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" data-i18n="footer-pipeline">🌪️ LF Pipeline 線上作品 ↗</a>
   </p>
-  <p>© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v6.4</p>
+  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v6.5</p>
 </footer>
 
 <script>
@@ -528,6 +531,290 @@
   }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
   idMap.forEach((_, el) => observer.observe(el));
 })();
+</script>
+
+<script>
+// ============================================================
+//  i18n — 中 / English language switcher
+//  Key = data-i18n value   Value = English innerHTML
+// ============================================================
+const I18N = {
+  // vs-switcher bar
+  'vs-label':        'View',
+  'vs-standard':     'Standard',
+  'vs-design-dark':  'Design · Dark',
+  'vs-design-light': 'Design · Light',
+
+  // meta-live banner
+  'meta-live-head':  'This page is <strong>100% developed &amp; maintained by LLM</strong>&nbsp;·&nbsp;Zero manual code edits&nbsp;·&nbsp;Auto-runs every 30 minutes&nbsp;·&nbsp;What you see is <strong>"Automated Software Delivery" live in action</strong>',
+  'meta-step-1':     '① Page loads',
+  'meta-step-2':     '② AI reviews weakest point',
+  'meta-step-3':     '③ Chrome MCP live test',
+  'meta-step-4':     '④ Focused fix',
+  'meta-step-5':     '⑤ git commit',
+  'meta-step-6':     '⑥ push',
+  'meta-step-7':     '⑦ GitHub Pages auto-deploy',
+
+  // topbar nav
+  'nav-services':    'Services',
+  'nav-pricing':     'Pricing',
+  'nav-deliverables':'Deliverables',
+  'nav-cases':       'Case Studies',
+  'nav-faq':         'FAQ',
+  'nav-book':        'Book a Call',
+
+  // sidebar profile
+  'profile-title':   'HurricaneSoft · Principal<br/><span class="profile__title--sub">Studio for Hire</span>',
+  'status-pill':     'Available Now · Limited Slots',
+
+  // sidebar contact card
+  'card-contact-title': 'Contact',
+  'meta-phone':     'Phone',
+  'meta-email':     'Email',
+  'meta-portfolio': 'Portfolio',
+  'meta-address':   'Address',
+  'meta-address-val': '2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei',
+  'meta-taxid':     'Tax ID',
+  'meta-taxid-val': '80289779 (invoice available)',
+  'meta-rate':      'Retainer',
+
+  // sidebar trust card
+  'card-trust-title': 'Why Trust Us',
+  'stat-exp':         'yrs software exp.',
+  'stat-clients':     'enterprise clients',
+  'stat-systems':     'production systems',
+  'stat-subsidiaries':'subsidiaries',
+  'stat-saas':        'SaaS integrations',
+
+  // sidebar TOC card
+  'toc-title':        'Contents',
+  'toc-why-studio':   'Why This Studio',
+  'toc-services':     'Services',
+  'toc-pricing':      'Pricing / How We Work',
+  'toc-deliverables': 'Deliverable Systems',
+  'toc-cases':        'Case Studies',
+  'toc-stack':        'Tech Stack',
+  'toc-about':        'About the Studio',
+  'toc-faq':          'FAQ',
+  'toc-book':         'Book a Consultation',
+
+  // sidebar tech tags card
+  'card-tags-title': 'Tech Tags',
+
+  // main h2 tagline
+  'h2-tagline': 'Automated Software Delivery · 開發流程自動化',
+
+  // hire lede
+  'hire-lede': 'AI integration is table stakes — the real differentiator is <strong>automating the entire delivery pipeline</strong>: spec → design → implementation → review → deploy → ops, with AI copilots and toolchains at every stage. Battle-tested across our own group (HurricaneGroup, 6 subsidiaries / 30+ production systems / 19 Cloud Run services) over a full year. The result: <strong>20× output in the same time — one person carrying what used to take an entire team</strong>. Bring this to your project.',
+
+  // AI hero card
+  'hero-eyebrow':       'Automated Delivery in Action · Watch Live',
+  'hero-title':         'LF Pipeline — One engineer. 30+ systems. Real-time.',
+  'hero-desc':          'Official showcase — live view of the full automation stack in motion: parallel multi-SaaS iteration, Agent collaboration, CI/CD pipeline, cross-subsidiary service topology. <strong>This is what "20× output" looks like.</strong>',
+  'hero-stat-systems':  'production systems',
+  'hero-stat-cloudrun': 'Cloud Run services',
+  'hero-stat-products': 'AI / SaaS product lines',
+  'hero-stat-years':    'yr in production',
+  'hero-cta':           'See it live ↗',
+
+  // availability bar
+  'avail-strong': 'Next available slot: from 2026/07 (earliest kick-off ~6 weeks out)',
+  'avail-detail': '· Monthly Retainer: max 2 concurrent engagements · Advisory: available immediately · Project-based: kick-off within 1–2 weeks',
+  'avail-cta':    'Reserve a slot →',
+
+  // why studio section
+  'h2-why-studio': 'Why This Studio — Why This Studio',
+  'diff-freelancer': 'Solo freelancers often hit a wall when security, contracts, DB architecture, or deployment complexity kicks in. This studio pairs <strong>1 Principal + an AI copilot team</strong> for end-to-end coverage: <strong>a team\'s breadth with a solo operator\'s decision speed</strong>.',
+  'diff-agency':    'Agencies charge a premium, layer on subcontractors, and move slowly. Here, <strong>the Principal writes the code directly</strong> — no account manager / PM / architect chain. <strong>Straight-talk decisions · replies within 24 hrs · invoice available</strong>.',
+  'diff-inhouse':   'Hiring a senior architect takes <strong>6 months</strong> to ramp, with fully-loaded cost (salary + benefits + equipment + onboarding) around <strong>NT$300–400K/month</strong> — and that\'s one person. We <strong>start within the week</strong>, at US$10K/month (≈NT$320K), including the Principal + AI copilot team + proprietary tooling and infrastructure. <strong>One hire\'s cost, an entire team\'s output</strong>.',
+
+  // services section
+  'h2-services':      'Services — Services',
+  'services-intro':   'Core competency is Automated Software Delivery — everything else extends from it. Every category has been validated in our own production environment.',
+
+  'svc-automation-title': 'Automated Software Delivery (Core)',
+  'svc-automation-desc':  'Full pipeline automation: spec → design → implementation → review → deploy → ops. AI copilots, Agent framework, ticket state machine, self-hosted CI/CD, and quantified quality gates. Proven at scale: <strong>1 person operating 30+ production systems</strong> with parallel multi-SaaS iteration.',
+  'svc-llm-title':    'AI / LLM Platform Integration',
+  'svc-llm-desc':     'Self-hosted LLM Gateway, billing center, provider routing, fine-tuned model deployment, RAG, multi-Agent collaboration framework. Running in production across Brain + Modelhub + Anemone.',
+  'svc-saas-title':   'Multi-tenant SaaS — Zero to Launch',
+  'svc-saas-desc':    'Tenant data isolation, billing, admin dashboard, shared SDK/API layer. Live in 9+ systems (Hurricane Pay / Squid ecosystem).',
+  'svc-auth-title':   'Identity &amp; Security Infrastructure',
+  'svc-auth-desc':    'Self-hosted OAuth2 / OIDC Identity Provider, cross-system SSO, MFA, secrets management (Hurricane Vault governing 90+ secrets).',
+  'svc-payment-title':'Payments &amp; Subscription Integration',
+  'svc-payment-desc': 'PayPal / cross-border payment integration, Webhook design, subscription &amp; invoicing, multi-tenant billing isolation. Live on Hurricane Pay v0.13.0.',
+  'svc-gcp-title':    'GCP Cloud Run Deployment Architecture',
+  'svc-gcp-desc':     'Containerization, Cloud Build pipeline, Artifact Registry, Secret Manager integration. 19 production services under active management.',
+  'svc-modern-title': 'Legacy System Modernization',
+  'svc-modern-desc':  '.NET Framework → .NET 8 + Blazor, monolith → microservices, PHP / legacy → FastAPI / Next.js, tech-debt audit and incremental refactoring. <strong>Proven</strong>: led a 1.5-year core-system modernization for a government credit-guarantee institution; an association platform serving 5,000+ members remains live to this day.',
+  'svc-gov-tag':      'Grant Advisory',
+  'svc-gov-title':    'Government AI Subsidy Program Consulting',
+  'svc-gov-desc':     'The 2026 government has released over NT$10 billion in AI incentives. We help enterprises assess eligibility for SBIR, AI Leap, digital transformation, and smart-manufacturing programs — from proposal writing and review through to deployed AI systems. The goal is connecting the budget to something that actually ships, not just winning the grant.',
+
+  // pricing section
+  'h2-pricing':        'How We Work — Pricing',
+  'rate-featured-tag': 'Recommended',
+  'rate-retainer-title':'Monthly Retainer',
+  'rate-per-month':    ' / month',
+  'meta-rate-value':   'US$ 10,000 / month',
+  'rate-retainer-li1': 'Principal + AI copilot team at full capacity',
+  'rate-retainer-li2': 'Architecture decisions + hands-on coding',
+  'rate-retainer-li3': 'Weekly progress sync / end-of-month delivery report',
+  'rate-retainer-li4': 'Best fit for 3-month+ engagements',
+  'rate-retainer-cta': 'Book this plan — free 30-min consultation →',
+  'rate-project-title':'Project-based',
+  'rate-per-project':  ' and up / project',
+  'rate-project-li1':  'Fixed price, well-defined scope',
+  'rate-project-li2':  'Milestone-based payments',
+  'rate-project-li3':  'Includes 1-month post-launch warranty',
+  'rate-project-li4':  'POC 2–4 wks / MVP 4–8 wks / Modernization 8–12 wks',
+  'rate-project-cta':  'Discuss project scope →',
+  'rate-advisory-title':'Advisory',
+  'rate-per-hour':     ' / hour',
+  'rate-advisory-li1': 'Architecture review / tech selection / code review',
+  'rate-advisory-li2': 'Consulting only — no hands-on coding',
+  'rate-advisory-li3': 'Minimum 4-hour engagement',
+  'rate-advisory-li4': 'Best for high-stakes short-term decisions',
+  'rate-advisory-cta': 'Book an advisory session →',
+  'rate-foot':         '<strong>Engagement process</strong>: free 30-min consultation → quote &amp; contract (<strong>30% deposit</strong>) → development → milestone acceptance → launch (<strong>includes 1-month warranty</strong>). <strong>Payment</strong>: invoice available (company tax ID 80289779), wire transfer / Wise / crypto (USDC) accepted.',
+
+  // deliverables section
+  'h2-deliverables':   'Deliverable Systems — Deliverable Systems',
+  'deliverables-intro':'Every item below is running in HurricaneGroup production — not a demo, not a POC.',
+
+  'cat-ai':   '🤖 AI / Agent Product Lines',
+  'item-squid':       '<strong>Squid — Group Project &amp; Ticket Management SaaS (Company Core)</strong>&nbsp; Multi-tenant requirements platform; <strong>foundation for AI Agent ticket-driven development</strong>; LIDS OAuth2 SSO + JWT + API Key dual auth; strict state machine (one transition at a time + role/required-field validation); auto tenant provisioning (first login); 6 API modules (Requirements / Projects / Users / Categories / ApiKeys / Auth) + official Python SDK + JS SDK',
+  'item-manta':       '<strong>Manta — AI Workflow Canvas (Coze alternative)</strong>&nbsp; Multi-tenant AI orchestration platform; sandbox execution + Webhook trigger + real-time monitoring; JWT httpOnly cookie + LIDS end_session + CISO/compliance PASS; Bot Export redaction; v2.64 in production',
+  'item-aicad':       '<strong>AICAD — AI P&amp;ID Engineering Drawing Recognition SaaS</strong>&nbsp; Engineering drawing / P&amp;ID → DXF conversion; relayed through Anemone Server to Claude Vision; multi-view segmentation + OCR + geometry extraction; in production',
+  'item-fiona-radar': '<strong>fiona-radar — AI Video Structured Insights v1.1.0</strong>&nbsp; Anemone prompt → JSONB structured output (key_points / business_insights / mentioned_entities); automatic YouTube ingestion + monetization-opportunity tagging',
+  'item-fiona-pipeline':'<strong>fiona-pipeline — AI Script Generation + Push Publishing</strong>&nbsp; Receives fiona-radar insights → generates scripts → auto-publishes; multi-platform aware; n8n webhook integration',
+  'item-brain':       '<strong>Brain — Multi-agent AI Collaboration Framework</strong>&nbsp; AI agent framework + terminal integration; multi-role collaboration; 21 Python files / ~6,350 lines; multi-mode decision routing; ticket-driven + state machine; 100% task completion in tests',
+  'item-claude-agents':'<strong>Claude Agents — AI Executive Copilot Role Library</strong>&nbsp; Multi-role virtual team (covering engineering / ops / business / product / security / legal); multi-role knowledge baseline + cross-machine sync + tiered permissions',
+  'item-modelhub':    '<strong>Modelhub — ML Model Training / Version Management Platform</strong>&nbsp; FastAPI + SQLAlchemy + SQLite; multi-tier training resource scheduling; auto secret injection; multi-module CRUD; CI smoke test fully automated acceptance',
+  'item-anemone':     '<strong>Anemone / Brain — Group-wide LLM Gateway</strong>&nbsp; Billing center + cross-tenant visibility + automatic model routing; Anemone serves as LLM ingress; Modelhub as secondary LLM provider; AICAD / Manta and other SaaS relay Claude Vision / chat through this gateway',
+
+  'cat-saas': '📱 External SaaS Products (Customer-facing)',
+  'item-conch':       '<strong>Conch (RS) — Reservation SaaS Platform v6.0</strong>&nbsp; Multi-venue / multi-tenant booking system; LINE Pay + PayPal Live + subscription billing + fee collection; iOS App + Discord + QR check-in + i18n + CRM + tablet mode; <strong>1,265+ tests all passing (unit 327 + integration 54 + E2E 884) / 28 DB migrations / 29 PRs merged / CI 4 jobs all green</strong>',
+  'item-abacus':      '<strong>Abacus (hurricane-books) — SMB Accounting &amp; Finance SaaS</strong>&nbsp; Comparable to TianXin CPA; .NET 8 + Blazor Server + MudBlazor + PostgreSQL 16; LIDS OIDC (Authorization Code + PKCE); Modular Monolith + Clean Architecture; Playwright 24 specs; covers vouchers / VAT / reports / year-end close / journals / ledgers / numbering / media filing',
+  'item-tianji':      '<strong>Tianji — Divination &amp; Astrology SaaS</strong>&nbsp; iOS App + Web dual-platform; in production (HurricaneEdge external app)',
+  'item-dagongzai':   '<strong>DaGongZai — Gig Matching SaaS v1.6.0</strong>&nbsp; Taiwan gig fast-matching platform (dual-sided: job seekers / clients); <strong>full-stack self-delivered</strong>: FastAPI + SQLAlchemy / Next.js 14 App Router + TypeScript / Swift + SwiftUI (iOS 16+) / PostgreSQL; PayPal Escrow model; multi-platform crawler (104 / 1111 / 518 / yes123 / Tasker, APScheduler every 6 hrs); ML salary estimation model; LIDS OAuth2 / PKCE integration',
+  'item-gyre':        '<strong>Gyre v0.9.0</strong>&nbsp; Multi-service architecture (apps/api + web + ai-service); environment separation + Secret Manager integration; R5 feature-frozen, awaiting production launch',
+
+  'cat-infra': '🏗️ Group-wide Infrastructure (The foundation running AI / SaaS in production)',
+  'item-hurricane-pay':'<strong>Hurricane Pay — Group-wide Payment Microservice</strong>&nbsp; FastAPI + PostgreSQL + PayPal SDK; GCP Cloud Run multi-environment deployment; 15 routes; 90 tests / 88% coverage; multiple group products integrated, credentials injected by GCP Secret Manager / Hurricane Vault',
+  'item-lids':        '<strong>LIDS — Multi-tenant SaaS Identity Layer</strong>&nbsp; OAuth2/OIDC Identity Provider, group-wide SSO, 9+ systems integrated, including custom OIDC patches (per group documentation, not verifiable in this repo)',
+  'item-vault':       '<strong>Hurricane Vault — Group-wide Secrets Management v1.0.0</strong>&nbsp; Self-hosted Secret Manager, multi-tier audit + cloud symmetric backup, 90+ secrets (per group documentation, not verifiable in this repo)',
+  'item-tentacle':    '<strong>Tentacle BFF — Squid Frontend Integration Layer</strong>&nbsp; Backend for Frontend pattern; frontend → BFF → Squid API; internal neritic CLI for ticket operations; shared across multiple group products (per group documentation, not verifiable in this repo)',
+  'item-headscale':   '<strong>Headscale — Group-wide VPN</strong>&nbsp; ACL-locked, cross-office node connectivity, dynamic IP management (per group documentation, not verifiable in this repo)',
+
+  // recent deliveries section
+  'h2-cases':         'Recent Deliveries — Recent Deliveries',
+  'cases-h3-saas':    '2026 Q1–Q2 External SaaS Products Launched',
+  'case-manta':       '<strong>Manta v2.64</strong> (2026/05) — AI Workflow Canvas (Coze alternative), multi-tenant in production; same month completed JWT httpOnly cookie migration + LIDS end_session + CSRF PoC BLOCKED (CISO/compliance dual review PASS)',
+  'case-conch':       '<strong>Conch (RS) v6.0</strong> (2026/04 GA) — Reservation SaaS launched, 1,265+ tests all passing, 28 DB migrations, 29 PRs merged, CI 4 jobs all green; includes CRM / tablet mode / no-show management / public directory',
+  'case-dagongzai':   '<strong>DaGongZai v1.6.0</strong> (2026/04) — Taiwan gig matching SaaS in production (API + Web + iOS synchronized), dual-sided users (job seekers / clients)',
+  'cases-h3-infra':   '2026 Q1–Q2 Group Infrastructure Launched',
+  'case-vault':       '<strong>Hurricane Vault v1.0.0</strong> (2026/04) — Self-hosted Secret Manager, multi-tier audit + cloud symmetric backup',
+  'case-pay':         '<strong>Hurricane Pay v0.13.0</strong> (2026/05) — Group-wide payment service, PayPal LIVE, 9+ tenants integrated',
+  'case-brain':       '<strong>Brain LLM Gateway</strong> (2026/05 billing center complete) — Cross-tenant LLM billing and provider routing',
+  'case-headscale':   '<strong>Headscale VPN</strong> group deployment (lobsterfarm-633f7, ACL-locked, cross-office node connectivity)',
+  'case-subsidiaries':'Completed architecture separation and unified infrastructure integration across <strong>6 subsidiaries</strong>',
+  'case-gcp':         'GCP unified operations: 19 Cloud Run services under centralized group management',
+  'cases-h3-enterprise':'Enterprise Client Projects',
+  'case-gov':         '<strong>Government Credit Guarantee Institution — Core System Modernization</strong> (2024/05–2026/02) — Served as <strong>Principal Technical Consultant</strong>, led migration from .NET Framework 4.6 to .NET 8 + Blazor with microservices architecture, coordinated an 8-person external technical team over multiple years. <strong>Powers the core production system for bank-side credit guarantee operations</strong>',
+  'case-assoc':       '<strong>National Association — Integrated Organization Management Platform</strong> (2019/02–2021/02 | ongoing maintenance 2026) — Online course registration system serving 5,000+ members; online sign-up rate +80%, admin time −60%; PHP CodeIgniter HMVC; 15+ operational reports',
+  'case-game':        '<strong>iOS Multi-feature Social Game Platform</strong> (2023/06–2024/04) — Domino battle mobile game, SwiftUI + SpriteKit + Firebase + CloudKit, real-time multiplayer, AI chat, AdMob ads — live on App Store',
+  'case-firebase':    '<strong>Social Game Firebase Operations Dashboard</strong> (2024/03–2024/12) — Blazor Server (.NET 9) + Firebase Admin SDK, 656+ hours delivered independently, 8 modules delivered in phases',
+
+  // tech stack section
+  'h2-stack':      'Tech Stack — Tech Stack',
+  'stack-lang':    'Languages',
+  'stack-backend': 'Backend',
+  'stack-frontend':'Frontend',
+  'stack-db':      'Databases',
+  'stack-cloud':   'Cloud / DevOps',
+  'stack-auth':    'Auth / Security',
+  'stack-ai':      'AI / LLM',
+  'stack-payment': 'Payments',
+  'tag-security-scanner': 'Self-built Code Security Scanner',
+
+  // about studio section
+  'h2-about': 'About the Studio — About the Studio',
+  'about-p1': '<strong>HurricaneSoft Ltd.</strong> — <strong>founded in Taipei in 2002</strong>, company tax ID <strong>80289779</strong>, the founding subsidiary of <strong>HurricaneGroup</strong>. Positioned as the group\'s technology research base and client-facing software studio. 24 years of engineering team experience — your AI-era software delivery partner.',
+  'group-tree-head': 'HurricaneGroup · 6 Subsidiaries',
+  'group-role-soft':    'Group deployment lead / GCP ops / client-facing studio',
+  'group-role-edge':    '8 external SaaS product lines',
+  'group-role-core':    'LLM Gateway / fine-tuned models / intelligent platform',
+  'group-role-prime':   'Custom enterprise systems (.NET WMS, SaaS)',
+  'group-role-digital': 'Mobile games / iOS / creative content',
+  'group-role-tech':    'LIDS / CMS / Squid and other shared tech platforms',
+  'about-p2': 'Principal <strong>Wang Ying-Hao</strong> — 25 years of hands-on software engineering and 24 years in technical leadership. Has served enterprise clients across <strong>Japanese-affiliated software firms, digital media, interactive design, and government financial institutions</strong> as tech lead, principal engineer, and technical consultant. Product experience spans a <strong>bank-side credit guarantee core system</strong> (.NET 8 + Blazor), an <strong>iOS social game</strong> (App Store live), a <strong>Pocket PC suite sold in 400+ airports worldwide</strong>, in-vehicle entertainment systems, and a web POP editor — covering enterprise, consumer, and embedded domains.',
+
+  // FAQ section
+  'h2-faq': 'FAQ — Frequently Asked Questions',
+  'faq1-q': 'How soon can you start?',
+  'faq1-a': 'Advisory engagements are available immediately (minimum 4 hours). Monthly Retainer has a maximum of 2 concurrent slots — next availability from <strong>2026/07 (approximately 6 weeks out)</strong>. Project-based engagements can kick off within 1–2 weeks depending on scope.',
+  'faq2-q': 'Do you sign NDAs and issue invoices?',
+  'faq2-a': 'Yes. Invoices are available under a registered company tax ID. Our standard NDA template can be signed immediately; custom NDA requests are addressed within 24 hours. Payment accepted via wire transfer / Wise / crypto (USDC).',
+  'faq3-q': 'Why US$10K/month instead of hourly billing?',
+  'faq3-a': 'The Monthly Retainer keeps the Principal and AI copilot team fully focused — no incentive to pad hours. <strong>The equivalent hourly rate would be roughly US$80/h × 125h</strong>, but on retainer we consistently over-deliver because our proprietary tooling multiplies per-hour output.',
+  'faq4-q': 'What AI tools will be used in an engagement?',
+  'faq4-a': 'Internal SOP: Claude Code (primary) + self-built Agent framework (Brain) + AI copilot role library (claude-agents). All LLM calls route through our self-hosted Anemone gateway — your client code and data stay in your environment unless you explicitly authorize otherwise.',
+  'faq5-q': 'Can I hire you for just one module instead of the whole stack?',
+  'faq5-a': 'Absolutely — that\'s exactly what the Advisory or Project-based tiers are for. Common scopes: OAuth/SSO integration in 1 week, PayPal payment integration in 2 weeks, Cloud Run architecture audit and migration in 3 weeks.',
+  'faq6-q': 'Who owns the code after the engagement ends?',
+  'faq6-a': 'On project completion, all code, documentation, CI/CD configurations, and secrets management specs are fully transferred to you. Our proprietary general-purpose tooling (Brain framework, etc.) is licensed for your use at no additional charge.',
+
+  // book consultation section
+  'h2-book':              'Book a Consultation — Book a Consultation',
+  'contact-phone-label':  '📞 Phone',
+  'contact-email-label':  '✉️ Email',
+  'contact-portfolio-label': '🌪️ Portfolio',
+  'contact-primary-cta':  '📧 Send a consultation request — 6-field template pre-filled, done in 2 minutes →',
+  'contact-note':         'Free 30-min consultation · Reply within 24 hours · No pressure — if it\'s not a fit, we\'ll say so',
+
+  // footer
+  'footer-note':    'v6.5 · Last updated 2026/05/20 23:42 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
+  'footer-consult': '📧 Hire Us',
+  'footer-pipeline':'🌪️ LF Pipeline — Live Portfolio ↗',
+  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v6.5',
+};
+
+// ── Snapshot Chinese originals once DOM is ready ──────────────────────────
+const ZH_SNAPSHOT = {};
+function snapshotZh() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    ZH_SNAPSHOT[el.getAttribute('data-i18n')] = el.innerHTML;
+  });
+}
+
+// ── Apply a language ───────────────────────────────────────────────────────
+function applyLang(lang) {
+  const isEn = (lang === 'en');
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (isEn) {
+      if (I18N[key] !== undefined) el.innerHTML = I18N[key];
+    } else {
+      if (ZH_SNAPSHOT[key] !== undefined) el.innerHTML = ZH_SNAPSHOT[key];
+    }
+  });
+  document.documentElement.lang = isEn ? 'en' : 'zh-Hant';
+  document.getElementById('btn-zh').classList.toggle('vs-lang-btn--active', !isEn);
+  document.getElementById('btn-en').classList.toggle('vs-lang-btn--active', isEn);
+}
+
+// ── Public toggle function called by buttons ───────────────────────────────
+function setLang(lang) {
+  localStorage.setItem('resume-lang', lang);
+  applyLang(lang);
+}
+
+// ── Init on DOMContentLoaded ───────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function () {
+  snapshotZh();
+  const saved = localStorage.getItem('resume-lang') || 'zh';
+  applyLang(saved);
+});
 </script>
 </body>
 </html>

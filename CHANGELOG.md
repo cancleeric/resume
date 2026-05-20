@@ -4,6 +4,13 @@
 
 ---
 
+## v6.5 — 2026-05-20
+
+- 標準版加 i18n 中/英同頁切換：vs-switcher bar 右側加「中文 | EN」鈕，190 個 data-i18n 元素 + EN 字典，localStorage 記偏好、同步 `<html lang>`；meta/版號/專有名詞不切
+- 設計版（深/亮）移除「Design tokens 說明書」區塊 —— claude.ai/design 殘留的設計稿，對接案訪客無意義（app.jsx 移除 render + StickyTOC/MobileMenu 項 + 兩 html 的 script tag）
+
+---
+
 ## v6.4 — 2026-05-20
 
 - 三版 meta-live 橫幅修正自動化頻率：loop 排程改為「resume 每 30 分鐘」（cron `8,38`），橫幅卻仍寫「每 15 分鐘」。改為「每 30 分鐘自動跑一輪」與實際排程一致
