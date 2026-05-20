@@ -4,6 +4,12 @@
 
 ---
 
+## v2.3 — 2026-05-20
+
+- 設計版（深 / 亮）meta live banner 改 sticky 常駐頂部，nav 用 CSS var 動態接在其下方（對齊標準版 sticky-header）
+
+---
+
 ## v2.2 — 2026-05-20
 
 三版面架構 + meta live banner。

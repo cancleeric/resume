@@ -535,6 +535,10 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 
 /* banner 蓋過 grid-bg 裝飾線 */
 .vs-switcher,.meta-live{position:relative;z-index:2}
+
+/* meta-live sticky 常駐 + nav 推到其下方 */
+.meta-live{position:sticky;top:0;z-index:40}
+.nav{top:var(--meta-h,72px)!important}
 </style>
 
 <link rel="stylesheet" href="src/responsive.css" />
@@ -599,6 +603,18 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
     else if(y<lastY-8){ dock.classList.remove('dock-hidden'); }
     lastY=y;
   },{passive:true});
+})();
+</script>
+<script>
+/* 量 meta-live 高度，讓 sticky nav 接在其下方 */
+(function(){
+  function setMetaH(){
+    var m=document.querySelector('.meta-live');
+    if(m)document.documentElement.style.setProperty('--meta-h',m.offsetHeight+'px');
+  }
+  setMetaH();
+  window.addEventListener('resize',setMetaH);
+  window.addEventListener('load',setMetaH);
 })();
 </script>
 </body>
