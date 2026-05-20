@@ -4,6 +4,12 @@
 
 ---
 
+## v4.4 — 2026-05-20
+
+- 標準版加 `<meta name="theme-color">`（#064e3b，對齊頂部 meta-live 深綠橫幅）— 行動瀏覽器 UI 列跟著頁面配色，更有完成度
+
+---
+
 ## v4.3 — 2026-05-20
 
 - 設計版·深(index.html) OG 補完：補上 `og:image:width/height/alt`（原只有 og:image），與標準版對齊，社群預覽卡渲染更可靠
