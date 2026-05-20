@@ -320,15 +320,9 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
   letter-spacing: -0.01em;
 }
 .nav-logo .mark {
-  width: 22px; height: 22px; border-radius: 4px;
-  background: conic-gradient(from 220deg, var(--orange), #B83A0E, var(--orange));
-  display: grid; place-items: center;
-  box-shadow: 0 0 0 1px rgba(255,107,53,0.3), 0 0 12px rgba(255,107,53,0.25);
-  position: relative;
-}
-.nav-logo .mark::after {
-  content: ""; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--bg);
+  width: 30px; height: 30px;
+  color: var(--cyan);
+  flex-shrink: 0;
 }
 .nav-links { display: flex; gap: 6px; align-items: center; }
 .nav-links a {
@@ -538,6 +532,9 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 .meta-live__text strong{color:#fff;font-weight:700}
 @media print{.meta-live{display:none!important}}
 @media (max-width:600px){.meta-live{font-size:11px;padding:7px 12px}}
+
+/* banner 蓋過 grid-bg 裝飾線 */
+.vs-switcher,.meta-live{position:relative;z-index:2}
 </style>
 
 <link rel="stylesheet" href="src/responsive.css" />

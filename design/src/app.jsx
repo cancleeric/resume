@@ -9,7 +9,12 @@ function Nav({ onMenuOpen }) {
     <header className="nav">
       <div className="nav-inner">
         <a href="#hero" className="nav-logo">
-          <span className="mark"></span>
+          <svg className="mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-label="颶風軟體 logo" role="img">
+            <g transform="translate(20 20) rotate(-18)" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round">
+              <ellipse cx="0" cy="-3.5" rx="14" ry="5"/>
+              <ellipse cx="0" cy="3.5" rx="14" ry="5"/>
+            </g>
+          </svg>
           <span className="logo-text" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1 }}>
             <span style={{ fontFamily: 'var(--font-tc)', fontSize: 15, fontWeight: 600 }}>颶風軟體</span>
             <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--text-low)', letterSpacing: '0.12em' }}>HURRICANESOFT</span>
