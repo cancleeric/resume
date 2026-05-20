@@ -4,6 +4,12 @@
 
 ---
 
+## v5.2 — 2026-05-20
+
+- 標準版加 FAQPage JSON-LD（6 組問答結構化），搜尋引擎可理解 FAQ 內容、潛在 FAQ rich result — 內容對齊頁面 6 個 details
+
+---
+
 ## v5.1 — 2026-05-20
 
 - 設計版·深(index.html) 加 self-referencing canonical — 三版 canonical 現已全數補齊
