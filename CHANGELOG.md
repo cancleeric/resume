@@ -4,6 +4,12 @@
 
 ---
 
+## v3.9 — 2026-05-20
+
+- 設計版·亮修對比：why-studio 的 `.tone-icon.bad` 用硬編碼淺橘 #FF9E7E（深色主題色），亮版近白底上糊掉。亮版 override 改用 var(--orange) 正色橘
+
+---
+
 ## v3.8 — 2026-05-20
 
 - 標準版修錨點偏移：section `<h2>` 原本沒有 scroll-margin-top，點 topbar/TOC 導覽時標題被 sticky-header（meta-live+topbar ~135px）整個蓋住。加 scroll-margin-top 150px（手機 196px）
