@@ -4,6 +4,12 @@
 
 ---
 
+## v4.0 — 2026-05-20
+
+- 設計版修錨點：`.trust-section` 只有 56px padding-top（其他 section 都 140px），點 TOC「TRUST」標題被 sticky-header 蓋住。加 scroll-margin-top:84px 對齊其他 section
+
+---
+
 ## v3.9 — 2026-05-20
 
 - 設計版·亮修對比：why-studio 的 `.tone-icon.bad` 用硬編碼淺橘 #FF9E7E（深色主題色），亮版近白底上糊掉。亮版 override 改用 var(--orange) 正色橘

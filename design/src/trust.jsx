@@ -15,6 +15,7 @@ function TrustBar() {
       <style>{`
         .trust-section {
           padding: 56px 0;
+          scroll-margin-top: 84px;
           border-top: 1px solid var(--border-subtle);
           border-bottom: 1px solid var(--border-subtle);
           background: linear-gradient(180deg, rgba(0,0,0,0.2), transparent);
