@@ -559,13 +559,31 @@ h2#近期交付案例-recent-deliveries ~ ul li::marker { color: var(--brand-2);
   flex-wrap: wrap;
 }
 .topbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.04em;
+  color: #67e8f9;
 }
-.topbar__brand::before {
-  content: "🌀 ";
-  margin-right: 4px;
+.topbar__logo {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.topbar__brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+  color: #fff;
+}
+.topbar__brand-text small {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #94a3b8;
+  margin-top: 2px;
 }
 .topbar__nav { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; }
 .topbar__nav a {
