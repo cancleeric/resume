@@ -151,7 +151,7 @@ function CTA() {
         }
         .cta-meta-row {
           padding: 14px 18px;
-          background: rgba(8,9,12,0.5);
+          background: var(--surface-2);
           border: 1px solid var(--border);
           border-radius: var(--r-md);
           display: flex; align-items: center; gap: 12px;
@@ -165,7 +165,7 @@ function CTA() {
         .cta-meta-row .icon {
           width: 32px; height: 32px;
           display: grid; place-items: center;
-          background: var(--surface-2);
+          background: var(--surface-3);
           border: 1px solid var(--border);
           border-radius: 4px;
           color: var(--orange);

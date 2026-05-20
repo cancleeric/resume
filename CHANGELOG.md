@@ -4,6 +4,12 @@
 
 ---
 
+## v7.7 — 2026-05-21
+
+- 設計版·亮 修 CTA 聯絡面板背景：`.cta-meta-row` 原硬寫死 `rgba(8,9,12,0.5)`（近黑半透明，為深版設計），在亮版變成淺色頁面中的深灰方塊。改用 theme-aware 的 `var(--surface-2)`，icon 內框改 `var(--surface-3)` 保持層次（faq-cta.jsx，深/亮皆正確）
+
+---
+
 ## v7.6 — 2026-05-21
 
 - 設計版（深/亮）CTA 區聯絡面板可點擊化：電話／Email／Live Pipeline 三列原為純文字 `<div>`，改為 `<a>`（tel:／mailto:／pipeline 連結）+ hover 態，手機可直接點擊撥號／寄信（faq-cta.jsx）
