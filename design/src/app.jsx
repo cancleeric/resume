@@ -185,7 +185,7 @@ function App() {
       <StickyTOC />
       <BottomDock />
       <footer style={{ padding: '40px 16px 140px', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--text-dim)', letterSpacing: '0.08em', borderTop: '1px solid var(--border-subtle)' }}>
-        © 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.0 · 最後更新 2026/05/21 01:53
+        © 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.1 · 最後更新 2026/05/21 02:20
       </footer>
     </>
   );
