@@ -4,6 +4,12 @@
 
 ---
 
+## v4.3 — 2026-05-20
+
+- 設計版·深(index.html) OG 補完：補上 `og:image:width/height/alt`（原只有 og:image），與標準版對齊，社群預覽卡渲染更可靠
+
+---
+
 ## v4.2 — 2026-05-20
 
 - 設計版移除 PreviewHint 殘留 dev scaffolding：頂部「💡 Present 模式可拖拉視窗試 RWD」橫幅是 claude.ai/design 的開發工具提示，對真實接案訪客無意義，從 app.jsx 移除（深/亮兩版同時生效）
