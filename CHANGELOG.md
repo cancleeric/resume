@@ -4,6 +4,12 @@
 
 ---
 
+## v7.2 — 2026-05-21
+
+- 標準版手機 RWD：修 `@media (max-width:600px)` grid 兩欄水平溢出。`.sidebar`/`.main` 預設 `min-width:auto` 卡在 min-content（sidebar 被固定頭像＋不換行英文名撐住 ~342px、main 被 diff-card 撐住），360px 級手機水平溢出。改 `.sidebar`/`.main` 加 `min-width:0`、`.profile` 加 `flex-wrap:wrap` 放行縮放（sidebar/main 342→222px，docW 354→263px）
+
+---
+
 ## v7.1 — 2026-05-21
 
 - 設計版（深/亮）FAQ 補第 7 題「工作室規模這麼小，萬一你檔期滿了或臨時有狀況？」，與標準版 v7.0 對齊（faq-cta.jsx + 兩 html 的 FAQPage JSON-LD，皆 7 題）。三版 FAQ 一致

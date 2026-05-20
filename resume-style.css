@@ -1393,6 +1393,13 @@ h2#近期交付案例-recent-deliveries ~ ul li::marker { color: var(--brand-2);
   .topbar__nav { gap: 0; flex-wrap: wrap; row-gap: 4px; }
   .topbar__nav a { padding: 4px 8px; font-size: 12px; }
   .layout { padding: 0 12px; margin: 12px auto; gap: 12px; }
+  /* grid 項目預設 min-width:auto 卡在 min-content（sidebar 被固定頭像 +
+     不換行英文名撐住、main 被 diff-card 撐住）→ 360px 級手機水平溢出。
+     兩欄都放行縮放，profile 可換行 */
+  .sidebar { min-width: 0; }
+  .main { min-width: 0; }
+  .profile { flex-wrap: wrap; }
+  .profile__main { min-width: 0; }
   .main { padding: 22px 18px; }
   .main h2 { font-size: 17px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
