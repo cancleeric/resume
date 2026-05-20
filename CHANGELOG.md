@@ -4,6 +4,12 @@
 
 ---
 
+## v7.4 — 2026-05-21
+
+- 設計版·亮 修對比：`--text-dim` 由 #B5B8C0（白底對比僅 ~2:1，footer 公司法務資訊與多個 10px mono 小標形同不可讀）darken 為 #777A83（~4.3:1，接近 WCAG AA）
+
+---
+
 ## v7.3 — 2026-05-21
 
 - 設計版（深/亮）定價卡移除冗餘 hover tooltip：每張卡原有 hover-only 的「? 何時適合」tooltip 與常駐「何時適合 · GOOD FIT」框顯示完全相同的 fitFor 文字，重複且 tooltip 在手機（無 hover）失效。移除 tooltip（pricing.jsx）精簡定價卡
