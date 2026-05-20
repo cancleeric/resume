@@ -240,6 +240,30 @@ a:hover { text-decoration: underline; }
   font-size: 14px;
   margin: 8px 0 18px;
 }
+/* CTA right after the opening pitch — capture interest at peak */
+.lede-cta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin: -8px 0 26px;
+}
+.lede-cta__btn {
+  display: inline-block;
+  background: var(--brand);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 11px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background .15s;
+}
+.lede-cta__btn:hover { background: var(--brand-2); text-decoration: none; }
+.lede-cta__note {
+  font-size: 13px;
+  color: var(--muted);
+}
 
 /* Service grid */
 .service-grid {
