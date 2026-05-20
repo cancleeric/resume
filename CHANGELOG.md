@@ -4,6 +4,12 @@
 
 ---
 
+## v5.0 — 2026-05-20
+
+- 設計版·亮(index-light.html) 加 self-referencing canonical，對齊標準版 v4.9
+
+---
+
 ## v4.9 — 2026-05-20
 
 - 標準版加 `<link rel="canonical">`（self-referencing）— 三版內容相似易被當重複內容，canonical 明確宣告 resume.html 為自身正規 URL，避免帶參數時排名訊號分散
