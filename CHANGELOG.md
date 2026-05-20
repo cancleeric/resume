@@ -4,6 +4,12 @@
 
 ---
 
+## v3.3 — 2026-05-20
+
+- 設計版·亮(index-light.html) 加 JSON-LD 結構化資料（ProfessionalService schema）— 對齊標準版 v3.2
+
+---
+
 ## v3.2 — 2026-05-20
 
 - 標準版加 JSON-LD 結構化資料（ProfessionalService schema：公司名/統編/成立年/負責人/地址/報價/聯絡）— 讓搜尋引擎可產生 rich result
