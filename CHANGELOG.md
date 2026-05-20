@@ -4,6 +4,12 @@
 
 ---
 
+## v3.0 — 2026-05-20
+
+- 設計版·亮(index-light.html) 加 inline SVG favicon（公司 cyan 雙橢圓 logo，data URI）— 對齊標準版 v2.9
+
+---
+
 ## v2.9 — 2026-05-20
 
 - 標準版加 inline SVG favicon（公司 cyan 雙橢圓 logo，data URI 免新增檔案）— 原本分頁/書籤顯示空白預設圖示
