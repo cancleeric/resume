@@ -389,6 +389,14 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 
 .bottom-dock{transition:transform .32s cubic-bezier(.4,0,.2,1),opacity .32s}
 .bottom-dock.dock-hidden{transform:translateX(-50%) translateY(160%);opacity:0;pointer-events:none}
+
+/* meta live banner */
+.meta-live{display:flex;align-items:center;justify-content:center;gap:9px;padding:7px 18px;background:linear-gradient(90deg,#064e3b 0%,#065f46 100%);color:#d1fae5;font-size:12.5px;line-height:1.5;text-align:center;font-family:Inter,sans-serif}
+.meta-live__dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 3px rgba(52,211,153,.25);flex-shrink:0;animation:ml-pulse 2s ease-in-out infinite}
+@keyframes ml-pulse{0%,100%{box-shadow:0 0 0 3px rgba(52,211,153,.25)}50%{box-shadow:0 0 0 6px rgba(52,211,153,.12)}}
+.meta-live__text strong{color:#fff;font-weight:700}
+@media print{.meta-live{display:none!important}}
+@media (max-width:600px){.meta-live{font-size:11px;padding:7px 12px}}
 </style>
 
 <link rel="stylesheet" href="src/responsive.css" />
@@ -399,6 +407,11 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
   <a href="../resume.html">標準</a>
   <a href="index.html" class="active">設計 · 深</a>
   <a href="index-light.html">設計 · 亮</a>
+</div>
+
+<div class="meta-live">
+  <span class="meta-live__dot"></span>
+  <span class="meta-live__text">這個頁面 <strong>100% 由 LLM 生成</strong>　·　每半小時自動跑一輪「審查 → 優化 → 推版」　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong></span>
 </div>
 
 
