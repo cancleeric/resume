@@ -4,6 +4,12 @@
 
 ---
 
+## v7.9 — 2026-05-21
+
+- 三版 meta-live 橫幅步驟 ③ 移除具體工具名「Chrome MCP」改為通用「瀏覽器自動化親測」（EN：browser automation live test），避免公開頁洩漏內部工具鏈被同業複製
+
+---
+
 ## v7.8 — 2026-05-21
 
 - 三版 copy 修正：政府補助服務卡列出的方案「智慧製造」改為「SIIR」——2026 AI 補助四大方案實為 SBIR／AI 躍昇／數位轉型／SIIR，與颶風官網一致。改 resume.html（zh + EN）+ design/src/services.jsx，三版同步
