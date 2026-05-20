@@ -282,7 +282,13 @@ function Hero() {
           max-width: 52ch;
         }
         .hero-claim b { color: var(--orange); font-weight: 600; }
-        .hero-ctas { display: flex; gap: 12px; margin-bottom: 56px; flex-wrap: wrap; }
+        .hero-ctas { display: flex; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+        .hero-cta-note {
+          font-family: var(--font-tc);
+          font-size: 13px;
+          color: var(--text-low);
+          margin-bottom: 56px;
+        }
 
         .kpi-band {
           display: grid;
@@ -390,16 +396,17 @@ function Hero() {
             </p>
 
             <div className="hero-ctas">
-              <button className="btn btn-primary">
+              <a href="#cta" className="btn btn-primary">
                 預約諮詢
                 <ArrowRight />
-              </button>
-              <button className="btn btn-ghost">
+              </a>
+              <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" className="btn btn-ghost">
                 <span style={{ color: 'var(--cyan)', fontFamily: 'var(--font-mono)', fontSize: 12 }}>↳</span>
                 進 LF Pipeline 看現場
                 <ArrowUpRight />
-              </button>
+              </a>
             </div>
+            <p className="hero-cta-note">免費 30 分鐘 · 不綁約 · 不 fit 直接說，不浪費你時間</p>
 
             <div className="kpi-band">
               <div className="kpi">

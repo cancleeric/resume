@@ -4,6 +4,13 @@
 
 ---
 
+## v6.6 — 2026-05-21
+
+- 設計版修 hero 主 CTA 死按鈕：「預約諮詢」「進 LF Pipeline 看現場」原為無 onClick/無連結的 `<button>`，點了沒反應 —— 整頁最重要的轉換元件卻是壞的。改成 `<a>`（預約諮詢→#cta、LF Pipeline→官網 pipeline 頁）
+- hero CTA 下方加風險反轉微文案「免費 30 分鐘 · 不綁約 · 不 fit 直接說」—— 降低主 CTA 摩擦（原本只有頁尾才有此訊息）
+
+---
+
 ## v6.5 — 2026-05-20
 
 - 標準版加 i18n 中/英同頁切換：vs-switcher bar 右側加「中文 | EN」鈕，190 個 data-i18n 元素 + EN 字典，localStorage 記偏好、同步 `<html lang>`；meta/版號/專有名詞不切
