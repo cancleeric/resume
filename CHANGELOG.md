@@ -4,6 +4,12 @@
 
 ---
 
+## v4.9 — 2026-05-20
+
+- 標準版加 `<link rel="canonical">`（self-referencing）— 三版內容相似易被當重複內容，canonical 明確宣告 resume.html 為自身正規 URL，避免帶參數時排名訊號分散
+
+---
+
 ## v4.8 — 2026-05-20
 
 - 設計版·深(index.html) `<title>` 補價值主張：原「HurricaneSoft Ltd. · 颶風軟體有限公司」只有公司名零關鍵字 → 改為「颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化接案 · 20× 產出」對齊標準版
