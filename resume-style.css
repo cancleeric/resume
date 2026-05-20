@@ -261,6 +261,8 @@ a:hover { text-decoration: underline; }
 .service-card h3 {
   font-size: 15.5px;
   font-weight: 700;
+  line-height: 1.4;
+  min-height: 4.4em; /* 預留 3 行高度（最長標題會換 3 行），讓同列各卡描述文字起始對齊 */
   margin: 0 0 8px;
   color: var(--text);
 }

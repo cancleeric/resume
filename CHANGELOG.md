@@ -4,6 +4,12 @@
 
 ---
 
+## v5.5 — 2026-05-20
+
+- 標準版修服務卡對齊：`.service-card h3` 標題 1~3 行不等（「多租戶 SaaS 從 0 到上線」窄卡換 3 行），同列描述文字起始參差。加 line-height + min-height:4.4em 預留統一標題區，親測同列描述 y 對齊
+
+---
+
 ## v5.4 — 2026-05-20
 
 - 設計版·深(index.html) 加 FAQPage JSON-LD — 三版 FAQPage 結構化資料現已全數補齊
