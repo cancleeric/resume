@@ -4,6 +4,12 @@
 
 ---
 
+## v4.2 — 2026-05-20
+
+- 設計版移除 PreviewHint 殘留 dev scaffolding：頂部「💡 Present 模式可拖拉視窗試 RWD」橫幅是 claude.ai/design 的開發工具提示，對真實接案訪客無意義，從 app.jsx 移除（深/亮兩版同時生效）
+
+---
+
 ## v4.1 — 2026-05-20
 
 - 標準版修 h1 SEO：`.main h1`（主標題）原為 `display:none`，會被搜尋引擎降權、螢幕報讀器略過 → 改 visually-hidden（clip）成為有效 h1；print 版同步加 un-hide 讓 PDF 顯示標題

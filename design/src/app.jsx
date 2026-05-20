@@ -162,25 +162,6 @@ function BottomDock() {
   );
 }
 
-function PreviewHint() {
-  const [shown, setShown] = useState(true);
-  if (!shown) return null;
-  return (
-    <div className="preview-hint">
-      <span className="hint-emoji">💡</span>
-      <span className="hint-text">
-        <span className="hint-tc">Present 模式可拖拉視窗試 RWD ·</span>
-        <span className="hint-mono">390 / 768 / 1440px</span>
-      </span>
-      <button className="hint-close" onClick={() => setShown(false)} aria-label="關閉提示">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-          <path d="M4 4L12 12M12 4L4 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        </svg>
-      </button>
-    </div>
-  );
-}
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
@@ -188,7 +169,6 @@ function App() {
   }, [menuOpen]);
   return (
     <>
-      <PreviewHint />
       <Nav onMenuOpen={() => setMenuOpen(true)} />
       <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
       <main>
@@ -208,7 +188,7 @@ function App() {
       <StickyTOC />
       <BottomDock />
       <footer style={{ padding: '40px 16px 140px', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--text-dim)', letterSpacing: '0.08em', borderTop: '1px solid var(--border-subtle)' }}>
-        © 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v4.1
+        © 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v4.2
       </footer>
     </>
   );
