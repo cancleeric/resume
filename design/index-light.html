@@ -595,6 +595,8 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 .meta-live strong{color:#fff;font-weight:700}
 .meta-live__steps{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 5px;margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.1)}
 .meta-live__step{background:rgba(255,255,255,.1);border:1px solid rgba(52,211,153,.3);border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600;color:#ecfdf5;white-space:nowrap}
+.meta-live__recent{margin-top:5px;padding-top:5px;border-top:1px solid rgba(255,255,255,.1);font-size:10.5px;color:#d1fae5;text-align:center}
+.meta-live__recent strong{color:#fff;font-weight:700}
 .meta-live__arr{color:#34d399;font-size:11px;font-weight:700}
 @media print{.meta-live{display:none!important}}
 @media (max-width:600px){.meta-live{font-size:11px;padding:8px 12px}.meta-live__step{font-size:10px;padding:2px 6px}}
@@ -632,6 +634,7 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
     <span class="meta-live__step" data-i18n="metalive.step.06">⑥ push</span><span class="meta-live__arr">→</span>
     <span class="meta-live__step" data-i18n="metalive.step.07">⑦ GitHub Pages 自動部署</span>
   </div>
+  <div class="meta-live__recent" id="ml-recent" hidden></div>
 </div>
 <div class="grid-bg"></div>
 
@@ -686,6 +689,22 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
   setMetaH();
   window.addEventListener('resize',setMetaH);
   window.addEventListener('load',setMetaH);
+})();
+</script>
+
+<script>
+// 近期自動優化 — 讀 CHANGELOG.md 顯示最近一次優化（轉換策略槓桿 1：自我優化證據）
+(function(){
+  fetch('../CHANGELOG.md').then(function(r){return r.ok?r.text():Promise.reject();}).then(function(t){
+    var e=t.split(/\n## /)[1]; if(!e) return;
+    var ln=e.split('\n'), h=(ln[0]||'').split(' — '), ver=(h[0]||'').trim();
+    var b=''; for(var i=1;i<ln.length;i++){ if(ln[i].indexOf('- ')===0){ b=ln[i].slice(2); break; } }
+    b=b.replace(/<[^>]+>/g,'').replace(/`/g,''); if(b.length>48) b=b.slice(0,48)+'…';
+    var esc=function(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');};
+    var el=document.getElementById('ml-recent'); if(!el) return;
+    el.innerHTML='最近自動優化　<strong>'+esc(ver)+'</strong>　·　'+esc(b);
+    el.hidden=false;
+  }).catch(function(){});
 })();
 </script>
 </body>
