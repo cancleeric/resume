@@ -4,6 +4,12 @@
 
 ---
 
+## v7.23 — 2026-05-21
+
+- 設計版·亮 修對比：hero-sub 的 pipeline 字 `.stage`（SPEC/DESIGN/…6 個，13px）用 `var(--orange)` #FF6B35，亮底對比僅 ~2.8:1。亮版加深橘覆寫 `#B14A0E !important`（~5.45:1，達 AA）
+
+---
+
 ## v7.22 — 2026-05-21
 
 - 標準版修對比：弱文字 `--muted` #64748b 在 sidebar 帶色卡背景上對比僅 4.2–4.4（信任要件統計標籤、版號行皆未達 AA）。darken 為 #586473，stat__label / sidebar__foot / meta__k 全部拉到 5.3–6.0
