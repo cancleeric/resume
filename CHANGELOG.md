@@ -4,6 +4,12 @@
 
 ---
 
+## v7.18 — 2026-05-21
+
+- 標準版「可交付系統」19 項產品描述細度正規化：原本 Conch/Squid/打工仔/Abacus 等被塞滿細節（測試拆解、檔案行數、爬蟲站台清單），Tianji/LIDS/Vault 等只有一句帶過。全部統一為「名稱（版本）— 定位　3 段亮點」模板，長度趨於一致（zh + EN 各 19 項）。並移除 Claude Agents 描述中的 C-suite 角色清單
+
+---
+
 ## v7.17 — 2026-05-21
 
 - 三版語言切換鈕統一：標準版原為 vs-switcher 雙鈕（中文｜EN）、設計版原為 Nav 單鈕——統一為「vs-switcher 內單鈕 toggle」。標準版雙鈕改單鈕（toggleLang），設計版語言鈕從 Nav 移到各自 vs-switcher，core.js 設鈕標籤。三版位置與形式一致
