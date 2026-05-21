@@ -4,6 +4,12 @@
 
 ---
 
+## v7.34 — 2026-05-21
+
+- 設計版（深/亮）修對比：系統卡技術棧標籤 `.sys-card .stack span`（10.5px mono chip）原用 `--text-low`，深版在 surface-2 上對比僅 ~3.5:1 未達 AA。改用 `--text-mid`
+
+---
+
 ## v7.33 — 2026-05-21
 
 - 設計版（深/亮）修對比：hero 英文副標題 `.hero-title-en`（h1 下方，clamp 20–28px）原用 `--text-low`，亮版白底對比僅 ~3.3:1，窄螢幕降至 ~20px 屬一般文字未達 AA。改用 `--text-mid`

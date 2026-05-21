@@ -150,7 +150,8 @@ function Systems() {
         .sys-card .stack span {
           font-family: var(--font-mono);
           font-size: 10.5px;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：10.5px 技術棧標籤，--text-low 在 surface-2 上深版僅 ~3.5:1 未達 AA */
+          color: var(--text-mid);
           letter-spacing: 0.04em;
           padding: 3px 6px;
           background: var(--surface-2);
