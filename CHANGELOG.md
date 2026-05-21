@@ -4,6 +4,12 @@
 
 ---
 
+## v7.47 — 2026-05-22
+
+- 設計版 hero 主 CTA 強化（B/C 共用 dict）：hero 主按鈕原本只寫「預約諮詢 / Book a Consultation」，把「免費」這個降風險訊號補上按鈕本身——改為「預約免費諮詢 / Book a Free Consultation」。與標準版 A（「預約免費 30 分鐘諮詢」）及設計版最終 CTA（「30 min free」）一致；hero 是首屏第一轉換點，免費/低承諾框架放在點擊目標上轉換更好
+
+---
+
 ## v7.46 — 2026-05-22
 
 - 修正搜尋摘要與頁面實況不符的承諾（三版一致）：meta/og/twitter description 與 in-house 對比卡原寫「當週上工」，但頁面 availability 區明載月費 Retainer 下個檔期 2026/07（約 6 週後）——訪客從搜尋點進來會看到落差、傷信任。全部「當週上工 / start this week」改為保守且準確的「最快 1–2 週上工 / start within 1–2 weeks」，與 FAQ 既有說法（專案制 1–2 週 kick-off）對齊
