@@ -249,7 +249,8 @@ function Hero() {
           font-weight: 500;
           font-size: clamp(20px, 2.2vw, 28px);
           letter-spacing: -0.02em;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：副標窄螢幕降到 ~20px 屬一般文字，--text-low 亮版僅 ~3.3:1 未達 AA */
+          color: var(--text-mid);
           line-height: 1.2;
           margin-top: 20px;
           margin-bottom: 28px;
