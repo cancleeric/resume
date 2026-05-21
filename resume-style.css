@@ -842,7 +842,8 @@ html[lang="en"] .group-tree__name em { display: none; }
   font-size: 9.5px;
   font-weight: 600;
   letter-spacing: 0.18em;
-  color: #94a3b8;
+  /* #a6b3c5 而非 #94a3b8：9.5px 品牌副標，原色在 --brand 藍底僅 ~4.0:1 未達 AA */
+  color: #a6b3c5;
   margin-top: 2px;
 }
 .topbar__nav { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; }
