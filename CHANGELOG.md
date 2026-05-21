@@ -4,6 +4,12 @@
 
 ---
 
+## v7.37 — 2026-05-21
+
+- 設計版（深/亮）修對比：服務項目編號 `.service-num`（12px mono）原用 `--text-low`，兩版對比未達 AA。改用 `--text-mid`
+
+---
+
 ## v7.36 — 2026-05-21
 
 - 設計版（深/亮）修對比：hero pipeline 階段列英文小標 `.stage-row .label .en`（10px mono）原用 `--text-low`，兩版對比僅 ~3.3-3.6:1 未達 AA。改用 `--text-mid`

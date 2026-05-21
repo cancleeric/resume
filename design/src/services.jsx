@@ -116,7 +116,8 @@ function Services() {
           font-family: var(--font-mono);
           font-size: 12px;
           letter-spacing: 0.08em;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：12px 服務項目編號，--text-low 兩版對比未達 AA */
+          color: var(--text-mid);
         }
         .service-tag {
           font-family: var(--font-mono);
