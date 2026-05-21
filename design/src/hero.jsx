@@ -387,7 +387,7 @@ function Hero() {
 
             {window.LANG === 'en' ? (
               <p className="hero-sub">
-                AI integration is just the baseline. The real difference is automating the <b style={{ color: 'var(--text-hi)' }}>entire development pipeline</b>——
+                AI integration is just the baseline. The real difference is automating the <b style={{ color: 'var(--text-hi)' }}>entire development pipeline</b> —
                 <span className="stage">SPEC</span> → <span className="stage">DESIGN</span> → <span className="stage">BUILD</span> → <span className="stage">REVIEW</span> → <span className="stage">DEPLOY</span> → <span className="stage">OPS</span>
                 , with AI assistants and automation toolchains at every stage.
               </p>
