@@ -4,6 +4,12 @@
 
 ---
 
+## v7.13 — 2026-05-21
+
+- 標準版「為什麼選工作室」對照卡標籤統一：`vs In-house 招募` 改為 `vs In-house`，與另兩張卡（vs Freelancer / vs Agency）一致的純英文格式，並消除 EN 模式殘留中文「招募」
+
+---
+
 ## v7.12 — 2026-05-21
 
 - 設計版（深 + 亮）新增英文 i18n：全域 `window.t()` 字典機制（`design/i18n/core.js` + `dict-zh.js` + `dict-en.js`，271 key 中英對齊）、Nav 加中/英切換鈕、切換寫 localStorage + reload。13 個 jsx 元件 + 兩個 html 的 meta-live／vs-switcher／meta／JSON-LD 全部接上 i18n。深/亮 × 中/英 四組合親測通過（EN 模式殘留 CJK 僅切換鈕本身）。流程：分析→CPO 計劃→CEO 審→3 dev 開發→CEO 親測修補
