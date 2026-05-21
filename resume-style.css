@@ -682,7 +682,7 @@ html[lang="en"] .group-tree__name em { display: none; }
 .contact-cta__note {
   margin: 0;
   font-size: 13px;
-  opacity: 0.88;
+  /* 不用 opacity 淡化：藍漸層底上 13px 內文降到 ~4.4:1 未達 AA，保持純白 #fff ~5.2:1 */
   text-align: center;
   padding-top: 6px;
   color: #fff !important;
