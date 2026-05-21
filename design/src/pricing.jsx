@@ -176,7 +176,8 @@ function Pricing() {
           font-family: var(--font-mono);
           font-size: 10px;
           letter-spacing: 0.14em;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：10px 定價卡「何時適合」標籤，--text-low 亮版白底僅 ~3.3:1 未達 AA */
+          color: var(--text-mid);
           margin-bottom: 4px;
         }
         .price-fit .fit-text {
