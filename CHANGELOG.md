@@ -4,6 +4,12 @@
 
 ---
 
+## v7.52 — 2026-05-22
+
+- 設計版 footer 對比修正：footer（公司名／統編／負責人／地址／版號）原用 --text-dim，深版 #4A4D55 僅 ~2.3:1，法人識別資訊近乎不可見。改用 --text-mid，深/亮兩版皆達 ~7:1+ WCAG AA。改在共用 app.jsx
+
+---
+
 ## v7.51 — 2026-05-22
 
 - 設計版定價卡「何時適合」標籤對比補到 WCAG AA：.price-fit .fit-label（10px）原用 --text-low，亮版白底僅 ~3.3:1 未達 AA。改用 --text-mid。改在共用 pricing.jsx，深/亮兩版同時生效，延續既有 --text-low→--text-mid 修補慣例

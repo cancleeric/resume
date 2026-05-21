@@ -184,7 +184,8 @@ function App() {
       </main>
       <StickyTOC />
       <BottomDock />
-      <footer style={{ padding: '40px 16px 140px', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--text-dim)', letterSpacing: '0.08em', borderTop: '1px solid var(--border-subtle)' }}>
+      {/* --text-mid 而非 --text-dim：footer 含公司名/統編/負責人等資訊，--text-dim 深版僅 ~2.3:1 近乎不可見 */}
+      <footer style={{ padding: '40px 16px 140px', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--text-mid)', letterSpacing: '0.08em', borderTop: '1px solid var(--border-subtle)' }}>
         {t('footer.copy')}
       </footer>
     </>
