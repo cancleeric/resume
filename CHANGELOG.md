@@ -4,6 +4,12 @@
 
 ---
 
+## v7.27 — 2026-05-21
+
+- 設計版·深修 CSS bug：`index.html` 的 `.meta-live` banner 有與亮版相同的舊版殘留 CSS（含 dead `.meta-live__text` 選擇器），把容器從 block 強制成 `display:flex`，將兩段式 banner 擠成並排一列。移除殘留規則，恢復兩段式堆疊（深/亮兩版至此一致）
+
+---
+
 ## v7.26 — 2026-05-21
 
 - 設計版·亮修 CSS bug：`.meta-live` banner 有一組舊版殘留 CSS（含已不存在的 `.meta-live__text` 選擇器）把容器從 block 強制成 `display:flex`，將「標題列＋分隔線＋七步流程列」兩段式 banner 擠成並排一列。移除殘留規則，恢復兩段式堆疊（深版 index.html 有相同殘留，留待後續 B 輪處理）
