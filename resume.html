@@ -181,7 +181,13 @@
       </div>
     </section>
 
-    <p class="sidebar__foot">v7.43 · 2026/05/22 00:21</p>
+    <section class="card auto-feed-card" id="auto-feed-card" hidden>
+      <h3 class="card__title">🔄 <span data-i18n="auto-feed-title">近期自動優化</span></h3>
+      <p class="auto-feed-note" data-i18n="auto-feed-note">這頁每 30 分鐘自動優化一輪，以下是實際紀錄：</p>
+      <ul class="auto-feed-list" id="auto-feed-list"></ul>
+    </section>
+
+    <p class="sidebar__foot">v7.44 · 2026/05/22 00:53</p>
   </aside>
 
   <main class="main">
@@ -503,7 +509,7 @@
     </div>
 
     <hr />
-    <p><em data-i18n="footer-note">v7.43 · 最後更新 2026/05/22 00:21　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
+    <p><em data-i18n="footer-note">v7.44 · 最後更新 2026/05/22 00:53　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
 
   </main>
 
@@ -515,7 +521,7 @@
     · <a href="tel:+886921107206">📞 0921-107-206</a>
     · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" data-i18n="footer-pipeline">🌪️ LF Pipeline 線上作品 ↗</a>
   </p>
-  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.43</p>
+  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.44</p>
 </footer>
 
 <script>
@@ -613,6 +619,10 @@ const I18N = {
 
   // main h2 tagline
   'h2-tagline': 'Full-Team Output, One Engineer · Automated Software Delivery',
+
+  // auto-optimization feed (sidebar)
+  'auto-feed-title': 'Recent Auto-Optimizations',
+  'auto-feed-note':  'This page auto-optimizes every 30 min — here is the actual log:',
 
   // hire lede
   'hire-lede': 'AI integration is table stakes — the real differentiator is <strong>automating the entire delivery pipeline</strong>: spec → design → implementation → review → deploy → ops, with AI copilots and toolchains at every stage. Battle-tested across our own group (HurricaneGroup, 6 subsidiaries / 30+ production systems / 19 Cloud Run services) over a full year. The result: <strong>20× output in the same time — one person carrying what used to take an entire team</strong>. Bring this to your project.',
@@ -788,10 +798,10 @@ const I18N = {
   'contact-note':         'Free 30-min consultation · Reply within 24 hours · No pressure — if it\'s not a fit, we\'ll say so',
 
   // footer
-  'footer-note':    'v7.43 · Last updated 2026/05/22 00:21 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
+  'footer-note':    'v7.44 · Last updated 2026/05/22 00:53 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
   'footer-consult': '📧 Hire Us',
   'footer-pipeline':'🌪️ LF Pipeline — Live Portfolio ↗',
-  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.43',
+  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.44',
 };
 
 // ── Snapshot Chinese originals once DOM is ready ──────────────────────────
@@ -834,6 +844,31 @@ document.addEventListener('DOMContentLoaded', function () {
   const saved = localStorage.getItem('resume-lang') || 'zh';
   applyLang(saved);
 });
+</script>
+
+<script>
+// 近期自動優化 feed — 讀 CHANGELOG.md，呈現最近 3 筆自動優化紀錄（轉換策略槓桿 1：自我優化證據）
+(function () {
+  fetch('CHANGELOG.md').then(function (r) { return r.ok ? r.text() : Promise.reject(); }).then(function (txt) {
+    var entries = txt.split(/\n## /).slice(1, 4);
+    var list = document.getElementById('auto-feed-list');
+    var card = document.getElementById('auto-feed-card');
+    if (!entries.length || !list || !card) return;
+    var esc = function (s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); };
+    list.innerHTML = entries.map(function (e) {
+      var lines = e.split('\n');
+      var head = (lines[0] || '').split(' — ');
+      var ver = (head[0] || '').trim(), date = (head[1] || '').trim();
+      var bullet = '';
+      for (var i = 1; i < lines.length; i++) { if (lines[i].indexOf('- ') === 0) { bullet = lines[i].slice(2); break; } }
+      bullet = bullet.replace(/<[^>]+>/g, '').replace(/`/g, '');
+      if (bullet.length > 54) bullet = bullet.slice(0, 54) + '…';
+      return '<li><span class="afv">' + esc(ver) + '</span><span class="afd">' + esc(date) +
+             '</span><span class="aft">' + esc(bullet) + '</span></li>';
+    }).join('');
+    card.hidden = false;
+  }).catch(function () { /* file:// 或取檔失敗 → 卡片維持隱藏，不影響其他內容 */ });
+})();
 </script>
 </body>
 </html>

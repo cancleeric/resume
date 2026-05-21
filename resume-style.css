@@ -1154,6 +1154,26 @@ html[lang="en"] .group-tree__name em { display: none; }
   margin: 4px 0 0;
 }
 
+/* 近期自動優化 feed（轉換策略槓桿 1） */
+.auto-feed-note {
+  font-size: 10.5px;
+  color: var(--muted);
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+.auto-feed-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.auto-feed-list li { font-size: 11px; line-height: 1.45; }
+.auto-feed-list .afv { font-weight: 700; color: var(--brand); }
+.auto-feed-list .afd { color: var(--muted); margin-left: 6px; }
+.auto-feed-list .aft { display: block; color: var(--text-2); margin-top: 2px; }
+
 /* ============================================================
    MAIN — pandoc body 內容
    ============================================================ */
