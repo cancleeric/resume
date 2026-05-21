@@ -4,6 +4,12 @@
 
 ---
 
+## v7.17 — 2026-05-21
+
+- 三版語言切換鈕統一：標準版原為 vs-switcher 雙鈕（中文｜EN）、設計版原為 Nav 單鈕——統一為「vs-switcher 內單鈕 toggle」。標準版雙鈕改單鈕（toggleLang），設計版語言鈕從 Nav 移到各自 vs-switcher，core.js 設鈕標籤。三版位置與形式一致
+
+---
+
 ## v7.16 — 2026-05-21
 
 - 標準版 EN 模式隱藏集團組織圖的子公司中文名（颶鋒科技…等 6 個 `<em>`，英文讀者無意義）：一條 `html[lang="en"]` CSS rule 解決，與設計版 studio 一致

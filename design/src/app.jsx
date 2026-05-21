@@ -7,25 +7,6 @@ function Nav({ onMenuOpen }) {
   const switcherLabel = isLight ? 'Dark' : 'Light';
   return (
     <header className="nav">
-      <style>{`
-        .lang-toggle {
-          padding: 6px 12px;
-          font-family: var(--font-mono);
-          font-size: 11px;
-          letter-spacing: 0.12em;
-          color: var(--text-mid);
-          border: 1px solid var(--border);
-          border-radius: 4px;
-          background: transparent;
-          cursor: pointer;
-          transition: color 0.15s, border-color 0.15s;
-          white-space: nowrap;
-        }
-        .lang-toggle:hover {
-          color: var(--text-hi);
-          border-color: var(--border-strong);
-        }
-      `}</style>
       <div className="nav-inner">
         <a href="#hero" className="nav-logo">
           <svg className="mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-label="颶風軟體 logo" role="img">
@@ -52,9 +33,6 @@ function Nav({ onMenuOpen }) {
             <span className="theme-icon">{switcherIcon}</span>
             <span className="theme-label">{switcherLabel}</span>
           </a>
-          <button className="lang-toggle" onClick={() => { window.setDesignLang(window.LANG === 'zh' ? 'en' : 'zh'); }} aria-label="Switch language">
-            {window.LANG === 'zh' ? 'EN' : '中文'}
-          </button>
           <a href="#cta" className="cta btn btn-primary btn-sm nav-cta" style={{ marginLeft: 4 }}>
             {t('nav.cta')}
           </a>

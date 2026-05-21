@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // (a) 設定 html[lang]
   document.documentElement.lang = (window.LANG === 'en') ? 'en' : 'zh-Hant';
 
+  // (a2) vs-switcher 語言切換鈕：顯示「要切去的語言」
+  var langBtn = document.querySelector('.vs-switcher .vs-lang');
+  if (langBtn) langBtn.textContent = (window.LANG === 'en') ? '中文' : 'EN';
+
   // (b) 掃 data-i18n 屬性，把 textContent 換成翻譯值
   document.querySelectorAll('[data-i18n]').forEach(function(el) {
     var key = el.getAttribute('data-i18n');

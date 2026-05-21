@@ -75,8 +75,7 @@
   <a href="design/index.html" data-i18n="vs-design-dark">設計 · 深</a>
   <a href="design/index-light.html" data-i18n="vs-design-light">設計 · 亮</a>
   <span class="vs-switcher__divider"></span>
-  <button class="vs-lang-btn" id="btn-zh" onclick="setLang('zh')" aria-label="切換中文">中文</button>
-  <button class="vs-lang-btn" id="btn-en" onclick="setLang('en')" aria-label="Switch to English">EN</button>
+  <button class="vs-lang-btn" id="btn-lang" onclick="toggleLang()" aria-label="切換語言 / Switch language">EN</button>
 </div>
 
 <div class="sticky-header">
@@ -182,7 +181,7 @@
       </div>
     </section>
 
-    <p class="sidebar__foot">v7.16 · 2026/05/21 09:51</p>
+    <p class="sidebar__foot">v7.17 · 2026/05/21 10:05</p>
   </aside>
 
   <main class="main">
@@ -503,7 +502,7 @@
     </div>
 
     <hr />
-    <p><em data-i18n="footer-note">v7.16 · 最後更新 2026/05/21 09:51　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
+    <p><em data-i18n="footer-note">v7.17 · 最後更新 2026/05/21 10:05　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
 
   </main>
 
@@ -515,7 +514,7 @@
     · <a href="tel:+886921107206">📞 0921-107-206</a>
     · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" data-i18n="footer-pipeline">🌪️ LF Pipeline 線上作品 ↗</a>
   </p>
-  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.16</p>
+  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.17</p>
 </footer>
 
 <script>
@@ -788,10 +787,10 @@ const I18N = {
   'contact-note':         'Free 30-min consultation · Reply within 24 hours · No pressure — if it\'s not a fit, we\'ll say so',
 
   // footer
-  'footer-note':    'v7.16 · Last updated 2026/05/21 09:51 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
+  'footer-note':    'v7.17 · Last updated 2026/05/21 10:05 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
   'footer-consult': '📧 Hire Us',
   'footer-pipeline':'🌪️ LF Pipeline — Live Portfolio ↗',
-  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.16',
+  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.17',
 };
 
 // ── Snapshot Chinese originals once DOM is ready ──────────────────────────
@@ -814,14 +813,18 @@ function applyLang(lang) {
     }
   });
   document.documentElement.lang = isEn ? 'en' : 'zh-Hant';
-  document.getElementById('btn-zh').classList.toggle('vs-lang-btn--active', !isEn);
-  document.getElementById('btn-en').classList.toggle('vs-lang-btn--active', isEn);
+  const _lb = document.getElementById('btn-lang');
+  if (_lb) _lb.textContent = isEn ? '中文' : 'EN';
 }
 
 // ── Public toggle function called by buttons ───────────────────────────────
 function setLang(lang) {
   localStorage.setItem('resume-lang', lang);
   applyLang(lang);
+}
+function toggleLang() {
+  const cur = localStorage.getItem('resume-lang') || 'zh';
+  setLang(cur === 'en' ? 'zh' : 'en');
 }
 
 // ── Init on DOMContentLoaded ───────────────────────────────────────────────
