@@ -174,7 +174,8 @@ function CTA() {
           font-family: var(--font-mono);
           font-size: 10px;
           letter-spacing: 0.14em;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：10px 聯絡資訊標籤，--text-low 兩版對比僅 ~3:1 未達 AA */
+          color: var(--text-mid);
           margin-bottom: 2px;
         }
         .cta-meta-row .v {
