@@ -286,7 +286,8 @@ function Hero() {
         .hero-cta-note {
           font-family: var(--font-tc);
           font-size: 13px;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：13px CTA 信任微文案，--text-low 亮版白底僅 ~3.3:1 未達 AA */
+          color: var(--text-mid);
           margin-bottom: 56px;
         }
 
