@@ -205,7 +205,7 @@ window.DICT_EN = {
   'sys.aicad.tagline':        'AI P&ID Engineering Drawing Recognition SaaS',
   'sys.fiona-radar.tagline':  'AI Video Structured Insights',
   'sys.fiona-pipeline.tagline':'AI Script Generation + Push Publishing',
-  'sys.brain.tagline':        'Multi-agent AI Collaboration Framework',
+  'sys.brain.tagline':        'Group AI Agent Platform',
   'sys.claude-agents.tagline':'AI Copilot Role Library — multi-role virtual team',
   'sys.modelhub.tagline':     'ML Model Training / Version Management Platform',
   'sys.anemone.tagline':      'Group-wide LLM Gateway — billing center + automatic model routing',
@@ -337,7 +337,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.38 · Last updated 2026/05/21',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.39 · Last updated 2026/05/21',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

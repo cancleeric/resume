@@ -197,7 +197,7 @@ window.DICT_ZH = {
   'sys.aicad.tagline':        'AI P&ID 工程圖辨識 SaaS',
   'sys.fiona-radar.tagline':  'AI 影片結構化洞察',
   'sys.fiona-pipeline.tagline':'AI 腳本生成 + 推播',
-  'sys.brain.tagline':        '多代理 AI 協作框架',
+  'sys.brain.tagline':        '集團 AI 智腦平台',
   'sys.claude-agents.tagline':'AI 副手角色庫 — 多角色虛擬團隊',
   'sys.modelhub.tagline':     'ML 模型訓練 / 版本管理平台',
   'sys.anemone.tagline':      '集團統一 LLM Gateway — 計費中心 + 自動模型路由',
@@ -327,7 +327,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.38 · 最後更新 2026/05/21 21:25',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.39 · 最後更新 2026/05/21 21:56',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

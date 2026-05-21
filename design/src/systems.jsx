@@ -14,7 +14,7 @@ function Systems() {
       { name: 'AICAD', taglineKey: 'sys.aicad.tagline', stack: ['Anemone', 'Claude Vision', 'DXF'], status: 'LIVE', metricKey: 'sys.aicad.metric' },
       { name: 'fiona-radar', taglineKey: 'sys.fiona-radar.tagline', stack: ['Anemone', 'JSONB', 'YouTube'], status: 'GA', metricKey: null, metric: 'v1.1.0' },
       { name: 'fiona-pipeline', taglineKey: 'sys.fiona-pipeline.tagline', stack: ['n8n', 'webhook'], status: 'LIVE', metricKey: 'sys.fiona-pipeline.metric' },
-      { name: 'Brain', taglineKey: 'sys.brain.tagline', stack: ['Python', '21 files'], status: 'GA', metricKey: null, metric: '~6,350 lines / 100% pass' },
+      { name: '智腦平台', taglineKey: 'sys.brain.tagline', stack: ['Anemone', 'Brain Cloud', 'LLM Gateway'], status: 'GA', metricKey: null, metric: '四層反向連線架構' },
       { name: 'Claude Agents', taglineKey: 'sys.claude-agents.tagline', stack: ['sys.stack.multirole', 'sys.stack.cross-machine-sync', 'sys.stack.tiered-access'], status: 'LIVE', metricKey: 'sys.claude-agents.metric' },
       { name: 'Modelhub', taglineKey: 'sys.modelhub.tagline', stack: ['FastAPI', 'SQLAlchemy', 'SQLite'], status: 'GA', metricKey: 'sys.modelhub.metric' },
       { name: 'Anemone / Brain Gateway', taglineKey: 'sys.anemone.tagline', stack: ['LLM ingress', 'sys.stack.cross-tenant'], status: 'LIVE', metricKey: 'sys.anemone.metric' },

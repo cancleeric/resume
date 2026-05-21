@@ -4,6 +4,12 @@
 
 ---
 
+## v7.39 — 2026-05-21
+
+- 三版修事實錯誤：可交付清單的「Brain — 多代理 AI 協作框架」描述過時錯誤。經查 Wiki（颶核智腦平台架構 v1.5）與 Gitea repo，更正為「颶核智腦平台 — 集團 AI 智腦平台」（Anemone 電話總機＋Brain Cloud 多租戶管理＋Brain LLM Gateway 四層架構）。standard `item-brain` zh/en + 設計版 `sys.brain.tagline` + systems.jsx 卡同步
+
+---
+
 ## v7.38 — 2026-05-21
 
 - 設計版·亮 SEO：`index-light.html` 的 `<title>` 原為半成品「HurricaneSoft Ltd. · 颶風軟體有限公司 · Light」（公司名重複＋開發標記、無賣點）。改為與深版一致的完整標題「颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化接案 · 20× 產出」
