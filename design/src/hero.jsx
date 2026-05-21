@@ -3,12 +3,12 @@
 function PipelineVisual() {
   // 6 nodes representing the pipeline: 規格 → 設計 → 實作 → 審查 → 部署 → 維運
   const nodes = [
-    { label: 'SPEC', tc: '規格' },
-    { label: 'DESIGN', tc: '設計' },
-    { label: 'BUILD', tc: '實作' },
-    { label: 'REVIEW', tc: '審查' },
-    { label: 'DEPLOY', tc: '部署' },
-    { label: 'OPS', tc: '維運' },
+    { label: 'SPEC',   tcKey: 'pipeline.node.01.tc' },
+    { label: 'DESIGN', tcKey: 'pipeline.node.02.tc' },
+    { label: 'BUILD',  tcKey: 'pipeline.node.03.tc' },
+    { label: 'REVIEW', tcKey: 'pipeline.node.04.tc' },
+    { label: 'DEPLOY', tcKey: 'pipeline.node.05.tc' },
+    { label: 'OPS',    tcKey: 'pipeline.node.06.tc' },
   ];
   return (
     <div className="pipeline-visual">
@@ -185,7 +185,7 @@ function ActiveStageRow({ idx, node, totalSteps }) {
     <div className={`stage-row ${activeIdx === idx ? 'active' : ''}`}>
       <span className="num">0{idx + 1} / 0{totalSteps}</span>
       <span className="label">
-        <span className="tc">{node.tc}</span>
+        <span className="tc">{t(node.tcKey)}</span>
         <span className="en">{node.label}</span>
         <span className="ai-tag">AI · ASSIST</span>
       </span>
@@ -370,14 +370,14 @@ function Hero() {
           <div className="reveal">
             <div className="hero-status">
               <span className="dot"></span>
-              <span>STATUS: 接案中</span>
+              <span>{t('hero.status')}</span>
               <span className="sep">·</span>
-              <span>限量檔期 · NEXT 2026/07</span>
+              <span>{t('hero.status.slot')}</span>
             </div>
 
             <h1 className="hero-title">
-              <span className="gradient">開發流程</span><br/>
-              <span style={{ color: 'var(--orange)' }}>自動化。</span>
+              <span className="gradient">{t('hero.h1_line1')}</span><br/>
+              <span style={{ color: 'var(--orange)' }}>{t('hero.h1_line2')}</span>
             </h1>
             <div className="hero-title-en">
               <span>AUTOMATED</span>
@@ -385,52 +385,66 @@ function Hero() {
               <span>DELIVERY</span>
             </div>
 
-            <p className="hero-sub">
-              AI 整合只是基本盤。真正的差異，是把<b style={{ color: 'var(--text-hi)' }}>整套開發流程自動化</b>——
-              <span className="stage">SPEC</span> → <span className="stage">DESIGN</span> → <span className="stage">BUILD</span> → <span className="stage">REVIEW</span> → <span className="stage">DEPLOY</span> → <span className="stage">OPS</span>
-              ，每個環節都有 AI 副手 + 自動化工具鏈接管。
-            </p>
+            {window.LANG === 'en' ? (
+              <p className="hero-sub">
+                AI integration is just the baseline. The real difference is automating the <b style={{ color: 'var(--text-hi)' }}>entire development pipeline</b>——
+                <span className="stage">SPEC</span> → <span className="stage">DESIGN</span> → <span className="stage">BUILD</span> → <span className="stage">REVIEW</span> → <span className="stage">DEPLOY</span> → <span className="stage">OPS</span>
+                , with AI assistants and automation toolchains at every stage.
+              </p>
+            ) : (
+              <p className="hero-sub">
+                AI 整合只是基本盤。真正的差異，是把<b style={{ color: 'var(--text-hi)' }}>整套開發流程自動化</b>——
+                <span className="stage">SPEC</span> → <span className="stage">DESIGN</span> → <span className="stage">BUILD</span> → <span className="stage">REVIEW</span> → <span className="stage">DEPLOY</span> → <span className="stage">OPS</span>
+                ，每個環節都有 AI 副手 + 自動化工具鏈接管。
+              </p>
+            )}
 
-            <p className="hero-claim">
-              一年驗證下來：<b>同樣的時間做 20× 以上的事</b>、一個人扛起以往需要整支團隊的產出。這套交付速度，現在就能接上您的專案。
-            </p>
+            {window.LANG === 'en' ? (
+              <p className="hero-claim">
+                After a year of validation: <b>20× more output in the same time</b>—one person delivering what used to take an entire team. This delivery speed is ready for your project now.
+              </p>
+            ) : (
+              <p className="hero-claim">
+                一年驗證下來：<b>同樣的時間做 20× 以上的事</b>、一個人扛起以往需要整支團隊的產出。這套交付速度，現在就能接上您的專案。
+              </p>
+            )}
 
             <div className="hero-ctas">
               <a href="#cta" className="btn btn-primary">
-                預約諮詢
+                {t('hero.cta.primary')}
                 <ArrowRight />
               </a>
               <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" className="btn btn-ghost">
                 <span style={{ color: 'var(--cyan)', fontFamily: 'var(--font-mono)', fontSize: 12 }}>↳</span>
-                進 LF Pipeline 看現場
+                {t('hero.cta.pipeline')}
                 <ArrowUpRight />
               </a>
             </div>
-            <p className="hero-cta-note">免費 30 分鐘 · 不綁約 · 不 fit 直接說，不浪費你時間</p>
+            <p className="hero-cta-note">{t('hero.cta.note')}</p>
 
             <div className="kpi-band">
               <div className="kpi">
                 <div className="value"><CountUp to={30} />+</div>
-                <div className="label">生產系統 <span className="en">PROD SYS</span></div>
+                <div className="label">{t('hero.kpi.01.label')} <span className="en">PROD SYS</span></div>
               </div>
               <div className="kpi">
                 <div className="value"><CountUp to={14} />+</div>
-                <div className="label">AI · SaaS 產品線 <span className="en">PRODUCTS</span></div>
+                <div className="label">{t('hero.kpi.02.label')} <span className="en">PRODUCTS</span></div>
               </div>
               <div className="kpi">
                 <div className="value"><CountUp to={19} /></div>
-                <div className="label">Cloud Run 服務 <span className="en">CLOUD RUN</span></div>
+                <div className="label">{t('hero.kpi.03.label')} <span className="en">CLOUD RUN</span></div>
               </div>
               <div className="kpi">
                 <div className="value"><CountUp to={1} /></div>
-                <div className="label">年實戰驗證 <span className="en">YEAR PROVEN</span></div>
+                <div className="label">{t('hero.kpi.04.label')} <span className="en">YEAR PROVEN</span></div>
               </div>
             </div>
 
             <div className="availability-bar">
               <span className="live-pill"><span className="dot"></span>NEXT WINDOW</span>
-              <span className="msg">下個可承接檔期：2026/07 起，最快 6 週後 kick-off</span>
-              <span className="meta">RETAINER · 同時段最多 2 案</span>
+              <span className="msg">{t('hero.avail.msg')}</span>
+              <span className="meta">{t('hero.avail.meta')}</span>
             </div>
           </div>
 

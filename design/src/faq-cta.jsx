@@ -2,13 +2,13 @@
 
 function FAQ() {
   const items = [
-    { q: '檔期多久能排到？', a: '顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 2026/07 起（約 6 週後）。專案制依範圍 1-2 週內可 kick-off。' },
-    { q: '會簽 NDA / 開發票嗎？', a: '會。可開立公司行號統編發票（80289779），標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。付款支援電匯／Wise／加密貨幣（USDC）。' },
-    { q: '為何 US$ 10K/月不是按 hourly？', a: '月費模式讓負責人 + AI 副手團隊全力投入，不必為了計時打折注意力。同等價位 hourly 大約 US$ 80/h × 125h，但月費模式我們會超工，因為自家工具加成讓單位時間產出更高。' },
-    { q: '跟你合作會用到哪些 AI 工具？', a: '內部 SOP：Claude Code（主力）+ 自建 Agent 框架（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway，client code／data 全程不出您的環境（除非授權）。' },
-    { q: '能不能只請你做某個 module，不要整套？', a: '可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週做完 OAuth/SSO 整合、2 週做完 PayPal 金流串接、3 週做完 Cloud Run 部署架構盤點與導入。' },
-    { q: '合作結束後 code 歸屬？', a: '專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain framework 等）可授權使用，不另收授權費。' },
-    { q: '工作室規模這麼小，萬一你檔期滿了或臨時有狀況？', a: '正因為是工作室規模，我們嚴格控管同時段案量（月費 Retainer 最多 2 案），不超賣、不讓您的案子被排擠。每個專案的 code、文件、CI/CD、密鑰規範即時交付且文件化 —— 您手上隨時是一份完整、可被任何團隊接手的交付，不會被一個人綁死。重大決策有書面紀錄，進度每週同步。' },
+    { q: t('faq.01.q'), a: t('faq.01.a') },
+    { q: t('faq.02.q'), a: t('faq.02.a') },
+    { q: t('faq.03.q'), a: t('faq.03.a') },
+    { q: t('faq.04.q'), a: t('faq.04.a') },
+    { q: t('faq.05.q'), a: t('faq.05.a') },
+    { q: t('faq.06.q'), a: t('faq.06.a') },
+    { q: t('faq.07.q'), a: t('faq.07.a') },
   ];
   const [open, setOpen] = useState(0);
   return (
@@ -62,13 +62,13 @@ function FAQ() {
           <div>
             <SectionHead
               label="10 / FAQ"
-              title={<>常見問題。</>}
-              sub="如果這裡沒有答案，預約 30 分鐘諮詢直接問。第一次免費。"
+              title={<>{t('faq.section.title')}</>}
+              sub={t('faq.section.sub')}
             />
           </div>
           <div className="faq-list">
             {items.map((it, i) => (
-              <div key={it.q} className={`faq-item ${open === i ? 'open' : ''}`}>
+              <div key={i} className={`faq-item ${open === i ? 'open' : ''}`}>
                 <button className="faq-q" onClick={() => setOpen(open === i ? -1 : i)}>
                   <span className="faq-num">Q.{String(i + 1).padStart(2, '0')}</span>
                   <span className="faq-q-text">{it.q}</span>
@@ -187,23 +187,22 @@ function CTA() {
         <div className="cta-wrap">
           <div className="cta-grid">
             <div>
-              <div className="cta-eyebrow">11 / BOOK A CONSULT · 預約諮詢</div>
+              <div className="cta-eyebrow">{t('cta.eyebrow')}</div>
               <h2 className="cta-title">
-                第一次<span className="accent"> 30 分鐘 </span>免費。<br/>
-                帶您看一次<br/>
-                完整 pipeline 跑現場。
+                {t('cta.title.line1')}<span className="accent">{t('cta.title.accent')}</span>{t('cta.title.line2')}<br/>
+                {t('cta.title.line3')}<br/>
+                {t('cta.title.line4')}
               </h2>
               <p className="cta-sub">
-                不推銷、不畫餅。先看我們怎麼做、再決定要不要合作。
-                適合對象：CTO、VP Eng、創辦人、PM head。
+                {t('cta.sub')}
               </p>
               <div className="cta-ctas">
                 <a className="btn btn-primary" href="mailto:cancleeric@gmail.com?subject=%5B%E9%A0%90%E7%B4%84%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%83%B3%E9%A0%90%E7%B4%84%2030%20%E5%88%86%E9%90%98%E5%85%8D%E8%B2%BB%E8%AB%AE%E8%A9%A2%EF%BC%9A%0A%0A%E3%80%90%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%E3%80%90%E9%A0%90%E7%AE%97%20%2F%20%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A">
-                  預約諮詢 · 30 min free
+                  {t('cta.primary')}
                   <ArrowRight />
                 </a>
                 <a className="btn btn-ghost" href="mailto:cancleeric@gmail.com">
-                  寄信先聊聊
+                  {t('cta.secondary')}
                   <Mail />
                 </a>
               </div>

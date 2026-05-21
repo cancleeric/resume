@@ -5,55 +5,55 @@ function Pricing() {
     {
       key: 'project',
       label: 'PROJECT',
-      tc: '專案制 Project-based',
+      tcKey: 'pricing.tier.01.tc',
       price: 'US$ 8,000',
-      unit: '起 / 案',
-      tagline: '明確 scope 的單次交付',
-      desc: '固定價單次交付，里程碑分期付款。POC 2-4 週 / MVP 4-8 週 / 現代化 8-12 週，含 1 個月上線後保固。',
-      includes: [
-        '明確 scope 的固定價交付',
-        '里程碑分期付款',
-        '含 1 個月上線後保固',
-        'POC / MVP / 現代化皆可',
+      unitKey: 'pricing.tier.01.unit',
+      taglineKey: 'pricing.tier.01.tagline',
+      descKey: 'pricing.tier.01.desc',
+      includeKeys: [
+        'pricing.tier.01.inc.01',
+        'pricing.tier.01.inc.02',
+        'pricing.tier.01.inc.03',
+        'pricing.tier.01.inc.04',
       ],
-      fitFor: 'POC 2-4 週、MVP 4-8 週、現代化 8-12 週',
-      cta: '討論 scope',
+      fitForKey: 'pricing.tier.01.fit',
+      ctaKey: 'pricing.tier.01.cta',
       tone: 'default',
     },
     {
       key: 'retainer',
       label: 'RETAINER · FLAGSHIP',
-      tc: '月費 Retainer',
+      tcKey: 'pricing.tier.02.tc',
       price: 'US$ 10,000',
-      unit: '/ 月',
-      tagline: '負責人 + AI 副手團隊全力投入',
-      desc: '承擔架構決策 + 親自下海 code，每週進度同步、月末交付報告。同時段最多 2 案。',
-      includes: [
-        '負責人 + AI 副手團隊全力投入',
-        '承擔架構決策 + 親自下海 code',
-        '每週進度同步 / 月末交付報告',
-        '適合 3 個月以上中長案',
+      unitKey: 'pricing.tier.02.unit',
+      taglineKey: 'pricing.tier.02.tagline',
+      descKey: 'pricing.tier.02.desc',
+      includeKeys: [
+        'pricing.tier.02.inc.01',
+        'pricing.tier.02.inc.02',
+        'pricing.tier.02.inc.03',
+        'pricing.tier.02.inc.04',
       ],
-      fitFor: '3 個月以上中長案、想把這套帶進內部團隊的客戶',
-      cta: '預約 kick-off',
+      fitForKey: 'pricing.tier.02.fit',
+      ctaKey: 'pricing.tier.02.cta',
       tone: 'highlight',
     },
     {
       key: 'advisory',
       label: 'ADVISORY',
-      tc: '顧問諮詢 Advisory',
+      tcKey: 'pricing.tier.03.tc',
       price: 'US$ 250',
-      unit: '/ 小時',
-      tagline: '架構審查 / 技術選型 / Code Review',
-      desc: '不下海寫 code，純諮詢。最少 4 小時起接，適合短期重大決策。',
-      includes: [
-        '架構審查 / 技術選型 / Code Review',
-        '不下海寫 code，純諮詢',
-        '最少 4 小時起接',
-        '適合短期重大決策',
+      unitKey: 'pricing.tier.03.unit',
+      taglineKey: 'pricing.tier.03.tagline',
+      descKey: 'pricing.tier.03.desc',
+      includeKeys: [
+        'pricing.tier.03.inc.01',
+        'pricing.tier.03.inc.02',
+        'pricing.tier.03.inc.03',
+        'pricing.tier.03.inc.04',
       ],
-      fitFor: '最少 4 小時起接、短期重大決策',
-      cta: '安排一場',
+      fitForKey: 'pricing.tier.03.fit',
+      ctaKey: 'pricing.tier.03.cta',
       tone: 'default',
     },
   ];
@@ -89,8 +89,7 @@ function Pricing() {
           padding-bottom: 36px;
           box-shadow: 0 30px 80px -30px rgba(255,107,53,0.25);
         }
-        .price-card.highlight::before {
-          content: "RECOMMENDED · 主推";
+        .price-recommended-badge {
           position: absolute; top: -10px; left: 24px;
           padding: 4px 10px;
           font-family: var(--font-mono);
@@ -193,33 +192,36 @@ function Pricing() {
       <div className="container">
         <SectionHead
           label="05 / PRICING & ENGAGEMENT"
-          title={<>三種接案模式。<br/>挑一個合適的。</>}
-          sub="合作流程：免費 30 分諮詢 → 報價簽約（30% 訂金）→ 開發 → 里程碑驗收 → 上線（含 1 個月保固）。付款：可開立統編發票（80289779）、支援電匯 / Wise / 加密貨幣 USDC。"
+          title={<span dangerouslySetInnerHTML={{ __html: t('pricing.section.title') }} />}
+          sub={t('pricing.section.sub')}
         />
 
         <div className="pricing-grid">
-          {tiers.map(t => (
-            <div key={t.key} className={`price-card ${t.tone === 'highlight' ? 'highlight' : ''}`}>
-              <div className="price-label">{t.label}</div>
-              <h3 className="price-tc">{t.tc}</h3>
-              <p className="price-tagline">{t.tagline}</p>
+          {tiers.map(tier => (
+            <div key={tier.key} className={`price-card ${tier.tone === 'highlight' ? 'highlight' : ''}`}>
+              {tier.tone === 'highlight' && (
+                <span className="price-recommended-badge">{t('pricing.recommended')}</span>
+              )}
+              <div className="price-label">{tier.label}</div>
+              <h3 className="price-tc">{t(tier.tcKey)}</h3>
+              <p className="price-tagline">{t(tier.taglineKey)}</p>
               <div className="price-amount">
-                <span className="num">{t.price}</span>
-                <span className="unit">{t.unit}</span>
+                <span className="num">{tier.price}</span>
+                <span className="unit">{t(tier.unitKey)}</span>
               </div>
-              <p className="price-desc">{t.desc}</p>
+              <p className="price-desc">{t(tier.descKey)}</p>
               <div className="price-divider"></div>
               <ul className="price-includes">
-                {t.includes.map(it => (
-                  <li key={it}><Check size={14}/>{it}</li>
+                {tier.includeKeys.map(ik => (
+                  <li key={ik}><Check size={14}/>{t(ik)}</li>
                 ))}
               </ul>
               <div className="price-fit">
-                <div className="fit-label">何時適合 · GOOD FIT</div>
-                <div className="fit-text">{t.fitFor}</div>
+                <div className="fit-label">{t('pricing.goodfit')}</div>
+                <div className="fit-text">{t(tier.fitForKey)}</div>
               </div>
-              <a href="#cta" className={`btn ${t.tone === 'highlight' ? 'btn-primary' : 'btn-ghost'} price-cta`}>
-                {t.cta} <ArrowRight />
+              <a href="#cta" className={`btn ${tier.tone === 'highlight' ? 'btn-primary' : 'btn-ghost'} price-cta`}>
+                {t(tier.ctaKey)} <ArrowRight />
               </a>
             </div>
           ))}

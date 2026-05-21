@@ -2,14 +2,14 @@
 
 function TechStack() {
   const cats = [
-    { name: '語言', en: 'LANGUAGES', items: ['C#', 'Python', 'TypeScript', 'JavaScript', 'Swift', 'Kotlin', 'Java', 'PHP', 'Go', 'Solidity', 'SQL', 'C++', 'Objective-C', 'Bash', 'PowerShell'] },
-    { name: '後端', en: 'BACKEND', items: ['.NET 8', 'ASP.NET Core', 'FastAPI', 'Express', 'Next.js', 'EF Core', 'SQLAlchemy 2.0', 'Blazor Server', 'WPF', 'Hardhat (Solidity)', 'MCP'] },
-    { name: '前端', en: 'FRONTEND', items: ['React 18', 'Next.js', 'TypeScript', 'SwiftUI', 'SpriteKit', 'Vue.js', 'Android (Kotlin)'] },
-    { name: '資料庫', en: 'DATABASE', items: ['PostgreSQL', 'SQL Server', 'MySQL', 'SQLite', 'Redis', 'ClickHouse', 'Firestore', 'CloudKit', 'Alembic', 'EF Migrations', 'RLS'] },
-    { name: '雲端 / DevOps', en: 'CLOUD · DEVOPS', items: ['GCP Cloud Run (19 services)', 'Cloud SQL', 'Cloud Build', 'Artifact Registry', 'GCP Secret Manager', 'Firebase', 'Docker', 'Docker Compose', 'Drone CI', 'GitHub Actions', 'Gitea-HS (自架 fork)', 'Stalwart Mail Server (自架)', 'Headscale VPN', 'Tailscale', 'Sentry', 'OpenTelemetry', 'Prometheus'] },
-    { name: '認證 / 安全', en: 'AUTH · SECURITY', items: ['OAuth 2.0', 'OIDC', 'JWT RS256', 'MFA', 'RBAC', 'BCrypt', 'AES-256-GCM', 'Rate Limiting', 'Audit Logging', '自建程式碼安全掃描器'] },
-    { name: 'AI / LLM', en: 'AI · LLM', items: ['MCP', 'Anthropic Claude API', 'Google Gemini', 'OpenAI API', 'AutoGen v0.4', 'Brain LLM Gateway (自建)', 'Anemone (自建 LLM ingress)', 'Modelhub (自訓模型)', 'RAG', 'Provider Routing'] },
-    { name: '金流', en: 'PAYMENTS', items: ['PayPal Production', '藍新科技 NewebPay', 'StoreKit 2', 'IAP', 'Hurricane Pay (自建集團統一金流)'] },
+    { nameKey: 'tech.cat.lang', en: 'LANGUAGES', items: ['C#', 'Python', 'TypeScript', 'JavaScript', 'Swift', 'Kotlin', 'Java', 'PHP', 'Go', 'Solidity', 'SQL', 'C++', 'Objective-C', 'Bash', 'PowerShell'] },
+    { nameKey: 'tech.cat.backend', en: 'BACKEND', items: ['.NET 8', 'ASP.NET Core', 'FastAPI', 'Express', 'Next.js', 'EF Core', 'SQLAlchemy 2.0', 'Blazor Server', 'WPF', 'Hardhat (Solidity)', 'MCP'] },
+    { nameKey: 'tech.cat.frontend', en: 'FRONTEND', items: ['React 18', 'Next.js', 'TypeScript', 'SwiftUI', 'SpriteKit', 'Vue.js', 'Android (Kotlin)'] },
+    { nameKey: 'tech.cat.database', en: 'DATABASE', items: ['PostgreSQL', 'SQL Server', 'MySQL', 'SQLite', 'Redis', 'ClickHouse', 'Firestore', 'CloudKit', 'Alembic', 'EF Migrations', 'RLS'] },
+    { nameKey: 'tech.cat.cloud', en: 'CLOUD · DEVOPS', items: ['GCP Cloud Run (19 services)', 'Cloud SQL', 'Cloud Build', 'Artifact Registry', 'GCP Secret Manager', 'Firebase', 'Docker', 'Docker Compose', 'Drone CI', 'GitHub Actions', t('tech.item.gitea'), t('tech.item.stalwart'), 'Headscale VPN', 'Tailscale', 'Sentry', 'OpenTelemetry', 'Prometheus'] },
+    { nameKey: 'tech.cat.auth', en: 'AUTH · SECURITY', items: ['OAuth 2.0', 'OIDC', 'JWT RS256', 'MFA', 'RBAC', 'BCrypt', 'AES-256-GCM', 'Rate Limiting', 'Audit Logging', t('tech.item.scanner')] },
+    { nameKey: 'tech.cat.ai', en: 'AI · LLM', items: ['MCP', 'Anthropic Claude API', 'Google Gemini', 'OpenAI API', 'AutoGen v0.4', t('tech.item.brain'), t('tech.item.anemone'), t('tech.item.modelhub'), 'RAG', 'Provider Routing'] },
+    { nameKey: 'tech.cat.payments', en: 'PAYMENTS', items: ['PayPal Production', t('tech.item.newebpay'), 'StoreKit 2', 'IAP', t('tech.item.hpay')] },
   ];
   return (
     <section id="tech" className="section tech-section">
@@ -48,13 +48,13 @@ function TechStack() {
       <div className="container">
         <SectionHead
           label="08 / TECH STACK"
-          title={<>技術棧 · 用過、跑過、上線過。</>}
-          sub="每一項都在自家集團或客戶生產系統實際跑過 — 不是「會」也不是「碰過」。"
+          title={<>{t('tech.section.title')}</>}
+          sub={t('tech.section.sub')}
         />
         {cats.map(c => (
-          <div key={c.name} className="tech-grid">
+          <div key={c.nameKey} className="tech-grid">
             <div className="tech-cat-label">
-              <span className="tc">{c.name}</span>
+              <span className="tc">{t(c.nameKey)}</span>
               <span className="en">{c.en}</span>
             </div>
             <div className="tech-chips">

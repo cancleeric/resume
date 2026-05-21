@@ -4,41 +4,41 @@
 
 function WhyStudio() {
   const cols = [
-    { key: 'freelancer', label: 'vs Freelancer', title: '個人接案', tone: 'neutral' },
-    { key: 'agency',     label: 'vs Agency',     title: '外包公司', tone: 'neutral' },
-    { key: 'studio',     label: '本工作室',      title: '颶風軟體', tone: 'highlight' },
+    { key: 'freelancer', label: 'vs Freelancer', titleKey: 'why.freelancer.head', tone: 'neutral' },
+    { key: 'agency',     label: 'vs Agency',     titleKey: 'why.agency.head',     tone: 'neutral' },
+    { key: 'studio',     labelKey: 'why.studio.badge', titleKey: 'why.studio.head',     tone: 'highlight' },
   ];
 
   const rows = [
-    { label: '責任歸屬', en: 'OWNERSHIP', values: {
-      freelancer: { text: '個人扛，遇資安／合約／DB／部署痛點時容易斷線', tone: 'bad' },
-      agency:     { text: '層層轉包，責任在 PM 與多人手中', tone: 'mid' },
-      studio:     { text: '一個負責人直扛 + AI 副手團隊，從 spec 到維運不中斷', tone: 'good' },
+    { labelKey: 'why.row.01.label', en: 'OWNERSHIP', values: {
+      freelancer: { textKey: 'why.freelancer.row.01', tone: 'bad' },
+      agency:     { textKey: 'why.agency.row.01',     tone: 'mid' },
+      studio:     { textKey: 'why.studio.row.01',     tone: 'good' },
     }},
-    { label: '成本結構', en: 'COST', values: {
-      freelancer: { text: '時薪低、但常需自行補軟硬體', tone: 'mid' },
-      agency:     { text: '報價高、層層加成，PM／業務佔大頭', tone: 'bad' },
-      studio:     { text: 'US$10k/月 fixed，直接買產出、不買中間人', tone: 'good' },
+    { labelKey: 'why.row.02.label', en: 'COST', values: {
+      freelancer: { textKey: 'why.freelancer.row.02', tone: 'mid' },
+      agency:     { textKey: 'why.agency.row.02',     tone: 'bad' },
+      studio:     { textKey: 'why.studio.row.02',     tone: 'good' },
     }},
-    { label: '上工速度', en: 'TIME-TO-PROD', values: {
-      freelancer: { text: '快，但 stack 與部署常需重做', tone: 'mid' },
-      agency:     { text: '慢，3-6 週前置作業、kick-off 排期', tone: 'bad' },
-      studio:     { text: '專案制 1-2 週啟動、retainer 隨時加入', tone: 'good' },
+    { labelKey: 'why.row.03.label', en: 'TIME-TO-PROD', values: {
+      freelancer: { textKey: 'why.freelancer.row.03', tone: 'mid' },
+      agency:     { textKey: 'why.agency.row.03',     tone: 'bad' },
+      studio:     { textKey: 'why.studio.row.03',     tone: 'good' },
     }},
-    { label: '覆蓋面', en: 'COVERAGE', values: {
-      freelancer: { text: '單點工程：前端 or 後端 or 設計', tone: 'mid' },
-      agency:     { text: '全鏈、但層層介面、整合斷點多', tone: 'mid' },
-      studio:     { text: '整條 pipeline：spec / design / build / review / deploy / ops', tone: 'good' },
+    { labelKey: 'why.row.04.label', en: 'COVERAGE', values: {
+      freelancer: { textKey: 'why.freelancer.row.04', tone: 'mid' },
+      agency:     { textKey: 'why.agency.row.04',     tone: 'mid' },
+      studio:     { textKey: 'why.studio.row.04',     tone: 'good' },
     }},
-    { label: '決策速度', en: 'DECISION', values: {
-      freelancer: { text: '快，但風險評估常缺位', tone: 'mid' },
-      agency:     { text: '會議多、簽核流程冗長', tone: 'bad' },
-      studio:     { text: '即時：負責人就是決策者，AI 跑風險預演', tone: 'good' },
+    { labelKey: 'why.row.05.label', en: 'DECISION', values: {
+      freelancer: { textKey: 'why.freelancer.row.05', tone: 'mid' },
+      agency:     { textKey: 'why.agency.row.05',     tone: 'bad' },
+      studio:     { textKey: 'why.studio.row.05',     tone: 'good' },
     }},
-    { label: '驗證程度', en: 'PROOF', values: {
-      freelancer: { text: '個案 portfolio，多為 demo', tone: 'mid' },
-      agency:     { text: 'logo wall，實際參與深度不一', tone: 'mid' },
-      studio:     { text: '自家集團 6 子公司、30+ 生產系統、1 年實戰跑出 20×', tone: 'good' },
+    { labelKey: 'why.row.06.label', en: 'PROOF', values: {
+      freelancer: { textKey: 'why.freelancer.row.06', tone: 'mid' },
+      agency:     { textKey: 'why.agency.row.06',     tone: 'mid' },
+      studio:     { textKey: 'why.studio.row.06',     tone: 'good' },
     }},
   ];
 
@@ -206,8 +206,8 @@ function WhyStudio() {
       <div className="container">
         <SectionHead
           label="03 / WHY THIS STUDIO"
-          title={<>為什麼選工作室<br/>而不是 freelancer 或 agency。</>}
-          sub="同樣的預算、同樣的時間。一個負責人 + AI 副手團隊把整條 pipeline 接管，比傳統做法多 20× 產出。"
+          title={<span dangerouslySetInnerHTML={{ __html: t('why.section.title') }} />}
+          sub={t('why.section.sub')}
         />
 
         <div className="why-table">
@@ -215,11 +215,11 @@ function WhyStudio() {
           <div className="why-col labels">
             <div className="why-head">
               <div className="meta-label">COMPARISON</div>
-              <h4 className="meta-sub">六項對照</h4>
+              <h4 className="meta-sub">{t('why.comparison.head')}</h4>
             </div>
             {rows.map(r => (
-              <div key={r.label} className="why-cell row-label-cell">
-                {r.label}
+              <div key={r.labelKey} className="why-cell row-label-cell">
+                {t(r.labelKey)}
                 <span className="en">{r.en}</span>
               </div>
             ))}
@@ -229,18 +229,18 @@ function WhyStudio() {
           {cols.map(c => (
             <div key={c.key} className={`why-col ${c.tone === 'highlight' ? 'highlight' : ''}`}>
               <div className="why-head">
-                <span className="badge-pill">{c.label}</span>
-                <h4>{c.title}</h4>
+                <span className="badge-pill">{c.labelKey ? t(c.labelKey) : c.label}</span>
+                <h4>{t(c.titleKey)}</h4>
               </div>
               {rows.map(r => {
                 const v = r.values[c.key];
                 return (
-                  <div key={r.label} className="why-cell">
-                    <span className="row-label-inline">{r.label} · {r.en}</span>
+                  <div key={r.labelKey} className="why-cell">
+                    <span className="row-label-inline">{t(r.labelKey)} · {r.en}</span>
                     <span className={`tone-icon ${v.tone}`}>
                       {v.tone === 'good' ? <Check size={10}/> : v.tone === 'bad' ? <Cross size={10}/> : <Tilde size={10}/>}
                     </span>
-                    <p className="why-text">{v.text}</p>
+                    <p className="why-text">{t(v.textKey)}</p>
                   </div>
                 );
               })}

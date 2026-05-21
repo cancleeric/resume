@@ -7,6 +7,25 @@ function Nav({ onMenuOpen }) {
   const switcherLabel = isLight ? 'Dark' : 'Light';
   return (
     <header className="nav">
+      <style>{`
+        .lang-toggle {
+          padding: 6px 12px;
+          font-family: var(--font-mono);
+          font-size: 11px;
+          letter-spacing: 0.12em;
+          color: var(--text-mid);
+          border: 1px solid var(--border);
+          border-radius: 4px;
+          background: transparent;
+          cursor: pointer;
+          transition: color 0.15s, border-color 0.15s;
+          white-space: nowrap;
+        }
+        .lang-toggle:hover {
+          color: var(--text-hi);
+          border-color: var(--border-strong);
+        }
+      `}</style>
       <div className="nav-inner">
         <a href="#hero" className="nav-logo">
           <svg className="mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-label="颶風軟體 logo" role="img">
@@ -16,16 +35,16 @@ function Nav({ onMenuOpen }) {
             </g>
           </svg>
           <span className="logo-text" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1 }}>
-            <span style={{ fontFamily: 'var(--font-tc)', fontSize: 15, fontWeight: 600 }}>颶風軟體</span>
+            {window.LANG !== 'en' && <span style={{ fontFamily: 'var(--font-tc)', fontSize: 15, fontWeight: 600 }}>颶風軟體</span>}
             <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--text-low)', letterSpacing: '0.12em' }}>HURRICANESOFT</span>
           </span>
         </a>
         <nav className="nav-links">
-          <a href="#services" className="nav-link-text">服務</a>
-          <a href="#pricing" className="nav-link-text">報價</a>
-          <a href="#systems" className="nav-link-text">可交付系統</a>
-          <a href="#timeline" className="nav-link-text">交付案例</a>
-          <a href="#faq" className="nav-link-text">FAQ</a>
+          <a href="#services" className="nav-link-text">{t('nav.services')}</a>
+          <a href="#pricing" className="nav-link-text">{t('nav.pricing')}</a>
+          <a href="#systems" className="nav-link-text">{t('nav.systems')}</a>
+          <a href="#timeline" className="nav-link-text">{t('nav.timeline')}</a>
+          <a href="#faq" className="nav-link-text">{t('nav.faq')}</a>
           <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" className="lf nav-link-text" style={{ color: 'var(--cyan)', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
             LF Pipeline <ArrowUpRight size={12}/>
           </a>
@@ -33,10 +52,13 @@ function Nav({ onMenuOpen }) {
             <span className="theme-icon">{switcherIcon}</span>
             <span className="theme-label">{switcherLabel}</span>
           </a>
+          <button className="lang-toggle" onClick={() => { window.setDesignLang(window.LANG === 'zh' ? 'en' : 'zh'); }} aria-label="Switch language">
+            {window.LANG === 'zh' ? 'EN' : '中文'}
+          </button>
           <a href="#cta" className="cta btn btn-primary btn-sm nav-cta" style={{ marginLeft: 4 }}>
-            預約諮詢
+            {t('nav.cta')}
           </a>
-          <button className="nav-hamburger" onClick={onMenuOpen} aria-label="開啟選單">
+          <button className="nav-hamburger" onClick={onMenuOpen} aria-label={t('nav.hamburger')}>
             <span></span><span></span><span></span>
           </button>
         </nav>
@@ -47,20 +69,20 @@ function Nav({ onMenuOpen }) {
 
 function MobileMenu({ open, onClose }) {
   const links = [
-    { href: '#services', label: '服務', en: 'SERVICES' },
-    { href: '#pricing', label: '報價', en: 'PRICING' },
-    { href: '#systems', label: '可交付系統', en: 'SYSTEMS' },
-    { href: '#timeline', label: '交付案例', en: 'TIMELINE' },
-    { href: '#tech', label: '技術棧', en: 'TECH' },
-    { href: '#studio', label: '工作室背景', en: 'STUDIO' },
-    { href: '#faq', label: 'FAQ', en: 'FAQ' },
+    { href: '#services', labelKey: 'mobile.link.services', en: 'SERVICES' },
+    { href: '#pricing', labelKey: 'mobile.link.pricing', en: 'PRICING' },
+    { href: '#systems', labelKey: 'mobile.link.systems', en: 'SYSTEMS' },
+    { href: '#timeline', labelKey: 'mobile.link.timeline', en: 'TIMELINE' },
+    { href: '#tech', labelKey: 'mobile.link.tech', en: 'TECH' },
+    { href: '#studio', labelKey: 'mobile.link.studio', en: 'STUDIO' },
+    { href: '#faq', labelKey: 'mobile.link.faq', en: 'FAQ' },
   ];
   return (
     <div className={`mobile-menu ${open ? 'open' : ''}`} onClick={e => e.target === e.currentTarget && onClose()}>
       <div className="mobile-menu-inner">
         <div className="mobile-menu-head">
-          <span style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.16em', color: 'var(--text-low)' }}>MENU · 目錄</span>
-          <button className="mobile-menu-close" onClick={onClose} aria-label="關閉">
+          <span style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.16em', color: 'var(--text-low)' }}>{t('mobile.menu.head')}</span>
+          <button className="mobile-menu-close" onClick={onClose} aria-label={t('mobile.menu.close')}>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
             </svg>
@@ -70,7 +92,7 @@ function MobileMenu({ open, onClose }) {
           {links.map((l, i) => (
             <a key={l.href} href={l.href} onClick={onClose} style={{ animationDelay: `${i * 0.04 + 0.1}s` }}>
               <span className="mm-num">{String(i + 1).padStart(2, '0')}</span>
-              <span className="mm-tc">{l.label}</span>
+              <span className="mm-tc">{t(l.labelKey)}</span>
               <span className="mm-en">{l.en}</span>
               <ArrowUpRight size={14}/>
             </a>
@@ -78,11 +100,11 @@ function MobileMenu({ open, onClose }) {
         </nav>
         <div className="mobile-menu-foot">
           <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" className="mobile-lf" onClick={onClose}>
-            <span>進 LF Pipeline 看現場</span>
+            <span>{t('mobile.lf')}</span>
             <ArrowUpRight />
           </a>
           <a href="#cta" className="btn btn-primary mobile-cta" onClick={onClose}>
-            預約諮詢
+            {t('mobile.cta')}
             <ArrowRight />
           </a>
         </div>
@@ -153,8 +175,8 @@ function BottomDock() {
       </a>
       <span className="divider"></span>
       <a className="item cta" href="#cta">
-        <span className="dock-cta-text-full">預約諮詢 →</span>
-        <span className="dock-cta-text-short">預約 →</span>
+        <span className="dock-cta-text-full">{t('nav.cta')} →</span>
+        <span className="dock-cta-text-short">{t('nav.cta')} →</span>
       </a>
     </div>
   );
@@ -185,7 +207,7 @@ function App() {
       <StickyTOC />
       <BottomDock />
       <footer style={{ padding: '40px 16px 140px', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--text-dim)', letterSpacing: '0.08em', borderTop: '1px solid var(--border-subtle)' }}>
-        © 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.11 · 最後更新 2026/05/21 07:20
+        {t('footer.copy')}
       </footer>
     </>
   );

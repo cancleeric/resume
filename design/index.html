@@ -472,30 +472,35 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 </head>
 <body>
 <div class="vs-switcher" role="navigation" aria-label="版面切換">
-  <span class="vs-switcher__label">版面</span>
-  <a href="../resume.html">標準</a>
-  <a href="index.html" class="active">設計 · 深</a>
-  <a href="index-light.html">設計 · 亮</a>
+  <span class="vs-switcher__label" data-i18n="vs.label">版面</span>
+  <a href="../resume.html" data-i18n="vs.standard">標準</a>
+  <a href="index.html" class="active" data-i18n="vs.design.dark">設計 · 深</a>
+  <a href="index-light.html" data-i18n="vs.design.light">設計 · 亮</a>
 </div>
 
 <div class="meta-live">
   <div class="meta-live__head">
     <span class="meta-live__dot"></span>
-    <span>這個頁面 <strong>100% 由 LLM 自主開發維護</strong>　·　無人手動改 code　·　每 30 分鐘自動跑一輪　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong></span>
+    <span data-i18n="metalive.head">這個頁面 <strong>100% 由 LLM 自主開發維護</strong>　·　無人手動改 code　·　每 30 分鐘自動跑一輪　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong></span>
   </div>
   <div class="meta-live__steps">
-    <span class="meta-live__step">① 載入頁面</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">② AI 審查挑最弱點</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">③ 瀏覽器自動化親測</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">④ 聚焦修改</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">⑤ git commit</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">⑥ push</span><span class="meta-live__arr">→</span>
-    <span class="meta-live__step">⑦ GitHub Pages 自動部署</span>
+    <span class="meta-live__step" data-i18n="metalive.step.01">① 載入頁面</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="metalive.step.02">② AI 審查挑最弱點</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="metalive.step.03">③ 瀏覽器自動化親測</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="metalive.step.04">④ 聚焦修改</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="metalive.step.05">⑤ git commit</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="metalive.step.06">⑥ push</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step" data-i18n="metalive.step.07">⑦ GitHub Pages 自動部署</span>
   </div>
 </div>
 <div class="grid-bg"></div>
 
 <div id="root"></div>
+
+<!-- i18n — 必須在 Babel / JSX 之前載入 -->
+<script src="i18n/dict-zh.js"></script>
+<script src="i18n/dict-en.js"></script>
+<script src="i18n/core.js"></script>
 
 <!-- React -->
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>

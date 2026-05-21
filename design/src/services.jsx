@@ -5,64 +5,64 @@ function Services() {
     {
       key: 'pipeline',
       num: '01',
-      tc: '開發流程自動化（主力）',
+      tcKey: 'svc.01.tc',
       en: 'AUTOMATED DELIVERY',
-      desc: '把規格 → 設計 → 實作 → 審查 → 部署 → 維運整條流程自動化：AI 副手分工 + Agent 框架 + 工單狀態機 + 自建 CI/CD + 量化評審門檻。',
-      bullets: ['規格 → 設計 → 實作', '審查 → 部署 → 維運', '1 人扛 30+ 系統維運'],
+      descKey: 'svc.01.desc',
+      bulletKeys: ['svc.01.bullet.01', 'svc.01.bullet.02', 'svc.01.bullet.03'],
       featured: true,
       tag: 'FLAGSHIP',
     },
     {
       key: 'ai-platform',
       num: '02',
-      tc: 'AI / LLM 平台整合',
+      tcKey: 'svc.02.tc',
       en: 'AI / LLM PLATFORM',
-      desc: '自建 LLM Gateway / 計費中心 / Provider routing / 自訓模型上線 / RAG / 多 Agent 協作框架。已在 Brain + Modelhub + Anemone 跨產品線跑生產。',
-      bullets: ['LLM Gateway + 計費', 'Provider routing + RAG', '多 Agent 協作'],
+      descKey: 'svc.02.desc',
+      bulletKeys: ['svc.02.bullet.01', 'svc.02.bullet.02', 'svc.02.bullet.03'],
       featured: true,
       tag: 'CORE',
     },
     {
       key: 'saas',
       num: '03',
-      tc: '多租戶 SaaS 從 0 到上線',
+      tcKey: 'svc.03.tc',
       en: 'MULTI-TENANT SAAS',
-      desc: '多租戶資料隔離、計費、Admin 後台、SDK／API 共用層。已在 9+ 系統接入（Hurricane Pay / Squid 生態）。',
+      descKey: 'svc.03.desc',
     },
     {
       key: 'identity',
       num: '04',
-      tc: '身份 / 安全基礎建設',
+      tcKey: 'svc.04.tc',
       en: 'IDENTITY · SECURITY',
-      desc: 'OAuth2 / OIDC Identity Provider 自建、SSO 跨系統串接、MFA、密鑰管理（Hurricane Vault 90+ secrets 治理）。',
+      descKey: 'svc.04.desc',
     },
     {
       key: 'payments',
       num: '05',
-      tc: '金流 / 訂閱整合',
+      tcKey: 'svc.05.tc',
       en: 'PAYMENTS · BILLING',
-      desc: 'PayPal / 跨境金流串接、Webhook 設計、訂閱與發票、多租戶帳務隔離。已上 Hurricane Pay v0.13.0 LIVE。',
+      descKey: 'svc.05.desc',
     },
     {
       key: 'cloud-run',
       num: '06',
-      tc: 'GCP Cloud Run 部署架構',
+      tcKey: 'svc.06.tc',
       en: 'GCP CLOUD RUN',
-      desc: '容器化、Cloud Build pipeline、Artifact Registry、Secret Manager 整合、19 個生產服務維運經驗。',
+      descKey: 'svc.06.desc',
     },
     {
       key: 'modernization',
       num: '07',
-      tc: '既有系統現代化',
+      tcKey: 'svc.07.tc',
       en: 'MODERNIZATION',
-      desc: '.NET Framework → .NET 8 + Blazor、單體 → 微服務、PHP / Legacy → FastAPI / Next.js、技術債盤點與漸進式重構。實證：某政府信用保證機構核心系統 1.5 年現代化、某全國性協會 5,000+ 學員平台。',
+      descKey: 'svc.07.desc',
     },
     {
       key: 'gov-grant',
       num: '08',
-      tc: '政府 AI 補助計畫輔導',
+      tcKey: 'svc.08.tc',
       en: 'GOV AI GRANTS',
-      desc: '2026 政府釋出逾百億元 AI 補助。協助企業評估 SBIR / AI 躍昇 / 數位轉型 / SIIR 方案資格，從計畫書撰寫、審查到 AI 系統開發落地全程協助。',
+      descKey: 'svc.08.desc',
     },
   ];
 
@@ -177,8 +177,8 @@ function Services() {
       <div className="container">
         <SectionHead
           label="04 / SERVICES"
-          title={<>八項服務，<br/>整條 pipeline 都有人接管。</>}
-          sub="主力是「開發流程自動化」，其餘是延伸 — 每一類都已在自家集團跑過生產驗證。"
+          title={<span dangerouslySetInnerHTML={{ __html: t('svc.section.title') }} />}
+          sub={t('svc.section.sub')}
         />
 
         <div className="services-grid">
@@ -190,11 +190,11 @@ function Services() {
               </div>
               <div className="service-body">
                 <div className="service-en">{s.en}</div>
-                <h3 className="service-tc">{s.tc}</h3>
-                <p className="service-desc">{s.desc}</p>
-                {s.bullets && (
+                <h3 className="service-tc">{t(s.tcKey)}</h3>
+                <p className="service-desc">{t(s.descKey)}</p>
+                {s.bulletKeys && (
                   <ul className="service-bullets">
-                    {s.bullets.map(b => <li key={b}>{b}</li>)}
+                    {s.bulletKeys.map(bk => <li key={bk}>{t(bk)}</li>)}
                   </ul>
                 )}
               </div>

@@ -2,81 +2,81 @@
 
 function Timeline() {
   const filters = [
-    { key: 'all', label: '全部', en: 'ALL' },
-    { key: 'q1q2', label: '2026 Q1-Q2', en: 'RECENT' },
-    { key: 'enterprise', label: '企業客戶', en: 'ENTERPRISE' },
+    { key: 'all', labelKey: 'timeline.filter.all', en: 'ALL' },
+    { key: 'q1q2', labelKey: 'timeline.filter.q1q2', en: 'RECENT' },
+    { key: 'enterprise', labelKey: 'timeline.filter.enterprise', en: 'ENTERPRISE' },
   ];
   const items = [
     {
       date: '2026.05',
       version: 'v2.64',
-      title: 'Manta — AI Workflow Canvas（對標 Coze）',
+      titleKey: 'timeline.item.01.title',
       tag: 'q1q2',
-      summary: '多租戶生產中；同月完成 JWT httpOnly cookie 遷移 + LIDS end_session + CSRF PoC BLOCKED（CISO / compliance 雙審 PASS）。',
-      kind: '對外 SaaS',
+      summaryKey: 'timeline.item.01.summary',
+      kindKey: 'timeline.kind.saas',
       chips: ['JWT httpOnly', 'LIDS', 'CSRF PASS'],
     },
     {
       date: '2026.05',
       version: 'v0.13.0',
-      title: 'Hurricane Pay — 集團統一金流',
+      titleKey: 'timeline.item.02.title',
       tag: 'q1q2',
-      summary: 'FastAPI + PostgreSQL + PayPal SDK，PayPal LIVE，9+ tenant 接入；15 routes / 90 tests / 88% coverage。',
-      kind: '集團基礎建設',
+      summaryKey: 'timeline.item.02.summary',
+      kindKey: 'timeline.kind.infra',
       chips: ['FastAPI', 'PostgreSQL', 'PayPal LIVE'],
     },
     {
       date: '2026.04',
       version: 'v6.0',
-      title: 'Conch（RS / 海螺訂位）— 預約 SaaS GA',
+      titleKey: 'timeline.item.03.title',
       tag: 'q1q2',
-      summary: '1,265+ tests 全通過、28 DB migrations、29 PRs merged、CI 4 jobs 全綠；含 CRM / 平板模式 / No-show 管理 / 公開目錄。',
-      kind: '對外 SaaS',
+      summaryKey: 'timeline.item.03.summary',
+      kindKey: 'timeline.kind.saas',
       chips: ['LINE Pay', 'PayPal Live', 'iOS App'],
     },
     {
       date: '2026.04',
       version: 'v1.6.0',
-      title: '打工仔 DaGongZai — 零工媒合 SaaS',
+      titleKey: 'timeline.item.04.title',
       tag: 'q1q2',
-      summary: '台灣零工媒合 SaaS 生產中（API + Web + iOS 三端同步），雙端用戶（求職 / 案主）；PayPal Escrow + ML 薪資推算。',
-      kind: '對外 SaaS',
+      summaryKey: 'timeline.item.04.summary',
+      kindKey: 'timeline.kind.saas',
       chips: ['FastAPI', 'Next.js 14', 'Swift iOS'],
     },
     {
       date: '2026.04',
       version: 'v1.0.0',
-      title: 'Hurricane Vault — 自建 Secret Manager',
+      titleKey: 'timeline.item.05.title',
       tag: 'q1q2',
-      summary: '多層稽核 + 雲端對稱備援，90+ secrets 治理。',
-      kind: '集團基礎建設',
-      chips: ['Secret Manager', '稽核', '對稱備援'],
+      summaryKey: 'timeline.item.05.summary',
+      kindKey: 'timeline.kind.infra',
+      chips: ['Secret Manager', t('timeline.chip.audit'), t('timeline.chip.failover')],
     },
     {
       date: '2024.05 - 2026.02',
       version: '—',
-      title: '政府信用保證機構 — 技術顧問',
+      titleKey: 'timeline.item.06.title',
       tag: 'enterprise',
-      summary: '主導舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor，採微服務架構；跨年度 8 人外部技術團隊交付；支援銀行端信用保證業務之核心生產系統。',
-      kind: '企業客戶',
-      chips: ['.NET 8', 'Blazor', '微服務'],
+      summaryKey: 'timeline.item.06.summary',
+      kindKey: 'timeline.kind.enterprise',
+      chips: ['.NET 8', 'Blazor', t('timeline.chip.microservices')],
     },
     {
-      date: '2019.02 - 持續',
+      date: t('timeline.item.07.date'),
       version: '—',
-      title: '全國性協會 — 組織綜合管理平台',
+      titleKey: 'timeline.item.07.title',
       tag: 'enterprise',
-      summary: '線上課程報名系統，服務 5,000+ 學員，線上報名率 +80%、行政時間 -60%；PHP CodeIgniter HMVC + 15+ 種營運報表；2026 持續維運。',
-      kind: '企業客戶',
+      summaryKey: 'timeline.item.07.summary',
+      kindKey: 'timeline.kind.enterprise',
       chips: ['PHP', 'CodeIgniter', 'HMVC'],
     },
     {
       date: '2023.06 - 2024.04',
       version: '—',
-      title: 'iOS 多功能社交遊戲平台',
+      titleKey: 'timeline.item.08.title',
       tag: 'enterprise',
-      summary: '多米諾骨牌對戰手遊，SwiftUI + SpriteKit + Firebase + CloudKit；即時多人對戰、AI 聊天、AdMob 廣告；已上 App Store。',
-      kind: '企業客戶',
+      summaryKey: 'timeline.item.08.summary',
+      kindKey: 'timeline.kind.enterprise',
       chips: ['SwiftUI', 'SpriteKit', 'Firebase'],
     },
   ];
@@ -198,29 +198,29 @@ function Timeline() {
       <div className="container">
         <SectionHead
           label="07 / RECENT DELIVERIES"
-          title={<>近期交付，<br/>有日期、有版本、有結果。</>}
-          sub="一個人 + AI 副手在過去 6 個月實際交付的系統。沒有圖庫 stock photo、沒有「概念示意」。"
+          title={<span dangerouslySetInnerHTML={{ __html: t('timeline.section.title') }} />}
+          sub={t('timeline.section.sub')}
         />
 
         <div className="tl-filters">
           {filters.map(f => (
             <button key={f.key} className={filter === f.key ? 'active' : ''} onClick={() => setFilter(f.key)}>
-              {f.label} <span className="en">{f.en}</span>
+              {t(f.labelKey)} <span className="en">{f.en}</span>
             </button>
           ))}
         </div>
 
         <div className="tl-track">
           {filtered.map((it, i) => (
-            <div key={it.title} className={`tl-item ${i < 2 ? 'recent' : ''}`}>
+            <div key={it.titleKey} className={`tl-item ${i < 2 ? 'recent' : ''}`}>
               <div className="tl-meta">
                 <div className="tl-date">{it.date}</div>
                 <div className="tl-version">{it.version}</div>
-                <div className="tl-kind">{it.kind}</div>
+                <div className="tl-kind">{t(it.kindKey)}</div>
               </div>
               <div className="tl-card">
-                <h4>{it.title}</h4>
-                <p>{it.summary}</p>
+                <h4>{t(it.titleKey)}</h4>
+                <p>{t(it.summaryKey)}</p>
                 <div className="tl-chips">
                   {it.chips.map(c => <span key={c}>{c}</span>)}
                 </div>

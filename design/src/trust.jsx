@@ -2,12 +2,12 @@
 
 function TrustBar() {
   const domains = [
-    { name: '年軟體經驗', en: 'YEARS', count: '25' },
-    { name: '企業客戶', en: 'ENTERPRISE', count: '100+' },
-    { name: '生產系統', en: 'PROD SYSTEMS', count: '30+' },
-    { name: '子公司', en: 'SUBSIDIARIES', count: '6' },
-    { name: 'Cloud Run 服務', en: 'CLOUD RUN', count: '19' },
-    { name: 'SaaS 接入', en: 'SAAS INTEGRATED', count: '9+' },
+    { nameKey: 'trust.item.01.name', en: 'YEARS', count: '25' },
+    { nameKey: 'trust.item.02.name', en: 'ENTERPRISE', count: '100+' },
+    { nameKey: 'trust.item.03.name', en: 'PROD SYSTEMS', count: '30+' },
+    { nameKey: 'trust.item.04.name', en: 'SUBSIDIARIES', count: '6' },
+    { nameKey: 'trust.item.05.name', en: 'CLOUD RUN', count: '19' },
+    { nameKey: 'trust.item.06.name', en: 'SAAS INTEGRATED', count: '9+' },
   ];
 
   return (
@@ -73,12 +73,12 @@ function TrustBar() {
         }
       `}</style>
       <div className="container">
-        <div className="trust-label">TRUST CREDENTIALS · 信任要件</div>
+        <div className="trust-label">{t('trust.label')}</div>
         <div className="trust-grid">
           {domains.map(d => (
-            <div key={d.name} className="trust-cell">
+            <div key={d.nameKey} className="trust-cell">
               <div className="count">{d.count}</div>
-              <div className="name">{d.name}</div>
+              <div className="name">{t(d.nameKey)}</div>
               <div className="en">{d.en}</div>
             </div>
           ))}

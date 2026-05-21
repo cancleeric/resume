@@ -2,36 +2,36 @@
 
 function Systems() {
   const tabs = [
-    { key: 'ai', label: 'AI / Agent 產品線', en: 'AI / AGENT', count: 9 },
-    { key: 'saas', label: '對外 SaaS', en: 'PUBLIC SAAS', count: 5 },
-    { key: 'infra', label: '集團基礎建設', en: 'GROUP INFRA', count: 5 },
+    { key: 'ai', labelKey: 'systems.tab.ai.label', en: 'AI / AGENT', count: 9 },
+    { key: 'saas', labelKey: 'systems.tab.saas.label', en: 'PUBLIC SAAS', count: 5 },
+    { key: 'infra', labelKey: 'systems.tab.infra.label', en: 'GROUP INFRA', count: 5 },
   ];
 
   const systems = {
     ai: [
-      { name: 'Squid', tagline: '集團專案 / 工單管理 SaaS（公司核心）— AI Agent 工單驅動開發底層', stack: ['LIDS OAuth2', 'JWT', 'API Key', 'Python SDK', 'JS SDK'], status: 'LIVE', metric: '多租戶 + 嚴格狀態機' },
-      { name: 'Manta', tagline: 'AI Workflow Canvas（對標 Coze）— 多租戶 AI 編排', stack: ['沙盒', 'Webhook', '實時監控'], status: 'LIVE', metric: 'v2.64 生產中' },
-      { name: 'AICAD', tagline: 'AI P&ID 工程圖辨識 SaaS', stack: ['Anemone', 'Claude Vision', 'DXF'], status: 'LIVE', metric: '多視圖分割 + 文字辨識' },
-      { name: 'fiona-radar', tagline: 'AI 影片結構化洞察', stack: ['Anemone', 'JSONB', 'YouTube'], status: 'GA', metric: 'v1.1.0' },
-      { name: 'fiona-pipeline', tagline: 'AI 腳本生成 + 推播', stack: ['n8n', 'webhook'], status: 'LIVE', metric: '多平台感知' },
-      { name: 'Brain', tagline: '多代理 AI 協作框架', stack: ['Python', '21 files'], status: 'GA', metric: '~6,350 lines / 100% pass' },
-      { name: 'Claude Agents', tagline: 'AI 高管副手角色庫 — 多角色虛擬團隊', stack: ['多角色', '跨機同步', '分級權限'], status: 'LIVE', metric: '技術／營運／商務／產品／資安／法務' },
-      { name: 'Modelhub', tagline: 'ML 模型訓練 / 版本管理平台', stack: ['FastAPI', 'SQLAlchemy', 'SQLite'], status: 'GA', metric: '多層訓練資源排程' },
-      { name: 'Anemone / Brain Gateway', tagline: '集團統一 LLM Gateway — 計費中心 + 自動模型路由', stack: ['LLM ingress', '跨租戶'], status: 'LIVE', metric: '計費 + 路由' },
+      { name: 'Squid', taglineKey: 'sys.squid.tagline', stack: ['LIDS OAuth2', 'JWT', 'API Key', 'Python SDK', 'JS SDK'], status: 'LIVE', metricKey: 'sys.squid.metric' },
+      { name: 'Manta', taglineKey: 'sys.manta.tagline', stack: ['sys.stack.sandbox', 'Webhook', 'sys.stack.realtime-monitor'], status: 'LIVE', metricKey: 'sys.manta.metric' },
+      { name: 'AICAD', taglineKey: 'sys.aicad.tagline', stack: ['Anemone', 'Claude Vision', 'DXF'], status: 'LIVE', metricKey: 'sys.aicad.metric' },
+      { name: 'fiona-radar', taglineKey: 'sys.fiona-radar.tagline', stack: ['Anemone', 'JSONB', 'YouTube'], status: 'GA', metricKey: null, metric: 'v1.1.0' },
+      { name: 'fiona-pipeline', taglineKey: 'sys.fiona-pipeline.tagline', stack: ['n8n', 'webhook'], status: 'LIVE', metricKey: 'sys.fiona-pipeline.metric' },
+      { name: 'Brain', taglineKey: 'sys.brain.tagline', stack: ['Python', '21 files'], status: 'GA', metricKey: null, metric: '~6,350 lines / 100% pass' },
+      { name: 'Claude Agents', taglineKey: 'sys.claude-agents.tagline', stack: ['sys.stack.multirole', 'sys.stack.cross-machine-sync', 'sys.stack.tiered-access'], status: 'LIVE', metricKey: 'sys.claude-agents.metric' },
+      { name: 'Modelhub', taglineKey: 'sys.modelhub.tagline', stack: ['FastAPI', 'SQLAlchemy', 'SQLite'], status: 'GA', metricKey: 'sys.modelhub.metric' },
+      { name: 'Anemone / Brain Gateway', taglineKey: 'sys.anemone.tagline', stack: ['LLM ingress', 'sys.stack.cross-tenant'], status: 'LIVE', metricKey: 'sys.anemone.metric' },
     ],
     saas: [
-      { name: 'Conch (RS / 海螺訂位)', tagline: '預約 SaaS v6.0（2026/04 GA）', stack: ['LINE Pay', 'PayPal Live', 'iOS App'], status: 'LIVE', metric: '1,265+ tests / 28 migrations / 29 PRs' },
-      { name: 'Abacus 算盤', tagline: '中小企業帳務財務 SaaS（hurricane-books）', stack: ['.NET 8', 'Blazor', 'LIDS PKCE', 'Playwright 24'], status: 'LIVE', metric: '對標天心 CPA' },
-      { name: 'Tianji 天機', tagline: '占卜命理 iOS + Web SaaS', stack: ['iOS', 'Web'], status: 'LIVE', metric: 'HurricaneEdge 旗下' },
-      { name: '打工仔 DaGongZai', tagline: '零工媒合 SaaS v1.6.0（2026/04）', stack: ['FastAPI', 'Next.js 14', 'Swift iOS', 'PayPal Escrow'], status: 'LIVE', metric: '多平台爬蟲 + ML 薪資推算' },
-      { name: 'Gyre v0.9.0', tagline: '多服務架構（apps/api + web + ai-service）', stack: ['Secret Manager', '環境分離'], status: 'BETA', metric: 'R5 freeze 待上線' },
+      { name: 'Conch (RS / 海螺訂位)', taglineKey: 'sys.conch.tagline', stack: ['LINE Pay', 'PayPal Live', 'iOS App'], status: 'LIVE', metricKey: null, metric: '1,265+ tests / 28 migrations / 29 PRs' },
+      { name: 'Abacus 算盤', taglineKey: 'sys.abacus.tagline', stack: ['.NET 8', 'Blazor', 'LIDS PKCE', 'Playwright 24'], status: 'LIVE', metricKey: 'sys.abacus.metric' },
+      { name: 'Tianji 天機', taglineKey: 'sys.tianji.tagline', stack: ['iOS', 'Web'], status: 'LIVE', metricKey: 'sys.tianji.metric' },
+      { name: '打工仔 DaGongZai', taglineKey: 'sys.dagongzai.tagline', stack: ['FastAPI', 'Next.js 14', 'Swift iOS', 'PayPal Escrow'], status: 'LIVE', metricKey: 'sys.dagongzai.metric' },
+      { name: 'Gyre v0.9.0', taglineKey: 'sys.gyre.tagline', stack: ['Secret Manager', 'sys.stack.env-isolation'], status: 'BETA', metricKey: 'sys.gyre.metric' },
     ],
     infra: [
-      { name: 'Hurricane Pay', tagline: '集團統一金流微服務 v0.13.0', stack: ['FastAPI', 'PostgreSQL', 'PayPal SDK'], status: 'LIVE', metric: '15 routes / 90 tests / 88% coverage' },
-      { name: 'LIDS', tagline: 'Multi-tenant SaaS 身份層 — OAuth2/OIDC', stack: ['OAuth2', 'OIDC', '客製 OIDC patch'], status: 'LIVE', metric: '9+ 系統接入' },
-      { name: 'Hurricane Vault', tagline: '自建 Secret Manager + 多層稽核 v1.0.0', stack: ['Secret Manager', '稽核', '對稱備援'], status: 'LIVE', metric: '90+ secrets' },
-      { name: 'Tentacle BFF', tagline: 'Squid 前端整合層（BFF pattern）', stack: ['BFF', 'neritic CLI'], status: 'LIVE', metric: '跨集團共用' },
-      { name: 'Headscale', tagline: '集團統一 VPN', stack: ['ACL', '跨節點'], status: 'LIVE', metric: '動態 IP 管理' },
+      { name: 'Hurricane Pay', taglineKey: 'sys.hurricane-pay.tagline', stack: ['FastAPI', 'PostgreSQL', 'PayPal SDK'], status: 'LIVE', metricKey: null, metric: '15 routes / 90 tests / 88% coverage' },
+      { name: 'LIDS', taglineKey: 'sys.lids.tagline', stack: ['OAuth2', 'OIDC', 'sys.stack.custom-oidc-patch'], status: 'LIVE', metricKey: 'sys.lids.metric' },
+      { name: 'Hurricane Vault', taglineKey: 'sys.vault.tagline', stack: ['Secret Manager', 'sys.stack.audit', 'sys.stack.symmetric-backup'], status: 'LIVE', metricKey: null, metric: '90+ secrets' },
+      { name: 'Tentacle BFF', taglineKey: 'sys.tentacle.tagline', stack: ['BFF', 'neritic CLI'], status: 'LIVE', metricKey: 'sys.tentacle.metric' },
+      { name: 'Headscale', taglineKey: 'sys.headscale.tagline', stack: ['ACL', 'sys.stack.cross-node'], status: 'LIVE', metricKey: 'sys.headscale.metric' },
     ],
   };
 
@@ -163,20 +163,20 @@ function Systems() {
       <div className="container">
         <SectionHead
           label="06 / DELIVERABLE SYSTEMS"
-          title={<>30+ 生產系統、<br/>整個集團跑在上面。</>}
-          sub="不是 portfolio 圖、不是 demo。是每天有真實 traffic、真實營收、真實 SLO 的生產系統。"
+          title={<span dangerouslySetInnerHTML={{ __html: t('systems.section.title') }} />}
+          sub={t('systems.section.sub')}
         />
 
         <div className="systems-tabs">
-          {tabs.map(t => (
+          {tabs.map(tab => (
             <button
-              key={t.key}
-              className={active === t.key ? 'active' : ''}
-              onClick={() => setActive(t.key)}
+              key={tab.key}
+              className={active === tab.key ? 'active' : ''}
+              onClick={() => setActive(tab.key)}
             >
-              {t.label}
-              <span className="en">{t.en}</span>
-              <span className="count">{t.count}</span>
+              {t(tab.labelKey)}
+              <span className="en">{tab.en}</span>
+              <span className="count">{tab.count}</span>
             </button>
           ))}
         </div>
@@ -188,10 +188,10 @@ function Systems() {
                 <div className="name">{s.name}</div>
                 <span className={`badge badge-dot badge-${s.status.toLowerCase()}`}>{s.status}</span>
               </div>
-              <p className="tagline">{s.tagline}</p>
-              <div className="metric">{s.metric}</div>
+              <p className="tagline">{t(s.taglineKey)}</p>
+              <div className="metric">{s.metricKey ? t(s.metricKey) : s.metric}</div>
               <div className="stack">
-                {s.stack.map(t => <span key={t}>{t}</span>)}
+                {s.stack.map(st => <span key={st}>{st.startsWith('sys.stack.') ? t(st) : st}</span>)}
               </div>
             </div>
           ))}

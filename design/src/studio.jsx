@@ -2,12 +2,12 @@
 
 function StudioOrg() {
   const subs = [
-    { name: 'HurricaneSoft', tc: '颶風軟體', role: '本工作室 · 集團部署 / GCP 維運 / 接案出口', accent: true },
-    { name: 'HurricaneEdge', tc: '颶鋒科技', role: '8 大對外 SaaS 產品線' },
-    { name: 'HurricaneCore', tc: '颶核科技', role: 'LLM Gateway / 自訓模型 / 智腦平台' },
-    { name: 'HurricanePrime', tc: '颶擎科技', role: '客製化企業系統（.NET WMS、SaaS）' },
-    { name: 'HurricaneDigital', tc: '颶電娛樂', role: '行動遊戲 / iOS / 文創' },
-    { name: 'HurricaneTech', tc: '颶風科技', role: 'LIDS / CMS / Squid 等共用技術平台' },
+    { name: 'HurricaneSoft', tcKey: 'studio.soft.tc', roleKey: 'studio.soft.role', accent: true },
+    { name: 'HurricaneEdge', tcKey: 'studio.edge.tc', roleKey: 'studio.edge.role' },
+    { name: 'HurricaneCore', tcKey: 'studio.core.tc', roleKey: 'studio.core.role' },
+    { name: 'HurricanePrime', tcKey: 'studio.prime.tc', roleKey: 'studio.prime.role' },
+    { name: 'HurricaneDigital', tcKey: 'studio.digital.tc', roleKey: 'studio.digital.role' },
+    { name: 'HurricaneTech', tcKey: 'studio.tech.tc', roleKey: 'studio.tech.role' },
   ];
   return (
     <section id="studio" className="section studio-section">
@@ -91,30 +91,30 @@ function StudioOrg() {
       <div className="container">
         <SectionHead
           label="09 / STUDIO BACKGROUND"
-          title={<>不是一個人，<br/>是一整個集團當靠山。</>}
-          sub="工作室是 HurricaneGroup 的對外接案窗口。集團 6 子公司、30+ 生產系統，就是這套 pipeline 的試驗場。"
+          title={<span dangerouslySetInnerHTML={{ __html: t('studio.section.title') }} />}
+          sub={t('studio.section.sub')}
         />
 
         <div className="org-wrap">
           <div className="org-parent">
             <span className="tc">HurricaneGroup</span>
-            <span className="en">PARENT · 集團母公司</span>
+            <span className="en">{t('studio.parent.en')}</span>
           </div>
           <div className="org-line"></div>
           <div className="org-tree">
             {subs.map(s => (
               <div key={s.name} className={`org-child ${s.accent ? 'accent' : ''}`}>
-                <div className="role">{s.role}</div>
+                <div className="role">{t(s.roleKey)}</div>
                 <div className="name">{s.name}</div>
-                <div className="tc">{s.tc}</div>
+                {t(s.tcKey) && <div className="tc">{t(s.tcKey)}</div>}
               </div>
             ))}
           </div>
           <div className="org-foot">
-            <div className="stat"><div className="v"><span className="accent">25</span> yr</div><div className="l">負責人軟體經驗</div></div>
-            <div className="stat"><div className="v">6</div><div className="l">集團子公司</div></div>
-            <div className="stat"><div className="v">30+</div><div className="l">生產系統</div></div>
-            <div className="stat"><div className="v">100+</div><div className="l">企業客戶（歷年）</div></div>
+            <div className="stat"><div className="v"><span className="accent">25</span> yr</div><div className="l">{t('studio.stat.01.label')}</div></div>
+            <div className="stat"><div className="v">6</div><div className="l">{t('studio.stat.02.label')}</div></div>
+            <div className="stat"><div className="v">30+</div><div className="l">{t('studio.stat.03.label')}</div></div>
+            <div className="stat"><div className="v">100+</div><div className="l">{t('studio.stat.04.label')}</div></div>
           </div>
         </div>
       </div>
