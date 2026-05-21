@@ -104,7 +104,8 @@ function Pricing() {
           font-family: var(--font-mono);
           font-size: 11px;
           letter-spacing: 0.16em;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：11px 方案標籤，--text-low 深版對比僅 ~3.6:1 未達 AA */
+          color: var(--text-mid);
           margin-bottom: 16px;
         }
         .price-card.highlight .price-label { color: var(--orange); }
