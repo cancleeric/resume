@@ -4,6 +4,12 @@
 
 ---
 
+## v7.40 — 2026-05-21
+
+- 設計版·深 SEO：`index.html` 缺 `og:locale`（亮版 index-light.html 有）。補上 `<meta property="og:locale" content="zh_TW">`，深/亮兩版 OG 標籤一致
+
+---
+
 ## v7.39 — 2026-05-21
 
 - 三版修事實錯誤：可交付清單的「Brain — 多代理 AI 協作框架」描述過時錯誤。經查 Wiki（颶核智腦平台架構 v1.5）與 Gitea repo，更正為「颶核智腦平台 — 集團 AI 智腦平台」（Anemone 電話總機＋Brain Cloud 多租戶管理＋Brain LLM Gateway 四層架構）。standard `item-brain` zh/en + 設計版 `sys.brain.tagline` + systems.jsx 卡同步
