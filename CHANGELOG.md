@@ -4,6 +4,12 @@
 
 ---
 
+## v7.56 — 2026-05-22
+
+- 三版 head 補 og:locale:alternate：頁面實為雙語（完整 zh/en i18n + 語言切換）但 head 只宣告 og:locale=zh_TW，未告知爬蟲/社群有英文版。三版各補一行 og:locale:alternate=en_US
+
+---
+
 ## v7.55 — 2026-05-22
 
 - 設計版 why-studio 手機版對照維度標籤對比修正：手機單欄佈局下每格的 row-label-inline（責任歸屬／成本結構等對照維度，10px）原用 --text-low 僅 ~3.3:1 未達 AA，手機用戶看不清每格在比什麼。改用 --text-mid。改在共用 why-studio.jsx
