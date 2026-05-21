@@ -4,6 +4,12 @@
 
 ---
 
+## v7.38 — 2026-05-21
+
+- 設計版·亮 SEO：`index-light.html` 的 `<title>` 原為半成品「HurricaneSoft Ltd. · 颶風軟體有限公司 · Light」（公司名重複＋開發標記、無賣點）。改為與深版一致的完整標題「颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化接案 · 20× 產出」
+
+---
+
 ## v7.37 — 2026-05-21
 
 - 設計版（深/亮）修對比：服務項目編號 `.service-num`（12px mono）原用 `--text-low`，兩版對比未達 AA。改用 `--text-mid`
