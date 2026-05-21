@@ -197,7 +197,8 @@ function WhyStudio() {
             font-size: 10px;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: var(--text-low);
+            /* --text-mid 而非 --text-low：手機版每格的對照維度標籤，--text-low 僅 ~3.3:1 未達 AA */
+            color: var(--text-mid);
             margin-bottom: 4px;
           }
           .tone-icon { display: none !important; }

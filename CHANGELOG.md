@@ -4,6 +4,12 @@
 
 ---
 
+## v7.55 — 2026-05-22
+
+- 設計版 why-studio 手機版對照維度標籤對比修正：手機單欄佈局下每格的 row-label-inline（責任歸屬／成本結構等對照維度，10px）原用 --text-low 僅 ~3.3:1 未達 AA，手機用戶看不清每格在比什麼。改用 --text-mid。改在共用 why-studio.jsx
+
+---
+
 ## v7.54 — 2026-05-22
 
 - 設計版 FAQ 補上 v7.48 漏掉的 Brain 正名：v7.48 只修了標準版，設計版 FAQ（dict faq.04/06 可見文字 + 深/亮兩版 FAQPage JSON-LD）仍把 Brain 稱「Agent 框架／Brain framework」。統一為「Brain LLM Gateway」共 8 處，三版描述一致
