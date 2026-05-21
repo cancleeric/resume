@@ -549,12 +549,14 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 
 /* sys card hover lift */
 .sys-card { box-shadow: var(--shadow-sm); }
+/* 系統卡 metric：亮底用更深的青，原 var(--cyan) #0EA5E9 對比僅 ~2.8:1 */
+.sys-card .metric { color: #0369A1 !important; }
 
 /* tokens section background */
 .tokens-section { background: var(--bg-2) !important; }
 
-/* AI tag readability */
-.ai-tag { background: var(--cyan-soft) !important; color: var(--cyan) !important; border-color: var(--cyan-line) !important; }
+/* AI tag readability — 亮底用更深的青提升對比 */
+.ai-tag { background: var(--cyan-soft) !important; color: #0369A1 !important; border-color: var(--cyan-line) !important; }
 
 /* flow particle keep orange/cyan glows but smaller halo */
 .flow-particle { box-shadow: 0 0 10px var(--orange); }
