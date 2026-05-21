@@ -608,6 +608,8 @@ h2#近期交付案例-recent-deliveries ~ ul li::marker { color: var(--brand-2);
   color: var(--text-2);
   margin-top: 1px;
 }
+/* EN 模式隱藏子公司中文名（英文讀者無意義）*/
+html[lang="en"] .group-tree__name em { display: none; }
 .group-tree__item--self .group-tree__name::after {
   content: " ◀ 本公司";
   font-size: 10px;
