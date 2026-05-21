@@ -4,6 +4,12 @@
 
 ---
 
+## v7.54 — 2026-05-22
+
+- 設計版 FAQ 補上 v7.48 漏掉的 Brain 正名：v7.48 只修了標準版，設計版 FAQ（dict faq.04/06 可見文字 + 深/亮兩版 FAQPage JSON-LD）仍把 Brain 稱「Agent 框架／Brain framework」。統一為「Brain LLM Gateway」共 8 處，三版描述一致
+
+---
+
 ## v7.53 — 2026-05-22
 
 - 標準版 topbar 品牌副標對比修正：「HURRICANESOFT」9.5px 小字原用 #94a3b8，在 --brand 深藍底僅 ~4.0:1 未達 WCAG AA。改用 #a6b3c5（~4.85:1 通過），仍比導覽列文字暗、維持副標層級

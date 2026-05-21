@@ -307,11 +307,11 @@ window.DICT_ZH = {
   'faq.03.q': '為何 US$ 10K/月不是按 hourly？',
   'faq.03.a': '月費模式讓負責人 + AI 副手團隊全力投入，不必為了計時打折注意力。同等價位 hourly 大約 US$ 80/h × 125h，但月費模式我們會超工，因為自家工具加成讓單位時間產出更高。',
   'faq.04.q': '跟你合作會用到哪些 AI 工具？',
-  'faq.04.a': '內部 SOP：Claude Code（主力）+ 自建 Agent 框架（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway，client code／data 全程不出您的環境（除非授權）。',
+  'faq.04.a': '內部 SOP：Claude Code（主力）+ 自建 LLM Gateway（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway，client code／data 全程不出您的環境（除非授權）。',
   'faq.05.q': '能不能只請你做某個 module，不要整套？',
   'faq.05.a': '可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週做完 OAuth/SSO 整合、2 週做完 PayPal 金流串接、3 週做完 Cloud Run 部署架構盤點與導入。',
   'faq.06.q': '合作結束後 code 歸屬？',
-  'faq.06.a': '專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain framework 等）可授權使用，不另收授權費。',
+  'faq.06.a': '專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain LLM Gateway 等）可授權使用，不另收授權費。',
   'faq.07.q': '工作室規模這麼小，萬一你檔期滿了或臨時有狀況？',
   'faq.07.a': '正因為是工作室規模，我們嚴格控管同時段案量（月費 Retainer 最多 2 案），不超賣、不讓您的案子被排擠。每個專案的 code、文件、CI/CD、密鑰規範即時交付且文件化 —— 您手上隨時是一份完整、可被任何團隊接手的交付，不會被一個人綁死。重大決策有書面紀錄，進度每週同步。',
 
@@ -327,7 +327,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.53 · 最後更新 2026/05/22 05:50',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.54 · 最後更新 2026/05/22 06:20',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',
