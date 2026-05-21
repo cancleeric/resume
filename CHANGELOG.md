@@ -4,6 +4,12 @@
 
 ---
 
+## v7.49 — 2026-05-22
+
+- 設計版·亮 修正 sticky TOC 對比不足：右側固定目錄導覽文字原用 --text-low（#8A8D96），亮版白底僅 ~3.3:1 未達 WCAG AA。改用 --text-mid（~7:1 通過），延續亮版既有的 --text-low→--text-mid 修補慣例（先前其他元件已修，sticky TOC 漏掉）
+
+---
+
 ## v7.48 — 2026-05-22
 
 - 標準版 FAQ 修正自我矛盾的 Brain 描述：FAQ #4／#6 原把 Brain 稱作「自建 Agent 框架／Brain framework」，但同頁的可交付系統清單、技術棧、交付案例都一致稱它為「Brain LLM Gateway」（計費中心 / Provider 路由）。把 FAQ（含 FAQPage JSON-LD 與 en i18n 共 6 處）統一為「Brain LLM Gateway」，讓頁面對自己的工具描述前後一致

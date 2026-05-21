@@ -309,7 +309,8 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
   box-shadow: var(--shadow-md);
   font-family: var(--font-mono);
   font-size: 11px;
-  color: var(--text-low);
+  /* --text-mid 而非 --text-low：11px TOC 導覽文字，--text-low 亮版白底僅 ~3.3:1 未達 AA */
+  color: var(--text-mid);
 }
 .sticky-toc a {
   display: flex; align-items: center; gap: 10px;
