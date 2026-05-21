@@ -4,6 +4,12 @@
 
 ---
 
+## v7.35 — 2026-05-21
+
+- 設計版（深/亮）修對比：FAQ 題號 `.faq-num`（Q.01 等，11px mono）原用 `--text-low`，兩版對比僅 ~3.3-3.6:1 未達 AA。改用 `--text-mid`
+
+---
+
 ## v7.34 — 2026-05-21
 
 - 設計版（深/亮）修對比：系統卡技術棧標籤 `.sys-card .stack span`（10.5px mono chip）原用 `--text-low`，深版在 surface-2 上對比僅 ~3.5:1 未達 AA。改用 `--text-mid`

@@ -50,7 +50,8 @@ function FAQ() {
         .faq-num {
           font-family: var(--font-mono);
           font-size: 11px;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：11px FAQ 題號，--text-low 兩版對比僅 ~3.3-3.6:1 未達 AA */
+          color: var(--text-mid);
           letter-spacing: 0.08em;
           width: 28px;
           flex-shrink: 0;
