@@ -96,7 +96,8 @@ function PipelineVisual() {
         .stage-row .label .en {
           font-family: var(--font-mono);
           font-size: 10px;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：10px pipeline 階段英文小標，--text-low 兩版對比僅 ~3.3-3.6:1 未達 AA */
+          color: var(--text-mid);
           letter-spacing: 0.1em;
         }
         .stage-row .stat {
