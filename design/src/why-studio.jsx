@@ -92,7 +92,8 @@ function WhyStudio() {
           font-family: var(--font-mono);
           font-size: 10px;
           letter-spacing: 0.12em;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：10px 小字 --text-low 對比僅 ~3.4:1 未達 AA */
+          color: var(--text-mid);
           background: var(--surface-2);
           border: 1px solid var(--border);
           border-radius: 100px;

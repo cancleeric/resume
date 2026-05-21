@@ -4,6 +4,12 @@
 
 ---
 
+## v7.24 — 2026-05-21
+
+- 設計版（深/亮）修對比：why-studio 對照欄徽章 `.badge-pill`（vs Freelancer 等，10px）原用 `--text-low`，深版對比僅 ~3.4:1 未達 AA。改用 `--text-mid`（深/亮兩主題皆 ~7:1）
+
+---
+
 ## v7.23 — 2026-05-21
 
 - 設計版·亮 修對比：hero-sub 的 pipeline 字 `.stage`（SPEC/DESIGN/…6 個，13px）用 `var(--orange)` #FF6B35，亮底對比僅 ~2.8:1。亮版加深橘覆寫 `#B14A0E !important`（~5.45:1，達 AA）
