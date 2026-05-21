@@ -4,6 +4,12 @@
 
 ---
 
+## v7.57 — 2026-05-22
+
+- 設計版·亮 hero 橘字對比修正：hero h1 第二行與 hero-claim 強調字原用 var(--orange) #FF6B35，亮版白底僅 ~2.8:1，連大字 3:1 門檻都未達。主標是全頁最醒目文字。改用 #B14A0E（~5.5:1），延續亮版既有的深橘 AA 修補慣例
+
+---
+
 ## v7.56 — 2026-05-22
 
 - 三版 head 補 og:locale:alternate：頁面實為雙語（完整 zh/en i18n + 語言切換）但 head 只宣告 og:locale=zh_TW，未告知爬蟲/社群有英文版。三版各補一行 og:locale:alternate=en_US

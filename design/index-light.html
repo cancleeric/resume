@@ -437,10 +437,13 @@ html[data-theme="light"] .hero-title .gradient {
   background-clip: text;
   color: transparent;
 }
+/* hero h1 第二行：亮底 var(--orange) #FF6B35 僅 ~2.8:1 未達 AA，主標改用更深的橘 */
+html[data-theme="light"] .hero-title span:not(.gradient) { color: #B14A0E !important; }
 
 /* hero claim quote – left border */
 .hero-claim { color: var(--text-hi) !important; }
-.hero-claim b { color: var(--orange) !important; }
+/* 同上：hero-claim 強調字亮底改用更深的橘達 AA */
+.hero-claim b { color: #B14A0E !important; }
 
 /* pipeline visual */
 .pipeline-visual {
