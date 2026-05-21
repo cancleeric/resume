@@ -17,7 +17,7 @@ function Systems() {
       { name: '智腦平台', taglineKey: 'sys.brain.tagline', stack: ['Anemone', 'Brain Cloud', 'LLM Gateway'], status: 'GA', metricKey: null, metric: '四層反向連線架構' },
       { name: 'Claude Agents', taglineKey: 'sys.claude-agents.tagline', stack: ['sys.stack.multirole', 'sys.stack.cross-machine-sync', 'sys.stack.tiered-access'], status: 'LIVE', metricKey: 'sys.claude-agents.metric' },
       { name: 'Modelhub', taglineKey: 'sys.modelhub.tagline', stack: ['FastAPI', 'SQLAlchemy', 'SQLite'], status: 'GA', metricKey: 'sys.modelhub.metric' },
-      { name: 'Anemone / Brain Gateway', taglineKey: 'sys.anemone.tagline', stack: ['LLM ingress', 'sys.stack.cross-tenant'], status: 'LIVE', metricKey: 'sys.anemone.metric' },
+      { name: 'Anemone', taglineKey: 'sys.anemone.tagline', stack: ['LLM ingress', 'sys.stack.cross-tenant'], status: 'LIVE', metricKey: 'sys.anemone.metric' },
     ],
     saas: [
       { name: 'Conch (RS / 海螺訂位)', taglineKey: 'sys.conch.tagline', stack: ['LINE Pay', 'PayPal Live', 'iOS App'], status: 'LIVE', metricKey: null, metric: '1,265+ tests / 28 migrations / 29 PRs' },

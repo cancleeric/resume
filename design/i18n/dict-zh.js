@@ -200,7 +200,7 @@ window.DICT_ZH = {
   'sys.brain.tagline':        '集團 AI 智腦平台',
   'sys.claude-agents.tagline':'AI 副手角色庫 — 多角色虛擬團隊',
   'sys.modelhub.tagline':     'ML 模型訓練 / 版本管理平台',
-  'sys.anemone.tagline':      '集團統一 LLM Gateway — 計費中心 + 自動模型路由',
+  'sys.anemone.tagline':      '集團 AI API 閘道 — 電話總機 / LLM ingress',
   // SaaS tab taglines
   'sys.conch.tagline':        '預約 SaaS v6.0（2026/04 GA）',
   'sys.abacus.tagline':       '中小企業帳務財務 SaaS（hurricane-books）',
@@ -221,7 +221,7 @@ window.DICT_ZH = {
   'sys.fiona-pipeline.metric':'多平台感知',
   'sys.claude-agents.metric': '多角色 AI 副手庫',
   'sys.modelhub.metric':      '多層訓練資源排程',
-  'sys.anemone.metric':       '計費 + 路由',
+  'sys.anemone.metric':       '反向連線中繼',
   'sys.abacus.metric':        '對標天心 CPA',
   'sys.tianji.metric':        'HurricaneEdge 旗下',
   'sys.dagongzai.metric':     '多平台爬蟲 + ML 薪資推算',
@@ -327,7 +327,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.40 · 最後更新 2026/05/21 22:20',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.41 · 最後更新 2026/05/21 22:57',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

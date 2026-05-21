@@ -4,6 +4,12 @@
 
 ---
 
+## v7.41 — 2026-05-21
+
+- 三版修事實錯誤：`item-anemone` 原寫「Anemone / Brain — 集團統一 LLM Gateway · 計費中心」，但 Anemone 架構上是純中繼、不持有 LLM key，計費/路由屬 Brain 層。更正為「Anemone — 集團 AI API 閘道（電話總機 / LLM ingress）」，並移除已不成立的「/ Brain」獨立命名。standard item-anemone zh/en + 設計版 sys.anemone.tagline/metric + systems.jsx 卡同步
+
+---
+
 ## v7.40 — 2026-05-21
 
 - 設計版·深 SEO：`index.html` 缺 `og:locale`（亮版 index-light.html 有）。補上 `<meta property="og:locale" content="zh_TW">`，深/亮兩版 OG 標籤一致
