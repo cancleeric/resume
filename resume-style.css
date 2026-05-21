@@ -9,7 +9,7 @@
   --ink: #0f172a;
   --ink-2: #334155;
   --ink-3: #475569;
-  --muted: #64748b;
+  --muted: #586473;       /* 弱文字 — 由 #64748b darken 至 sidebar 卡背景上達 WCAG AA */
   --line: #e2e8f0;
   --line-2: #cbd5e1;
 
