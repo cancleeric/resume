@@ -4,6 +4,12 @@
 
 ---
 
+## v7.48 — 2026-05-22
+
+- 標準版 FAQ 修正自我矛盾的 Brain 描述：FAQ #4／#6 原把 Brain 稱作「自建 Agent 框架／Brain framework」，但同頁的可交付系統清單、技術棧、交付案例都一致稱它為「Brain LLM Gateway」（計費中心 / Provider 路由）。把 FAQ（含 FAQPage JSON-LD 與 en i18n 共 6 處）統一為「Brain LLM Gateway」，讓頁面對自己的工具描述前後一致
+
+---
+
 ## v7.47 — 2026-05-22
 
 - 設計版 hero 主 CTA 強化（B/C 共用 dict）：hero 主按鈕原本只寫「預約諮詢 / Book a Consultation」，把「免費」這個降風險訊號補上按鈕本身——改為「預約免費諮詢 / Book a Free Consultation」。與標準版 A（「預約免費 30 分鐘諮詢」）及設計版最終 CTA（「30 min free」）一致；hero 是首屏第一轉換點，免費/低承諾框架放在點擊目標上轉換更好
