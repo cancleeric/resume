@@ -4,6 +4,12 @@
 
 ---
 
+## v7.42 — 2026-05-21
+
+- 轉換策略槓桿 3（三版）：hero 標題由「方法」改為「結果」導向。原 h1/h2-tagline 主打「開發流程自動化」（我們怎麼做），改為「整支團隊的產出，一個人交付 / Full-Team Output, One Engineer」（買家要的結果）；方法（自動化）留在 sub 當支撐，meta 關鍵字不動
+
+---
+
 ## v7.41 — 2026-05-21
 
 - 三版修事實錯誤：`item-anemone` 原寫「Anemone / Brain — 集團統一 LLM Gateway · 計費中心」，但 Anemone 架構上是純中繼、不持有 LLM key，計費/路由屬 Brain 層。更正為「Anemone — 集團 AI API 閘道（電話總機 / LLM ingress）」，並移除已不成立的「/ Brain」獨立命名。standard item-anemone zh/en + 設計版 sys.anemone.tagline/metric + systems.jsx 卡同步
