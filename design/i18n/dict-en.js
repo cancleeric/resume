@@ -206,7 +206,7 @@ window.DICT_EN = {
   'sys.fiona-radar.tagline':  'AI Video Structured Insights',
   'sys.fiona-pipeline.tagline':'AI Script Generation + Push Publishing',
   'sys.brain.tagline':        'Multi-agent AI Collaboration Framework',
-  'sys.claude-agents.tagline':'AI Executive Copilot Role Library — multi-role virtual team',
+  'sys.claude-agents.tagline':'AI Copilot Role Library — multi-role virtual team',
   'sys.modelhub.tagline':     'ML Model Training / Version Management Platform',
   'sys.anemone.tagline':      'Group-wide LLM Gateway — billing center + automatic model routing',
   'sys.conch.tagline':        'Reservation SaaS v6.0 (2026/04 GA)',
@@ -225,7 +225,7 @@ window.DICT_EN = {
   'sys.manta.metric':         'v2.64 in production',
   'sys.aicad.metric':         'Multi-view split + OCR',
   'sys.fiona-pipeline.metric':'Multi-platform aware',
-  'sys.claude-agents.metric': 'Tech / Ops / Biz / Product / Security / Legal',
+  'sys.claude-agents.metric': 'Multi-role AI copilot library',
   'sys.modelhub.metric':      'Multi-tier training resource scheduling',
   'sys.anemone.metric':       'Billing + Routing',
   'sys.abacus.metric':        'Benchmarked against Tianxin CPA',
@@ -337,7 +337,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.18 · Last updated 2026/05/21',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.19 · Last updated 2026/05/21',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
