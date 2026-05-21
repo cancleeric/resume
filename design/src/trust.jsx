@@ -69,7 +69,8 @@ function TrustBar() {
           font-family: var(--font-mono);
           font-size: 10px;
           letter-spacing: 0.14em;
-          color: var(--text-low);
+          /* --text-mid 而非 --text-low：10px 信任指標英文副標，--text-low 深版對比僅 ~3.6:1 未達 AA */
+          color: var(--text-mid);
         }
       `}</style>
       <div className="container">

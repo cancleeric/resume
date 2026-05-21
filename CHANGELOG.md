@@ -4,6 +4,12 @@
 
 ---
 
+## v7.32 — 2026-05-21
+
+- 設計版（深/亮）修對比：信任要件區指標英文副標 `.trust-cell .en`（YEARS / PROD SYS 等，10px mono）原用 `--text-low`，深版對比僅 ~3.6:1 未達 AA。改用 `--text-mid`
+
+---
+
 ## v7.31 — 2026-05-21
 
 - 設計版（深/亮）修對比：CTA 區聯絡資訊標籤 `.cta-meta-row .k`（PHONE / EMAIL / LIVE PIPELINE，10px mono）原用 `--text-low`，兩版對比僅 ~3:1 未達 AA。改用 `--text-mid`
