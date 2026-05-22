@@ -331,9 +331,17 @@ a:hover { text-decoration: underline; }
 /* Rate grid */
 .rate-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  /* 4 張卡：預設 2×2，避免筆電寬度時 auto-fit 排成 3+1 的孤兒卡 */
+  grid-template-columns: repeat(2, 1fr);
   gap: 14px;
   margin: 16px 0 16px;
+}
+/* main 欄夠寬（視窗 ≥1280px）才 4 卡一排 */
+@media (min-width: 1280px) {
+  .rate-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 560px) {
+  .rate-grid { grid-template-columns: 1fr; }
 }
 .rate-card {
   padding: 20px 20px 18px;
