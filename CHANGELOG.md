@@ -4,6 +4,12 @@
 
 ---
 
+## v7.76 — 2026-05-22
+
+- 修正自動優化迴圈節奏文案：loop 已從每 30 分鐘改為每小時一輪，meta-live 頂部 banner 與 auto-feed-note 的「每 30 分鐘自動跑一輪 / auto-runs every 30 minutes」改為「每小時 / hourly」。三版一致：resume.html（zh+en）+ design index/index-light + dict-zh/en。諮詢用的「免費 30 分鐘」字樣不受影響。
+
+---
+
 ## v7.75 — 2026-05-22
 
 - loop-opt(設計版)：修 TrustBar 信任格平板破格。6 格信任指標在 ≤980px 斷點原為 `repeat(4)`，6 不被 4 整除 → 平板（iPad 直式 768–834px）出現 4+2 破格、第二排兩個空格留白在邊框內。改 `repeat(3)` → 整齊 3+3 兩排。trust.jsx CSS 一行。

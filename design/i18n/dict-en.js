@@ -19,7 +19,7 @@ window.DICT_EN = {
 
   // ── meta-live banner ─────────────────────────────────────────────────────
   // [R] from I18N
-  'metalive.head':       'This page is <strong>100% developed &amp; maintained by LLM</strong>&nbsp;·&nbsp;Zero manual code edits&nbsp;·&nbsp;Auto-runs every 30 minutes&nbsp;·&nbsp;What you see is <strong>"Automated Software Delivery" live in action</strong>',
+  'metalive.head':       'This page is <strong>100% developed &amp; maintained by LLM</strong>&nbsp;·&nbsp;Zero manual code edits&nbsp;·&nbsp;Auto-runs hourly&nbsp;·&nbsp;What you see is <strong>"Automated Software Delivery" live in action</strong>',
   'metalive.step.01':    '① Page loads',
   'metalive.step.02':    '② AI reviews weakest point',
   'metalive.step.03':    '③ Browser automation live test',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.75 · Last updated 2026/05/22',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.76 · Last updated 2026/05/22',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
