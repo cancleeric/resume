@@ -235,7 +235,7 @@ window.DICT_ZH = {
   // sys metric keys
   'sys.squid.metric':         '多租戶 + 嚴格狀態機',
   'sys.manta.metric':         'v2.64 生產中',
-  'sys.aicad.metric':         '多視圖分割 + 文字辨識',
+  'sys.aicad.metric':         '23 天 · 214 commits 到生產',
   'sys.fiona-pipeline.metric':'多平台感知',
   'sys.claude-agents.metric': '多角色 AI 副手庫',
   'sys.modelhub.metric':      '多層訓練資源排程',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.66 · 最後更新 2026/05/22 10:49',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.67 · 最後更新 2026/05/22 12:25',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

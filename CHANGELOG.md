@@ -4,6 +4,12 @@
 
 ---
 
+## v7.67 — 2026-05-22
+
+- AI-CAD 加上 git 可查的真實開發工期：把抽象的速度宣稱換成可查證數據——AI-CAD 工程圖辨識 SaaS「首 commit 到生產 23 天、214 commits」（Gitea 權威數據：2026-03-01→03-24）。三版（標準版 deliverable item + 設計版 sys.aicad.metric）一致。這是把「20×」從口號往「可查證」推的第一個實例
+
+---
+
 ## v7.66 — 2026-05-22
 
 - 設計版·亮 secure-note eyebrow 對比補 AA：v7.62 SecureNote 的「04 / SECURITY VALIDATION」小標用 var(--orange) #FF6B35，亮版白底僅 ~2.8:1。亮版補 override 改 #B14A0E，與既有 hero 深橘修補一致（前兩輪 deferred 的項目）

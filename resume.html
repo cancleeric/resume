@@ -185,7 +185,7 @@
       <ul class="auto-feed-list" id="auto-feed-list"></ul>
     </section>
 
-    <p class="sidebar__foot">v7.66 · 2026/05/22 10:49</p>
+    <p class="sidebar__foot">v7.67 · 2026/05/22 12:25</p>
   </aside>
 
   <main class="main">
@@ -380,7 +380,7 @@
     <ul class="deliverable-list deliverable-list--ai">
       <li id="squid" data-i18n="item-squid"><strong>Squid — 集團專案 / 工單管理 SaaS</strong>　多租戶需求管理平台，AI Agent 工單驅動開發的底層；LIDS OAuth2 SSO + JWT 雙認證；含 Python / JS 雙官方 SDK</li>
       <li id="manta" data-i18n="item-manta"><strong>Manta — AI Workflow Canvas 編排平台 v2.64</strong>　多租戶 AI workflow 編排；沙盒執行 + Webhook 觸發 + 實時監控；對標 Coze，生產中</li>
-      <li id="aicad" data-i18n="item-aicad"><strong>AICAD — AI 工程圖辨識 SaaS</strong>　P&amp;ID / 工程圖 → DXF 自動轉換；經 Anemone 中繼 Claude Vision；多視圖分割 + 文字辨識，生產中</li>
+      <li id="aicad" data-i18n="item-aicad"><strong>AICAD — AI 工程圖辨識 SaaS</strong>　P&amp;ID / 工程圖 → DXF 自動轉換；經 Anemone 中繼 Claude Vision；多視圖分割 + 文字辨識。<strong>首 commit 到生產 23 天、214 commits</strong>（git 紀錄可查）</li>
       <li id="fiona-radar" data-i18n="item-fiona-radar"><strong>fiona-radar — AI 影片洞察 v1.1.0</strong>　YouTube 自動抓取 → 結構化洞察；重點 / 商業洞察 / 實體標註；變現方向標註</li>
       <li id="fiona-pipeline" data-i18n="item-fiona-pipeline"><strong>fiona-pipeline — AI 腳本生成與推播</strong>　接收 fiona-radar 洞察 → 生成腳本 → 自動推播；多平台感知；n8n webhook 整合</li>
       <li id="brain" data-i18n="item-brain"><strong>颶核智腦平台 — 集團 AI 智腦平台</strong>　Anemone 電話總機（純中繼）+ Brain Cloud 多租戶管理 + Brain LLM Gateway 計費中心；各產品 AI 客服經此對外服務</li>
@@ -536,7 +536,7 @@
     </div>
 
     <hr />
-    <p><em data-i18n="footer-note">v7.66 · 最後更新 2026/05/22 10:49　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
+    <p><em data-i18n="footer-note">v7.67 · 最後更新 2026/05/22 12:25　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
 
   </main>
 
@@ -548,7 +548,7 @@
     · <a href="tel:+886921107206">📞 0921-107-206</a>
     · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" data-i18n="footer-pipeline">🌪️ LF Pipeline 線上作品 ↗</a>
   </p>
-  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.66</p>
+  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.67</p>
 </footer>
 
 <script>
@@ -749,7 +749,7 @@ const I18N = {
   'cat-ai':   '🤖 AI / Agent Product Lines',
   'item-squid':       '<strong>Squid — Group Project / Ticket Management SaaS</strong>&nbsp; Multi-tenant requirements platform, foundation for AI Agent ticket-driven development; LIDS OAuth2 SSO + JWT dual auth; official Python / JS SDKs',
   'item-manta':       '<strong>Manta — AI Workflow Canvas Platform v2.64</strong>&nbsp; Multi-tenant AI workflow orchestration; sandbox execution + Webhook trigger + real-time monitoring; Coze alternative, in production',
-  'item-aicad':       '<strong>AICAD — AI Engineering Drawing Recognition SaaS</strong>&nbsp; P&amp;ID / engineering drawing → DXF auto-conversion; Claude Vision relayed via Anemone; multi-view segmentation + OCR, in production',
+  'item-aicad':       '<strong>AICAD — AI Engineering Drawing Recognition SaaS</strong>&nbsp; P&amp;ID / engineering drawing → DXF auto-conversion; Claude Vision relayed via Anemone; multi-view segmentation + OCR. <strong>First commit to production in 23 days, 214 commits</strong> (git history verifiable)',
   'item-fiona-radar': '<strong>fiona-radar — AI Video Insights v1.1.0</strong>&nbsp; Auto YouTube ingestion → structured insights; key points / business insights / entity tagging; monetization-direction tagging',
   'item-fiona-pipeline':'<strong>fiona-pipeline — AI Script Generation &amp; Publishing</strong>&nbsp; Receives fiona-radar insights → generates scripts → auto-publishes; multi-platform aware; n8n webhook integration',
   'item-brain':       '<strong>HurricaneCore Brain Platform — Group AI Platform</strong>&nbsp; Anemone relay + Brain Cloud multi-tenant management + Brain LLM Gateway with billing; powers AI customer service across group products',
@@ -840,10 +840,10 @@ const I18N = {
   'contact-note':         'Free 30-min consultation · Reply within 24 hours · No pressure — if it\'s not a fit, we\'ll say so',
 
   // footer
-  'footer-note':    'v7.66 · Last updated 2026/05/22 10:49 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
+  'footer-note':    'v7.67 · Last updated 2026/05/22 12:25 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
   'footer-consult': '📧 Hire Us',
   'footer-pipeline':'🌪️ LF Pipeline — Live Portfolio ↗',
-  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.66',
+  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.67',
 };
 
 // ── Snapshot Chinese originals once DOM is ready ──────────────────────────

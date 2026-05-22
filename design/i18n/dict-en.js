@@ -240,7 +240,7 @@ window.DICT_EN = {
   // sys metric keys
   'sys.squid.metric':         'Multi-tenant + strict state machine',
   'sys.manta.metric':         'v2.64 in production',
-  'sys.aicad.metric':         'Multi-view split + OCR',
+  'sys.aicad.metric':         '23 days · 214 commits to prod',
   'sys.fiona-pipeline.metric':'Multi-platform aware',
   'sys.claude-agents.metric': 'Multi-role AI copilot library',
   'sys.modelhub.metric':      'Multi-tier training resource scheduling',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.66 · Last updated 2026/05/22',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.67 · Last updated 2026/05/22',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
