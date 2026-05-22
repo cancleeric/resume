@@ -4,6 +4,12 @@
 
 ---
 
+## v7.65 — 2026-05-22
+
+- 設計版 secure-note 補手機斷點：v7.62 新增的 SecureNote 元件 `<style>` 無手機斷點，.secure-note 在手機上 padding 30/34px 偏擠（375px 內容僅 ~243px）。加 ≤560px 時 padding 收為 22/20px，與其他設計元件的手機處理一致
+
+---
+
 ## v7.64 — 2026-05-22
 
 - 標準版 secure-note 標題 CSS 修正：v7.62 的 .secure-note__title（h3）規格打不過全站 .main h3，誤吃到左邊框＋漸層底＋28px 留白，跟 callout 自己的左框疊成雙框。提高 specificity 並 reset 那些裝飾，標題回歸 callout 內正常樣式

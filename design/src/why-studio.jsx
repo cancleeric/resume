@@ -295,6 +295,7 @@ function SecureNote() {
           color: var(--orange); font-size: 12px; top: 2px;
         }
         .secure-note__list strong { color: var(--text-hi); font-weight: 600; }
+        @media (max-width: 560px) { .secure-note { padding: 22px 20px; } }
       `}</style>
       <div className="container">
         <div className="secure-note">
