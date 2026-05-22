@@ -4,6 +4,12 @@
 
 ---
 
+## v7.64 — 2026-05-22
+
+- 標準版 secure-note 標題 CSS 修正：v7.62 的 .secure-note__title（h3）規格打不過全站 .main h3，誤吃到左邊框＋漸層底＋28px 留白，跟 callout 自己的左框疊成雙框。提高 specificity 並 reset 那些裝飾，標題回歸 callout 內正常樣式
+
+---
+
 ## v7.63 — 2026-05-22
 
 - 設計版·亮 區塊小標對比修正：.section-label（每個區塊的橘色 eyebrow，如「05 / PRICING」）原用 var(--orange) #FF6B35，亮版白底僅 ~2.8:1 未達 AA。改用 #B14A0E（~5.5:1）。這是全站每區塊共用的元素，先前橘字 AA 修補漏掉的一處
