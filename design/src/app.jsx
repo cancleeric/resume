@@ -2,9 +2,6 @@
 
 function Nav({ onMenuOpen }) {
   const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-  const otherHref = isLight ? 'index.html' : 'index-light.html';
-  const switcherIcon = isLight ? '☾' : '☀';
-  const switcherLabel = isLight ? 'Dark' : 'Light';
   return (
     <header className="nav">
       <div className="nav-inner">
@@ -29,10 +26,14 @@ function Nav({ onMenuOpen }) {
           <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" className="lf nav-link-text" style={{ color: 'var(--cyan)', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
             LF Pipeline <ArrowUpRight size={12}/>
           </a>
-          <a href={otherHref} className="theme-switch" title={`Switch to ${switcherLabel} theme`} aria-label={`Switch to ${switcherLabel} theme`}>
-            <span className="theme-icon">{switcherIcon}</span>
-            <span className="theme-label">{switcherLabel}</span>
-          </a>
+          <span className="ver-switch" role="navigation" aria-label="版面切換 / Switch layout">
+            <a href="../resume.html">{t('vs.standard')}</a>
+            <a href="index.html" className={isLight ? '' : 'active'}>{t('vs.design.dark')}</a>
+            <a href="index-light.html" className={isLight ? 'active' : ''}>{t('vs.design.light')}</a>
+          </span>
+          <button className="vs-lang-btn" onClick={() => window.setDesignLang(window.LANG === 'en' ? 'zh' : 'en')} aria-label="切換語言 / Switch language">
+            {window.LANG === 'en' ? '中文' : 'EN'}
+          </button>
           <a href="#cta" className="cta btn btn-primary btn-sm nav-cta" style={{ marginLeft: 4 }}>
             {t('nav.cta')}
           </a>

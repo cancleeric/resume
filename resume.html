@@ -70,15 +70,6 @@
 </head>
 <body>
 
-<div class="vs-switcher" role="navigation" aria-label="版面切換">
-  <span class="vs-switcher__label" data-i18n="vs-label">版面</span>
-  <a href="resume.html" class="active" data-i18n="vs-standard">標準</a>
-  <a href="design/index.html" data-i18n="vs-design-dark">設計 · 深</a>
-  <a href="design/index-light.html" data-i18n="vs-design-light">設計 · 亮</a>
-  <span class="vs-switcher__divider"></span>
-  <button class="vs-lang-btn" id="btn-lang" onclick="toggleLang()" aria-label="切換語言 / Switch language">EN</button>
-</div>
-
 <div class="sticky-header">
 <div class="meta-live">
   <div class="meta-live__head">
@@ -114,6 +105,12 @@
       <a href="resume.html#近期交付案例-recent-deliveries" data-i18n="nav-cases">交付案例</a>
       <a href="resume.html#常見問題-faq" data-i18n="nav-faq">FAQ</a>
       <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" class="topbar__nav--ext">LF Pipeline ↗</a>
+      <span class="ver-switch" role="navigation" aria-label="版面切換 / Switch layout">
+        <a href="resume.html" class="active" data-i18n="vs-standard">標準</a>
+        <a href="design/index.html" data-i18n="vs-design-dark">設計 · 深</a>
+        <a href="design/index-light.html" data-i18n="vs-design-light">設計 · 亮</a>
+      </span>
+      <button class="vs-lang-btn" id="btn-lang" onclick="toggleLang()" aria-label="切換語言 / Switch language">EN</button>
       <a href="resume.html#預約諮詢-book-consultation" class="topbar__nav--cta" data-i18n="nav-book">預約諮詢</a>
       <button class="topbar__btn" onclick="window.print()" title="存為 PDF / 列印">📥 PDF</button>
     </nav>
@@ -188,7 +185,7 @@
       <ul class="auto-feed-list" id="auto-feed-list"></ul>
     </section>
 
-    <p class="sidebar__foot">v7.57 · 2026/05/22 07:51</p>
+    <p class="sidebar__foot">v7.58 · 2026/05/22 08:16</p>
   </aside>
 
   <main class="main">
@@ -204,6 +201,13 @@
       <a class="lede-cta__btn" href="#預約諮詢-book-consultation" data-i18n="lede-cta-btn">預約免費 30 分鐘諮詢 →</a>
       <span class="lede-cta__note" data-i18n="lede-cta-note">不綁約 · 不 fit 直接說，不浪費你時間</span>
     </div>
+
+    <p class="ver-invite">
+      <span data-i18n="ver-invite-text">想看設計實力？這頁另有兩個設計版本：</span>
+      <a href="design/index.html" data-i18n="vs-design-dark">設計 · 深</a>
+      <span class="ver-invite__sep" aria-hidden="true">·</span>
+      <a href="design/index-light.html" data-i18n="vs-design-light">設計 · 亮</a>
+    </p>
 
     <a class="ai-hero" href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener">
       <div class="ai-hero__icon">🌪️</div>
@@ -510,7 +514,7 @@
     </div>
 
     <hr />
-    <p><em data-i18n="footer-note">v7.57 · 最後更新 2026/05/22 07:51　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
+    <p><em data-i18n="footer-note">v7.58 · 最後更新 2026/05/22 08:16　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
 
   </main>
 
@@ -522,7 +526,7 @@
     · <a href="tel:+886921107206">📞 0921-107-206</a>
     · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" data-i18n="footer-pipeline">🌪️ LF Pipeline 線上作品 ↗</a>
   </p>
-  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.57</p>
+  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.58</p>
 </footer>
 
 <script>
@@ -556,11 +560,11 @@
 //  Key = data-i18n value   Value = English innerHTML
 // ============================================================
 const I18N = {
-  // vs-switcher bar
-  'vs-label':        'View',
+  // version switcher (in topbar)
   'vs-standard':     'Standard',
   'vs-design-dark':  'Design · Dark',
   'vs-design-light': 'Design · Light',
+  'ver-invite-text': 'Want to see the design work? This page also ships in two design versions:',
 
   // meta-live banner
   'meta-live-head':  'This page is <strong>100% developed &amp; maintained by LLM</strong>&nbsp;·&nbsp;Zero manual code edits&nbsp;·&nbsp;Auto-runs every 30 minutes&nbsp;·&nbsp;What you see is <strong>"Automated Software Delivery" live in action</strong>',
@@ -799,10 +803,10 @@ const I18N = {
   'contact-note':         'Free 30-min consultation · Reply within 24 hours · No pressure — if it\'s not a fit, we\'ll say so',
 
   // footer
-  'footer-note':    'v7.57 · Last updated 2026/05/22 07:51 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
+  'footer-note':    'v7.58 · Last updated 2026/05/22 08:16 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
   'footer-consult': '📧 Hire Us',
   'footer-pipeline':'🌪️ LF Pipeline — Live Portfolio ↗',
-  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.57',
+  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.58',
 };
 
 // ── Snapshot Chinese originals once DOM is ready ──────────────────────────

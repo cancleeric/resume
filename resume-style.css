@@ -46,55 +46,44 @@ a { color: var(--brand-2); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* ============================================================
-   VERSION SWITCHER — 標準 / 設計深 / 設計亮 三版切換
+   VERSION SWITCHER — 標準 / 設計深 / 設計亮（合入 topbar nav）
    ============================================================ */
-.vs-switcher {
-  display: flex;
-  justify-content: flex-end;
+.ver-switch {
+  display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 5px 18px;
-  background: #0a0f1f;
-  font-size: 11.5px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  border-bottom: 1px solid rgba(255,255,255,.06);
+  gap: 2px;
+  padding: 2px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 6px;
 }
-.vs-switcher__label {
-  color: rgba(255, 255, 255, 0.55);
-  padding-right: 4px;
-}
-.vs-switcher a {
-  color: rgba(255, 255, 255, 0.7);
-  padding: 3px 10px;
+.ver-switch a {
+  color: #cbd5e1;
+  padding: 4px 9px;
   border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
   transition: all .15s;
+}
+.ver-switch a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
   text-decoration: none;
 }
-.vs-switcher a:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08);
-}
-.vs-switcher a.active {
-  background: var(--accent);
-  color: #fff;
+.ver-switch a.active {
+  background: #fff;
+  color: var(--brand);
   pointer-events: none;
 }
-/* Language switcher divider + buttons */
-.vs-switcher__divider {
-  width: 1px;
-  height: 14px;
-  background: rgba(255,255,255,.18);
-  margin: 0 6px;
-  flex-shrink: 0;
-}
+/* Language switch button (topbar) */
 .vs-lang-btn {
   background: transparent;
-  color: rgba(255,255,255,.65);
-  border: 1px solid rgba(255,255,255,.18);
+  color: rgba(255,255,255,.78);
+  border: 1px solid rgba(255,255,255,.22);
   border-radius: 4px;
-  padding: 2px 9px;
-  font-size: 11.5px;
+  padding: 4px 10px;
+  font-size: 12px;
   font-weight: 600;
   font-family: inherit;
   letter-spacing: 0.04em;
@@ -103,7 +92,7 @@ a:hover { text-decoration: underline; }
 }
 .vs-lang-btn:hover {
   color: #fff;
-  border-color: rgba(255,255,255,.4);
+  border-color: rgba(255,255,255,.45);
   background: rgba(255,255,255,.08);
 }
 .vs-lang-btn--active {
@@ -112,12 +101,7 @@ a:hover { text-decoration: underline; }
   border-color: var(--brand-2);
   pointer-events: none;
 }
-@media print { .vs-switcher { display: none !important; } }
-@media (max-width: 600px) {
-  .vs-switcher { padding: 4px 10px; font-size: 10.5px; }
-  .vs-switcher__label { display: none; }
-  .vs-switcher__divider { display: none; }
-}
+@media print { .ver-switch, .vs-lang-btn { display: none !important; } }
 
 /* ============================================================
    META LIVE BANNER — 「這頁本身就是開發流程自動化的 live demo」
@@ -264,6 +248,20 @@ a:hover { text-decoration: underline; }
   font-size: 13px;
   color: var(--muted);
 }
+
+/* hero 邀請看設計版 */
+.ver-invite {
+  margin: -10px 0 24px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.ver-invite a {
+  color: var(--brand-2);
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+}
+.ver-invite a:hover { border-bottom-color: currentColor; text-decoration: none; }
+.ver-invite__sep { color: var(--line-2); margin: 0 5px; }
 
 /* Service grid */
 .service-grid {
