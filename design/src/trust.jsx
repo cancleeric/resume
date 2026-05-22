@@ -18,7 +18,7 @@ function TrustBar() {
           scroll-margin-top: 84px;
           border-top: 1px solid var(--border-subtle);
           border-bottom: 1px solid var(--border-subtle);
-          background: linear-gradient(180deg, rgba(0,0,0,0.2), transparent);
+          background: linear-gradient(180deg, var(--trust-fade), transparent);
         }
         .trust-label {
           display: flex; align-items: center; justify-content: center; gap: 12px;

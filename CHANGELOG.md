@@ -4,6 +4,12 @@
 
 ---
 
+## v7.79 — 2026-05-22
+
+- loop-opt(設計版·亮)：修 TrustBar 頂部漸層在亮版糊成髒影。`.trust-section` 背景硬寫 `linear-gradient(180deg, rgba(0,0,0,0.2), transparent)`——此值為深版設計，套在白底亮版會在信任區帶頂端染一道 20% 黑灰煙燻。改抽 `--trust-fade` token：深版維持 `rgba(0,0,0,.2)`（外觀不變、零 regression），亮版改 `rgba(15,18,30,.035)` 極淡灰 recess。
+
+---
+
 ## v7.78 — 2026-05-22
 
 - 修 meta-live banner 分隔符 regression：v7.76 改「30 分鐘→每小時」時誤刪了一個全形空格，造成「每小時自動跑一輪　·您正在看的」的「·」緊貼「您」（其餘分隔皆為 `　·　`）。四版（resume.html + design index/index-light + dict-zh）補回全形空格。
