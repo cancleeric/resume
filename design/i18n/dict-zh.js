@@ -205,7 +205,7 @@ window.DICT_ZH = {
 
   // ── systems section ───────────────────────────────────────────────────────
   'systems.section.title':    '30+ 生產系統、<br/>整個集團跑在上面。',
-  'systems.section.sub':      '不是 portfolio 圖、不是 demo。是每天有真實 traffic、真實營收、真實 SLO 的生產系統。',
+  'systems.section.sub':      '不是 portfolio 圖、不是 demo。是每天有真實 traffic、真實營收、真實 SLO 的生產系統 —— 且每一個都由 AI 自主開發與維運：人類定方向、AI 跑交付。',
   'systems.tab.ai.label':     'AI / Agent 產品線',
   'systems.tab.saas.label':   '對外 SaaS',
   'systems.tab.infra.label':  '集團基礎建設',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.71 · 最後更新 2026/05/22 13:21',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.72 · 最後更新 2026/05/22 13:58',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

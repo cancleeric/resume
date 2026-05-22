@@ -212,7 +212,7 @@ window.DICT_EN = {
   // ── systems ───────────────────────────────────────────────────────────────
   // [R] from I18N h2-deliverables / deliverables-intro
   'systems.section.title':    '30+ Production Systems,<br/>the whole group runs on them.',
-  'systems.section.sub':      'Not portfolio mockups, not demos. Real traffic, real revenue, real SLOs — every day.',
+  'systems.section.sub':      'Not portfolio mockups, not demos. Real traffic, real revenue, real SLOs — every day. Each system is developed and maintained autonomously by AI: humans set direction, AI ships delivery.',
   'systems.tab.ai.label':     'AI / Agent Products',
   'systems.tab.saas.label':   'External SaaS',
   'systems.tab.infra.label':  'Group Infrastructure',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.71 · Last updated 2026/05/22',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.72 · Last updated 2026/05/22',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
