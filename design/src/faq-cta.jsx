@@ -203,7 +203,7 @@ function CTA() {
                   {t('cta.primary')}
                   <ArrowRight />
                 </a>
-                <a className="btn btn-ghost" href="mailto:cancleeric@gmail.com">
+                <a className="btn btn-ghost" href="mailto:cancleeric@gmail.com?subject=%5B%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4">
                   {t('cta.secondary')}
                   <Mail />
                 </a>
