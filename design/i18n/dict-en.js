@@ -247,8 +247,8 @@ window.DICT_EN = {
   'sys.anemone.metric':       'Reverse-conn relay',
   'sys.abacus.metric':        'Benchmarked against Tianxin CPA',
   'sys.tianji.metric':        'Under HurricaneEdge',
-  'sys.dagongzai.metric':     'Multi-platform crawler + ML salary estimation',
-  'sys.gyre.metric':          'R5 freeze, pending launch',
+  'sys.dagongzai.metric':     '28 days · 51 commits to prod',
+  'sys.gyre.metric':          '36 days · 111 commits · R5 freeze',
   'sys.lids.metric':          '9+ systems integrated',
   'sys.tentacle.metric':      'Cross-group shared',
   'sys.headscale.metric':     'Dynamic IP management',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.67 · Last updated 2026/05/22',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.68 · Last updated 2026/05/22',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

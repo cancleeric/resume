@@ -242,8 +242,8 @@ window.DICT_ZH = {
   'sys.anemone.metric':       '反向連線中繼',
   'sys.abacus.metric':        '對標天心 CPA',
   'sys.tianji.metric':        'HurricaneEdge 旗下',
-  'sys.dagongzai.metric':     '多平台爬蟲 + ML 薪資推算',
-  'sys.gyre.metric':          'R5 freeze 待上線',
+  'sys.dagongzai.metric':     '28 天 · 51 commits 到生產',
+  'sys.gyre.metric':          '36 天 · 111 commits · R5 freeze',
   'sys.lids.metric':          '9+ 系統接入',
   'sys.tentacle.metric':      '跨集團共用',
   'sys.headscale.metric':     '動態 IP 管理',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.67 · 最後更新 2026/05/22 12:25',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.68 · 最後更新 2026/05/22 12:28',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

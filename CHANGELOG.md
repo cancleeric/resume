@@ -4,6 +4,12 @@
 
 ---
 
+## v7.68 — 2026-05-22
+
+- 再補 2 個產品的 git 可查工期（延續 v7.67）：打工仔 DaGongZai「首 commit 到生產 28 天、51 commits」、Gyre「首 commit 起 36 天、111 commits」。數據走 mDNS 連開發機 Gitea 確認（dagongzai 2026-03-17→04-14、gyre 04-13→05-19）。三版 deliverable item + 設計版 systems metric 一致
+
+---
+
 ## v7.67 — 2026-05-22
 
 - AI-CAD 加上 git 可查的真實開發工期：把抽象的速度宣稱換成可查證數據——AI-CAD 工程圖辨識 SaaS「首 commit 到生產 23 天、214 commits」（Gitea 權威數據：2026-03-01→03-24）。三版（標準版 deliverable item + 設計版 sys.aicad.metric）一致。這是把「20×」從口號往「可查證」推的第一個實例
