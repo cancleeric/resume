@@ -57,6 +57,8 @@ function Pricing() {
       fitForKey: 'pricing.tier.02.fit',
       ctaKey: 'pricing.tier.02.cta',
       tone: 'highlight',
+      // 旗艦方案 CTA 帶意圖直連 mailto（主旨/正文預填月費 Retainer），對齊標準版 v7.80
+      href: 'mailto:cancleeric@gmail.com?subject=%E3%80%90%E9%A0%90%E7%B4%84%E6%9C%88%E8%B2%BB%20Retainer%E3%80%91HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%0A%0A%E6%88%91%E5%BE%9E%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%9A%84%E7%B6%B2%E9%A0%81%E6%83%B3%E9%A0%90%E7%B4%84%E3%80%8C%E6%9C%88%E8%B2%BB%20Retainer%E3%80%8D%E6%96%B9%E6%A1%88%EF%BC%88US%24%2010%2C000%20/%20%E6%9C%88%EF%BC%89%EF%BC%9A%0A%0A%E3%80%90%E7%9B%AE%E5%89%8D%E5%9C%98%E9%9A%8A%20/%20%E5%B0%88%E6%A1%88%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E6%9C%80%E6%83%B3%E4%BA%A4%E7%B5%A6%E8%87%AA%E5%8B%95%E5%8C%96%E7%9A%84%E7%92%B0%E7%AF%80%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E8%A8%88%E5%90%88%E4%BD%9C%E8%B5%B7%E5%A7%8B%E6%99%82%E9%96%93%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A%0A%E8%AC%9D%E8%AC%9D%EF%BC%81%0A',
     },
     {
       key: 'advisory',

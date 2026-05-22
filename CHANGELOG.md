@@ -4,6 +4,12 @@
 
 ---
 
+## v7.84 — 2026-05-23
+
+- loop-opt(設計版·深)：設計版定價卡旗艦方案 CTA 降摩擦。`pricing.jsx` 四張卡只有 healthcheck 入口卡帶意圖預填 mailto，retainer（RETAINER · FLAGSHIP 旗艦推薦）卻 fallback 到通用 `#cta` 錨點 —— 最想成交的卡摩擦最高。補上與標準版 v7.80 相同的預填 mailto（主旨【預約月費 Retainer】+ 4 欄正文）。改共用元件 pricing.jsx，深/亮兩版同時生效，三版 CTA 機制對齊。
+
+---
+
 ## v7.83 — 2026-05-23
 
 - loop-opt(標準版)：修英文版區塊標題疊字。中文 h2 是雙語格式「中文 — English」，切英文時 7 個 en 字典值卻是重複疊字（Services — Services、Tech Stack — Tech Stack、Why This Studio…），英文訪客看到壞掉的疊字標題。改為單一乾淨英文詞。`How We Work — Pricing`、`FAQ — Frequently Asked Questions` 為兩個不同詞，正常保留。
