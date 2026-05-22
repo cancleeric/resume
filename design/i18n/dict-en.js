@@ -125,6 +125,12 @@ window.DICT_EN = {
   'why.studio.row.05':   'Instant: Principal is the decision-maker; AI runs risk pre-checks',
   'why.studio.row.06':   '6 subsidiaries, 30+ production systems, 1 year proving out 20× output',
 
+  // ── security validation block ─────────────────────────────────────────────
+  'secure.title':  'Automated output, automated security validation',
+  'secure.lead':   'The real risk of automated development isn\'t "can\'t build it" — it\'s "built too fast, too many holes." So the "review" stage of this pipeline is not for show:',
+  'secure.li1':    '<strong>A self-built security validation agent</strong>: not just static source scanning — it actively validates the running system (CVE checks, vulnerability detection, behavioral verification)',
+  'secure.li2':    '<strong>Quantified review gates</strong>: fails the gate, doesn\'t ship to deploy',
+  'secure.li3':    '<strong>Deliverables include the scan &amp; validation log</strong>: not "fast but loose" — "fast, with an agent actively watching for holes"',
   // ── services ─────────────────────────────────────────────────────────────
   'svc.section.title':   'Eight services.<br/>The whole pipeline covered.',
   'svc.section.sub':     'Core is Automated Software Delivery — the rest extends from it. Every category has been validated in our own production environment.',
@@ -348,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.61 · Last updated 2026/05/22',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.62 · Last updated 2026/05/22',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

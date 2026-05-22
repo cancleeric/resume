@@ -254,4 +254,62 @@ function WhyStudio() {
   );
 }
 
-Object.assign(window, { WhyStudio });
+// 安全驗收信任區塊 — 正面處理「自動化＝洞多」異議
+function SecureNote() {
+  return (
+    <section id="secure" className="section secure-section">
+      <style>{`
+        .secure-section { padding-top: 40px; }
+        .secure-note {
+          padding: 30px 34px;
+          background: var(--surface-1);
+          border: 1px solid var(--border);
+          border-left: 3px solid var(--orange);
+          border-radius: var(--r-md);
+        }
+        .secure-note__eyebrow {
+          font-family: var(--font-mono);
+          font-size: 11px; letter-spacing: 0.16em;
+          color: var(--orange); margin-bottom: 10px;
+        }
+        .secure-note__title {
+          font-family: var(--font-tc);
+          font-size: clamp(22px, 2.6vw, 30px);
+          font-weight: 600; letter-spacing: -0.02em;
+          color: var(--text-hi); margin-bottom: 12px;
+        }
+        .secure-note__lead {
+          font-family: var(--font-tc);
+          font-size: 15px; line-height: 1.7;
+          color: var(--text-mid); margin-bottom: 16px;
+        }
+        .secure-note__list { display: flex; flex-direction: column; gap: 9px; }
+        .secure-note__list li {
+          font-family: var(--font-tc);
+          font-size: 14px; line-height: 1.6;
+          color: var(--text-mid);
+          padding-left: 20px; position: relative;
+        }
+        .secure-note__list li::before {
+          content: "▸"; position: absolute; left: 0;
+          color: var(--orange); font-size: 12px; top: 2px;
+        }
+        .secure-note__list strong { color: var(--text-hi); font-weight: 600; }
+      `}</style>
+      <div className="container">
+        <div className="secure-note">
+          <div className="secure-note__eyebrow">04 / SECURITY VALIDATION</div>
+          <div className="secure-note__title">{t('secure.title')}</div>
+          <p className="secure-note__lead">{t('secure.lead')}</p>
+          <ul className="secure-note__list">
+            <li dangerouslySetInnerHTML={{ __html: t('secure.li1') }} />
+            <li dangerouslySetInnerHTML={{ __html: t('secure.li2') }} />
+            <li dangerouslySetInnerHTML={{ __html: t('secure.li3') }} />
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+Object.assign(window, { WhyStudio, SecureNote });

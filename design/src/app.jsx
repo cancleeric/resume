@@ -97,6 +97,7 @@ function StickyTOC() {
     { id: 'hero', label: 'HERO' },
     { id: 'trust', label: 'TRUST' },
     { id: 'why', label: 'WHY' },
+    { id: 'secure', label: 'SECURE' },
     { id: 'services', label: 'SERVICES' },
     { id: 'pricing', label: 'PRICING' },
     { id: 'systems', label: 'SYSTEMS' },
@@ -174,6 +175,7 @@ function App() {
         <Hero />
         <TrustBar />
         <WhyStudio />
+        <SecureNote />
         <Services />
         <Pricing />
         <Systems />

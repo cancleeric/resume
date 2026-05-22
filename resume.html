@@ -185,7 +185,7 @@
       <ul class="auto-feed-list" id="auto-feed-list"></ul>
     </section>
 
-    <p class="sidebar__foot">v7.61 · 2026/05/22 08:51</p>
+    <p class="sidebar__foot">v7.62 · 2026/05/22 09:20</p>
   </aside>
 
   <main class="main">
@@ -259,6 +259,16 @@
         我們<strong>最快 1–2 週上工</strong>，月費 US$10K（NT$ 32 萬），含負責人 + AI 副手團隊 + 自家工具與基礎建設復用，
         <strong>1 人成本買到 1 支隊伍</strong>。</p>
       </div>
+    </div>
+
+    <div class="secure-note">
+      <h3 class="secure-note__title">🛡 <span data-i18n="secure-title">自動化產出，安全也自動化驗收</span></h3>
+      <p class="secure-note__lead" data-i18n="secure-lead">自動化開發最該怕的不是「做不出來」，是「做太快、洞太多」。所以這套 pipeline 的「審查」不是擺設：</p>
+      <ul class="secure-note__list">
+        <li data-i18n="secure-li1"><strong>自建安全驗收 agent</strong>：不只靜態掃源碼，會主動對執行中的系統做驗收 —— CVE 比對、弱點偵測、行為驗證</li>
+        <li data-i18n="secure-li2"><strong>量化評審門檻</strong>：沒過門檻就不進部署</li>
+        <li data-i18n="secure-li3"><strong>交付物附掃描與驗收紀錄</strong>：不是「快但失控」，是「快、又有 agent 主動盯著洞」</li>
+      </ul>
     </div>
 
     <h2 id="服務項目-services" data-i18n="h2-services">服務項目 — Services</h2>
@@ -526,7 +536,7 @@
     </div>
 
     <hr />
-    <p><em data-i18n="footer-note">v7.61 · 最後更新 2026/05/22 08:51　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
+    <p><em data-i18n="footer-note">v7.62 · 最後更新 2026/05/22 09:20　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
 
   </main>
 
@@ -538,7 +548,7 @@
     · <a href="tel:+886921107206">📞 0921-107-206</a>
     · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" data-i18n="footer-pipeline">🌪️ LF Pipeline 線上作品 ↗</a>
   </p>
-  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.61</p>
+  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v7.62</p>
 </footer>
 
 <script>
@@ -667,6 +677,13 @@ const I18N = {
   'diff-freelancer': 'Solo freelancers often hit a wall when security, contracts, DB architecture, or deployment complexity kicks in. This studio pairs <strong>1 Principal + an AI copilot team</strong> for end-to-end coverage: <strong>a team\'s breadth with a solo operator\'s decision speed</strong>.',
   'diff-agency':    'Agencies charge a premium, layer on subcontractors, and move slowly. Here, <strong>the Principal writes the code directly</strong> — no account manager / PM / architect chain. <strong>Straight-talk decisions · replies within 24 hrs · invoice available</strong>.',
   'diff-inhouse':   'Hiring a senior architect takes <strong>6 months</strong> to ramp, with fully-loaded cost (salary + benefits + equipment + onboarding) around <strong>NT$300–400K/month</strong> — and that\'s one person. We <strong>start within 1–2 weeks</strong>, at US$10K/month (≈NT$320K), including the Principal + AI copilot team + proprietary tooling and infrastructure. <strong>One hire\'s cost, an entire team\'s output</strong>.',
+
+  // security validation note
+  'secure-title': 'Automated output, automated security validation',
+  'secure-lead':  'The real risk of automated development isn\'t "can\'t build it" — it\'s "built too fast, too many holes." So the "review" stage of this pipeline is not for show:',
+  'secure-li1':   '<strong>A self-built security validation agent</strong>: not just static source scanning — it actively validates the running system (CVE checks, vulnerability detection, behavioral verification)',
+  'secure-li2':   '<strong>Quantified review gates</strong>: fails the gate, doesn\'t ship to deploy',
+  'secure-li3':   '<strong>Deliverables include the scan & validation log</strong>: not "fast but loose" — "fast, with an agent actively watching for holes"',
 
   // services section
   'h2-services':      'Services — Services',
@@ -823,10 +840,10 @@ const I18N = {
   'contact-note':         'Free 30-min consultation · Reply within 24 hours · No pressure — if it\'s not a fit, we\'ll say so',
 
   // footer
-  'footer-note':    'v7.61 · Last updated 2026/05/22 08:51 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
+  'footer-note':    'v7.62 · Last updated 2026/05/22 09:20 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
   'footer-consult': '📧 Hire Us',
   'footer-pipeline':'🌪️ LF Pipeline — Live Portfolio ↗',
-  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.61',
+  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v7.62',
 };
 
 // ── Snapshot Chinese originals once DOM is ready ──────────────────────────

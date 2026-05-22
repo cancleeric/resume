@@ -499,6 +499,21 @@ a:hover { text-decoration: underline; }
 .diff-card p { font-size: 13.5px; line-height: 1.7; margin: 0; color: var(--text-2); }
 .diff-card strong { color: var(--text); }
 
+/* 安全驗收信任區塊 — 正面處理「自動化＝洞多」異議 */
+.secure-note {
+  margin: 4px 0 28px;
+  padding: 18px 22px;
+  background: var(--brand-soft);
+  border: 1px solid var(--line-2);
+  border-left: 4px solid var(--brand-2);
+  border-radius: 10px;
+}
+.secure-note__title { font-size: 16px; margin: 0 0 8px; color: var(--ink); }
+.secure-note__lead { font-size: 13.5px; line-height: 1.7; color: var(--ink-2); margin: 0 0 10px; }
+.secure-note__list { margin: 0; padding-left: 20px; }
+.secure-note__list li { font-size: 13.5px; line-height: 1.65; color: var(--ink-2); margin: 5px 0; }
+.secure-note__list strong { color: var(--ink); }
+
 /* Category headings */
 .cat-heading {
   margin: 24px 0 10px;
