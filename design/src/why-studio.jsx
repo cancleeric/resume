@@ -299,7 +299,7 @@ function SecureNote() {
       `}</style>
       <div className="container">
         <div className="secure-note">
-          <div className="secure-note__eyebrow">04 / SECURITY VALIDATION</div>
+          <div className="secure-note__eyebrow">SECURITY VALIDATION</div>
           <div className="secure-note__title">{t('secure.title')}</div>
           <p className="secure-note__lead">{t('secure.lead')}</p>
           <ul className="secure-note__list">

@@ -4,6 +4,12 @@
 
 ---
 
+## v7.77 — 2026-05-22
+
+- loop-opt(設計版)：修 section 編號撞號。SecureNote 的 eyebrow 原為「04 / SECURITY VALIDATION」，與 Services「04 / SERVICES」撞號（其餘 04→11 連續一致）。SecureNote 是 callout 註記框、非並列編號區塊，移除其編號改為純標籤「SECURITY VALIDATION」，不動其他 8 個區塊。
+
+---
+
 ## v7.76 — 2026-05-22
 
 - 修正自動優化迴圈節奏文案：loop 已從每 30 分鐘改為每小時一輪，meta-live 頂部 banner 與 auto-feed-note 的「每 30 分鐘自動跑一輪 / auto-runs every 30 minutes」改為「每小時 / hourly」。三版一致：resume.html（zh+en）+ design index/index-light + dict-zh/en。諮詢用的「免費 30 分鐘」字樣不受影響。
