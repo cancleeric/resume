@@ -4,6 +4,12 @@
 
 ---
 
+## v7.66 — 2026-05-22
+
+- 設計版·亮 secure-note eyebrow 對比補 AA：v7.62 SecureNote 的「04 / SECURITY VALIDATION」小標用 var(--orange) #FF6B35，亮版白底僅 ~2.8:1。亮版補 override 改 #B14A0E，與既有 hero 深橘修補一致（前兩輪 deferred 的項目）
+
+---
+
 ## v7.65 — 2026-05-22
 
 - 設計版 secure-note 補手機斷點：v7.62 新增的 SecureNote 元件 `<style>` 無手機斷點，.secure-note 在手機上 padding 30/34px 偏擠（375px 內容僅 ~243px）。加 ≤560px 時 padding 收為 22/20px，與其他設計元件的手機處理一致
