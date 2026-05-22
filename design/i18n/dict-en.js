@@ -3,11 +3,11 @@
 window.DICT_EN = {
 
   // ── meta / head ─────────────────────────────────────────────────────────
-  'meta.title':          'HurricaneSoft Ltd. — Automated Software Delivery · 20× Output',
+  'meta.title':          'HurricaneSoft Ltd. — Automated Software Delivery · 14+ Products in a Year',
   'meta.description':    'HurricaneSoft Ltd. — Automate the full delivery pipeline (spec → design → build → review → deploy → ops). One engineer carrying what used to take an entire team. AI integration is table stakes. Monthly retainer from US$10,000. Invoice available (Tax ID 80289779).',
   'og.title':            'HurricaneSoft Ltd. — Automated Software Delivery · One Engineer, Full Team Output',
   'og.description':      'Full pipeline automation validated across 30+ production systems. Monthly retainer US$10K, start within 1–2 weeks, invoice available.',
-  'twitter.title':       'HurricaneSoft Ltd. — Automated Software Delivery · 20× Output',
+  'twitter.title':       'HurricaneSoft Ltd. — Automated Software Delivery · 14+ Products in a Year',
   'twitter.description': 'One engineer carrying full team output · 30+ production systems · US$10K/month · Start within 1–2 weeks',
 
   // ── vs-switcher ──────────────────────────────────────────────────────────
@@ -57,7 +57,7 @@ window.DICT_EN = {
   'hero.h1_line1':       'Full-Team Output,',
   'hero.h1_line2':       'One Engineer.',
   'hero.sub':            'AI integration is table stakes — the real differentiator is <b style="color:var(--text-hi)">automating the entire delivery pipeline</b>: from spec to ops, every stage has AI copilots and automation toolchains in place.',
-  'hero.claim':          'A full year of validation: <b>20× output in the same time</b> — one person carrying what used to take an entire team. This delivery speed is available for your project now.',
+  'hero.claim':          'A full year of validation: <b>one person + AI copilots delivered 14+ in-house products, SaaS shipped to production in as little as 23 days</b> — carrying what used to take an entire team (≈20× by our own measure). This delivery speed is available for your project now.',
   'hero.cta.primary':    'Book a Free Consultation',
   'hero.cta.pipeline':   'See LF Pipeline live',
   'hero.cta.note':       'Free 30 min · No lock-in · Not a fit? We\'ll say so — no time wasted',
@@ -92,7 +92,7 @@ window.DICT_EN = {
 
   // ── why-studio ────────────────────────────────────────────────────────────
   'why.section.title':   'Why This Studio<br/>over a freelancer or agency.',
-  'why.section.sub':     'Same budget, same time. One Principal + AI copilot team takes ownership of the entire pipeline — delivering 20× more than conventional approaches.',
+  'why.section.sub':     'Same budget, same time. One Principal + AI copilot team takes ownership of the entire pipeline — 14+ in-house products in a year, SaaS to production in as little as 23 days (≈20× conventional approaches, by our own measure).',
   'why.comparison.head': '6 comparison dimensions',
   'why.row.01.label':    'Ownership',
   'why.row.02.label':    'Cost Structure',
@@ -123,7 +123,7 @@ window.DICT_EN = {
   'why.studio.row.03':   'Project-based: kick-off in 1–2 weeks; retainer: join anytime',
   'why.studio.row.04':   'Full pipeline: spec / design / build / review / deploy / ops',
   'why.studio.row.05':   'Instant: Principal is the decision-maker; AI runs risk pre-checks',
-  'why.studio.row.06':   '6 subsidiaries, 30+ production systems, 1 year proving out 20× output',
+  'why.studio.row.06':   '6 subsidiaries, 30+ production systems, 14+ in-house products delivered in one year (≈20× by our own measure)',
 
   // ── security validation block ─────────────────────────────────────────────
   'secure.title':  'Automated output, automated security validation',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.72 · Last updated 2026/05/22',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.73 · Last updated 2026/05/22',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

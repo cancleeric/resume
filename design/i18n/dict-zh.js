@@ -2,11 +2,11 @@
 window.DICT_ZH = {
 
   // ── meta / head ─────────────────────────────────────────────────────────
-  'meta.title':          '颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化接案 · 20× 產出',
+  'meta.title':          '颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化接案 · 一年交付 14+ 產品',
   'meta.description':    '颶風軟體有限公司（HurricaneSoft Ltd.）— 把整套開發流程自動化（規格→設計→實作→審查→部署→維運），一個人扛起以往需要整支團隊的產出。AI 整合是基本盤。月費 US$ 10,000，可開發票（統編 80289779）。',
   'og.title':            '颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化 · 一人扛整支團隊產出',
   'og.description':      '把規格→設計→實作→審查→部署→維運整條流程自動化，自家集團 30+ 生產系統驗證。月費 US$ 10K，最快 1–2 週上工，可開發票。',
-  'twitter.title':       '颶風軟體有限公司 — 開發流程自動化 · 20× 產出',
+  'twitter.title':       '颶風軟體有限公司 — 開發流程自動化 · 一年交付 14+ 產品',
   'twitter.description': '一個人扛起整支團隊的產出 · 30+ 生產系統實戰 · 月費 US$ 10K · 最快 1–2 週上工',
 
   // ── vs-switcher ──────────────────────────────────────────────────────────
@@ -53,7 +53,7 @@ window.DICT_ZH = {
   'hero.h1_line1':       '整支團隊的產出，',
   'hero.h1_line2':       '一個人交付。',
   'hero.sub':            'AI 整合只是基本盤。真正的差異，是把<b style="color:var(--text-hi)">整套開發流程自動化</b>——從規格到維運，每個環節都有 AI 副手 + 自動化工具鏈接管。',
-  'hero.claim':          '一年驗證下來：<b>同樣的時間做 20× 以上的事</b>、一個人扛起以往需要整支團隊的產出。這套交付速度，現在就能接上您的專案。',
+  'hero.claim':          '一年驗證下來：<b>一個人 + AI 副手交付 14+ 個自有產品、SaaS 0→生產最快 23 天</b>，扛起以往需要整支團隊的產出（體感約 20×）。這套交付速度，現在就能接上您的專案。',
   'hero.cta.primary':    '預約免費諮詢',
   'hero.cta.pipeline':   '進 LF Pipeline 看現場',
   'hero.cta.note':       '免費 30 分鐘 · 不綁約 · 不 fit 直接說，不浪費你時間',
@@ -83,7 +83,7 @@ window.DICT_ZH = {
 
   // ── why-studio section head ───────────────────────────────────────────────
   'why.section.title':   '為什麼選工作室<br/>而不是 freelancer 或 agency。',
-  'why.section.sub':     '同樣的預算、同樣的時間。一個負責人 + AI 副手團隊把整條 pipeline 接管，比傳統做法多 20× 產出。',
+  'why.section.sub':     '同樣的預算、同樣的時間。一個負責人 + AI 副手團隊把整條 pipeline 接管 —— 一年交付 14+ 個自有產品、SaaS 0→生產最快 23 天（體感約 20× 於傳統做法）。',
   'why.comparison.head': '六項對照',
   // row labels
   'why.row.01.label':    '責任歸屬',
@@ -115,7 +115,7 @@ window.DICT_ZH = {
   'why.studio.row.03':   '專案制 1-2 週啟動、retainer 隨時加入',
   'why.studio.row.04':   '整條 pipeline：spec / design / build / review / deploy / ops',
   'why.studio.row.05':   '即時：負責人就是決策者，AI 跑風險預演',
-  'why.studio.row.06':   '自家集團 6 子公司、30+ 生產系統、1 年實戰跑出 20×',
+  'why.studio.row.06':   '自家集團 6 子公司、30+ 生產系統、1 年交付 14+ 自有產品（體感約 20×）',
 
   // ── security validation 信任區塊 ──────────────────────────────────────────
   'secure.title':  '自動化產出，安全也自動化驗收',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.72 · 最後更新 2026/05/22 13:58',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.73 · 最後更新 2026/05/22 14:35',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

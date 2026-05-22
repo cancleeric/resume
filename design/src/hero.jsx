@@ -404,11 +404,11 @@ function Hero() {
 
             {window.LANG === 'en' ? (
               <p className="hero-claim">
-                After a year of validation: <b>20× more output in the same time</b>—one person delivering what used to take an entire team. This delivery speed is ready for your project now.
+                After a year of validation: <b>one person + AI copilots delivered 14+ in-house products, SaaS shipped in as little as 23 days</b>—delivering what used to take an entire team (≈20× by our own measure). This delivery speed is ready for your project now.
               </p>
             ) : (
               <p className="hero-claim">
-                一年驗證下來：<b>同樣的時間做 20× 以上的事</b>、一個人扛起以往需要整支團隊的產出。這套交付速度，現在就能接上您的專案。
+                一年驗證下來：<b>一個人 + AI 副手交付 14+ 個自有產品、SaaS 0→生產最快 23 天</b>，扛起以往需要整支團隊的產出（體感約 20×）。這套交付速度，現在就能接上您的專案。
               </p>
             )}
 

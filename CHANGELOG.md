@@ -4,6 +4,12 @@
 
 ---
 
+## v7.73 — 2026-05-22
+
+- 「20×」全面改為「兩者並陳」（§0 Q1）：「20×」是無定義基準的倍數、禁不起客戶追問，與官網已移除的「82% 核准率」同類。13+ 處（SEO title / twitter / hero claim / hero-desc / hire-lede / why 區 / why-studio row）改為**主打可查證的具體數字**——「一年交付 14+ 自有產品」「SaaS 0→生產最快 23 天」（git 工期可查）——「20×」降為明標的主觀註解（「我們自己的體感是 20×」「體感約 20×」「≈20× by our own measure」），不再當裸宣稱。三版一致：resume.html（zh body + EN I18N）+ design dict-zh/en + hero.jsx。
+
+---
+
 ## v7.72 — 2026-05-22
 
 - 產品交付區加註「AI 自主開發」事實：在交付物 / 系統區的 section intro 一次性聲明「每一個都由 AI 自主開發與維運：人類定方向、AI 跑交付」，涵蓋其下所有產品（不逐行寫，避免雜訊）。措辭刻意不講死「100%」、且與既有「AI 副手 ASSIST／驗收」敘事相容、不與月費卡「親自下海 code」打架（§0 Q1 可禁得起追問）。三版一致：resume.html deliverables-intro（zh+en）+ design systems.section.sub（zh+en）。
