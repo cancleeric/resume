@@ -16,7 +16,7 @@ window.DICT_ZH = {
   'vs.design.light':     '設計 · 亮',
 
   // ── meta-live banner ─────────────────────────────────────────────────────
-  'metalive.head':       '這個頁面 <strong>100% 由 LLM 自主開發維護</strong>　·　無人手動改 code　·　每小時自動跑一輪　·您正在看的就是<strong>「開發流程自動化」實際運作中</strong>',
+  'metalive.head':       '這個頁面 <strong>100% 由 LLM 自主開發維護</strong>　·　無人手動改 code　·　每小時自動跑一輪　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong>',
   'metalive.step.01':    '① 載入頁面',
   'metalive.step.02':    '② AI 審查挑最弱點',
   'metalive.step.03':    '③ 瀏覽器自動化親測',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.77 · 最後更新 2026/05/22 17:38',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.78 · 最後更新 2026/05/22 18:38',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

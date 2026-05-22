@@ -4,6 +4,12 @@
 
 ---
 
+## v7.78 — 2026-05-22
+
+- 修 meta-live banner 分隔符 regression：v7.76 改「30 分鐘→每小時」時誤刪了一個全形空格，造成「每小時自動跑一輪　·您正在看的」的「·」緊貼「您」（其餘分隔皆為 `　·　`）。四版（resume.html + design index/index-light + dict-zh）補回全形空格。
+
+---
+
 ## v7.77 — 2026-05-22
 
 - loop-opt(設計版)：修 section 編號撞號。SecureNote 的 eyebrow 原為「04 / SECURITY VALIDATION」，與 Services「04 / SERVICES」撞號（其餘 04→11 連續一致）。SecureNote 是 callout 註記框、非並列編號區塊，移除其編號改為純標籤「SECURITY VALIDATION」，不動其他 8 個區塊。
