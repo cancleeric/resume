@@ -220,10 +220,10 @@ window.DICT_ZH = {
   'sys.modelhub.tagline':     'ML 模型訓練 / 版本管理平台',
   'sys.anemone.tagline':      '集團 AI API 閘道 — 電話總機 / LLM ingress',
   // SaaS tab taglines
-  'sys.conch.tagline':        '預約 SaaS v1.18.0（2026/04 GA）',
+  'sys.conch.tagline':        '預約 SaaS v4.0.0（2026/04 GA）',
   'sys.abacus.tagline':       '中小企業帳務財務 SaaS（hurricane-books）',
   'sys.tianji.tagline':       '占卜命理 iOS + Web SaaS',
-  'sys.dagongzai.tagline':    '零工媒合 SaaS v1.6.0（2026/04）',
+  'sys.dagongzai.tagline':    '零工媒合 SaaS v1.1.0（2026/04）',
   'sys.gyre.tagline':         '多服務架構（apps/api + web + ai-service）',
   // infra tab taglines
   'sys.hurricane-pay.tagline':'集團統一金流微服務 v0.13.0',
@@ -234,7 +234,7 @@ window.DICT_ZH = {
 
   // sys metric keys
   'sys.squid.metric':         '多租戶 + 嚴格狀態機',
-  'sys.manta.metric':         'v2.64 生產中',
+  'sys.manta.metric':         'v2.55.0 生產中',
   'sys.aicad.metric':         '23 天 · 214 commits 到生產',
   'sys.fiona-pipeline.metric':'多平台感知',
   'sys.claude-agents.metric': '多角色 AI 副手庫',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.69 · 最後更新 2026/05/22 12:51',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.70 · 最後更新 2026/05/22 13:16',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

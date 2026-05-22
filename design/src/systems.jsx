@@ -24,7 +24,7 @@ function Systems() {
       { name: 'Abacus 算盤', taglineKey: 'sys.abacus.tagline', stack: ['.NET 8', 'Blazor', 'LIDS PKCE', 'Playwright 24'], status: 'LIVE', metricKey: 'sys.abacus.metric' },
       { name: 'Tianji 天機', taglineKey: 'sys.tianji.tagline', stack: ['iOS', 'Web'], status: 'LIVE', metricKey: 'sys.tianji.metric' },
       { name: '打工仔 DaGongZai', taglineKey: 'sys.dagongzai.tagline', stack: ['FastAPI', 'Next.js 14', 'Swift iOS', 'PayPal Escrow'], status: 'LIVE', metricKey: 'sys.dagongzai.metric' },
-      { name: 'Gyre v0.9.0', taglineKey: 'sys.gyre.tagline', stack: ['Secret Manager', 'sys.stack.env-isolation'], status: 'BETA', metricKey: 'sys.gyre.metric' },
+      { name: 'Gyre v0.11.0', taglineKey: 'sys.gyre.tagline', stack: ['Secret Manager', 'sys.stack.env-isolation'], status: 'BETA', metricKey: 'sys.gyre.metric' },
     ],
     infra: [
       { name: 'Hurricane Pay', taglineKey: 'sys.hurricane-pay.tagline', stack: ['FastAPI', 'PostgreSQL', 'PayPal SDK'], status: 'LIVE', metricKey: null, metric: '15 routes / 90 tests / 88% coverage' },

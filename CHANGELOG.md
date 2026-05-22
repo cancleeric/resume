@@ -4,6 +4,17 @@
 
 ---
 
+## v7.70 — 2026-05-22
+
+- 產品版本號全面對齊 Gitea 權威數據（§0 Q1，含修正 v7.69 自身的錯誤）：
+  - **Conch**：reservation-saas 實際 0 tag、0 release，唯一可查證版本是 `main` 上 web/api package.json 的 `4.0.0`。v7.69 寫的「v1.18.0」查無出處，改為 **v4.0.0**。
+  - **打工仔 DaGongZai**：dagongzai 最新 tag 為 v1.1.0，原寫「v1.6.0」改為 **v1.1.0**。
+  - **Gyre**：gyre 最新 tag 為 v0.11.0，原寫「v0.9.0」改為 **v0.11.0**。
+  - **Manta**：manta 最新 tag 為 v2.55.0，原寫「v2.64」改為 **v2.55.0**。
+- 三版一致：resume.html + design/i18n/dict-zh+en（item / case / timeline / sys.*.tagline / sys.manta.metric）+ timeline.jsx + systems.jsx。
+
+---
+
 ## v7.69 — 2026-05-22
 
 - 修正 Conch 版本號（§0 Q1）：接案頁原寫「Conch v6.0」，查無出處且與 Gitea 矛盾——reservation-saas（=Conch）最新 release tag 實際是 v1.18.0。三版共 7 處（item-conch / case-conch zh+en、timeline、sys.conch.tagline）統一改為可查證的 v1.18.0

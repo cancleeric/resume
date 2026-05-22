@@ -9,7 +9,7 @@ function Timeline() {
   const items = [
     {
       date: '2026.05',
-      version: 'v2.64',
+      version: 'v2.55.0',
       titleKey: 'timeline.item.01.title',
       tag: 'q1q2',
       summaryKey: 'timeline.item.01.summary',
@@ -27,7 +27,7 @@ function Timeline() {
     },
     {
       date: '2026.04',
-      version: 'v1.18.0',
+      version: 'v4.0.0',
       titleKey: 'timeline.item.03.title',
       tag: 'q1q2',
       summaryKey: 'timeline.item.03.summary',
@@ -36,7 +36,7 @@ function Timeline() {
     },
     {
       date: '2026.04',
-      version: 'v1.6.0',
+      version: 'v1.1.0',
       titleKey: 'timeline.item.04.title',
       tag: 'q1q2',
       summaryKey: 'timeline.item.04.summary',

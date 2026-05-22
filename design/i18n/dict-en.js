@@ -226,10 +226,10 @@ window.DICT_EN = {
   'sys.claude-agents.tagline':'AI Copilot Role Library — multi-role virtual team',
   'sys.modelhub.tagline':     'ML Model Training / Version Management Platform',
   'sys.anemone.tagline':      'Group AI API Gateway — relay / LLM ingress',
-  'sys.conch.tagline':        'Reservation SaaS v1.18.0 (2026/04 GA)',
+  'sys.conch.tagline':        'Reservation SaaS v4.0.0 (2026/04 GA)',
   'sys.abacus.tagline':       'SMB Accounting & Finance SaaS (hurricane-books)',
   'sys.tianji.tagline':       'Divination & Astrology iOS + Web SaaS',
-  'sys.dagongzai.tagline':    'Gig Matching SaaS v1.6.0 (2026/04)',
+  'sys.dagongzai.tagline':    'Gig Matching SaaS v1.1.0 (2026/04)',
   'sys.gyre.tagline':         'Multi-service architecture (apps/api + web + ai-service)',
   'sys.hurricane-pay.tagline':'Group-wide Payment Microservice v0.13.0',
   'sys.lids.tagline':         'Multi-tenant SaaS Identity Layer — OAuth2/OIDC',
@@ -239,7 +239,7 @@ window.DICT_EN = {
 
   // sys metric keys
   'sys.squid.metric':         'Multi-tenant + strict state machine',
-  'sys.manta.metric':         'v2.64 in production',
+  'sys.manta.metric':         'v2.55.0 in production',
   'sys.aicad.metric':         '23 days · 214 commits to prod',
   'sys.fiona-pipeline.metric':'Multi-platform aware',
   'sys.claude-agents.metric': 'Multi-role AI copilot library',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.69 · Last updated 2026/05/22',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.70 · Last updated 2026/05/22',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
