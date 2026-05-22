@@ -4,6 +4,12 @@
 
 ---
 
+## v7.88 — 2026-05-23
+
+- loop-opt(設計版·亮)：修英文版 hero 主張句破折號排版。`hero.jsx` inline 英文 hero claim 為「23 days</b>—delivering」，em dash 兩側無空格、與前後字緊貼成團。補上空格「</b> — delivering」。改共用元件 hero.jsx，深/亮兩版同時生效。
+
+---
+
 ## v7.87 — 2026-05-23
 
 - loop-opt(設計版·深)：修手機底部 dock CTA 文字重複。`app.jsx` BottomDock 的 CTA 渲染 `dock-cta-text-full` + `dock-cta-text-short` 兩個 span，內容完全相同、且兩 class 在深/亮兩版皆無 CSS —— 底部常駐 dock 的主 CTA 顯示成「預約諮詢 →預約諮詢 →」重複文字。原意應為寬窄螢幕切換但從未做完。改為單一 span。

@@ -404,7 +404,7 @@ function Hero() {
 
             {window.LANG === 'en' ? (
               <p className="hero-claim">
-                After a year of validation: <b>one person + AI copilots delivered 14+ in-house products, SaaS shipped in as little as 23 days</b>—delivering what used to take an entire team (≈20× by our own measure). This delivery speed is ready for your project now.
+                After a year of validation: <b>one person + AI copilots delivered 14+ in-house products, SaaS shipped in as little as 23 days</b> — delivering what used to take an entire team (≈20× by our own measure). This delivery speed is ready for your project now.
               </p>
             ) : (
               <p className="hero-claim">
