@@ -267,7 +267,7 @@ window.DICT_EN = {
 
   // ── timeline ─────────────────────────────────────────────────────────────
   'timeline.section.title':   'Recent Deliveries,<br/>with dates, versions, and results.',
-  'timeline.section.sub':     'One engineer + AI copilots. Real systems delivered in the last 6 months. No stock photos, no "concept illustrations".',
+  'timeline.section.sub':     'One engineer + AI copilots — real systems delivered: in-house SaaS, group infrastructure, and enterprise client projects. No stock photos, no "concept illustrations".',
   'timeline.filter.all':      'All',
   'timeline.filter.q1q2':     '2026 Q1-Q2',
   'timeline.filter.enterprise':'Enterprise',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.84 · Last updated 2026/05/23',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.85 · Last updated 2026/05/23',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

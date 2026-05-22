@@ -262,7 +262,7 @@ window.DICT_ZH = {
 
   // ── timeline section ──────────────────────────────────────────────────────
   'timeline.section.title':   '近期交付，<br/>有日期、有版本、有結果。',
-  'timeline.section.sub':     '一個人 + AI 副手在過去 6 個月實際交付的系統。沒有圖庫 stock photo、沒有「概念示意」。',
+  'timeline.section.sub':     '一個人 + AI 副手實際交付的系統 —— 自有 SaaS、集團基礎建設，到企業客戶案例。沒有圖庫 stock photo、沒有「概念示意」。',
   'timeline.filter.all':      '全部',
   'timeline.filter.q1q2':     '2026 Q1-Q2',
   'timeline.filter.enterprise':'企業客戶',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.84 · 最後更新 2026/05/23 02:34',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.85 · 最後更新 2026/05/23 03:35',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

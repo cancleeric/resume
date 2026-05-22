@@ -4,6 +4,12 @@
 
 ---
 
+## v7.85 — 2026-05-23
+
+- loop-opt(設計版·亮)：修 timeline 區段副標誇大時間範圍。`timeline.section.sub` 原寫「過去 6 個月實際交付」/ "delivered in the last 6 months"，但該 timeline 含企業客戶案例 item.07 全國性協會（2019.02 - 持續）、item.08 iOS 遊戲（2023-2024）—— 訪客切「企業客戶」filter 會看到 2019/2023 日期打臉。改為點名三類別（自有 SaaS／集團基礎建設／企業客戶案例），去掉全域時間斷言。改共用 dict（zh+en），深/亮兩版同時生效。
+
+---
+
 ## v7.84 — 2026-05-23
 
 - loop-opt(設計版·深)：設計版定價卡旗艦方案 CTA 降摩擦。`pricing.jsx` 四張卡只有 healthcheck 入口卡帶意圖預填 mailto，retainer（RETAINER · FLAGSHIP 旗艦推薦）卻 fallback 到通用 `#cta` 錨點 —— 最想成交的卡摩擦最高。補上與標準版 v7.80 相同的預填 mailto（主旨【預約月費 Retainer】+ 4 欄正文）。改共用元件 pricing.jsx，深/亮兩版同時生效，三版 CTA 機制對齊。
