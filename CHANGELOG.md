@@ -4,6 +4,12 @@
 
 ---
 
+## v7.83 — 2026-05-23
+
+- loop-opt(標準版)：修英文版區塊標題疊字。中文 h2 是雙語格式「中文 — English」，切英文時 7 個 en 字典值卻是重複疊字（Services — Services、Tech Stack — Tech Stack、Why This Studio…），英文訪客看到壞掉的疊字標題。改為單一乾淨英文詞。`How We Work — Pricing`、`FAQ — Frequently Asked Questions` 為兩個不同詞，正常保留。
+
+---
+
 ## v7.82 — 2026-05-23
 
 - loop-opt(設計版·亮)：設計版最終 CTA 區的次要按鈕（cta.secondary「寄信先聊聊」）原是裸 `mailto:cancleeric@gmail.com`，點了開出空白信、收到也難辨識來源。主要 CTA 早有完整預填，次要按鈕卻零引導。補上主旨預填「[諮詢] HurricaneSoft 工作室」，降低摩擦並便於辨識來信。改 faq-cta.jsx 共用元件，深/亮兩版同時生效。
