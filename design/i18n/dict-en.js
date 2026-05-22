@@ -226,7 +226,7 @@ window.DICT_EN = {
   'sys.claude-agents.tagline':'AI Copilot Role Library — multi-role virtual team',
   'sys.modelhub.tagline':     'ML Model Training / Version Management Platform',
   'sys.anemone.tagline':      'Group AI API Gateway — relay / LLM ingress',
-  'sys.conch.tagline':        'Reservation SaaS v6.0 (2026/04 GA)',
+  'sys.conch.tagline':        'Reservation SaaS v1.18.0 (2026/04 GA)',
   'sys.abacus.tagline':       'SMB Accounting & Finance SaaS (hurricane-books)',
   'sys.tianji.tagline':       'Divination & Astrology iOS + Web SaaS',
   'sys.dagongzai.tagline':    'Gig Matching SaaS v1.6.0 (2026/04)',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.68 · Last updated 2026/05/22',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.69 · Last updated 2026/05/22',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

@@ -4,6 +4,12 @@
 
 ---
 
+## v7.69 — 2026-05-22
+
+- 修正 Conch 版本號（§0 Q1）：接案頁原寫「Conch v6.0」，查無出處且與 Gitea 矛盾——reservation-saas（=Conch）最新 release tag 實際是 v1.18.0。三版共 7 處（item-conch / case-conch zh+en、timeline、sys.conch.tagline）統一改為可查證的 v1.18.0
+
+---
+
 ## v7.68 — 2026-05-22
 
 - 再補 2 個產品的 git 可查工期（延續 v7.67）：打工仔 DaGongZai「首 commit 到生產 28 天、51 commits」、Gyre「首 commit 起 36 天、111 commits」。數據走 mDNS 連開發機 Gitea 確認（dagongzai 2026-03-17→04-14、gyre 04-13→05-19）。三版 deliverable item + 設計版 systems metric 一致

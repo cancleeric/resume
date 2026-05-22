@@ -27,7 +27,7 @@ function Timeline() {
     },
     {
       date: '2026.04',
-      version: 'v6.0',
+      version: 'v1.18.0',
       titleKey: 'timeline.item.03.title',
       tag: 'q1q2',
       summaryKey: 'timeline.item.03.summary',
