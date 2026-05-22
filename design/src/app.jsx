@@ -155,8 +155,7 @@ function BottomDock() {
       </a>
       <span className="divider"></span>
       <a className="item cta" href="#cta">
-        <span className="dock-cta-text-full">{t('nav.cta')} →</span>
-        <span className="dock-cta-text-short">{t('nav.cta')} →</span>
+        <span className="dock-cta-text">{t('nav.cta')} →</span>
       </a>
     </div>
   );

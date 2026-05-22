@@ -4,6 +4,12 @@
 
 ---
 
+## v7.87 — 2026-05-23
+
+- loop-opt(設計版·深)：修手機底部 dock CTA 文字重複。`app.jsx` BottomDock 的 CTA 渲染 `dock-cta-text-full` + `dock-cta-text-short` 兩個 span，內容完全相同、且兩 class 在深/亮兩版皆無 CSS —— 底部常駐 dock 的主 CTA 顯示成「預約諮詢 →預約諮詢 →」重複文字。原意應為寬窄螢幕切換但從未做完。改為單一 span。
+
+---
+
 ## v7.86 — 2026-05-23
 
 - loop-opt(標準版)：ProfessionalService 結構化資料補 `sameAs`。標準版 JSON-LD 有 taxID / founder / address 等，卻缺 `sameAs` —— 搜尋引擎無法把此接案頁實體與颶風軟體官網、GitHub 連結（entity consolidation）。補 `sameAs: [hurricanesoft.com.tw, github.com/cancleeric]`，與官網 Organization schema 對齊。
