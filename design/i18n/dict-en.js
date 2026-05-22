@@ -194,7 +194,7 @@ window.DICT_EN = {
   'pricing.tier.03.cta':      'Book a session',
   'pricing.tier.04.tc':       '2-Week Pipeline Automation Health Check',
   'pricing.tier.04.tagline':  'A low-commitment, fixed-price first step',
-  'pricing.tier.04.unit':     '/ check',
+  'pricing.tier.04.unit':     '–2,000 / check',
   'pricing.tier.04.desc':     'A fixed 2-week engagement: we audit your architecture and tech debt, then deliver an automation adoption blueprint you keep. Validate the fit with a small spend before scaling to a retainer.',
   'pricing.tier.04.inc.01':   'Fixed 2-week schedule, clear delivery date',
   'pricing.tier.04.inc.02':   'Architecture & tech-debt audit and diagnosis',
@@ -348,7 +348,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.60 · Last updated 2026/05/22',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.61 · Last updated 2026/05/22',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

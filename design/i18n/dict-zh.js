@@ -184,7 +184,7 @@ window.DICT_ZH = {
   'pricing.tier.03.cta':      '安排一場',
   'pricing.tier.04.tc':       '2 週開發流程自動化健檢',
   'pricing.tier.04.tagline':  '低承諾、固定價的第一步',
-  'pricing.tier.04.unit':     '/ 健檢',
+  'pricing.tier.04.unit':     '–2,000 / 健檢',
   'pricing.tier.04.desc':     '2 週固定排程，盤點你的架構與技術債，產出一份可帶走的自動化導入藍圖。用小錢驗證合作，再決定要不要升級月費。',
   'pricing.tier.04.inc.01':   '2 週固定排程、明確交期',
   'pricing.tier.04.inc.02':   '架構與技術債盤點診斷',
@@ -338,7 +338,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.60 · 最後更新 2026/05/22 08:28',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.61 · 最後更新 2026/05/22 08:51',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

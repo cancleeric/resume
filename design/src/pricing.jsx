@@ -6,7 +6,7 @@ function Pricing() {
       key: 'healthcheck',
       label: 'HEALTH CHECK',
       tcKey: 'pricing.tier.04.tc',
-      price: 'US$ 1,500–2,000',
+      price: 'US$ 1,500',
       unitKey: 'pricing.tier.04.unit',
       taglineKey: 'pricing.tier.04.tagline',
       descKey: 'pricing.tier.04.desc',
