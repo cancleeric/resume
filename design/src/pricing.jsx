@@ -19,6 +19,8 @@ function Pricing() {
       fitForKey: 'pricing.tier.04.fit',
       ctaKey: 'pricing.tier.04.cta',
       tone: 'entry',
+      // 低風險入口 CTA 直接帶意圖進 mailto（主旨/正文預填健檢），不丟到通用 #cta 諮詢
+      href: 'mailto:cancleeric@gmail.com?subject=%5B%E9%A0%90%E7%B4%84%E5%81%A5%E6%AA%A2%5D%20HurricaneSoft%20%C2%B7%202%20%E9%80%B1%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8B%95%E5%8C%96%E5%81%A5%E6%AA%A2&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%83%B3%E9%A0%90%E7%B4%84%E3%80%8C2%20%E9%80%B1%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8B%95%E5%8C%96%E5%81%A5%E6%AA%A2%E3%80%8D%EF%BC%88US%24%201%2C500%E2%80%932%2C000%EF%BC%89%EF%BC%9A%0A%0A%E3%80%90%E7%9B%AE%E5%89%8D%E6%9E%B6%E6%A7%8B%20/%20%E6%8A%80%E8%A1%93%E6%A3%A7%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%E3%80%90%E6%9C%80%E6%83%B3%E5%85%88%E8%A7%A3%E6%B1%BA%E7%9A%84%E6%8A%80%E8%A1%93%E5%82%B5%20/%20%E7%97%9B%E9%BB%9E%E3%80%91%EF%BC%9A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A',
     },
     {
       key: 'project',
@@ -258,7 +260,7 @@ function Pricing() {
                 <div className="fit-label">{t('pricing.goodfit')}</div>
                 <div className="fit-text">{t(tier.fitForKey)}</div>
               </div>
-              <a href="#cta" className={`btn ${tier.tone === 'highlight' ? 'btn-primary' : 'btn-ghost'} price-cta`}>
+              <a href={tier.href || '#cta'} className={`btn ${tier.tone === 'highlight' ? 'btn-primary' : 'btn-ghost'} price-cta`}>
                 {t(tier.ctaKey)} <ArrowRight />
               </a>
             </div>
