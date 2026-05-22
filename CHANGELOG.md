@@ -4,6 +4,12 @@
 
 ---
 
+## v7.86 — 2026-05-23
+
+- loop-opt(標準版)：ProfessionalService 結構化資料補 `sameAs`。標準版 JSON-LD 有 taxID / founder / address 等，卻缺 `sameAs` —— 搜尋引擎無法把此接案頁實體與颶風軟體官網、GitHub 連結（entity consolidation）。補 `sameAs: [hurricanesoft.com.tw, github.com/cancleeric]`，與官網 Organization schema 對齊。
+
+---
+
 ## v7.85 — 2026-05-23
 
 - loop-opt(設計版·亮)：修 timeline 區段副標誇大時間範圍。`timeline.section.sub` 原寫「過去 6 個月實際交付」/ "delivered in the last 6 months"，但該 timeline 含企業客戶案例 item.07 全國性協會（2019.02 - 持續）、item.08 iOS 遊戲（2023-2024）—— 訪客切「企業客戶」filter 會看到 2019/2023 日期打臉。改為點名三類別（自有 SaaS／集團基礎建設／企業客戶案例），去掉全域時間斷言。改共用 dict（zh+en），深/亮兩版同時生效。
