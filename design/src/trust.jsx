@@ -40,7 +40,8 @@ function TrustBar() {
           border-radius: var(--r-md);
           overflow: hidden;
         }
-        @media (max-width: 980px) { .trust-grid { grid-template-columns: repeat(4, 1fr); } }
+        /* 6 格：平板斷點用 3 欄（不是 4）—— 4 欄會留 4+2 破格，3 欄整齊 3+3 */
+        @media (max-width: 980px) { .trust-grid { grid-template-columns: repeat(3, 1fr); } }
         @media (max-width: 580px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
         .trust-cell {
           padding: 22px 18px;
