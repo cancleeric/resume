@@ -3,6 +3,24 @@
 function Pricing() {
   const tiers = [
     {
+      key: 'healthcheck',
+      label: 'HEALTH CHECK',
+      tcKey: 'pricing.tier.04.tc',
+      price: 'US$ 1,500–2,000',
+      unitKey: 'pricing.tier.04.unit',
+      taglineKey: 'pricing.tier.04.tagline',
+      descKey: 'pricing.tier.04.desc',
+      includeKeys: [
+        'pricing.tier.04.inc.01',
+        'pricing.tier.04.inc.02',
+        'pricing.tier.04.inc.03',
+        'pricing.tier.04.inc.04',
+      ],
+      fitForKey: 'pricing.tier.04.fit',
+      ctaKey: 'pricing.tier.04.cta',
+      tone: 'entry',
+    },
+    {
       key: 'project',
       label: 'PROJECT',
       tcKey: 'pricing.tier.01.tc',
@@ -64,11 +82,14 @@ function Pricing() {
         .pricing-section { padding-top: 140px; }
         .pricing-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           gap: 16px;
           align-items: stretch;
         }
-        @media (max-width: 980px) {
+        @media (max-width: 1100px) {
+          .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 560px) {
           .pricing-grid { grid-template-columns: 1fr; }
         }
         .price-card {
@@ -97,6 +118,18 @@ function Pricing() {
           letter-spacing: 0.16em;
           background: var(--orange);
           color: #110800;
+          border-radius: 2px;
+          font-weight: 600;
+        }
+        .price-card.entry { border-color: rgba(22,163,74,0.4); }
+        .price-entry-badge {
+          position: absolute; top: -10px; left: 24px;
+          padding: 4px 10px;
+          font-family: var(--font-mono);
+          font-size: 10px;
+          letter-spacing: 0.16em;
+          background: #0d7a3a;
+          color: #fff;
           border-radius: 2px;
           font-weight: 600;
         }
@@ -200,9 +233,12 @@ function Pricing() {
 
         <div className="pricing-grid">
           {tiers.map(tier => (
-            <div key={tier.key} className={`price-card ${tier.tone === 'highlight' ? 'highlight' : ''}`}>
+            <div key={tier.key} className={`price-card ${tier.tone === 'highlight' ? 'highlight' : ''} ${tier.tone === 'entry' ? 'entry' : ''}`}>
               {tier.tone === 'highlight' && (
                 <span className="price-recommended-badge">{t('pricing.recommended')}</span>
+              )}
+              {tier.tone === 'entry' && (
+                <span className="price-entry-badge">{t('pricing.entry')}</span>
               )}
               <div className="price-label">{tier.label}</div>
               <h3 className="price-tc">{t(tier.tcKey)}</h3>

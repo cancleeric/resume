@@ -153,10 +153,11 @@ window.DICT_EN = {
   'svc.08.desc':         'The 2026 government has released over NT$10 billion in AI incentives. We help enterprises assess eligibility for SBIR, AI Leap, digital transformation, and SIIR programs — from proposal writing and review through to deployed AI systems.',
 
   // ── pricing ───────────────────────────────────────────────────────────────
-  'pricing.section.title': 'Three engagement models.<br/>Pick the right one.',
+  'pricing.section.title': 'Four engagement models.<br/>Pick the right one.',
   // [R] from I18N rate-foot
   'pricing.section.sub':   'Engagement process: free 30-min consult → quote & contract (30% deposit) → development → milestone acceptance → launch (includes 1-month warranty). Payment: invoice available (Tax ID 80289779), wire transfer / Wise / crypto (USDC) accepted. Delivery assurance: code, docs, CI/CD and secrets specs are documented continuously — you always hold a complete handover any team can pick up, so you stay in control.',
   'pricing.recommended':   'RECOMMENDED',
+  'pricing.entry':         'LOW-RISK ENTRY',
   'pricing.goodfit':       'GOOD FIT',
   // project tier [R] from I18N rate-project-*
   'pricing.tier.01.tc':       'Project-based',
@@ -191,6 +192,16 @@ window.DICT_EN = {
   'pricing.tier.03.inc.04':   'Best for high-stakes short-term decisions',
   'pricing.tier.03.fit':      'Minimum 4 hours; high-stakes short-term decisions',
   'pricing.tier.03.cta':      'Book a session',
+  'pricing.tier.04.tc':       '2-Week Pipeline Automation Health Check',
+  'pricing.tier.04.tagline':  'A low-commitment, fixed-price first step',
+  'pricing.tier.04.unit':     '/ check',
+  'pricing.tier.04.desc':     'A fixed 2-week engagement: we audit your architecture and tech debt, then deliver an automation adoption blueprint you keep. Validate the fit with a small spend before scaling to a retainer.',
+  'pricing.tier.04.inc.01':   'Fixed 2-week schedule, clear delivery date',
+  'pricing.tier.04.inc.02':   'Architecture & tech-debt audit and diagnosis',
+  'pricing.tier.04.inc.03':   'Automation adoption blueprint — yours to keep',
+  'pricing.tier.04.inc.04':   'Validate the fit cheaply before deciding to scale up',
+  'pricing.tier.04.fit':      'Teams wanting to validate the fit before committing to a retainer',
+  'pricing.tier.04.cta':      'Book a health check',
 
   // ── systems ───────────────────────────────────────────────────────────────
   // [R] from I18N h2-deliverables / deliverables-intro
@@ -337,7 +348,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.58 · Last updated 2026/05/22',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v7.59 · Last updated 2026/05/22',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

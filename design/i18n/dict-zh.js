@@ -144,9 +144,10 @@ window.DICT_ZH = {
   'svc.08.desc':         '2026 政府釋出逾百億元 AI 補助。協助企業評估 SBIR / AI 躍昇 / 數位轉型 / SIIR 方案資格，從計畫書撰寫、審查到 AI 系統開發落地全程協助。',
 
   // ── pricing section ───────────────────────────────────────────────────────
-  'pricing.section.title': '三種接案模式。<br/>挑一個合適的。',
+  'pricing.section.title': '四種接案模式。<br/>挑一個合適的。',
   'pricing.section.sub':   '合作流程：免費 30 分諮詢 → 報價簽約（30% 訂金）→ 開發 → 里程碑驗收 → 上線（含 1 個月保固）。付款：可開立統編發票（80289779）、支援電匯 / Wise / 加密貨幣 USDC。交付保障：code、文件、CI/CD、密鑰規範即時文件化，您隨時握有可被任何團隊接手的完整交付——主控權始終在您手上。',
   'pricing.recommended':   'RECOMMENDED · 主推',
+  'pricing.entry':         '低風險入口 · ENTRY',
   'pricing.goodfit':       '何時適合 · GOOD FIT',
   // project tier
   'pricing.tier.01.tc':       '專案制 Project-based',
@@ -181,6 +182,16 @@ window.DICT_ZH = {
   'pricing.tier.03.inc.04':   '適合短期重大決策',
   'pricing.tier.03.fit':      '最少 4 小時起接、短期重大決策',
   'pricing.tier.03.cta':      '安排一場',
+  'pricing.tier.04.tc':       '2 週開發流程自動化健檢',
+  'pricing.tier.04.tagline':  '低承諾、固定價的第一步',
+  'pricing.tier.04.unit':     '/ 健檢',
+  'pricing.tier.04.desc':     '2 週固定排程，盤點你的架構與技術債，產出一份可帶走的自動化導入藍圖。用小錢驗證合作，再決定要不要升級月費。',
+  'pricing.tier.04.inc.01':   '2 週固定排程、明確交期',
+  'pricing.tier.04.inc.02':   '架構與技術債盤點診斷',
+  'pricing.tier.04.inc.03':   '自動化導入藍圖，文件可帶走',
+  'pricing.tier.04.inc.04':   '用小錢驗證合作，再決定要不要升級',
+  'pricing.tier.04.fit':      '想先驗證合作、還不確定要不要上月費的團隊',
+  'pricing.tier.04.cta':      '預約健檢',
 
   // ── why-studio badge ──────────────────────────────────────────────────────
   'why.studio.badge':         '本工作室',
@@ -327,7 +338,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.58 · 最後更新 2026/05/22 08:16',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v7.59 · 最後更新 2026/05/22 08:26',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',
