@@ -4,7 +4,7 @@ window.DICT_EN = {
 
   // ── meta / head ─────────────────────────────────────────────────────────
   'meta.title':          'HurricaneSoft Ltd. — Automated Software Delivery · 14+ Products in a Year',
-  'meta.description':    'HurricaneSoft Ltd. — Automate the full delivery pipeline (spec → design → build → review → deploy → ops). One engineer carrying what used to take an entire team. AI integration is table stakes. Monthly retainer from US$10,000. Invoice available (Tax ID 80289779).',
+  'meta.description':    'HurricaneSoft Ltd. — Automate the full delivery pipeline (spec → design → build → review → deploy → ops). One engineer carrying what used to take an entire team. AI integration is table stakes. Monthly retainer from US$10,000, start within 1–2 weeks. Invoice available (Tax ID 80289779).',
   'og.title':            'HurricaneSoft Ltd. — Automated Software Delivery · One Engineer, Full Team Output',
   'og.description':      'Full pipeline automation validated across 30+ production systems. Monthly retainer US$10K, start within 1–2 weeks, invoice available.',
   'twitter.title':       'HurricaneSoft Ltd. — Automated Software Delivery · 14+ Products in a Year',

@@ -1,3 +1,6 @@
+## v8.04 · 2026-05-24
+- copy(B+C版): meta.description 中英文補「最快 1–2 週上工」，Google 搜尋摘要現在有速度 hook
+
 ## v8.03 · 2026-05-24
 - seo(B+C版): JSON-LD ProfessionalService 補 sameAs，連結官網與 GitHub，三版一致
 
