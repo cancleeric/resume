@@ -1468,6 +1468,24 @@ html[lang="en"] .group-tree__name em { display: none; }
   .ai-hero__stats { gap: 8px 12px; font-size: 12.5px; }
   /* Rate card price 收緊 */
   .rate-card__price { font-size: 20px; }
+  /* mobile: 表格水平 scroll 不切掉左欄 */
+  .main table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    font-size: 12.5px;
+  }
+  .main table thead,
+  .main table tbody {
+    display: table;
+    width: 100%;
+    min-width: 480px;  /* 強制最小寬度，內容超過時觸發 scroll */
+  }
+  .main table th,
+  .main table td {
+    padding: 7px 10px;  /* 縮 padding 多出空間 */
+  }
 }
 
 /* ============================================================
