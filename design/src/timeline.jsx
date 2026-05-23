@@ -212,7 +212,7 @@ function Timeline() {
 
         <div className="tl-track">
           {filtered.map((it, i) => (
-            <div key={it.titleKey} className={`tl-item ${i < 2 ? 'recent' : ''}`}>
+            <div key={it.titleKey} className={`tl-item ${it.tag === 'q1q2' || (filter === 'enterprise' && i === 0) ? 'recent' : ''}`}>
               <div className="tl-meta">
                 <div className="tl-date">{it.date}</div>
                 <div className="tl-version">{it.version}</div>
