@@ -1,3 +1,6 @@
+## v8.03 · 2026-05-24
+- seo(B+C版): JSON-LD ProfessionalService 補 sameAs，連結官網與 GitHub，三版一致
+
 ## v8.02 · 2026-05-23
 - seo: 新增 sitemap.xml（三版 URL）+ robots.txt，讓 Google 能正確發現並索引全部頁面
 
