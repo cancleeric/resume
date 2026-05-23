@@ -44,9 +44,12 @@ function FAQ() {
           padding: 0 4px;
         }
         .faq-item.open .faq-a {
-          max-height: 400px;
+          max-height: 480px;
           padding: 0 4px 24px;
         }
+        .faq-a-para { margin: 0 0 12px; }
+        .faq-a-para:last-child { margin-bottom: 0; }
+        .faq-a-para strong { color: var(--ink); }
         .faq-num {
           font-family: var(--font-mono);
           font-size: 11px;
@@ -75,7 +78,17 @@ function FAQ() {
                   <span className="faq-q-text">{it.q}</span>
                   <span className="chev"><ChevronDown size={16}/></span>
                 </button>
-                <div className="faq-a">{it.a}</div>
+                <div className="faq-a">
+                  {it.a.split('\n\n').map((para, pi) => (
+                    <p key={pi} className="faq-a-para">
+                      {para.split(/(\*\*[^*]+\*\*)/g).map((seg, si) =>
+                        seg.startsWith('**') && seg.endsWith('**')
+                          ? <strong key={si}>{seg.slice(2, -2)}</strong>
+                          : seg
+                      )}
+                    </p>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
