@@ -28,6 +28,7 @@ function Services() {
       tcKey: 'svc.03.tc',
       en: 'MULTI-TENANT SAAS',
       descKey: 'svc.03.desc',
+      chips: ['Multi-tenant', 'LINE Pay / PayPal', 'iOS App'],
     },
     {
       key: 'identity',
@@ -35,6 +36,7 @@ function Services() {
       tcKey: 'svc.04.tc',
       en: 'IDENTITY · SECURITY',
       descKey: 'svc.04.desc',
+      chips: ['OAuth2 / OIDC', 'JWT httpOnly', 'PKCE'],
     },
     {
       key: 'payments',
@@ -42,6 +44,7 @@ function Services() {
       tcKey: 'svc.05.tc',
       en: 'PAYMENTS · BILLING',
       descKey: 'svc.05.desc',
+      chips: ['PayPal LIVE', 'LINE Pay', 'Escrow'],
     },
     {
       key: 'cloud-run',
@@ -49,6 +52,7 @@ function Services() {
       tcKey: 'svc.06.tc',
       en: 'GCP CLOUD RUN',
       descKey: 'svc.06.desc',
+      chips: ['GCP Cloud Run', '19 services', 'Zero-downtime'],
     },
     {
       key: 'modernization',
@@ -56,6 +60,7 @@ function Services() {
       tcKey: 'svc.07.tc',
       en: 'MODERNIZATION',
       descKey: 'svc.07.desc',
+      chips: ['.NET 8', 'Blazor', 'HMVC → micro'],
     },
     {
       key: 'gov-grant',
@@ -63,6 +68,7 @@ function Services() {
       tcKey: 'svc.08.tc',
       en: 'GOV AI GRANTS',
       descKey: 'svc.08.desc',
+      chips: ['SBIR / SIIR', '資格評估', '計畫書撰寫'],
     },
   ];
 
@@ -197,6 +203,11 @@ function Services() {
                   <ul className="service-bullets">
                     {s.bulletKeys.map(bk => <li key={bk}>{t(bk)}</li>)}
                   </ul>
+                )}
+                {s.chips && (
+                  <div className="stack" style={{ marginTop: 16 }}>
+                    {s.chips.map(c => <span key={c}>{c}</span>)}
+                  </div>
                 )}
               </div>
             </div>
