@@ -326,9 +326,9 @@ window.DICT_EN = {
   'faq.section.sub':          'Don\'t see your answer? Book a free 30-min consultation and ask directly.',
   // [R] from I18N faq*-q / faq*-a
   'faq.01.q': 'How soon can you start?',
-  'faq.01.a': 'Advisory engagements are available immediately (minimum 4 hours). Monthly Retainer has a maximum of 2 concurrent slots — next availability from 2026/07 (approximately 6 weeks out). Project-based engagements can kick off within 1–2 weeks depending on scope.',
+  'faq.01.a': 'Advisory engagements are available immediately (minimum 4 hours).\n\nMonthly Retainer has a maximum of 2 concurrent slots — next availability from 2026/07 (approximately 6 weeks out).\n\nProject-based engagements can kick off within 1–2 weeks depending on scope.',
   'faq.02.q': 'Do you sign NDAs and issue invoices?',
-  'faq.02.a': 'Yes. Invoices are available under a registered company tax ID (80289779). Our standard NDA template can be signed immediately; custom NDA requests are addressed within 24 hours. Payment accepted via wire transfer / Wise / crypto (USDC).',
+  'faq.02.a': '**Yes.** Invoices are available under a registered company tax ID (80289779).\n\nOur standard NDA template can be signed immediately; custom NDA requests are addressed within 24 hours.\n\nPayment accepted via wire transfer / Wise / crypto (USDC).',
   'faq.03.q': 'Why US$10K/month instead of hourly billing?',
   'faq.03.a': 'The Monthly Retainer keeps the Principal and AI copilot team fully focused — no incentive to pad hours.\n\nThe equivalent hourly rate would be roughly US$80/h × 125h, but on retainer we consistently over-deliver because our proprietary tooling multiplies per-hour output.',
   'faq.04.q': 'What AI tools will be used in an engagement?',
