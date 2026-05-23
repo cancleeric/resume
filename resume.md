@@ -20,13 +20,17 @@
 
 ## 專業摘要 - Professional Summary
 
-**集團技術長 | 技術架構師 | 創業技術負責人**
+**交付可運轉的系統，從架構決策到部署完工**
+
+*集團技術長 · 技術架構師 · 創業技術負責人*
 
 擁有 **25 年**軟體工程經驗與 **24 年**技術管理實務。創立並主導 **HurricaneGroup（颶風集團）** 軟體企業，旗下涵蓋 **6 家子公司**（HurricaneSoft / HurricaneEdge / HurricaneCore / HurricanePrime / HurricaneDigital / HurricaneTech），主導設計並建構 **30+ 互相整合的生產系統**，部署於 **GCP Cloud Run（19 個生產服務）** 與本機 / 客戶基礎設施。
 
 主導打造**集團統一基礎設施層**：自建 OAuth2/OIDC 身份提供者（LIDS）、自建 Secret Manager（Hurricane Vault）、自建 LLM Gateway 計費中心（Brain）、自建多租戶 SaaS 框架、Gitea Git Server（含客製 OIDC patch）、Wiki.js 技術文檔平台與 Headscale VPN，所有子公司產品與內部工具皆共用此基礎層。
 
 設計並落實**集團級工程治理體系**：自建多層 CI/CD、強制式資料庫異動安全流程、量化 PR 評審門檻、工單驅動開發狀態機，以及 AI 高管副手團隊架構，落地跨 12+ 專案、6 家子公司。
+
+> 外包進來的不只是人力——是補位資深技術決策，讓既有團隊不被卡住。
 
 ---
 
