@@ -1,3 +1,6 @@
+## v8.01 · 2026-05-23
+- fix(A+C版): theme-color 全面修正——A版 #064e3b→#1e3a8a（品牌藍，配 topbar）、C版 #064e3b→#FFFFFF（配亮色 nav）
+
 ## v8.00 · 2026-05-23
 - fix(design-dark): theme-color 由殘留 #064e3b（舊版深綠）修正為 #0E1015，行動 Chrome 網址列顏色正確
 
