@@ -1,3 +1,6 @@
+## v8.02 · 2026-05-23
+- seo: 新增 sitemap.xml（三版 URL）+ robots.txt，讓 Google 能正確發現並索引全部頁面
+
 ## v8.01 · 2026-05-23
 - fix(A+C版): theme-color 全面修正——A版 #064e3b→#1e3a8a（品牌藍，配 topbar）、C版 #064e3b→#FFFFFF（配亮色 nav）
 
