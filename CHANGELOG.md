@@ -1,3 +1,9 @@
+## v8.00 · 2026-05-23
+- fix(design-dark): theme-color 由殘留 #064e3b（舊版深綠）修正為 #0E1015，行動 Chrome 網址列顏色正確
+
+## v7.99 · 2026-05-23
+- fix(og:title/twitter:title): 三版補「接案」關鍵詞，dict-zh.js og.title 同步更新
+
 ## v7.98 · 2026-05-23
 - fix(og:title): 三版補「接案」關鍵詞，對齊 <title>，社群分享不再掉定位
 
