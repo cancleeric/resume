@@ -6,10 +6,10 @@ function TechStack() {
     { nameKey: 'tech.cat.backend', en: 'BACKEND', items: ['.NET 8', 'ASP.NET Core', 'FastAPI', 'Express', 'Next.js', 'EF Core', 'SQLAlchemy 2.0', 'Blazor Server', 'WPF', 'Hardhat (Solidity)', 'MCP'] },
     { nameKey: 'tech.cat.frontend', en: 'FRONTEND', items: ['React 18', 'Next.js', 'TypeScript', 'SwiftUI', 'SpriteKit', 'Vue.js', 'Android (Kotlin)'] },
     { nameKey: 'tech.cat.database', en: 'DATABASE', items: ['PostgreSQL', 'SQL Server', 'MySQL', 'SQLite', 'Redis', 'ClickHouse', 'Firestore', 'CloudKit', 'Alembic', 'EF Migrations', 'RLS'] },
-    { nameKey: 'tech.cat.cloud', en: 'CLOUD · DEVOPS', items: ['GCP Cloud Run (19 services)', 'Cloud SQL', 'Cloud Build', 'Artifact Registry', 'GCP Secret Manager', 'Firebase', 'Docker', 'Docker Compose', 'Drone CI', 'GitHub Actions', t('tech.item.gitea'), t('tech.item.stalwart'), 'Headscale VPN', 'Tailscale', 'Sentry', 'OpenTelemetry', 'Prometheus'] },
+    { nameKey: 'tech.cat.cloud', en: 'CLOUD · DEVOPS', items: [{ name: 'GCP Cloud Run', badge: '19 svc' }, 'Cloud SQL', 'Cloud Build', 'Artifact Registry', 'GCP Secret Manager', 'Firebase', 'Docker', 'Docker Compose', { name: 'Drone CI', badge: '12+ repos' }, 'GitHub Actions', t('tech.item.gitea'), t('tech.item.stalwart'), 'Headscale VPN', 'Tailscale', 'Sentry', 'OpenTelemetry', 'Prometheus'] },
     { nameKey: 'tech.cat.auth', en: 'AUTH · SECURITY', items: ['OAuth 2.0', 'OIDC', 'JWT RS256', 'MFA', 'RBAC', 'BCrypt', 'AES-256-GCM', 'Rate Limiting', 'Audit Logging', t('tech.item.scanner')] },
     { nameKey: 'tech.cat.ai', en: 'AI · LLM', items: ['MCP', 'Anthropic Claude API', 'Google Gemini', 'OpenAI API', 'AutoGen v0.4', t('tech.item.brain'), t('tech.item.anemone'), t('tech.item.modelhub'), 'RAG', 'Provider Routing'] },
-    { nameKey: 'tech.cat.payments', en: 'PAYMENTS', items: ['PayPal Production', t('tech.item.newebpay'), 'StoreKit 2', 'IAP', t('tech.item.hpay')] },
+    { nameKey: 'tech.cat.payments', en: 'PAYMENTS', items: [{ name: 'PayPal Production', badge: 'LIVE' }, t('tech.item.newebpay'), 'StoreKit 2', 'IAP', t('tech.item.hpay')] },
   ];
   return (
     <section id="tech" className="section tech-section">
@@ -58,11 +58,16 @@ function TechStack() {
               <span className="en">{c.en}</span>
             </div>
             <div className="tech-chips">
-              {c.items.map((n) => (
-                <span key={n} className="tech-chip">
-                  {n}
-                </span>
-              ))}
+              {c.items.map((item) => {
+                const name = typeof item === 'string' ? item : item.name;
+                const badge = typeof item === 'object' && item.badge;
+                return (
+                  <span key={name} className="tech-chip">
+                    {name}
+                    {badge && <span className="badge">{badge}</span>}
+                  </span>
+                );
+              })}
             </div>
           </div>
         ))}
