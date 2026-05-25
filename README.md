@@ -1,92 +1,149 @@
-# 颶風軟體有限公司 · HurricaneSoft Ltd.
+# 颶風軟體有限公司 · HurricaneSoft Ltd. — 接案工作室 Landing Page
 
-> **Studio for Hire — 開發流程自動化 · Automated Software Delivery**
-> 統一編號 **80289779**　·　可開立公司行號統編發票　·　負責人 王英豪
->
-> AI 整合是基本盤 — 真正的差異是把整套開發流程自動化（規格 → 設計 → 實作 → 審查 → 部署 → 維運），**一個人扛起以往需要整支團隊的產出**。
+把整套開發流程自動化（規格→設計→實作→審查→部署→維運），一個人扛起以往需要整支團隊的產出。
 
-🌐 **線上版**：[cancleeric.github.io/resume/resume.html](https://cancleeric.github.io/resume/resume.html)
-🌪️ **作品實證**：[hurricanesoft.com.tw/pipeline](https://www.hurricanesoft.com.tw/pipeline) — LF 全系統 Pipeline 即時運行狀態
+這個 repo 是**公司對外接案的主要入口頁**，同時也是「開發流程自動化」最直接的實體證明——頁面本身每小時由 AI 自動迭代、commit、push、部署，無人手動改 code。
 
 ---
 
-## 服務項目（六大類）
+## 線上網址
 
-| 項目 | 定位 | 實證 |
-|---|---|---|
-| **⚡ 開發流程自動化（主力）** | AI 副手分工 + Agent 框架 + 工單狀態機 + 自建 CI/CD + 量化評審 | 自家集團一個人月跑 30+ 系統維運 + 多 SaaS 並行迭代 |
-| 🤖 AI / LLM 平台整合 | LLM Gateway / 計費 / Provider routing / 自訓模型 / RAG / 多 Agent | Brain + Modelhub + Anemone 跨產品線跑生產 |
-| 🏢 多租戶 SaaS 從 0 到上線 | 多租戶資料隔離 / 計費 / Admin / SDK / API 共用層 | 9+ 系統接入（Hurricane Pay / Squid 生態） |
-| 🔐 身份 / 安全基礎建設 | OAuth2/OIDC 自建 / SSO / MFA / 密鑰管理 | Hurricane Vault 90+ secrets 治理 |
-| 💳 金流 / 訂閱整合 | PayPal / 跨境 / Webhook / 訂閱與發票 / 多租戶帳務 | Hurricane Pay v0.13.0 LIVE |
-| ☁️ GCP Cloud Run 部署 | 容器化 / Cloud Build / Artifact Registry / Secret Manager | 19 個生產服務維運經驗 |
-| ⚙️ 既有系統現代化 | .NET Framework → .NET 8 / 單體 → 微服務 / Legacy → Modern | 信保基金 1.5 年現代化 / STA 5,000+ 學員平台 |
+| 頁面 | URL |
+|------|-----|
+| 主入口（redirect） | https://cancleeric.github.io/resume/ |
+| 設計版 · 亮（主力） | https://cancleeric.github.io/resume/design/index-light.html |
+| 設計版 · 深 | https://cancleeric.github.io/resume/design/index.html |
+| 標準版（舊） | https://cancleeric.github.io/resume/resume.html |
 
 ---
 
-## 接案模式 / 報價
+## 檔案結構
 
-| 模式 | 報價 | 適用 |
-|---|---|---|
-| **月費 Retainer**（主推） | **US$ 10,000 / 月** | 3 個月以上中長案，負責人 + AI 副手團隊全力投入 |
-| **專案制 Project-based** | **US$ 8,000 起 / 案** | POC 2–4 週 / MVP 4–8 週 / 現代化 8–12 週，固定價 + 里程碑 |
-| **顧問諮詢 Advisory** | **US$ 250 / 小時** | 架構審查 / 技術選型 / Code Review，最少 4 小時起 |
-
-**合作流程**：免費 30 分諮詢 → 範圍確認 → 報價單 → 簽約（30% 訂金）→ 開發 → 里程碑驗收 → 上線 → 1 個月保固
-**付款**：可開發票、支援電匯 / Wise / 加密貨幣（USDC）
-
----
-
-## 信任要件（2026 集團規模）
-
-| 指標 | 數字 |
-|---|---|
-| 軟體工程經驗 | **25 年**（2001-2026） |
-| 集團子公司 | **6 家**（HurricaneSoft / Edge / Core / Prime / Digital / Tech） |
-| 生產系統 | **30+ 個** 互相整合的服務 |
-| GCP Cloud Run | **19 services**（HurricaneSoft 統一維運） |
-| 對外 SaaS 產品 | **8+ 個**（Manta / Conch / Abacus / Tianji / 打工仔 / AICAD / fiona-radar / Gyre） |
-| 集團統一基建 | LIDS / Vault / Hurricane Pay / Brain / Anemone / Modelhub / Wiki.js / Gitea / Headscale |
-| 企業客戶服務 | **100+** |
-| SaaS Tenant | **9+** 接入 |
-
----
-
-## 文件結構
-
-| 檔案 / 目錄 | 用途 |
-|---|---|
-| `resume.md` / `resume.html` | **接案主頁**（工作室定位 / 開發流程自動化） |
-| `resume-style.css` | 雙模樣式（螢幕 + 列印 A4） |
-| `template.html5` | pandoc HTML 模板 |
-| `build.sh` | `pandoc` build 腳本 |
-| `archive/` | **舊資料封存**：6 求職特化版、PROJECTS / INSTRUCTIONS、過往 plans / presets |
-
----
-
-## 使用本 repo（自架 / build PDF）
-
-```bash
-git clone https://github.com/cancleeric/resume.git
-cd resume
-./build.sh                    # 一鍵 build 全部 .html
-./build.sh resume.md          # 單檔 build
-open resume.html              # 開瀏覽器看
+```
+resume/
+├── index.html                  # 根入口，redirect → design/index-light.html
+├── resume.md                   # 標準版原稿（Markdown）
+├── resume.html                 # pandoc build 出的標準版 HTML
+├── resume-style.css            # 標準版樣式（螢幕 + 列印 A4）
+├── template.html5              # pandoc HTML5 模板
+├── build.sh                    # 一鍵 build 腳本（需 pandoc）
+├── CHANGELOG.md                # 版本紀錄（v<major>.<minor>，目前 v8.x）
+├── sitemap.xml                 # SEO sitemap（三版 URL）
+├── robots.txt                  # 爬蟲指引
+│
+├── design/                     # 主力設計版（接案 landing page）
+│   ├── index-light.html        # 亮色版（主力，SEO canonical）
+│   ├── index.html              # 深色版
+│   ├── i18n/
+│   │   ├── core.js             # i18n runtime（語系切換邏輯）
+│   │   ├── dict-zh.js          # 繁體中文字典（fallback / default）
+│   │   └── dict-en.js          # 英文字典
+│   └── src/                    # React JSX 元件原始碼（僅供參考，未 bundle）
+│       ├── app.jsx             # 根元件
+│       ├── hero.jsx            # Hero 區段
+│       ├── services.jsx        # 服務項目
+│       ├── pricing.jsx         # 報價模式
+│       ├── systems.jsx         # 可交付系統
+│       ├── timeline.jsx        # 交付案例時間軸
+│       ├── trust.jsx           # 信任要件
+│       ├── faq-cta.jsx         # FAQ + 預約 CTA
+│       └── tokens.jsx          # Design tokens
+│
+├── assets/                     # 靜態資源（avatar 等）
+├── screenshots/                # 頁面截圖存檔（loop 親測用）
+└── archive/                    # 封存舊版（6 個求職特化版 + 舊 plans）
 ```
 
-需求：`pandoc`（`brew install pandoc`）
+---
+
+## 本地預覽
+
+設計版是純 HTML + 內聯 JS，直接開瀏覽器即可：
+
+```bash
+open design/index-light.html
+```
+
+標準版需要 pandoc build：
+
+```bash
+brew install pandoc       # 僅首次
+./build.sh                # build 全部 .html
+open resume.html
+```
 
 ---
 
-## 預約諮詢
+## 自動優化 Loop
 
-- **Email**：[cancleeric@gmail.com](mailto:cancleeric@gmail.com?subject=%5B%E6%8E%A5%E6%A1%88%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4)（含預填表單）
-- **電話**：[0921-107-206](tel:+886921107206)（tap-to-call）
-- **作品官網**：[hurricanesoft.com.tw/pipeline](https://www.hurricanesoft.com.tw/pipeline)
-- **下個可承接檔期**：2026 Q3 · 同時段最多 2 個專案 · 顧問諮詢隨到隨接
+這個 repo 接入 Agentic OS 控制台的 `/loop` 自動優化排程。
 
-> 免費 30 分鐘諮詢 — 聊聊您的案子是否 fit，無壓力。回信時間 24 小時內。
+**排程**：每小時 `:23` 分（`23 * * * *`，session-only，session 結束需重建）
+
+**每輪流程**：
+
+```
+CPO（計劃）→ CEO（審核）→ CTO（實作）→ eye 驗收 → CEO 親測 → git commit + push
+```
+
+**紀律**：
+- 每輪挑最弱一個點聚焦修改，不大改
+- skip 只留給真的窮舉過無改進空間的版面
+- 禁止 CPO 動 code，禁止任何副手執行 git 操作
+- git 操作只由 CEO 本人執行
+
+**loop 設定檔**：`/Users/apple/HurricaneSoft/console/LOOP-SETUP.md`
+
+push main 後 GitHub Pages 約 1–2 分鐘自動部署，無需手動操作。
 
 ---
 
-**最後更新：** 2026 年 5 月 · 接案 / 顧問 / 月費合作 · 可開發票
+## i18n 系統
+
+設計版支援繁體中文 / 英文切換，由 `design/i18n/` 驅動。
+
+| 檔案 | 說明 |
+|------|------|
+| `core.js` | runtime：語系偵測、切換、DOM 渲染 |
+| `dict-zh.js` | 繁中字典，全站預設 fallback |
+| `dict-en.js` | 英文字典 |
+
+字串以 key 形式管理，例如 `hero.h1_line1`、`meta.title`。
+新增文案只需在兩份 dict 同步新增對應 key，不動 HTML 結構。
+
+---
+
+## 版號規則
+
+格式：`v<major>.<minor>`
+
+| 等級 | 觸發條件 |
+|------|---------|
+| major | 定位轉移（如求職版→接案版）、大型改版 |
+| minor | 每次 loop 迭代 polish batch |
+
+目前版號：**v8.x**（2026-05）
+
+完整版本紀錄：[CHANGELOG.md](./CHANGELOG.md)
+
+---
+
+## 部署方式
+
+push `main` branch → GitHub Pages 自動部署，無需額外設定。
+
+```bash
+git push origin main
+# GitHub Pages 約 1–2 分鐘後生效
+```
+
+GitHub Pages 設定：Source = `main` branch，根目錄 `/`
+
+---
+
+## 聯絡
+
+- Email：cancleeric@gmail.com
+- 電話：0921-107-206
+- 統一編號：80289779（可開發票）
+- 官網：https://www.hurricanesoft.com.tw
