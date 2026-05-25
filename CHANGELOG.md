@@ -1,3 +1,6 @@
+## v8.12 · 2026-05-26
+- a11y(C版): sticky-toc active 顏色由 --orange(#FF6B35, 2.8:1) 改為 #B14A0E(AA 合規)，與 section-label 處理一致
+
 ## v8.11 · 2026-05-26
 - copy(B版): EN secure.li2 語法修正 "fails the gate, doesn't ship" → 主詞明確版本，安全聲明更有力
 
