@@ -1,3 +1,6 @@
+## v8.11 · 2026-05-26
+- copy(B版): EN secure.li2 語法修正 "fails the gate, doesn't ship" → 主詞明確版本，安全聲明更有力
+
 ## v8.10 · 2026-05-25
 - seo(A版): twitter:image:alt 補齊，三版 Twitter card 資料完全一致
 

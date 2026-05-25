@@ -129,7 +129,7 @@ window.DICT_EN = {
   'secure.title':  'Automated output, automated security validation',
   'secure.lead':   'The real risk of automated development isn\'t "can\'t build it" — it\'s "built too fast, too many holes." So the "review" stage of this pipeline is not for show:',
   'secure.li1':    '<strong>A self-built security validation agent</strong>: not just static source scanning — it actively validates the running system (CVE checks, vulnerability detection, behavioral verification)',
-  'secure.li2':    '<strong>Quantified review gates</strong>: fails the gate, doesn\'t ship to deploy',
+  'secure.li2':    '<strong>Quantified review gates</strong>: anything that fails the gate is blocked from deploy — no exceptions',
   'secure.li3':    '<strong>Deliverables include the scan &amp; validation log</strong>: not "fast but loose" — "fast, with an agent actively watching for holes"',
   // ── services ─────────────────────────────────────────────────────────────
   'svc.section.title':   'Eight services.<br/>The whole pipeline covered.',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.10 · Last updated 2026/05/25 21:53',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.11 · Last updated 2026/05/26 09:23',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
