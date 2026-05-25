@@ -1,3 +1,6 @@
+## v8.19 · 2026-05-26
+- seo(A版): meta name="description" 補齊月費/專案制區分，三版所有 meta 標籤完全一致
+
 ## v8.18 · 2026-05-26
 - seo(B/C共用): dict meta.description ZH/EN 補齊月費/專案制區分，所有 meta/og/twitter 標籤現全面一致
 
