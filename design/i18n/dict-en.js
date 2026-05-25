@@ -347,14 +347,14 @@ window.DICT_EN = {
   'cta.title.line2':      'free.',
   'cta.title.line3':      'We\'ll walk you through',
   'cta.title.line4':      'the full pipeline live.',
-  'cta.sub':              'No sales pitch, no vague promises. See how we work, then decide. Ideal for: CTO, VP Eng, Founder, Head of PM.',
+  'cta.sub':              'No sales pitch, no vague promises. See how we work, then decide. Ideal for: CTO, VP Eng, Founder, Head of Product.',
   // [R] from I18N lede-cta-btn / contact-primary-cta
   'cta.primary':          'Book a Consultation · 30 min free',
   'cta.secondary':        'Send us an email',
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.04 · Last updated 2026/05/25',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.05 · Last updated 2026/05/25 18:46',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

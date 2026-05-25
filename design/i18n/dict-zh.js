@@ -340,12 +340,12 @@ window.DICT_ZH = {
   'cta.title.line2':      '免費。',
   'cta.title.line3':      '帶您看一次',
   'cta.title.line4':      '完整 pipeline 跑現場。',
-  'cta.sub':              '不推銷、不畫餅。先看我們怎麼做、再決定要不要合作。適合對象：CTO、VP Eng、創辦人、PM head。',
+  'cta.sub':              '不推銷、不畫餅。先看我們怎麼做、再決定要不要合作。適合對象：CTO、VP Eng、創辦人、產品負責人。',
   'cta.primary':          '預約諮詢 · 30 min free',
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.04 · 最後更新 2026/05/25',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.05 · 最後更新 2026/05/25 18:46',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

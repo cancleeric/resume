@@ -1,3 +1,6 @@
+## v8.05 · 2026-05-25
+- copy(B+C版): CTA 目標對象「PM head」→「產品負責人」(EN: "Head of PM" → "Head of Product")，修正混搭職稱
+
 ## v8.04 · 2026-05-24
 - copy(B+C版): meta.description 中英文補「最快 1–2 週上工」，Google 搜尋摘要現在有速度 hook
 
