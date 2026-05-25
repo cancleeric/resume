@@ -95,7 +95,7 @@ window.DICT_ZH = {
   // freelancer col
   'why.freelancer.head': '個人接案',
   'why.freelancer.row.01': '個人扛，遇資安／合約／DB／部署痛點時容易斷線',
-  'why.freelancer.row.02': '時薪低、但常需自行補軟硬體',
+  'why.freelancer.row.02': '時薪看似低，但 scope 蔓延 + 重工成本高，實際付費往往超標',
   'why.freelancer.row.03': '快，但 stack 與部署常需重做',
   'why.freelancer.row.04': '單點工程：前端 or 後端 or 設計',
   'why.freelancer.row.05': '快，但風險評估常缺位',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.23 · 最後更新 2026/05/26 04:02',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.24 · 最後更新 2026/05/26 04:08',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

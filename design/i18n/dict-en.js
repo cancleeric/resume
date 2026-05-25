@@ -103,7 +103,7 @@ window.DICT_EN = {
   // freelancer col [R] from I18N diff-freelancer (adapted)
   'why.freelancer.head': 'Solo Freelancer',
   'why.freelancer.row.01': 'Solo accountability — tends to break down on security / contracts / DB / deployment complexity',
-  'why.freelancer.row.02': 'Lower hourly rate, but often requires additional tooling and hardware costs',
+  'why.freelancer.row.02': 'Quoted hourly looks low — but scope creep and rework typically push the real total well above the quote',
   'why.freelancer.row.03': 'Fast start, but stack and deployment often need rework',
   'why.freelancer.row.04': 'Single-point engineering: frontend or backend or design',
   'why.freelancer.row.05': 'Fast, but risk assessment is often missing',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.23 · Last updated 2026/05/26 04:02',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.24 · Last updated 2026/05/26 04:08',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

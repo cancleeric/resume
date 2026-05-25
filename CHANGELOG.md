@@ -1,3 +1,6 @@
+## v8.24 · 2026-05-26
+- trust(C版): why.freelancer.row.02 修正——原「時薪低」開頭讓 freelancer 看起來有優勢；改為「時薪看似低，但 scope 蔓延 + 重工成本高，實際付費往往超標」，正確傳達總成本隱患（ZH/EN 同步）
+
 ## v8.23 · 2026-05-26
 - trust(B版): sys.gyre.tagline 修正——原文「多服務架構（apps/api + web + ai-service）」描述程式碼結構非產品價值；改為「多平台社群同步 SaaS v0.11.0 — 一次撰寫、多平台同步發佈」（ZH/EN 同步）
 
