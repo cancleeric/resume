@@ -58,8 +58,8 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "檔期多久能排到？", "acceptedAnswer": { "@type": "Answer", "text": "顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 2026/07 起（約 6 週後）。專案制依範圍 1-2 週內可 kick-off。" } },
-      { "@type": "Question", "name": "會簽 NDA / 開發票嗎？", "acceptedAnswer": { "@type": "Answer", "text": "會。可開立公司行號統編發票，標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。付款支援電匯／Wise／加密貨幣（USDC）。" } },
+      { "@type": "Question", "name": "檔期多久能排到？", "acceptedAnswer": { "@type": "Answer", "text": "顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 2026/07 起（約 5 週後）。專案制依範圍 1-2 週內可 kick-off。" } },
+      { "@type": "Question", "name": "會簽 NDA / 開發票嗎？", "acceptedAnswer": { "@type": "Answer", "text": "會。可開立公司行號統編發票（80289779），標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。付款支援電匯／Wise／加密貨幣（USDC）。" } },
       { "@type": "Question", "name": "為何 US$ 10K/月不是按 hourly？", "acceptedAnswer": { "@type": "Answer", "text": "月費模式讓負責人 + AI 副手團隊全力投入，不必為了計時打折注意力。同等價位 hourly 大約 US$ 80/h × 125h，但月費模式我們會超工，因為自家工具加成讓單位時間產出更高。" } },
       { "@type": "Question", "name": "跟你合作會用到哪些 AI 工具？", "acceptedAnswer": { "@type": "Answer", "text": "內部 SOP：Claude Code（主力）+ 自建 LLM Gateway（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway，client code／data 全程不出您的環境（除非授權）。" } },
       { "@type": "Question", "name": "能不能只請你做某個 module，不要整套？", "acceptedAnswer": { "@type": "Answer", "text": "可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週做完 OAuth/SSO 整合、2 週做完 PayPal 金流串接、3 週做完 Cloud Run 部署架構盤點與導入。" } },
@@ -233,7 +233,7 @@
     <div class="availability">
       <div class="availability__dot"></div>
       <div class="availability__body">
-        <strong data-i18n="avail-strong">下個可承接檔期：2026/07 起（最快 6 週後 kick-off）</strong>
+        <strong data-i18n="avail-strong">下個可承接檔期：2026/07 起（最快 5 週後 kick-off）</strong>
         <span data-i18n="avail-detail">· 月費 Retainer 同時段最多 2 案 · 顧問諮詢隨到隨接 · 專案制 1-2 週內啟動</span>
       </div>
       <a class="availability__cta" href="#預約諮詢-book-consultation" data-i18n="avail-cta">先預約檔期 →</a>
@@ -488,11 +488,11 @@
     <div class="faq-grid">
       <details class="faq-item" open>
         <summary data-i18n="faq1-q">檔期多久能排到？</summary>
-        <p data-i18n="faq1-a">顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 <strong>2026/07 起（約 6 週後）</strong>。專案制依範圍 1-2 週內可 kick-off。</p>
+        <p data-i18n="faq1-a">顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 <strong>2026/07 起（約 5 週後）</strong>。專案制依範圍 1-2 週內可 kick-off。</p>
       </details>
       <details class="faq-item">
         <summary data-i18n="faq2-q">會簽 NDA / 開發票嗎？</summary>
-        <p data-i18n="faq2-a">會。可開立公司行號統編發票，標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。付款支援電匯／Wise／加密貨幣（USDC）。</p>
+        <p data-i18n="faq2-a">會。可開立公司行號統編發票（80289779），標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。付款支援電匯／Wise／加密貨幣（USDC）。</p>
       </details>
       <details class="faq-item">
         <summary data-i18n="faq3-q">為何 US$ 10K/月不是按 hourly？</summary>
@@ -669,7 +669,7 @@ const I18N = {
   'hero-cta':           'See it live ↗',
 
   // availability bar
-  'avail-strong': 'Next available slot: from 2026/07 (earliest kick-off ~6 weeks out)',
+  'avail-strong': 'Next available slot: from 2026/07 (earliest kick-off ~5 weeks out)',
   'avail-detail': '· Monthly Retainer: max 2 concurrent engagements · Advisory: available immediately · Project-based: kick-off within 1–2 weeks',
   'avail-cta':    'Reserve a slot →',
 
@@ -818,7 +818,7 @@ const I18N = {
   // FAQ section
   'h2-faq': 'FAQ — Frequently Asked Questions',
   'faq1-q': 'How soon can you start?',
-  'faq1-a': 'Advisory engagements are available immediately (minimum 4 hours). Monthly Retainer has a maximum of 2 concurrent slots — next availability from <strong>2026/07 (approximately 6 weeks out)</strong>. Project-based engagements can kick off within 1–2 weeks depending on scope.',
+  'faq1-a': 'Advisory engagements are available immediately (minimum 4 hours). Monthly Retainer has a maximum of 2 concurrent slots — next availability from <strong>2026/07 (approximately 5 weeks out)</strong>. Project-based engagements can kick off within 1–2 weeks depending on scope.',
   'faq2-q': 'Do you sign NDAs and issue invoices?',
   'faq2-a': 'Yes. Invoices are available under a registered company tax ID. Our standard NDA template can be signed immediately; custom NDA requests are addressed within 24 hours. Payment accepted via wire transfer / Wise / crypto (USDC).',
   'faq3-q': 'Why US$10K/month instead of hourly billing?',
