@@ -610,6 +610,10 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 
 /* AI tag readability — 亮底用更深的青提升對比 */
 .ai-tag { background: var(--cyan-soft) !important; color: #0369A1 !important; border-color: var(--cyan-line) !important; }
+/* 系統狀態標籤亮底對比修正：LIVE #16A34A ~3.25:1 / GA #0EA5E9 ~2.74:1 / BETA #D97706 ~3.19:1 均未達 AA */
+.badge-live  { color: #166534 !important; }  /* #166534 on white ~6.7:1 */
+.badge-ga    { color: #0369A1 !important; }  /* consistent with .ai-tag, .sys-card .metric fix */
+.badge-beta  { color: #92400E !important; }  /* #92400E on white ~7.0:1 */
 /* hero-sub pipeline 字：亮底用更深的橘，原 var(--orange) #FF6B35 對比僅 ~2.8:1 */
 .hero-sub .stage { color: #B14A0E !important; }
 /* faq-cta.jsx 用 var(--ink) 著色 strong，但 C版未定義 --ink → strong 繼承 --text-mid (#52555F) 無強調效果 */
