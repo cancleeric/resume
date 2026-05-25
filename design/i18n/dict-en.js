@@ -66,7 +66,7 @@ window.DICT_EN = {
   'hero.kpi.03.label':   'Cloud Run Services',
   'hero.kpi.04.label':   'Year Proven',
   // [R] from I18N avail-strong / avail-detail
-  'hero.avail.msg':      'Next available slot: from 2026/07 (earliest kick-off ~6 weeks out)',
+  'hero.avail.msg':      'Next available slot: from 2026/07 (earliest kick-off ~5 weeks out)',
   'hero.avail.meta':     'RETAINER · max 2 concurrent engagements',
 
   // ── pipeline visual (bilingual display, labels kept as-is) ───────────────
@@ -326,7 +326,7 @@ window.DICT_EN = {
   'faq.section.sub':          'Don\'t see your answer? Book a free 30-min consultation and ask directly.',
   // [R] from I18N faq*-q / faq*-a
   'faq.01.q': 'How soon can you start?',
-  'faq.01.a': 'Advisory engagements are available immediately (minimum 4 hours).\n\nMonthly Retainer has a maximum of 2 concurrent slots — next availability from 2026/07 (approximately 6 weeks out).\n\nProject-based engagements can kick off within 1–2 weeks depending on scope.',
+  'faq.01.a': 'Advisory engagements are available immediately (minimum 4 hours).\n\nMonthly Retainer has a maximum of 2 concurrent slots — next availability from 2026/07 (approximately 5 weeks out).\n\nProject-based engagements can kick off within 1–2 weeks depending on scope.',
   'faq.02.q': 'Do you sign NDAs and issue invoices?',
   'faq.02.a': '**Yes.** Invoices are available under a registered company tax ID (80289779).\n\nOur standard NDA template can be signed immediately; custom NDA requests are addressed within 24 hours.\n\nPayment accepted via wire transfer / Wise / crypto (USDC).',
   'faq.03.q': 'Why US$10K/month instead of hourly billing?',

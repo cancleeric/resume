@@ -61,7 +61,7 @@ window.DICT_ZH = {
   'hero.kpi.02.label':   'AI · SaaS 產品線',
   'hero.kpi.03.label':   'Cloud Run 服務',
   'hero.kpi.04.label':   '年實戰驗證',
-  'hero.avail.msg':      '下個可承接檔期：2026/07 起，最快 6 週後 kick-off',
+  'hero.avail.msg':      '下個可承接檔期：2026/07 起，最快 5 週後 kick-off',
   'hero.avail.meta':     'RETAINER · 同時段最多 2 案',
 
   // ── pipeline visual ──────────────────────────────────────────────────────
@@ -319,7 +319,7 @@ window.DICT_ZH = {
   'faq.section.title':        '常見問題。',
   'faq.section.sub':          '如果這裡沒有答案，預約 30 分鐘諮詢直接問。第一次免費。',
   'faq.01.q': '檔期多久能排到？',
-  'faq.01.a': '顧問諮詢類隨到隨接（4 小時起）。\n\n月費 Retainer 同時段最多 2 案，下個檔期 2026/07 起（約 6 週後）。\n\n專案制依範圍 1-2 週內可 kick-off。',
+  'faq.01.a': '顧問諮詢類隨到隨接（4 小時起）。\n\n月費 Retainer 同時段最多 2 案，下個檔期 2026/07 起（約 5 週後）。\n\n專案制依範圍 1-2 週內可 kick-off。',
   'faq.02.q': '會簽 NDA / 開發票嗎？',
   'faq.02.a': '**會。**可開立公司行號統編發票（80289779）。\n\n標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。\n\n付款支援電匯／Wise／加密貨幣（USDC）。',
   'faq.03.q': '為何 US$ 10K/月不是按 hourly？',
