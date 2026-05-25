@@ -1,3 +1,6 @@
+## v8.10 · 2026-05-25
+- seo(A版): twitter:image:alt 補齊，三版 Twitter card 資料完全一致
+
 ## v8.09 · 2026-05-25
 - seo(C版): twitter:image:alt 補齊，對齊 B版，三版 Twitter card 資料一致
 
