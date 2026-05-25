@@ -1,3 +1,6 @@
+## v8.13 · 2026-05-26
+- copy(A版): EN hire-lede 20× 措辭統一 "our own sense of it" → "by our own measure"，與 B/C 版一致、語感更精準
+
 ## v8.12 · 2026-05-26
 - a11y(C版): sticky-toc active 顏色由 --orange(#FF6B35, 2.8:1) 改為 #B14A0E(AA 合規)，與 section-label 處理一致
 
