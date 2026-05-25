@@ -1,3 +1,6 @@
+## v8.20 · 2026-05-26
+- trust(B/C): why-studio.row.03 "retainer 隨時加入" → "月費下個檔期 2026/07"，準確稀缺性訊息消除與 FAQ 矛盾
+
 ## v8.19 · 2026-05-26
 - seo(A版): meta name="description" 補齊月費/專案制區分，三版所有 meta 標籤完全一致
 
