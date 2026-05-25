@@ -1,3 +1,6 @@
+## v8.14 · 2026-05-26
+- trust(B/C共用): og.description 檔期描述修正 "start within 1–2 weeks" → 區分月費(2026/07)與專案制(1–2週)，消除混淆
+
 ## v8.13 · 2026-05-26
 - copy(A版): EN hire-lede 20× 措辭統一 "our own sense of it" → "by our own measure"，與 B/C 版一致、語感更精準
 
