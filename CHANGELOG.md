@@ -1,3 +1,6 @@
+## v8.17 · 2026-05-26
+- seo(B版): 靜態 og/twitter HTML 補齊檔期區分；dict twitter.description ZH/EN 同步修正（三版 twitter 標籤至此全部一致）
+
 ## v8.16 · 2026-05-26
 - seo(A版): 靜態 og:description / twitter:description 補齊月費/專案制區分，三版靜態標籤一致
 
