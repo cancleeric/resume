@@ -1,3 +1,6 @@
+## v8.23 · 2026-05-26
+- trust(B版): sys.gyre.tagline 修正——原文「多服務架構（apps/api + web + ai-service）」描述程式碼結構非產品價值；改為「多平台社群同步 SaaS v0.11.0 — 一次撰寫、多平台同步發佈」（ZH/EN 同步）
+
 ## v8.22 · 2026-05-26
 - tech(A版): stack-db 補齊 Qdrant（LobsterFarm 生產向量 DB，架構圖 D1/D4 已標示但 resume.html 漏列）
 

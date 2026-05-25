@@ -224,7 +224,7 @@ window.DICT_ZH = {
   'sys.abacus.tagline':       '中小企業帳務財務 SaaS（hurricane-books）',
   'sys.tianji.tagline':       '占卜命理 iOS + Web SaaS',
   'sys.dagongzai.tagline':    '零工媒合 SaaS v1.1.0（2026/04）',
-  'sys.gyre.tagline':         '多服務架構（apps/api + web + ai-service）',
+  'sys.gyre.tagline':         '多平台社群同步 SaaS v0.11.0 — 一次撰寫、多平台同步發佈',
   // infra tab taglines
   'sys.hurricane-pay.tagline':'集團統一金流微服務 v0.13.0',
   'sys.lids.tagline':         'Multi-tenant SaaS 身份層 — OAuth2/OIDC',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.22 · 最後更新 2026/05/26 03:59',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.23 · 最後更新 2026/05/26 04:02',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',
