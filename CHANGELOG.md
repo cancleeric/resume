@@ -1,3 +1,6 @@
+## v8.18 · 2026-05-26
+- seo(B/C共用): dict meta.description ZH/EN 補齊月費/專案制區分，所有 meta/og/twitter 標籤現全面一致
+
 ## v8.17 · 2026-05-26
 - seo(B版): 靜態 og/twitter HTML 補齊檔期區分；dict twitter.description ZH/EN 同步修正（三版 twitter 標籤至此全部一致）
 
