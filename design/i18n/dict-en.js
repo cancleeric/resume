@@ -330,7 +330,7 @@ window.DICT_EN = {
   'faq.02.q': 'Do you sign NDAs and issue invoices?',
   'faq.02.a': '**Yes.** Invoices are available under a registered company tax ID (80289779).\n\nOur standard NDA template can be signed immediately; custom NDA requests are addressed within 24 hours.\n\nPayment accepted via wire transfer / Wise / crypto (USDC).',
   'faq.03.q': 'Why US$10K/month instead of hourly billing?',
-  'faq.03.a': 'The Monthly Retainer keeps the Principal and AI copilot team fully focused — no incentive to pad hours.\n\nThe equivalent hourly rate would be roughly US$80/h × 125h, but on retainer we consistently over-deliver because our proprietary tooling multiplies per-hour output.',
+  'faq.03.a': 'The Monthly Retainer keeps the Principal and AI copilot team fully focused — no billing clock, no incentive to split attention.\n\nThe edge isn\'t more hours — it\'s **output density**: proprietary tooling compresses what a traditional team delivers in 2–3 months into a single month (proof: SaaS from zero to production in 23 days).\n\nThe same budget at hourly (~US$80/h × 125h) buys a single engineer at one layer; retainer buys full-pipeline coverage — spec → design → build → review → deploy → ops.',
   'faq.04.q': 'What AI tools will be used in an engagement?',
   'faq.04.a': '**Stack**: Claude Code (primary) + self-built LLM Gateway (Brain) + AI copilot role library (claude-agents).\n\nAll LLM calls route through our self-hosted Anemone gateway — your client code and data stay in your environment unless you explicitly authorize otherwise.',
   'faq.05.q': 'Can I hire you for just one module instead of the whole stack?',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.25 · Last updated 2026/05/26 04:14',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.26 · Last updated 2026/05/26 04:33',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
