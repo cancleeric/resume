@@ -1,3 +1,6 @@
+## v8.16 · 2026-05-26
+- seo(A版): 靜態 og:description / twitter:description 補齊月費/專案制區分，三版靜態標籤一致
+
 ## v8.15 · 2026-05-26
 - seo(C版): og:description / twitter:description 靜態 HTML 補齊 R10 月費/專案制區分（社群爬蟲讀 HTML 不跑 JS，dict 修正需同步靜態標籤）
 
