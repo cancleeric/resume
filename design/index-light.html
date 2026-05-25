@@ -612,6 +612,8 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 .ai-tag { background: var(--cyan-soft) !important; color: #0369A1 !important; border-color: var(--cyan-line) !important; }
 /* hero-sub pipeline 字：亮底用更深的橘，原 var(--orange) #FF6B35 對比僅 ~2.8:1 */
 .hero-sub .stage { color: #B14A0E !important; }
+/* faq-cta.jsx 用 var(--ink) 著色 strong，但 C版未定義 --ink → strong 繼承 --text-mid (#52555F) 無強調效果 */
+.faq-a-para strong { color: var(--text-hi) !important; }
 
 /* flow particle keep orange/cyan glows but smaller halo */
 .flow-particle { box-shadow: 0 0 10px var(--orange); }

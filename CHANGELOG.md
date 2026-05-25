@@ -1,3 +1,6 @@
+## v8.21 · 2026-05-26
+- ux(C版): FAQ 答案 bold 文字修正——faq-cta.jsx 使用 var(--ink) 但 C版未定義此變數，導致 strong 繼承 --text-mid 無視覺強調；新增 .faq-a-para strong { color: var(--text-hi) } 覆寫
+
 ## v8.20 · 2026-05-26
 - trust(B/C): why-studio.row.03 "retainer 隨時加入" → "月費下個檔期 2026/07"，準確稀缺性訊息消除與 FAQ 矛盾
 
