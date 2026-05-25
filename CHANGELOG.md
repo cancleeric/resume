@@ -1,3 +1,6 @@
+## v8.08 · 2026-05-25
+- seo(B版): twitter:image:alt 補齊（og:image:alt 有、twitter card 缺），三版 card 共享資料一致
+
 ## v8.07 · 2026-05-25
 - seo(三版): JSON-LD areaServed "TW" → ["TW","Worldwide"]，反映國際客戶定位（USD計價、英文版）
 
