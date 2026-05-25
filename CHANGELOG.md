@@ -1,3 +1,6 @@
+## v8.15 · 2026-05-26
+- seo(C版): og:description / twitter:description 靜態 HTML 補齊 R10 月費/專案制區分（社群爬蟲讀 HTML 不跑 JS，dict 修正需同步靜態標籤）
+
 ## v8.14 · 2026-05-26
 - trust(B/C共用): og.description 檔期描述修正 "start within 1–2 weeks" → 區分月費(2026/07)與專案制(1–2週)，消除混淆
 
