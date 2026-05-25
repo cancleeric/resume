@@ -1,3 +1,6 @@
+## v8.07 · 2026-05-25
+- seo(三版): JSON-LD areaServed "TW" → ["TW","Worldwide"]，反映國際客戶定位（USD計價、英文版）
+
 ## v8.06 · 2026-05-25
 - copy(A版): EN lede-cta-note 修正破碎句式「not a fit? we'll say so」→「if it's not a fit, we'll say so upfront — no pressure」
 
