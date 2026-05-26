@@ -1,3 +1,6 @@
+## v8.78 · 2026-05-26
+- seo(C版): index-light.html meta.description 補「SaaS 最快 23 天上線（214 commits 可查）」proof point——三版 meta.description 核心 proof point 一致，強化 Google snippet 說服力
+
 ## v8.77 · 2026-05-26
 - seo(B版): index.html FAQPage schema faq5（module scope）補 AI Agent PoC 技術細節；faq6（code 歸屬）補里程碑交付訊息——B版 schema 全部對齊 A/C 版
 
