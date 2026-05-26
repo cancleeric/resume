@@ -1,3 +1,6 @@
+## v8.41 · 2026-05-26
+- ux(C版): why-studio 比較表 tone 修正——freelancer row.04「單點工程」由 mid→bad（灰→紅）；freelancer/agency row.06「驗證程度」均由 mid→bad，studio=good 綠色對比更明確；B版同受益
+
 ## v8.40 · 2026-05-26
 - proof(B版): why.section.sub 移除「體感約 20×（by our own measure）」自評語，改為「23 天（214 commits，git 紀錄可查）」——B/C 版「20×」最後一處清零；與 A版 R30、hero.claim R32 全面對齊（ZH/EN 同步）
 

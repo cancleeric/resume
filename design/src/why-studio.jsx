@@ -26,7 +26,7 @@ function WhyStudio() {
       studio:     { textKey: 'why.studio.row.03',     tone: 'good' },
     }},
     { labelKey: 'why.row.04.label', en: 'COVERAGE', values: {
-      freelancer: { textKey: 'why.freelancer.row.04', tone: 'mid' },
+      freelancer: { textKey: 'why.freelancer.row.04', tone: 'bad' },
       agency:     { textKey: 'why.agency.row.04',     tone: 'mid' },
       studio:     { textKey: 'why.studio.row.04',     tone: 'good' },
     }},
@@ -36,8 +36,8 @@ function WhyStudio() {
       studio:     { textKey: 'why.studio.row.05',     tone: 'good' },
     }},
     { labelKey: 'why.row.06.label', en: 'PROOF', values: {
-      freelancer: { textKey: 'why.freelancer.row.06', tone: 'mid' },
-      agency:     { textKey: 'why.agency.row.06',     tone: 'mid' },
+      freelancer: { textKey: 'why.freelancer.row.06', tone: 'bad' },
+      agency:     { textKey: 'why.agency.row.06',     tone: 'bad' },
       studio:     { textKey: 'why.studio.row.06',     tone: 'good' },
     }},
   ];
