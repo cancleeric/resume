@@ -1,3 +1,6 @@
+## v8.49 · 2026-05-26
+- trust(A版): faq6-a 補「里程碑驗收完即可拿走當下完整版本」——消除客戶「提前結束合作拿不到 code」的疑慮；明確授權 Brain LLM Gateway 免額外授權費（ZH/EN 同步）
+
 ## v8.48 · 2026-05-26
 - cta(C版): hero.cta.primary EN「Reserve」→「Claim」——急迫感與 ZH「搶下」對齊；hero.avail.msg EN 改更緊湊格式（B版同受益）
 
