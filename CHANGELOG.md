@@ -1,3 +1,6 @@
+## v8.56 · 2026-05-26
+- fix(B/C版): services.jsx svc.08 chips 含 ZH 字串（資格評估/計畫書撰寫）在 EN 模式不翻譯——改為 EN「Eligibility Review / Proposal Writing」（C版同受益）
+
 ## v8.55 · 2026-05-26
 - copy(A版): h2-why-studio EN 補「Not a Freelancer or Agency」——與 B/C v8.54 對齊，從 heading 層級就直接點名競品對比（EN only）
 

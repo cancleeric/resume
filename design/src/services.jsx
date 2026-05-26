@@ -68,7 +68,7 @@ function Services() {
       tcKey: 'svc.08.tc',
       en: 'GOV AI GRANTS',
       descKey: 'svc.08.desc',
-      chips: ['SBIR / SIIR', '資格評估', '計畫書撰寫'],
+      chips: ['SBIR / SIIR', 'Eligibility Review', 'Proposal Writing'],
     },
   ];
 
