@@ -1,3 +1,6 @@
+## v8.33 · 2026-05-26
+- wcag(C版): tone-icon.bad 對比修正——--orange #FF6B35 亮底僅 ~2.8:1 未達 AA；改為 #C2410C ~4.5:1 達 WCAG 1.4.11（arch: D4 toc-desc 補 SwiftUI/Next.js 技術棧）
+
 ## v8.32 · 2026-05-26
 - proof(B版): why.studio.row.06 PROOF 行去除「體感約 20×」自評語；改為「SaaS 0→生產最快 23 天（214 commits 到上線）」具體數據（ZH/EN 同步，C版同受益）
 
