@@ -1,3 +1,6 @@
+## v8.61 · 2026-05-26
+- trust(A版): rate-foot EN i18n 交付保障段補「at each milestone acceptance you receive the complete current version」——與 ZH inline v8.57 及 B/C pricing.section.sub v8.59 對齊，三版全頁里程碑交付訊息一致
+
 ## v8.60 · 2026-05-26
 - a11y(C版): index-light.html CTA eyebrow（12px）+ title accent 補亮底對比 override——var(--orange) #FF6B35 ~2.8:1 未達 AA，改 #B14A0E ~4.5:1（與 KPI/hero title 模式一致）
 
