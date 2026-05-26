@@ -86,7 +86,7 @@
       { "@type": "Question", "name": "為何 US$ 10K/月不是按 hourly？", "acceptedAnswer": { "@type": "Answer", "text": "月費模式讓負責人 + AI 副手團隊全力投入，不必為了計時打折注意力。同等價位 hourly 大約 US$ 80/h × 125h，但月費模式我們會超工，因為自家工具加成讓單位時間產出更高。" } },
       { "@type": "Question", "name": "跟你合作會用到哪些 AI 工具？", "acceptedAnswer": { "@type": "Answer", "text": "內部 SOP：Claude Code（主力）+ 自建 LLM Gateway（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway，client code／data 全程不出您的環境（除非授權）。" } },
       { "@type": "Question", "name": "能不能只請你做某個 module，不要整套？", "acceptedAnswer": { "@type": "Answer", "text": "可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週 OAuth/SSO 整合（PKCE + JWT + 多租戶 Tenant provision）、2 週 AI Agent 導入 PoC（LLM Gateway 選型 + Prompt 工程 + 工具鏈整合）、3 週 Cloud Run 現代化（容器化 + CD pipeline + 監控告警）。" } },
-      { "@type": "Question", "name": "合作結束後 code 歸屬？", "acceptedAnswer": { "@type": "Answer", "text": "專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain LLM Gateway 等）可授權使用，不另收授權費。" } },
+      { "@type": "Question", "name": "合作結束後 code 歸屬？", "acceptedAnswer": { "@type": "Answer", "text": "專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您；不需等到結案——每個里程碑驗收完即可拿走當下完整版本，隨時可帶走給任何團隊接手。自家通用工具（Brain LLM Gateway 等）可授權使用，不另收授權費。" } },
       { "@type": "Question", "name": "工作室規模這麼小，萬一你檔期滿了或臨時有狀況？", "acceptedAnswer": { "@type": "Answer", "text": "正因為是工作室規模，我們嚴格控管同時段案量（月費 Retainer 最多 2 案），不超賣、不讓您的案子被排擠。每個專案的 code、文件、CI/CD、密鑰規範即時交付且文件化 —— 您手上隨時是一份完整、可被任何團隊接手的交付，不會被一個人綁死。重大決策有書面紀錄，進度每週同步。" } }
     ]
   }
@@ -240,7 +240,7 @@
       <ul class="auto-feed-list" id="auto-feed-list"></ul>
     </section>
 
-    <p class="sidebar__foot">v8.64 · 2026/05/26 14:00</p>
+    <p class="sidebar__foot">v8.67 · 2026/05/26 14:45</p>
   </aside>
 
   <main class="main">
@@ -317,7 +317,7 @@
     </div>
 
     <div class="secure-note">
-      <h3 class="secure-note__title">🛡 <span data-i18n="secure-title">自動化產出，安全也自動化驗收</span></h3>
+      <h3 class="secure-note__title">🛡 <span data-i18n="secure-title">自動化產出。自動化安全把關。每次部署過門前都要清關。</span></h3>
       <p class="secure-note__lead" data-i18n="secure-lead">自動化開發最該怕的不是「做不出來」，是「做太快、洞太多」。所以這套 pipeline 的「審查」不是擺設：</p>
       <ul class="secure-note__list">
         <li data-i18n="secure-li1"><strong>自建安全驗收 agent</strong>：不只靜態掃源碼，會主動對執行中的系統做驗收 —— CVE 比對、弱點偵測、行為驗證</li>
@@ -591,7 +591,7 @@
     </div>
 
     <hr />
-    <p><em data-i18n="footer-note">v8.64 · 最後更新 2026/05/26 14:00　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
+    <p><em data-i18n="footer-note">v8.67 · 最後更新 2026/05/26 14:45　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
 
   </main>
 
@@ -603,7 +603,7 @@
     · <a href="tel:+886921107206">📞 0921-107-206</a>
     · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" data-i18n="footer-pipeline">🌪️ LF Pipeline 線上作品 ↗</a>
   </p>
-  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v8.64</p>
+  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v8.67</p>
 </footer>
 
 <script>
@@ -895,10 +895,10 @@ const I18N = {
   'contact-note':         'Free 30-min consultation · Reply within 24 hours · No pressure — if it\'s not a fit, we\'ll say so',
 
   // footer
-  'footer-note':    'v8.64 · Last updated 2026/05/26 14:00 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
+  'footer-note':    'v8.67 · Last updated 2026/05/26 14:45 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
   'footer-consult': '📧 Hire Us',
   'footer-pipeline':'🌪️ LF Pipeline — Live Portfolio ↗',
-  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v8.64',
+  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v8.67',
 };
 
 // ── Snapshot Chinese originals once DOM is ready ──────────────────────────

@@ -1,3 +1,6 @@
+## v8.67 · 2026-05-26
+- copy(A版): secure-title ZH 硬編文字對齊 B/C v8.65——「自動化產出，安全也自動化驗收」→「自動化產出。自動化安全把關。每次部署過門前都要清關。」；FAQPage schema faq6 補里程碑交付訊息，與 C版 v8.66 對齊
+
 ## v8.66 · 2026-05-26
 - seo(C版): FAQPage schema faq6（code 歸屬）補「每個里程碑驗收完即可拿走完整版本」——與可見頁面內容一致，搜尋引擎 rich snippet / featured snippet 可收錄完整里程碑交付訊息
 
