@@ -1,3 +1,6 @@
+## v8.77 · 2026-05-26
+- seo(B版): index.html FAQPage schema faq5（module scope）補 AI Agent PoC 技術細節；faq6（code 歸屬）補里程碑交付訊息——B版 schema 全部對齊 A/C 版
+
 ## v8.76 · 2026-05-26
 - seo(A版): FAQPage schema faq7 補結尾說服句——「您不是在賭一個人，而是在買一套有紀律的交付系統。」與可見頁面一致，強化搜尋引擎 snippet 最後印象
 
