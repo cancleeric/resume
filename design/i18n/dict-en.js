@@ -56,7 +56,7 @@ window.DICT_EN = {
   'hero.status.slot':    'Limited slots · NEXT 2026/07',
   'hero.h1_line1':       'Full-Team Output,',
   'hero.h1_line2':       'One Engineer.',
-  'hero.sub':            'AI integration is table stakes — the real differentiator is <b style="color:var(--text-hi)">automating the entire delivery pipeline</b>: from spec to ops, every stage has AI copilots and automation toolchains in place.',
+  'hero.sub':            'AI integration is table stakes — the real differentiator is <b style="color:var(--text-hi)">automating the entire delivery pipeline</b>: spec → design → build → review → deploy → ops, with AI copilots owning every stage.',
   'hero.claim':          'A full year of validation: <b>one person + AI copilots delivered 14+ in-house products, SaaS shipped to production in as little as 23 days (214 commits — verifiable in git)</b> — carrying what used to take an entire team. This delivery speed is available for your project now.',
   'hero.cta.primary':    'Claim the 2026/07 Slot',
   'hero.cta.pipeline':   'See LF Pipeline live',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.51 · Last updated 2026/05/26 11:52',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.53 · Last updated 2026/05/26 12:15',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

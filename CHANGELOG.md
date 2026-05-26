@@ -1,3 +1,6 @@
+## v8.53 · 2026-05-26
+- copy(B/C版): hero.sub EN 精簡化——「from spec to ops, every stage has AI copilots and automation toolchains in place」→「spec → design → build → review → deploy → ops, with AI copilots owning every stage」更具體可掃描，與 svc.01 pipeline 對齊（ZH 不動）
+
 ## v8.52 · 2026-05-26
 - trust(A版): faq7-a 補「您不是在賭一個人，而是在買一套有紀律的交付系統。」——與 B/C dict 對齊，強化結案焦慮消除的最後一句（ZH/EN 同步）
 
