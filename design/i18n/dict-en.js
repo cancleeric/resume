@@ -134,7 +134,7 @@ window.DICT_EN = {
   'secure.li3':    '<strong>Deliverables include the scan &amp; validation log</strong>: not "fast but loose" — "fast, with an agent actively watching for holes"',
   // ── services ─────────────────────────────────────────────────────────────
   'svc.section.title':   'Eight services.<br/>The full pipeline, owned end to end.',
-  'svc.section.sub':     'Core is Automated Software Delivery — the rest extends from it. Every category has been validated in our own production environment.',
+  'svc.section.sub':     'Core is Automated Software Delivery — the rest extends from it. Every category validated in our own production environment. Fastest SaaS 0→production: 23 days.',
   // [R] from I18N svc-* keys
   'svc.01.tc':           'Automated Software Delivery (Core)',
   'svc.01.desc':         'Full pipeline automation: spec → design → build → review → deploy → ops. AI copilots, Agent framework, ticket state machine, self-hosted CI/CD, and quantified quality gates.',
@@ -357,7 +357,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.95 · Last updated 2026/05/26 21:45',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.96 · Last updated 2026/05/26 22:00',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
