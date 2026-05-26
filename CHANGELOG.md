@@ -1,3 +1,6 @@
+## v8.73 · 2026-05-26
+- seo(A版): FAQPage schema faq3（定價）對齊 C版 v8.72——補「SaaS 0→生產最快 23 天」+ 完整 pipeline 比較，兩個版本 schema 一致
+
 ## v8.72 · 2026-05-26
 - seo(C版): FAQPage schema faq3（定價）補「SaaS 0→生產最快 23 天」核心 proof point + 完整 pipeline 比較——schema 與可見 faq.03.a 對齊，提升搜尋引擎 rich snippet 說服力
 
