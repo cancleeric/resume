@@ -1,3 +1,6 @@
+## v8.45 · 2026-05-26
+- proof(C版): design dict faq.05.a 同步更新 scope 範例——移除「PayPal 金流串接」定位偏移範例，改為 OAuth/SSO PKCE+JWT、AI Agent PoC LLM Gateway、Cloud Run 現代化，與 A版 v8.39/v8.42 完全對齊（ZH/EN，B版同受益）
+
 ## v8.44 · 2026-05-26
 - fix(B/C版): hero.jsx 硬寫文字仍含「體感約 20×（≈20× by our own measure）」——dict 已改但 JSX fallback 未同步；補 214 commits/git 可查，與 dict v8.35 對齊，三版「20×」真正全清（ZH/EN）
 

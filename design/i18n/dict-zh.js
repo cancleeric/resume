@@ -327,7 +327,7 @@ window.DICT_ZH = {
   'faq.04.q': '跟你合作會用到哪些 AI 工具？',
   'faq.04.a': '**工具鏈**：Claude Code（主力）+ 自建 LLM Gateway（Brain）+ AI 副手角色庫（claude-agents）。\n\n所有 LLM 調用走自家 Anemone gateway —— client code 與資料全程不出您的環境（除非您授權）。',
   'faq.05.q': '能不能只請你做某個 module，不要整套？',
-  'faq.05.a': '可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週做完 OAuth/SSO 整合、2 週做完 PayPal 金流串接、3 週做完 Cloud Run 部署架構盤點與導入。',
+  'faq.05.a': '可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週 OAuth/SSO 整合（PKCE + JWT + 多租戶 Tenant provision）、2 週 AI Agent 導入 PoC（LLM Gateway 選型 + Prompt 工程 + 工具鏈整合）、3 週 Cloud Run 現代化（容器化 + CD pipeline + 監控告警）。',
   'faq.06.q': '合作結束後 code 歸屬？',
   'faq.06.a': '專案制 / 月費結束後，code、文件、CI/CD 設定、密鑰管理規範全交付給您。自家通用工具（Brain LLM Gateway 等）可授權使用，不另收授權費。',
   'faq.07.q': '工作室規模這麼小，萬一你檔期滿了或臨時有狀況？',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.44 · 最後更新 2026/05/26 11:08',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.45 · 最後更新 2026/05/26 11:09',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

@@ -334,7 +334,7 @@ window.DICT_EN = {
   'faq.04.q': 'What AI tools will be used in an engagement?',
   'faq.04.a': '**Stack**: Claude Code (primary) + self-built LLM Gateway (Brain) + AI copilot role library (claude-agents).\n\nAll LLM calls route through our self-hosted Anemone gateway — your client code and data stay in your environment unless you explicitly authorize otherwise.',
   'faq.05.q': 'Can I hire you for just one module instead of the whole stack?',
-  'faq.05.a': 'Absolutely — that\'s exactly what the Advisory or Project-based tiers are for. Common scopes: OAuth/SSO integration in 1 week, PayPal payment integration in 2 weeks, Cloud Run architecture audit and migration in 3 weeks.',
+  'faq.05.a': 'Absolutely — that\'s exactly what the Advisory or Project-based tiers are for. Common scopes: OAuth/SSO integration (PKCE + JWT + multi-tenant provisioning) in 1 week; AI Agent PoC (LLM gateway selection + prompt engineering + toolchain integration) in 2 weeks; Cloud Run modernization (containerization + CD pipeline + alerting) in 3 weeks.',
   'faq.06.q': 'Who owns the code after the engagement ends?',
   'faq.06.a': 'On project completion, all code, documentation, CI/CD configurations, and secrets management specs are fully transferred to you. Our proprietary general-purpose tooling (Brain LLM Gateway, etc.) is licensed for your use at no additional charge.',
   'faq.07.q': 'You\'re a small studio — what if you\'re fully booked or something comes up?',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.44 · Last updated 2026/05/26 11:08',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.45 · Last updated 2026/05/26 11:09',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
