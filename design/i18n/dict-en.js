@@ -115,7 +115,7 @@ window.DICT_EN = {
   'why.agency.row.03':   'Slow — 3–6 weeks pre-work, scheduled kick-off',
   'why.agency.row.04':   'Full chain, but many handoff points and integration gaps',
   'why.agency.row.05':   'Many meetings, long approval chains',
-  'why.agency.row.06':   'Logo wall — actual involvement depth varies',
+  'why.agency.row.06':   'Logo wall — no way to verify which engineer actually owned the work',
   // studio col [R] from I18N diff-freelancer/agency (adapted)
   'why.studio.head':     'HurricaneSoft',
   'why.studio.row.01':   'One Principal + AI copilot team — unbroken ownership from spec to ops',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.33 · Last updated 2026/05/26 10:36',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.34 · Last updated 2026/05/26 11:08',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

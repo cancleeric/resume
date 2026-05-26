@@ -107,7 +107,7 @@ window.DICT_ZH = {
   'why.agency.row.03':   '慢，3-6 週前置作業、kick-off 排期',
   'why.agency.row.04':   '全鏈、但層層介面、整合斷點多',
   'why.agency.row.05':   '會議多、簽核流程冗長',
-  'why.agency.row.06':   'logo wall，實際參與深度不一',
+  'why.agency.row.06':   'logo wall：無法核實執行工程師與技術深度',
   // studio col
   'why.studio.head':     '颶風軟體',
   'why.studio.row.01':   '一個負責人直扛 + AI 副手團隊，從 spec 到維運不中斷',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.33 · 最後更新 2026/05/26 10:36',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.34 · 最後更新 2026/05/26 11:08',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',
