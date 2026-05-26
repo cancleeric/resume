@@ -1,3 +1,6 @@
+## v8.83 · 2026-05-26
+- seo(B版): index.html og:description 補「SaaS 最快 23 天上線」proof point——B版 hardcoded og:description 與 dict + A/C 三版全部對齊
+
 ## v8.82 · 2026-05-26
 - seo(A版): resume.html og:description 補「SaaS 最快 23 天上線」proof point——三版 A/B/C og:description 社群卡片一致，強化 LinkedIn/Twitter 分享說服力
 
