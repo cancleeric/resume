@@ -1,3 +1,6 @@
+## v8.58 · 2026-05-26
+- copy(A版): h2-services EN「Services」→「Services — Full Pipeline Coverage」；h2-deliverables EN「Deliverable Systems」→「Real Systems We've Shipped」——兩個 heading 從通用詞升級為有差異化主張的標題（EN only）
+
 ## v8.57 · 2026-05-26
 - a11y(C版): index-light.html KPI band + 號補亮底對比 override——var(--orange) #FF6B35 ~2.8:1 未達 AA，同 hero title 模式改 #B14A0E ~4.5:1
 
