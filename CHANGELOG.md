@@ -1,3 +1,6 @@
+## v8.87 · 2026-05-26
+- schema(C版): index-light.html ProfessionalService description 補「SaaS 最快 23 天上線（214 commits 可查）」——Google 知識圖譜看到 proof point，強化品牌可信度
+
 ## v8.86 · 2026-05-26
 - seo(B版): index.html twitter:description 補「SaaS 最快 23 天上線」——三版 A/B/C Twitter card 全部一致，社群分享一條訊息
 
