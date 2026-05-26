@@ -1,3 +1,6 @@
+## v8.64 · 2026-05-26
+- copy(A版): secure-title EN 對齊 B/C v8.62 升級版——「Automated output, automated security validation」→「Automated output. Automated security gates. No deploy goes out unchecked.」三版安全標題一致
+
 ## v8.63 · 2026-05-26
 - a11y(C版): index-light.html bottom-dock CTA 文字色 #FFFFFF → #110800——橘底白字僅 ~2.75:1 未達 AA（含大字標準 3:1），改深色與 .btn-primary 一致（~6.4:1）；行動版黏性轉換按鈕最高曝光，修復優先
 
