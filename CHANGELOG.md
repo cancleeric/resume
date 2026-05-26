@@ -1,3 +1,6 @@
+## v8.81 · 2026-05-26
+- seo(C版+dict): index-light.html + dict-zh/en og.description 補「SaaS 最快 23 天上線」proof point——og:description 社群分享卡片三版一致，提升 LinkedIn/Twitter 點擊率
+
 ## v8.80 · 2026-05-26
 - seo(B版): index.html + dict-zh/en meta.description 補 SaaS 23天上線 proof point——三版 A/B/C meta.description 及 dict 全部對齊，Google snippet 一致強化
 
