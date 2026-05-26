@@ -86,6 +86,7 @@ window.DICT_EN = {
   'trust.item.04.name':  'subsidiaries',
   'trust.item.05.name':  'Cloud Run services',
   'trust.item.06.name':  'SaaS integrations',
+  'trust.item.07.name':  'Fastest SaaS 0→Prod',
 
   // ── why-studio badge ──────────────────────────────────────────────────────
   'why.studio.badge':         'This Studio',
@@ -356,7 +357,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.93 · Last updated 2026/05/26 21:15',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.95 · Last updated 2026/05/26 21:45',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

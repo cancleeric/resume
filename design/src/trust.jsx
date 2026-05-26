@@ -8,6 +8,7 @@ function TrustBar() {
     { nameKey: 'trust.item.04.name', en: 'SUBSIDIARIES', count: '6' },
     { nameKey: 'trust.item.05.name', en: 'CLOUD RUN', count: '19' },
     { nameKey: 'trust.item.06.name', en: 'SAAS INTEGRATED', count: '9+' },
+    { nameKey: 'trust.item.07.name', en: 'SaaS 0→PROD', count: '23d' },
   ];
 
   return (

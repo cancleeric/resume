@@ -1,3 +1,6 @@
+## v8.95 · 2026-05-26
+- trust(B/C版): trust.jsx trust bar 新增第 7 項「最快 SaaS 上線 23d」——KPI strip 直接展示最具說服力的速度 proof point，訪客第一眼就看到
+
 ## v8.94 · 2026-05-26
 - schema(A版): Person knowsAbout 補英語對應詞——ZH/EN 雙語 knowsAbout，Google Knowledge Graph 英語搜尋可抓到技術關鍵字，提升國際 SEO 能見度
 

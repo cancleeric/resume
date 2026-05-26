@@ -80,6 +80,7 @@ window.DICT_ZH = {
   'trust.item.04.name':  '子公司',
   'trust.item.05.name':  'Cloud Run 服務',
   'trust.item.06.name':  'SaaS 接入',
+  'trust.item.07.name':  '最快 SaaS 上線',
 
   // ── why-studio section head ───────────────────────────────────────────────
   'why.section.title':   '為什麼選工作室<br/>而不是 freelancer 或 agency。',
@@ -347,7 +348,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.93 · 最後更新 2026/05/26 21:15',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.95 · 最後更新 2026/05/26 21:45',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',
