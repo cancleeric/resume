@@ -50,7 +50,7 @@ function FAQ() {
         }
         .faq-a-para { margin: 0 0 12px; }
         .faq-a-para:last-child { margin-bottom: 0; }
-        .faq-a-para strong { color: var(--ink); }
+        .faq-a-para strong { color: var(--text-hi); }
         .faq-num {
           font-family: var(--font-mono);
           font-size: 11px;

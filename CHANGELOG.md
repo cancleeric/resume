@@ -1,3 +1,6 @@
+## v9.01 · 2026-05-26
+- fix(B/C版): faq-cta.jsx `.faq-a-para strong` 從 `var(--ink)`（未定義→黑色）改為 `var(--text-hi)`——FAQ 答案關鍵粗體在深色/亮色主題均可見
+
 ## v9.00 · 2026-05-26
 - copy(A版): lede-cta-note 翻轉損失框架→收益框架——「30 分鐘明確是否 fit，有具體結論才結束」，ZH/EN 雙語同步
 
