@@ -1,3 +1,6 @@
+## v8.76 · 2026-05-26
+- seo(A版): FAQPage schema faq7 補結尾說服句——「您不是在賭一個人，而是在買一套有紀律的交付系統。」與可見頁面一致，強化搜尋引擎 snippet 最後印象
+
 ## v8.75 · 2026-05-26
 - seo(C版): FAQPage schema faq5（module scope）對齊 dict——2週「PayPal 金流串接」→「AI Agent 導入 PoC（LLM Gateway 選型 + Prompt + 工具鏈）」；補 PKCE+JWT+多租戶 Tenant provision 技術細節
 
