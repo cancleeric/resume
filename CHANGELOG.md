@@ -1,3 +1,6 @@
+## v8.72 · 2026-05-26
+- seo(C版): FAQPage schema faq3（定價）補「SaaS 0→生產最快 23 天」核心 proof point + 完整 pipeline 比較——schema 與可見 faq.03.a 對齊，提升搜尋引擎 rich snippet 說服力
+
 ## v8.71 · 2026-05-26
 - copy(B/C版): hero.sub ZH 補完整 6 段 pipeline 列表——「從規格到維運」→「規格 → 設計 → 實作 → 審查 → 部署 → 維運」，與 EN 及頁面 pipeline 視覺一致，提升可信度
 
