@@ -1,3 +1,6 @@
+## v8.29 · 2026-05-26
+- trust(B/C版): why.studio.row.04 覆蓋面欄重構——原文只列 spec/design/build 清單；改為「整條 pipeline 一個團隊主責——零交接斷點、零那不是我的部分」直接對比 agency 弱點（ZH/EN 同步）
+
 ## v8.28 · 2026-05-26
 - trust(A版): faq3 定價 FAQ 同步 R22 產出密度框架——A版「超工」舊框架漏改；補入 SaaS 23 天實證 + spec→ops 全覆蓋 vs hourly 單層交付（ZH/EN 同步）
 
