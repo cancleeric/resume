@@ -4,7 +4,7 @@ window.DICT_EN = {
 
   // ── meta / head ─────────────────────────────────────────────────────────
   'meta.title':          'HurricaneSoft Ltd. — Automated Software Delivery · 14+ Products in a Year',
-  'meta.description':    'HurricaneSoft Ltd. — Automate the full delivery pipeline (spec → design → build → review → deploy → ops). One engineer carrying what used to take an entire team. AI integration is table stakes. Monthly retainer from US$10,000; project-based from 1–2 weeks. Invoice available (Tax ID 80289779).',
+  'meta.description':    'HurricaneSoft Ltd. — Automate the full delivery pipeline (spec → design → build → review → deploy → ops). One engineer carrying what used to take an entire team. SaaS from 0 to production in as fast as 23 days (214 commits on record). Monthly retainer from US$10,000; project-based from 1–2 weeks. Invoice available (Tax ID 80289779).',
   'og.title':            'HurricaneSoft Ltd. — Automated Software Delivery · One Engineer, Full Team Output',
   'og.description':      'Full pipeline automation validated across 30+ production systems. Monthly retainer US$10K; project engagements from 1–2 weeks. Invoice available.',
   'twitter.title':       'HurricaneSoft Ltd. — Automated Software Delivery · 14+ Products in a Year',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.78 · Last updated 2026/05/26 17:30',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.80 · Last updated 2026/05/26 18:00',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

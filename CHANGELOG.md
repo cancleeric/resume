@@ -1,3 +1,6 @@
+## v8.80 · 2026-05-26
+- seo(B版): index.html + dict-zh/en meta.description 補 SaaS 23天上線 proof point——三版 A/B/C meta.description 及 dict 全部對齊，Google snippet 一致強化
+
 ## v8.79 · 2026-05-26
 - seo(A版): meta.description 補 6 段 pipeline 列表 + SaaS 最快 23 天上線 proof point——三版 A/B/C meta.description 核心訊息一致
 
