@@ -1,3 +1,6 @@
+## v8.52 · 2026-05-26
+- trust(A版): faq7-a 補「您不是在賭一個人，而是在買一套有紀律的交付系統。」——與 B/C dict 對齊，強化結案焦慮消除的最後一句（ZH/EN 同步）
+
 ## v8.51 · 2026-05-26
 - copy(C/B版): systems.section.title EN「the whole group runs on them」語序不順→「Powering the Entire Group」；timeline.section.title EN「with dates, versions, and results」→「Dates, Versions, Results」更有力（ZH 不動，EN 精準化）
 
