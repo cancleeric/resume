@@ -339,6 +339,8 @@ window.DICT_EN = {
   'faq.06.a': 'On project completion, all code, documentation, CI/CD configurations, and secrets management specs are fully transferred to you — no need to wait until the very end: **at each milestone acceptance you receive the complete current version**, ready to hand off to any team at any time. Our proprietary general-purpose tooling (Brain LLM Gateway, etc.) is licensed for your use at no additional charge.',
   'faq.07.q': 'You\'re a small studio — what if you\'re fully booked or something comes up?',
   'faq.07.a': 'Precisely because we run at studio scale, we strictly cap concurrent engagements (max 2 on Monthly Retainer) — no overselling, your project never gets crowded out.\n\nEvery project\'s code, docs, CI/CD, and secrets specs are delivered and documented continuously — at any moment you hold a complete handover any team can pick up. Key decisions recorded in writing; progress synced weekly.\n\n**You\'re not betting on one person. You\'re buying a disciplined delivery system.**',
+  'faq.08.q': 'Do you work with English-speaking clients? What language?',
+  'faq.08.a': 'Absolutely. Proposals, contracts, technical documentation, and online meetings can all be conducted **entirely in English**. Taiwan-based clients communicate in Traditional Chinese; overseas clients (US, UK, CA, AU) are handled fully in English. Technical deliverables support bilingual (ZH/EN) documentation.',
 
   // ── CTA ───────────────────────────────────────────────────────────────────
   'cta.eyebrow':          '11 / BOOK A CONSULT',
@@ -354,7 +356,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.89 · Last updated 2026/05/26 20:15',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.90 · Last updated 2026/05/26 20:30',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

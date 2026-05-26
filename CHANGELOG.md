@@ -1,3 +1,6 @@
+## v8.90 · 2026-05-26
+- faq(C版+dict): 新增 faq8「英語客戶也接嗎？」—— 消除海外客戶語言門檻疑慮；schema + dict-zh/en 同步新增，擴大英語市場可觸達率
+
 ## v8.89 · 2026-05-26
 - schema(B版): index.html ProfessionalService description 補「SaaS 最快 23 天上線」——三版 A/B/C schema.org description 全部一致
 
