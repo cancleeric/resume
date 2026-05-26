@@ -1,3 +1,6 @@
+## v8.62 · 2026-05-26
+- copy(B版): secure.title EN「Automated output, automated security validation」→「Automated output. Automated security gates. No deploy goes out unchecked.」——從描述機制升級為直接回應客戶「AI 建太快有漏洞？」的核心疑慮（ZH 不動）
+
 ## v8.61 · 2026-05-26
 - trust(A版): rate-foot EN i18n 交付保障段補「at each milestone acceptance you receive the complete current version」——與 ZH inline v8.57 及 B/C pricing.section.sub v8.59 對齊，三版全頁里程碑交付訊息一致
 

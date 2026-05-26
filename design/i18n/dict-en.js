@@ -126,7 +126,7 @@ window.DICT_EN = {
   'why.studio.row.06':   '6 subsidiaries, 30+ production systems live; SaaS zero to production in 23 days (214 commits to ship)',
 
   // ── security validation block ─────────────────────────────────────────────
-  'secure.title':  'Automated output, automated security validation',
+  'secure.title':  'Automated output. Automated security gates. No deploy goes out unchecked.',
   'secure.lead':   'The real risk of automated development isn\'t "can\'t build it" — it\'s "built too fast, too many holes." So the "review" stage of this pipeline is not for show:',
   'secure.li1':    '<strong>A self-built security validation agent</strong>: not just static source scanning — it actively validates the running system (CVE checks, vulnerability detection, behavioral verification)',
   'secure.li2':    '<strong>Quantified review gates</strong>: anything that fails the gate is blocked from deploy — no exceptions',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.60 · Last updated 2026/05/26 13:15',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.62 · Last updated 2026/05/26 13:30',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
