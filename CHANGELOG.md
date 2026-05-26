@@ -1,3 +1,6 @@
+## v8.51 · 2026-05-26
+- copy(C/B版): systems.section.title EN「the whole group runs on them」語序不順→「Powering the Entire Group」；timeline.section.title EN「with dates, versions, and results」→「Dates, Versions, Results」更有力（ZH 不動，EN 精準化）
+
 ## v8.50 · 2026-05-26
 - trust(B/C版): faq.06.a 補「里程碑驗收完即可拿走當下完整版本」——與 A版 v8.49 同步，消除客戶提前結案疑慮；明確授權 Brain LLM Gateway 免費（ZH/EN 同步，C版同受益）
 

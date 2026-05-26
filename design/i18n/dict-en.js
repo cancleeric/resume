@@ -211,7 +211,7 @@ window.DICT_EN = {
 
   // ── systems ───────────────────────────────────────────────────────────────
   // [R] from I18N h2-deliverables / deliverables-intro
-  'systems.section.title':    '30+ Production Systems,<br/>the whole group runs on them.',
+  'systems.section.title':    '30+ Production Systems<br/>Powering the Entire Group.',
   'systems.section.sub':      'Not portfolio mockups, not demos. Real traffic, real revenue, real SLOs — every day. Each system is developed and maintained autonomously by AI: humans set direction, AI ships delivery.',
   'systems.tab.ai.label':     'AI / Agent Products',
   'systems.tab.saas.label':   'External SaaS',
@@ -266,7 +266,7 @@ window.DICT_EN = {
   'sys.stack.cross-node':     'Cross-node',
 
   // ── timeline ─────────────────────────────────────────────────────────────
-  'timeline.section.title':   'Recent Deliveries,<br/>with dates, versions, and results.',
+  'timeline.section.title':   'Recent Deliveries —<br/>Dates, Versions, Results.',
   'timeline.section.sub':     'One engineer + AI copilots — real systems delivered: in-house SaaS, group infrastructure, and enterprise client projects. No stock photos, no "concept illustrations".',
   'timeline.filter.all':      'All',
   'timeline.filter.q1q2':     '2026 Q1-Q2',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.50 · Last updated 2026/05/26 11:46',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.51 · Last updated 2026/05/26 11:52',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
