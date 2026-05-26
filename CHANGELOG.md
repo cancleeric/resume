@@ -1,3 +1,6 @@
+## v8.71 · 2026-05-26
+- copy(B/C版): hero.sub ZH 補完整 6 段 pipeline 列表——「從規格到維運」→「規格 → 設計 → 實作 → 審查 → 部署 → 維運」，與 EN 及頁面 pipeline 視覺一致，提升可信度
+
 ## v8.70 · 2026-05-26
 - copy(A版): about-p1 EN 升級——「client-facing software studio / 24 years of engineering team experience / AI-era software delivery partner」→「AI delivery studio backed by 6 subsidiaries and 30+ production systems / every technique has already shipped in our own production」；對齊 B/C studio.section.sub v8.68-69 可驗證性語言
 
