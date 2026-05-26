@@ -336,7 +336,7 @@ window.DICT_EN = {
   'faq.05.q': 'Can I hire you for just one module instead of the whole stack?',
   'faq.05.a': 'Absolutely — that\'s exactly what the Advisory or Project-based tiers are for. Common scopes: OAuth/SSO integration (PKCE + JWT + multi-tenant provisioning) in 1 week; AI Agent PoC (LLM gateway selection + prompt engineering + toolchain integration) in 2 weeks; Cloud Run modernization (containerization + CD pipeline + alerting) in 3 weeks.',
   'faq.06.q': 'Who owns the code after the engagement ends?',
-  'faq.06.a': 'On project completion, all code, documentation, CI/CD configurations, and secrets management specs are fully transferred to you. Our proprietary general-purpose tooling (Brain LLM Gateway, etc.) is licensed for your use at no additional charge.',
+  'faq.06.a': 'On project completion, all code, documentation, CI/CD configurations, and secrets management specs are fully transferred to you — no need to wait until the very end: **at each milestone acceptance you receive the complete current version**, ready to hand off to any team at any time. Our proprietary general-purpose tooling (Brain LLM Gateway, etc.) is licensed for your use at no additional charge.',
   'faq.07.q': 'You\'re a small studio — what if you\'re fully booked or something comes up?',
   'faq.07.a': 'Precisely because we run at studio scale, we strictly cap concurrent engagements (max 2 on Monthly Retainer) — no overselling, your project never gets crowded out.\n\nEvery project\'s code, docs, CI/CD, and secrets specs are delivered and documented continuously — at any moment you hold a complete handover any team can pick up. Key decisions recorded in writing; progress synced weekly.\n\n**You\'re not betting on one person. You\'re buying a disciplined delivery system.**',
 
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.48 · Last updated 2026/05/26 11:14',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.50 · Last updated 2026/05/26 11:46',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
