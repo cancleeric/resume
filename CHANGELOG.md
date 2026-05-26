@@ -1,3 +1,6 @@
+## v8.44 · 2026-05-26
+- fix(B/C版): hero.jsx 硬寫文字仍含「體感約 20×（≈20× by our own measure）」——dict 已改但 JSX fallback 未同步；補 214 commits/git 可查，與 dict v8.35 對齊，三版「20×」真正全清（ZH/EN）
+
 ## v8.43 · 2026-05-26
 - trust(B版): pricing.tier.02.inc.04 月費 Retainer「3 個月建議」補說明原因——「工具鏈複利效益在完整交付週期後才充分顯現」，與 A版 R33 對齊（ZH/EN 同步，C版同受益）
 
