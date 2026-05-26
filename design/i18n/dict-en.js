@@ -161,7 +161,7 @@ window.DICT_EN = {
   // ── pricing ───────────────────────────────────────────────────────────────
   'pricing.section.title': 'Four engagement models.<br/>Pick the right one.',
   // [R] from I18N rate-foot
-  'pricing.section.sub':   'Engagement process: free 30-min consult → quote & contract (30% deposit) → development → milestone acceptance → launch (includes 1-month warranty). Payment: invoice available (Tax ID 80289779), wire transfer / Wise / crypto (USDC) accepted. Delivery assurance: code, docs, CI/CD and secrets specs are documented continuously — you always hold a complete handover any team can pick up, so you stay in control.',
+  'pricing.section.sub':   'Engagement process: free 30-min consult → quote & contract (30% deposit) → development → milestone acceptance → launch (includes 1-month warranty). Payment: invoice available (Tax ID 80289779), wire transfer / Wise / crypto (USDC) accepted. Delivery assurance: **at each milestone acceptance you receive the complete current version** — code, docs, CI/CD and secrets specs fully in hand. You stay in control without waiting for the final handover.',
   'pricing.recommended':   'RECOMMENDED',
   'pricing.entry':         'LOW-RISK ENTRY',
   'pricing.goodfit':       'GOOD FIT',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.57 · Last updated 2026/05/26 12:42',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.59 · Last updated 2026/05/26 13:05',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
