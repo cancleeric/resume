@@ -1,3 +1,6 @@
+## v8.65 · 2026-05-26
+- copy(B版): secure.title ZH 對齊 EN v8.62 能量——「自動化產出，安全也自動化驗收」→「自動化產出。自動化安全把關。每次部署過門前都要清關。」——三版安全標題語氣一致，ZH/EN 同步升級
+
 ## v8.64 · 2026-05-26
 - copy(A版): secure-title EN 對齊 B/C v8.62 升級版——「Automated output, automated security validation」→「Automated output. Automated security gates. No deploy goes out unchecked.」三版安全標題一致
 
