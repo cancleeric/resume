@@ -1,3 +1,6 @@
+## v8.54 · 2026-05-26
+- copy(C/B版): why.section.title EN「over a freelancer or agency」→「Not a Freelancer or Agency」更對抗性對齊 ZH；svc.section.title EN「The whole pipeline covered」→「The full pipeline, owned end to end」補 ownership 語感（ZH 不動）
+
 ## v8.53 · 2026-05-26
 - copy(B/C版): hero.sub EN 精簡化——「from spec to ops, every stage has AI copilots and automation toolchains in place」→「spec → design → build → review → deploy → ops, with AI copilots owning every stage」更具體可掃描，與 svc.01 pipeline 對齊（ZH 不動）
 

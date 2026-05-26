@@ -91,7 +91,7 @@ window.DICT_EN = {
   'why.studio.badge':         'This Studio',
 
   // ── why-studio ────────────────────────────────────────────────────────────
-  'why.section.title':   'Why This Studio<br/>over a freelancer or agency.',
+  'why.section.title':   'Why This Studio,<br/>Not a Freelancer or Agency.',
   'why.section.sub':     'Same budget, same time. One Principal + AI copilot team takes ownership of the entire pipeline — 14+ in-house products in a year, SaaS to production in as little as 23 days (214 commits — verifiable in git).',
   'why.comparison.head': '6 comparison dimensions',
   'why.row.01.label':    'Ownership',
@@ -132,7 +132,7 @@ window.DICT_EN = {
   'secure.li2':    '<strong>Quantified review gates</strong>: anything that fails the gate is blocked from deploy — no exceptions',
   'secure.li3':    '<strong>Deliverables include the scan &amp; validation log</strong>: not "fast but loose" — "fast, with an agent actively watching for holes"',
   // ── services ─────────────────────────────────────────────────────────────
-  'svc.section.title':   'Eight services.<br/>The whole pipeline covered.',
+  'svc.section.title':   'Eight services.<br/>The full pipeline, owned end to end.',
   'svc.section.sub':     'Core is Automated Software Delivery — the rest extends from it. Every category has been validated in our own production environment.',
   // [R] from I18N svc-* keys
   'svc.01.tc':           'Automated Software Delivery (Core)',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.53 · Last updated 2026/05/26 12:15',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.54 · Last updated 2026/05/26 12:20',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
