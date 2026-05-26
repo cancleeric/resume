@@ -1,3 +1,6 @@
+## v8.85 · 2026-05-26
+- seo(A版): resume.html twitter:description 補「SaaS 最快 23 天上線」proof point——A版 Twitter 分享卡片與 B/C 一致
+
 ## v8.84 · 2026-05-26
 - seo(C版+dict): index-light.html + dict-zh/en twitter.description 補「SaaS 最快 23 天上線」proof point——Twitter 分享卡片三版一致強化
 
