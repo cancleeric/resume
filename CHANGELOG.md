@@ -1,3 +1,6 @@
+## v8.94 · 2026-05-26
+- schema(A版): Person knowsAbout 補英語對應詞——ZH/EN 雙語 knowsAbout，Google Knowledge Graph 英語搜尋可抓到技術關鍵字，提升國際 SEO 能見度
+
 ## v8.93 · 2026-05-26
 - faq(C/B版): faq-cta.jsx 補 faq.08 item——B/C 版 JSX 可視 FAQ 現在真正顯示「英語客戶也接嗎？」條目（dict 已有 key，JSX hardcode 7 項導致不顯示，現修正為 8 項）
 
