@@ -184,7 +184,7 @@ window.DICT_EN = {
   'pricing.tier.02.inc.01':   'Principal + AI copilot team at full capacity',
   'pricing.tier.02.inc.02':   'Architecture decisions + hands-on coding',
   'pricing.tier.02.inc.03':   'Weekly progress sync / end-of-month delivery report',
-  'pricing.tier.02.inc.04':   'Best fit for 3-month+ engagements',
+  'pricing.tier.02.inc.04':   '3-month minimum recommended — toolchain ROI compounds across a full delivery cycle',
   'pricing.tier.02.fit':      '3-month+ engagements; clients who want this system inside their team',
   'pricing.tier.02.cta':      'Book a kick-off',
   // advisory tier [R] from I18N rate-advisory-*
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.41 · Last updated 2026/05/26 11:05',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.43 · Last updated 2026/05/26 11:07',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

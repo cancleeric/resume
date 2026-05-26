@@ -175,7 +175,7 @@ window.DICT_ZH = {
   'pricing.tier.02.inc.01':   '負責人 + AI 副手團隊全力投入',
   'pricing.tier.02.inc.02':   '承擔架構決策 + 親自下海 code',
   'pricing.tier.02.inc.03':   '每週進度同步 / 月末交付報告',
-  'pricing.tier.02.inc.04':   '適合 3 個月以上中長案',
+  'pricing.tier.02.inc.04':   '建議 3 個月起：工具鏈複利效益在完整交付週期後才充分顯現',
   'pricing.tier.02.fit':      '3 個月以上中長案、想把這套帶進內部團隊的客戶',
   'pricing.tier.02.cta':      '預約 kick-off',
   // advisory tier
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.41 · 最後更新 2026/05/26 11:05',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.43 · 最後更新 2026/05/26 11:07',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',
