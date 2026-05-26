@@ -1,3 +1,6 @@
+## v8.89 · 2026-05-26
+- schema(B版): index.html ProfessionalService description 補「SaaS 最快 23 天上線」——三版 A/B/C schema.org description 全部一致
+
 ## v8.88 · 2026-05-26
 - schema(A版): resume.html ProfessionalService description 補「SaaS 最快 23 天上線」——三版 schema description 全部一致，Google 知識圖譜品牌一致性
 
