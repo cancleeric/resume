@@ -1,3 +1,6 @@
+## v8.42 · 2026-05-26
+- seo(A版): schema.org JSON-LD FAQ faq5 同步更新（與顯示文字一致）——移除「PayPal 金流串接」，改為 OAuth/SSO PKCE+JWT+多租戶、AI Agent PoC、Cloud Run 現代化三個 scope 範例
+
 ## v8.41 · 2026-05-26
 - ux(C版): why-studio 比較表 tone 修正——freelancer row.04「單點工程」由 mid→bad（灰→紅）；freelancer/agency row.06「驗證程度」均由 mid→bad，studio=good 綠色對比更明確；B版同受益
 
