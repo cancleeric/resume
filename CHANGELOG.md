@@ -1,3 +1,6 @@
+## v8.46 · 2026-05-26
+- clarity(A版): rate-advisory-li4「適合短期重大決策」太模糊——改為「AI 導入 PoC 前技術評估 / 重大架構決策 / Legacy 現代化路線規劃」三個具體場景，降低客戶選擇顧問諮詢的摩擦（ZH/EN 同步）
+
 ## v8.45 · 2026-05-26
 - proof(C版): design dict faq.05.a 同步更新 scope 範例——移除「PayPal 金流串接」定位偏移範例，改為 OAuth/SSO PKCE+JWT、AI Agent PoC LLM Gateway、Cloud Run 現代化，與 A版 v8.39/v8.42 完全對齊（ZH/EN，B版同受益）
 
