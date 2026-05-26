@@ -1,3 +1,6 @@
+## v8.55 · 2026-05-26
+- copy(A版): h2-why-studio EN 補「Not a Freelancer or Agency」——與 B/C v8.54 對齊，從 heading 層級就直接點名競品對比（EN only）
+
 ## v8.54 · 2026-05-26
 - copy(C/B版): why.section.title EN「over a freelancer or agency」→「Not a Freelancer or Agency」更對抗性對齊 ZH；svc.section.title EN「The whole pipeline covered」→「The full pipeline, owned end to end」補 ownership 語感（ZH 不動）
 
