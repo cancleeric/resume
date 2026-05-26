@@ -1,3 +1,6 @@
+## v8.69 · 2026-05-26
+- copy(B/C版): studio.section.sub ZH 升級——「對外接案窗口」→「每天在跑 · 自家生產驗證過的實作，不是 demo」；與 EN v8.68 同步強調可驗證性
+
 ## v8.68 · 2026-05-26
 - copy(B版): studio.section.sub EN 由組織描述升級為客戶利益敘述——「client-facing window」→「Backed by HurricaneGroup: 30+ production systems running daily — every method and toolchain we bring to your project has already shipped in our own production」
 

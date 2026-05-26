@@ -302,7 +302,7 @@ window.DICT_ZH = {
 
   // ── studio section ────────────────────────────────────────────────────────
   'studio.section.title':     '不是一個人，<br/>是一整個集團當靠山。',
-  'studio.section.sub':       '工作室是 HurricaneGroup 的對外接案窗口。集團 6 子公司、30+ 生產系統，就是這套 pipeline 的試驗場。',
+  'studio.section.sub':       'HurricaneGroup 6 子公司 · 30+ 生產系統每天在跑 —— 您接到手的每項技術，都是我們自家生產驗證過的實作，不是 demo。',
   'studio.parent.en':         'PARENT · 集團母公司',
   'studio.soft.role':         '本工作室 · 集團部署 / GCP 維運 / 接案出口',
   'studio.edge.role':         '8 大對外 SaaS 產品線',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.68 · 最後更新 2026/05/26 15:00',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.69 · 最後更新 2026/05/26 15:15',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',
