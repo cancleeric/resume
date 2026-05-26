@@ -1,3 +1,6 @@
+## v8.37 · 2026-05-26
+- proof(B版): freelancer.row.06「驗證程度」欄強化——「個案 portfolio，多為 demo」補入「無從驗證是否有持續維運中的生產系統」；三欄對比（freelancer demo / agency logo wall / studio 30+ live systems）現更完整（ZH/EN 同步，C版同受益）
+
 ## v8.36 · 2026-05-26
 - trust(A版): rate-retainer-li4 補充月費 3 個月最低建議的理由——「工具鏈複利效益在完整交付週期後才充分顯現」，降低客戶對月費 ROI 的疑慮（ZH/EN 同步）
 

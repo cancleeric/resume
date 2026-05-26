@@ -107,7 +107,7 @@ window.DICT_EN = {
   'why.freelancer.row.03': 'Fast start, but stack and deployment often need rework',
   'why.freelancer.row.04': 'Single-point engineering: frontend or backend or design',
   'why.freelancer.row.05': 'Fast, but risk assessment is often missing',
-  'why.freelancer.row.06': 'Per-project portfolio, mostly demos',
+  'why.freelancer.row.06': 'Per-project portfolio — mostly demos, no way to verify a continuously running production system',
   // agency col [R] from I18N diff-agency (adapted)
   'why.agency.head':     'Agency',
   'why.agency.row.01':   'Layered subcontracting — responsibility spread across PM and many hands',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.35 · Last updated 2026/05/26 11:38',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.37 · Last updated 2026/05/26 12:38',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
