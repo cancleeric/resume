@@ -58,7 +58,7 @@ window.DICT_EN = {
   'hero.h1_line2':       'One Engineer.',
   'hero.sub':            'AI integration is table stakes — the real differentiator is <b style="color:var(--text-hi)">automating the entire delivery pipeline</b>: from spec to ops, every stage has AI copilots and automation toolchains in place.',
   'hero.claim':          'A full year of validation: <b>one person + AI copilots delivered 14+ in-house products, SaaS shipped to production in as little as 23 days (214 commits — verifiable in git)</b> — carrying what used to take an entire team. This delivery speed is available for your project now.',
-  'hero.cta.primary':    'Reserve 2026/07 Slot',
+  'hero.cta.primary':    'Claim the 2026/07 Slot',
   'hero.cta.pipeline':   'See LF Pipeline live',
   'hero.cta.note':       '30 min · No lock-in · Next slot 2026/07, max 2 projects at a time',
   'hero.kpi.01.label':   'Production Systems',
@@ -66,7 +66,7 @@ window.DICT_EN = {
   'hero.kpi.03.label':   'Cloud Run Services',
   'hero.kpi.04.label':   'Year Proven',
   // [R] from I18N avail-strong / avail-detail
-  'hero.avail.msg':      'Next available slot: from 2026/07 (earliest kick-off ~5 weeks out)',
+  'hero.avail.msg':      'Next open slot: 2026/07 — earliest kick-off ~5 weeks out',
   'hero.avail.meta':     'RETAINER · max 2 concurrent engagements',
 
   // ── pipeline visual (bilingual display, labels kept as-is) ───────────────
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.47 · Last updated 2026/05/26 11:12',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.48 · Last updated 2026/05/26 11:14',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

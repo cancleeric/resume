@@ -1,3 +1,6 @@
+## v8.48 · 2026-05-26
+- cta(C版): hero.cta.primary EN「Reserve」→「Claim」——急迫感與 ZH「搶下」對齊；hero.avail.msg EN 改更緊湊格式（B版同受益）
+
 ## v8.47 · 2026-05-26
 - clarity(B版): pricing.tier.03 Advisory desc + inc.04 同步 A版 v8.46——「適合短期重大決策」改為「AI 導入評估 / 架構安全審查 / 現代化路線規劃」三個具體場景（ZH/EN 同步，C版同受益）
 
