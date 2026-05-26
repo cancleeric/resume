@@ -92,7 +92,7 @@ window.DICT_EN = {
 
   // ── why-studio ────────────────────────────────────────────────────────────
   'why.section.title':   'Why This Studio<br/>over a freelancer or agency.',
-  'why.section.sub':     'Same budget, same time. One Principal + AI copilot team takes ownership of the entire pipeline — 14+ in-house products in a year, SaaS to production in as little as 23 days (≈20× conventional approaches, by our own measure).',
+  'why.section.sub':     'Same budget, same time. One Principal + AI copilot team takes ownership of the entire pipeline — 14+ in-house products in a year, SaaS to production in as little as 23 days (214 commits — verifiable in git).',
   'why.comparison.head': '6 comparison dimensions',
   'why.row.01.label':    'Ownership',
   'why.row.02.label':    'Cost Structure',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.38 · Last updated 2026/05/26 11:02',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.40 · Last updated 2026/05/26 11:04',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

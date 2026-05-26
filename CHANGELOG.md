@@ -1,3 +1,6 @@
+## v8.40 · 2026-05-26
+- proof(B版): why.section.sub 移除「體感約 20×（by our own measure）」自評語，改為「23 天（214 commits，git 紀錄可查）」——B/C 版「20×」最後一處清零；與 A版 R30、hero.claim R32 全面對齊（ZH/EN 同步）
+
 ## v8.39 · 2026-05-26
 - proof(A版): faq5-a「模組外包」scope 範例更新——移除定位偏移的「PayPal 金流串接」，改為三個與 AI 定位一致的具體 scope（OAuth/SSO PKCE+JWT+多租戶、AI Agent PoC LLM Gateway、Cloud Run 現代化）；ZH/EN 同步
 

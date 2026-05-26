@@ -83,7 +83,7 @@ window.DICT_ZH = {
 
   // ── why-studio section head ───────────────────────────────────────────────
   'why.section.title':   '為什麼選工作室<br/>而不是 freelancer 或 agency。',
-  'why.section.sub':     '同樣的預算、同樣的時間。一個負責人 + AI 副手團隊把整條 pipeline 接管 —— 一年交付 14+ 個自有產品、SaaS 0→生產最快 23 天（體感約 20× 於傳統做法）。',
+  'why.section.sub':     '同樣的預算、同樣的時間。一個負責人 + AI 副手團隊把整條 pipeline 接管 —— 一年交付 14+ 個自有產品、SaaS 0→生產最快 23 天（214 commits，git 紀錄可查）。',
   'why.comparison.head': '六項對照',
   // row labels
   'why.row.01.label':    '責任歸屬',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.38 · 最後更新 2026/05/26 11:02',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.40 · 最後更新 2026/05/26 11:04',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',
