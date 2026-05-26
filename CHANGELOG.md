@@ -1,3 +1,6 @@
+## v8.92 · 2026-05-26
+- faq(B版): index.html FAQPage schema 補 faq8「英語客戶也接嗎？」——三版 A/B/C FAQPage schema 全部同步，英語市場 SEO 一致覆蓋
+
 ## v8.91 · 2026-05-26
 - faq(A版): 新增 faq8「英語客戶也接嗎？」——visible FAQ + schema + EN i18n 三處同步，A版消除海外客戶語言門檻疑慮
 
