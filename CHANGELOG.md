@@ -1,3 +1,6 @@
+## v8.70 · 2026-05-26
+- copy(A版): about-p1 EN 升級——「client-facing software studio / 24 years of engineering team experience / AI-era software delivery partner」→「AI delivery studio backed by 6 subsidiaries and 30+ production systems / every technique has already shipped in our own production」；對齊 B/C studio.section.sub v8.68-69 可驗證性語言
+
 ## v8.69 · 2026-05-26
 - copy(B/C版): studio.section.sub ZH 升級——「對外接案窗口」→「每天在跑 · 自家生產驗證過的實作，不是 demo」；與 EN v8.68 同步強調可驗證性
 
