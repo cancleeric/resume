@@ -1,3 +1,6 @@
+## v8.75 · 2026-05-26
+- seo(C版): FAQPage schema faq5（module scope）對齊 dict——2週「PayPal 金流串接」→「AI Agent 導入 PoC（LLM Gateway 選型 + Prompt + 工具鏈）」；補 PKCE+JWT+多租戶 Tenant provision 技術細節
+
 ## v8.74 · 2026-05-26
 - seo(B版): index.html FAQPage schema faq3（定價）補「SaaS 0→生產最快 23 天」proof point——三版 A/B/C schema 一致（A=v8.73, C=v8.72, B=v8.74）
 
