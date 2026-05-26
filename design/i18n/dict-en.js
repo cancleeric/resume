@@ -191,11 +191,11 @@ window.DICT_EN = {
   'pricing.tier.03.tc':       'Advisory',
   'pricing.tier.03.tagline':  'Architecture review / tech selection / Code Review',
   'pricing.tier.03.unit':     '/ hour',
-  'pricing.tier.03.desc':     'Consulting only — no hands-on coding. Minimum 4-hour engagement. Best for high-stakes short-term decisions.',
+  'pricing.tier.03.desc':     'Consulting only — no hands-on coding. Minimum 4-hour engagement. Ideal for AI adoption scoping, critical architecture decisions, or legacy modernization planning.',
   'pricing.tier.03.inc.01':   'Architecture review / tech selection / Code Review',
   'pricing.tier.03.inc.02':   'Consulting only — no hands-on coding',
   'pricing.tier.03.inc.03':   'Minimum 4-hour engagement',
-  'pricing.tier.03.inc.04':   'Best for high-stakes short-term decisions',
+  'pricing.tier.03.inc.04':   'AI adoption scoping / architecture security review / modernization planning',
   'pricing.tier.03.fit':      'Minimum 4 hours; high-stakes short-term decisions',
   'pricing.tier.03.cta':      'Book a session',
   'pricing.tier.04.tc':       '2-Week Pipeline Automation Health Check',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.45 · Last updated 2026/05/26 11:09',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.47 · Last updated 2026/05/26 11:12',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

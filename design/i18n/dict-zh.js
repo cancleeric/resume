@@ -182,11 +182,11 @@ window.DICT_ZH = {
   'pricing.tier.03.tc':       '顧問諮詢 Advisory',
   'pricing.tier.03.tagline':  '架構審查 / 技術選型 / Code Review',
   'pricing.tier.03.unit':     '/ 小時',
-  'pricing.tier.03.desc':     '不下海寫 code，純諮詢。最少 4 小時起接，適合短期重大決策。',
+  'pricing.tier.03.desc':     '不下海寫 code，純諮詢。最少 4 小時起接。適合 AI 導入 PoC 前技術評估 / 重大架構決策 / Legacy 現代化路線規劃。',
   'pricing.tier.03.inc.01':   '架構審查 / 技術選型 / Code Review',
   'pricing.tier.03.inc.02':   '不下海寫 code，純諮詢',
   'pricing.tier.03.inc.03':   '最少 4 小時起接',
-  'pricing.tier.03.inc.04':   '適合短期重大決策',
+  'pricing.tier.03.inc.04':   'AI 導入評估 / 架構安全審查 / 現代化路線規劃',
   'pricing.tier.03.fit':      '最少 4 小時起接、短期重大決策',
   'pricing.tier.03.cta':      '安排一場',
   'pricing.tier.04.tc':       '2 週開發流程自動化健檢',
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.45 · 最後更新 2026/05/26 11:09',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.47 · 最後更新 2026/05/26 11:12',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',
