@@ -1,3 +1,6 @@
+## v8.79 · 2026-05-26
+- seo(A版): meta.description 補 6 段 pipeline 列表 + SaaS 最快 23 天上線 proof point——三版 A/B/C meta.description 核心訊息一致
+
 ## v8.78 · 2026-05-26
 - seo(C版): index-light.html meta.description 補「SaaS 最快 23 天上線（214 commits 可查）」proof point——三版 meta.description 核心 proof point 一致，強化 Google snippet 說服力
 
