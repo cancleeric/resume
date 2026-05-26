@@ -1,3 +1,6 @@
+## v8.57 · 2026-05-26
+- a11y(C版): index-light.html KPI band + 號補亮底對比 override——var(--orange) #FF6B35 ~2.8:1 未達 AA，同 hero title 模式改 #B14A0E ~4.5:1
+
 ## v8.56 · 2026-05-26
 - fix(B/C版): services.jsx svc.08 chips 含 ZH 字串（資格評估/計畫書撰寫）在 EN 模式不翻譯——改為 EN「Eligibility Review / Proposal Writing」（C版同受益）
 
