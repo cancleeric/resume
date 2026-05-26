@@ -54,7 +54,7 @@ window.DICT_ZH = {
   'hero.h1_line2':       '一個人交付。',
   'hero.sub':            'AI 整合只是基本盤。真正的差異，是把<b style="color:var(--text-hi)">整套開發流程自動化</b>：規格 → 設計 → 實作 → 審查 → 部署 → 維運，每個環節都有 AI 副手 + 自動化工具鏈接管。',
   'hero.claim':          '一年驗證下來：<b>一個人 + AI 副手交付 14+ 個自有產品、SaaS 0→生產最快 23 天（214 commits，git 紀錄可查）</b>，扛起以往需要整支團隊的產出。這套交付速度，現在就能接上您的專案。',
-  'hero.cta.primary':    '搶下 2026/07 檔期',
+  'hero.cta.primary':    '預約 30 分鐘免費諮詢',
   'hero.cta.pipeline':   '進 LF Pipeline 看現場',
   'hero.cta.note':       '30 分鐘 · 不綁約 · 下個檔期 2026/07，同時最多 2 案',
   'hero.kpi.01.label':   '生產系統',
@@ -348,7 +348,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.96 · 最後更新 2026/05/26 22:00',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.98 · 最後更新 2026/05/26 18:44',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',

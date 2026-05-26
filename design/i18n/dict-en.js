@@ -58,7 +58,7 @@ window.DICT_EN = {
   'hero.h1_line2':       'One Engineer.',
   'hero.sub':            'AI integration is table stakes — the real differentiator is <b style="color:var(--text-hi)">automating the entire delivery pipeline</b>: spec → design → build → review → deploy → ops, with AI copilots owning every stage.',
   'hero.claim':          'A full year of validation: <b>one person + AI copilots delivered 14+ in-house products, SaaS shipped to production in as little as 23 days (214 commits — verifiable in git)</b> — carrying what used to take an entire team. This delivery speed is available for your project now.',
-  'hero.cta.primary':    'Claim the 2026/07 Slot',
+  'hero.cta.primary':    'Book a Free 30-min Call',
   'hero.cta.pipeline':   'See LF Pipeline live',
   'hero.cta.note':       '30 min · No lock-in · Next slot 2026/07, max 2 projects at a time',
   'hero.kpi.01.label':   'Production Systems',
@@ -357,7 +357,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.96 · Last updated 2026/05/26 22:00',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.98 · Last updated 2026/05/26 18:44',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

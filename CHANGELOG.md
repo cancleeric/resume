@@ -1,3 +1,6 @@
+## v8.98 · 2026-05-26
+- copy(B/C版): hero.cta.primary 改「預約 30 分鐘免費諮詢」/「Book a Free 30-min Call」——降低 Hero 首屏 CTA 摩擦，把 risk reducer 搬進按鈕文字，稀缺感留給 availability bar
+
 ## v8.97 · 2026-05-26
 - copy(A版): resume.html services-intro 補「最快 SaaS 0→生產：23 天」——服務區塊入口 ZH/EN 雙語一致，與 B/C 版 svc.section.sub 對齊
 
