@@ -1,3 +1,6 @@
+## v8.88 · 2026-05-26
+- schema(A版): resume.html ProfessionalService description 補「SaaS 最快 23 天上線」——三版 schema description 全部一致，Google 知識圖譜品牌一致性
+
 ## v8.87 · 2026-05-26
 - schema(C版): index-light.html ProfessionalService description 補「SaaS 最快 23 天上線（214 commits 可查）」——Google 知識圖譜看到 proof point，強化品牌可信度
 
