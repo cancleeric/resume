@@ -1,3 +1,6 @@
+## v9.02 · 2026-05-26
+- css(C版): pricing highlight 數字漸層終點 #FF6B35→#B14A0E——亮底對比從 2.8:1 升至 6.0:1，月費數字清晰可讀
+
 ## v9.01 · 2026-05-26
 - fix(B/C版): faq-cta.jsx `.faq-a-para strong` 從 `var(--ink)`（未定義→黑色）改為 `var(--text-hi)`——FAQ 答案關鍵粗體在深色/亮色主題均可見
 
