@@ -1,3 +1,6 @@
+## v8.39 · 2026-05-26
+- proof(A版): faq5-a「模組外包」scope 範例更新——移除定位偏移的「PayPal 金流串接」，改為三個與 AI 定位一致的具體 scope（OAuth/SSO PKCE+JWT+多租戶、AI Agent PoC LLM Gateway、Cloud Run 現代化）；ZH/EN 同步
+
 ## v8.38 · 2026-05-26
 - coverage(C版): why.studio.row.04「覆蓋面」欄補具體技術棧清單——「（前端 · 後端 · AI · DevOps · 資安）」，讓「整條 pipeline」從抽象概念變成可對比的具體主張；對比 freelancer「單點工程」、agency「層層介面」更清晰（ZH/EN 同步，B版同受益）
 

@@ -240,7 +240,7 @@
       <ul class="auto-feed-list" id="auto-feed-list"></ul>
     </section>
 
-    <p class="sidebar__foot">v8.36 · 2026/05/26 12:08</p>
+    <p class="sidebar__foot">v8.39 · 2026/05/26 11:03</p>
   </aside>
 
   <main class="main">
@@ -558,7 +558,7 @@
       </details>
       <details class="faq-item">
         <summary data-i18n="faq5-q">能不能只請你做某個 module，不要整套？</summary>
-        <p data-i18n="faq5-a">可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週做完 OAuth/SSO 整合、2 週做完 PayPal 金流串接、3 週做完 Cloud Run 部署架構盤點與導入。</p>
+        <p data-i18n="faq5-a">可以，這就是「顧問諮詢」或「專案制」模式。常見 scope：1 週 OAuth/SSO 整合（PKCE + JWT + 多租戶 Tenant provision）、2 週 AI Agent 導入 PoC（LLM Gateway 選型 + Prompt 工程 + 工具鏈整合）、3 週 Cloud Run 現代化（容器化 + CD pipeline + 監控告警）。</p>
       </details>
       <details class="faq-item">
         <summary data-i18n="faq6-q">合作結束後 code 歸屬？</summary>
@@ -591,7 +591,7 @@
     </div>
 
     <hr />
-    <p><em data-i18n="footer-note">v8.36 · 最後更新 2026/05/26 12:08　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
+    <p><em data-i18n="footer-note">v8.39 · 最後更新 2026/05/26 11:03　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
 
   </main>
 
@@ -603,7 +603,7 @@
     · <a href="tel:+886921107206">📞 0921-107-206</a>
     · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" data-i18n="footer-pipeline">🌪️ LF Pipeline 線上作品 ↗</a>
   </p>
-  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v8.36</p>
+  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · HurricaneGroup · 負責人 王英豪 · v8.39</p>
 </footer>
 
 <script>
@@ -880,7 +880,7 @@ const I18N = {
   'faq4-q': 'What AI tools will be used in an engagement?',
   'faq4-a': 'Internal SOP: Claude Code (primary) + self-built LLM Gateway (Brain) + AI copilot role library (claude-agents). All LLM calls route through our self-hosted Anemone gateway — your client code and data stay in your environment unless you explicitly authorize otherwise.',
   'faq5-q': 'Can I hire you for just one module instead of the whole stack?',
-  'faq5-a': 'Absolutely — that\'s exactly what the Advisory or Project-based tiers are for. Common scopes: OAuth/SSO integration in 1 week, PayPal payment integration in 2 weeks, Cloud Run architecture audit and migration in 3 weeks.',
+  'faq5-a': 'Absolutely — that\'s exactly what the Advisory or Project-based tiers are for. Common scopes: OAuth/SSO integration (PKCE + JWT + multi-tenant provisioning) in 1 week; AI Agent PoC (LLM gateway selection + prompt engineering + toolchain integration) in 2 weeks; Cloud Run modernization (containerization + CD pipeline + alerting) in 3 weeks.',
   'faq6-q': 'Who owns the code after the engagement ends?',
   'faq6-a': 'On project completion, all code, documentation, CI/CD configurations, and secrets management specs are fully transferred to you. Our proprietary general-purpose tooling (Brain LLM Gateway, etc.) is licensed for your use at no additional charge.',
   'faq7-q': 'You’re a small studio — what if you’re fully booked or something comes up?',
@@ -895,10 +895,10 @@ const I18N = {
   'contact-note':         'Free 30-min consultation · Reply within 24 hours · No pressure — if it\'s not a fit, we\'ll say so',
 
   // footer
-  'footer-note':    'v8.36 · Last updated 2026/05/26 12:08 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
+  'footer-note':    'v8.39 · Last updated 2026/05/26 11:03 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
   'footer-consult': '📧 Hire Us',
   'footer-pipeline':'🌪️ LF Pipeline — Live Portfolio ↗',
-  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v8.36',
+  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · HurricaneGroup · Principal: Wang Ying-Hao · v8.39',
 };
 
 // ── Snapshot Chinese originals once DOM is ready ──────────────────────────
