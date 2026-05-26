@@ -8,7 +8,7 @@ window.DICT_EN = {
   'og.title':            'HurricaneSoft Ltd. — Automated Software Delivery · One Engineer, Full Team Output',
   'og.description':      'Full pipeline automation (spec → build → deploy → ops). SaaS from 0 to production in 23 days. 30+ production systems validated. Monthly retainer US$10K; project engagements from 1–2 weeks. Invoice available.',
   'twitter.title':       'HurricaneSoft Ltd. — Automated Software Delivery · 14+ Products in a Year',
-  'twitter.description': 'One engineer carrying full team output · 30+ production systems · US$10K/month · project-based from 1–2 weeks',
+  'twitter.description': 'One engineer, full team output · SaaS 0→prod in 23 days · 30+ production systems · US$10K/month',
 
   // ── vs-switcher ──────────────────────────────────────────────────────────
   // [R] from I18N
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.83 · Last updated 2026/05/26 18:45',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.84 · Last updated 2026/05/26 19:00',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
