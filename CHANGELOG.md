@@ -1,3 +1,6 @@
+## v8.93 · 2026-05-26
+- faq(C/B版): faq-cta.jsx 補 faq.08 item——B/C 版 JSX 可視 FAQ 現在真正顯示「英語客戶也接嗎？」條目（dict 已有 key，JSX hardcode 7 項導致不顯示，現修正為 8 項）
+
 ## v8.92 · 2026-05-26
 - faq(B版): index.html FAQPage schema 補 faq8「英語客戶也接嗎？」——三版 A/B/C FAQPage schema 全部同步，英語市場 SEO 一致覆蓋
 

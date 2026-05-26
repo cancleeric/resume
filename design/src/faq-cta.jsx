@@ -9,6 +9,7 @@ function FAQ() {
     { q: t('faq.05.q'), a: t('faq.05.a') },
     { q: t('faq.06.q'), a: t('faq.06.a') },
     { q: t('faq.07.q'), a: t('faq.07.a') },
+    { q: t('faq.08.q'), a: t('faq.08.a') },
   ];
   const [open, setOpen] = useState(0);
   return (
