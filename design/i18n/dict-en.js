@@ -123,7 +123,7 @@ window.DICT_EN = {
   'why.studio.row.03':   'Project-based: kick-off in 1–2 weeks; retainer: next slot 2026/07',
   'why.studio.row.04':   'Full pipeline, one owner — zero handoff gaps, zero "that\'s not my part"',
   'why.studio.row.05':   'Zero decision lag — Principal has commit authority; AI pre-runs risk simulation',
-  'why.studio.row.06':   '6 subsidiaries, 30+ production systems, 14+ in-house products delivered in one year (≈20× by our own measure)',
+  'why.studio.row.06':   '6 subsidiaries, 30+ production systems live; SaaS zero to production in 23 days (214 commits to ship)',
 
   // ── security validation block ─────────────────────────────────────────────
   'secure.title':  'Automated output, automated security validation',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.30 · Last updated 2026/05/26 09:21',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.32 · Last updated 2026/05/26 10:06',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

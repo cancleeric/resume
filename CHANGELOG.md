@@ -1,3 +1,6 @@
+## v8.32 · 2026-05-26
+- proof(B版): why.studio.row.06 PROOF 行去除「體感約 20×」自評語；改為「SaaS 0→生產最快 23 天（214 commits 到上線）」具體數據（ZH/EN 同步，C版同受益）
+
 ## v8.31 · 2026-05-26
 - trust(A版): diff-freelancer 決策速度結語對齊 B/C R26 框架——「一個人的決策速度」改為「零決策等待——負責人直拍板」，EN 同步改為「zero decision lag — the Principal has authority to commit」
 
