@@ -1,3 +1,6 @@
+## v9.00 · 2026-05-26
+- copy(A版): lede-cta-note 翻轉損失框架→收益框架——「30 分鐘明確是否 fit，有具體結論才結束」，ZH/EN 雙語同步
+
 ## v8.99 · 2026-05-26
 - css(C版): bottom-dock box-shadow 加薄框陰影（+0 0 0 1px rgba overlay）——亮底上 dock 浮動容器輪廓從「融入頁面」變清晰可見，提升全頁曝光最高的 CTA 可辨識度
 
