@@ -620,6 +620,10 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 .hero-sub .stage { color: #B14A0E !important; }
 /* faq-cta.jsx 用 var(--ink) 著色 strong，但 C版未定義 --ink → strong 繼承 --text-mid (#52555F) 無強調效果 */
 .faq-a-para strong { color: var(--text-hi) !important; }
+/* CTA eyebrow（12px）+ title accent：var(--orange) #FF6B35 亮底 ~2.8:1 未達 AA，改深橘 */
+.cta-eyebrow { color: #B14A0E !important; }
+.cta-eyebrow::before { background: #B14A0E !important; }
+.cta-title .accent { color: #B14A0E !important; }
 
 /* flow particle keep orange/cyan glows but smaller halo */
 .flow-particle { box-shadow: 0 0 10px var(--orange); }

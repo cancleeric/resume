@@ -1,3 +1,6 @@
+## v8.60 · 2026-05-26
+- a11y(C版): index-light.html CTA eyebrow（12px）+ title accent 補亮底對比 override——var(--orange) #FF6B35 ~2.8:1 未達 AA，改 #B14A0E ~4.5:1（與 KPI/hero title 模式一致）
+
 ## v8.59 · 2026-05-26
 - trust(B/C版): pricing.section.sub 交付保障段補「每個里程碑驗收完即移交完整版本」——與 faq.06.a v8.49/50 對齊，整頁里程碑交付訊息一致（ZH/EN 同步，C版同受益）
 
