@@ -1,3 +1,6 @@
+## v8.31 · 2026-05-26
+- trust(A版): diff-freelancer 決策速度結語對齊 B/C R26 框架——「一個人的決策速度」改為「零決策等待——負責人直拍板」，EN 同步改為「zero decision lag — the Principal has authority to commit」
+
 ## v8.30 · 2026-05-26
 - trust(C版): why.studio.row.05 決策即時性欄重構——原文「即時：負責人就是決策者，AI 跑風險預演」過於口語；改為「無決策延遲：負責人即拍板者，AI 提前跑風險模擬」明確強調無中間人等待（ZH/EN 同步，B版同受益）
 
