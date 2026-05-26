@@ -1,3 +1,6 @@
+## v8.99 · 2026-05-26
+- css(C版): bottom-dock box-shadow 加薄框陰影（+0 0 0 1px rgba overlay）——亮底上 dock 浮動容器輪廓從「融入頁面」變清晰可見，提升全頁曝光最高的 CTA 可辨識度
+
 ## v8.98 · 2026-05-26
 - copy(B/C版): hero.cta.primary 改「預約 30 分鐘免費諮詢」/「Book a Free 30-min Call」——降低 Hero 首屏 CTA 摩擦，把 risk reducer 搬進按鈕文字，稀缺感留給 availability bar
 
