@@ -1,3 +1,6 @@
+## v8.38 · 2026-05-26
+- coverage(C版): why.studio.row.04「覆蓋面」欄補具體技術棧清單——「（前端 · 後端 · AI · DevOps · 資安）」，讓「整條 pipeline」從抽象概念變成可對比的具體主張；對比 freelancer「單點工程」、agency「層層介面」更清晰（ZH/EN 同步，B版同受益）
+
 ## v8.37 · 2026-05-26
 - proof(B版): freelancer.row.06「驗證程度」欄強化——「個案 portfolio，多為 demo」補入「無從驗證是否有持續維運中的生產系統」；三欄對比（freelancer demo / agency logo wall / studio 30+ live systems）現更完整（ZH/EN 同步，C版同受益）
 

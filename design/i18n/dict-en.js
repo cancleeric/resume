@@ -121,7 +121,7 @@ window.DICT_EN = {
   'why.studio.row.01':   'One Principal + AI copilot team — unbroken ownership from spec to ops',
   'why.studio.row.02':   'US$10K/month fixed — you buy output directly, not middlemen',
   'why.studio.row.03':   'Project-based: kick-off in 1–2 weeks; retainer: next slot 2026/07',
-  'why.studio.row.04':   'Full pipeline, one owner — zero handoff gaps, zero "that\'s not my part"',
+  'why.studio.row.04':   'Full pipeline, one owner (frontend · backend · AI · DevOps · security) — zero handoff gaps, zero "that\'s not my part"',
   'why.studio.row.05':   'Zero decision lag — Principal has commit authority; AI pre-runs risk simulation',
   'why.studio.row.06':   '6 subsidiaries, 30+ production systems live; SaaS zero to production in 23 days (214 commits to ship)',
 
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.37 · Last updated 2026/05/26 12:38',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.38 · Last updated 2026/05/26 11:02',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',

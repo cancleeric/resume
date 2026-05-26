@@ -113,7 +113,7 @@ window.DICT_ZH = {
   'why.studio.row.01':   '一個負責人直扛 + AI 副手團隊，從 spec 到維運不中斷',
   'why.studio.row.02':   'US$10k/月 fixed，直接買產出、不買中間人',
   'why.studio.row.03':   '專案制 1–2 週啟動、月費下個檔期 2026/07',
-  'why.studio.row.04':   '整條 pipeline 一個團隊主責——零交接斷點、零「那不是我的部分」',
+  'why.studio.row.04':   '整條 pipeline 一個團隊主責（前端 · 後端 · AI · DevOps · 資安）——零交接斷點、零「那不是我的部分」',
   'why.studio.row.05':   '無決策延遲：負責人即拍板者，AI 提前跑風險模擬',
   'why.studio.row.06':   '自家集團 6 子公司 30+ 生產系統在跑；SaaS 0→生產最快 23 天（214 commits 到上線）',
 
@@ -345,7 +345,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.37 · 最後更新 2026/05/26 12:38',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v8.38 · 最後更新 2026/05/26 11:02',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
   'tokens.dark.title':    'Design tokens · 深色版風格說明書',
