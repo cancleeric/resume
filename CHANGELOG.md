@@ -1,3 +1,6 @@
+## v8.97 · 2026-05-26
+- copy(A版): resume.html services-intro 補「最快 SaaS 0→生產：23 天」——服務區塊入口 ZH/EN 雙語一致，與 B/C 版 svc.section.sub 對齊
+
 ## v8.96 · 2026-05-26
 - copy(B/C版): dict-zh/en svc.section.sub 補「最快 SaaS 0→生產：23 天」——服務區塊標題增加 proof point，讀者不需往下滾就能看到速度驗證
 
