@@ -1,3 +1,6 @@
+## v8.32-A · 2026-05-26
+- proof(A版): hire-lede 移除「體感是 20×」自評語（ZH/EN 同步）；改為「23 天（214 commits，git 紀錄可查）」具體實證，與 B/C R28 對齊（arch: 無異動）
+
 ## v8.33 · 2026-05-26
 - wcag(C版): tone-icon.bad 對比修正——--orange #FF6B35 亮底僅 ~2.8:1 未達 AA；改為 #C2410C ~4.5:1 達 WCAG 1.4.11（arch: D4 toc-desc 補 SwiftUI/Next.js 技術棧）
 
