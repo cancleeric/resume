@@ -1,3 +1,6 @@
+## v8.68 · 2026-05-26
+- copy(B版): studio.section.sub EN 由組織描述升級為客戶利益敘述——「client-facing window」→「Backed by HurricaneGroup: 30+ production systems running daily — every method and toolchain we bring to your project has already shipped in our own production」
+
 ## v8.67 · 2026-05-26
 - copy(A版): secure-title ZH 硬編文字對齊 B/C v8.65——「自動化產出，安全也自動化驗收」→「自動化產出。自動化安全把關。每次部署過門前都要清關。」；FAQPage schema faq6 補里程碑交付訊息，與 C版 v8.66 對齊
 

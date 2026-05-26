@@ -307,7 +307,7 @@ window.DICT_EN = {
 
   // ── studio ────────────────────────────────────────────────────────────────
   'studio.section.title':     'Not just one person —<br/>an entire group behind you.',
-  'studio.section.sub':       'The studio is HurricaneGroup\'s client-facing window. 6 subsidiaries, 30+ production systems — the proving ground for this pipeline.',
+  'studio.section.sub':       'Backed by HurricaneGroup: 6 subsidiaries, 30+ production systems running daily — the live proving ground. Every method and toolchain we bring to your project has already shipped and runs in our own production.',
   'studio.parent.en':         'PARENT · HurricaneGroup',
   // [R] from I18N group-role-*
   'studio.soft.role':         'Group deployment lead / GCP ops / client-facing studio',
@@ -354,7 +354,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.66 · Last updated 2026/05/26 14:30',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v8.68 · Last updated 2026/05/26 15:00',
 
   // ── tokens section ────────────────────────────────────────────────────────
   'tokens.dark.title':    'Design Tokens · Dark theme style guide',
