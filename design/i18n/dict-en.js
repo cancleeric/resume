@@ -384,4 +384,23 @@ window.DICT_EN = {
   'timeline.chip.failover':      'Symmetric Failover',
   'timeline.chip.microservices': 'Microservices',
   'timeline.item.07.date':       '2019.02 - Present',
+
+  // ── open-source R&D section ───────────────────────────────────────────────
+  'oss.section.label':     'OPEN-SOURCE · R&D',
+  'oss.section.title':     'Open-Source Research —<br/>AI / CV Fundamentals.',
+  'oss.section.sub':       'Three personal research repos — backprop from scratch, a self-trained CNN from training to serving, and Canny edge detection in pure NumPy. Technical depth that ships numbers, not claims.',
+  'oss.signsight.name':    'signsight',
+  'oss.signsight.tagline': 'Traffic-Sign Recognition CNN · Train to Serve',
+  'oss.signsight.metric':  'Test Acc 92.74% · GTSRB 43 classes',
+  'oss.signsight.desc':    'Self-trained CNN on GTSRB (43-class German traffic-sign dataset); Grad-CAM explainability heatmaps, a FastAPI inference endpoint, Docker, and CI.',
+  'oss.nanograd.name':     'nanograd',
+  'oss.nanograd.tagline':  'Autograd Engine from Scratch · Pure Python',
+  'oss.nanograd.metric':   'Backprop from scratch · zero deps',
+  'oss.nanograd.desc':     'A hand-rolled reverse-mode autograd engine that shows the math underneath deep learning; pure Python, with a decision-boundary visualization that verifies gradient correctness.',
+  'oss.edgekit.name':      'edgekit',
+  'oss.edgekit.tagline':   'Canny Edge Detection · Pure NumPy',
+  'oss.edgekit.metric':    'Gaussian / Sobel / NMS / Dual-Threshold / Hysteresis',
+  'oss.edgekit.desc':      'A full Canny pipeline from scratch: Gaussian blur, Sobel gradients, non-max suppression, dual-threshold, and hysteresis tracking. Pure NumPy, no cv2.',
+  'oss.repo.link':         'View Repo',
+  'mobile.link.oss':       'Open-Source',
 };

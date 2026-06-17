@@ -53,6 +53,7 @@ function MobileMenu({ open, onClose }) {
     { href: '#systems', labelKey: 'mobile.link.systems', en: 'SYSTEMS' },
     { href: '#timeline', labelKey: 'mobile.link.timeline', en: 'TIMELINE' },
     { href: '#tech', labelKey: 'mobile.link.tech', en: 'TECH' },
+    { href: '#oss', labelKey: 'mobile.link.oss', en: 'OSS' },
     { href: '#studio', labelKey: 'mobile.link.studio', en: 'STUDIO' },
     { href: '#faq', labelKey: 'mobile.link.faq', en: 'FAQ' },
   ];
@@ -103,6 +104,7 @@ function StickyTOC() {
     { id: 'systems', label: 'SYSTEMS' },
     { id: 'timeline', label: 'TIMELINE' },
     { id: 'tech', label: 'TECH' },
+    { id: 'oss', label: 'OSS' },
     { id: 'studio', label: 'STUDIO' },
     { id: 'faq', label: 'FAQ' },
     { id: 'cta', label: 'CONTACT' },
@@ -180,6 +182,7 @@ function App() {
         <Systems />
         <Timeline />
         <TechStack />
+        <OpenSourceProjects />
         <StudioOrg />
         <FAQ />
         <CTA />

@@ -608,6 +608,9 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 .sys-card { box-shadow: var(--shadow-sm); }
 /* 系統卡 metric：亮底用更深的青，原 var(--cyan) #0EA5E9 對比僅 ~2.8:1 */
 .sys-card .metric { color: #0369A1 !important; }
+/* 開源卡 metric / link：亮底同樣套用更深的青，避免低對比 */
+.oss-card .metric { color: #0369A1 !important; }
+.oss-card__link { color: #0369A1 !important; }
 
 /* tokens section background */
 .tokens-section { background: var(--bg-2) !important; }
@@ -711,6 +714,7 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 <script type="text/babel" src="src/tech-faq.jsx"></script>
 <script type="text/babel" src="src/studio.jsx"></script>
 <script type="text/babel" src="src/faq-cta.jsx"></script>
+<script type="text/babel" src="src/open-projects.jsx"></script>
 <script type="text/babel" src="src/app.jsx"></script>
 
 <script>

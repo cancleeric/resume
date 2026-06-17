@@ -375,4 +375,23 @@ window.DICT_ZH = {
   'timeline.chip.failover':      '對稱備援',
   'timeline.chip.microservices': '微服務',
   'timeline.item.07.date':       '2019.02 - 持續',
+
+  // ── open-source R&D section ───────────────────────────────────────────────
+  'oss.section.label':     'OPEN-SOURCE · R&D',
+  'oss.section.title':     '開源研究，<br/>AI / CV 底層功底。',
+  'oss.section.sub':       '三個個人研究型 repo — 從零手刻反向傳播、CNN 影像分類自訓到上線、純 NumPy 邊緣偵測。技術底氣不是用講的，是跑出來的數字。',
+  'oss.signsight.name':    'signsight',
+  'oss.signsight.tagline': '交通路標辨識 CNN · 自訓 + FastAPI 上線',
+  'oss.signsight.metric':  'Test Acc 92.74% · GTSRB 43 類',
+  'oss.signsight.desc':    '自訓 CNN 辨識德國路標資料集（GTSRB）43 分類；含 Grad-CAM 可解釋性熱力圖、FastAPI 推論服務、Docker 打包、CI 驗證。',
+  'oss.nanograd.name':     'nanograd',
+  'oss.nanograd.tagline':  '從零手刻 Autograd 引擎 · 純 Python',
+  'oss.nanograd.metric':   'Backprop from scratch · 零依賴',
+  'oss.nanograd.desc':     '手刻反向傳播 autograd 引擎，展現深度學習底層數學；純 Python 實作，以 decision boundary 視覺化驗證梯度正確性。',
+  'oss.edgekit.name':      'edgekit',
+  'oss.edgekit.tagline':   'Canny 邊緣偵測 · 純 NumPy 實作',
+  'oss.edgekit.metric':    '高斯 / Sobel / NMS / 雙閾值 / 遲滯',
+  'oss.edgekit.desc':      '從零實作完整 Canny pipeline：高斯濾波、Sobel 梯度、非極大抑制、雙閾值、遲滯追蹤，純 NumPy，無 cv2。',
+  'oss.repo.link':         '查看 Repo',
+  'mobile.link.oss':       '開源研究',
 };
