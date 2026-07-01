@@ -191,7 +191,13 @@ function App() {
       <BottomDock />
       {/* --text-mid 而非 --text-dim：footer 含公司名/統編/負責人等資訊，--text-dim 深版僅 ~2.3:1 近乎不可見 */}
       <footer style={{ padding: '40px 16px 140px', textAlign: 'center', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--text-mid)', letterSpacing: '0.08em', borderTop: '1px solid var(--border-subtle)' }}>
-        {t('footer.copy')}
+        <div>{t('footer.copy')}</div>
+        {/* 低調入口：noindex 面試簡報，只給頁尾小連結，不進主 nav（受眾＝面試官，非接案客戶）*/}
+        <div style={{ marginTop: 12 }}>
+          <a href="interview.html" style={{ color: 'var(--text-low)', textDecoration: 'none', borderBottom: '1px solid var(--border-subtle)', paddingBottom: 1 }}>
+            {t('footer.interview')} →
+          </a>
+        </div>
       </footer>
     </>
   );
