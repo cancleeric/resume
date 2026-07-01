@@ -1,0 +1,44 @@
+#!/bin/sh
+# Pre-push guard v4：通用擋 main 的 non-fast-forward + zero-SHA 邊界 + trailer 強制稽核
+ZERO="0000000000000000000000000000000000000000"
+
+while read local_ref local_sha remote_ref remote_sha; do
+  if [ "$remote_ref" != "refs/heads/main" ]; then
+    continue
+  fi
+
+  if [ "$local_sha" = "$ZERO" ]; then
+    echo "[pre-push BLOCKED] 偵測到刪除 refs/heads/main 的操作，禁止。"
+    exit 1
+  fi
+
+  if [ "$remote_sha" = "$ZERO" ]; then
+    echo "[pre-push BLOCKED] remote main 的已知 SHA 為全零（異常狀態），為避免 fail-open 一律擋下，請人工確認後手動處理。"
+    exit 1
+  fi
+
+  if ! git merge-base --is-ancestor "$remote_sha" "$local_sha"; then
+    echo "[pre-push BLOCKED] 這是對 main 的 non-fast-forward 推送。"
+    if [ "$ALLOW_FORCE_PUSH_MAIN" = "1" ]; then
+      if git log -1 --format=%B "$local_sha" | grep -q "^Manual-Override: ALLOW_FORCE_PUSH_MAIN"; then
+        echo "[pre-push OVERRIDE] 偵測到 ALLOW_FORCE_PUSH_MAIN=1 且 commit 已帶 Manual-Override trailer，放行。"
+      else
+        echo "[pre-push BLOCKED] ALLOW_FORCE_PUSH_MAIN=1 但要推送的 commit 缺少 Manual-Override trailer，禁止推送。"
+        echo "請先 git commit --amend 補上一行："
+        echo "  Manual-Override: ALLOW_FORCE_PUSH_MAIN by <operator> at <timestamp>, reason: <text>"
+        exit 1
+      fi
+    else
+      echo "若確定要手動覆蓋，請先在 commit 補 Manual-Override trailer，再一次性加旗標（禁止 export）："
+      echo "  ALLOW_FORCE_PUSH_MAIN=1 git push --force-with-lease origin main"
+      exit 1
+    fi
+  fi
+done
+
+if ! grep -q "颶風軟體有限公司" resume.html 2>/dev/null; then
+  echo "[pre-push BLOCKED] resume.html 不含接案版特徵字串「颶風軟體有限公司」— aborting push."
+  exit 1
+fi
+
+exit 0
