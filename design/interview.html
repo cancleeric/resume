@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王英豪 · 首席 Web／後端 AI 系統架構師 — 面試簡報</title>
+<meta name="description" content="王英豪 Eric Wang — 首席 Web／後端 AI 系統架構師面試簡報。高併發後端架構、AI/Agentic 系統、財經科技實績。">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://cancleeric.github.io/resume/design/interview.html">
+<style>
+  :root{
+    --bg:#ffffff; --ink:#0f172a; --sub:#475569; --muted:#94a3b8;
+    --line:#e2e8f0; --card:#f8fafc; --card2:#f1f5f9;
+    --accent:#2563eb; --accent2:#0ea5e9; --good:#059669; --warn:#ea580c;
+    --shadow:0 10px 40px rgba(15,23,42,.08);
+    --mono:"SFMono-Regular",Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:#e9edf3;font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px}
+  .slide{
+    display:none;width:min(1100px,96vw);height:min(680px,90vh);
+    background:var(--bg);border-radius:20px;box-shadow:var(--shadow);
+    padding:56px 64px;overflow:hidden;position:relative;
+    flex-direction:column;
+  }
+  .slide.active{display:flex;animation:fade .35s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;margin-bottom:14px}
+  h1{font-size:44px;line-height:1.12;letter-spacing:-.02em}
+  h2{font-size:30px;line-height:1.2;letter-spacing:-.01em;margin-bottom:6px}
+  .lead{color:var(--sub);font-size:17px;line-height:1.65;margin-top:10px;max-width:70ch}
+  .foot{position:absolute;left:64px;right:64px;bottom:22px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.08em}
+  .foot .bar{flex:1;height:3px;background:var(--line);border-radius:2px;margin:0 16px;position:relative;overflow:hidden}
+  .foot .bar>i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;transition:width .35s}
+  /* cover */
+  .cover .badge{display:inline-flex;gap:8px;align-items:center;font-family:var(--mono);font-size:12px;color:var(--sub);border:1px solid var(--line);border-radius:999px;padding:6px 14px;margin-bottom:26px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 0 4px rgba(5,150,105,.15)}
+  .cover h1{font-size:52px}
+  .role{margin-top:18px;font-size:20px;color:var(--accent);font-weight:600}
+  .meta{margin-top:30px;display:flex;gap:26px;flex-wrap:wrap;color:var(--sub);font-size:14px}
+  .meta b{color:var(--ink)}
+  /* grids */
+  .grid{display:grid;gap:16px;margin-top:22px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:16px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+  .card p{color:var(--sub);font-size:13.5px;line-height:1.6}
+  .card .tag{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:.06em}
+  .num{font-size:40px;font-weight:700;letter-spacing:-.02em;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+  .stats .card{text-align:center}
+  .stats .card small{display:block;color:var(--muted);font-size:12px;margin-top:6px;line-height:1.4}
+  ul.clean{margin-top:16px;list-style:none;display:flex;flex-direction:column;gap:12px}
+  ul.clean li{position:relative;padding-left:26px;color:var(--sub);font-size:15px;line-height:1.55}
+  ul.clean li::before{content:"";position:absolute;left:2px;top:8px;width:10px;height:10px;border-radius:3px;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+  ul.clean li b{color:var(--ink)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .chip{font-family:var(--mono);font-size:12px;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--sub)}
+  /* architecture diagram */
+  .arch{margin-top:20px;display:flex;flex-direction:column;gap:12px}
+  .layer{border:1px solid var(--line);border-radius:12px;padding:14px 18px;background:var(--card)}
+  .layer .lb{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;margin-bottom:10px}
+  .row{display:flex;gap:10px;flex-wrap:wrap}
+  .box{flex:1;min-width:120px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;font-size:13px}
+  .box b{display:block;font-size:14px;margin-bottom:2px}
+  .box small{color:var(--muted);font-size:11px}
+  .box.acc{border-color:var(--accent);box-shadow:0 4px 14px rgba(37,99,235,.12)}
+  .arrowdown{text-align:center;color:var(--muted);font-size:18px;line-height:.4}
+  /* table */
+  table{width:100%;border-collapse:collapse;margin-top:18px;font-size:13.5px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+  td b{color:var(--ink)}
+  td .ok{color:var(--good);font-weight:600}
+  .repo{font-family:var(--mono);font-size:12px;color:var(--accent)}
+  .term{background:#0f172a;border-radius:12px;padding:18px 20px;font-family:var(--mono);font-size:13px;color:#cbd5e1;line-height:1.7;margin-top:18px}
+  .term .g{color:#34d399}.term .b{color:#60a5fa}.term .m{color:#94a3b8}
+  .split{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;margin-top:20px;flex:1}
+  .cta{margin-top:auto}
+  .contact{display:flex;gap:24px;flex-wrap:wrap;margin-top:20px;font-size:14px;color:var(--sub)}
+  .contact b{color:var(--ink)}
+  .home{position:fixed;top:16px;left:18px;z-index:20;font-family:var(--mono);font-size:12px;color:#475569;text-decoration:none;background:rgba(255,255,255,.85);border:1px solid var(--line);border-radius:999px;padding:6px 14px;backdrop-filter:blur(6px);transition:color .2s,border-color .2s}
+  .home:hover{color:var(--accent);border-color:var(--accent)}
+  .hint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:11px;color:#64748b;background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:999px;padding:6px 14px;backdrop-filter:blur(6px)}
+  @media(max-width:720px){.slide{padding:32px 26px;height:92vh}.foot{left:26px;right:26px}h1{font-size:32px}.cover h1{font-size:34px}.g3,.g2,.stats{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="home" href="./index-light.html">← 返回主頁</a>
+<div class="stage" id="stage">
+
+  <!-- 1 COVER -->
+  <section class="slide cover active">
+    <div class="badge"><span class="dot"></span> 面試簡報 · 2026/07/04 · 颶風軟體 王英豪</div>
+    <h1>用 24 年工程深度 ×<br>AI，重新定義軟體生產線</h1>
+    <div class="role">應徵：首席 Web／後端 AI 系統架構師（Full-Stack AI Systems Architect）</div>
+    <div class="meta">
+      <span><b>王英豪</b> Eric Wang</span>
+      <span>颶風軟體有限公司 · 負責人 / 首席架構師</span>
+      <span>github.com/<b>cancleeric</b></span>
+    </div>
+  </section>
+
+  <!-- 2 ABOUT -->
+  <section class="slide">
+    <div class="kicker">01 · 關於我</div>
+    <h2>一個人，扛起以往需要整支團隊的產出</h2>
+    <p class="lead">從軟體代工起家、深耕 24 年，現在把「規格 → 設計 → 實作 → 審查 → 部署 → 維運」整條開發流程自動化。用自家 30+ 生產系統驗證過，才拿去接客戶的案子。</p>
+    <div class="stats">
+      <div class="card"><div class="num">24+</div><small>年後端 / 系統工程實戰</small></div>
+      <div class="card"><div class="num">30+</div><small>生產環境運行系統</small></div>
+      <div class="card"><div class="num">23天</div><small>SaaS 最快上線（214 commits 可查）</small></div>
+      <div class="card"><div class="num">14+</div><small>一年交付產品數</small></div>
+    </div>
+    <div class="chips">
+      <span class="chip">Python / FastAPI</span><span class="chip">TypeScript / Node</span>
+      <span class="chip">C# / .NET / Blazor</span><span class="chip">PHP · 遺留系統升級</span>
+      <span class="chip">GCP Cloud Run</span><span class="chip">多租戶 SaaS</span>
+      <span class="chip">OAuth2 / OIDC / SSO</span><span class="chip">LLM Gateway / Agentic</span>
+    </div>
+  </section>
+
+  <!-- 3 WHY ME -->
+  <section class="slide">
+    <div class="kicker">02 · 為什麼是我</div>
+    <h2>職缺三大核心，恰好是我每天在做的事</h2>
+    <div class="grid g3">
+      <div class="card">
+        <div class="tag">高併發後端</div>
+        <h3>🏗 系統建模 × 效能</h3>
+        <p>金流閘道、多租戶預約 SaaS 生產運行；分散式、微服務、快取、資料庫鎖機制的實戰調優。</p>
+      </div>
+      <div class="card">
+        <div class="tag">AI / Agentic</div>
+        <h3>🤖 自動化生產線</h3>
+        <p>Squid 讓 AI agent 寫碼、跑測、開 PR；智腦閘道統一接 Claude/GPT/Gemini，全產品共用。</p>
+      </div>
+      <div class="card">
+        <div class="tag">財經領域</div>
+        <h3>📈 金融科技場景</h3>
+        <p>TrustForge 加密市場分析 AI Agent（AWS Bedrock）、Hurricane Pay 金流、雲端帳務系統。</p>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:22px">貴司要找「技術決策者 + 品質最後防線 + 自動化策略指導」——這三個角色，我在颶風同時扮演，並且有可查的 commit 紀錄佐證。</p>
+  </section>
+
+  <!-- 4 高併發後端 -->
+  <section class="slide">
+    <div class="kicker">03 · 重點一 · 高併發後端架構</div>
+    <h2>把複雜商業邏輯建模成穩健系統</h2>
+    <div class="split">
+      <div>
+        <ul class="clean">
+          <li><b>金流交易系統</b>：Hurricane Pay 統一訂閱與發票金流，串接 LINE Pay / PayPal，處理冪等、對帳與失敗重試。</li>
+          <li><b>多租戶 SaaS</b>：通用訂位 SaaS 多店家同時生產運行，租戶隔離 + 會員 CRM + POS 一站整合。</li>
+          <li><b>深層效能</b>：分散式架構、微服務拆分、內存快取策略、資料庫底層鎖機制與高併發鎖死排除。</li>
+          <li><b>穩定性把關</b>：自研「颶風眼 eye」——改任何程式前先算影響範圍，重構不炸線上。</li>
+        </ul>
+        <div class="chips">
+          <span class="chip repo">hurricane-pay</span>
+          <span class="chip repo">reservation-saas</span>
+          <span class="chip repo">eye · 影響範圍分析</span>
+          <span class="chip repo">migrations · 統一 DB migration</span>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="height:100%">
+          <div class="tag">對應職缺要求</div>
+          <ul class="clean" style="margin-top:12px">
+            <li>8 年以上後端經驗 <span class="ok">✓ 24 年</span></li>
+            <li>高併發交易系統實戰 <span class="ok">✓ 金流 / 預約</span></li>
+            <li>分散式 · 微服務 <span class="ok">✓ 平台化</span></li>
+            <li>快取 · DB 鎖機制 <span class="ok">✓ 調優經驗</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 平台架構圖 -->
+  <section class="slide">
+    <div class="kicker">03 · 重點一 · 平台架構</div>
+    <h2>一套平台，每個產品都接得上</h2>
+    <p class="lead">對外 SaaS 不是各自獨立——身份、金流、AI 能力由平台層統一提供，產品只專注業務。這正是「系統建模 + 架構決策」的實作證據。</p>
+    <div class="arch">
+      <div class="layer">
+        <div class="lb">產品層 · YOUR SAAS</div>
+        <div class="row">
+          <div class="box"><b>預約 SaaS</b><small>多租戶訂位</small></div>
+          <div class="box"><b>雲端帳務</b><small>Abacus</small></div>
+          <div class="box"><b>AI Workflow</b><small>Manta</small></div>
+          <div class="box"><b>AICAD</b><small>電腦視覺</small></div>
+        </div>
+      </div>
+      <div class="arrowdown">▼</div>
+      <div class="layer">
+        <div class="lb">平台層 · 三項標配（所有對外 SaaS 共用）</div>
+        <div class="row">
+          <div class="box acc"><b>LIDS</b><small>統一身份 · 多租戶 SSO（OAuth2/OIDC）</small></div>
+          <div class="box acc"><b>智腦平台</b><small>AI 能力閘道 · 統一接 LLM</small></div>
+          <div class="box acc"><b>Hurricane Pay</b><small>統一金流 · 訂閱與發票</small></div>
+        </div>
+      </div>
+      <div class="arrowdown">▼</div>
+      <div class="layer">
+        <div class="lb">基礎建設 + 開發保障</div>
+        <div class="row">
+          <div class="box"><b>GCP Cloud Run</b><small>容器化部署</small></div>
+          <div class="box"><b>聖盾 Aegis</b><small>上線前資安掃描</small></div>
+          <div class="box"><b>颶風眼 eye</b><small>重構影響範圍分析</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 AI / Agentic -->
+  <section class="slide">
+    <div class="kicker">04 · 重點二 · AI / Agentic 系統架構</div>
+    <h2>把「軟體自動化生產線」真的跑起來</h2>
+    <div class="split">
+      <div>
+        <ul class="clean">
+          <li><b>Squid — AI 開發自動化</b>：多 Agent 協作(規劃 / 寫碼 / 審查分工)，整合 Git、CI/CD、PR 流程。</li>
+          <li><b>智腦閘道</b>：統一 Claude / GPT / Gemini 接口，全產品共用、即時可用——接 AI 不必每個產品各自重做。</li>
+          <li><b>LobsterFarm — AI 員工管理</b>：多模型統一派工、成本 / 績效 / 產出看板，把 AI 當團隊成員管理。</li>
+          <li><b>品質最後防線</b>：AI 產出的架構由人審核，解決技術債與高併發深層議題——人定方向、AI 跑交付。</li>
+        </ul>
+        <div class="chips">
+          <span class="chip repo">squid-api</span><span class="chip repo">squid-js-sdk</span>
+          <span class="chip repo">lobsterfarm-api</span><span class="chip repo">claude-agents</span>
+          <span class="chip repo">skillhub</span>
+        </div>
+      </div>
+      <div class="term">
+<span class="m">$ </span><span class="b">squid</span> init --agent=backend<br>
+<span class="m">→ scaffolding service layer...</span><br>
+<span class="g">✓</span> 14 routes generated<br>
+<span class="g">✓</span> tests: 42/42 passing<br>
+<span class="g">✓</span> PR #281 opened<br>
+<span class="m">────────────────────</span><br>
+● agent idle · 2.1s
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 Agentic 導入方法論 -->
+  <section class="slide">
+    <div class="kicker">04 · 重點二 · 自動化策略指導</div>
+    <h2>如何在高壓系統中「安全」導入 Agentic Workflow</h2>
+    <div class="grid g3">
+      <div class="card"><h3>① 邊界先行</h3><p>先界定 AI 可自主的範圍與必須人工守門的關卡，把不可逆操作（金流、上線）留在人手。</p></div>
+      <div class="card"><h3>② 影響可算</h3><p>用「颶風眼」在改動前算出影響範圍，讓 AI 重構不會炸線上，速度與穩健性成正比。</p></div>
+      <div class="card"><h3>③ 上線有閘</h3><p>「聖盾 Aegis」自動資安掃描，漏洞在部署前攔下，AI 產出也要過品質關。</p></div>
+      <div class="card"><h3>④ 統一閘道</h3><p>智腦平台統一 LLM 接口與用量成本控管，避免各 BU 各自串接、失控。</p></div>
+      <div class="card"><h3>⑤ 可觀測</h3><p>成本 / 績效 / 產出看板讓 Agentic 流程可監控、可回溯、可稽核。</p></div>
+      <div class="card"><h3>⑥ 漸進導入</h3><p>先在低風險 BU 試點，用實測數據說服，再逐步擴到高併發核心系統。</p></div>
+    </div>
+    <p class="lead" style="margin-top:18px">這對應職缺的「顧問思維」：把技術風險轉譯成非技術主管能理解的決策依據。</p>
+  </section>
+
+  <!-- 8 財經領域 -->
+  <section class="slide">
+    <div class="kicker">05 · 重點三 · 財經領域相關</div>
+    <h2>金融科技場景，我已經在做</h2>
+    <div class="grid g3">
+      <div class="card">
+        <div class="tag">加密市場 · AI Agent</div>
+        <h3>📊 TrustForge</h3>
+        <p>加密市場分析 AI Agent：多源資訊的信任提煉，建於 AWS Bedrock。2026 雲湧智生黑客松（HOYA BIT）作品。</p>
+      </div>
+      <div class="card">
+        <div class="tag">金流閘道</div>
+        <h3>💳 Hurricane Pay</h3>
+        <p>統一訂閱與發票金流，交易冪等、對帳、失敗重試——財經系統最在意的正確性與一致性。</p>
+      </div>
+      <div class="card">
+        <div class="tag">雲端帳務</div>
+        <h3>🧮 HurricaneBooks / Abacus</h3>
+        <p>雲端帳務系統（C# / .NET），處理帳務邏輯、報表與合規——熟悉財務資料的嚴謹度。</p>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:22px">財經科技最需要的是「正確、可稽核、高併發下不出錯」。我在金流與帳務系統累積的，正是這種對資料一致性近乎偏執的工程紀律。</p>
+  </section>
+
+  <!-- 9 技術深度 -->
+  <section class="slide">
+    <div class="kicker">06 · 技術深度佐證</div>
+    <h2>不只會用工具，也懂底層原理</h2>
+    <p class="lead">架構師的價值在於 AI 無法自行推論時，能給出最佳方案。以下是我從零手刻、不靠框架的公開專案，證明對底層的掌握：</p>
+    <div class="grid g3">
+      <div class="card"><div class="tag repo">nanograd</div><h3>反向傳播引擎</h3><p>純 Python 手刻 reverse-mode autograd 與神經網路庫，理解梯度計算本質。</p></div>
+      <div class="card"><div class="tag repo">edgekit</div><h3>Canny 邊緣偵測</h3><p>用 NumPy 從零實作經典 Canny，不用 OpenCV——掌握演算法而非黑盒。</p></div>
+      <div class="card"><div class="tag repo">signsight</div><h3>交通標誌辨識</h3><p>PyTorch 從零訓練 CNN + Grad-CAM 可解釋性，端到端 ML 能力。</p></div>
+    </div>
+    <div class="chips">
+      <span class="chip">跨語言：Python · TS · C# · PHP · Swift · Shell</span>
+      <span class="chip">遺留系統升級：PHP 5.6→7 · CI 1→3（STA 協會實例）</span>
+      <span class="chip">iOS 原生：LifeSnap · desktop-diva</span>
+    </div>
+  </section>
+
+  <!-- 10 職缺逐項對應 -->
+  <section class="slide">
+    <div class="kicker">07 · 職缺要求逐項對應</div>
+    <h2>需求 vs. 實績</h2>
+    <table>
+      <thead><tr><th>職缺要求</th><th>我的對應實績</th><th>佐證 Repo</th></tr></thead>
+      <tbody>
+        <tr><td><b>8 年以上後端開發</b></td><td>24 年工程實戰，橫跨代工到自有 SaaS <span class="ok">✓</span></td><td class="repo">全 profile</td></tr>
+        <tr><td><b>高併發交易系統</b></td><td>金流閘道 + 多租戶預約 SaaS 生產運行 <span class="ok">✓</span></td><td class="repo">hurricane-pay · reservation-saas</td></tr>
+        <tr><td><b>分散式 / 微服務 / 快取 / DB 鎖</b></td><td>平台層架構 + BFF 模式 + 統一 migration <span class="ok">✓</span></td><td class="repo">tentacle-bff · hd-gateway · eye</td></tr>
+        <tr><td><b>系統建模 · 架構決策</b></td><td>一套平台承載多產品，身份/金流/AI 分層 <span class="ok">✓</span></td><td class="repo">LocalIdentityServer · hurricane-pay</td></tr>
+        <tr><td><b>導入 Agentic Workflow</b></td><td>Squid + 智腦閘道 + LobsterFarm 全鏈路 <span class="ok">✓</span></td><td class="repo">squid-api · lobsterfarm-api</td></tr>
+        <tr><td><b>顧問思維 · 溝通</b></td><td>接案 + 補助輔導，把技術翻譯給非技術方 <span class="ok">✓</span></td><td class="repo">hurricanesoft.com.tw</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 11 結語 -->
+  <section class="slide">
+    <div class="kicker">08 · 結語</div>
+    <h2>我能為這個核心戰略職缺帶來什麼</h2>
+    <ul class="clean">
+      <li><b>技術決策者</b>：對複雜商業邏輯建模，給出 AI 無法自行推論的最佳架構。</li>
+      <li><b>品質最後防線</b>：審核 AI 產出、解技術債與高併發深層效能議題。</li>
+      <li><b>自動化策略指導</b>：帶各 BU 安全導入 Agentic Workflow，穩健性與速度兼顧。</li>
+    </ul>
+    <div class="cta">
+      <p class="lead">我不是來學怎麼用 AI 寫程式——我已經用它翻轉了整條軟體生產線。期待把這套方法帶進貴司的核心系統。</p>
+      <div class="contact">
+        <span><b>王英豪</b> Eric Wang</span>
+        <span>github.com/<b>cancleeric</b></span>
+        <span>颶風軟體有限公司</span>
+        <span>cancleeric@gmail.com</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">
+    <span id="tag">王英豪 · 面試簡報</span>
+    <span class="bar"><i id="prog"></i></span>
+    <span id="pg">01 / 11</span>
+  </div>
+</div>
+
+<div class="hint" id="hint">← → 或空白鍵切換 · F 全螢幕</div>
+
+<script>
+  const slides=[...document.querySelectorAll('.slide')];
+  let i=0;const total=slides.length;
+  const pg=document.getElementById('pg'),prog=document.getElementById('prog');
+  const foot=document.querySelector('.foot');
+  function show(n){
+    i=Math.max(0,Math.min(total-1,n));
+    slides.forEach((s,k)=>{s.classList.toggle('active',k===i);if(k===i)s.appendChild(foot)});
+    pg.textContent=String(i+1).padStart(2,'0')+' / '+String(total).padStart(2,'0');
+    prog.style.width=((i+1)/total*100)+'%';
+  }
+  document.addEventListener('keydown',e=>{
+    if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key)){e.preventDefault();show(i+1)}
+    else if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();show(i-1)}
+    else if(e.key==='Home')show(0);else if(e.key==='End')show(total-1);
+    else if(e.key.toLowerCase()==='f'){if(!document.fullscreenElement)document.documentElement.requestFullscreen();else document.exitFullscreen();}
+  });
+  let sx=0;
+  document.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+  document.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(i+(d<0?1:-1))},{passive:true});
+  document.querySelector('.stage').addEventListener('click',e=>{if(e.clientX>window.innerWidth*0.6)show(i+1);else if(e.clientX<window.innerWidth*0.4)show(i-1)});
+  setTimeout(()=>document.getElementById('hint').style.opacity=0,4000);
+  document.getElementById('hint').style.transition='opacity 1s';
+  show(0);
+</script>
+</body>
+</html>
