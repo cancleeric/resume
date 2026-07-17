@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eric Wang 王英豪 — 數位名片 | HurricaneSoft 颶風軟體</title>
+  <meta name="description" content="Eric Wang 王英豪 — HurricaneSoft 颶風軟體 Founder & CEO 數位名片，掃 QR code 直接存入聯絡人。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --page-bg-a: #eef3f8;
+      --page-bg-b: #dce9f5;
+      --card-bg: #ffffff;
+      --panel-bg: #f4f9fd;
+      --accent: #0ea5e9;
+      --accent-deep: #0c4a6e;
+      --text-primary: #0f172a;
+      --text-secondary: #64748b;
+      --border: #e2e8f0;
+      --qr-ink: #0c4a6e;
+      --spiral: rgba(14, 165, 233, 0.10);
+      --tab-bg: #e8eef5;
+      --shadow: 0 20px 45px rgba(12, 74, 110, 0.14);
+    }
+    html[data-theme="dark"] {
+      --page-bg-a: #060b14;
+      --page-bg-b: #0a1526;
+      --card-bg: #0f1b2d;
+      --panel-bg: #12233a;
+      --accent: #22d3ee;
+      --accent-deep: #164e63;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --border: #1e3050;
+      --spiral: rgba(34, 211, 238, 0.07);
+      --tab-bg: #0b1626;
+      --shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Inter", "Noto Sans TC", system-ui, -apple-system, sans-serif;
+      background: linear-gradient(160deg, var(--page-bg-a), var(--page-bg-b));
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      position: relative;
+      overflow-x: hidden;
+    }
+    /* 颶風旋渦背景 */
+    .spiral-bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      color: var(--spiral);
+      z-index: 0;
+    }
+    .card {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      width: 100%;
+      max-width: 880px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .card__info { flex: 1.4; padding: 44px 40px; min-width: 0; }
+    .card__qr {
+      flex: 1;
+      background: var(--panel-bg);
+      border-left: 1px solid var(--border);
+      padding: 44px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+    .identity { display: flex; gap: 20px; align-items: center; }
+    .avatar {
+      width: 84px; height: 84px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-deep));
+      color: #fff; font-weight: 800; font-size: 28px; letter-spacing: 1px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .identity h1 { font-size: 28px; font-weight: 800; }
+    .identity h1 .zh { font-weight: 700; font-size: 24px; margin-left: 6px; }
+    .identity .title { color: var(--accent); font-weight: 700; font-size: 15px; margin-top: 4px; }
+    .brand { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 8px; margin-top: 8px; color: var(--text-secondary); }
+    .brand svg { width: 22px; height: 22px; color: var(--text-secondary); flex-shrink: 0; }
+    .brand .name { font-weight: 700; font-size: 14px; color: var(--text-primary); white-space: nowrap; }
+    .brand .en { font-size: 11px; letter-spacing: 2px; font-weight: 600; }
+    .tagline {
+      margin: 26px 0;
+      padding: 4px 0 4px 16px;
+      border-left: 3px solid var(--accent);
+    }
+    .tagline .en { font-size: 16px; font-weight: 600; }
+    .tagline .zh { font-size: 13px; color: var(--text-secondary); margin-top: 4px; }
+    .contacts { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .contacts a, .contacts li { color: var(--text-primary); text-decoration: none; font-size: 15px; display: flex; align-items: center; gap: 12px; }
+    .contacts a:hover { color: var(--accent); }
+    .contacts svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
+    .actions { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+    .btn {
+      font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+      border-radius: 10px; padding: 13px 22px; border: 1px solid var(--border);
+      background: var(--card-bg); color: var(--text-primary);
+      text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(14,165,233,.18); }
+    .btn--primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-deep));
+      color: #fff; border: none;
+    }
+    /* QR 面板 */
+    .qr-tabs {
+      display: flex; gap: 4px; background: var(--tab-bg);
+      padding: 4px; border-radius: 10px;
+    }
+    .qr-tabs button {
+      font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
+      border: none; background: transparent; color: var(--text-secondary);
+      padding: 8px 18px; border-radius: 8px;
+    }
+    .qr-tabs button[aria-selected="true"] {
+      background: var(--card-bg); color: var(--text-primary);
+      box-shadow: 0 2px 8px rgba(12,74,110,.12);
+    }
+    .qr-tile {
+      background: #ffffff; /* QR 底永遠白色，深色模式也要可掃 */
+      border: 1px solid var(--border); border-radius: 14px;
+      padding: 18px; width: 232px; height: 232px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .qr-tile .qr-svg { width: 100%; height: 100%; color: var(--qr-ink); display: none; }
+    .qr-tile .qr-svg.active { display: block; }
+    .qr-caption { text-align: center; color: var(--text-secondary); font-size: 13px; line-height: 1.7; }
+    .qr-caption .zh { color: var(--text-primary); font-weight: 600; font-size: 14px; }
+    .qr-zoom {
+      font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+      color: var(--accent); background: none; border: 1px solid var(--border);
+      border-radius: 8px; padding: 8px 16px;
+    }
+    /* 放大 QR 全螢幕 */
+    .qr-overlay {
+      position: fixed; inset: 0; z-index: 50;
+      background: #ffffff;
+      display: none; flex-direction: column; align-items: center; justify-content: center; gap: 20px;
+      padding: 32px;
+    }
+    .qr-overlay.open { display: flex; }
+    .qr-overlay .qr-tile { width: min(78vw, 78vh, 480px); height: min(78vw, 78vh, 480px); border: none; }
+    .qr-overlay .qr-caption { color: #334155; }
+    .qr-overlay .qr-caption .zh { color: #0f172a; font-size: 18px; }
+    .qr-overlay .close-hint { color: #94a3b8; font-size: 13px; }
+    .theme-toggle {
+      position: fixed; top: 18px; right: 18px; z-index: 10;
+      width: 42px; height: 42px; border-radius: 50%;
+      border: 1px solid var(--border); background: var(--card-bg); color: var(--text-primary);
+      cursor: pointer; font-size: 17px; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 12px rgba(12,74,110,.12);
+    }
+    /* Mobile：QR 置頂 */
+    @media (max-width: 720px) {
+      body { padding: 14px; align-items: flex-start; }
+      .card { flex-direction: column-reverse; max-width: 480px; margin: 0 auto; }
+      .card__qr { border-left: none; border-bottom: 1px solid var(--border); padding: 32px 24px 28px; }
+      .card__info { padding: 28px 24px 34px; }
+      .identity h1 { font-size: 23px; }
+      .identity h1 .zh { font-size: 20px; }
+      .avatar { width: 64px; height: 64px; font-size: 22px; }
+      .qr-tile { width: 246px; height: 246px; }
+      .actions .btn { flex: 1; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<svg class="spiral-bg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <ellipse cx="720" cy="450" rx="360" ry="130" transform="rotate(-18 720 450)"/>
+    <ellipse cx="720" cy="450" rx="520" ry="190" transform="rotate(-18 720 450)"/>
+    <ellipse cx="720" cy="450" rx="700" ry="260" transform="rotate(-18 720 450)"/>
+    <ellipse cx="720" cy="450" rx="900" ry="340" transform="rotate(-18 720 450)"/>
+  </g>
+</svg>
+
+<button class="theme-toggle" id="themeToggle" aria-label="切換深淺色" title="切換深淺色">◐</button>
+
+<main class="card">
+  <section class="card__info">
+    <div class="identity">
+      <div class="avatar" aria-hidden="true">EW</div>
+      <div>
+        <h1>Eric Wang<span class="zh">王英豪</span></h1>
+        <div class="title">Founder &amp; CEO · 創辦人暨執行長</div>
+        <div class="brand">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-label="颶風軟體 logo" role="img">
+            <g transform="translate(20 20) rotate(-18)" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+              <ellipse cx="0" cy="-3.5" rx="14" ry="5"/>
+              <ellipse cx="0" cy="3.5" rx="14" ry="5"/>
+            </g>
+          </svg>
+          <span class="name">颶風軟體</span>
+          <span class="en">HURRICANESOFT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tagline">
+      <div class="en">Cloud-native software, built to weather any storm.</div>
+      <div class="zh">雲原生軟體，經得起任何風暴。</div>
+    </div>
+
+    <ul class="contacts">
+      <li><a href="mailto:eric.wang@hurricanesoft.com.tw">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741z"/></svg>
+        eric.wang@hurricanesoft.com.tw</a></li>
+      <li><a href="https://hurricanesoft.com.tw" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872h2.282V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/></svg>
+        hurricanesoft.com.tw</a></li>
+      <li>
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+        Taipei, Taiwan 台北</li>
+    </ul>
+
+    <div class="actions">
+      <button class="btn btn--primary" id="saveContact">儲存聯絡人 · Save Contact</button>
+      <a class="btn" href="mailto:eric.wang@hurricanesoft.com.tw">Email</a>
+      <a class="btn" href="https://hurricanesoft.com.tw" target="_blank" rel="noopener">官網 Website</a>
+    </div>
+  </section>
+
+  <aside class="card__qr">
+    <div class="qr-tabs" role="tablist" aria-label="QR code 切換">
+      <button role="tab" id="tabVcard" aria-selected="true" data-qr="vcard">存聯絡人</button>
+      <button role="tab" id="tabWeb" aria-selected="false" data-qr="web">公司官網</button>
+    </div>
+    <div class="qr-tile" id="qrTile">
+      <svg class="qr-svg" role="img" viewBox="0 0 65 65" shape-rendering="crispEdges"><path class="qrline" stroke="currentColor" d="M0 0.5h7m1 0h1m7 0h1m2 0h3m1 0h4m1 0h2m5 0h1m3 0h1m3 0h1m3 0h1m3 0h1m1 0h1m1 0h1m2 0h7m-65 1h1m5 0h1m5 0h3m2 0h2m1 0h5m5 0h1m4 0h2m2 0h2m2 0h2m2 0h2m2 0h2m3 0h1m1 0h1m5 0h1m-65 1h1m1 0h3m1 0h1m1 0h2m3 0h1m1 0h1m2 0h1m2 0h3m2 0h1m1 0h2m2 0h3m2 0h2m3 0h1m1 0h5m1 0h2m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-65 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h1m9 0h1m3 0h1m2 0h1m4 0h1m1 0h2m1 0h2m1 0h1m3 0h1m4 0h4m2 0h1m1 0h3m1 0h1m-65 1h1m1 0h3m1 0h1m2 0h1m1 0h4m2 0h3m1 0h1m1 0h2m1 0h3m1 0h5m2 0h1m3 0h3m1 0h1m2 0h3m5 0h1m1 0h1m1 0h3m1 0h1m-65 1h1m5 0h1m1 0h3m1 0h2m1 0h1m1 0h1m1 0h2m1 0h2m1 0h1m4 0h1m3 0h2m2 0h1m2 0h3m2 0h2m1 0h1m4 0h1m3 0h1m5 0h1m-65 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-55 1h5m2 0h3m2 0h2m2 0h2m1 0h2m3 0h3m1 0h1m1 0h2m2 0h2m2 0h1m2 0h2m2 0h1m-56 1h1m1 0h1m3 0h2m3 0h2m1 0h1m4 0h1m1 0h1m2 0h1m1 0h1m1 0h7m2 0h2m1 0h2m3 0h1m1 0h2m4 0h4m2 0h1m2 0h1m1 0h1m-61 1h2m3 0h3m4 0h2m1 0h4m1 0h6m1 0h1m1 0h2m1 0h3m1 0h3m1 0h1m2 0h2m1 0h1m1 0h7m5 0h1m-65 1h1m1 0h1m1 0h1m1 0h1m1 0h4m2 0h3m3 0h4m2 0h7m1 0h1m1 0h2m2 0h2m2 0h1m3 0h2m1 0h2m1 0h2m2 0h3m2 0h2m-65 1h3m2 0h1m3 0h2m2 0h3m4 0h1m1 0h1m1 0h2m4 0h2m2 0h1m1 0h1m1 0h3m1 0h6m1 0h1m2 0h2m1 0h3m4 0h2m-64 1h1m1 0h1m1 0h1m1 0h3m2 0h2m2 0h1m2 0h1m1 0h2m3 0h4m1 0h1m7 0h4m1 0h3m2 0h2m3 0h1m3 0h4m3 0h1m-64 1h5m1 0h3m1 0h1m3 0h1m4 0h1m1 0h1m1 0h1m1 0h4m6 0h5m3 0h1m1 0h5m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m2 0h1m-65 1h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h3m1 0h2m3 0h1m1 0h1m1 0h3m1 0h4m1 0h3m3 0h2m2 0h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h5m-65 1h2m1 0h1m5 0h1m2 0h1m2 0h1m2 0h1m2 0h1m2 0h3m2 0h2m5 0h2m7 0h1m1 0h1m1 0h1m1 0h1m3 0h1m7 0h1m-63 1h2m3 0h1m1 0h1m1 0h2m1 0h1m2 0h3m2 0h2m2 0h1m2 0h2m2 0h3m2 0h4m4 0h2m1 0h3m1 0h2m1 0h2m2 0h1m2 0h1m1 0h1m-62 1h2m2 0h1m2 0h3m1 0h1m1 0h2m3 0h2m1 0h1m1 0h2m3 0h4m2 0h1m1 0h1m2 0h1m2 0h2m2 0h2m2 0h1m4 0h1m1 0h1m2 0h2m-64 1h4m1 0h1m2 0h1m1 0h3m3 0h2m1 0h2m4 0h4m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m3 0h2m6 0h3m-63 1h1m4 0h1m1 0h1m1 0h1m1 0h1m2 0h4m4 0h1m1 0h2m1 0h1m1 0h3m1 0h1m3 0h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h2m2 0h1m1 0h1m1 0h1m4 0h1m-62 1h2m1 0h2m5 0h1m4 0h1m3 0h1m1 0h1m1 0h1m2 0h1m4 0h1m1 0h2m1 0h1m1 0h1m1 0h1m3 0h3m1 0h3m6 0h3m1 0h1m-63 1h1m4 0h1m1 0h1m1 0h2m4 0h2m1 0h1m4 0h5m2 0h2m1 0h1m1 0h4m3 0h1m3 0h2m1 0h1m1 0h2m5 0h2m2 0h1m-64 1h2m3 0h2m1 0h2m3 0h2m2 0h1m1 0h2m1 0h1m1 0h4m3 0h4m3 0h1m2 0h1m2 0h1m1 0h2m3 0h2m1 0h1m1 0h1m2 0h1m2 0h1m-63 1h1m2 0h2m2 0h2m1 0h2m4 0h2m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m2 0h2m1 0h3m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h1m5 0h2m-62 1h2m1 0h2m1 0h2m2 0h3m1 0h1m1 0h2m1 0h1m2 0h1m1 0h1m3 0h3m1 0h1m4 0h2m1 0h3m1 0h1m1 0h1m5 0h3m2 0h2m1 0h2m-63 1h1m4 0h3m1 0h2m1 0h2m1 0h1m1 0h2m5 0h3m2 0h1m5 0h1m2 0h2m2 0h1m1 0h1m1 0h1m1 0h1m6 0h1m2 0h2m1 0h1m-64 1h1m2 0h1m2 0h2m2 0h1m1 0h3m1 0h2m1 0h2m5 0h2m1 0h2m1 0h1m2 0h1m1 0h2m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h3m1 0h1m-60 1h1m2 0h2m4 0h2m2 0h3m3 0h1m2 0h1m2 0h1m2 0h1m3 0h1m2 0h2m2 0h2m1 0h1m3 0h3m3 0h1m2 0h1m1 0h1m-63 1h2m2 0h3m1 0h2m1 0h4m1 0h2m1 0h1m1 0h1m4 0h4m2 0h2m1 0h2m1 0h1m2 0h1m1 0h3m5 0h4m4 0h4m1 0h1m-63 1h1m2 0h1m2 0h1m1 0h1m1 0h1m1 0h3m4 0h2m1 0h1m2 0h5m1 0h5m4 0h2m6 0h1m2 0h2m4 0h3m-60 1h1m1 0h5m8 0h1m1 0h2m1 0h1m1 0h4m2 0h9m1 0h1m1 0h1m1 0h1m1 0h3m3 0h1m2 0h6m3 0h1m-64 1h4m3 0h4m1 0h7m3 0h6m1 0h1m3 0h2m3 0h1m3 0h1m3 0h1m3 0h1m3 0h2m3 0h2m2 0h1m-65 1h3m1 0h1m1 0h1m1 0h1m3 0h3m2 0h4m2 0h3m1 0h1m2 0h1m1 0h1m1 0h3m1 0h3m1 0h3m1 0h3m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m-63 1h4m3 0h8m2 0h4m4 0h5m3 0h2m3 0h1m3 0h1m3 0h1m3 0h1m4 0h1m3 0h2m1 0h2m-65 1h1m3 0h5m3 0h1m2 0h2m3 0h2m1 0h2m2 0h10m1 0h3m1 0h3m1 0h3m1 0h3m1 0h1m1 0h9m-60 1h1m2 0h2m1 0h1m1 0h6m1 0h1m3 0h1m1 0h2m3 0h1m1 0h1m1 0h1m3 0h3m3 0h1m1 0h3m1 0h2m2 0h1m2 0h2m2 0h1m-63 1h1m1 0h2m1 0h3m1 0h2m2 0h2m1 0h3m1 0h2m2 0h1m2 0h1m1 0h1m2 0h1m1 0h2m3 0h1m1 0h4m1 0h2m2 0h2m6 0h1m5 0h1m-61 1h1m10 0h1m3 0h1m2 0h1m1 0h1m3 0h1m1 0h1m3 0h1m1 0h1m2 0h2m1 0h4m1 0h2m5 0h2m1 0h2m2 0h1m2 0h1m-64 1h3m1 0h2m2 0h1m1 0h1m2 0h3m2 0h1m1 0h4m1 0h3m4 0h2m1 0h1m2 0h2m1 0h1m1 0h2m1 0h3m2 0h2m1 0h1m2 0h2m1 0h4m-58 1h1m4 0h1m4 0h2m1 0h1m4 0h1m4 0h1m1 0h2m1 0h2m1 0h4m1 0h1m4 0h2m1 0h2m6 0h1m1 0h3m-63 1h6m1 0h2m2 0h2m1 0h5m1 0h4m1 0h1m2 0h3m1 0h6m2 0h1m1 0h3m1 0h4m2 0h2m1 0h1m1 0h2m1 0h2m1 0h1m-62 1h3m1 0h5m1 0h2m2 0h1m2 0h1m1 0h2m2 0h2m1 0h1m1 0h3m2 0h1m1 0h1m1 0h2m2 0h1m2 0h3m2 0h1m1 0h1m1 0h1m4 0h1m1 0h1m-64 1h3m1 0h3m2 0h2m1 0h2m2 0h2m1 0h2m2 0h1m1 0h2m2 0h1m1 0h4m1 0h1m3 0h1m3 0h3m1 0h1m1 0h4m1 0h2m1 0h3m1 0h1m1 0h1m-64 1h1m1 0h1m3 0h1m3 0h3m1 0h3m3 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m3 0h3m2 0h2m2 0h1m2 0h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m-64 1h2m2 0h3m1 0h3m1 0h3m4 0h1m2 0h1m2 0h5m1 0h4m1 0h2m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h8m1 0h1m-65 1h2m1 0h3m1 0h3m1 0h2m1 0h1m1 0h3m1 0h2m2 0h2m1 0h1m2 0h3m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m2 0h3m4 0h1m1 0h1m1 0h2m-65 1h1m1 0h1m3 0h3m2 0h1m1 0h1m2 0h2m5 0h1m1 0h2m1 0h2m1 0h1m1 0h1m2 0h1m1 0h1m1 0h3m1 0h2m2 0h2m2 0h2m1 0h1m1 0h1m1 0h2m1 0h1m-63 1h3m1 0h1m2 0h1m2 0h3m1 0h1m1 0h2m1 0h2m1 0h4m1 0h1m3 0h2m1 0h2m3 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h2m3 0h1m1 0h2m-59 1h2m2 0h2m1 0h4m1 0h1m1 0h1m1 0h1m2 0h3m4 0h3m1 0h1m3 0h1m3 0h1m2 0h2m1 0h3m1 0h5m4 0h1m1 0h2m2 0h1m-64 1h1m1 0h1m4 0h1m3 0h1m3 0h1m1 0h1m3 0h7m2 0h2m1 0h1m2 0h3m1 0h1m7 0h2m4 0h1m4 0h3m1 0h1m-65 1h1m1 0h3m1 0h1m1 0h4m1 0h1m4 0h2m1 0h2m1 0h1m2 0h3m1 0h1m1 0h1m2 0h1m1 0h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h5m1 0h1m1 0h1m3 0h1m-62 1h2m2 0h3m2 0h4m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m2 0h2m3 0h3m3 0h1m2 0h2m3 0h1m1 0h1m1 0h1m2 0h4m1 0h2m-62 1h4m1 0h1m4 0h1m2 0h3m1 0h2m1 0h1m2 0h1m2 0h1m3 0h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m3 0h3m1 0h1m2 0h1m1 0h3m4 0h1m-64 1h1m1 0h1m4 0h1m1 0h1m1 0h2m1 0h3m1 0h2m2 0h1m1 0h1m2 0h1m1 0h3m3 0h2m2 0h5m2 0h2m3 0h2m1 0h4m1 0h2m1 0h2m-63 1h2m1 0h2m5 0h1m2 0h1m5 0h2m3 0h4m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m2 0h3m1 0h1m2 0h1m1 0h1m3 0h1m2 0h1m-65 1h1m2 0h1m3 0h2m3 0h9m1 0h3m1 0h1m7 0h1m6 0h1m1 0h3m2 0h2m2 0h1m4 0h2m3 0h1m-62 1h2m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m4 0h1m1 0h1m3 0h2m1 0h8m1 0h1m1 0h2m3 0h2m1 0h2m3 0h1m3 0h5m1 0h1m1 0h1m-57 1h3m3 0h2m1 0h1m3 0h1m1 0h2m5 0h1m3 0h1m1 0h3m1 0h1m2 0h1m3 0h3m4 0h1m1 0h1m3 0h2m1 0h2m-65 1h7m1 0h1m3 0h1m3 0h3m2 0h1m1 0h2m1 0h2m1 0h2m1 0h1m1 0h1m2 0h1m1 0h2m3 0h1m3 0h1m1 0h1m1 0h2m2 0h1m1 0h1m1 0h1m2 0h1m-64 1h1m5 0h1m2 0h1m2 0h1m1 0h2m2 0h1m4 0h3m1 0h1m1 0h2m3 0h1m1 0h2m1 0h2m2 0h1m1 0h1m6 0h2m1 0h2m3 0h2m1 0h2m-65 1h1m1 0h3m1 0h1m2 0h1m3 0h2m1 0h1m1 0h3m3 0h2m2 0h1m1 0h5m2 0h1m6 0h2m2 0h1m3 0h1m1 0h7m1 0h3m-65 1h1m1 0h3m1 0h1m2 0h1m4 0h1m1 0h4m2 0h1m1 0h1m4 0h1m1 0h3m2 0h1m5 0h1m3 0h1m3 0h2m4 0h2m2 0h2m1 0h1m-64 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h7m1 0h6m2 0h1m1 0h1m2 0h4m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m3 0h2m1 0h3m1 0h1m1 0h1m1 0h2m-65 1h1m5 0h1m2 0h5m1 0h1m2 0h1m2 0h6m5 0h2m3 0h2m2 0h2m2 0h2m2 0h2m2 0h4m1 0h7m-65 1h7m1 0h1m1 0h2m3 0h2m1 0h1m1 0h3m2 0h1m2 0h1m1 0h1m1 0h1m1 0h1m2 0h1m3 0h1m3 0h1m3 0h1m3 0h1m2 0h1m1 0h4m2 0h1"/></svg>
+      <svg class="qr-svg" role="img" viewBox="0 0 29 29" shape-rendering="crispEdges"><path class="qrline" stroke="currentColor" d="M0 0.5h7m4 0h1m1 0h1m2 0h1m5 0h7m-29 1h1m5 0h1m3 0h2m3 0h1m1 0h4m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h4m2 0h4m2 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m4 0h2m1 0h2m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h5m6 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h5m1 0h1m1 0h2m1 0h1m2 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-19 1h1m1 0h2m3 0h2m1 0h1m-20 1h1m2 0h1m1 0h1m1 0h1m2 0h6m1 0h2m1 0h1m1 0h2m1 0h1m-27 1h2m1 0h1m1 0h1m4 0h3m1 0h1m3 0h1m3 0h7m-29 1h1m4 0h3m5 0h3m5 0h1m1 0h4m1 0h1m-29 1h1m1 0h1m4 0h1m1 0h3m5 0h1m1 0h3m2 0h2m1 0h2m-26 1h5m2 0h2m1 0h2m1 0h2m5 0h1m1 0h1m2 0h1m-29 1h2m8 0h1m3 0h1m3 0h1m3 0h1m1 0h1m1 0h3m-28 1h2m2 0h2m1 0h1m1 0h3m2 0h1m1 0h1m3 0h2m1 0h1m3 0h1m-29 1h2m1 0h1m3 0h1m3 0h5m1 0h1m5 0h1m1 0h1m2 0h1m-28 1h4m1 0h3m1 0h1m1 0h1m2 0h1m2 0h1m1 0h2m5 0h1m-28 1h1m1 0h2m1 0h1m5 0h1m1 0h1m2 0h3m1 0h1m1 0h1m1 0h1m3 0h1m-27 1h8m3 0h1m2 0h2m2 0h1m2 0h1m1 0h2m1 0h1m-27 1h1m1 0h1m2 0h1m1 0h2m1 0h1m4 0h2m1 0h1m4 0h1m1 0h2m-29 1h8m4 0h2m1 0h1m1 0h1m2 0h6m1 0h2m-21 1h4m1 0h1m1 0h6m3 0h1m1 0h1m1 0h1m-29 1h7m3 0h3m1 0h2m2 0h3m1 0h1m1 0h1m3 0h1m-29 1h1m5 0h1m2 0h2m2 0h4m2 0h2m3 0h2m1 0h1m-28 1h1m1 0h3m1 0h1m1 0h2m2 0h3m1 0h1m2 0h6m2 0h2m-29 1h1m1 0h3m1 0h1m2 0h2m2 0h2m3 0h1m4 0h1m2 0h2m-28 1h1m1 0h3m1 0h1m2 0h5m1 0h1m3 0h3m4 0h3m-29 1h1m5 0h1m1 0h1m1 0h2m1 0h1m1 0h4m1 0h1m2 0h1m1 0h1m1 0h2m-29 1h7m4 0h2m4 0h1m2 0h3m1 0h1m2 0h1"/></svg>
+    </div>
+    <div class="qr-caption" id="qrCaption">
+      <div class="zh">掃描存入聯絡人</div>
+      <div>Scan to save contact</div>
+    </div>
+    <button class="qr-zoom" id="qrZoom">放大 QR ⤢</button>
+  </aside>
+</main>
+
+<div class="qr-overlay" id="qrOverlay" role="dialog" aria-modal="true" aria-label="放大 QR code">
+  <div class="qr-tile" id="qrOverlayTile"></div>
+  <div class="qr-caption" id="qrOverlayCaption"></div>
+  <div class="close-hint">點任意處關閉 · Tap anywhere to close</div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---- 主題 ----
+  var root = document.documentElement;
+  var stored = null;
+  try { stored = localStorage.getItem("namecard-theme"); } catch (e) {}
+  function systemTheme() {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  function applyTheme(t) { root.setAttribute("data-theme", t); }
+  applyTheme(stored || systemTheme());
+  document.getElementById("themeToggle").addEventListener("click", function () {
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    applyTheme(next);
+    try { localStorage.setItem("namecard-theme", next); } catch (e) {}
+  });
+
+  // ---- vCard 下載（內容與 QR 內嵌的 vCard 一致）----
+  var VCARD = [
+    "BEGIN:VCARD",
+    "VERSION:3.0",
+    "N:Wang;Eric;;;",
+    "FN:Eric Wang 王英豪",
+    "ORG:HurricaneSoft 颶風軟體",
+    "TITLE:Founder & CEO",
+    "EMAIL;TYPE=INTERNET,WORK:eric.wang@hurricanesoft.com.tw",
+    "URL:https://hurricanesoft.com.tw",
+    "ADR;TYPE=WORK:;;;Taipei;;;Taiwan",
+    "END:VCARD"
+  ].join("\r\n") + "\r\n";
+  document.getElementById("saveContact").addEventListener("click", function () {
+    var blob = new Blob([VCARD], { type: "text/vcard;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "eric-wang-hurricanesoft.vcf";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  });
+
+  // ---- QR 切換 ----
+  var captions = {
+    vcard: { zh: "掃描存入聯絡人", en: "Scan to save contact" },
+    web:   { zh: "掃描開啟官網",   en: "Scan to visit website" }
+  };
+  var current = "vcard";
+  var tabs = document.querySelectorAll(".qr-tabs button");
+  var svgs = document.querySelectorAll("#qrTile .qr-svg");
+  function switchQr(which) {
+    current = which;
+    tabs.forEach(function (t) { t.setAttribute("aria-selected", String(t.dataset.qr === which)); });
+    svgs.forEach(function (s, i) {
+      s.classList.toggle("active", (which === "vcard" ? i === 0 : i === 1));
+    });
+    var c = captions[which];
+    document.getElementById("qrCaption").innerHTML =
+      '<div class="zh">' + c.zh + "</div><div>" + c.en + "</div>";
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () { switchQr(t.dataset.qr); });
+  });
+  switchQr("vcard");
+
+  // ---- 放大 QR 全螢幕 ----
+  var overlay = document.getElementById("qrOverlay");
+  document.getElementById("qrZoom").addEventListener("click", function () {
+    var active = document.querySelector("#qrTile .qr-svg.active");
+    var clone = active.cloneNode(true);
+    clone.classList.add("active");
+    var tile = document.getElementById("qrOverlayTile");
+    tile.innerHTML = "";
+    tile.appendChild(clone);
+    var c = captions[current];
+    document.getElementById("qrOverlayCaption").innerHTML =
+      '<div class="zh">' + c.zh + "</div><div>" + c.en + "</div>";
+    overlay.classList.add("open");
+  });
+  overlay.addEventListener("click", function () { overlay.classList.remove("open"); });
+})();
+</script>
+</body>
+</html>
