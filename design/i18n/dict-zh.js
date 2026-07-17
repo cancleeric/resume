@@ -31,6 +31,7 @@ window.DICT_ZH = {
   'nav.systems':         '可交付系統',
   'nav.timeline':        '交付案例',
   'nav.faq':             'FAQ',
+  'nav.namecard':        '數位名片',
   'nav.cta':             '預約諮詢',
   'nav.hamburger':       '開啟選單',
 
@@ -44,6 +45,7 @@ window.DICT_ZH = {
   'mobile.link.tech':    '技術棧',
   'mobile.link.studio':  '工作室背景',
   'mobile.link.faq':     'FAQ',
+  'mobile.link.namecard':'數位名片',
   'mobile.lf':           '進 LF Pipeline 看現場',
   'mobile.cta':          '預約諮詢',
 

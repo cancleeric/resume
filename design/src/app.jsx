@@ -23,6 +23,7 @@ function Nav({ onMenuOpen }) {
           <a href="#systems" className="nav-link-text">{t('nav.systems')}</a>
           <a href="#timeline" className="nav-link-text">{t('nav.timeline')}</a>
           <a href="#faq" className="nav-link-text">{t('nav.faq')}</a>
+          <a href="../namecard.html" className="nav-link-text">{t('nav.namecard')}</a>
           <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" className="lf nav-link-text" style={{ color: 'var(--cyan)', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
             LF Pipeline <ArrowUpRight size={12}/>
           </a>
@@ -56,6 +57,7 @@ function MobileMenu({ open, onClose }) {
     { href: '#oss', labelKey: 'mobile.link.oss', en: 'OSS' },
     { href: '#studio', labelKey: 'mobile.link.studio', en: 'STUDIO' },
     { href: '#faq', labelKey: 'mobile.link.faq', en: 'FAQ' },
+    { href: '../namecard.html', labelKey: 'mobile.link.namecard', en: 'CARD' },
   ];
   return (
     <div className={`mobile-menu ${open ? 'open' : ''}`} onClick={e => e.target === e.currentTarget && onClose()}>

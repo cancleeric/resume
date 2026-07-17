@@ -35,6 +35,7 @@ window.DICT_EN = {
   'nav.systems':         'Deliverable Systems',
   'nav.timeline':        'Case Studies',
   'nav.faq':             'FAQ',
+  'nav.namecard':        'Contact Card',
   'nav.cta':             'Book a Call',
   'nav.hamburger':       'Open menu',
 
@@ -48,6 +49,7 @@ window.DICT_EN = {
   'mobile.link.tech':    'Tech Stack',
   'mobile.link.studio':  'Studio Background',
   'mobile.link.faq':     'FAQ',
+  'mobile.link.namecard':'Contact Card',
   'mobile.lf':           'See LF Pipeline live',
   'mobile.cta':          'Book a Call',
 
