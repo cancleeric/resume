@@ -390,25 +390,25 @@ function Hero() {
 
             {window.LANG === 'en' ? (
               <p className="hero-sub">
-                AI integration is just the baseline. The real difference is automating the <b style={{ color: 'var(--text-hi)' }}>entire development pipeline</b> —
+                Four years of AI-native delivery. AI is embedded across the <b style={{ color: 'var(--text-hi)' }}>entire development pipeline</b> —
                 <span className="stage">SPEC</span> → <span className="stage">DESIGN</span> → <span className="stage">BUILD</span> → <span className="stage">REVIEW</span> → <span className="stage">DEPLOY</span> → <span className="stage">OPS</span>
-                , with AI assistants and automation toolchains at every stage.
+                , with specialized AI agents and digital employees collaborating at every stage.
               </p>
             ) : (
               <p className="hero-sub">
-                AI 整合只是基本盤。真正的差異，是把<b style={{ color: 'var(--text-hi)' }}>整套開發流程自動化</b>——
+                四年 AI 原生開發實戰。颶風軟體已把 AI 深度導入<b style={{ color: 'var(--text-hi)' }}>整套開發與營運流程</b>——
                 <span className="stage">SPEC</span> → <span className="stage">DESIGN</span> → <span className="stage">BUILD</span> → <span className="stage">REVIEW</span> → <span className="stage">DEPLOY</span> → <span className="stage">OPS</span>
-                ，每個環節都有 AI 副手 + 自動化工具鏈接管。
+                ，由多角色 AI Agent／數位員工與自動化工具鏈分工協作。
               </p>
             )}
 
             {window.LANG === 'en' ? (
               <p className="hero-claim">
-                After a year of validation: <b>one person + AI copilots delivered 14+ in-house products, SaaS shipped in as little as 23 days (214 commits — verifiable in git)</b> — carrying what used to take an entire team. This delivery speed is ready for your project now.
+                Four years of hands-on AI delivery: <b>14+ AI-assisted products and 30+ production systems, with SaaS shipped in as little as 23 days (214 commits — verifiable in git)</b>. Digital employees support research, specification, implementation, testing, review, deployment, and operations.
               </p>
             ) : (
               <p className="hero-claim">
-                一年驗證下來：<b>一個人 + AI 副手交付 14+ 個自有產品、SaaS 0→生產最快 23 天（214 commits，git 紀錄可查）</b>，扛起以往需要整支團隊的產出。這套交付速度，現在就能接上您的專案。
+                四年 AI 實戰累積：<b>以 AI 協作開發 14+ 個產品、維運 30+ 個生產系統，SaaS 0→生產最快 23 天（214 commits，git 紀錄可查）</b>。數位員工分工支援研究、規格、開發、測試、審查、部署與營運。
               </p>
             )}
 
@@ -439,8 +439,8 @@ function Hero() {
                 <div className="label">{t('hero.kpi.03.label')} <span className="en">CLOUD RUN</span></div>
               </div>
               <div className="kpi">
-                <div className="value"><CountUp to={1} /></div>
-                <div className="label">{t('hero.kpi.04.label')} <span className="en">YEAR PROVEN</span></div>
+                <div className="value"><CountUp to={4} /></div>
+                <div className="label">{t('hero.kpi.04.label')} <span className="en">YEARS IN AI</span></div>
               </div>
             </div>
 
