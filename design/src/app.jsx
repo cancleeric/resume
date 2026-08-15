@@ -55,7 +55,6 @@ function MobileMenu({ open, onClose }) {
     { href: '#timeline', labelKey: 'mobile.link.timeline', en: 'TIMELINE' },
     { href: '#tech', labelKey: 'mobile.link.tech', en: 'TECH' },
     { href: '#oss', labelKey: 'mobile.link.oss', en: 'OSS' },
-    { href: '#studio', labelKey: 'mobile.link.studio', en: 'STUDIO' },
     { href: '#faq', labelKey: 'mobile.link.faq', en: 'FAQ' },
     { href: '../namecard.html', labelKey: 'mobile.link.namecard', en: 'CARD' },
   ];
@@ -107,7 +106,6 @@ function StickyTOC() {
     { id: 'timeline', label: 'TIMELINE' },
     { id: 'tech', label: 'TECH' },
     { id: 'oss', label: 'OSS' },
-    { id: 'studio', label: 'STUDIO' },
     { id: 'faq', label: 'FAQ' },
     { id: 'cta', label: 'CONTACT' },
   ];
@@ -185,7 +183,6 @@ function App() {
         <Timeline />
         <TechStack />
         <OpenSourceProjects />
-        <StudioOrg />
         <FAQ />
         <CTA />
       </main>

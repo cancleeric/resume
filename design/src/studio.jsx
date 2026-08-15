@@ -1,4 +1,4 @@
-// Studio background — HurricaneGroup org
+// Legacy studio background component (not rendered)
 
 function StudioOrg() {
   const subs = [
@@ -97,7 +97,7 @@ function StudioOrg() {
 
         <div className="org-wrap">
           <div className="org-parent">
-            <span className="tc">HurricaneGroup</span>
+            <span className="tc">HurricaneSoft</span>
             <span className="en">{t('studio.parent.en')}</span>
           </div>
           <div className="org-line"></div>

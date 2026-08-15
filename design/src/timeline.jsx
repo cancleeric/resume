@@ -71,6 +71,15 @@ function Timeline() {
       chips: ['PHP', 'CodeIgniter', 'HMVC'],
     },
     {
+      date: 'LIVE',
+      version: '—',
+      titleKey: 'timeline.item.09.title',
+      tag: 'enterprise',
+      summaryKey: 'timeline.item.09.summary',
+      kindKey: 'timeline.kind.enterprise',
+      chips: ['Workflow', 'Appointment', 'Production'],
+    },
+    {
       date: '2023.06 - 2024.04',
       version: '—',
       titleKey: 'timeline.item.08.title',

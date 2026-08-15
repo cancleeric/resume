@@ -2,14 +2,16 @@
 
 function Systems() {
   const tabs = [
-    { key: 'ai', labelKey: 'systems.tab.ai.label', en: 'AI / AGENT', count: 9 },
+    { key: 'ai', labelKey: 'systems.tab.ai.label', en: 'AI / AGENT', count: 12 },
     { key: 'saas', labelKey: 'systems.tab.saas.label', en: 'PUBLIC SAAS', count: 5 },
-    { key: 'infra', labelKey: 'systems.tab.infra.label', en: 'GROUP INFRA', count: 5 },
+    { key: 'infra', labelKey: 'systems.tab.infra.label', en: 'GROUP INFRA', count: 7 },
   ];
 
   const systems = {
     ai: [
+      { name: 'LobsterFarm', taglineKey: 'sys.lobsterfarm.tagline', stack: ['Multi-model', 'RBAC', 'Cost Analytics', 'KPI'], status: 'LIVE', metricKey: 'sys.lobsterfarm.metric' },
       { name: 'Squid', taglineKey: 'sys.squid.tagline', stack: ['LIDS OAuth2', 'JWT', 'API Key', 'Python SDK', 'JS SDK'], status: 'LIVE', metricKey: 'sys.squid.metric' },
+      { name: 'OpenClaw', taglineKey: 'sys.openclaw.tagline', stack: ['Email', 'LINE / Slack', 'Scheduling', 'Reporting'], status: 'LIVE', metricKey: 'sys.openclaw.metric' },
       { name: 'Manta', taglineKey: 'sys.manta.tagline', stack: ['sys.stack.sandbox', 'Webhook', 'sys.stack.realtime-monitor'], status: 'LIVE', metricKey: 'sys.manta.metric' },
       { name: 'AICAD', taglineKey: 'sys.aicad.tagline', stack: ['Anemone', 'Claude Vision', 'DXF'], status: 'LIVE', metricKey: 'sys.aicad.metric' },
       { name: 'fiona-radar', taglineKey: 'sys.fiona-radar.tagline', stack: ['Anemone', 'JSONB', 'YouTube'], status: 'GA', metricKey: null, metric: 'v1.1.0' },
@@ -18,6 +20,7 @@ function Systems() {
       { name: 'Claude Agents', taglineKey: 'sys.claude-agents.tagline', stack: ['sys.stack.multirole', 'sys.stack.cross-machine-sync', 'sys.stack.tiered-access'], status: 'LIVE', metricKey: 'sys.claude-agents.metric' },
       { name: 'Modelhub', taglineKey: 'sys.modelhub.tagline', stack: ['FastAPI', 'SQLAlchemy', 'SQLite'], status: 'GA', metricKey: 'sys.modelhub.metric' },
       { name: 'Anemone', taglineKey: 'sys.anemone.tagline', stack: ['LLM ingress', 'sys.stack.cross-tenant'], status: 'LIVE', metricKey: 'sys.anemone.metric' },
+      { name: 'Aegis', taglineKey: 'sys.aegis.tagline', stack: ['AI Security', 'SAST', 'Release Gate'], status: 'LIVE', metricKey: 'sys.aegis.metric' },
     ],
     saas: [
       { name: 'Conch (RS / 海螺訂位)', taglineKey: 'sys.conch.tagline', stack: ['LINE Pay', 'PayPal Live', 'iOS App'], status: 'LIVE', metricKey: null, metric: '1,265+ tests / 28 migrations / 29 PRs' },
@@ -27,6 +30,8 @@ function Systems() {
       { name: 'Gyre v0.11.0', taglineKey: 'sys.gyre.tagline', stack: ['Secret Manager', 'sys.stack.env-isolation'], status: 'BETA', metricKey: 'sys.gyre.metric' },
     ],
     infra: [
+      { name: 'Nautilus', taglineKey: 'sys.nautilus.tagline', stack: ['SAML', 'OIDC', 'MFA', 'RBAC'], status: 'LIVE', metricKey: 'sys.nautilus.metric' },
+      { name: 'LocalIDS', taglineKey: 'sys.localids.tagline', stack: ['On-prem', 'OIDC', 'Audit'], status: 'LIVE', metricKey: 'sys.localids.metric' },
       { name: 'Hurricane Pay', taglineKey: 'sys.hurricane-pay.tagline', stack: ['FastAPI', 'PostgreSQL', 'PayPal SDK'], status: 'LIVE', metricKey: null, metric: '15 routes / 90 tests / 88% coverage' },
       { name: 'LIDS', taglineKey: 'sys.lids.tagline', stack: ['OAuth2', 'OIDC', 'sys.stack.custom-oidc-patch'], status: 'LIVE', metricKey: 'sys.lids.metric' },
       { name: 'Hurricane Vault', taglineKey: 'sys.vault.tagline', stack: ['Secret Manager', 'sys.stack.audit', 'sys.stack.symmetric-backup'], status: 'LIVE', metricKey: null, metric: '90+ secrets' },

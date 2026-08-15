@@ -27,7 +27,7 @@ resume/
 ├── resume-style.css            # 標準版樣式（螢幕 + 列印 A4）
 ├── template.html5              # pandoc HTML5 模板
 ├── build.sh                    # 一鍵 build 腳本（需 pandoc）
-├── CHANGELOG.md                # 版本紀錄（v<major>.<minor>，目前 v8.x）
+├── CHANGELOG.md                # 版本紀錄（v<major>.<minor>，目前 v9.x）
 ├── sitemap.xml                 # SEO sitemap（三版 URL）
 ├── robots.txt                  # 爬蟲指引
 │
@@ -122,7 +122,7 @@ push main 後 GitHub Pages 約 1–2 分鐘自動部署，無需手動操作。
 | major | 定位轉移（如求職版→接案版）、大型改版 |
 | minor | 每次 loop 迭代 polish batch |
 
-目前版號：**v8.x**（2026-05）
+目前版號：**v9.x**
 
 完整版本紀錄：[CHANGELOG.md](./CHANGELOG.md)
 

@@ -1,3 +1,7 @@
+## v9.03 · 2026-08-15
+- content(B/C版): 依 HurricaneSoft 官網同步產品與案例——新增 LobsterFarm、OpenClaw、Aegis、Nautilus、LocalIDS；公開 STA 舊系統現代化與美甲工作室工作單案例；ZH/EN 雙語同步
+- copy(B/C版): 系統區主張由未具來源的總量數字改為「共用平台到垂直 SaaS」架構敘事，對齊官網公開內容
+
 ## v9.02 · 2026-05-26
 - css(C版): pricing highlight 數字漸層終點 #FF6B35→#B14A0E——亮底對比從 2.8:1 升至 6.0:1，月費數字清晰可讀
 
@@ -317,6 +321,12 @@
 - fix(og:title): 三版補「接案」關鍵詞，對齊 <title>，社群分享不再掉定位
 
 # Changelog
+
+## v9.04 — 2026-08-15
+
+- Clarified technical breadth: approximately 60 programming languages, with hands-on experience in at least 13 of 2026's top 25 mainstream languages.
+- Marked the displayed language list as representative rather than exhaustive, and clarified that Java has production experience but is not a recent primary language.
+- Added Bachelor's degree and 25 years of hands-on engineering to the technical profile summary.
 
 接案工作室落地頁版本紀錄。
 

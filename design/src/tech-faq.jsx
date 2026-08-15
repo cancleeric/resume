@@ -2,7 +2,7 @@
 
 function TechStack() {
   const cats = [
-    { nameKey: 'tech.cat.lang', en: 'LANGUAGES', items: ['C#', 'Python', 'TypeScript', 'JavaScript', 'Swift', 'Kotlin', 'Java', 'PHP', 'Go', 'Solidity', 'SQL', 'C++', 'Objective-C', 'Bash', 'PowerShell'] },
+    { nameKey: 'tech.cat.lang', en: 'REPRESENTATIVE LANGUAGES', items: ['C#', 'Python', 'TypeScript', 'JavaScript', 'Swift', 'Kotlin', { name: 'Java', badge: t('tech.lang.java.badge') }, 'PHP', 'Go', 'Solidity', 'SQL', 'C++', 'Objective-C', 'Bash', 'PowerShell'] },
     { nameKey: 'tech.cat.backend', en: 'BACKEND', items: ['.NET 8', 'ASP.NET Core', 'FastAPI', 'Express', 'Next.js', 'EF Core', 'SQLAlchemy 2.0', 'Blazor Server', 'WPF', 'Hardhat (Solidity)', 'MCP'] },
     { nameKey: 'tech.cat.frontend', en: 'FRONTEND', items: ['React 18', 'Next.js', 'TypeScript', 'SwiftUI', 'SpriteKit', 'Vue.js', 'Android (Kotlin)'] },
     { nameKey: 'tech.cat.database', en: 'DATABASE', items: ['PostgreSQL', 'SQL Server', 'MySQL', 'SQLite', 'Redis', 'ClickHouse', 'Firestore', 'CloudKit', 'Alembic', 'EF Migrations', 'RLS'] },
@@ -44,6 +44,34 @@ function TechStack() {
           border: 1px solid var(--border);
           height: auto;
         }
+        .tech-profile {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 12px;
+          margin: -24px 0 28px;
+        }
+        .tech-profile__item {
+          padding: 18px 20px;
+          background: var(--surface-1);
+          border: 1px solid var(--border);
+          border-radius: var(--r-md);
+        }
+        .tech-profile__value {
+          display: block;
+          margin-bottom: 7px;
+          color: var(--cyan);
+          font-family: var(--font-mono);
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .tech-profile__label {
+          color: var(--text-hi);
+          font-family: var(--font-tc);
+          font-size: 13px;
+          line-height: 1.55;
+        }
+        @media (max-width: 900px) { .tech-profile { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 520px) { .tech-profile { grid-template-columns: 1fr; } }
       `}</style>
       <div className="container">
         <SectionHead
@@ -51,6 +79,12 @@ function TechStack() {
           title={<>{t('tech.section.title')}</>}
           sub={t('tech.section.sub')}
         />
+        <div className="tech-profile" aria-label={t('tech.profile.aria')}>
+          <div className="tech-profile__item"><span className="tech-profile__value">60+</span><span className="tech-profile__label">{t('tech.profile.languages')}</span></div>
+          <div className="tech-profile__item"><span className="tech-profile__value">13+</span><span className="tech-profile__label">{t('tech.profile.top25')}</span></div>
+          <div className="tech-profile__item"><span className="tech-profile__value">25 yr</span><span className="tech-profile__label">{t('tech.profile.experience')}</span></div>
+          <div className="tech-profile__item"><span className="tech-profile__value">B.S.</span><span className="tech-profile__label">{t('tech.profile.education')}</span></div>
+        </div>
         {cats.map(c => (
           <div key={c.nameKey} className="tech-grid">
             <div className="tech-cat-label">

@@ -5,7 +5,7 @@ window.DICT_ZH = {
   'meta.title':          '颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化接案 · 一年交付 14+ 產品',
   'meta.description':    '颶風軟體有限公司（HurricaneSoft Ltd.）— 把整套開發流程自動化（規格→設計→實作→審查→部署→維運），一個人扛起以往需要整支團隊的產出。SaaS 最快 23 天上線（214 commits 可查）。月費 US$ 10,000；專案制 1–2 週起，可開發票（統編 80289779）。',
   'og.title':            '颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化接案 · 一年交付 14+ 產品',
-  'og.description':      '把規格→設計→實作→審查→部署→維運整條流程自動化，SaaS 最快 23 天上線。自家集團 30+ 生產系統驗證。月費 US$ 10K；專案制 1–2 週起，可開發票。',
+  'og.description':      '颶風軟體把規格→設計→實作→審查→部署→維運整條流程自動化，SaaS 最快 23 天上線。自有產品與客戶案例已投入正式運行。',
   'twitter.title':       '颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化接案 · 一年交付 14+ 產品',
   'twitter.description': '一個人扛起整支團隊的產出 · SaaS 最快 23 天上線 · 30+ 生產系統 · 月費 US$ 10K · 專案制起',
 
@@ -79,7 +79,7 @@ window.DICT_ZH = {
   'trust.item.01.name':  '年軟體經驗',
   'trust.item.02.name':  '企業客戶',
   'trust.item.03.name':  '生產系統',
-  'trust.item.04.name':  '子公司',
+  'trust.item.04.name':  '公開客戶案例',
   'trust.item.05.name':  'Cloud Run 服務',
   'trust.item.06.name':  'SaaS 接入',
   'trust.item.07.name':  '最快 SaaS 上線',
@@ -118,7 +118,7 @@ window.DICT_ZH = {
   'why.studio.row.03':   '專案制 1–2 週啟動、月費下個檔期 2026/07',
   'why.studio.row.04':   '整條 pipeline 一個團隊主責（前端 · 後端 · AI · DevOps · 資安）——零交接斷點、零「那不是我的部分」',
   'why.studio.row.05':   '無決策延遲：負責人即拍板者，AI 提前跑風險模擬',
-  'why.studio.row.06':   '自家集團 6 子公司 30+ 生產系統在跑；SaaS 0→生產最快 23 天（214 commits 到上線）',
+  'why.studio.row.06':   '颶風軟體自有產品與客戶系統持續運行；SaaS 0→生產最快 23 天（214 commits 到上線）',
 
   // ── security validation 信任區塊 ──────────────────────────────────────────
   'secure.title':  '自動化產出。自動化安全把關。每次部署過門前都要清關。',
@@ -129,7 +129,7 @@ window.DICT_ZH = {
 
   // ── services section ──────────────────────────────────────────────────────
   'svc.section.title':   '八項服務，<br/>整條 pipeline 都有人接管。',
-  'svc.section.sub':     '主力是「開發流程自動化」，其餘是延伸 — 每一類都已在自家集團跑過生產驗證。最快 SaaS 0→生產：23 天。',
+  'svc.section.sub':     '主力是「開發流程自動化」，其餘是延伸 — 每一類都已在颶風軟體自有產品或客戶系統完成實作。最快 SaaS 0→生產：23 天。',
   'svc.01.tc':           '開發流程自動化（主力）',
   'svc.01.desc':         '把規格 → 設計 → 實作 → 審查 → 部署 → 維運整條流程自動化：AI 副手分工 + Agent 框架 + 工單狀態機 + 自建 CI/CD + 量化評審門檻。',
   'svc.01.bullet.01':    '規格 → 設計 → 實作',
@@ -207,21 +207,24 @@ window.DICT_ZH = {
   'why.studio.badge':         '本工作室',
 
   // ── systems section ───────────────────────────────────────────────────────
-  'systems.section.title':    '30+ 生產系統、<br/>整個集團跑在上面。',
-  'systems.section.sub':      '不是 portfolio 圖、不是 demo。是每天有真實 traffic、真實營收、真實 SLO 的生產系統 —— 且每一個都由 AI 自主開發與維運：人類定方向、AI 跑交付。',
+  'systems.section.title':    '從共用平台到垂直 SaaS，<br/>不是一堆互不相干的 demo。',
+  'systems.section.sub':      '身份、金流、AI 能力與 GCP Cloud Run 基礎建設共用；產品專注業務本身。以下系統涵蓋 AI 開發、企業自動化、身份認證與自有 SaaS，並有生產與客戶交付紀錄。',
   'systems.tab.ai.label':     'AI / Agent 產品線',
   'systems.tab.saas.label':   '對外 SaaS',
-  'systems.tab.infra.label':  '集團基礎建設',
+  'systems.tab.infra.label':  '颶風軟體平台基礎',
   // AI tab taglines
-  'sys.squid.tagline':        '集團專案 / 工單管理 SaaS（公司核心）— AI Agent 工單驅動開發底層',
+  'sys.lobsterfarm.tagline':  'AI 員工管理平台 — 排班、派工、權限、成本與績效統一管理',
+  'sys.squid.tagline':        '颶風軟體專案 / 工單管理 SaaS — AI Agent 工單驅動開發底層',
+  'sys.openclaw.tagline':     '企業數位員工 — 信件、訊息、週報、排程與文件歸檔自動化',
   'sys.manta.tagline':        'AI Workflow Canvas（對標 Coze）— 多租戶 AI 編排',
   'sys.aicad.tagline':        'AI P&ID 工程圖辨識 SaaS',
   'sys.fiona-radar.tagline':  'AI 影片結構化洞察',
   'sys.fiona-pipeline.tagline':'AI 腳本生成 + 推播',
-  'sys.brain.tagline':        '集團 AI 智腦平台',
+  'sys.brain.tagline':        '颶風軟體 AI 智腦平台',
   'sys.claude-agents.tagline':'AI 副手角色庫 — 多角色虛擬團隊',
   'sys.modelhub.tagline':     'ML 模型訓練 / 版本管理平台',
-  'sys.anemone.tagline':      '集團 AI API 閘道 — 電話總機 / LLM ingress',
+  'sys.anemone.tagline':      '颶風軟體 AI API 閘道 — 電話總機 / LLM ingress',
+  'sys.aegis.tagline':        '自主 AI 資安代理 — 把弱點掃描與安全關卡放進交付流程',
   // SaaS tab taglines
   'sys.conch.tagline':        '預約 SaaS v4.0.0（2026/04 GA）',
   'sys.abacus.tagline':       '中小企業帳務財務 SaaS（hurricane-books）',
@@ -229,26 +232,33 @@ window.DICT_ZH = {
   'sys.dagongzai.tagline':    '零工媒合 SaaS v1.1.0（2026/04）',
   'sys.gyre.tagline':         '多平台社群同步 SaaS v0.11.0 — 一次撰寫、多平台同步發佈',
   // infra tab taglines
-  'sys.hurricane-pay.tagline':'集團統一金流微服務 v0.13.0',
+  'sys.nautilus.tagline':     '雲端企業級身份認證 — SSO / SAML / OIDC / MFA / RBAC',
+  'sys.localids.tagline':     '地端企業級身份認證 — 給需要自主管理與稽核的環境',
+  'sys.hurricane-pay.tagline':'颶風軟體統一金流微服務 v0.13.0',
   'sys.lids.tagline':         'Multi-tenant SaaS 身份層 — OAuth2/OIDC',
   'sys.vault.tagline':        '自建 Secret Manager + 多層稽核 v1.0.0',
   'sys.tentacle.tagline':     'Squid 前端整合層（BFF pattern）',
-  'sys.headscale.tagline':    '集團統一 VPN',
+  'sys.headscale.tagline':    '颶風軟體內部 VPN',
 
   // sys metric keys
+  'sys.lobsterfarm.metric':   '多模型派工 + 成本 / KPI 看板',
   'sys.squid.metric':         '多租戶 + 嚴格狀態機',
+  'sys.openclaw.metric':      '即日可用的企業自動化服務',
   'sys.manta.metric':         'v2.55.0 生產中',
   'sys.aicad.metric':         '23 天 · 214 commits 到生產',
   'sys.fiona-pipeline.metric':'多平台感知',
   'sys.claude-agents.metric': '多角色 AI 副手庫',
   'sys.modelhub.metric':      '多層訓練資源排程',
   'sys.anemone.metric':       '反向連線中繼',
+  'sys.aegis.metric':         '上線前自動安全檢查',
+  'sys.nautilus.metric':      '零信任 + 細粒度權限 + 稽核',
+  'sys.localids.metric':      'On-prem IAM',
   'sys.abacus.metric':        '對標天心 CPA',
   'sys.tianji.metric':        'HurricaneEdge 旗下',
   'sys.dagongzai.metric':     '28 天 · 51 commits 到生產',
   'sys.gyre.metric':          '36 天 · 111 commits · R5 freeze',
   'sys.lids.metric':          '9+ 系統接入',
-  'sys.tentacle.metric':      '跨集團共用',
+  'sys.tentacle.metric':      '跨產品共用',
   'sys.headscale.metric':     '動態 IP 管理',
   // sys stack keys（含中文項目）
   'sys.stack.sandbox':        '沙盒',
@@ -265,18 +275,18 @@ window.DICT_ZH = {
 
   // ── timeline section ──────────────────────────────────────────────────────
   'timeline.section.title':   '近期交付，<br/>有日期、有版本、有結果。',
-  'timeline.section.sub':     '一個人 + AI 副手實際交付的系統 —— 自有 SaaS、集團基礎建設，到企業客戶案例。沒有圖庫 stock photo、沒有「概念示意」。',
+  'timeline.section.sub':     '颶風軟體實際交付的系統 —— 從自有 SaaS、平台基礎，到企業客戶案例。沒有圖庫 stock photo、沒有「概念示意」。',
   'timeline.filter.all':      '全部',
   'timeline.filter.q1q2':     '2026 Q1-Q2',
   'timeline.filter.enterprise':'企業客戶',
   // kind labels
   'timeline.kind.saas':       '對外 SaaS',
-  'timeline.kind.infra':      '集團基礎建設',
+  'timeline.kind.infra':      '颶風軟體平台基礎',
   'timeline.kind.enterprise': '企業客戶',
   // item titles
   'timeline.item.01.title':   'Manta — AI Workflow Canvas（對標 Coze）',
   'timeline.item.01.summary': '多租戶生產中；同月完成 JWT httpOnly cookie 遷移 + LIDS end_session + CSRF PoC BLOCKED（CISO / compliance 雙審 PASS）。',
-  'timeline.item.02.title':   'Hurricane Pay — 集團統一金流',
+  'timeline.item.02.title':   'Hurricane Pay — 颶風軟體統一金流',
   'timeline.item.02.summary': 'FastAPI + PostgreSQL + PayPal SDK，PayPal LIVE，9+ tenant 接入；15 routes / 90 tests / 88% coverage。',
   'timeline.item.03.title':   'Conch（RS / 海螺訂位）— 預約 SaaS GA',
   'timeline.item.03.summary': '1,265+ tests 全通過、28 DB migrations、29 PRs merged、CI 4 jobs 全綠；含 CRM / 平板模式 / No-show 管理 / 公開目錄。',
@@ -286,15 +296,23 @@ window.DICT_ZH = {
   'timeline.item.05.summary': '多層稽核 + 雲端對稱備援，90+ secrets 治理。',
   'timeline.item.06.title':   '政府信用保證機構 — 技術顧問',
   'timeline.item.06.summary': '主導舊系統從 .NET Framework 4.6 升級至 .NET 8 + Blazor，採微服務架構；跨年度 8 人外部技術團隊交付；支援銀行端信用保證業務之核心生產系統。',
-  'timeline.item.07.title':   '全國性協會 — 組織綜合管理平台',
-  'timeline.item.07.summary': '線上課程報名系統，服務 5,000+ 學員，線上報名率 +80%、行政時間 -60%；PHP CodeIgniter HMVC + 15+ 種營運報表；2026 持續維運。',
+  'timeline.item.07.title':   'STA 游泳救生協會 — 舊系統全面翻新',
+  'timeline.item.07.summary': '十餘年未改版系統完成 PHP 5.6→7、CodeIgniter 1→3 升級；報名入口、行政後台與訓練管理已上線運行。',
   'timeline.item.08.title':   'iOS 多功能社交遊戲平台',
   'timeline.item.08.summary': '多米諾骨牌對戰手遊，SwiftUI + SpriteKit + Firebase + CloudKit；即時多人對戰、AI 聊天、AdMob 廣告；已上 App Store。',
+  'timeline.item.09.title':   '個人美甲工作室 — 預約與工作單系統',
+  'timeline.item.09.summary': '導入開發流程自動化後，將預約與美甲工單數位化；一人工作室也能擁有可自行上線與持續維運的正式系統。',
 
   // ── tech stack section ────────────────────────────────────────────────────
   'tech.section.title':       '技術棧 · 用過、跑過、上線過。',
-  'tech.section.sub':         '每一項都在自家集團或客戶生產系統實際跑過 — 不是「會」也不是「碰過」。',
-  'tech.cat.lang':            '語言',
+  'tech.section.sub':         '跨語言與跨平台能力才是核心。下列為代表性技術，不是能力上限；實際選型依產品、團隊與既有系統決定。',
+  'tech.profile.aria':        '技術廣度與學歷',
+  'tech.profile.languages':   '約 60 種程式語言經驗',
+  'tech.profile.top25':       '2026 主流程式語言前 25 名中，至少 13 種具實務經驗',
+  'tech.profile.experience':  '軟體工程實戰',
+  'tech.profile.education':   '大學學歷（學士）',
+  'tech.lang.java.badge':     '曾有實務 · 近年非主力',
+  'tech.cat.lang':            '代表性語言',
   'tech.cat.backend':         '後端',
   'tech.cat.frontend':        '前端',
   'tech.cat.database':        '資料庫',
@@ -302,21 +320,6 @@ window.DICT_ZH = {
   'tech.cat.auth':            '認證 / 安全',
   'tech.cat.ai':              'AI / LLM',
   'tech.cat.payments':        '金流',
-
-  // ── studio section ────────────────────────────────────────────────────────
-  'studio.section.title':     '不是一個人，<br/>是一整個集團當靠山。',
-  'studio.section.sub':       'HurricaneGroup 6 子公司 · 30+ 生產系統每天在跑 —— 您接到手的每項技術，都是我們自家生產驗證過的實作，不是 demo。',
-  'studio.parent.en':         'PARENT · 集團母公司',
-  'studio.soft.role':         '本工作室 · 集團部署 / GCP 維運 / 接案出口',
-  'studio.edge.role':         '8 大對外 SaaS 產品線',
-  'studio.core.role':         'LLM Gateway / 自訓模型 / 智腦平台',
-  'studio.prime.role':        '客製化企業系統（.NET WMS、SaaS）',
-  'studio.digital.role':      '行動遊戲 / iOS / 文創',
-  'studio.tech.role':         'LIDS / CMS / Squid 等共用技術平台',
-  'studio.stat.01.label':     '負責人軟體經驗',
-  'studio.stat.02.label':     '集團子公司',
-  'studio.stat.03.label':     '生產系統',
-  'studio.stat.04.label':     '企業客戶（歷年）',
 
   // ── FAQ section ───────────────────────────────────────────────────────────
   'faq.section.title':        '常見問題。',
@@ -350,7 +353,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v9.02 · 最後更新 2026/05/26 22:43',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v9.04 · 最後更新 2026/08/15',
   'footer.interview':     '面試簡報',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────
@@ -367,7 +370,7 @@ window.DICT_ZH = {
   'tech.item.anemone':    'Anemone (自建 LLM ingress)',
   'tech.item.modelhub':   'Modelhub (自訓模型)',
   'tech.item.newebpay':   '藍新科技 NewebPay',
-  'tech.item.hpay':       'Hurricane Pay (自建集團統一金流)',
+  'tech.item.hpay':       'Hurricane Pay（颶風軟體自建統一金流）',
   'studio.soft.tc':       '颶風軟體',
   'studio.edge.tc':       '颶鋒科技',
   'studio.core.tc':       '颶核科技',
