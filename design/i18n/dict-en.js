@@ -19,7 +19,7 @@ window.DICT_EN = {
 
   // ── meta-live banner ─────────────────────────────────────────────────────
   // [R] from I18N
-  'metalive.head':       'This page is <strong>100% developed &amp; maintained by LLM</strong>&nbsp;·&nbsp;Zero manual code edits&nbsp;·&nbsp;Auto-runs hourly&nbsp;·&nbsp;What you see is <strong>"Automated Software Delivery" live in action</strong>',
+  'metalive.head':       'This page is <strong>continuously maintained through an AI-native engineering workflow</strong>&nbsp;·&nbsp;AI supports specification, implementation, review, testing, and deployment&nbsp;·&nbsp;What you see is <strong>Automated Software Delivery in practice</strong>',
   'metalive.step.01':    '① Page loads',
   'metalive.step.02':    '② AI reviews weakest point',
   'metalive.step.03':    '③ Browser automation live test',
@@ -55,20 +55,20 @@ window.DICT_EN = {
 
   // ── hero ─────────────────────────────────────────────────────────────────
   'hero.status':         'STATUS: ACCEPTING PROJECTS',
-  'hero.status.slot':    'Limited slots · NEXT 2026/07',
+  'hero.status.slot':    'Accepting projects · Max 2 at a time',
   'hero.h1_line1':       'Full-Team Output,',
   'hero.h1_line2':       'One Engineer.',
-  'hero.sub':            'Four years of AI-native delivery. AI is embedded across the <b style="color:var(--text-hi)">entire development and operations pipeline</b>: spec → design → build → review → deploy → ops, with specialized AI agents and digital employees collaborating at every stage.',
-  'hero.claim':          'Four years of hands-on AI delivery: <b>14+ AI-assisted products and 30+ production systems, with SaaS shipped in as little as 23 days (214 commits — verifiable in git)</b>. Digital employees support research, specification, implementation, testing, review, deployment, and operations.',
+  'hero.sub':            'Hands-on generative AI and LLM engineering since 2022. AI is embedded across the <b style="color:var(--text-hi)">entire development and operations pipeline</b>: spec → design → build → review → deploy → ops, with specialized AI agents and digital employees collaborating at every stage.',
+  'hero.claim':          'AI-native delivery proof: <b>14+ AI-assisted products and 30+ production systems, with SaaS shipped in as little as 23 days (214 commits — verifiable in git)</b>. Digital employees support research, specification, implementation, testing, review, deployment, and operations.',
   'hero.cta.primary':    'Book a Free 30-min Call',
   'hero.cta.pipeline':   'See LF Pipeline live',
-  'hero.cta.note':       '30 min · No lock-in · Next slot 2026/07, max 2 projects at a time',
+  'hero.cta.note':       '30 min · No lock-in · Currently accepting projects, max 2 at a time',
   'hero.kpi.01.label':   'Production Systems',
   'hero.kpi.02.label':   'AI · SaaS Product Lines',
   'hero.kpi.03.label':   'Cloud Run Services',
-  'hero.kpi.04.label':   'Years in AI',
+  'hero.kpi.04.label':   'Generative AI / LLM',
   // [R] from I18N avail-strong / avail-detail
-  'hero.avail.msg':      'Next open slot: 2026/07 — earliest kick-off ~5 weeks out',
+  'hero.avail.msg':      'Currently accepting new engagements; start date confirmed after scoping',
   'hero.avail.meta':     'RETAINER · max 2 concurrent engagements',
 
   // ── pipeline visual (bilingual display, labels kept as-is) ───────────────
@@ -123,7 +123,7 @@ window.DICT_EN = {
   'why.studio.head':     'HurricaneSoft',
   'why.studio.row.01':   'One Principal + AI copilot team — unbroken ownership from spec to ops',
   'why.studio.row.02':   'US$10K/month fixed — you buy output directly, not middlemen',
-  'why.studio.row.03':   'Project-based: kick-off in 1–2 weeks; retainer: next slot 2026/07',
+  'why.studio.row.03':   'Currently accepting projects; project and retainer starts are scheduled after scoping',
   'why.studio.row.04':   'Full pipeline, one owner (frontend · backend · AI · DevOps · security) — zero handoff gaps, zero "that\'s not my part"',
   'why.studio.row.05':   'Zero decision lag — Principal has commit authority; AI pre-runs risk simulation',
   'why.studio.row.06':   'HurricaneSoft products and client systems run in production; SaaS zero to production in 23 days (214 commits to ship)',
@@ -331,7 +331,7 @@ window.DICT_EN = {
   'faq.section.sub':          'Don\'t see your answer? Book a free 30-min consultation and ask directly.',
   // [R] from I18N faq*-q / faq*-a
   'faq.01.q': 'How soon can you start?',
-  'faq.01.a': 'Advisory engagements are available immediately (minimum 4 hours).\n\nMonthly Retainer has a maximum of 2 concurrent slots — next availability from 2026/07 (approximately 5 weeks out).\n\nProject-based engagements can kick off within 1–2 weeks depending on scope.',
+  'faq.01.a': 'Advisory engagements are currently available (minimum 4 hours).\n\nMonthly Retainer is limited to 2 concurrent engagements. Project and retainer start dates are confirmed after scope review.',
   'faq.02.q': 'Do you sign NDAs and issue invoices?',
   'faq.02.a': '**Yes.** Invoices are available under a registered company tax ID (80289779).\n\nOur standard NDA template can be signed immediately; custom NDA requests are addressed within 24 hours.\n\nPayment accepted via wire transfer / Wise / crypto (USDC).',
   'faq.03.q': 'Why US$10K/month instead of hourly billing?',
@@ -361,7 +361,7 @@ window.DICT_EN = {
 
   // ── footer ────────────────────────────────────────────────────────────────
   // Brand / legal info kept bilingual (same as zh for non-translatable parts)
-  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v9.04 · Last updated 2026/08/15',
+  'footer.copy':          '© 2026 HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · 2F, No.79, Sec.6, Zhongxiao E. Rd., Taipei · v9.05 · Last updated 2026/08/21',
   'footer.interview':     'Interview Deck',
 
   // ── tokens section ────────────────────────────────────────────────────────

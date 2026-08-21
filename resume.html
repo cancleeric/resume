@@ -81,7 +81,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "檔期多久能排到？", "acceptedAnswer": { "@type": "Answer", "text": "顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 2026/07 起（約 5 週後）。專案制依範圍 1-2 週內可 kick-off。" } },
+      { "@type": "Question", "name": "檔期多久能排到？", "acceptedAnswer": { "@type": "Answer", "text": "顧問諮詢目前可安排（最少 4 小時）。月費 Retainer 同時段最多 2 案；專案制與月費合作的啟動時間會在確認 scope 後明確排定。" } },
       { "@type": "Question", "name": "會簽 NDA / 開發票嗎？", "acceptedAnswer": { "@type": "Answer", "text": "會。可開立公司行號統編發票（80289779），標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。付款支援電匯／Wise／加密貨幣（USDC）。" } },
       { "@type": "Question", "name": "為何 US$ 10K/月不是按 hourly？", "acceptedAnswer": { "@type": "Answer", "text": "月費模式讓負責人 + AI 副手團隊全力投入，不必為了計時打折注意力。重點不在「時數」，在產出密度——自家工具鏈讓單月產出等價傳統做法 2–3 個月進度（實證：SaaS 0→生產最快 23 天）。同等 hourly 預算（約 US$ 80/h × 125h）只買到一個工程師的單層交付；月費買的是整條 pipeline 全覆蓋：規格→設計→開發→審查→部署→維運。" } },
       { "@type": "Question", "name": "跟你合作會用到哪些 AI 工具？", "acceptedAnswer": { "@type": "Answer", "text": "內部 SOP：Claude Code（主力）+ 自建 LLM Gateway（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway，client code／data 全程不出您的環境（除非授權）。" } },
@@ -130,7 +130,7 @@
 <div class="meta-live">
   <div class="meta-live__head">
     <span class="meta-live__dot"></span>
-    <span data-i18n="meta-live-head">這個頁面 <strong>100% 由 LLM 自主開發維護</strong>　·　無人手動改 code　·　每小時自動跑一輪　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong></span>
+    <span data-i18n="meta-live-head">這個頁面以 <strong>AI 原生工程流程持續維護</strong>　·　規格、實作、審查、測試與部署皆有 AI 協作　·　您正在看的就是<strong>「開發流程自動化」實際成果</strong></span>
   </div>
   <div class="meta-live__steps">
     <span class="meta-live__step" data-i18n="meta-step-1">① 載入頁面</span><span class="meta-live__arr">→</span>
@@ -182,7 +182,7 @@
       <div class="profile__main">
         <h2 class="profile__name">王英豪</h2>
         <p class="profile__en">WANG YING HAO</p>
-        <p class="profile__title" data-i18n="profile-title">颶風軟體 · 負責人<br/><span class="profile__title--sub">Studio for Hire</span></p>
+        <p class="profile__title" data-i18n="profile-title">颶風軟體 · 創辦人暨首席工程師<br/><span class="profile__title--sub">Founder &amp; Principal Engineer</span></p>
         <div class="status-pill" data-i18n="status-pill">現正接案中 · 限量檔期</div>
       </div>
     </div>
@@ -238,18 +238,18 @@
 
     <section class="card auto-feed-card" id="auto-feed-card" hidden>
       <h3 class="card__title">🔄 <span data-i18n="auto-feed-title">近期自動優化</span></h3>
-      <p class="auto-feed-note" data-i18n="auto-feed-note">這頁每小時自動優化一輪，以下是實際紀錄：</p>
+      <p class="auto-feed-note" data-i18n="auto-feed-note">以下是這個頁面的實際 AI 協作優化紀錄：</p>
       <ul class="auto-feed-list" id="auto-feed-list"></ul>
     </section>
 
-    <p class="sidebar__foot">v9.00 · 2026/05/26 20:44</p>
+    <p class="sidebar__foot">v9.05 · 2026/08/21</p>
   </aside>
 
   <main class="main">
     <h1 id="hurricanesoft-工作室">颶風軟體有限公司 · HurricaneSoft Ltd.</h1>
     <h2 id="開發流程自動化" data-i18n="h2-tagline">整支團隊的產出，一個人交付 · Full-Team Output, One Engineer</h2>
     <p class="hire-lede" data-i18n="hire-lede">
-      AI 整合只是基本盤——真正的差異是把<strong>整套開發流程自動化</strong>：規格 → 設計 → 實作 → 審查 → 部署 → 維運，
+      自 2022 年起投入生成式 AI／LLM 實務。真正的差異是把<strong>整套開發流程自動化</strong>：規格 → 設計 → 實作 → 審查 → 部署 → 維運，
       每個環節都有 AI 副手 + 自動化工具鏈接管，並在颶風軟體的自有產品與客戶系統持續驗證。
       <strong>一個人 + AI 副手交付了 14+ 個自有產品、SaaS 從 0 到生產最快 23 天（214 commits，git 紀錄可查）</strong>，扛起以往需要整支團隊的產出。這套交付速度，現在就能接上您的專案。
     </p>
@@ -272,14 +272,14 @@
         <div class="ai-hero__eyebrow" data-i18n="hero-eyebrow">開發流程自動化實證 · 線上看現場</div>
         <div class="ai-hero__title" data-i18n="hero-title">LF Pipeline — 一個人扛 30+ 系統的真實狀態</div>
         <div class="ai-hero__desc" data-i18n="hero-desc">
-          官方展示頁 — 即時呈現整套自動化在跑：多 SaaS 並行迭代、Agent 協作分工、CI/CD pipeline、跨子公司服務拓樸。
+          官方展示頁 — 即時呈現整套自動化在跑：多 SaaS 並行迭代、Agent 協作分工、CI/CD pipeline、多產品服務拓樸。
           <strong>這就是「一個人交付 14+ 產品」的長相。</strong>
         </div>
         <div class="ai-hero__stats">
           <span><strong>30+</strong> <span data-i18n="hero-stat-systems">生產系統</span></span>
           <span><strong>19</strong> <span data-i18n="hero-stat-cloudrun">Cloud Run 服務</span></span>
           <span><strong>14+</strong> <span data-i18n="hero-stat-products">AI / SaaS 產品線</span></span>
-          <span><strong>1</strong> <span data-i18n="hero-stat-years">年實戰驗證</span></span>
+          <span><strong>2022→</strong> <span data-i18n="hero-stat-years">生成式 AI／LLM 實務</span></span>
         </div>
         <div class="ai-hero__url">www.hurricanesoft.com.tw/pipeline</div>
       </div>
@@ -289,8 +289,8 @@
     <div class="availability">
       <div class="availability__dot"></div>
       <div class="availability__body">
-        <strong data-i18n="avail-strong">下個可承接檔期：2026/07 起（最快 5 週後 kick-off）</strong>
-        <span data-i18n="avail-detail">· 月費 Retainer 同時段最多 2 案 · 顧問諮詢隨到隨接 · 專案制 1-2 週內啟動</span>
+        <strong data-i18n="avail-strong">目前可承接新案，啟動時間依 scope 確認</strong>
+        <span data-i18n="avail-detail">· 月費 Retainer 同時段最多 2 案 · 顧問諮詢目前可安排 · 專案制與月費合作確認範圍後排期</span>
       </div>
       <a class="availability__cta" href="#預約諮詢-book-consultation" data-i18n="avail-cta">先預約檔期 →</a>
     </div>
@@ -558,14 +558,14 @@
     </div>
 
     <h2 id="工作室背景-about-the-studio" data-i18n="h2-about">工作室背景 — About the Studio</h2>
-    <p data-i18n="about-p1"><strong>颶風軟體有限公司</strong>（HurricaneSoft Ltd.）— <strong>2002 年成立於台北</strong>，統一編號 <strong>80289779</strong>。累積 24 年工程與技術管理經驗，專注於開發流程自動化、AI / SaaS 產品與企業系統現代化，是 AI 時代的軟體開發夥伴。</p>
+    <p data-i18n="about-p1"><strong>颶風軟體有限公司</strong>（HurricaneSoft Ltd.）— <strong>2002 年成立於台北</strong>，統一編號 <strong>80289779</strong>。自 2022 年起投入生成式 AI／LLM 實務，專注於 AI Agent 與 LLM 平台、多租戶 SaaS、開發流程自動化及企業系統現代化。</p>
     <p data-i18n="about-p2">負責人 <strong>王英豪</strong>，25 年軟體工程實戰 + 24 年技術管理。服務過<strong>日商在台軟體公司、數位媒體、互動設計、政府金融機構</strong>等不同產業的企業客戶，擔任技術主管 / 首席工程師 / 技術顧問。產品經驗涵蓋<strong>銀行端信用保證業務系統</strong>（.NET 8 + Blazor）、<strong>iOS 社交手遊</strong>（App Store 上架）、<strong>全球 400+ 機場銷售之 Pocket PC 套件</strong>、車載娛樂系統、Web POP 編輯器——橫跨企業級、消費級、嵌入式三大領域。</p>
 
     <h2 id="常見問題-faq" data-i18n="h2-faq">常見問題 — FAQ</h2>
     <div class="faq-grid">
       <details class="faq-item" open>
         <summary data-i18n="faq1-q">檔期多久能排到？</summary>
-        <p data-i18n="faq1-a">顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 <strong>2026/07 起（約 5 週後）</strong>。專案制依範圍 1-2 週內可 kick-off。</p>
+        <p data-i18n="faq1-a">顧問諮詢目前可安排（最少 4 小時）。月費 Retainer 同時段最多 2 案；專案制與月費合作的啟動時間會在確認 scope 後明確排定。</p>
       </details>
       <details class="faq-item">
         <summary data-i18n="faq2-q">會簽 NDA / 開發票嗎？</summary>
@@ -618,7 +618,7 @@
     </div>
 
     <hr />
-    <p><em data-i18n="footer-note">v9.00 · 最後更新 2026/05/26 20:44　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
+    <p><em data-i18n="footer-note">v9.05 · 最後更新 2026/08/21　·　接案 / 顧問 / 月費合作　·　可開發票</em></p>
 
   </main>
 
@@ -630,7 +630,7 @@
     · <a href="tel:+886921107206">📞 0921-107-206</a>
     · <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" data-i18n="footer-pipeline">🌪️ LF Pipeline 線上作品 ↗</a>
   </p>
-  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · 負責人 王英豪 · v9.00</p>
+  <p data-i18n="footer-copy">© 颶風軟體有限公司 HurricaneSoft Ltd. · 統一編號 80289779 · 負責人 王英豪 · v9.05</p>
   <!-- 低調入口：noindex 面試簡報，頁尾小連結，不進主導覽（受眾＝面試官，非接案客戶）-->
   <p class="bottom__interview" style="margin-top:12px">
     <a href="design/interview.html" data-i18n="footer-interview" style="font-size:11px;color:#8a8d96;text-decoration:none;border-bottom:1px solid #e2e8f0;padding-bottom:1px">面試簡報 →</a>
@@ -675,7 +675,7 @@ const I18N = {
   'ver-invite-text': 'Want to see the design work? This page also ships in two design versions:',
 
   // meta-live banner
-  'meta-live-head':  'This page is <strong>100% developed &amp; maintained by LLM</strong>&nbsp;·&nbsp;Zero manual code edits&nbsp;·&nbsp;Auto-runs hourly&nbsp;·&nbsp;What you see is <strong>"Automated Software Delivery" live in action</strong>',
+  'meta-live-head':  'This page is <strong>continuously maintained through an AI-native engineering workflow</strong>&nbsp;·&nbsp;AI supports specification, implementation, review, testing, and deployment&nbsp;·&nbsp;What you see is <strong>Automated Software Delivery in practice</strong>',
   'meta-step-1':     '① Page loads',
   'meta-step-2':     '② AI reviews weakest point',
   'meta-step-3':     '③ browser automation live test',
@@ -693,7 +693,7 @@ const I18N = {
   'nav-book':        'Book a Call',
 
   // sidebar profile
-  'profile-title':   'HurricaneSoft · Principal<br/><span class="profile__title--sub">Studio for Hire</span>',
+  'profile-title':   'HurricaneSoft · Founder &amp; Principal Engineer<br/><span class="profile__title--sub">AI / LLM · SaaS · Modernization</span>',
   'status-pill':     'Available Now · Limited Slots',
 
   // sidebar contact card
@@ -735,10 +735,10 @@ const I18N = {
 
   // auto-optimization feed (sidebar)
   'auto-feed-title': 'Recent Auto-Optimizations',
-  'auto-feed-note':  'This page auto-optimizes hourly — here is the actual log:',
+  'auto-feed-note':  'Here is the actual AI-assisted optimization log for this page:',
 
   // hire lede
-  'hire-lede': 'AI integration is table stakes — the real differentiator is <strong>automating the entire delivery pipeline</strong>: spec → design → implementation → review → deploy → ops, with AI copilots and toolchains at every stage. Continuously proven across HurricaneSoft products and client systems. The result: <strong>one person + AI copilots delivered 14+ in-house products, with SaaS shipped to production in as little as 23 days (214 commits — verifiable in git)</strong> — carrying what used to take an entire team. Bring this to your project.',
+  'hire-lede': 'Hands-on generative AI and LLM engineering since 2022. The differentiator is <strong>automating the entire delivery pipeline</strong>: spec → design → implementation → review → deploy → ops, with AI copilots and toolchains at every stage. Continuously proven across HurricaneSoft products and client systems. The result: <strong>one person + AI copilots delivered 14+ in-house products, with SaaS shipped to production in as little as 23 days (214 commits — verifiable in git)</strong>.',
 
   'lede-cta-btn':  'Book a free 30-min consult →',
   'lede-cta-note': 'No lock-in · 30 min to confirm fit, with a clear conclusion before we end',
@@ -750,12 +750,12 @@ const I18N = {
   'hero-stat-systems':  'production systems',
   'hero-stat-cloudrun': 'Cloud Run services',
   'hero-stat-products': 'AI / SaaS product lines',
-  'hero-stat-years':    'yr in production',
+  'hero-stat-years':    'generative AI / LLM',
   'hero-cta':           'See it live ↗',
 
   // availability bar
-  'avail-strong': 'Next available slot: from 2026/07 (earliest kick-off ~5 weeks out)',
-  'avail-detail': '· Monthly Retainer: max 2 concurrent engagements · Advisory: available immediately · Project-based: kick-off within 1–2 weeks',
+  'avail-strong': 'Currently accepting new engagements; start date confirmed after scoping',
+  'avail-detail': '· Monthly Retainer: max 2 concurrent engagements · Advisory currently available · Project and retainer starts scheduled after scope review',
   'avail-cta':    'Reserve a slot →',
 
   // why studio section
@@ -889,13 +889,13 @@ const I18N = {
 
   // about studio section
   'h2-about': 'About the Studio',
-  'about-p1': '<strong>HurricaneSoft Ltd.</strong> — <strong>founded in Taipei in 2002</strong> (Tax ID <strong>80289779</strong>). With 24 years of engineering and technical leadership experience, we focus on delivery-pipeline automation, AI / SaaS products, and enterprise system modernization for the AI era.',
+  'about-p1': '<strong>HurricaneSoft Ltd.</strong> — <strong>founded in Taipei in 2002</strong> (Tax ID <strong>80289779</strong>). Hands-on generative AI and LLM engineering since 2022, focused on AI Agent and LLM platforms, multi-tenant SaaS, delivery-pipeline automation, and enterprise system modernization.',
   'about-p2': 'Principal <strong>Wang Ying-Hao</strong> — 25 years of hands-on software engineering and 24 years in technical leadership. Has served enterprise clients across <strong>Japanese-affiliated software firms, digital media, interactive design, and government financial institutions</strong> as tech lead, principal engineer, and technical consultant. Product experience spans a <strong>bank-side credit guarantee core system</strong> (.NET 8 + Blazor), an <strong>iOS social game</strong> (App Store live), a <strong>Pocket PC suite sold in 400+ airports worldwide</strong>, in-vehicle entertainment systems, and a web POP editor — covering enterprise, consumer, and embedded domains.',
 
   // FAQ section
   'h2-faq': 'FAQ — Frequently Asked Questions',
   'faq1-q': 'How soon can you start?',
-  'faq1-a': 'Advisory engagements are available immediately (minimum 4 hours). Monthly Retainer has a maximum of 2 concurrent slots — next availability from <strong>2026/07 (approximately 5 weeks out)</strong>. Project-based engagements can kick off within 1–2 weeks depending on scope.',
+  'faq1-a': 'Advisory engagements are currently available (minimum 4 hours). Monthly Retainer is limited to 2 concurrent engagements. Project and retainer start dates are confirmed after scope review.',
   'faq2-q': 'Do you sign NDAs and issue invoices?',
   'faq2-a': 'Yes. Invoices are available under a registered company tax ID. Our standard NDA template can be signed immediately; custom NDA requests are addressed within 24 hours. Payment accepted via wire transfer / Wise / crypto (USDC).',
   'faq3-q': 'Why US$10K/month instead of hourly billing?',
@@ -920,10 +920,10 @@ const I18N = {
   'contact-note':         'Free 30-min consultation · Reply within 24 hours · No pressure — if it\'s not a fit, we\'ll say so',
 
   // footer
-  'footer-note':    'v9.00 · Last updated 2026/05/26 20:44 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
+  'footer-note':    'v9.05 · Last updated 2026/08/21 · Project-based / Advisory / Monthly Retainer · invoice available (company tax ID)',
   'footer-consult': '📧 Hire Us',
   'footer-pipeline':'🌪️ LF Pipeline — Live Portfolio ↗',
-  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · Principal: Wang Ying-Hao · v9.00',
+  'footer-copy':    '© HurricaneSoft Ltd. · Tax ID 80289779 · Founder & Principal Engineer: Wang Ying-Hao · v9.05',
   'footer-interview':'Interview Deck →',
 
   // open-source R&D section

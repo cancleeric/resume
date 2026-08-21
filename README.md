@@ -2,7 +2,7 @@
 
 把整套開發流程自動化（規格→設計→實作→審查→部署→維運），一個人扛起以往需要整支團隊的產出。
 
-這個 repo 是**公司對外接案的主要入口頁**，同時也是「開發流程自動化」最直接的實體證明——頁面本身每小時由 AI 自動迭代、commit、push、部署，無人手動改 code。
+這個 repo 是**公司對外接案的主要入口頁**，同時也是「開發流程自動化」的實體證明——規格、實作、審查、測試與部署皆納入 AI 原生工程流程，實際優化紀錄可由 commit 與 CHANGELOG 查證。
 
 ---
 
@@ -13,7 +13,7 @@
 | 主入口（redirect） | https://cancleeric.github.io/resume/ |
 | 設計版 · 亮（主力） | https://cancleeric.github.io/resume/design/index-light.html |
 | 設計版 · 深 | https://cancleeric.github.io/resume/design/index.html |
-| 標準版（舊） | https://cancleeric.github.io/resume/resume.html |
+| 標準版 | https://cancleeric.github.io/resume/resume.html |
 
 ---
 

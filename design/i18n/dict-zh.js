@@ -16,7 +16,7 @@ window.DICT_ZH = {
   'vs.design.light':     '設計 · 亮',
 
   // ── meta-live banner ─────────────────────────────────────────────────────
-  'metalive.head':       '這個頁面 <strong>100% 由 LLM 自主開發維護</strong>　·　無人手動改 code　·　每小時自動跑一輪　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong>',
+  'metalive.head':       '這個頁面以 <strong>AI 原生工程流程持續維護</strong>　·　規格、實作、審查、測試與部署皆有 AI 協作　·　您正在看的就是<strong>「開發流程自動化」實際成果</strong>',
   'metalive.step.01':    '① 載入頁面',
   'metalive.step.02':    '② AI 審查挑最弱點',
   'metalive.step.03':    '③ 瀏覽器自動化親測',
@@ -51,19 +51,19 @@ window.DICT_ZH = {
 
   // ── hero ─────────────────────────────────────────────────────────────────
   'hero.status':         'STATUS: 接案中',
-  'hero.status.slot':    '限量檔期 · NEXT 2026/07',
+  'hero.status.slot':    '目前可承接 · 同時最多 2 案',
   'hero.h1_line1':       '整支團隊的產出，',
   'hero.h1_line2':       '一個人交付。',
-  'hero.sub':            '四年 AI 原生開發實戰。颶風軟體已把 AI 深度導入<b style="color:var(--text-hi)">整套開發與營運流程</b>：規格 → 設計 → 實作 → 審查 → 部署 → 維運，由多角色 AI Agent／數位員工與自動化工具鏈分工協作。',
-  'hero.claim':          '四年 AI 實戰累積：<b>以 AI 協作開發 14+ 個產品、維運 30+ 個生產系統，SaaS 0→生產最快 23 天（214 commits，git 紀錄可查）</b>。數位員工分工支援研究、規格、開發、測試、審查、部署與營運。',
+  'hero.sub':            '自 2022 年起投入生成式 AI／LLM 實務。颶風軟體已把 AI 深度導入<b style="color:var(--text-hi)">整套開發與營運流程</b>：規格 → 設計 → 實作 → 審查 → 部署 → 維運，由多角色 AI Agent／數位員工與自動化工具鏈分工協作。',
+  'hero.claim':          'AI 原生工程實績：<b>以 AI 協作開發 14+ 個產品、維運 30+ 個生產系統，SaaS 0→生產最快 23 天（214 commits，git 紀錄可查）</b>。數位員工分工支援研究、規格、開發、測試、審查、部署與營運。',
   'hero.cta.primary':    '預約 30 分鐘免費諮詢',
   'hero.cta.pipeline':   '進 LF Pipeline 看現場',
-  'hero.cta.note':       '30 分鐘 · 不綁約 · 下個檔期 2026/07，同時最多 2 案',
+  'hero.cta.note':       '30 分鐘 · 不綁約 · 目前可承接新案，同時最多 2 案',
   'hero.kpi.01.label':   '生產系統',
   'hero.kpi.02.label':   'AI · SaaS 產品線',
   'hero.kpi.03.label':   'Cloud Run 服務',
-  'hero.kpi.04.label':   '年 AI 實戰',
-  'hero.avail.msg':      '下個可承接檔期：2026/07 起，最快 5 週後 kick-off',
+  'hero.kpi.04.label':   '生成式 AI／LLM 實務',
+  'hero.avail.msg':      '目前可承接新案，啟動時間依 scope 確認',
   'hero.avail.meta':     'RETAINER · 同時段最多 2 案',
 
   // ── pipeline visual ──────────────────────────────────────────────────────
@@ -115,7 +115,7 @@ window.DICT_ZH = {
   'why.studio.head':     '颶風軟體',
   'why.studio.row.01':   '一個負責人直扛 + AI 副手團隊，從 spec 到維運不中斷',
   'why.studio.row.02':   'US$10k/月 fixed，直接買產出、不買中間人',
-  'why.studio.row.03':   '專案制 1–2 週啟動、月費下個檔期 2026/07',
+  'why.studio.row.03':   '目前可承接；專案制與月費合作依 scope 安排啟動',
   'why.studio.row.04':   '整條 pipeline 一個團隊主責（前端 · 後端 · AI · DevOps · 資安）——零交接斷點、零「那不是我的部分」',
   'why.studio.row.05':   '無決策延遲：負責人即拍板者，AI 提前跑風險模擬',
   'why.studio.row.06':   '颶風軟體自有產品與客戶系統持續運行；SaaS 0→生產最快 23 天（214 commits 到上線）',
@@ -325,7 +325,7 @@ window.DICT_ZH = {
   'faq.section.title':        '常見問題。',
   'faq.section.sub':          '如果這裡沒有答案，預約 30 分鐘諮詢直接問。第一次免費。',
   'faq.01.q': '檔期多久能排到？',
-  'faq.01.a': '顧問諮詢類隨到隨接（4 小時起）。\n\n月費 Retainer 同時段最多 2 案，下個檔期 2026/07 起（約 5 週後）。\n\n專案制依範圍 1-2 週內可 kick-off。',
+  'faq.01.a': '顧問諮詢目前可安排（最少 4 小時）。\n\n月費 Retainer 同時段最多 2 案；專案制與月費合作的啟動時間會在確認 scope 後明確排定。',
   'faq.02.q': '會簽 NDA / 開發票嗎？',
   'faq.02.a': '**會。**可開立公司行號統編發票（80289779）。\n\n標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。\n\n付款支援電匯／Wise／加密貨幣（USDC）。',
   'faq.03.q': '為何 US$ 10K/月不是按 hourly？',
@@ -353,7 +353,7 @@ window.DICT_ZH = {
   'cta.secondary':        '寄信先聊聊',
 
   // ── footer ────────────────────────────────────────────────────────────────
-  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v9.04 · 最後更新 2026/08/15',
+  'footer.copy':          '© 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · 台北市忠孝東路六段 79 號 2 樓 · v9.05 · 最後更新 2026/08/21',
   'footer.interview':     '面試簡報',
 
   // ── tokens section（非用戶可見，但補完整）────────────────────────────────

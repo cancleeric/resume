@@ -11,7 +11,7 @@
 <meta property="og:locale" content="zh_TW" />
 <meta property="og:locale:alternate" content="en_US" />
 <meta property="og:title" content="颶風軟體有限公司 · HurricaneSoft Ltd. — 開發流程自動化接案 · 一年交付 14+ 產品" />
-<meta property="og:description" content="颶風軟體累積四年 AI 原生開發實戰，以多角色 AI Agent／數位員工協作完成規格、設計、實作、測試、審查、部署與營運；已交付 14+ 產品並維運 30+ 生產系統。" />
+<meta property="og:description" content="颶風軟體自 2022 年起投入生成式 AI／LLM 實務，以多角色 AI Agent／數位員工協作完成規格、設計、實作、測試、審查、部署與營運；已交付 14+ 產品並維運 30+ 生產系統。" />
 <meta property="og:url" content="https://cancleeric.github.io/resume/design/index-light.html" />
 <link rel="canonical" href="https://cancleeric.github.io/resume/design/index-light.html" />
 <link rel="alternate" hreflang="zh-Hant" href="https://cancleeric.github.io/resume/design/index-light.html" />
@@ -77,7 +77,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "檔期多久能排到？", "acceptedAnswer": { "@type": "Answer", "text": "顧問諮詢類隨到隨接（4 小時起）。月費 Retainer 同時段最多 2 案，下個檔期 2026/07 起（約 5 週後）。專案制依範圍 1-2 週內可 kick-off。" } },
+    { "@type": "Question", "name": "檔期多久能排到？", "acceptedAnswer": { "@type": "Answer", "text": "顧問諮詢目前可安排（最少 4 小時）。月費 Retainer 同時段最多 2 案；專案制與月費合作的啟動時間會在確認 scope 後明確排定。" } },
     { "@type": "Question", "name": "會簽 NDA / 開發票嗎？", "acceptedAnswer": { "@type": "Answer", "text": "會。可開立公司行號統編發票（80289779）。標準 NDA 模板可立即簽署，客製 NDA 24 小時內回覆。付款支援電匯／Wise／加密貨幣（USDC）。" } },
     { "@type": "Question", "name": "為何 US$ 10K/月不是按 hourly？", "acceptedAnswer": { "@type": "Answer", "text": "月費模式讓負責人 + AI 副手團隊全力投入，不必為了計時打折注意力。重點不在「時數」，在產出密度——自家工具鏈讓單月產出等價傳統做法 2–3 個月進度（實證：SaaS 0→生產最快 23 天）。同等 hourly 預算（約 US$ 80/h × 125h）只買到一個工程師的單層交付；月費買的是整條 pipeline 全覆蓋：規格→設計→開發→審查→部署→維運。" } },
     { "@type": "Question", "name": "跟你合作會用到哪些 AI 工具？", "acceptedAnswer": { "@type": "Answer", "text": "工具鏈：Claude Code（主力）+ 自建 LLM Gateway（Brain）+ AI 副手角色庫（claude-agents）。所有 LLM 調用走自家 Anemone gateway —— client code 與資料全程不出您的環境（除非您授權）。" } },
@@ -675,7 +675,7 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 <div class="meta-live">
   <div class="meta-live__head">
     <span class="meta-live__dot"></span>
-    <span data-i18n="metalive.head">這個頁面 <strong>100% 由 LLM 自主開發維護</strong>　·　無人手動改 code　·　每小時自動跑一輪　·　您正在看的就是<strong>「開發流程自動化」實際運作中</strong></span>
+    <span data-i18n="metalive.head">這個頁面以 <strong>AI 原生工程流程持續維護</strong>　·　規格、實作、審查、測試與部署皆有 AI 協作　·　您正在看的就是<strong>「開發流程自動化」實際成果</strong></span>
   </div>
   <div class="meta-live__steps">
     <span class="meta-live__step" data-i18n="metalive.step.01">① 載入頁面</span><span class="meta-live__arr">→</span>
@@ -693,9 +693,9 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 <div id="root"></div>
 
 <!-- i18n — 必須在 Babel / JSX 之前載入 -->
-<script src="i18n/dict-zh.js?v=9.04"></script>
-<script src="i18n/dict-en.js?v=9.04"></script>
-<script src="i18n/core.js?v=9.04"></script>
+<script src="i18n/dict-zh.js?v=9.05"></script>
+<script src="i18n/dict-en.js?v=9.05"></script>
+<script src="i18n/core.js?v=9.05"></script>
 
 <!-- React -->
 <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
@@ -703,18 +703,18 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
 <!-- Sections (shared with index.html) -->
-<script type="text/babel" src="src/shared.jsx?v=9.04"></script>
-<script type="text/babel" src="src/hero.jsx?v=9.04"></script>
-<script type="text/babel" src="src/trust.jsx?v=9.04"></script>
-<script type="text/babel" src="src/why-studio.jsx?v=9.04"></script>
-<script type="text/babel" src="src/services.jsx?v=9.04"></script>
-<script type="text/babel" src="src/pricing.jsx?v=9.04"></script>
-<script type="text/babel" src="src/systems.jsx?v=9.04"></script>
-<script type="text/babel" src="src/timeline.jsx?v=9.04"></script>
-<script type="text/babel" src="src/tech-faq.jsx?v=9.04"></script>
-<script type="text/babel" src="src/faq-cta.jsx?v=9.04"></script>
-<script type="text/babel" src="src/open-projects.jsx?v=9.04"></script>
-<script type="text/babel" src="src/app.jsx?v=9.04"></script>
+<script type="text/babel" src="src/shared.jsx?v=9.05"></script>
+<script type="text/babel" src="src/hero.jsx?v=9.05"></script>
+<script type="text/babel" src="src/trust.jsx?v=9.05"></script>
+<script type="text/babel" src="src/why-studio.jsx?v=9.05"></script>
+<script type="text/babel" src="src/services.jsx?v=9.05"></script>
+<script type="text/babel" src="src/pricing.jsx?v=9.05"></script>
+<script type="text/babel" src="src/systems.jsx?v=9.05"></script>
+<script type="text/babel" src="src/timeline.jsx?v=9.05"></script>
+<script type="text/babel" src="src/tech-faq.jsx?v=9.05"></script>
+<script type="text/babel" src="src/faq-cta.jsx?v=9.05"></script>
+<script type="text/babel" src="src/open-projects.jsx?v=9.05"></script>
+<script type="text/babel" src="src/app.jsx?v=9.05"></script>
 
 <script>
 /* bottom-dock 捲動自動隱藏：下滑收、上滑/近頂/近底顯示 */
@@ -747,7 +747,7 @@ html[data-theme="light"] .price-card.highlight .price-amount .num {
 <script>
 // 近期自動優化 — 讀 CHANGELOG.md 顯示最近一次優化（轉換策略槓桿 1：自我優化證據）
 (function(){
-  fetch('../CHANGELOG.md?v=9.04').then(function(r){return r.ok?r.text():Promise.reject();}).then(function(t){
+  fetch('../CHANGELOG.md?v=9.05').then(function(r){return r.ok?r.text():Promise.reject();}).then(function(t){
     var e=t.split(/\n## /)[1]; if(!e) return;
     var ln=e.split('\n'), h=(ln[0]||'').split(' — '), ver=(h[0]||'').trim();
     var b=''; for(var i=1;i<ln.length;i++){ if(ln[i].indexOf('- ')===0){ b=ln[i].slice(2); break; } }

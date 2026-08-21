@@ -1,3 +1,9 @@
+## v9.05 · 2026-08-21
+- positioning(A/B/C版): 標準、設計深色與設計亮色統一為 HurricaneSoft 公司／技術品牌定位，標準版職稱更新為「創辦人暨首席工程師」
+- copy(A/B/C版): 「四年 AI」改為「自 2022 年起投入生成式 AI／LLM 實務」，避免年資文案每年手動更新
+- availability(A/B/C版): 移除已過期的 2026/07 檔期，改為「目前可承接，啟動時間依 scope 確認」；ZH/EN 與 FAQ schema 同步
+- trust(A/B/C版): 將「100% 由 LLM、每小時、無人手動改 code」改為可驗證的 AI 原生工程流程與 commit／CHANGELOG 紀錄
+
 ## v9.03 · 2026-08-15
 - content(B/C版): 依 HurricaneSoft 官網同步產品與案例——新增 LobsterFarm、OpenClaw、Aegis、Nautilus、LocalIDS；公開 STA 舊系統現代化與美甲工作室工作單案例；ZH/EN 雙語同步
 - copy(B/C版): 系統區主張由未具來源的總量數字改為「共用平台到垂直 SaaS」架構敘事，對齊官網公開內容
