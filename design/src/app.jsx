@@ -21,7 +21,7 @@ function Nav({ onMenuOpen }) {
           <a href="#services" className="nav-link-text">{t('nav.services')}</a>
           <a href="#pricing" className="nav-link-text">{t('nav.pricing')}</a>
           <a href="#systems" className="nav-link-text">{t('nav.systems')}</a>
-          <a href="#timeline" className="nav-link-text">{t('nav.timeline')}</a>
+          <a href="index-cases.html" className="nav-link-text">{t('nav.timeline')}</a>
           <a href="#faq" className="nav-link-text">{t('nav.faq')}</a>
           <a href="../namecard.html" className="nav-link-text">{t('nav.namecard')}</a>
           <a href="https://www.hurricanesoft.com.tw/pipeline" target="_blank" rel="noopener" className="lf nav-link-text" style={{ color: 'var(--cyan)', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
@@ -35,7 +35,7 @@ function Nav({ onMenuOpen }) {
           <button className="vs-lang-btn" onClick={() => window.setDesignLang(window.LANG === 'en' ? 'zh' : 'en')} aria-label="切換語言 / Switch language">
             {window.LANG === 'en' ? '中文' : 'EN'}
           </button>
-          <a href="#cta" className="cta btn btn-primary btn-sm nav-cta" style={{ marginLeft: 4 }}>
+          <a href="index-book.html" className="cta btn btn-primary btn-sm nav-cta" style={{ marginLeft: 4 }}>
             {t('nav.cta')}
           </a>
           <button className="nav-hamburger" onClick={onMenuOpen} aria-label={t('nav.hamburger')}>
@@ -52,7 +52,7 @@ function MobileMenu({ open, onClose }) {
     { href: '#services', labelKey: 'mobile.link.services', en: 'SERVICES' },
     { href: '#pricing', labelKey: 'mobile.link.pricing', en: 'PRICING' },
     { href: '#systems', labelKey: 'mobile.link.systems', en: 'SYSTEMS' },
-    { href: '#timeline', labelKey: 'mobile.link.timeline', en: 'TIMELINE' },
+    { href: 'index-cases.html', labelKey: 'mobile.link.timeline', en: 'CASES' },
     { href: '#tech', labelKey: 'mobile.link.tech', en: 'TECH' },
     { href: '#oss', labelKey: 'mobile.link.oss', en: 'OSS' },
     { href: '#faq', labelKey: 'mobile.link.faq', en: 'FAQ' },
@@ -84,7 +84,7 @@ function MobileMenu({ open, onClose }) {
             <span>{t('mobile.lf')}</span>
             <ArrowUpRight />
           </a>
-          <a href="#cta" className="btn btn-primary mobile-cta" onClick={onClose}>
+          <a href="index-book.html" className="btn btn-primary mobile-cta" onClick={onClose}>
             {t('mobile.cta')}
             <ArrowRight />
           </a>
@@ -156,7 +156,7 @@ function BottomDock() {
         <span className="dock-label">LF Pipeline</span>
       </a>
       <span className="divider"></span>
-      <a className="item cta" href="#cta">
+      <a className="item cta" href="index-book.html">
         <span className="dock-cta-text">{t('nav.cta')} →</span>
       </a>
     </div>

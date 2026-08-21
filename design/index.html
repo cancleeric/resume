@@ -525,9 +525,9 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 <div id="root"></div>
 
 <!-- i18n — 必須在 Babel / JSX 之前載入 -->
-<script src="i18n/dict-zh.js?v=9.05"></script>
-<script src="i18n/dict-en.js?v=9.05"></script>
-<script src="i18n/core.js?v=9.05"></script>
+<script src="i18n/dict-zh.js?v=9.06"></script>
+<script src="i18n/dict-en.js?v=9.06"></script>
+<script src="i18n/core.js?v=9.06"></script>
 
 <!-- React -->
 <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
@@ -535,17 +535,17 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
 <!-- Sections -->
-<script type="text/babel" src="src/shared.jsx?v=9.05"></script>
-<script type="text/babel" src="src/hero.jsx?v=9.05"></script>
-<script type="text/babel" src="src/trust.jsx?v=9.05"></script>
-<script type="text/babel" src="src/why-studio.jsx?v=9.05"></script>
-<script type="text/babel" src="src/services.jsx?v=9.05"></script>
-<script type="text/babel" src="src/pricing.jsx?v=9.05"></script>
-<script type="text/babel" src="src/systems.jsx?v=9.05"></script>
-<script type="text/babel" src="src/timeline.jsx?v=9.05"></script>
-<script type="text/babel" src="src/tech-faq.jsx?v=9.05"></script>
-<script type="text/babel" src="src/open-projects.jsx?v=9.05"></script>
-<script type="text/babel" src="src/app.jsx?v=9.05"></script>
+<script type="text/babel" src="src/shared.jsx?v=9.06"></script>
+<script type="text/babel" src="src/hero.jsx?v=9.06"></script>
+<script type="text/babel" src="src/trust.jsx?v=9.06"></script>
+<script type="text/babel" src="src/why-studio.jsx?v=9.06"></script>
+<script type="text/babel" src="src/services.jsx?v=9.06"></script>
+<script type="text/babel" src="src/pricing.jsx?v=9.06"></script>
+<script type="text/babel" src="src/systems.jsx?v=9.06"></script>
+<script type="text/babel" src="src/timeline.jsx?v=9.06"></script>
+<script type="text/babel" src="src/tech-faq.jsx?v=9.06"></script>
+<script type="text/babel" src="src/open-projects.jsx?v=9.06"></script>
+<script type="text/babel" src="src/app.jsx?v=9.06"></script>
 
 <script>
 /* bottom-dock 捲動自動隱藏：下滑收、上滑/近頂/近底顯示 */
@@ -578,7 +578,7 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 <script>
 // 近期自動優化 — 讀 CHANGELOG.md 顯示最近一次優化（轉換策略槓桿 1：自我優化證據）
 (function(){
-  fetch('../CHANGELOG.md?v=9.05').then(function(r){return r.ok?r.text():Promise.reject();}).then(function(t){
+  fetch('../CHANGELOG.md?v=9.06').then(function(r){return r.ok?r.text():Promise.reject();}).then(function(t){
     var e=t.split(/\n## /)[1]; if(!e) return;
     var ln=e.split('\n'), h=(ln[0]||'').split(' — '), ver=(h[0]||'').trim();
     var b=''; for(var i=1;i<ln.length;i++){ if(ln[i].indexOf('- ')===0){ b=ln[i].slice(2); break; } }

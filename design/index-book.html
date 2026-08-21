@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#FFFFFF" />
+<title>預約諮詢 · 颶風軟體有限公司 HurricaneSoft Ltd.</title>
+<!-- meta.description — dict-zh.js key: meta.description -->
+<meta name="description" content="颶風軟體有限公司（HurricaneSoft Ltd.）預約 30 分鐘免費諮詢。先聊清楚需求，再決定要不要合作。免費、無壓力。月費 US$ 10,000；專案制 US$ 8,000 起；健檢 US$ 1,500；諮詢 US$ 250/時。" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="預約諮詢 · 颶風軟體有限公司 HurricaneSoft Ltd." />
+<meta property="og:description" content="30 分鐘免費諮詢。先聊清楚需求，再決定要不要合作。" />
+<meta property="og:url" content="https://cancleeric.github.io/resume/design/index-book.html" />
+<link rel="canonical" href="https://cancleeric.github.io/resume/design/index-book.html" />
+<meta property="og:site_name" content="颶風軟體有限公司 HurricaneSoft Ltd." />
+<meta property="og:image" content="https://cancleeric.github.io/resume/assets/avatar.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="預約諮詢 · 颶風軟體有限公司 HurricaneSoft Ltd." />
+<meta name="twitter:description" content="30 分鐘免費諮詢。先聊清楚需求，再決定要不要合作。免費、無壓力。" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3Cg%20transform='translate(20%2020)%20rotate(-18)'%20fill='none'%20stroke='%230EA5E9'%20stroke-width='2.6'%20stroke-linecap='round'%3E%3Cellipse%20cx='0'%20cy='-3.5'%20rx='14'%20ry='5'/%3E%3Cellipse%20cx='0'%20cy='3.5'%20rx='14'%20ry='5'/%3E%3C/g%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+TC:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+/* ── Design tokens — copied from index-cases.html :root block ── */
+:root {
+  --bg: #FFFFFF;
+  --bg-2: #F8F9FB;
+  --surface-1: #FFFFFF;
+  --surface-2: #F1F3F6;
+  --surface-3: #E8EBF0;
+  --border: #E5E7EB;
+  --border-strong: #D1D5DB;
+  --border-subtle: #EFF1F4;
+
+  --text-hi: #0A0B0F;
+  --text-mid: #52555F;
+  --text-low: #8A8D96;
+  --text-dim: #777A83;
+
+  --orange: #FF6B35;
+  --orange-soft: rgba(255, 107, 53, 0.10);
+  --orange-line: rgba(255, 107, 53, 0.30);
+  --cyan: #0EA5E9;
+  --cyan-soft: rgba(14, 165, 233, 0.08);
+  --cyan-line: rgba(14, 165, 233, 0.25);
+
+  --live: #16A34A;
+  --ga: #0EA5E9;
+  --beta: #D97706;
+
+  --r-xs: 3px;
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+
+  --font-sans: 'Inter', 'IBM Plex Sans TC', system-ui, sans-serif;
+  --font-tc: 'IBM Plex Sans TC', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, monospace;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--bg);
+  color: var(--text-hi);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(255,107,53,0.05), transparent 60%),
+    radial-gradient(900px 500px at -10% 30%, rgba(14,165,233,0.04), transparent 60%),
+    var(--bg);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, #F1F3F6 1px, transparent 1px),
+    linear-gradient(to bottom, #F1F3F6 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at 50% 30%, black 30%, transparent 80%);
+  opacity: 0.7;
+}
+
+::selection { background: rgba(255,107,53,0.22); color: #0A0B0F; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; background: none; border: none; color: inherit; cursor: pointer; }
+
+.mono { font-family: var(--font-mono); font-feature-settings: "ss01"; }
+.tc { font-family: var(--font-tc); }
+
+.container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+/* buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 44px; padding: 0 20px;
+  border-radius: var(--r-md);
+  font-size: 14px; font-weight: 500;
+  letter-spacing: -0.005em;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--orange);
+  color: #110800 !important;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(255,107,53,0.25), inset 0 1px 0 rgba(255,255,255,0.18);
+}
+.btn-primary:hover {
+  background: #FF7E4F;
+  box-shadow: 0 0 0 4px rgba(255,107,53,0.12), 0 1px 2px rgba(255,107,53,0.25);
+  transform: translateY(-1px);
+}
+.btn-ghost {
+  background: var(--bg);
+  color: var(--text-hi);
+  border-color: var(--border-strong);
+}
+.btn-ghost:hover {
+  background: var(--surface-2);
+  border-color: #B5B8C0;
+}
+.btn-sm { height: 36px; padding: 0 14px; font-size: 13px; }
+.btn-lg { height: 52px; padding: 0 28px; font-size: 16px; }
+
+/* ── meta-live banner — copied from index-cases.html ── */
+.meta-live {
+  padding: 9px 18px;
+  background: linear-gradient(90deg, #064e3b 0%, #065f46 100%);
+  color: #d1fae5;
+  font-size: 12.5px;
+  line-height: 1.5;
+  font-family: Inter, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+.meta-live__head {
+  display: flex; align-items: center; justify-content: center; gap: 9px; text-align: center;
+}
+.meta-live__dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 0 3px rgba(52,211,153,.25);
+  flex-shrink: 0;
+  animation: ml-pulse 2s ease-in-out infinite;
+}
+@keyframes ml-pulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(52,211,153,.25); }
+  50%       { box-shadow: 0 0 0 6px rgba(52,211,153,.12); }
+}
+.meta-live strong { color: #fff; font-weight: 700; }
+.meta-live__steps {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 4px 5px; margin-top: 6px; padding-top: 6px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.meta-live__step {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(52,211,153,.3);
+  border-radius: 4px; padding: 2px 8px;
+  font-size: 11px; font-weight: 600; color: #ecfdf5; white-space: nowrap;
+}
+.meta-live__arr { color: #34d399; font-size: 11px; font-weight: 700; }
+@media print { .meta-live { display: none !important; } }
+@media (max-width: 600px) { .meta-live { font-size: 11px; padding: 8px 12px; } .meta-live__step { font-size: 10px; padding: 2px 6px; } }
+
+/* ── nav — copied from index-cases.html ── */
+.nav {
+  position: sticky;
+  top: var(--meta-h, 72px);
+  z-index: 30;
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.nav-inner {
+  max-width: 1280px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 32px;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 600; letter-spacing: -0.01em;
+}
+.nav-logo .mark { width: 30px; height: 30px; color: var(--cyan); flex-shrink: 0; }
+.nav-links { display: flex; gap: 6px; align-items: center; }
+.nav-links a {
+  padding: 8px 12px; font-size: 13px;
+  color: var(--text-mid); border-radius: 4px; transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--text-hi); }
+
+/* version switcher — copied from index-cases.html */
+.ver-switch {
+  display: inline-flex; align-items: center; gap: 2px;
+  padding: 2px; margin-left: 4px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+.ver-switch a {
+  padding: 5px 9px; border-radius: 3px;
+  font-size: 11.5px; font-weight: 600;
+  color: var(--text-mid); white-space: nowrap; transition: all 0.15s;
+}
+.ver-switch a:hover { color: var(--text-hi); background: var(--surface-3); }
+.ver-switch a.active { background: var(--text-hi); color: var(--bg); pointer-events: none; }
+
+@media (max-width: 900px) {
+  .nav-links > a:not(.cta) { display: none; }
+}
+
+/* ── section layout ── */
+.section { position: relative; z-index: 1; }
+
+.section-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #B14A0E;
+  margin-bottom: 24px;
+}
+.section-label::before {
+  content: ""; width: 24px; height: 1px; background: #B14A0E;
+}
+.section-title {
+  font-size: clamp(36px, 4.5vw, 56px);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  color: var(--text-hi);
+  margin-bottom: 16px;
+}
+.section-sub {
+  color: var(--text-mid);
+  font-size: 17px;
+  max-width: 60ch;
+  line-height: 1.55;
+}
+
+/* ── hero ── */
+.hero {
+  padding: 100px 0 72px;
+  text-align: center;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  font-family: var(--font-mono);
+  font-size: 12px; font-weight: 500;
+  color: var(--text-mid);
+  background: var(--surface-1);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 32px;
+}
+.hero-eyebrow .dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--live);
+  box-shadow: 0 0 8px rgba(22,163,74,0.5);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.hero-h1 {
+  font-family: var(--font-tc);
+  font-size: clamp(40px, 6vw, 80px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-hi);
+}
+.hero-h1 .accent { color: var(--orange); }
+.hero-sub {
+  font-family: var(--font-tc);
+  font-size: 18px;
+  color: var(--text-mid);
+  max-width: 46ch;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+.hero-cta {
+  display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.hero-note {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-low);
+  letter-spacing: 0.04em;
+}
+
+/* ── steps / flow section ── */
+.flow-section {
+  padding: 80px 0 80px;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+@media (max-width: 900px) {
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .steps-grid { grid-template-columns: 1fr; }
+}
+.step-card {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+.step-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--orange);
+  margin-bottom: 16px;
+  display: flex; align-items: center; gap: 8px;
+}
+.step-num::after {
+  content: ""; flex: 1; height: 1px;
+  background: var(--orange-line);
+}
+.step-title {
+  font-family: var(--font-tc);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-hi);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+.step-desc {
+  font-family: var(--font-tc);
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+/* ── pricing section ── */
+.pricing-section {
+  padding: 80px 0 80px;
+  background:
+    radial-gradient(800px 400px at 80% 50%, rgba(255,107,53,0.04), transparent 60%),
+    transparent;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+  align-items: stretch;
+}
+@media (max-width: 1100px) {
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+}
+.price-card {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 28px 24px 24px;
+  display: flex; flex-direction: column;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s, transform 0.2s;
+}
+.price-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+.price-card.highlight {
+  background:
+    linear-gradient(180deg, rgba(255,107,53,0.08), rgba(255,107,53,0.0) 60%),
+    var(--surface-1);
+  border-color: var(--orange-line);
+  padding-top: 36px;
+  padding-bottom: 32px;
+  box-shadow: 0 20px 60px -20px rgba(255,107,53,0.2);
+}
+.price-card.entry { border-color: rgba(22,163,74,0.35); }
+/* badges */
+.price-badge {
+  position: absolute; top: -10px; left: 20px;
+  padding: 4px 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  border-radius: 2px;
+  font-weight: 600;
+}
+.price-badge-recommended { background: var(--orange); color: #110800; }
+/* dict-zh.js key: pricing.recommended = 'RECOMMENDED · 主推' */
+.price-badge-entry { background: #0d7a3a; color: #fff; }
+/* dict-zh.js key: pricing.entry = '低風險入口 · ENTRY' */
+
+.price-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--text-mid);
+  margin-bottom: 14px;
+}
+.price-card.highlight .price-label { color: var(--orange); }
+
+.price-tc {
+  font-family: var(--font-tc);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 4px;
+  color: var(--text-hi);
+}
+.price-tagline {
+  font-family: var(--font-tc);
+  font-size: 13px;
+  color: var(--text-mid);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.price-amount {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--text-hi);
+  letter-spacing: -0.04em;
+  display: flex; align-items: baseline; gap: 6px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+.price-amount .num { font-size: 36px; }
+.price-card.highlight .price-amount .num {
+  font-size: 48px;
+  background: linear-gradient(180deg, #0A0B0F, #FF6B35);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
+.price-amount .unit { font-size: 14px; color: var(--text-low); font-family: var(--font-mono); }
+
+.price-divider {
+  height: 1px; background: var(--border-subtle);
+  margin: 0 0 16px;
+}
+.price-includes {
+  list-style: none;
+  display: grid; gap: 8px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.price-includes li {
+  font-family: var(--font-tc);
+  font-size: 13px;
+  color: var(--text-mid);
+  display: flex; align-items: flex-start; gap: 8px;
+}
+.price-includes li::before {
+  content: "✓";
+  color: var(--live);
+  font-size: 12px;
+  margin-top: 1px;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+}
+.price-card.highlight .price-includes li { color: var(--text-hi); }
+
+.price-source-note {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-low);
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+  opacity: 0.7;
+}
+
+.price-cta {
+  width: 100%;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* ── contact CTA section ── */
+.contact-section {
+  padding: 80px 0 100px;
+  text-align: center;
+}
+.contact-box {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 56px 48px;
+  background:
+    radial-gradient(600px 300px at 80% 100%, rgba(255,107,53,0.07), transparent 60%),
+    radial-gradient(500px 300px at 20% 0%, rgba(14,165,233,0.05), transparent 60%),
+    var(--surface-1);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-lg);
+  box-shadow: 0 20px 60px -20px rgba(0,0,0,0.06);
+}
+.contact-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--orange);
+  margin-bottom: 20px;
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.contact-eyebrow::before {
+  content: ""; width: 24px; height: 1px; background: var(--orange);
+}
+.contact-title {
+  font-family: var(--font-tc);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+  color: var(--text-hi);
+}
+.contact-title .accent { color: var(--orange); }
+.contact-sub {
+  font-family: var(--font-tc);
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+.contact-meta {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+  margin-top: 24px;
+}
+.contact-meta-item {
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-low);
+  letter-spacing: 0.04em;
+}
+.contact-meta-item::before { content: "·"; }
+.contact-meta-item:first-child::before { display: none; }
+
+/* ── footer ── */
+.footer-mini {
+  border-top: 1px solid var(--border-subtle);
+  padding: 40px 0;
+  text-align: center;
+}
+.footer-mini__copy {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-low);
+  letter-spacing: 0.04em;
+}
+
+/* ── scrollbar ── */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #D1D5DB; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #B5B8C0; }
+
+@media (max-width: 640px) {
+  .contact-box { padding: 36px 24px; }
+  .container { padding: 0 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- meta-live banner — copied from index-cases.html -->
+<div class="meta-live">
+  <div class="meta-live__head">
+    <span class="meta-live__dot"></span>
+    <span>這個頁面以 <strong>AI 原生工程流程持續維護</strong>&nbsp;·&nbsp;規格、實作、審查、測試與部署皆有 AI 協作&nbsp;·&nbsp;您正在看的就是<strong>「開發流程自動化」實際成果</strong></span>
+  </div>
+  <div class="meta-live__steps">
+    <span class="meta-live__step">① 載入頁面</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">② AI 審查挑最弱點</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">③ 瀏覽器自動化親測</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">④ 聚焦修改</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">⑤ git commit</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">⑥ push</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">⑦ GitHub Pages 自動部署</span>
+  </div>
+</div>
+
+<div class="grid-bg"></div>
+
+<!-- nav：自帶切換列，純連結，不碰 app.jsx -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../resume.html" class="nav-logo">
+      <svg class="mark" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+        <g transform="translate(15 15) rotate(-18)">
+          <ellipse cx="0" cy="-3.5" rx="11" ry="4" />
+          <ellipse cx="0" cy="3.5" rx="11" ry="4" />
+        </g>
+      </svg>
+      <span class="tc">颶風軟體</span>
+    </a>
+    <div class="nav-links">
+      <!-- 切換列：標準 / 設計·深 / 設計·亮 / 案例牆 / 預約諮詢（active） -->
+      <div class="ver-switch">
+        <a href="../resume.html">標準</a>
+        <a href="index.html">設計·深</a>
+        <a href="index-light.html">設計·亮</a>
+        <a href="index-cases.html">案例牆</a>
+        <a href="index-book.html" class="active">預約諮詢</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero section">
+  <div class="container">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      <span class="mono">目前可承接 · 啟動時間依 scope 確認</span>
+    </div>
+    <h1 class="hero-h1 tc">
+      預約 30 分鐘<br/><span class="accent">免費諮詢</span>
+    </h1>
+    <p class="hero-sub tc">
+      先聊清楚需求，再決定要不要合作。<br/>免費、無壓力。
+    </p>
+    <div class="hero-cta">
+      <!--
+        CTA primary mailto — 來源：faq-cta.jsx CTA() function，第 216 行
+        href="mailto:cancleeric@gmail.com?subject=%5B%E9%A0%90%E7%B4%84%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=..."
+        原文照抄，對應 dict-zh.js key: cta.primary = '預約諮詢 · 30 min free'
+      -->
+      <a class="btn btn-primary btn-lg" href="mailto:cancleeric@gmail.com?subject=%5B%E9%A0%90%E7%B4%84%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%83%B3%E9%A0%90%E7%B4%84%2030%20%E5%88%86%E9%90%98%E5%85%8D%E8%B2%BB%E8%AB%AE%E8%A9%A2%EF%BC%9A%0A%0A%E3%80%90%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%E3%80%90%E9%A0%90%E7%AE%97%20%2F%20%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A" target="_blank" rel="noopener">
+        預約諮詢 · 30 min free
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="index-cases.html">
+        看案例牆
+      </a>
+    </div>
+    <!-- hero.cta.note — dict-zh.js key: hero.cta.note -->
+    <p class="hero-note">30 分鐘 · 不綁約 · 目前可承接新案，同時最多 2 案</p>
+  </div>
+</section>
+
+<!-- ── 流程 4 步 ── -->
+<section class="flow-section section">
+  <div class="container">
+    <div class="section-label">FLOW · 合作流程</div>
+    <h2 class="section-title tc">付了錢，然後呢？</h2>
+    <p class="section-sub tc">從諮詢到交付，每一步都透明、可追蹤。</p>
+
+    <div class="steps-grid">
+      <!-- Step 1 -->
+      <div class="step-card">
+        <div class="step-num">STEP 01</div>
+        <div class="step-title tc">預約</div>
+        <div class="step-desc tc">30 分鐘免費聊需求——不推銷、不畫餅，先弄清楚您的問題和目標。</div>
+      </div>
+      <!-- Step 2 -->
+      <div class="step-card">
+        <div class="step-num">STEP 02</div>
+        <div class="step-title tc">明確報價</div>
+        <div class="step-desc tc">依需求給明確報價與時程。固定價、里程碑分期，沒有模糊地帶。</div>
+      </div>
+      <!-- Step 3 -->
+      <div class="step-card">
+        <div class="step-num">STEP 03</div>
+        <div class="step-title tc">開工 · 可追蹤</div>
+        <!-- dict-zh.js: faq.06.a — "每個里程碑驗收完即可拿走當下完整版本" / "每週進度同步" -->
+        <div class="step-desc tc">確認後開工。git 紀錄可查、每週進度同步——您隨時知道做到哪。</div>
+      </div>
+      <!-- Step 4 -->
+      <div class="step-card">
+        <div class="step-num">STEP 04</div>
+        <div class="step-title tc">交付 · 驗收 · 交接</div>
+        <!-- dict-zh.js: faq.06.a — "code、文件、CI/CD 設定、密鑰管理規範全交付給您" -->
+        <div class="step-desc tc">交付後驗收，一次完整交接：code、文件、CI/CD、密鑰規範全到位——主控權始終在您手上。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 方案 Pricing ── -->
+<section class="pricing-section section">
+  <div class="container">
+    <div class="section-label">PRICING · 方案</div>
+    <h2 class="section-title tc">4 種方案，挑一個合適的。</h2>
+    <!-- dict-zh.js key: pricing.section.sub (節選前段) -->
+    <p class="section-sub tc">免費 30 分諮詢 → 報價簽約（30% 訂金）→ 開發 → 里程碑驗收 → 上線（含 1 個月保固）。可開立統編發票（80289779）、支援電匯 / Wise / 加密貨幣 USDC。</p>
+
+    <div class="pricing-grid">
+
+      <!-- ─── tier.04 HEALTH CHECK ─── -->
+      <!--
+        來源：pricing.jsx tiers[0] (key='healthcheck')
+        price: 'US$ 1,500'               ← pricing.jsx line 9
+        tcKey: 'pricing.tier.04.tc'      ← dict-zh.js: '2 週開發流程自動化健檢'
+        taglineKey: 'pricing.tier.04.tagline' ← dict-zh.js: '低承諾、固定價的第一步'
+        href: pricing.jsx line 23 (healthcheck href，原文照抄)
+        badge: pricing.entry ← dict-zh.js: '低風險入口 · ENTRY'
+      -->
+      <div class="price-card entry">
+        <span class="price-badge price-badge-entry">低風險入口 · ENTRY</span>
+        <div class="price-label">HEALTH CHECK</div>
+        <!-- pricing.tier.04.tc — dict-zh.js -->
+        <h3 class="price-tc tc">2 週開發流程自動化健檢</h3>
+        <!-- pricing.tier.04.tagline — dict-zh.js -->
+        <p class="price-tagline tc">低承諾、固定價的第一步</p>
+        <!-- price — pricing.jsx line 9: 'US$ 1,500' -->
+        <div class="price-amount">
+          <span class="num">US$ 1,500</span>
+          <!-- pricing.tier.04.unit — dict-zh.js: '–2,000 / 健檢' -->
+          <span class="unit">–2,000 / 健檢</span>
+        </div>
+        <div class="price-divider"></div>
+        <ul class="price-includes">
+          <!-- pricing.tier.04.inc.01~04 — dict-zh.js -->
+          <li>2 週固定排程、明確交期</li>
+          <li>架構與技術債盤點診斷</li>
+          <li>自動化導入藍圖，文件可帶走</li>
+          <li>用小錢驗證合作，再決定要不要升級</li>
+        </ul>
+        <!-- href — pricing.jsx line 23, tier.04 healthcheck href，原文照抄 -->
+        <a href="mailto:cancleeric@gmail.com?subject=%5B%E9%A0%90%E7%B4%84%E5%81%A5%E6%AA%A2%5D%20HurricaneSoft%20%C2%B7%202%20%E9%80%B1%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8B%95%E5%8C%96%E5%81%A5%E6%AA%A2&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%83%B3%E9%A0%90%E7%B4%84%E3%80%8C2%20%E9%80%B1%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8B%95%E5%8C%96%E5%81%A5%E6%AA%A2%E3%80%8D%EF%BC%88US%24%201%2C500%E2%80%932%2C000%EF%BC%89%EF%BC%9A%0A%0A%E3%80%90%E7%9B%AE%E5%89%8D%E6%9E%B6%E6%A7%8B%20/%20%E6%8A%80%E8%A1%93%E6%A3%A7%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%E3%80%90%E6%9C%80%E6%83%B3%E5%85%88%E8%A7%A3%E6%B1%BA%E7%9A%84%E6%8A%80%E8%A1%93%E5%82%B5%20/%20%E7%97%9B%E9%BB%9E%E3%80%91%EF%BC%9A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A" target="_blank" rel="noopener" class="btn btn-ghost price-cta">
+          <!-- pricing.tier.04.cta — dict-zh.js: '預約健檢' -->
+          預約健檢
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <!-- mailto 來源標記 -->
+        <!-- href 來源：pricing.jsx line 23，tier.04 healthcheck href，原文照抄 -->
+      </div>
+
+      <!-- ─── tier.01 PROJECT ─── -->
+      <!--
+        來源：pricing.jsx tiers[1] (key='project')
+        price: 'US$ 8,000'               ← pricing.jsx line 29
+        tcKey: 'pricing.tier.01.tc'      ← dict-zh.js: '專案制 Project-based'
+        taglineKey: 'pricing.tier.01.tagline' ← dict-zh.js: '明確 scope 的單次交付'
+        href: tier.01 在 pricing.jsx 無 href（tone:'default'，走通用 #cta）
+              → 使用 faq-cta.jsx CTA() line 216 的 btn-primary href（原文照抄）
+      -->
+      <div class="price-card">
+        <div class="price-label">PROJECT</div>
+        <!-- pricing.tier.01.tc — dict-zh.js -->
+        <h3 class="price-tc tc">專案制 Project-based</h3>
+        <!-- pricing.tier.01.tagline — dict-zh.js -->
+        <p class="price-tagline tc">明確 scope 的單次交付</p>
+        <!-- price — pricing.jsx line 29: 'US$ 8,000' -->
+        <div class="price-amount">
+          <span class="num">US$ 8,000</span>
+          <!-- pricing.tier.01.unit — dict-zh.js: '起 / 案' -->
+          <span class="unit">起 / 案</span>
+        </div>
+        <div class="price-divider"></div>
+        <ul class="price-includes">
+          <!-- pricing.tier.01.inc.01~04 — dict-zh.js -->
+          <li>明確 scope 的固定價交付</li>
+          <li>里程碑分期付款</li>
+          <li>含 1 個月上線後保固</li>
+          <li>POC / MVP / 現代化皆可</li>
+        </ul>
+        <!--
+          href 來源：pricing.jsx tier.01 tone='default'，無獨立 href，走通用 #cta
+          → 使用 faq-cta.jsx CTA() function，btn-primary a.href，line 216，原文照抄
+        -->
+        <a href="mailto:cancleeric@gmail.com?subject=%5B%E9%A0%90%E7%B4%84%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%83%B3%E9%A0%90%E7%B4%84%2030%20%E5%88%86%E9%90%98%E5%85%8D%E8%B2%BB%E8%AB%AE%E8%A9%A2%EF%BC%9A%0A%0A%E3%80%90%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%E3%80%90%E9%A0%90%E7%AE%97%20%2F%20%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A" target="_blank" rel="noopener" class="btn btn-ghost price-cta">
+          <!-- pricing.tier.01.cta — dict-zh.js: '討論 scope' -->
+          討論 scope
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- ─── tier.02 RETAINER ─── -->
+      <!--
+        來源：pricing.jsx tiers[2] (key='retainer')
+        price: 'US$ 10,000'              ← pricing.jsx line 49
+        tcKey: 'pricing.tier.02.tc'      ← dict-zh.js: '月費 Retainer'
+        taglineKey: 'pricing.tier.02.tagline' ← dict-zh.js: '負責人 + AI 副手團隊全力投入'
+        href: pricing.jsx line 61，原文照抄
+        badge: pricing.recommended ← dict-zh.js: 'RECOMMENDED · 主推'
+      -->
+      <div class="price-card highlight">
+        <span class="price-badge price-badge-recommended">RECOMMENDED · 主推</span>
+        <div class="price-label">RETAINER · FLAGSHIP</div>
+        <!-- pricing.tier.02.tc — dict-zh.js -->
+        <h3 class="price-tc tc">月費 Retainer</h3>
+        <!-- pricing.tier.02.tagline — dict-zh.js -->
+        <p class="price-tagline tc">負責人 + AI 副手團隊全力投入</p>
+        <!-- price — pricing.jsx line 49: 'US$ 10,000' -->
+        <div class="price-amount">
+          <span class="num">US$ 10,000</span>
+          <!-- pricing.tier.02.unit — dict-zh.js: '/ 月' -->
+          <span class="unit">/ 月</span>
+        </div>
+        <div class="price-divider"></div>
+        <ul class="price-includes">
+          <!-- pricing.tier.02.inc.01~04 — dict-zh.js -->
+          <li>負責人 + AI 副手團隊全力投入</li>
+          <li>承擔架構決策 + 親自下海 code</li>
+          <li>每週進度同步 / 月末交付報告</li>
+          <li>建議 3 個月起：工具鏈複利效益在完整交付週期後才充分顯現</li>
+        </ul>
+        <!-- href 來源：pricing.jsx line 61，tier.02 retainer href，原文照抄 -->
+        <a href="mailto:cancleeric@gmail.com?subject=%E3%80%90%E9%A0%90%E7%B4%84%E6%9C%88%E8%B2%BB%20Retainer%E3%80%91HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%0A%0A%E6%88%91%E5%BE%9E%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%9A%84%E7%B6%B2%E9%A0%81%E6%83%B3%E9%A0%90%E7%B4%84%E3%80%8C%E6%9C%88%E8%B2%BB%20Retainer%E3%80%8D%E6%96%B9%E6%A1%88%EF%BC%88US%24%2010%2C000%20/%20%E6%9C%88%EF%BC%89%EF%BC%9A%0A%0A%E3%80%90%E7%9B%AE%E5%89%8D%E5%9C%98%E9%9A%8A%20/%20%E5%B0%88%E6%A1%88%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E6%9C%80%E6%83%B3%E4%BA%A4%E7%B5%A6%E8%87%AA%E5%8B%95%E5%8C%96%E7%9A%84%E7%92%B0%E7%AF%80%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E9%A0%90%E8%A8%88%E5%90%88%E4%BD%9C%E8%B5%B7%E5%A7%8B%E6%99%82%E9%96%93%E3%80%91%EF%BC%9A%0A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A%0A%E8%AC%9D%E8%AC%9D%EF%BC%81%0A" target="_blank" rel="noopener" class="btn btn-primary price-cta">
+          <!-- pricing.tier.02.cta — dict-zh.js: '預約 kick-off' -->
+          預約 kick-off
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- ─── tier.03 ADVISORY ─── -->
+      <!--
+        來源：pricing.jsx tiers[3] (key='advisory')
+        price: 'US$ 250'                 ← pricing.jsx line 67
+        tcKey: 'pricing.tier.03.tc'      ← dict-zh.js: '顧問諮詢 Advisory'
+        taglineKey: 'pricing.tier.03.tagline' ← dict-zh.js: '架構審查 / 技術選型 / Code Review'
+        href: tier.03 在 pricing.jsx 無 href（tone:'default'，走通用 #cta）
+              → 使用 faq-cta.jsx CTA() line 216 的 btn-primary href（原文照抄）
+      -->
+      <div class="price-card">
+        <div class="price-label">ADVISORY</div>
+        <!-- pricing.tier.03.tc — dict-zh.js -->
+        <h3 class="price-tc tc">顧問諮詢 Advisory</h3>
+        <!-- pricing.tier.03.tagline — dict-zh.js -->
+        <p class="price-tagline tc">架構審查 / 技術選型 / Code Review</p>
+        <!-- price — pricing.jsx line 67: 'US$ 250' -->
+        <div class="price-amount">
+          <span class="num">US$ 250</span>
+          <!-- pricing.tier.03.unit — dict-zh.js: '/ 小時' -->
+          <span class="unit">/ 小時</span>
+        </div>
+        <div class="price-divider"></div>
+        <ul class="price-includes">
+          <!-- pricing.tier.03.inc.01~04 — dict-zh.js -->
+          <li>架構審查 / 技術選型 / Code Review</li>
+          <li>不下海寫 code，純諮詢</li>
+          <li>最少 4 小時起接</li>
+          <li>AI 導入評估 / 架構安全審查 / 現代化路線規劃</li>
+        </ul>
+        <!--
+          href 來源：pricing.jsx tier.03 tone='default'，無獨立 href，走通用 #cta
+          → 使用 faq-cta.jsx CTA() function，btn-primary a.href，line 216，原文照抄
+        -->
+        <a href="mailto:cancleeric@gmail.com?subject=%5B%E9%A0%90%E7%B4%84%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%83%B3%E9%A0%90%E7%B4%84%2030%20%E5%88%86%E9%90%98%E5%85%8D%E8%B2%BB%E8%AB%AE%E8%A9%A2%EF%BC%9A%0A%0A%E3%80%90%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%E3%80%90%E9%A0%90%E7%AE%97%20%2F%20%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A" target="_blank" rel="noopener" class="btn btn-ghost price-cta">
+          <!-- pricing.tier.03.cta — dict-zh.js: '安排一場' -->
+          安排一場
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+    </div><!-- /pricing-grid -->
+  </div>
+</section>
+
+<!-- ── 直接聯絡 CTA ── -->
+<section class="contact-section section" id="cta">
+  <div class="container">
+    <div class="contact-box">
+      <div class="contact-eyebrow">BOOK A CONSULT · 預約諮詢</div>
+      <h2 class="contact-title tc">
+        第一次 <span class="accent">30 分鐘</span> 免費。
+      </h2>
+      <p class="contact-sub tc">
+        不推銷、不畫餅。先看我們怎麼做、再決定要不要合作。<br/>
+        適合對象：CTO、VP Eng、創辦人、產品負責人。
+      </p>
+      <!--
+        大按鈕 → faq-cta.jsx CTA() function，btn-primary 的 mailto，line 216，原文照抄
+        對應 dict-zh.js key: cta.primary = '預約諮詢 · 30 min free'
+      -->
+      <a class="btn btn-primary btn-lg" href="mailto:cancleeric@gmail.com?subject=%5B%E9%A0%90%E7%B4%84%E8%AB%AE%E8%A9%A2%5D%20HurricaneSoft%20%E5%B7%A5%E4%BD%9C%E5%AE%A4&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%83%B3%E9%A0%90%E7%B4%84%2030%20%E5%88%86%E9%90%98%E5%85%8D%E8%B2%BB%E8%AB%AE%E8%A9%A2%EF%BC%9A%0A%0A%E3%80%90%E9%9C%80%E6%B1%82%E7%B0%A1%E8%BF%B0%E3%80%91%EF%BC%9A%0A%E3%80%90%E9%A0%90%E7%AE%97%20%2F%20%E6%99%82%E7%A8%8B%E3%80%91%EF%BC%9A%0A%E3%80%90%E6%96%B9%E4%BE%BF%E8%81%AF%E7%B5%A1%E6%99%82%E6%AE%B5%E3%80%91%EF%BC%9A%0A" target="_blank" rel="noopener" style="margin: 0 auto;">
+        預約諮詢 · 30 min free
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <!-- href 來源：faq-cta.jsx CTA() btn-primary line 216，原文照抄 -->
+      <div class="contact-meta">
+        <!-- faq-cta.jsx CTA() cta-meta-row, tel href -->
+        <span class="contact-meta-item mono">+886 921-107-206</span>
+        <span class="contact-meta-item mono">cancleeric@gmail.com</span>
+        <span class="contact-meta-item mono">目前可承接新案</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── footer — 對應 index-cases.html footer-mini__copy 原文 ── -->
+<footer class="footer-mini">
+  <div class="container">
+    <!-- footer.copy — dict-zh.js key: footer.copy（節取公司登記資訊部分） -->
+    <p class="footer-mini__copy">
+      © 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · v9.06
+    </p>
+  </div>
+</footer>
+
+<script>
+/* 量 meta-live 高度，讓 sticky nav 接在其下方 — copied from index-cases.html */
+(function(){
+  function setMetaH(){
+    var m = document.querySelector('.meta-live');
+    if(m) document.documentElement.style.setProperty('--meta-h', m.offsetHeight + 'px');
+  }
+  setMetaH();
+  window.addEventListener('resize', setMetaH);
+  window.addEventListener('load', setMetaH);
+})();
+</script>
+
+</body>
+</html>

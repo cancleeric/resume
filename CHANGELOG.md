@@ -1,3 +1,10 @@
+## v9.06 · 2026-08-21
+- publish: 將案例牆 `design/index-cases.html` 與預約諮詢頁 `design/index-book.html` 納入正式公開站
+- navigation(A/B/C版): 標準、設計深色與設計亮色版導覽接上案例牆與預約頁，並同步桌面、行動版與底部 CTA
+- copy: 修正預約頁公司名稱錯字，移除兩頁過期的 2026/07 檔期與「100% 無人手動改 code」宣稱
+- seo: sitemap 新增案例牆與預約頁，五個公開頁面的 lastmod 更新為 2026-08-21
+- internal: 事後檢討文件移出公開倉庫，保留於內部 evidence archive
+
 ## v9.05 · 2026-08-21
 - positioning(A/B/C版): 標準、設計深色與設計亮色統一為 HurricaneSoft 公司／技術品牌定位，標準版職稱更新為「創辦人暨首席工程師」
 - copy(A/B/C版): 「四年 AI」改為「自 2022 年起投入生成式 AI／LLM 實務」，避免年資文案每年手動更新

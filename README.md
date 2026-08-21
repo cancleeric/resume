@@ -14,6 +14,8 @@
 | 設計版 · 亮（主力） | https://cancleeric.github.io/resume/design/index-light.html |
 | 設計版 · 深 | https://cancleeric.github.io/resume/design/index.html |
 | 標準版 | https://cancleeric.github.io/resume/resume.html |
+| 案例牆 | https://cancleeric.github.io/resume/design/index-cases.html |
+| 預約諮詢 | https://cancleeric.github.io/resume/design/index-book.html |
 
 ---
 
@@ -28,12 +30,14 @@ resume/
 ├── template.html5              # pandoc HTML5 模板
 ├── build.sh                    # 一鍵 build 腳本（需 pandoc）
 ├── CHANGELOG.md                # 版本紀錄（v<major>.<minor>，目前 v9.x）
-├── sitemap.xml                 # SEO sitemap（三版 URL）
+├── sitemap.xml                 # SEO sitemap（五個公開頁面）
 ├── robots.txt                  # 爬蟲指引
 │
 ├── design/                     # 主力設計版（接案 landing page）
 │   ├── index-light.html        # 亮色版（主力，SEO canonical）
 │   ├── index.html              # 深色版
+│   ├── index-cases.html        # 對外交付案例牆
+│   ├── index-book.html         # 預約諮詢與合作方案
 │   ├── i18n/
 │   │   ├── core.js             # i18n runtime（語系切換邏輯）
 │   │   ├── dict-zh.js          # 繁體中文字典（fallback / default）

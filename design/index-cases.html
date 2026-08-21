@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#FFFFFF" />
+<title>案例牆 · 颶風軟體有限公司 HurricaneSoft Ltd.</title>
+<meta name="description" content="颶風軟體有限公司真實案例——日期、commits、功能三樣俱全。AICAD、Conch 海螺訂位、打工仔 DaGongZai、Manta、Gyre。git 紀錄可查。" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="案例牆 · 颶風軟體有限公司 HurricaneSoft Ltd." />
+<meta property="og:description" content="真實案例——日期、commits、功能三樣俱全。不是 demo、不是概念圖，git 紀錄可查。" />
+<meta property="og:url" content="https://cancleeric.github.io/resume/design/index-cases.html" />
+<link rel="canonical" href="https://cancleeric.github.io/resume/design/index-cases.html" />
+<meta property="og:site_name" content="颶風軟體有限公司 HurricaneSoft Ltd." />
+<meta property="og:image" content="https://cancleeric.github.io/resume/assets/avatar.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="案例牆 · 颶風軟體有限公司 HurricaneSoft Ltd." />
+<meta name="twitter:description" content="真實案例——日期、commits、功能三樣俱全。git 紀錄可查。" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3Cg%20transform='translate(20%2020)%20rotate(-18)'%20fill='none'%20stroke='%230EA5E9'%20stroke-width='2.6'%20stroke-linecap='round'%3E%3Cellipse%20cx='0'%20cy='-3.5'%20rx='14'%20ry='5'/%3E%3Cellipse%20cx='0'%20cy='3.5'%20rx='14'%20ry='5'/%3E%3C/g%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+TC:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+/* ── Design tokens (copied from index-light.html) ── */
+:root {
+  --bg: #FFFFFF;
+  --bg-2: #F8F9FB;
+  --surface-1: #FFFFFF;
+  --surface-2: #F1F3F6;
+  --surface-3: #E8EBF0;
+  --border: #E5E7EB;
+  --border-strong: #D1D5DB;
+  --border-subtle: #EFF1F4;
+
+  --text-hi: #0A0B0F;
+  --text-mid: #52555F;
+  --text-low: #8A8D96;
+  --text-dim: #777A83;
+
+  --orange: #FF6B35;
+  --orange-soft: rgba(255, 107, 53, 0.10);
+  --orange-line: rgba(255, 107, 53, 0.30);
+  --cyan: #0EA5E9;
+  --cyan-soft: rgba(14, 165, 233, 0.08);
+  --cyan-line: rgba(14, 165, 233, 0.25);
+
+  --live: #16A34A;
+  --ga: #0EA5E9;
+  --beta: #D97706;
+
+  --r-xs: 3px;
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+
+  --font-sans: 'Inter', 'IBM Plex Sans TC', system-ui, sans-serif;
+  --font-tc: 'IBM Plex Sans TC', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, monospace;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--bg);
+  color: var(--text-hi);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(255,107,53,0.05), transparent 60%),
+    radial-gradient(900px 500px at -10% 30%, rgba(14,165,233,0.04), transparent 60%),
+    var(--bg);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, #F1F3F6 1px, transparent 1px),
+    linear-gradient(to bottom, #F1F3F6 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at 50% 30%, black 30%, transparent 80%);
+  opacity: 0.7;
+}
+
+::selection { background: rgba(255,107,53,0.22); color: #0A0B0F; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; background: none; border: none; color: inherit; cursor: pointer; }
+
+.mono { font-family: var(--font-mono); font-feature-settings: "ss01"; }
+.tc { font-family: var(--font-tc); }
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-low);
+}
+
+.container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+/* buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 44px; padding: 0 18px;
+  border-radius: var(--r-md);
+  font-size: 14px; font-weight: 500;
+  letter-spacing: -0.005em;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+.btn-primary {
+  background: var(--orange);
+  color: #110800 !important;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(255,107,53,0.25), inset 0 1px 0 rgba(255,255,255,0.18);
+}
+.btn-primary:hover {
+  background: #FF7E4F;
+  box-shadow: 0 0 0 4px rgba(255,107,53,0.12), 0 1px 2px rgba(255,107,53,0.25);
+  transform: translateY(-1px);
+}
+.btn-ghost {
+  background: var(--bg);
+  color: var(--text-hi);
+  border-color: var(--border-strong);
+}
+.btn-ghost:hover {
+  background: var(--surface-2);
+  border-color: #B5B8C0;
+}
+.btn-sm { height: 36px; padding: 0 14px; font-size: 13px; }
+
+/* badge */
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 24px; padding: 0 8px;
+  font-family: var(--font-mono);
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.04em;
+  border-radius: var(--r-xs);
+  border: 1px solid var(--border);
+  color: var(--text-mid);
+  background: var(--surface-2);
+}
+.badge-live { color: #166534 !important; border-color: rgba(22,163,74,0.30); background: rgba(22,163,74,0.06); }
+.badge-beta { color: #92400E !important; border-color: rgba(217,119,6,0.30); background: rgba(217,119,6,0.06); }
+.badge-dot::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor;
+}
+
+/* card */
+.card {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s, transform 0.2s, background 0.2s, box-shadow 0.2s;
+}
+.card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-md); }
+
+/* scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #D1D5DB; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #B5B8C0; }
+
+/* heading sizes */
+.h-2 { font-size: 40px; line-height: 1.1; letter-spacing: -0.025em; font-weight: 600; }
+.h-3 { font-size: 24px; line-height: 1.25; letter-spacing: -0.015em; font-weight: 600; }
+.h-4 { font-size: 18px; line-height: 1.3; letter-spacing: -0.01em; font-weight: 600; }
+
+.section-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #B14A0E;
+  margin-bottom: 24px;
+}
+.section-label::before {
+  content: ""; width: 24px; height: 1px; background: #B14A0E;
+}
+.section-title {
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+  max-width: 18ch;
+  margin-bottom: 20px;
+  color: var(--text-hi);
+}
+.section-sub {
+  color: var(--text-mid);
+  font-size: 17px;
+  max-width: 60ch;
+  line-height: 1.55;
+}
+
+/* ── meta-live banner (copied from index-light.html) ── */
+.meta-live {
+  padding: 9px 18px;
+  background: linear-gradient(90deg, #064e3b 0%, #065f46 100%);
+  color: #d1fae5;
+  font-size: 12.5px;
+  line-height: 1.5;
+  font-family: Inter, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+.meta-live__head {
+  display: flex; align-items: center; justify-content: center; gap: 9px; text-align: center;
+}
+.meta-live__dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 0 3px rgba(52,211,153,.25);
+  flex-shrink: 0;
+  animation: ml-pulse 2s ease-in-out infinite;
+}
+@keyframes ml-pulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(52,211,153,.25); }
+  50%       { box-shadow: 0 0 0 6px rgba(52,211,153,.12); }
+}
+.meta-live strong { color: #fff; font-weight: 700; }
+.meta-live__steps {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 4px 5px; margin-top: 6px; padding-top: 6px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.meta-live__step {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(52,211,153,.3);
+  border-radius: 4px; padding: 2px 8px;
+  font-size: 11px; font-weight: 600; color: #ecfdf5; white-space: nowrap;
+}
+.meta-live__arr { color: #34d399; font-size: 11px; font-weight: 700; }
+@media print { .meta-live { display: none !important; } }
+@media (max-width: 600px) { .meta-live { font-size: 11px; padding: 8px 12px; } .meta-live__step { font-size: 10px; padding: 2px 6px; } }
+
+/* ── nav (copied from index-light.html) ── */
+.nav {
+  position: sticky;
+  top: var(--meta-h, 72px);
+  z-index: 30;
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.nav-inner {
+  max-width: 1280px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 32px;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 600; letter-spacing: -0.01em;
+}
+.nav-logo .mark { width: 30px; height: 30px; color: var(--cyan); flex-shrink: 0; }
+.nav-links { display: flex; gap: 6px; align-items: center; }
+.nav-links a {
+  padding: 8px 12px; font-size: 13px;
+  color: var(--text-mid); border-radius: 4px; transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--text-hi); }
+
+/* version switcher */
+.ver-switch {
+  display: inline-flex; align-items: center; gap: 2px;
+  padding: 2px; margin-left: 4px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+.ver-switch a {
+  padding: 5px 9px; border-radius: 3px;
+  font-size: 11.5px; font-weight: 600;
+  color: var(--text-mid); white-space: nowrap; transition: all 0.15s;
+}
+.ver-switch a:hover { color: var(--text-hi); background: var(--surface-3); }
+.ver-switch a.active { background: var(--text-hi); color: var(--bg); pointer-events: none; }
+
+@media (max-width: 900px) {
+  .nav-links > a:not(.cta) { display: none; }
+}
+
+/* ── hero ── */
+.hero {
+  position: relative;
+  padding: 100px 0 80px;
+  text-align: center;
+  z-index: 1;
+}
+.hero-status {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  font-family: var(--font-mono);
+  font-size: 12px; font-weight: 500;
+  color: var(--text-mid);
+  background: var(--surface-1);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 32px;
+}
+.hero-status .dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--live);
+  box-shadow: 0 0 8px rgba(22,163,74,0.5);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.hero-h1 {
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 1.0;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text-hi);
+}
+.hero-h1 .accent { color: #B14A0E; }
+.hero-sub {
+  font-size: 18px;
+  color: var(--text-mid);
+  max-width: 52ch;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+.hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+/* ── cases grid ── */
+.cases-section {
+  position: relative;
+  padding: 80px 0 120px;
+  z-index: 1;
+}
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 56px;
+}
+@media (max-width: 768px) {
+  .cases-grid { grid-template-columns: 1fr; }
+}
+
+/* ── case card ── */
+.case-card {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.case-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.case-card__badges {
+  display: flex; align-items: center; gap: 8px;
+  padding: 18px 20px 0;
+}
+
+/* product image placeholder */
+.case-card__img {
+  margin: 16px 20px;
+  height: 200px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 8px;
+}
+.case-card__img-name {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-low);
+  letter-spacing: 0.04em;
+}
+.case-card__img-hint {
+  font-size: 11px;
+  color: var(--text-low);
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+}
+
+.case-card__body { padding: 0 20px 20px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+
+.case-card__name {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-hi);
+}
+.case-card__tagline {
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+
+/* metric highlight */
+.case-card__metric {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: #0369A1;
+  background: var(--cyan-soft);
+  border: 1px solid var(--cyan-line);
+  border-radius: var(--r-sm);
+  padding: 5px 10px;
+  align-self: flex-start;
+}
+
+/* tech chips */
+.case-card__chips {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-top: 4px;
+}
+.chip {
+  display: inline-flex;
+  padding: 3px 9px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: var(--r-xs);
+  border: 1px solid var(--border);
+  color: var(--text-mid);
+  background: var(--surface-2);
+  letter-spacing: 0.03em;
+}
+
+/* link row */
+.case-card__links {
+  display: flex; gap: 10px; margin-top: auto; padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+}
+.case-card__links a {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 500;
+  color: #0369A1;
+  transition: color 0.15s;
+}
+.case-card__links a:hover { color: var(--cyan); }
+
+/* ── footer mini ── */
+.footer-mini {
+  position: relative; z-index: 1;
+  border-top: 1px solid var(--border-subtle);
+  padding: 40px 0;
+  text-align: center;
+}
+.footer-mini__cta {
+  font-size: 15px;
+  color: var(--text-mid);
+  margin-bottom: 20px;
+}
+.footer-mini__cta strong { color: var(--text-hi); }
+.footer-mini__copy {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-low);
+  letter-spacing: 0.04em;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<!-- meta-live banner (same as index-light.html) -->
+<div class="meta-live">
+  <div class="meta-live__head">
+    <span class="meta-live__dot"></span>
+    <span>這個頁面以 <strong>AI 原生工程流程持續維護</strong>&nbsp;·&nbsp;規格、實作、審查、測試與部署皆有 AI 協作&nbsp;·&nbsp;您正在看的就是<strong>「開發流程自動化」實際成果</strong></span>
+  </div>
+  <div class="meta-live__steps">
+    <span class="meta-live__step">① 載入頁面</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">② AI 審查挑最弱點</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">③ 瀏覽器自動化親測</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">④ 聚焦修改</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">⑤ git commit</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">⑥ push</span><span class="meta-live__arr">→</span>
+    <span class="meta-live__step">⑦ GitHub Pages 自動部署</span>
+  </div>
+</div>
+
+<div class="grid-bg"></div>
+
+<!-- nav -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../resume.html" class="nav-logo">
+      <svg class="mark" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+        <g transform="translate(15 15) rotate(-18)">
+          <ellipse cx="0" cy="-3.5" rx="11" ry="4" />
+          <ellipse cx="0" cy="3.5" rx="11" ry="4" />
+        </g>
+      </svg>
+      <span class="tc">颶風軟體</span>
+    </a>
+    <div class="nav-links">
+      <a href="../resume.html">首頁</a>
+      <div class="ver-switch">
+        <a href="../resume.html">標準</a>
+        <a href="index.html">設計·深</a>
+        <a href="index-light.html">設計·亮</a>
+        <a href="index-cases.html" class="active">案例牆</a>
+      </div>
+      <a href="index-book.html" class="btn btn-primary btn-sm cta" style="margin-left:8px;">預約諮詢</a>
+    </div>
+  </div>
+</nav>
+
+<!-- hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-status">
+      <span class="dot"></span>
+      <span class="mono">目前可承接 · 啟動時間依 scope 確認</span>
+    </div>
+    <h1 class="hero-h1 tc">
+      你的想法，<br/><span class="accent">最快幾天能上線？</span>
+    </h1>
+    <p class="hero-sub">
+      這裡放的是真實案例——日期、commits、功能三樣俱全。<br/>
+      不是 demo、不是概念圖，git 紀錄可查。
+    </p>
+    <div class="hero-cta">
+      <a href="index-book.html" class="btn btn-primary">
+        預約 30 分鐘免費諮詢
+      </a>
+      <a href="index-light.html" class="btn btn-ghost">
+        看完整接案頁
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- cases wall -->
+<section class="cases-section">
+  <div class="container">
+    <div class="section-label">CASES · 實際交付案例</div>
+    <h2 class="section-title tc">5 個系統，<br/>真實數字。</h2>
+    <p class="section-sub">每張卡的數字來自 dict-zh.js 原文，key 標在 HTML 註解。沒有公開 URL 就不放連結。</p>
+
+    <div class="cases-grid">
+
+      <!-- ─── Card 1: AICAD ─── -->
+      <!-- sys.aicad.tagline / sys.aicad.metric -->
+      <article class="case-card">
+        <div class="case-card__badges">
+          <span class="badge badge-live badge-dot">LIVE</span>
+          <!-- sys.aicad.metric -->
+          <span class="badge">23 天 · 214 commits</span>
+        </div>
+        <div class="case-card__img">
+          <span class="case-card__img-name">AICAD</span>
+          <span class="case-card__img-hint">色塊佔位 · 無公開截圖</span>
+        </div>
+        <div class="case-card__body">
+          <div class="case-card__name tc">AICAD</div>
+          <!-- sys.aicad.tagline -->
+          <div class="case-card__tagline">AI P&amp;ID 工程圖辨識 SaaS</div>
+          <!-- sys.aicad.metric -->
+          <div class="case-card__metric">23 天 · 214 commits 到生產</div>
+          <div class="case-card__chips">
+            <span class="chip">Python</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">Computer Vision</span>
+            <span class="chip">GCP Cloud Run</span>
+            <span class="chip">PostgreSQL</span>
+          </div>
+          <!-- 無公開 URL，整行隱藏 -->
+          <div class="case-card__links" style="display:none;"></div>
+        </div>
+      </article>
+
+      <!-- ─── Card 2: Conch 海螺訂位 ─── -->
+      <!-- sys.conch.tagline / timeline.item.03.summary -->
+      <article class="case-card">
+        <div class="case-card__badges">
+          <span class="badge badge-live badge-dot">LIVE</span>
+          <span class="badge">v4.0.0 · GA 2026/04</span>
+        </div>
+        <div class="case-card__img">
+          <span class="case-card__img-name">Conch</span>
+          <span class="case-card__img-hint">色塊佔位 · 無公開截圖</span>
+        </div>
+        <div class="case-card__body">
+          <div class="case-card__name tc">Conch 海螺訂位</div>
+          <!-- sys.conch.tagline -->
+          <div class="case-card__tagline">預約 SaaS v4.0.0（2026/04 GA）</div>
+          <!-- timeline.item.03.summary（節選關鍵數字） -->
+          <div class="case-card__metric">1,265+ tests / 28 migrations / 29 PRs</div>
+          <div class="case-card__chips">
+            <span class="chip">TypeScript</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">CI 4 jobs 全綠</span>
+            <span class="chip">CRM</span>
+            <span class="chip">平板模式</span>
+          </div>
+          <!-- 無公開 URL，整行隱藏 -->
+          <div class="case-card__links" style="display:none;"></div>
+        </div>
+      </article>
+
+      <!-- ─── Card 3: 打工仔 DaGongZai ─── -->
+      <!-- sys.dagongzai.tagline / sys.dagongzai.metric -->
+      <article class="case-card">
+        <div class="case-card__badges">
+          <span class="badge badge-live badge-dot">LIVE</span>
+          <!-- sys.dagongzai.metric -->
+          <span class="badge">28 天 · 51 commits</span>
+        </div>
+        <div class="case-card__img">
+          <span class="case-card__img-name">DaGongZai</span>
+          <span class="case-card__img-hint">色塊佔位 · 無公開截圖</span>
+        </div>
+        <div class="case-card__body">
+          <div class="case-card__name tc">打工仔 DaGongZai</div>
+          <!-- sys.dagongzai.tagline -->
+          <div class="case-card__tagline">零工媒合 SaaS v1.1.0（2026/04）</div>
+          <!-- sys.dagongzai.metric -->
+          <div class="case-card__metric">28 天 · 51 commits 到生產</div>
+          <div class="case-card__chips">
+            <span class="chip">API</span>
+            <span class="chip">Web</span>
+            <span class="chip">iOS</span>
+            <span class="chip">PayPal Escrow</span>
+            <span class="chip">ML 薪資推算</span>
+          </div>
+          <!-- 無公開 URL，整行隱藏 -->
+          <div class="case-card__links" style="display:none;"></div>
+        </div>
+      </article>
+
+      <!-- ─── Card 4: Manta ─── -->
+      <!-- sys.manta.tagline / sys.manta.metric -->
+      <article class="case-card">
+        <div class="case-card__badges">
+          <span class="badge badge-live badge-dot">LIVE</span>
+          <!-- sys.manta.metric -->
+          <span class="badge">v2.55.0</span>
+        </div>
+        <div class="case-card__img">
+          <span class="case-card__img-name">Manta</span>
+          <span class="case-card__img-hint">色塊佔位 · 無公開截圖</span>
+        </div>
+        <div class="case-card__body">
+          <div class="case-card__name tc">Manta</div>
+          <!-- sys.manta.tagline -->
+          <div class="case-card__tagline">AI Workflow Canvas（對標 Coze）— 多租戶 AI 編排</div>
+          <!-- sys.manta.metric -->
+          <div class="case-card__metric">v2.55.0 生產中</div>
+          <div class="case-card__chips">
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">LLM Gateway</span>
+            <span class="chip">多租戶</span>
+            <span class="chip">JWT / LIDS SSO</span>
+          </div>
+          <!-- 無公開 URL，整行隱藏 -->
+          <div class="case-card__links" style="display:none;"></div>
+        </div>
+      </article>
+
+      <!-- ─── Card 5: Gyre ─── -->
+      <!-- sys.gyre.tagline / sys.gyre.metric -->
+      <article class="case-card">
+        <div class="case-card__badges">
+          <span class="badge badge-beta badge-dot">BETA</span>
+          <!-- sys.gyre.metric -->
+          <span class="badge">36 天 · 111 commits · R5 freeze</span>
+        </div>
+        <div class="case-card__img">
+          <span class="case-card__img-name">Gyre</span>
+          <span class="case-card__img-hint">色塊佔位 · 無公開截圖</span>
+        </div>
+        <div class="case-card__body">
+          <div class="case-card__name tc">Gyre</div>
+          <!-- sys.gyre.tagline -->
+          <div class="case-card__tagline">多平台社群同步 SaaS v0.11.0 — 一次撰寫、多平台同步發佈</div>
+          <!-- sys.gyre.metric -->
+          <div class="case-card__metric">36 天 · 111 commits · R5 freeze</div>
+          <div class="case-card__chips">
+            <span class="chip">TypeScript</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">多平台 API</span>
+            <span class="chip">社群發佈</span>
+          </div>
+          <!-- 無公開 URL，整行隱藏 -->
+          <div class="case-card__links" style="display:none;"></div>
+        </div>
+      </article>
+
+    </div><!-- /cases-grid -->
+  </div>
+</section>
+
+<!-- footer mini -->
+<footer class="footer-mini">
+  <div class="container">
+    <p class="footer-mini__cta">
+      有想法想驗證？<strong>30 分鐘免費諮詢</strong>，直接討論可行性。
+    </p>
+    <a href="index-book.html" class="btn btn-primary">
+      預約諮詢 · 30 min free
+    </a>
+    <p class="footer-mini__copy">
+      © 2026 颶風軟體有限公司 HurricaneSoft Ltd. · 統編 80289779 · 負責人 王英豪 · v9.06
+    </p>
+  </div>
+</footer>
+
+<script>
+/* 量 meta-live 高度，讓 sticky nav 接在其下方 */
+(function(){
+  function setMetaH(){
+    var m = document.querySelector('.meta-live');
+    if(m) document.documentElement.style.setProperty('--meta-h', m.offsetHeight + 'px');
+  }
+  setMetaH();
+  window.addEventListener('resize', setMetaH);
+  window.addEventListener('load', setMetaH);
+})();
+</script>
+
+</body>
+</html>
